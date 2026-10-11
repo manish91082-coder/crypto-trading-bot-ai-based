@@ -1,0 +1,27 @@
+# Python byte-code and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Large uncompressed 1-minute raw files (tracked in compressed .csv.gz form to comply with GitHub 100MB limit)
+data/raw/*_1m_Raw_5Years.csv
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
