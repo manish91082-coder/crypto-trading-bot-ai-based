@@ -1,15 +1,32 @@
+import sys
 import json
 import csv
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 import time
 
-FEE_RATE = 0.00075  # Binance VIP-0 Taker Fee (0.075%)
+SRC_DIR = Path(__file__).resolve().parent.parent
+if str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
+
+from config import (
+    BINANCE_TAKER_FEE,
+    TP_ATR_MULT,
+    SL_ATR_MULT,
+    BE_ATR_MULT,
+    PARTIAL_TP_PCT,
+    RUNNER_PCT,
+    RUNNER_TRAILING_ATR,
+    RUNNER_SL_LOCK_ATR,
+    MAX_INACTIVITY_DAYS
+)
+
+FEE_RATE = BINANCE_TAKER_FEE  # Binance VIP-0 Taker Fee (0.075%)
 
 class OrderManager:
     """
     Manages active position state, trailing stop adjustments, partial take-profits,
-    and trade logging with crash-resilient disk persistence.
+    and trade logging with crash-resilient disk persistence adhering to Law #6 (Swing Runner).
     """
 
     def __init__(self, logs_dir: Path):
@@ -105,8 +122,8 @@ class OrderManager:
         low_price: Optional[float] = None
     ) -> List[Dict[str, Any]]:
         """
-        Evaluate SL, Partial TP, Trailing Stop, Breakeven SL, and Time-Based Exit
-        for open positions on a price tick.
+        Evaluate SL, Partial TP (75%), Dynamic Trailing Stop (25% Runner), Breakeven SL,
+        and Inactivity-Based Exit (14d) for unhit trades.
         Returns list of closed trades.
         """
         h = high_price if high_price is not None else current_price
@@ -124,27 +141,20 @@ class OrderManager:
             exit_price = 0.0
             exit_reason = ""
 
-            # Check Time-Based Exit (7 days = 604800 seconds)
-            elapsed_sec = time.time() - pos['entry_timestamp']
-            if elapsed_sec >= (7 * 86400) and not pos['secured']:
-                closed = True
-                exit_price = current_price
-                exit_reason = "Time-Based Exit"
-
-            # Check Long Position
-            if not closed and direction == 'Long':
+            # 1. Stop Loss & Trailing Stop Check (Checked First - Law #5 / Mistake 4.5 fix)
+            if direction == 'Long':
                 pos['peak_price'] = max(pos['peak_price'], h)
                 
-                # Stop Loss check
+                # SL check
                 if l <= pos['sl']:
                     closed = True
                     exit_price = pos['sl']
-                    exit_reason = "Stop Loss"
+                    exit_reason = "Trailing Stop" if pos['secured'] else "Stop Loss"
                 else:
-                    # Partial Take-Profit (+3.0x ATR)
-                    if not pos['secured'] and h >= (entry_price + 3.0 * atr):
-                        partial_exit_price = entry_price + 3.0 * atr
-                        partial_size = pos['remaining_size'] / 2.0
+                    # Partial Take-Profit (+3.0x ATR): Bank 75% profit, leave 25% Runner
+                    if not pos['secured'] and h >= (entry_price + TP_ATR_MULT * atr):
+                        partial_exit_price = entry_price + TP_ATR_MULT * atr
+                        partial_size = pos['remaining_size'] * PARTIAL_TP_PCT
                         partial_pnl = (partial_exit_price - entry_price) * partial_size
                         partial_fee = partial_exit_price * partial_size * FEE_RATE
                         net_partial = partial_pnl - partial_fee
@@ -154,31 +164,38 @@ class OrderManager:
                         pos['remaining_size'] -= partial_size
                         pos['secured'] = True
                         
-                        # Lock SL slightly above entry (+1.0x ATR)
-                        pos['sl'] = max(pos['sl'], entry_price + 1.0 * atr)
+                        # Lock SL to Entry + 1.0x ATR for Runner
+                        pos['sl'] = max(pos['sl'], entry_price + RUNNER_SL_LOCK_ATR * atr)
 
-                    # Update Trailing Stop if secured
-                    if pos['secured']:
-                        pos['sl'] = max(pos['sl'], pos['peak_price'] - 2.0 * atr)
+                        # Conservative intrabar check: did low hit new SL?
+                        if l <= pos['sl']:
+                            closed = True
+                            exit_price = pos['sl']
+                            exit_reason = "Trailing Stop"
 
-                    # Breakeven SL (+2.0x ATR)
-                    if not pos['secured'] and h >= (entry_price + 2.0 * atr):
+                    # Dynamic Trailing Stop update for 25% Runner (Rides until trend physically reverses)
+                    if pos['secured'] and not closed:
+                        peak_gain_atr = (pos['peak_price'] - entry_price) / atr
+                        trail_dist = (1.4 * atr) if peak_gain_atr >= 4.5 else (RUNNER_TRAILING_ATR * atr)
+                        pos['sl'] = max(pos['sl'], pos['peak_price'] - trail_dist)
+
+                    # Breakeven SL (+1.5x ATR)
+                    if not pos['secured'] and not closed and h >= (entry_price + BE_ATR_MULT * atr):
                         pos['sl'] = max(pos['sl'], entry_price)
 
             # Check Short Position
-            elif not closed and direction == 'Short':
+            elif direction == 'Short':
                 pos['trough_price'] = min(pos['trough_price'], l)
 
-                # Stop Loss check
                 if h >= pos['sl']:
                     closed = True
                     exit_price = pos['sl']
-                    exit_reason = "Stop Loss"
+                    exit_reason = "Trailing Stop" if pos['secured'] else "Stop Loss"
                 else:
-                    # Partial Take-Profit (-3.0x ATR)
-                    if not pos['secured'] and l <= (entry_price - 3.0 * atr):
-                        partial_exit_price = entry_price - 3.0 * atr
-                        partial_size = pos['remaining_size'] / 2.0
+                    # Partial Take-Profit (-3.0x ATR): Bank 75% profit, leave 25% Runner
+                    if not pos['secured'] and l <= (entry_price - TP_ATR_MULT * atr):
+                        partial_exit_price = entry_price - TP_ATR_MULT * atr
+                        partial_size = pos['remaining_size'] * PARTIAL_TP_PCT
                         partial_pnl = (entry_price - partial_exit_price) * partial_size
                         partial_fee = partial_exit_price * partial_size * FEE_RATE
                         net_partial = partial_pnl - partial_fee
@@ -188,16 +205,27 @@ class OrderManager:
                         pos['remaining_size'] -= partial_size
                         pos['secured'] = True
 
-                        # Lock SL slightly below entry (-1.0x ATR)
-                        pos['sl'] = min(pos['sl'], entry_price - 1.0 * atr)
+                        # Lock SL to Entry - 1.0x ATR for Runner
+                        pos['sl'] = min(pos['sl'], entry_price - RUNNER_SL_LOCK_ATR * atr)
 
-                    # Update Trailing Stop if secured
-                    if pos['secured']:
-                        pos['sl'] = min(pos['sl'], pos['trough_price'] + 2.0 * atr)
+                        if h >= pos['sl']:
+                            closed = True
+                            exit_price = pos['sl']
+                            exit_reason = "Trailing Stop"
 
-                    # Breakeven SL (-2.0x ATR)
-                    if not pos['secured'] and l <= (entry_price - 2.0 * atr):
+                    # Dynamic Trailing Stop update for 25% Runner
+                    if pos['secured'] and not closed:
+                        trough_gain_atr = (entry_price - pos['trough_price']) / atr
+                        trail_dist = (1.4 * atr) if trough_gain_atr >= 4.5 else (RUNNER_TRAILING_ATR * atr)
+                        pos['sl'] = min(pos['sl'], pos['trough_price'] + trail_dist)
+
+                    # Breakeven SL (-1.5x ATR)
+                    if not pos['secured'] and not closed and l <= (entry_price - BE_ATR_MULT * atr):
                         pos['sl'] = min(pos['sl'], entry_price)
+
+            # 2. Pure Event-Driven Resolution (Zero Calendar Day Kills):
+            # Trades run strictly until Stop Loss or Dynamic Trailing Stop is hit.
+            # No arbitrary calendar timeout is permitted under Master Quant Rules.
 
             if closed:
                 rem_size = pos['remaining_size']
@@ -220,3 +248,4 @@ class OrderManager:
                 closed_trades.append(pos)
 
         return closed_trades
+

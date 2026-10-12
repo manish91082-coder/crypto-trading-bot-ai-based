@@ -1,0 +1,19 @@
+[
+  {
+    "symbol": "DOTUSDT",
+    "direction": "Long",
+    "entry_time": "2026-10-11 15:53:06",
+    "entry_timestamp": 1791714186.4183755,
+    "entry_price": 1.2299,
+    "position_size": 44.61440407903122,
+    "remaining_size": 44.61440407903122,
+    "risk_amount": 6.0,
+    "sl": 1.0954142857142857,
+    "atr": 0.08965714285714285,
+    "secured": false,
+    "peak_price": 1.2299,
+    "trough_price": 1.2299,
+    "realized_pnl": -0.04115344168260037,
+    "total_fee": 0.04115344168260037
+  }
+]

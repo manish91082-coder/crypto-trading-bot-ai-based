@@ -1,0 +1,5 @@
+profile_key,name,max_concurrent,thresholds,vol_accum,5y_trades,5y_win_rate,5y_profit_factor,5y_net_return_pct,5y_final_equity,5y_max_dd_pct,5y_sharpe,holdout_trades,holdout_win_rate,holdout_profit_factor,holdout_net_return_pct,holdout_max_dd_pct,holdout_sharpe
+base,Base Approved (Option 2 Baseline),4,0.48/0.52,0.8,393,48.6,2.14,259.89,35988.78,8.85,2.15,128,42.2,1.71,29.45,8.85,1.36
+path1_low_dd,Path 1: Diversified Low-Drawdown (MC=6),6,0.48/0.52,0.8,437,50.1,2.39,177.85,27784.93,4.78,2.16,140,45.0,2.13,31.63,4.78,1.77
+path2_balanced,"Path 2: Balanced Sweet-Spot Alpha (MC=5, Vol=0.75)",5,0.48/0.52,0.75,441,48.3,2.16,191.2,29119.85,6.62,2.0,140,43.6,2.01,33.51,6.54,1.68
+path3_high_freq,"Path 3: High-Frequency Alpha Maximizer (MC=5, Th=0.47/0.51)",5,0.47/0.51,0.8,729,44.9,1.68,278.15,37814.97,10.29,1.95,267,40.1,1.34,26.46,10.29,1.04

@@ -2,6 +2,8 @@ import os
 import ccxt
 import time
 from typing import Dict, Any, Optional
+from dotenv import load_dotenv
+load_dotenv()
 
 class BinanceExecutionClient:
     """
@@ -18,12 +20,15 @@ class BinanceExecutionClient:
         api_key: Optional[str] = None,
         api_secret: Optional[str] = None,
         use_testnet: bool = True,
-        is_futures: bool = True
+        is_futures: Optional[bool] = None
     ):
         self.api_key = api_key or os.getenv('BINANCE_API_KEY', '')
         self.api_secret = api_secret or os.getenv('BINANCE_API_SECRET', '')
         self.use_testnet = use_testnet
-        self.is_futures = is_futures
+        if is_futures is not None:
+            self.is_futures = is_futures
+        else:
+            self.is_futures = (os.getenv('TRADING_MODE', 'spot').lower() == 'futures')
         
         # Determine client configuration
         exchange_config = {
@@ -42,19 +47,32 @@ class BinanceExecutionClient:
             
         if self.use_testnet:
             self.exchange.set_sandbox_mode(True)
+
+        # Public market data feed for authentic real-time prices & deep historical OHLCV candles
+        if self.is_futures:
+            self.market_exchange = ccxt.binanceusdm({'enableRateLimit': True})
+        else:
+            self.market_exchange = ccxt.binance({'enableRateLimit': True})
             
         self.has_credentials = bool(self.api_key and self.api_secret)
 
     def fetch_ticker_price(self, symbol: str) -> float:
         """Fetch live real-time price from Binance (e.g. BTC/USDT)."""
         formatted_symbol = symbol if '/' in symbol else f"{symbol[:-4]}/{symbol[-4:]}"
-        ticker = self.exchange.fetch_ticker(formatted_symbol)
-        return float(ticker['last'])
+        try:
+            ticker = self.market_exchange.fetch_ticker(formatted_symbol)
+            return float(ticker['last'])
+        except Exception:
+            ticker = self.exchange.fetch_ticker(formatted_symbol)
+            return float(ticker['last'])
 
     def fetch_recent_ohlcv(self, symbol: str, timeframe: str = '1d', limit: int = 250) -> list:
-        """Fetch recent historical OHLCV candles from Binance."""
+        """Fetch recent historical OHLCV candles from Binance public market feed."""
         formatted_symbol = symbol if '/' in symbol else f"{symbol[:-4]}/{symbol[-4:]}"
-        return self.exchange.fetch_ohlcv(formatted_symbol, timeframe=timeframe, limit=limit)
+        try:
+            return self.market_exchange.fetch_ohlcv(formatted_symbol, timeframe=timeframe, limit=limit)
+        except Exception:
+            return self.exchange.fetch_ohlcv(formatted_symbol, timeframe=timeframe, limit=limit)
 
     def fetch_balance(self) -> Dict[str, float]:
         """Fetch balance from Testnet if keys provided, else return simulated paper wallet."""

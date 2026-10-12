@@ -1,0 +1,5 @@
+Setup_Grade,Trade_Count,Risk_Category,Avg_Size_Mult,Avg_Alloc_Pct,Avg_SL_Dist_Pct,Win_Rate_Pct,Unweighted_Return_Pct,Dynamic_PnL_Dollars,Dynamic_Profit_Factor,Avg_Win_Pct,Avg_Loss_Pct
+Grade A,5,Moderate-Low Risk (Standard Trend),1.0,14.7,6.81,20.0,12.83,1.94,2.9,19.83,-1.75
+Grade A+,1,Ultra-Low Risk (High Conviction),1.5,30.5,4.92,0.0,-3.49,-1.07,0.0,0.0,-3.49
+Grade B,26,High Risk (Bear Counter-Trend),0.47,5.2,10.46,46.2,123.36,8.08,3.73,16.06,-4.96
+Grade C,27,Very High Risk / Trap (Skip/Micro),0.15,1.2,13.51,40.7,-23.91,-0.22,0.79,6.57,-6.01

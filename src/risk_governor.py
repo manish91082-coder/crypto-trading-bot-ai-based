@@ -88,14 +88,27 @@ class RiskGovernor:
         stop_loss: float,
         open_trades: List[Dict],
         atr: Optional[float] = None,
-        avg_atr: Optional[float] = None
+        avg_atr: Optional[float] = None,
+        quality_multiplier: float = 1.0,
+        setup_grade: str = "Standard"
     ) -> RiskDecision:
         """
-        Evaluate entry candidacy against all institutional risk constraints.
-        Returns a RiskDecision containing approval status, sizing, and audit explanation.
+        Evaluate entry candidacy against all institutional risk constraints,
+        incorporating setup quality grading and dynamic position sizing.
         """
         self.update_capital(current_capital)
         
+        # 0. Constraint: Filter Toxic Traps / Grade C
+        if quality_multiplier <= 0.0:
+            return RiskDecision(
+                approved=False,
+                risk_pct=0.0,
+                risk_amount=0.0,
+                position_size=0.0,
+                current_drawdown=self.current_drawdown,
+                reason=f"REJECTED: Setup Quality {setup_grade} Filtered (High Risk Trap)"
+            )
+
         # 1. Constraint: Maximum Concurrent Positions
         if len(open_trades) >= self.max_concurrent_trades:
             return RiskDecision(
@@ -107,8 +120,9 @@ class RiskGovernor:
                 reason=f"REJECTED: Max concurrent trades ({self.max_concurrent_trades}) reached"
             )
             
-        # 2. Constraint: Dynamic Drawdown Risk Sizing
-        adjusted_risk_pct = self.get_dynamic_risk_pct(current_capital)
+        # 2. Constraint: Dynamic Drawdown Risk Sizing with Setup Quality Multiplier
+        base_damped_risk = self.get_dynamic_risk_pct(current_capital)
+        adjusted_risk_pct = base_damped_risk * quality_multiplier
         
         # 3. Constraint: Maximum Total Portfolio Exposure
         current_open_risk = sum(t.get('risk_amount', 0.0) for t in open_trades)
@@ -158,5 +172,6 @@ class RiskGovernor:
             risk_amount=risk_amount,
             position_size=position_size,
             current_drawdown=self.current_drawdown,
-            reason=f"APPROVED: Risk {adjusted_risk_pct*100:.2f}% (DD: {self.current_drawdown*100:.2f}%)"
+            reason=f"APPROVED: {setup_grade} Risk {adjusted_risk_pct*100:.2f}% (DD: {self.current_drawdown*100:.2f}%)"
         )
+
