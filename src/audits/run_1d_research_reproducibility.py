@@ -23,8 +23,12 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "src"
 sys.path.insert(0, str(SRC))
-from config import DATA_PROCESSED_DIR, DATA_RAW_DIR, LOGS_DIR, MODELS_1D_POOLED_DIR, SYMBOLS
+from config import (
+    DATA_PROCESSED_DIR, DATA_RAW_DIR, LOGS_DIR, MODELS_1D_POOLED_DIR, SYMBOLS,
+    MIN_WALK_FORWARD_OOS_AUC,
+)
 from audits.audit_data_integrity import certify_1d_data_integrity
+from audits.strategy_acceptance import evaluate_1d_research_gate
 
 RESEARCH_END = pd.Timestamp("2024-12-31")
 RAW_START = pd.Timestamp("2021-10-01")
@@ -227,8 +231,16 @@ def main() -> None:
             "folds": len(f), "periods": f.Period.tolist(),
             "train_samples": f.Train_Samples.astype(int).tolist(),
             "test_samples": f.Test_Samples.astype(int).tolist(),
+            "target_positive_rate": f.Target_Positive_Rate.astype(float).tolist(),
             "lr_oos_auc": f.LR_OOS_AUC.astype(float).tolist(),
             "xgb_oos_auc": f.XGB_OOS_AUC.astype(float).tolist(),
+            "xgb_probability_min": f.XGB_Prob_Min.astype(float).tolist(),
+            "xgb_probability_median": f.XGB_Prob_Median.astype(float).tolist(),
+            "xgb_probability_p90": f.XGB_Prob_P90.astype(float).tolist(),
+            "xgb_probability_max": f.XGB_Prob_Max.astype(float).tolist(),
+            "xgb_probability_count_ge_042": f.XGB_Prob_Count_GE_042.astype(int).tolist(),
+            "xgb_probability_count_ge_044": f.XGB_Prob_Count_GE_044.astype(int).tolist(),
+            "xgb_probability_count_ge_046": f.XGB_Prob_Count_GE_046.astype(int).tolist(),
         }
 
     model_hashes = {}
@@ -246,6 +258,7 @@ def main() -> None:
         "phase5_pooled_spot_daily_equity_044.csv",
         "phase5_pooled_futures_trades_044.csv",
         "phase5_pooled_futures_daily_equity_044.csv",
+        "phase5_model_probability_diagnostics.csv",
     )
     for capital in CAPITALS:
         label = f"capital_{int(capital)}"
@@ -267,6 +280,47 @@ def main() -> None:
             else:
                 raise FileNotFoundError(f"Missing required backtest output {source}")
         results[label] = reconcile(capital, dest)
+        metrics = pd.read_csv(dest / "phase5_pooled_research_metrics.csv")
+        results[label]["configuration_trade_counts"] = {
+            str(row["description"]): int(row["total_trades"])
+            for _, row in metrics.iterrows()
+        }
+        scores = pd.read_csv(dest / "phase5_model_probability_diagnostics.csv")
+        if len(scores) != len(SYMBOLS):
+            raise ValueError(f"{label}: expected score diagnostics for all symbols")
+        results[label]["probability_diagnostics"] = {
+            "symbols": int(len(scores)),
+            "long_max_probability_global": float(scores["Long_Prob_Max"].max()),
+            "short_max_probability_global": float(scores["Short_Prob_Max"].max()),
+            "long_counts_ge_042": int(scores["Long_Count_GE_42"].sum()),
+            "long_counts_ge_044": int(scores["Long_Count_GE_44"].sum()),
+            "long_counts_ge_046": int(scores["Long_Count_GE_46"].sum()),
+            "short_counts_ge_042": int(scores["Short_Count_GE_42"].sum()),
+            "short_counts_ge_044": int(scores["Short_Count_GE_44"].sum()),
+            "short_counts_ge_046": int(scores["Short_Count_GE_46"].sum()),
+            "sha256": sha(dest / "phase5_model_probability_diagnostics.csv"),
+        }
+
+    configuration_counts = {
+        scenario: details["configuration_trade_counts"]
+        for scenario, details in results.items()
+    }
+    selected_spot_trades = {
+        scenario: details["modes"]["spot"]["closed_trades"]
+        for scenario, details in results.items()
+    }
+    strategy_gate = evaluate_1d_research_gate(
+        fold_auc_by_direction={
+            direction: details["xgb_oos_auc"]
+            for direction, details in folds.items()
+        },
+        selected_spot_trades_by_capital=selected_spot_trades,
+        configuration_trade_counts_by_scenario=configuration_counts,
+        minimum_oos_auc=MIN_WALK_FORWARD_OOS_AUC,
+    )
+    (REPORT / "strategy_gate.json").write_text(
+        json.dumps(strategy_gate, indent=2, sort_keys=True), encoding="utf-8"
+    )
 
     vault_after = tree_hashes(VAULT)
     if vault_before != vault_after:
@@ -277,8 +331,10 @@ def main() -> None:
         for package in ("numpy", "pandas", "scikit-learn", "scipy", "xgboost", "joblib")
     }
     manifest = {
-        "status": "PASS",
-        "scope": "research replay/accounting reconciliation only; not live readiness or OOS profitability certification",
+        "reproducibility_status": "PASS",
+        "strategy_acceptance_status": strategy_gate["research_gate_status"],
+        "full_strategy_acceptance": strategy_gate["full_strategy_acceptance"],
+        "scope": "research-only replay/accounting; in-sample Step 5 replay; no live readiness or untouched holdout profit claim",
         "git_sha": os.environ.get("GITHUB_SHA", "unknown"),
         "research_end": str(RESEARCH_END.date()),
         "holdout_range": "2025-01-01 through 2026-09-30",
@@ -287,18 +343,26 @@ def main() -> None:
         "raw_data_structural_audit": "PASS",
         "research_cutoff": "PASS",
         "walk_forward_oos_folds": folds,
+        "strategy_gate": strategy_gate,
         "model_artifacts": model_hashes,
         "package_versions": versions,
         "vault_hashes_before": vault_before,
         "vault_hashes_after": vault_after,
         "vault_unchanged": True,
         "scenario_accounting": results,
+        "live_readiness": "NO-GO",
+        "live_signing": "BLOCKED",
+        "public_broadcast": "BLOCKED",
     }
     (REPORT / "manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True, allow_nan=False), encoding="utf-8")
     with (REPORT / "sha256_manifest.txt").open("w", encoding="utf-8") as out:
         for path in sorted(p for p in REPORT.rglob("*") if p.is_file() and p.name != "sha256_manifest.txt"):
             out.write(f"{sha(path)}  {path.relative_to(REPORT).as_posix()}\n")
-    print("\n[FINAL] Research reproducibility/accounting passed; this is not a profitability or live-readiness claim.")
+    print("\n[DIAGNOSTIC COMPLETE] Reproducibility/accounting: PASS")
+    print(f"[STRATEGY GATE] {strategy_gate['research_gate_status']}")
+    for reason in strategy_gate["reasons"]:
+        print(f"  - {reason}")
+    print("[LIVE READINESS] NO-GO; holdout/live safety gates are not certified.")
 
 
 if __name__ == "__main__":
