@@ -15,6 +15,7 @@ from config import (
     DATA_PROCESSED_DIR,
     MODELS_DIR,
     MODELS_1D_POOLED_DIR,
+    LOGS_DIR,
     SYMBOLS,
     FEATURE_COLS,
     PURGE_WINDOW_DAYS,
@@ -117,8 +118,25 @@ def run_purged_walk_forward_evaluation(pooled_df: pd.DataFrame, direction: str =
         print(f"  [{name}] Train: {len(X_train):>5} | Test: {len(X_test):>4} | LR AUC: {lr_auc:.3f} | XGB OOS AUC: {xgb_auc:.3f} | Conf>0.55 Prec: {high_conf_prec*100:.1f}% ({high_conf_mask.sum()} trades)")
 
     df_folds = pd.DataFrame(fold_results)
-    mean_xgb_auc = df_folds['XGB_OOS_AUC'].mean()
-    mean_lr_auc = df_folds['LR_OOS_AUC'].mean()
+    if len(df_folds) != len(test_periods):
+        observed = df_folds["Period"].tolist() if "Period" in df_folds.columns else []
+        raise RuntimeError(
+            f"{direction} walk-forward incomplete: expected {len(test_periods)} folds, "
+            f"got {len(df_folds)} ({observed}). No incomplete CV result may be accepted."
+        )
+    metric_columns = ["LR_OOS_AUC", "XGB_OOS_AUC"]
+    if df_folds[metric_columns].isna().any().any() or not np.isfinite(df_folds[metric_columns].to_numpy(dtype=float)).all():
+        raise RuntimeError(f"{direction} walk-forward contains non-finite AUC results")
+    if (df_folds[["Train_Samples", "Test_Samples"]] <= 0).any().any():
+        raise RuntimeError(f"{direction} walk-forward contains empty train/test folds")
+
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
+    fold_path = LOGS_DIR / f"step4_walkforward_{direction.lower()}.csv"
+    df_folds.to_csv(fold_path, index=False)
+    print(f"[EVIDENCE] Saved all {len(df_folds)} {direction} walk-forward folds to {fold_path.name}")
+
+    mean_xgb_auc = df_folds["XGB_OOS_AUC"].mean()
+    mean_lr_auc = df_folds["LR_OOS_AUC"].mean()
     print(f"\n=> MEAN OOS AUC across all folds: XGBoost = {mean_xgb_auc:.3f} | Logistic Regression = {mean_lr_auc:.3f}")
     return df_folds
 
