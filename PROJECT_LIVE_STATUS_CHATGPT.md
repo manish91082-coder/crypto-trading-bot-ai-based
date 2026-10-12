@@ -66,17 +66,17 @@
 ## 5. Current checkpoint
 
 - **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
-- **Current verified main HEAD before this status refresh:** 6f8765f6c18ecfdfee5fec7c3b37d3f7f4f4826f.
-- **Merged PR #3:** reproducibility diagnostics, merge SHA 3ec4226a60da62a4751bcd409dccd2e49b2ba8d5.
-- **Merged PR #4:** candidate/production model separation, merge SHA 6f8765f6c18ecfdfee5fec7c3b37d3f7f4f4826f.
-- **Latest code validation before merge:** PR-head Actions run 38264997404 completed successfully on SHA 7ccc6dcf032033c8eb6d05c0d3e713b56994f592, including all focused regression tests and the full research-only reproducibility/accounting runner. Exact artifact ZIP SHA256: 7d8dc5e3b7c2110875620a299a291a17b6db4ca5dbf747bbfa5b6b962824fc33. All 24 tests passed.
-- **Post-merge test:** Actions run 38265233191 targets merge SHA 6f8765f6c18ecfdfee5fec7c3b37d3f7f4f4826f. At the moment of this checkpoint refresh it was still marked in progress; do not claim post-merge smoke green until final conclusion is checked.
-- **Model isolation result:** Step 4 generates candidate files only under `models/1d_pooled_candidate` and writes a hash-backed candidate manifest. Step 5 and the reproducibility runner use candidate files only. Research workflow logs confirmed production directory untouched.
-- **Model acceptance result:** candidate status is **REJECTED** because Long fold 2 AUC = 0.416937, Long fold 4 = 0.502338, Short fold 3 = 0.506740, each below the documented >0.52 criterion. Candidate model probabilities also remain below the minimum 0.42 entry threshold; all six Step 5 configurations produced zero trades in both $120 and $10,000 research replays.
-- **Production execution gate:** PaperExecutionEngine requires a verified `production_model_manifest.json` with PROMOTED status, strategy acceptance PASS, all mandatory validation gates PASS, exact feature order and matching SHA256 hashes. No approved production manifest is currently verified. The paper engine therefore blocks startup until a genuinely accepted production bundle exists. This is intentional safety behavior, not live readiness.
-- **1D status:** NOT ACCEPTED; strategy gate FAIL. This work improves reproducibility and prevents rejected candidates from flowing into execution; it does not create a profitable model.
-- **4H:** NOT STARTED. **$10,000 live readiness:** NO-GO. **Live signing/public broadcast:** BLOCKED.
-- **Next exact action:** confirm the post-merge smoke run result and its exact SHA. Then continue 1D-only research: inspect training target vs strategy economics (partial TP, break-even stop, fees and net return) using the research period; do not reduce thresholds by guesswork or retune against the already examined holdout.
+- **Main base SHA for current slice:** 61c316bd6da647409ad8e83473ad3785ce5502f8.
+- **Merged model-promotion safety:** PR #4 merge commit 6f8765f6c18ecfdfee5fec7c3b37d3f7f4f4826; post-merge regression workflow passed on merge SHA and the subsequent main status update SHA. Step 4 writes to research candidates, not production. Paper engine requires a valid promoted manifest and SHA-verified model files.
+- **1D strategy remains FAIL / live readiness NO-GO:** candidate scores remain below the 0.42 floor in the final-model research replay, all six final-model backtest configs produced zero trades, and three walk-forward XGBoost folds fail the documented >0.52 AUC criterion.
+- **New issue confirmed in both Step 5 and paper engine:** in the non-bullish BTC regime, an unconditional `p_long >= 0.42` branch bypassed configured thresholds 0.44/0.46. This made the "threshold" comparisons dishonest in that regime. The current branch introduces a shared hard-threshold gate: every regime must pass the configured threshold; the bearish regime additionally requires non-negative relative momentum or the documented pullback/stop-distance/volume confluence.
+- **Current branch:** `research/1d-oos-economic-replay`, PR not yet opened while exact-head validation is prepared.
+- **OOS economics work:** Step 4 now writes fold-specific XGBoost predictions for every feature-complete timestamp; only resolved labels are used for AUC. A new research-only replay uses those fold-specific OOS scores, the existing Step 5 spot simulator, strict per-fold price cutoffs, and no entries in the last 14 fold days. It evaluates only the existing thresholds 0.42/0.44/0.46 and capital scenarios 120/10,000, does not choose a winner, and does not use holdout data.
+- **Cost/claim limitations:** the economic diagnostic includes the Step 5 taker-fee model but not dynamic slippage, market impact, latency or partial-fill costs. It must not be called a complete net-profit acceptance or live readiness test.
+- **Holdout rule:** 2025-01-01 through 2026-09-30 remains excluded from any fitting, OOS features/labels, model selection, threshold selection or economic replay. The raw reader in the new diagnostic stops at each fold's end before parsing later OHLCV fields.
+- **Acceptance:** pending PR exact-head regression suite and research pipeline. Even if the pipeline executes successfully, strategy acceptance remains FAIL unless OOS evidence meets stated criteria; green Actions only proves deterministic execution/diagnostic integrity.
+- **4H:** NOT STARTED. **USD 10,000 live readiness:** NO-GO. **Live signing/public broadcast:** BLOCKED.
+- **Next exact action:** open the PR, inspect all focused tests and the completed OOS economic artifact, reconcile any simulation-accounting failures, and then decide the next research correction based only on recorded evidence.
 
 ## 6. Append-only work log
 
@@ -183,3 +183,12 @@
 - Step 5 replay from candidate models produced zero trades in all six variants at both $120 and $10,000. Strategy gate remains FAIL, and no threshold was changed.
 - Paper engine now refuses models unless an explicit production manifest proves promotion status, strategy acceptance PASS, all required gates PASS, exact feature order, and model SHA256 integrity. No such accepted manifest is currently verified.
 - At this status update, post-merge action `38265233191` was still in progress; final run status remains to be checked separately.
+
+### 2026-10-12 — add strict fold-isolated 1D OOS economic replay
+- Added fold-specific OOS score ledgers from each expanding-window training model. Predictions are exported for every feature-complete timestamp in the fold; AUC/precision calculations remain limited to resolved labels.
+- Added `src/audits/oos_economic_replay.py`: for each fold, it streams raw OHLCV only through that fold end, reconstructs causal shared features, verifies ATR_14 and Vol_Accum_Ratio parity against the OOS score ledger, and runs Step 5's long-only spot execution simulator.
+- Signal entries are limited to the fold start through fold-end-minus-14-days, so no new signal requires prices from a later test fold. OOS threshold rows are reported individually at existing 0.42, 0.44, 0.46 settings; thresholds are not tuned.
+- Per-fold, threshold and capital ledgers save trade outcomes joined to resolved target labels, daily MTM equity, net realized PnL per the Step 5 taker-fee model, end-of-fold open positions and accounting identity error.
+- Diagnostic explicitly excludes dynamic slippage, market impact, latency and partial-fill cost. It cannot certify formal after-all-costs profitability or live readiness.
+- Fixed a logic defect in both Step 5 and the paper engine: the bearish-regime unconditional 0.42 branch bypassed configured 0.44/0.46 thresholds. Both now use `src/strategy_signals.py` so the configured threshold is a hard floor; bearish entries additionally require relative momentum or documented confluence.
+- Added focused regression tests for hard-threshold behavior and fold/holdout boundaries. Exact-head CI is pending.
