@@ -32,7 +32,9 @@ SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'XRPUSDT', 'ADAUSDT', 'DO
 # =====================================================================
 # UNIFIED QUANT MASTER RULES & EXECUTION PARAMETERS (MASTER LOCKS)
 # =====================================================================
-INITIAL_CAPITAL = 120.0
+INITIAL_CAPITAL = float(os.getenv("INITIAL_CAPITAL", "120.0"))
+if not (INITIAL_CAPITAL > 0 and __import__("math").isfinite(INITIAL_CAPITAL)):
+    raise ValueError("INITIAL_CAPITAL must be finite and greater than zero")
 BINANCE_TAKER_FEE = 0.00075  # 0.075% taker fee with BNB discount
 
 # Barrier Multipliers (ATR-based)
