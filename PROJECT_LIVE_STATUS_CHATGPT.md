@@ -66,17 +66,17 @@
 ## 5. Current checkpoint
 
 - **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
-- **Current verified main HEAD before this status refresh:** 3ec4226a60da62a4751bcd409dccd2e49b2ba8d5.
-- **Merged PR #3:** 1D research reproducibility and diagnostic tooling, merge commit 3ec4226a60da62a4751bcd409dccd2e49b2ba8d5. The post-merge focused workflow on that merge SHA passed (Actions run 38263832075).
-- **PR-head regression evidence:** all 15 focused tests passed on e1ec7a9067a40c471fdec16de32aa2d1708acab6 (run 38263440968). An earlier run on 75210c2740d0323bda0dff1afce1ce749d7c8459 failed because a test fixture described all AUC values as passing while expecting failure; the fixture was corrected to include 0.51, then tests passed on the final PR head. This failure is recorded, not concealed.
-- **Research workflow:** full research-only run passed execution, preflight, fold completeness, accounting reconciliation, artifact upload and vault hash checks on PR head e1ec7a9067a40c471fdec16de32aa2d1708acab6 (Actions run 38263441166). Exact artifact ZIP digest: sha256:5b72116543e9d0dbb6fe83fe4006e1549f05d5a0c4082d4222bde22925440e79.
-- **Strategy outcome remains FAIL:** both USD 120 and USD 10,000 research scenarios produced 0 trades in all Step 5 configurations (spot and futures thresholds 0.42, 0.44, 0.46). Final equity stayed equal to starting capital; zero PnL here is not a profitability result.
-- **Evidence for zero trades:** final research-period model score diagnostics over 10 symbols show global max Long probability 0.3660297 and max Short probability 0.3386222; both are below the lowest configured entry threshold 0.42. All counts at or above 0.42, 0.44 and 0.46 are zero.
-- **Walk-forward gate from repository's documented criterion:** each of four folds for each direction must exceed 0.52 XGBoost OOS AUC. Actual Long folds: 0.6331, 0.4169, 0.5421, 0.5023. Actual Short folds: 0.5288, 0.6177, 0.5067, 0.5786. Long fails two folds and Short fails one fold. This model is not accepted.
-- **Holdout safety:** 2025-01-01 through 2026-09-30 holdout was not used by the research-only workflow; the 11 committed vault CSVs had identical SHA256 hashes before and after.
-- **Scope interpretation:** the merged workflow's reproducibility/accounting result is PASS, while its strategy acceptance result is FAIL. Full strategy acceptance remains NOT CERTIFIED because the existing holdout was already previously examined and live gates are not satisfied.
-- **Next exact action:** investigate target semantics/model quality using research data only. Do not simply reduce entry thresholds: model scores are below all configured thresholds and walk-forward AUC is unstable. Compare the current TP-before-SL/BE censored label against actual execution cashflows/fees and build a research-only OOS trade-return diagnostic; maintain the sealed holdout.
-- **4H:** NOT STARTED. **USD 10,000 live readiness:** NO-GO. **Live signing and public broadcast:** BLOCKED.
+- **Base main SHA for this work:** 10b22b80303a059f833768097db9a7e4eee3fd03.
+- **Current branch:** fix/1d-model-promotion-gate.
+- **Last accepted code/tools:** PR #3 merged at 3ec4226a60da62a4751bcd409dccd2e49b2ba8d5. Its post-merge regression test run passed; its research workflow and artifact proved reproducibility, but the strategy result is FAIL.
+- **Strategy status remains FAIL:** all six Step 5 variants produced zero trades in both $120 and $10,000 scenarios. Global candidate score maxima were Long 0.3660 and Short 0.3386, below the lowest 0.42 threshold. XGBoost OOS AUC folds fail the documented all-fold >0.52 acceptance rule.
+- **Current slice: candidate/production separation.** Step 4 now writes into a distinct research-only directory `models/1d_pooled_candidate`, records candidate SHA256/data hashes/fold AUC/features/dependency versions in `candidate_model_manifest.json`, and never writes candidate models into production directory `models/1d_pooled`. Candidate status is REJECTED if any fold does not exceed the configured OOS AUC floor; even if all folds pass, status remains PENDING_HOLDOUT_AND_REVIEW, never auto-promoted.
+- **Research replay:** Step 5 and the reproducibility runner now load candidate files only; they require a candidate manifest and verify that its type is research_candidate. This retains diagnostic replay without allowing research outputs to overwrite production models.
+- **Paper execution safety:** `PaperExecutionEngine` now calls `load_verified_production_model_paths` before loading models. It requires `production_model_manifest.json`, promotion_status PROMOTED, strategy_acceptance_status PASS, exact feature-column order, PASS on all required validation gates, and SHA256 matches for both model files. A missing or rejected manifest stops startup. There is currently no known promoted manifest; paper engine should therefore stay blocked until all real gates pass and an approved bundle is actually created.
+- **Regression coverage:** added nine tests for missing/rejected/pending production manifests, all-gates requirement, feature schema drift, hash tampering, verified bundle loading, and candidate AUC fold acceptance/rejection.
+- **1D status:** NOT ACCEPTED. Model promotion safeguard is pending exact-head CI. Do not tune thresholds to generate trades without evidence.
+- **4H:** NOT STARTED. **USD 10,000 live readiness:** NO-GO. **Live signing/public broadcast:** BLOCKED.
+- **Next exact action:** run the focused tests and research workflow on the current PR head; inspect outputs to confirm that candidate models are kept separate and manifest correctly rejects the present AUC scores. Merge only if these tests pass. Strategy acceptance remains FAIL independent of green CI.
 
 ## 6. Append-only work log
 
@@ -158,3 +158,11 @@
 - A test fixture error in revision 75210c2740d0323bda0dff1afce1ce749d7c8459 caused one strategy-gate regression test to fail; it was corrected at e1ec7a9067a40c471fdec16de32aa2d1708acab6 and all 15 tests passed.
 - The earlier finished research run used research rows through 2024-12-31 and verified the separate vault CSV hashes were unchanged. It did not claim OOS profitability or live readiness.
 - Next: inspect label/execution economic equivalence and create a research-only OOS net-return diagnostic. Do not lower thresholds or retune on the sealed holdout without evidence.
+
+### 2026-10-12 — isolate unaccepted model candidates from paper execution
+- Added `MODELS_1D_CANDIDATE_DIR = models/1d_pooled_candidate`; Step 4 writes candidate models here and leaves `models/1d_pooled` untouched.
+- Step 4 writes a candidate manifest with model-file hashes, processed feature/label hashes, feature schema, training date span, horizon/purge values, package versions, fold AUCs and gate reasons. Any fold <= MIN_WALK_FORWARD_OOS_AUC yields `promotion_status=REJECTED`; an all-fold pass yields only `PENDING_HOLDOUT_AND_REVIEW`, never an automatic promotion.
+- Step 5 and the research-only runner now use candidate paths exclusively, allowing diagnostics without overwriting model files used by paper execution.
+- Added `src/model_provenance.py`; paper engine now loads production models only when `production_model_manifest.json` explicitly marks the bundle PROMOTED, strategy acceptance PASS, exact feature order, all required gates PASS and both model SHA256 digests valid.
+- Added nine focused model-provenance/promotion tests. The current known candidate set fails the research gate, and no promoted production manifest is known. Blocking paper-engine startup in this state is intentional, not a claim that paper/trading is ready.
+- This slice is on branch `fix/1d-model-promotion-gate`; exact-head CI has not yet been verified. No 4H changes made.
