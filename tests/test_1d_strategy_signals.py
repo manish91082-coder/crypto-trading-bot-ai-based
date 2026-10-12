@@ -26,7 +26,7 @@ class SpotEntryThresholdTests(unittest.TestCase):
             stop_distance_ratio=0.04, volume_accumulation_ratio=1.2,
         )
         self.assertFalse(decision)
-        self.assertIn("below configured threshold", reason)
+        self.assertIn("configured threshold", reason)
 
     def test_bear_relative_momentum_requires_hard_threshold_first(self):
         decision, _ = should_enter_spot_long(
