@@ -44,6 +44,7 @@ def load_data_and_predict(threshold_long: float, threshold_short: float):
     short_model = joblib.load(short_model_path)
     
     dfs = []
+    score_diagnostics = []
     prices_ohlc = {s: {} for s in SYMBOLS}
     
     for sym in SYMBOLS:
@@ -68,14 +69,42 @@ def load_data_and_predict(threshold_long: float, threshold_short: float):
             }
             
         clean_df = df.dropna(subset=FEATURE_COLS).copy()
+        if clean_df.empty:
+            raise RuntimeError(f"{sym}: no rows remain after feature warm-up/NaN filtering")
         p_long = long_model.predict_proba(clean_df[FEATURE_COLS])[:, 1]
         p_short = short_model.predict_proba(clean_df[FEATURE_COLS])[:, 1]
-        
+        if not np.isfinite(p_long).all() or not np.isfinite(p_short).all():
+            raise RuntimeError(f"{sym}: model emitted non-finite probabilities")
+
+        diagnostic = {
+            'Symbol': sym,
+            'Rows_With_Valid_Features': int(len(clean_df)),
+        }
+        for side, values in (('Long', p_long), ('Short', p_short)):
+            diagnostic[f'{side}_Prob_Min'] = float(np.min(values))
+            diagnostic[f'{side}_Prob_Median'] = float(np.median(values))
+            diagnostic[f'{side}_Prob_P90'] = float(np.quantile(values, 0.90))
+            diagnostic[f'{side}_Prob_Max'] = float(np.max(values))
+            for threshold in (0.42, 0.44, 0.46, 0.52, 0.55):
+                diagnostic[f'{side}_Count_GE_{int(round(threshold*100)):02d}'] = int((values >= threshold).sum())
+        score_diagnostics.append(diagnostic)
+
         clean_df['p_long'] = p_long
         clean_df['p_short'] = p_short
         clean_df['Symbol'] = sym
         dfs.append(clean_df)
         
+    diagnostics_df = pd.DataFrame(score_diagnostics)
+    if len(diagnostics_df) != len(SYMBOLS):
+        raise RuntimeError(f"Expected probability diagnostics for {len(SYMBOLS)} symbols; got {len(diagnostics_df)}")
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
+    diagnostics_path = LOGS_DIR / "phase5_model_probability_diagnostics.csv"
+    diagnostics_df.to_csv(diagnostics_path, index=False)
+    print(f"[EVIDENCE] Saved model probability diagnostics to {diagnostics_path.name}")
+    for side in ("Long", "Short"):
+        count_columns = [f"{side}_Count_GE_{int(round(threshold*100)):02d}" for threshold in (0.42, 0.44, 0.46, 0.52, 0.55)]
+        print(f"[SCORE DIAGNOSTIC] {side}: max probability across symbols={diagnostics_df[f'{side}_Prob_Max'].max():.4f}; counts >= 0.42/0.44/0.46/0.52/0.55={ [int(diagnostics_df[col].sum()) for col in count_columns] }")
+
     master_df = pd.concat(dfs, ignore_index=True)
     master_df.sort_values('timestamp', inplace=True)
     master_df.reset_index(drop=True, inplace=True)
