@@ -70,13 +70,24 @@ def run_purged_walk_forward_evaluation(pooled_df: pd.DataFrame, direction: str =
         dt_start = pd.to_datetime(t_start)
         dt_end = pd.to_datetime(t_end)
 
-        # Train: all data strictly before (dt_start - PURGE_WINDOW_DAYS)
+        # Train: all data strictly before (dt_start - PURGE_WINDOW_DAYS).
         train_cutoff = dt_start - pd.Timedelta(days=PURGE_WINDOW_DAYS)
-        train_data = pooled_df[pooled_df['timestamp'] < train_cutoff].dropna(subset=FEATURE_COLS + [label_col])
-        test_data = pooled_df[(pooled_df['timestamp'] >= dt_start) & (pooled_df['timestamp'] <= dt_end)].dropna(subset=FEATURE_COLS + [label_col])
+        train_data = pooled_df[pooled_df["timestamp"] < train_cutoff].dropna(
+            subset=FEATURE_COLS + [label_col]
+        )
+        # For OOS prediction and economic replay, score every feature-complete
+        # timestamp in the fold. Only resolved labels contribute to AUC/precision.
+        test_features = pooled_df[
+            (pooled_df["timestamp"] >= dt_start) &
+            (pooled_df["timestamp"] <= dt_end)
+        ].dropna(subset=FEATURE_COLS).copy()
+        test_labeled = test_features.dropna(subset=[label_col]).copy()
 
-        X_train, y_train = train_data[FEATURE_COLS], train_data[label_col]
-        X_test, y_test = test_data[FEATURE_COLS], test_data[label_col]
+        X_train = train_data[FEATURE_COLS]
+        y_train = train_data[label_col]
+        X_test_all = test_features[FEATURE_COLS]
+        labeled_mask = test_features[label_col].notna().to_numpy()
+        y_test = test_features.loc[labeled_mask, label_col].astype(int)
 
         try:
             validate_binary_target(y_train, f"{name} training fold")
@@ -84,12 +95,14 @@ def run_purged_walk_forward_evaluation(pooled_df: pd.DataFrame, direction: str =
         except ValueError as exc:
             print(f"  [{name}] SKIPPED: {exc}")
             continue
+        if test_features.empty or len(test_labeled) != int(labeled_mask.sum()):
+            raise RuntimeError(f"{name}: OOS feature/label alignment failed")
 
         # 1. Baseline Model: Logistic Regression
         lr = LogisticRegression(max_iter=500, C=0.1, random_state=42)
         lr.fit(X_train, y_train)
-        lr_probs = lr.predict_proba(X_test)[:, 1]
-        lr_auc = roc_auc_score(y_test, lr_probs)
+        lr_probs_all = lr.predict_proba(X_test_all)[:, 1]
+        lr_auc = roc_auc_score(y_test, lr_probs_all[labeled_mask])
 
         # 2. Shallow Regularized XGBoost (Capacity controlled: Depth 2, L2=5.0)
         xgb_model = xgb.XGBClassifier(
@@ -100,37 +113,83 @@ def run_purged_walk_forward_evaluation(pooled_df: pd.DataFrame, direction: str =
             subsample=0.8,
             colsample_bytree=0.8,
             random_state=42,
-            eval_metric='logloss',
-            n_jobs=1
+            eval_metric="logloss",
+            n_jobs=1,
         )
         xgb_model.fit(X_train, y_train)
-        xgb_probs = xgb_model.predict_proba(X_test)[:, 1]
-        xgb_auc = roc_auc_score(y_test, xgb_probs)
-        if not np.isfinite(xgb_probs).all():
-            raise RuntimeError(f"{name}: XGBoost produced non-finite OOS probabilities")
+        xgb_probs_all = xgb_model.predict_proba(X_test_all)[:, 1]
+        if not np.isfinite(lr_probs_all).all() or not np.isfinite(xgb_probs_all).all():
+            raise RuntimeError(f"{name}: model produced non-finite OOS probabilities")
+        xgb_probs_labeled = xgb_probs_all[labeled_mask]
+        xgb_auc = roc_auc_score(y_test, xgb_probs_labeled)
 
-        high_conf_mask = (xgb_probs > 0.55)
-        high_conf_prec = precision_score(y_test[high_conf_mask], np.ones(high_conf_mask.sum()), zero_division=0) if high_conf_mask.sum() > 0 else 0.0
+        # Label precision is calculated only where an outcome is resolved. Probability
+        # distributions/counts describe all feature-complete OOS samples.
+        high_conf_mask_all = xgb_probs_all > 0.55
+        high_conf_mask_labeled = xgb_probs_labeled > 0.55
+        high_conf_prec = (
+            precision_score(
+                y_test[high_conf_mask_labeled],
+                np.ones(int(high_conf_mask_labeled.sum())),
+                zero_division=0,
+            )
+            if high_conf_mask_labeled.sum() > 0 else 0.0
+        )
+
+        LOGS_DIR.mkdir(parents=True, exist_ok=True)
+        fold_slug = name.lower().replace(" ", "_")
+        prediction_path = LOGS_DIR / (
+            f"step4_oos_predictions_{direction.lower()}_{fold_slug}.csv"
+        )
+        prediction_columns = [
+            "timestamp", "Symbol", "open", "high", "low", "close", "volume",
+            "ATR_14", "Vol_Accum_Ratio", label_col,
+        ]
+        missing_prediction_columns = set(prediction_columns).difference(test_features.columns)
+        if missing_prediction_columns:
+            raise RuntimeError(
+                f"{name}: OOS economic replay missing columns: "
+                f"{sorted(missing_prediction_columns)}"
+            )
+        prediction_frame = test_features[prediction_columns].copy()
+        prediction_frame["Fold"] = name
+        prediction_frame["Direction"] = direction
+        prediction_frame["OOS_Probability"] = xgb_probs_all
+        prediction_frame.to_csv(prediction_path, index=False)
+        print(
+            f"[EVIDENCE] Saved {len(prediction_frame)} feature-complete {direction} OOS "
+            f"predictions (resolved labels={len(test_labeled)}) to {prediction_path.name}"
+        )
 
         fold_results.append({
-            'Period': name,
-            'Train_Samples': len(X_train),
-            'Test_Samples': len(X_test),
-            'Target_Positive_Rate': float(y_test.mean()),
-            'LR_OOS_AUC': lr_auc,
-            'XGB_OOS_AUC': xgb_auc,
-            'XGB_Prob_Min': float(np.min(xgb_probs)),
-            'XGB_Prob_Median': float(np.median(xgb_probs)),
-            'XGB_Prob_P90': float(np.quantile(xgb_probs, 0.90)),
-            'XGB_Prob_Max': float(np.max(xgb_probs)),
-            'XGB_Prob_Count_GE_042': int((xgb_probs >= 0.42).sum()),
-            'XGB_Prob_Count_GE_044': int((xgb_probs >= 0.44).sum()),
-            'XGB_Prob_Count_GE_046': int((xgb_probs >= 0.46).sum()),
-            'High_Conf_Trades': int(high_conf_mask.sum()),
-            'High_Conf_Precision': float(high_conf_prec)
+            "Period": name,
+            "Train_Samples": len(X_train),
+            "Test_Samples": len(test_labeled),
+            "Test_Feature_Rows": len(test_features),
+            "Target_Positive_Rate": float(y_test.mean()),
+            "LR_OOS_AUC": lr_auc,
+            "XGB_OOS_AUC": xgb_auc,
+            "XGB_Prob_Min": float(np.min(xgb_probs_all)),
+            "XGB_Prob_Median": float(np.median(xgb_probs_all)),
+            "XGB_Prob_P90": float(np.quantile(xgb_probs_all, 0.90)),
+            "XGB_Prob_Max": float(np.max(xgb_probs_all)),
+            "XGB_Prob_Count_GE_042": int((xgb_probs_all >= 0.42).sum()),
+            "XGB_Prob_Count_GE_044": int((xgb_probs_all >= 0.44).sum()),
+            "XGB_Prob_Count_GE_046": int((xgb_probs_all >= 0.46).sum()),
+            "High_Conf_Trades": int(high_conf_mask_all.sum()),
+            "High_Conf_Labeled_Samples": int(high_conf_mask_labeled.sum()),
+            "High_Conf_Precision": float(high_conf_prec),
         })
 
-        print(f"  [{name}] Train: {len(X_train):>5} | Test: {len(X_test):>4} | Target+: {y_test.mean()*100:.1f}% | LR AUC: {lr_auc:.3f} | XGB AUC: {xgb_auc:.3f} | P50/P90/Max: {np.median(xgb_probs):.3f}/{np.quantile(xgb_probs,0.90):.3f}/{np.max(xgb_probs):.3f} | N>=.42/.44/.46: {(xgb_probs>=.42).sum()}/{(xgb_probs>=.44).sum()}/{(xgb_probs>=.46).sum()}")
+        print(
+            f"  [{name}] Train: {len(X_train):>5} | AUC-labeled: {len(test_labeled):>4} "
+            f"| feature rows: {len(test_features):>4} | Target+: {y_test.mean()*100:.1f}% "
+            f"| LR AUC: {lr_auc:.3f} | XGB AUC: {xgb_auc:.3f} "
+            f"| P50/P90/Max: {np.median(xgb_probs_all):.3f}/"
+            f"{np.quantile(xgb_probs_all, 0.90):.3f}/{np.max(xgb_probs_all):.3f} "
+            f"| N>=.42/.44/.46: {(xgb_probs_all>=.42).sum()}/"
+            f"{(xgb_probs_all>=.44).sum()}/{(xgb_probs_all>=.46).sum()}"
+        )
 
     df_folds = pd.DataFrame(fold_results)
     if len(df_folds) != len(test_periods):

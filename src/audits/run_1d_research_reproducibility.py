@@ -215,9 +215,72 @@ def main() -> None:
     samples = research_samples()
     (REPORT / "research_sample_counts.json").write_text(json.dumps(samples, indent=2, sort_keys=True), encoding="utf-8")
 
-    run("Step 4 purged walk-forward training",
+    run("Step 4 purged walk-forward training and OOS prediction export",
         ROOT / "src/pipeline_1d/step4_pooled_walkforward_training.py",
         REPORT / "logs/step4.log", env_base)
+
+    # Archive every fold-specific prediction row used by the economic replay.
+    prediction_archive = REPORT / "step4_oos_predictions"
+    prediction_archive.mkdir(parents=True, exist_ok=True)
+    fold_names = ("2023_h1", "2023_h2", "2024_h1", "2024_h2")
+    for direction in ("long", "short"):
+        for fold_name in fold_names:
+            prediction_path = LOGS_DIR / f"step4_oos_predictions_{direction}_{fold_name}.csv"
+            if not prediction_path.is_file():
+                raise FileNotFoundError(f"Missing fold-specific OOS predictions: {prediction_path.name}")
+            prediction_frame = pd.read_csv(prediction_path)
+            if prediction_frame.empty or not np.isfinite(
+                pd.to_numeric(prediction_frame["OOS_Probability"], errors="raise").to_numpy(float)
+            ).all():
+                raise ValueError(f"{prediction_path.name}: empty or non-finite OOS scores")
+            shutil.copy2(prediction_path, prediction_archive / prediction_path.name)
+
+    # This replay uses fold-specific OOS predictions, the actual Step 5 spot simulator,
+    # and raw candles streamed only through each fold end. It is a cost-limited
+    # economic diagnostic, not a holdout or strategy-acceptance run.
+    run("Fold-isolated OOS net-return diagnostic",
+        ROOT / "src/audits/oos_economic_replay.py",
+        REPORT / "logs/oos_economic_replay.log", env_base)
+    oos_summary_path = REPORT / "oos_economic_replay" / "oos_economic_replay_summary.csv"
+    if not oos_summary_path.is_file():
+        raise FileNotFoundError("OOS economic replay summary CSV missing")
+    oos_summary_frame = pd.read_csv(oos_summary_path)
+    if len(oos_summary_frame) != 4 * len((120.0, 10000.0)) * 3:
+        raise ValueError(f"Expected 24 OOS replay rows, got {len(oos_summary_frame)}")
+    if (oos_summary_frame["includes_dynamic_slippage_or_market_impact"] != False).any():
+        raise ValueError("OOS replay must explicitly mark omitted dynamic slippage/impact")
+
+    oos_aggregates = []
+    for (capital, threshold), group in oos_summary_frame.groupby(
+        ["starting_capital", "configured_probability_threshold"], sort=True
+    ):
+        if len(group) != 4:
+            raise ValueError("OOS economic replay missing one or more fold metrics")
+        oos_aggregates.append({
+            "starting_capital": float(capital),
+            "configured_probability_threshold": float(threshold),
+            "folds": int(len(group)),
+            "closed_trades_across_independent_fold_resets": int(group["closed_trades"].sum()),
+            "sum_realized_pnl_across_independent_fold_resets": float(
+                group["closed_trade_realized_pnl_sum_net_of_step5_taker_fees"].sum()
+            ),
+            "mean_fold_mtm_return_pct": float(group["mtm_total_return_pct"].mean()),
+            "worst_fold_mtm_drawdown_pct": float(group["max_mtm_drawdown_pct"].max()),
+            "open_positions_at_fold_end_total": int(group["open_positions_at_fold_end"].sum()),
+        })
+    oos_economic_report = {
+        "status": "COMPLETED_DIAGNOSTIC_ONLY",
+        "summary_rows": int(len(oos_summary_frame)),
+        "aggregates": oos_aggregates,
+        "included_costs": ["Step 5 taker fee model"],
+        "excluded_costs": ["dynamic slippage", "market impact", "latency/partial-fill cost"],
+        "folds_are_independent_resets": True,
+        "does_not_certify_strategy_acceptance_or_live_readiness": True,
+    }
+    (REPORT / "oos_economic_replay_report.json").write_text(
+        json.dumps(oos_economic_report, indent=2, sort_keys=True), encoding="utf-8"
+    )
+
     folds = {}
     for direction in ("long", "short"):
         path = LOGS_DIR / f"step4_walkforward_{direction}.csv"
@@ -358,6 +421,7 @@ def main() -> None:
         "raw_data_structural_audit": "PASS",
         "research_cutoff": "PASS",
         "walk_forward_oos_folds": folds,
+        "oos_economic_replay": oos_economic_report,
         "strategy_gate": strategy_gate,
         "model_artifacts": model_hashes,
         "package_versions": versions,

@@ -29,6 +29,7 @@ from config import (
     MAX_INACTIVITY_DAYS
 )
 from risk_governor import RiskGovernor
+from strategy_signals import should_enter_spot_long
 
 def load_data_and_predict(threshold_long: float, threshold_short: float):
     """
@@ -308,21 +309,18 @@ def run_simulation(
                 p_l = row['p_long']
                 p_s = row['p_short']
                 
-                # Spot mode: Long-Only with Decoupled Altcoin Regime Confluence (Law #9)
+                # Spot mode: a hard configured probability floor applies in every regime.
                 if mode == 'spot':
                     is_btc_bull = btc_bullish.get(t, False)
-                    can_enter = False
-                    if is_btc_bull:
-                        if p_l >= threshold_long:
-                            can_enter = True
-                    else:
-                        rel_mom = row.get('Rel_Mom_vs_BTC', 0.0)
-                        if rel_mom >= 0.0 and p_l >= threshold_long:
-                            can_enter = True
-                        elif p_l >= 0.42:
-                            can_enter = True
-                        elif p_l >= threshold_long and (row.get('Pullback_Depth', 0.0) >= 0.08 or row.get('SL_Dist_Ratio', 0.0) <= 0.065 or row.get('Vol_Accum_Ratio', 0.0) >= 1.05):
-                            can_enter = True
+                    can_enter, _entry_reason = should_enter_spot_long(
+                        probability=p_l,
+                        threshold=threshold_long,
+                        btc_bullish=is_btc_bull,
+                        relative_momentum=row.get('Rel_Mom_vs_BTC', np.nan),
+                        pullback_depth=row.get('Pullback_Depth', np.nan),
+                        stop_distance_ratio=row.get('SL_Dist_Ratio', np.nan),
+                        volume_accumulation_ratio=row.get('Vol_Accum_Ratio', np.nan),
+                    )
 
                     if can_enter:
                         candidates.append({

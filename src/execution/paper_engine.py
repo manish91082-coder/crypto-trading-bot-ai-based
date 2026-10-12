@@ -27,6 +27,7 @@ from config import (
 )
 from features_1d import compute_1d_base_features, add_relative_momentum_vs_btc
 from model_provenance import load_verified_production_model_paths
+from strategy_signals import should_enter_spot_long
 from risk_governor import RiskGovernor
 from execution.binance_client import BinanceExecutionClient
 from execution.order_manager import OrderManager
@@ -289,25 +290,15 @@ class PaperExecutionEngine:
                 can_enter = False
                 reason = ""
                 if self.mode == 'spot':
-                    if btc_bullish:
-                        if p_long >= self.model_threshold:
-                            can_enter = True
-                            reason = "Bull regime candidate"
-                        else:
-                            reason = f"Filtered: P({p_long:.3f}) < {self.model_threshold}"
-                    else:
-                        rel_mom = float(completed_candle['Rel_Mom_vs_BTC'])
-                        if rel_mom >= 0.0 and p_long >= self.model_threshold:
-                            can_enter = True
-                            reason = "Bear regime relative momentum candidate"
-                        elif p_long >= 0.42:
-                            can_enter = True
-                            reason = "Bear regime high-conviction candidate"
-                        elif p_long >= self.model_threshold and (completed_candle['Pullback_Depth'] >= 0.08 or completed_candle['SL_Dist_Ratio'] <= 0.065 or v_ratio >= 1.05):
-                            can_enter = True
-                            reason = "Bear regime deep-pullback bounce candidate"
-                        else:
-                            reason = f"Filtered: P({p_long:.3f}) < {self.model_threshold} or lack of pullback depth"
+                    can_enter, reason = should_enter_spot_long(
+                        probability=p_long,
+                        threshold=self.model_threshold,
+                        btc_bullish=btc_bullish,
+                        relative_momentum=completed_candle.get('Rel_Mom_vs_BTC', float('nan')),
+                        pullback_depth=completed_candle.get('Pullback_Depth', float('nan')),
+                        stop_distance_ratio=completed_candle.get('SL_Dist_Ratio', float('nan')),
+                        volume_accumulation_ratio=v_ratio,
+                    )
 
                     if can_enter:
                         if q_mult > 0:
