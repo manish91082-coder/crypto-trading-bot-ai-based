@@ -240,7 +240,25 @@ class PaperExecutionEngine:
             try:
                 df_feat = self.compute_live_features(ohlcv_all, symbol)
                 completed_candle = df_feat.iloc[-2]
-                feat_vals = completed_candle[FEATURE_COLS].values.reshape(1, -1)
+                feat_vals = completed_candle[FEATURE_COLS].to_numpy(dtype=float).reshape(1, -1)
+                if not np.isfinite(feat_vals).all():
+                    reason = "BLOCKED: non-finite/missing model features; verify candle warmup and BTC timestamp alignment"
+                    print(f"{symbol:<10} | ${live_price:>11.4f} | {ret_1*100:>+9.2f}% | {'---':>8} | {'---':>8} | {'---':>10} | {'BLOCKED':<9} | {reason}")
+                    ledger_records.append({
+                        'timestamp': cycle_time,
+                        'symbol': symbol,
+                        'live_price': live_price,
+                        'return_1d_pct': round(ret_1 * 100, 2),
+                        'p_long': None,
+                        'p_short': None,
+                        'vol_accum_ratio': None,
+                        'setup_grade': 'BLOCKED',
+                        'decision': 'BLOCKED_INVALID_FEATURES',
+                        'reason': reason,
+                        'wallet_balance': self.current_capital,
+                        'open_positions': len(self.order_mgr.positions)
+                    })
+                    continue
 
                 p_long = float(self.model_long.predict_proba(feat_vals)[0][1])
                 p_short = float(self.model_short.predict_proba(feat_vals)[0][1])
