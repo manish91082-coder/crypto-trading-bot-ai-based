@@ -66,18 +66,18 @@
 ## 5. Current checkpoint
 
 - **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
-- **Verified current `main` HEAD before this status update:** `83eba8840898146cff2ed43bd6f86560e3130d38`.
+- **Verified `main` HEAD before this status refresh:** `74fce94a4e9c2cda857b824772e20677c89210af`.
 - **1D label/purge correction:** merged in `6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a`; five focused label tests passed on the PR head and merge commit.
 - **1D feature parity correction:** PR [#2](https://github.com/manish91082-coder/crypto-trading-bot-ai-based/pull/2) merged as `83eba8840898146cff2ed43bd6f86560e3130d38`.
-- **Focused tests:** 10/10 passed on code revision `e0cf247cb3fa7d42fd83840895a38ae4464488b1` in Actions run `38260712274`. The tested revision included both label tests and feature parity tests. A subsequent change before merge only updated this continuity file. A post-merge run on `83eba8840898146cff2ed43bd6f86560e3130d38` was queued/in progress at the latest check; do not call that exact post-merge run green until its conclusion is read.
-- **Initial feature-test run:** run `38260700101` failed because the workflow did not install `joblib`; the workflow dependency list was corrected, then all 10 tests passed in run `38260712274`. The initial failure is recorded, not hidden.
+- **Focused tests:** 10/10 passed on code revision `e0cf247cb3fa7d42fd83840895a38ae4464488b1` in Actions run `38260712274`, and 10/10 passed again on merged code commit `83eba8840898146cff2ed43bd6f86560e3130d38` in Actions run `38260964537`. The passed cases include both label behavior and training/paper feature parity.
+- **Initial feature-test run:** run `38260700101` failed because the workflow did not install `joblib`; the workflow dependency list was corrected and the subsequent full 10-test suite passed. This initial failure is retained in the log.
 - **Shared feature rules:** `src/features_1d.py` is the canonical per-symbol 1D feature implementation and timestamp-aligned BTC relative momentum calculation. The research pipeline and paper engine now call the same feature helper, matching rolling windows and warm-up behavior. Missing BTC alignment stays NaN, and paper predictions block on non-finite required inputs.
 - **Training safety:** final pooled training refuses empty, non-binary or single-class resolved targets after censoring/purge. Fold evaluation skips invalid train/test targets.
-- **1D status:** NOT ACCEPTED until post-merge CI is verified, the full reproducible research/backtest runs, and data/provenance and trade/equity reconciliation gates pass.
+- **1D status:** NOT ACCEPTED until the full reproducible research/backtest runs, and data provenance, sample counts, feature/model artifacts, and trade/equity reconciliation gates pass.
 - **4H:** NOT STARTED for fixes; 1D remains first.
 - **USD 10,000 live readiness:** NOT VERIFIED; **NO-GO**.
 - **Live signing/public broadcast:** BLOCKED.
-- **Next exact action:** verify the post-merge Actions result on `83eba8840898146cff2ed43bd6f86560e3130d38`; then run the deterministic 1D research/backtest chain from a clean environment and reconcile sample counts, trade ledger, equity, fees, final capital and drawdown before any acceptance claim.
+- **Next exact action:** run the deterministic 1D research/backtest chain from a clean environment, capture exact inputs/commands/output SHA, and reconcile labeled sample counts, trades, fees, ending capital and drawdown. Keep any holdout sealed; do not tune against it.
 
 ## 6. Append-only work log
 
@@ -125,3 +125,8 @@
 - The PR-head delta after the 10-test successful code SHA was only a `PROJECT_LIVE_STATUS_CHATGPT.md` checkpoint edit; this is verified by GitHub compare.
 - Post-merge workflow `38260964537` for merge SHA `83eba8840898146cff2ed43bd6f86560e3130d38` was queued/in progress at the time of this checkpoint update; its final status must be fetched before calling post-merge CI green.
 - No full 1D backtest or $10,000 live-readiness test was run in this slice.
+
+### 2026-10-12 — merged feature parity CI confirmed
+- Queried the completed post-merge Actions run `38260964537` for code merge SHA `83eba8840898146cff2ed43bd6f86560e3130d38`; conclusion: **success**. Logs show `Ran 10 tests` and `OK`.
+- The latest `main` tip before this continuity refresh was `74fce94a4e9c2cda857b824772e20677c89210af`; that commit only refreshed this status file after the merge. The code merge itself is now verified by a successful post-merge run.
+- This still does not run or certify the full multi-year trading backtest, independent exchange-data provenance, or $10,000 live execution. Next phase remains end-to-end 1D reproducibility and accounting reconciliation.
