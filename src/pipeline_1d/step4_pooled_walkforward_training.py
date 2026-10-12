@@ -17,7 +17,8 @@ from config import (
     MODELS_1D_POOLED_DIR,
     SYMBOLS,
     FEATURE_COLS,
-    PURGE_WINDOW_DAYS
+    PURGE_WINDOW_DAYS,
+    LABEL_OBSERVATION_HORIZON_DAYS
 )
 
 def build_pooled_dataset():
@@ -45,10 +46,10 @@ def run_purged_walk_forward_evaluation(pooled_df: pd.DataFrame, direction: str =
     """
     Executes expanding-window Purged Walk-Forward Cross-Validation.
     Compares Shallow XGBoost (depth 2) vs Logistic Regression Baseline.
-    Enforces purge window matching label inactivity horizon (14 days).
+    Purges the configured label observation window; censored unresolved labels are excluded from fitting.
     """
     label_col = f'Label_{direction}'
-    print(f"\n--- RUNNING PURGED WALK-FORWARD EVALUATION: DIRECTION = {direction.upper()} (PURGE = {PURGE_WINDOW_DAYS}d) ---")
+    print(f"\n--- RUNNING PURGED WALK-FORWARD EVALUATION: DIRECTION = {direction.upper()} (LABEL HORIZON = {LABEL_OBSERVATION_HORIZON_DAYS}d; PURGE = {PURGE_WINDOW_DAYS}d) ---")
 
     test_periods = [
         ('2023-01-01', '2023-06-30', '2023 H1'),
@@ -65,13 +66,14 @@ def run_purged_walk_forward_evaluation(pooled_df: pd.DataFrame, direction: str =
 
         # Train: all data strictly before (dt_start - PURGE_WINDOW_DAYS)
         train_cutoff = dt_start - pd.Timedelta(days=PURGE_WINDOW_DAYS)
-        train_data = pooled_df[pooled_df['timestamp'] <= train_cutoff].dropna(subset=FEATURE_COLS)
-        test_data = pooled_df[(pooled_df['timestamp'] >= dt_start) & (pooled_df['timestamp'] <= dt_end)].dropna(subset=FEATURE_COLS)
+        train_data = pooled_df[pooled_df['timestamp'] < train_cutoff].dropna(subset=FEATURE_COLS + [label_col])
+        test_data = pooled_df[(pooled_df['timestamp'] >= dt_start) & (pooled_df['timestamp'] <= dt_end)].dropna(subset=FEATURE_COLS + [label_col])
 
         X_train, y_train = train_data[FEATURE_COLS], train_data[label_col]
         X_test, y_test = test_data[FEATURE_COLS], test_data[label_col]
 
-        if len(y_test.unique()) < 2:
+        if len(y_train) == 0 or y_train.nunique() < 2 or len(y_test) == 0 or y_test.nunique() < 2:
+            print(f"  [{name}] SKIPPED: insufficient resolved labels or class diversity after censoring/purge")
             continue
 
         # 1. Baseline Model: Logistic Regression

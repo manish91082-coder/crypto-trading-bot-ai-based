@@ -42,15 +42,23 @@ BE_ATR_MULT = 1.5       # Move Stop Loss to Breakeven once price reaches +1.5x A
 
 # Swing Runner Architecture (Law #6)
 PARTIAL_TP_PCT = 0.75   # 75% profit secured at TP_ATR_MULT
-RUNNER_PCT = 0.25       # 25% Runner position size rides trend
+RUNNER_PCT = 0.25       # 25% Runner position size rides trend reversal
 RUNNER_TRAILING_ATR = 2.0  # Dynamic Trailing Stop for 25% Runner (rides until trend reversal)
 RUNNER_SL_LOCK_ATR = 1.0   # Runner SL locked at Entry + 1.0x ATR upon partial TP
 
-# Inactivity Timeout (ONLY for unhit/unsecured trades - Runners NEVER killed by calendar time!)
-MAX_INACTIVITY_DAYS = 14  # Max days an unhit trade is allowed to drift before exit
+# Legacy compatibility setting. It is not a permission to close a winning runner by calendar time.
+MAX_INACTIVITY_DAYS = 14
 
-# Purge & Embargo Window (Matches MAX_INACTIVITY_DAYS for zero lookahead)
-PURGE_WINDOW_DAYS = 14
+# Finite supervised-label observation horizon. Unresolved samples are censored, not exited.
+# This setting controls training-label observation only; it never closes an operational position.
+LABEL_OBSERVATION_HORIZON_DAYS = int(os.getenv("LABEL_OBSERVATION_HORIZON_DAYS", str(MAX_INACTIVITY_DAYS)))
+
+# Purge covers the full label observation horizon. A longer value can add an embargo.
+PURGE_WINDOW_DAYS = int(os.getenv("PURGE_WINDOW_DAYS", str(LABEL_OBSERVATION_HORIZON_DAYS)))
+if LABEL_OBSERVATION_HORIZON_DAYS < 1:
+    raise ValueError("LABEL_OBSERVATION_HORIZON_DAYS must be >= 1")
+if PURGE_WINDOW_DAYS < LABEL_OBSERVATION_HORIZON_DAYS:
+    raise ValueError("PURGE_WINDOW_DAYS must be >= LABEL_OBSERVATION_HORIZON_DAYS")
 
 # Macro Trend Filter (Law #9)
 MACRO_BTC_EMA_PERIOD = 20
@@ -90,4 +98,3 @@ def get_model_path(symbol: str, timeframe: str, model_type: str, direction: str)
 def get_log_path(filename: str) -> Path:
     """Return path to log file in logs directory."""
     return LOGS_DIR / filename
-

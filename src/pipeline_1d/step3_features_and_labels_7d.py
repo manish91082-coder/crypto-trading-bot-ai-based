@@ -11,18 +11,16 @@ from config import (
     DATA_RAW_DIR,
     DATA_PROCESSED_DIR,
     SYMBOLS,
-    MAX_INACTIVITY_DAYS,
+    LABEL_OBSERVATION_HORIZON_DAYS,
+    BE_ATR_MULT,
     TP_ATR_MULT,
     SL_ATR_MULT,
-    BINANCE_TAKER_FEE,
     MACRO_BTC_EMA_PERIOD
 )
 
 RESEARCH_END = "2024-12-31"       # Strict Vault Rule: Only research period touched
-EVENT_BARRIER_DAYS = 28          # Event-Driven Barrier: Gives natural room for swings to resolve
 TP_MULT = TP_ATR_MULT             # Matches execution partial TP (+3.0x ATR)
 SL_MULT = SL_ATR_MULT             # Matches execution initial SL (-1.5x ATR)
-FEE_RATE = BINANCE_TAKER_FEE      # Binance VIP-0 Taker Fee (0.075%)
 
 def compute_stationary_features(df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -85,109 +83,113 @@ def compute_stationary_features(df: pd.DataFrame) -> pd.DataFrame:
 
 def generate_triple_barrier_labels(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Exact Triple-Barrier Labeling matching Unified Execution Rules:
-    - Execution at T+1 Open.
-    - TP = +3.0 * ATR, SL = -1.5 * ATR.
-    - Max holding = HOLDING_DAYS (14 days inactivity window).
-    - If neither hit within 14 days, evaluated at Day 14 Open net of fee.
-    - Same-candle collision resolved pessimistically as LOSS.
+    Label outcomes observed within the configured initial evaluation window.
+
+    Entry is at T+1 open. The entry candle is included because its movement occurs
+    after the open fill. Initial stop is evaluated before target; a same-candle
+    stop/target collision is pessimistically negative. The break-even stop is
+    activated after +BE_ATR_MULT and is checked conservatively against that
+    candle's opposite extreme.
+
+    A target touch means the strategy's 75% partial take-profit event succeeded.
+    A stop or break-even exit is negative after fees. If neither outcome resolves
+    within the observation window, the label is censored (NaN), not fabricated
+    from an arbitrary calendar-time exit. This window never closes a live runner.
     """
     df = df.copy()
     n = len(df)
-    
-    labels_long = np.zeros(n, dtype=int)
-    labels_short = np.zeros(n, dtype=int)
-    next_opens = np.zeros(n, dtype=float)
+    horizon = LABEL_OBSERVATION_HORIZON_DAYS
 
-    opens = df['open'].values
-    highs = df['high'].values
-    lows = df['low'].values
-    atrs = df['ATR_14'].values
+    labels_long = np.full(n, np.nan, dtype=float)
+    labels_short = np.full(n, np.nan, dtype=float)
+    next_opens = np.full(n, np.nan, dtype=float)
 
-    for i in range(n - EVENT_BARRIER_DAYS - 1):
+    opens = df["open"].to_numpy(dtype=float)
+    highs = df["high"].to_numpy(dtype=float)
+    lows = df["low"].to_numpy(dtype=float)
+    atrs = df["ATR_14"].to_numpy(dtype=float)
+
+    # Need one signal candle plus a complete horizon of post-entry candles.
+    for i in range(max(0, n - horizon)):
         entry_idx = i + 1
         entry_price = opens[entry_idx]
         next_opens[i] = entry_price
         atr = atrs[i]
 
-        if np.isnan(atr) or atr <= 0:
+        if not np.isfinite(atr) or atr <= 0 or not np.isfinite(entry_price) or entry_price <= 0:
             continue
 
-        # Long Barrier Targets
-        long_tp = entry_price + (TP_MULT * atr)
-        long_sl = entry_price - (SL_MULT * atr)
+        long_target = entry_price + TP_MULT * atr
+        long_stop = entry_price - SL_MULT * atr
+        long_break_even_trigger = entry_price + BE_ATR_MULT * atr
 
-        # Short Barrier Targets
-        short_tp = entry_price - (TP_MULT * atr)
-        short_sl = entry_price + (SL_MULT * atr)
+        short_target = entry_price - TP_MULT * atr
+        short_stop = entry_price + SL_MULT * atr
+        short_break_even_trigger = entry_price - BE_ATR_MULT * atr
 
-        # Simulate exactly up to EVENT_BARRIER_DAYS
-        resolved_long = False
-        resolved_short = False
+        long_resolved = False
+        short_resolved = False
 
-        for d in range(1, EVENT_BARRIER_DAYS + 1):
-            curr_idx = entry_idx + d
-            if curr_idx >= n:
+        # Include the entry candle (T+1) and observe exactly 'horizon' daily bars.
+        for offset in range(horizon):
+            idx = entry_idx + offset
+            high = highs[idx]
+            low = lows[idx]
+
+            if not long_resolved:
+                hit_stop = low <= long_stop
+                hit_target = high >= long_target
+                if hit_stop and hit_target:
+                    labels_long[i] = 0.0
+                    long_resolved = True
+                elif hit_stop:
+                    labels_long[i] = 0.0
+                    long_resolved = True
+                elif hit_target:
+                    labels_long[i] = 1.0
+                    long_resolved = True
+                elif high >= long_break_even_trigger:
+                    # Once +1.5 ATR is reached, the stop ratchets to entry.
+                    long_stop = max(long_stop, entry_price)
+                    # Conservative OHLC treatment: assume an activated stop can be hit.
+                    if low <= long_stop:
+                        labels_long[i] = 0.0
+                        long_resolved = True
+
+            if not short_resolved:
+                hit_stop = high >= short_stop
+                hit_target = low <= short_target
+                if hit_stop and hit_target:
+                    labels_short[i] = 0.0
+                    short_resolved = True
+                elif hit_stop:
+                    labels_short[i] = 0.0
+                    short_resolved = True
+                elif hit_target:
+                    labels_short[i] = 1.0
+                    short_resolved = True
+                elif low <= short_break_even_trigger:
+                    short_stop = min(short_stop, entry_price)
+                    if high >= short_stop:
+                        labels_short[i] = 0.0
+                        short_resolved = True
+
+            if long_resolved and short_resolved:
                 break
 
-            h = highs[curr_idx]
-            l = lows[curr_idx]
+        # Unresolved examples intentionally remain NaN and are dropped from supervised training.
 
-            # Long Barrier Check
-            if not resolved_long:
-                hit_sl = (l <= long_sl)
-                hit_tp = (h >= long_tp)
-                if hit_sl and hit_tp:
-                    # Pessimistic collision
-                    labels_long[i] = 0
-                    resolved_long = True
-                elif hit_sl:
-                    labels_long[i] = 0
-                    resolved_long = True
-                elif hit_tp:
-                    labels_long[i] = 1
-                    resolved_long = True
-
-            # Short Barrier Check
-            if not resolved_short:
-                hit_sl = (h >= short_sl)
-                hit_tp = (l <= short_tp)
-                if hit_sl and hit_tp:
-                    labels_short[i] = 0
-                    resolved_short = True
-                elif hit_sl:
-                    labels_short[i] = 0
-                    resolved_short = True
-                elif hit_tp:
-                    labels_short[i] = 1
-                    resolved_short = True
-
-            if resolved_long and resolved_short:
-                break
-
-        # Event Barrier Exit at Day 28 Open if unhit
-        timeout_idx = min(entry_idx + EVENT_BARRIER_DAYS, n - 1)
-        timeout_price = opens[timeout_idx]
-
-        if not resolved_long:
-            net_long_return = (timeout_price - entry_price) / entry_price - (2 * FEE_RATE)
-            labels_long[i] = 1 if net_long_return > 0 else 0
-
-        if not resolved_short:
-            net_short_return = (entry_price - timeout_price) / entry_price - (2 * FEE_RATE)
-            labels_short[i] = 1 if net_short_return > 0 else 0
-
-    df['Next_Open'] = next_opens
-    df['Label_Long'] = labels_long
-    df['Label_Short'] = labels_short
-    # Backwards compatibility aliases
-    df['Label_Long_7d'] = labels_long
-    df['Label_Short_7d'] = labels_short
+    df["Next_Open"] = next_opens
+    df["Label_Long"] = labels_long
+    df["Label_Short"] = labels_short
+    # Legacy column names retained for downstream compatibility; they do not define the horizon.
+    df["Label_Long_7d"] = labels_long
+    df["Label_Short_7d"] = labels_short
     return df
 
 def process_all_coins():
     print("=================================================================")
-    print(f"STEP 3: {EVENT_BARRIER_DAYS}-DAY STATIONARY FEATURES & TRIPLE-BARRIER LABELING")
+    print(f"STEP 3: {LABEL_OBSERVATION_HORIZON_DAYS}-CANDLE INITIAL-EVALUATION LABELING")
     print("Adversarial Anti-Overfitting Protocol: Law #6 Aligned")
     print("=================================================================")
 
@@ -221,8 +223,8 @@ def process_all_coins():
         df = generate_triple_barrier_labels(df)
 
         # Drop warmup rows (first 35 rows due to 30-day pullback depth and rolling indicators)
-        # Drop the last EVENT_BARRIER_DAYS+1 rows where lookahead cannot be fully resolved
-        clean_df = df.iloc[35:-(EVENT_BARRIER_DAYS + 1)].copy()
+        # Remove rows without enough future candles to complete the configured observation window.
+        clean_df = df.iloc[35:-LABEL_OBSERVATION_HORIZON_DAYS].copy()
 
         # Save clean features and labels to processed directory
         feat_cols = ['timestamp', 'open', 'high', 'low', 'close', 'volume',
