@@ -166,8 +166,6 @@ def build_fold_master(market: pd.DataFrame, long_preds: pd.DataFrame,
         raise ValueError("Long/Short OOS prediction sample keys do not match")
 
     combined = market.copy()
-    combined["p_long"] = np.nan
-    combined["p_short"] = np.nan
     score_keys = ["timestamp", "Symbol"]
     combined = combined.merge(
         long_preds[score_keys + ["OOS_Probability"]].rename(
@@ -191,15 +189,6 @@ def build_fold_master(market: pd.DataFrame, long_preds: pd.DataFrame,
     combined.loc[~entry_mask, ["p_long", "p_short"]] = np.nan
     combined.sort_values(["timestamp", "Symbol"], inplace=True)
     combined.reset_index(drop=True, inplace=True)
-
-    long_map = long_preds.set_index(["Symbol", "timestamp"])["Label_Long"]
-    signal_labels = []
-    signal_probs = []
-    for row in long_preds.itertuples(index=False):
-        ts = getattr(row, "timestamp")
-        prob = float(getattr(row, "OOS_Probability"))
-        signal_probs.append((ts, getattr(row, "Symbol"), prob))
-        signal_labels.append((ts, getattr(row, "Symbol"), getattr(row, "Label_Long")))
 
     label_info = {
         "first_signal_date": str(fold_start.date()),
