@@ -14,7 +14,7 @@ class OneDayStrategyGateTests(unittest.TestCase):
     def test_gate_fails_when_any_walk_forward_fold_misses_auc_floor(self):
         result = evaluate_1d_research_gate(
             fold_auc_by_direction={
-                "long": [0.63, 0.53, 0.55, 0.54],
+                "long": [0.63, 0.51, 0.55, 0.54],
                 "short": [0.61, 0.58, 0.57, 0.53],
             },
             selected_spot_trades_by_capital={
