@@ -96,7 +96,8 @@ def run_purged_walk_forward_evaluation(pooled_df: pd.DataFrame, direction: str =
             subsample=0.8,
             colsample_bytree=0.8,
             random_state=42,
-            eval_metric='logloss'
+            eval_metric='logloss',
+            n_jobs=1
         )
         xgb_model.fit(X_train, y_train)
         xgb_probs = xgb_model.predict_proba(X_test)[:, 1]
@@ -169,7 +170,8 @@ def train_and_save_final_pooled_models(pooled_df: pd.DataFrame):
             subsample=0.8,
             colsample_bytree=0.8,
             random_state=42,
-            eval_metric='logloss'
+            eval_metric='logloss',
+            n_jobs=1
         )
         model.fit(X, y)
 
