@@ -15,14 +15,12 @@ from config import (
     BE_ATR_MULT,
     TP_ATR_MULT,
     SL_ATR_MULT,
-    BINANCE_TAKER_FEE,
     MACRO_BTC_EMA_PERIOD
 )
 
 RESEARCH_END = "2024-12-31"       # Strict Vault Rule: Only research period touched
 TP_MULT = TP_ATR_MULT             # Matches execution partial TP (+3.0x ATR)
 SL_MULT = SL_ATR_MULT             # Matches execution initial SL (-1.5x ATR)
-FEE_RATE = BINANCE_TAKER_FEE      # Binance VIP-0 Taker Fee (0.075%)
 
 def compute_stationary_features(df: pd.DataFrame) -> pd.DataFrame:
     """
