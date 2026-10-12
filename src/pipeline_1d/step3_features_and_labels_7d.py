@@ -1,4 +1,5 @@
 import sys
+import csv
 from pathlib import Path
 import pandas as pd
 import numpy as np
@@ -20,6 +21,44 @@ from config import (
 from features_1d import compute_1d_base_features, add_relative_momentum_vs_btc
 
 RESEARCH_END = "2024-12-31"       # Strict Vault Rule: Only research period touched
+
+
+def load_research_period_csv(path: Path) -> pd.DataFrame:
+    """Read rows only through the research cutoff; stop before processing holdout prices."""
+    cutoff = pd.Timestamp(RESEARCH_END)
+    records = []
+    previous_timestamp = None
+    required_columns = {"timestamp", "open", "high", "low", "close", "volume"}
+
+    with path.open("r", newline="", encoding="utf-8-sig") as handle:
+        reader = csv.DictReader(handle)
+        if not reader.fieldnames or not required_columns.issubset(set(reader.fieldnames)):
+            raise ValueError(f"{path.name}: missing required OHLCV columns")
+
+        for row in reader:
+            timestamp = pd.to_datetime(row["timestamp"], errors="raise")
+            if previous_timestamp is not None and timestamp <= previous_timestamp:
+                raise ValueError(f"{path.name}: timestamps are duplicate or out of order at {timestamp}")
+            if timestamp.normalize() > cutoff:
+                # The first post-cutoff timestamp is a boundary sentinel only.
+                # Its price/volume fields and all subsequent holdout rows are never loaded.
+                break
+            records.append(row)
+            previous_timestamp = timestamp
+
+    df = pd.DataFrame.from_records(records)
+    if df.empty:
+        raise ValueError(f"{path.name}: no research-period rows were read")
+    df["timestamp"] = pd.to_datetime(df["timestamp"], errors="raise")
+    for column in ("open", "high", "low", "close", "volume"):
+        df[column] = pd.to_numeric(df[column], errors="raise")
+
+    if df["timestamp"].max().normalize() != cutoff:
+        raise ValueError(
+            f"{path.name}: research data ends at {df['timestamp'].max()}, "
+            f"not the required cutoff {RESEARCH_END}"
+        )
+    return df
 TP_MULT = TP_ATR_MULT             # Matches execution partial TP (+3.0x ATR)
 SL_MULT = SL_ATR_MULT             # Matches execution initial SL (-1.5x ATR)
 
@@ -142,20 +181,22 @@ def process_all_coins():
     print("=================================================================")
 
     # 1. First load BTC to calculate cross-asset relative strength
-    btc_raw = pd.read_csv(DATA_RAW_DIR / "BTCUSDT_1d_Raw_5Years.csv")
-    btc_raw['timestamp'] = pd.to_datetime(btc_raw['timestamp'])
-    btc_research = btc_raw[btc_raw['timestamp'] <= RESEARCH_END].sort_values('timestamp').reset_index(drop=True)
+    btc_research = load_research_period_csv(DATA_RAW_DIR / "BTCUSDT_1d_Raw_5Years.csv")
+    btc_research.sort_values("timestamp", inplace=True)
+    btc_research.reset_index(drop=True, inplace=True)
 
     summary = []
 
     for symbol in SYMBOLS:
         raw_file = DATA_RAW_DIR / f"{symbol}_1d_Raw_5Years.csv"
-        df = pd.read_csv(raw_file)
-        df['timestamp'] = pd.to_datetime(df['timestamp'])
-        df = df[df['timestamp'] <= RESEARCH_END].sort_values('timestamp').reset_index(drop=True)
+        df = load_research_period_csv(raw_file)
+        df.sort_values("timestamp", inplace=True)
+        df.reset_index(drop=True, inplace=True)
 
-        # Assert no data leakage past 2024
-        assert df['timestamp'].max() <= pd.to_datetime(RESEARCH_END), "LEAKAGE: Research data touches 2025!"
+        # The streaming reader must never pass post-cutoff rows to feature/label calculations.
+        assert df["timestamp"].max().normalize() == pd.to_datetime(RESEARCH_END), (
+            "RESEARCH BOUNDARY FAILURE: input is missing final research candle"
+        )
 
         # Features
         df = compute_stationary_features(df)
