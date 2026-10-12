@@ -1,0 +1,12 @@
+# Tested/reproducible 1D research environment (Python 3.12)
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+joblib==1.6.0
+threadpoolctl==3.6.0
+python-dateutil==2.9.0.post0
+six==1.17.0
+ccxt==4.5.85
+python-dotenv==1.2.4

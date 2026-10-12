@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import math
 
 # Base Project Root directory (dynamically resolved relative to this config file)
 # src/config.py -> parent is 'src', parent.parent is project root
@@ -32,7 +33,9 @@ SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'XRPUSDT', 'ADAUSDT', 'DO
 # =====================================================================
 # UNIFIED QUANT MASTER RULES & EXECUTION PARAMETERS (MASTER LOCKS)
 # =====================================================================
-INITIAL_CAPITAL = 120.0
+INITIAL_CAPITAL = float(os.getenv("INITIAL_CAPITAL", "120.0"))
+if not (INITIAL_CAPITAL > 0 and math.isfinite(INITIAL_CAPITAL)):
+    raise ValueError("INITIAL_CAPITAL must be finite and greater than zero")
 BINANCE_TAKER_FEE = 0.00075  # 0.075% taker fee with BNB discount
 
 # Barrier Multipliers (ATR-based)
@@ -59,6 +62,11 @@ if LABEL_OBSERVATION_HORIZON_DAYS < 1:
     raise ValueError("LABEL_OBSERVATION_HORIZON_DAYS must be >= 1")
 if PURGE_WINDOW_DAYS < LABEL_OBSERVATION_HORIZON_DAYS:
     raise ValueError("PURGE_WINDOW_DAYS must be >= LABEL_OBSERVATION_HORIZON_DAYS")
+
+# Research acceptance floor documented in PROJECT_AUDIT_AND_MISTAKES_MASTER.md.
+MIN_WALK_FORWARD_OOS_AUC = float(os.getenv("MIN_WALK_FORWARD_OOS_AUC", "0.52"))
+if not (0.0 < MIN_WALK_FORWARD_OOS_AUC < 1.0) or not math.isfinite(MIN_WALK_FORWARD_OOS_AUC):
+    raise ValueError("MIN_WALK_FORWARD_OOS_AUC must be finite and between zero and one")
 
 # Macro Trend Filter (Law #9)
 MACRO_BTC_EMA_PERIOD = 20

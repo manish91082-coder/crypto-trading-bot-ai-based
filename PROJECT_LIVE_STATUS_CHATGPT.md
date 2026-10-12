@@ -66,18 +66,18 @@
 ## 5. Current checkpoint
 
 - **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
-- **Verified `main` HEAD before this status refresh:** `74fce94a4e9c2cda857b824772e20677c89210af`.
-- **1D label/purge correction:** merged in `6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a`; five focused label tests passed on the PR head and merge commit.
-- **1D feature parity correction:** PR [#2](https://github.com/manish91082-coder/crypto-trading-bot-ai-based/pull/2) merged as `83eba8840898146cff2ed43bd6f86560e3130d38`.
-- **Focused tests:** 10/10 passed on code revision `e0cf247cb3fa7d42fd83840895a38ae4464488b1` in Actions run `38260712274`, and 10/10 passed again on merged code commit `83eba8840898146cff2ed43bd6f86560e3130d38` in Actions run `38260964537`. The passed cases include both label behavior and training/paper feature parity.
-- **Initial feature-test run:** run `38260700101` failed because the workflow did not install `joblib`; the workflow dependency list was corrected and the subsequent full 10-test suite passed. This initial failure is retained in the log.
-- **Shared feature rules:** `src/features_1d.py` is the canonical per-symbol 1D feature implementation and timestamp-aligned BTC relative momentum calculation. The research pipeline and paper engine now call the same feature helper, matching rolling windows and warm-up behavior. Missing BTC alignment stays NaN, and paper predictions block on non-finite required inputs.
-- **Training safety:** final pooled training refuses empty, non-binary or single-class resolved targets after censoring/purge. Fold evaluation skips invalid train/test targets.
-- **1D status:** NOT ACCEPTED until the full reproducible research/backtest runs, and data provenance, sample counts, feature/model artifacts, and trade/equity reconciliation gates pass.
-- **4H:** NOT STARTED for fixes; 1D remains first.
-- **USD 10,000 live readiness:** NOT VERIFIED; **NO-GO**.
-- **Live signing/public broadcast:** BLOCKED.
-- **Next exact action:** run the deterministic 1D research/backtest chain from a clean environment, capture exact inputs/commands/output SHA, and reconcile labeled sample counts, trades, fees, ending capital and drawdown. Keep any holdout sealed; do not tune against it.
+- **Base main SHA for this slice:** 0d93fbcc38970a020372cbd97618ae33020e03e4.
+- **Current branch:** fix/1d-reproducible-research; PR #3 remains open until its newest code and diagnosis-gate checks are verified.
+- **Merged 1D corrections:** label/purge correction 6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a; training/paper feature parity 83eba8840898146cff2ed43bd6f86560e3130d38. Both passed their targeted post-merge Actions tests.
+- **Research reproducibility run:** Actions run 38262463632 completed successfully on PR head a8ed19aa4c70f6866cc5731d46d8c3e6f5a18114. Its 24-file artifact is 1d-research-reproducibility-29d030caf78e088176fcbb265e43fe18cb08c878. Raw-data structural preflight, four folds per direction, accounting arithmetic, and before/after sealed-vault CSV hashes passed.
+- **Critical finding from that completed run:** all six Step 5 spot/futures thresholds (0.42/0.44/0.46) produced **0 trades** in both USD 120 and USD 10,000 scenarios. Final equity stayed at starting capital and drawdown stayed at 0%. This is not proof of a profitable or working strategy; strategy gate is **FAIL**.
+- **Critical finding from walk-forward evidence:** the repository's documented gate requires every purged walk-forward XGBoost OOS AUC fold to be above 0.52. Long fold AUCs were 0.6331, 0.4169, 0.5421, 0.5023; Short fold AUCs were 0.5288, 0.6177, 0.5067, 0.5786. Both directions fail the all-fold rule.
+- **New diagnosis work on the branch:** Step 4 now records XGBoost probability distributions and counts above 0.42/0.44/0.46, along with the target positive rate. Step 5 records per-coin Long/Short probability ranges and candidate counts at 0.42/0.44/0.46/0.52/0.55.
+- **Gate separation:** the run can report reproducibility/accounting PASS while explicitly reporting strategy acceptance FAIL; a completed workflow is not a profitable strategy certificate. The manifest must say live_readiness: NO-GO, live_signing: BLOCKED, and public_broadcast: BLOCKED.
+- **Holdout handling:** 2025-01-01 through 2026-09-30 is not used by this research run; committed vault CSV hashes were identical before and after that run. The historic holdout was already examined by the project previously, so no fresh holdout retest or parameter tuning is permitted in this slice.
+- **Current verification:** newest diagnostic/score-distribution changes and gate tests are committed on the PR branch; Actions are running on the exact latest branch head. Do not merge until the exact-head tests and research replay have finished and their artifacts are read.
+- **1D status:** NOT ACCEPTED. **4H:** NOT STARTED. **USD 10,000 live readiness:** NOT VERIFIED / NO-GO.
+- **Next exact action:** inspect the fresh probability-distribution diagnostics. If probabilities never reach the configured thresholds, trace label semantics/model calibration versus the strategy's execution target. Do not silently lower thresholds or fabricate trades. Preserve the holdout lock.
 
 ## 6. Append-only work log
 
@@ -130,3 +130,23 @@
 - Queried the completed post-merge Actions run `38260964537` for code merge SHA `83eba8840898146cff2ed43bd6f86560e3130d38`; conclusion: **success**. Logs show `Ran 10 tests` and `OK`.
 - The latest `main` tip before this continuity refresh was `74fce94a4e9c2cda857b824772e20677c89210af`; that commit only refreshed this status file after the merge. The code merge itself is now verified by a successful post-merge run.
 - This still does not run or certify the full multi-year trading backtest, independent exchange-data provenance, or $10,000 live execution. Next phase remains end-to-end 1D reproducibility and accounting reconciliation.
+
+### 2026-10-12 — research-only reproducibility workflow authored
+- Branch `fix/1d-reproducible-research` was created from main SHA `0d93fbcc38970a020372cbd97618ae33020e03e4`.
+- Made `INITIAL_CAPITAL` environment-configurable with finite-positive validation, retaining USD 120 as the default.
+- Updated `src/pipeline_1d/step3_features_and_labels_7d.py` to stream only rows through `2024-12-31`; it stops reading once the first post-cutoff timestamp is encountered and does not parse the holdout price/volume fields into the research dataframe.
+- Updated `src/pipeline_1d/step4_pooled_walkforward_training.py` to fail closed unless all four temporal OOS folds have finite AUC/sample counts, save per-direction fold CSVs, and set XGBoost `n_jobs=1` for more deterministic reruns.
+- Updated `src/pipeline_1d/step5_pooled_governed_backtest.py` to write every tested configuration's metrics, correctly named threshold-0.44 selected ledgers, spot and futures daily-equity ledgers, and MTM components (`cash + open_allocated_capital + floating_pnl`).
+- Added `tests/test_1d_research_boundary.py` to prove the research loader stops before parsing post-cutoff prices and rejects unordered rows.
+- Added `requirements-1d-research.txt` with fixed direct dependency versions and `src/audits/run_1d_research_reproducibility.py` to run the research chain, two capital scenarios, accounting checks, dependency capture, raw-data audit, hashes and before/after sealed-vault checksum checks.
+- Added `.github/workflows/1d-research-reproducibility.yml`; it runs on PR to main or manual workflow dispatch, executes all focused tests and the bounded research-only chain, then uploads logs/ledgers/models/metrics/manifests.
+- No CI verdict is claimed until the workflow actually executes on this branch. No 4H or live-trading code was changed in this slice.
+
+### 2026-10-12 — reproducibility results and strategy-failure diagnosis
+- Research-only workflow run 38262463632 on head a8ed19aa4c70f6866cc5731d46d8c3e6f5a18114 completed all steps and uploaded 24 artifacts. Runner artifact ZIP digest from GitHub: sha256:5f03f8030c8502ee5494ca71061fd73eb4c97887791829ef4e28bce47771c515.
+- The report showed 1,139 samples per symbol from 2021-11-05 through 2024-12-17 after 35-row warm-up and 14-row censor window. Resolved and censored label counts are retained in the artifact.
+- Fold OOS AUC evidence from that run: Long [0.6330786, 0.4169374, 0.5421262, 0.5023380]; Short [0.5288187, 0.6177276, 0.5067404, 0.5785655]. These do not satisfy the documented requirement that every fold exceed 0.52.
+- Step 5 produced zero trades at thresholds 0.42, 0.44, 0.46 for Spot and Futures under both capital scenarios. Ledgers and arithmetic reconcile only because no trade was executed; this must never be read as a performance PASS.
+- Added configurable MIN_WALK_FORWARD_OOS_AUC (default 0.52), src/audits/strategy_acceptance.py, tests for failed AUC/zero-trade gates, Step 4 probability/threshold diagnostics, Step 5 per-coin model-score distribution diagnostics, and a runner manifest separating reproducibility_status from strategy_acceptance_status.
+- The research reproducibility workflow is designed to exit successfully when execution/accounting and artifacts are reproducible while marking strategy acceptance FAIL. This helps diagnose without concealing failure; no threshold is changed automatically.
+- Exact latest-head workflow verdict has not yet been read at checkpoint time.

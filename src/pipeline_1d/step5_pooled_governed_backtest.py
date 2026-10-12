@@ -44,6 +44,7 @@ def load_data_and_predict(threshold_long: float, threshold_short: float):
     short_model = joblib.load(short_model_path)
     
     dfs = []
+    score_diagnostics = []
     prices_ohlc = {s: {} for s in SYMBOLS}
     
     for sym in SYMBOLS:
@@ -68,14 +69,42 @@ def load_data_and_predict(threshold_long: float, threshold_short: float):
             }
             
         clean_df = df.dropna(subset=FEATURE_COLS).copy()
+        if clean_df.empty:
+            raise RuntimeError(f"{sym}: no rows remain after feature warm-up/NaN filtering")
         p_long = long_model.predict_proba(clean_df[FEATURE_COLS])[:, 1]
         p_short = short_model.predict_proba(clean_df[FEATURE_COLS])[:, 1]
-        
+        if not np.isfinite(p_long).all() or not np.isfinite(p_short).all():
+            raise RuntimeError(f"{sym}: model emitted non-finite probabilities")
+
+        diagnostic = {
+            'Symbol': sym,
+            'Rows_With_Valid_Features': int(len(clean_df)),
+        }
+        for side, values in (('Long', p_long), ('Short', p_short)):
+            diagnostic[f'{side}_Prob_Min'] = float(np.min(values))
+            diagnostic[f'{side}_Prob_Median'] = float(np.median(values))
+            diagnostic[f'{side}_Prob_P90'] = float(np.quantile(values, 0.90))
+            diagnostic[f'{side}_Prob_Max'] = float(np.max(values))
+            for threshold in (0.42, 0.44, 0.46, 0.52, 0.55):
+                diagnostic[f'{side}_Count_GE_{int(round(threshold*100)):02d}'] = int((values >= threshold).sum())
+        score_diagnostics.append(diagnostic)
+
         clean_df['p_long'] = p_long
         clean_df['p_short'] = p_short
         clean_df['Symbol'] = sym
         dfs.append(clean_df)
         
+    diagnostics_df = pd.DataFrame(score_diagnostics)
+    if len(diagnostics_df) != len(SYMBOLS):
+        raise RuntimeError(f"Expected probability diagnostics for {len(SYMBOLS)} symbols; got {len(diagnostics_df)}")
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
+    diagnostics_path = LOGS_DIR / "phase5_model_probability_diagnostics.csv"
+    diagnostics_df.to_csv(diagnostics_path, index=False)
+    print(f"[EVIDENCE] Saved model probability diagnostics to {diagnostics_path.name}")
+    for side in ("Long", "Short"):
+        count_columns = [f"{side}_Count_GE_{int(round(threshold*100)):02d}" for threshold in (0.42, 0.44, 0.46, 0.52, 0.55)]
+        print(f"[SCORE DIAGNOSTIC] {side}: max probability across symbols={diagnostics_df[f'{side}_Prob_Max'].max():.4f}; counts >= 0.42/0.44/0.46/0.52/0.55={ [int(diagnostics_df[col].sum()) for col in count_columns] }")
+
     master_df = pd.concat(dfs, ignore_index=True)
     master_df.sort_values('timestamp', inplace=True)
     master_df.reset_index(drop=True, inplace=True)
@@ -438,6 +467,8 @@ def run_simulation(
         daily_records.append({
             'timestamp': t,
             'cash': current_cash,
+            'open_allocated_capital': open_allocated,
+            'floating_pnl': floating_pnl,
             'mtm_equity': mtm_equity,
             'drawdown': mtm_dd,
             'open_positions': len(open_trades)
@@ -539,21 +570,32 @@ def main():
             best_futures_trades = df_trades
             best_futures_daily = df_daily
             
-    # Save Trade and Daily Logs for best production threshold (0.52)
-    if best_spot_trades is not None and len(best_spot_trades) > 0:
-        p_spot = LOGS_DIR / "phase5_pooled_spot_trades_052.csv"
+    # Persist actual metrics and selected 0.44 ledgers with truthful names.
+    results_frame = pd.DataFrame(results)
+    if not results_frame.empty:
+        results_path = LOGS_DIR / "phase5_pooled_research_metrics.csv"
+        results_frame.to_csv(results_path, index=False)
+        print(f"\n[+] Saved all research configuration metrics to {results_path.name}")
+
+    if best_spot_trades is not None:
+        p_spot = LOGS_DIR / "phase5_pooled_spot_trades_044.csv"
         best_spot_trades.to_csv(p_spot, index=False)
-        print(f"\n[+] Saved Spot Trade Log to {p_spot.name}")
-        
-    if best_futures_trades is not None and len(best_futures_trades) > 0:
-        p_fut = LOGS_DIR / "phase5_pooled_futures_trades_052.csv"
+        print(f"[+] Saved threshold-0.44 spot trade ledger to {p_spot.name}")
+
+    if best_futures_trades is not None:
+        p_fut = LOGS_DIR / "phase5_pooled_futures_trades_044.csv"
         best_futures_trades.to_csv(p_fut, index=False)
-        print(f"[+] Saved Futures Trade Log to {p_fut.name}")
-        
+        print(f"[+] Saved threshold-0.44 futures trade ledger to {p_fut.name}")
+
+    if best_spot_daily is not None:
+        p_spot_daily = LOGS_DIR / "phase5_pooled_spot_daily_equity_044.csv"
+        best_spot_daily.to_csv(p_spot_daily, index=False)
+        print(f"[+] Saved spot MTM equity ledger to {p_spot_daily.name}")
+
     if best_futures_daily is not None:
-        p_daily = LOGS_DIR / "phase5_pooled_futures_daily_equity_052.csv"
+        p_daily = LOGS_DIR / "phase5_pooled_futures_daily_equity_044.csv"
         best_futures_daily.to_csv(p_daily, index=False)
-        print(f"[+] Saved Daily MTM Equity Log to {p_daily.name}")
+        print(f"[+] Saved futures MTM equity ledger to {p_daily.name}")
 
 if __name__ == '__main__':
     main()
