@@ -66,14 +66,18 @@
 ## 5. Current checkpoint
 
 - **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
-- **Last verified trading-code commit on `main`:** `6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a`.
-- **Correction PR:** [#1](https://github.com/manish91082-coder/crypto-trading-bot-ai-based/pull/1), merged after the focused regression suite passed.
-- **1D status:** first label/purge correction merged; five focused regression tests passed on PR head `997e0eb3f2dc2def39734c7604e38e996874db35`, and GitHub Actions passed again on merge commit `6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a` (run `38259889946`). **1D NOT ACCEPTED** until full reproducible research/backtest, feature parity, fold-level sample sufficiency, and data/provenance gates are verified.
-- **Current label semantics:** default observation horizon is 14 daily candles, configurable through `LABEL_OBSERVATION_HORIZON_DAYS`; unresolved cases are NaN/censored rather than synthetic timed exits. The observation window never closes a live position. Purge defaults to the horizon; a separate positive embargo duration is not specified in the master rules and remains a gate.
-- **4H:** NOT STARTED for fixes; 1D must pass first.
+- **Stable main baseline for this slice:** `0d6e9f533f7069c47b7ee061a8fda882a8addf47`.
+- **Current work branch:** `fix/1d-feature-parity`.
+- **Previous 1D slice:** label/purge correction merged as `6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a`; five focused label tests passed on the PR head and merge commit.
+- **Current 1D slice:** shared-feature-engine changes are committed on the work branch; CI for the latest test/dependency revision is running, not yet accepted.
+- **Feature rule:** training and paper execution now call `src/features_1d.py` for matching per-symbol formulas and rolling windows. Relative momentum is timestamp-aligned to BTC; a missing BTC match remains NaN rather than being replaced by zero. Paper execution logs a blocked decision and skips prediction if any required model feature is non-finite.
+- **Training safety:** the final pooled fit now refuses empty, non-binary or single-class resolved labels; walk-forward folds skip invalid train/test targets instead of proceeding.
+- **Tests added:** research-vs-paper feature parity for all model feature columns, missing-BTC fail-closed behavior, rolling-window warm-up parity, invalid OHLC rejection, and empty/single-class target rejection.
+- **1D status:** NOT ACCEPTED until the new tests pass on latest head and full reproducible research/backtest, feature/data provenance, and result reconciliation pass.
+- **4H:** NOT STARTED for fixes; 1D remains priority.
 - **USD 10,000 live readiness:** NOT VERIFIED; **NO-GO**.
 - **Live signing/public broadcast:** BLOCKED.
-- **Next exact action:** continue 1D validation: verify training/live feature parity and fail-closed handling when censoring leaves too few labeled samples, then run the reproducible 1D pipeline and reconcile results. Do not begin 4H fixes until 1D acceptance passes.
+- **Next exact action:** verify latest GitHub Actions result on the feature-parity branch; fix any regression, then open/merge the small PR only after the exact latest revision passes. Next 1D gate is a reproducible end-to-end backtest and capital/PnL reconciliation.
 
 ## 6. Append-only work log
 
@@ -103,3 +107,13 @@
 - Five regression tests passed on PR head `997e0eb3f2dc2def39734c7604e38e996874db35` in Actions run `38259767487`; the same workflow passed on the merge commit in Actions run `38259889946`.
 - Test cases: entry-candle TP evaluation; pessimistic same-candle stop/target collision; conservative break-even stop; unresolved-window censoring rather than timeout exit; incomplete-tail rows remain unlabeled.
 - This verifies the focused label slice only. No full pipeline/backtest was run and no profitability/live-readiness claim is made.
+
+### 2026-10-12 — 1D feature parity slice prepared
+- Baseline `main` SHA inspected: `0d6e9f533f7069c47b7ee061a8fda882a8addf47`.
+- Added `src/features_1d.py` as the canonical source for 1D base formulas and timestamp-aligned BTC relative momentum; raw OHLCV non-finite values and inconsistent OHLC values fail closed.
+- Updated `src/pipeline_1d/step3_features_and_labels_7d.py` to use the canonical helper for research features.
+- Updated `src/execution/paper_engine.py` to use the same helper, removed divergent rolling-window minimums, avoid zero-filling missing BTC returns, and block predictions for non-finite required features.
+- Updated `src/pipeline_1d/step4_pooled_walkforward_training.py` to refuse final model fitting when no valid two-class target remains.
+- Added `tests/test_1d_features.py` and extended the focused workflow dependencies for paper-engine parity tests.
+- Relevant commits on work branch: shared feature engine `4f4570ae7d3f8bf59cddc5831860be85eb3daa92`; training wrapper `25831f2ad06b96a58c1bef4d2be7dabcf3874d43`; live shared use `190efc8b5bc8d2a2ea11746cf45163057de9a9ee`; target validation `6d923e12fb85d5a291143962ac76c053025529e0`; fail-closed final training `f01218f4956fd050402a755511d8200dcb4a172e`; live invalid-feature guard `1a6e7be0703a4cf5ec4604e5f4707eeaa838357e`; parity tests `bbebd0791b3e8f6d90607243a9b7c8964c265fea`; dependency update `e0cf247cb3fa7d42fd83840895a38ae4464488b1`.
+- CI on the latest branch SHA is in progress at time of writing; no test pass is claimed for this slice yet.
