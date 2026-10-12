@@ -17,68 +17,16 @@ from config import (
     SL_ATR_MULT,
     MACRO_BTC_EMA_PERIOD
 )
+from features_1d import compute_1d_base_features, add_relative_momentum_vs_btc
 
 RESEARCH_END = "2024-12-31"       # Strict Vault Rule: Only research period touched
 TP_MULT = TP_ATR_MULT             # Matches execution partial TP (+3.0x ATR)
 SL_MULT = SL_ATR_MULT             # Matches execution initial SL (-1.5x ATR)
 
 def compute_stationary_features(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Engineers stationary, normalized quant features.
-    Strictly causal (no lookahead).
-    """
-    df = df.copy()
-    
-    # 1. Short-term returns
-    df['Ret_1'] = df['close'].pct_change(1)
-    df['Ret_3'] = df['close'].pct_change(3)
-    df['Ret_5'] = df['close'].pct_change(5)
+    """Compatibility wrapper for the canonical shared 1D feature implementation."""
+    return compute_1d_base_features(df)
 
-    # 2. Intrabar Order Flow & Rejection Wicks
-    bar_range = df['high'] - df['low'] + 1e-8
-    df['Synthetic_Order_Flow'] = (df['close'] - df['open']) / bar_range
-    df['Upper_Wick_Ratio'] = (df['high'] - df[['open', 'close']].max(axis=1)) / bar_range
-    df['Lower_Wick_Ratio'] = (df[['open', 'close']].min(axis=1) - df['low']) / bar_range
-
-    # 3. Volume Z-Score (Rolling 20-day)
-    vol_mean = df['volume'].rolling(20).mean()
-    vol_std = df['volume'].rolling(20).std()
-    df['Vol_Z_Score'] = (df['volume'] - vol_mean) / (vol_std + 1e-8)
-
-    # 4. Normalized Volatility (ATR% of price)
-    tr1 = df['high'] - df['low']
-    tr2 = (df['high'] - df['close'].shift(1)).abs()
-    tr3 = (df['low'] - df['close'].shift(1)).abs()
-    tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
-    df['ATR_14'] = tr.rolling(14).mean()
-    df['ATR_Pct'] = df['ATR_14'] / (df['close'] + 1e-8)
-
-    # 5. Stationary Momentum (Normalized Distance to 20 EMA in ATR units)
-    ema_20 = df['close'].ewm(span=MACRO_BTC_EMA_PERIOD, adjust=False).mean()
-    df['Dist_EMA_20_ATR'] = (df['close'] - ema_20) / (df['ATR_14'] + 1e-8)
-
-    # 6. Physical Structural Risk Distance (SL_Dist_Ratio)
-    low_14 = df['low'].rolling(14).min()
-    df['SL_Dist_Ratio'] = (df['close'] - (low_14 - 0.5 * df['ATR_14'])) / (df['close'] + 1e-8)
-
-    # 7. Selling Exhaustion Pullback Depth (Pullback_Depth)
-    high_30 = df['high'].rolling(30).max()
-    df['Pullback_Depth'] = (high_30 - df['close']) / (high_30 + 1e-8)
-
-    # 8. Smart Money Volume Accumulation (Vol_Accum_Ratio)
-    vol_sma20 = df['volume'].rolling(20).mean()
-    df['Vol_Accum_Ratio'] = df['volume'] / (vol_sma20 + 1e-8)
-
-    # 9. Macro Regime Z-Score (Regime_Z_Score)
-    sma200 = df['close'].rolling(200, min_periods=30).mean()
-    std200 = df['close'].rolling(200, min_periods=30).std()
-    df['Regime_Z_Score'] = (df['close'] - sma200) / (std200 + 1e-8)
-
-    # 10. Volatility Compression Ratio (Volatility_Compression)
-    atr_sma50 = df['ATR_14'].rolling(50, min_periods=14).mean()
-    df['Volatility_Compression'] = df['ATR_14'] / (atr_sma50 + 1e-8)
-
-    return df
 
 
 def generate_triple_barrier_labels(df: pd.DataFrame) -> pd.DataFrame:
@@ -197,7 +145,6 @@ def process_all_coins():
     btc_raw = pd.read_csv(DATA_RAW_DIR / "BTCUSDT_1d_Raw_5Years.csv")
     btc_raw['timestamp'] = pd.to_datetime(btc_raw['timestamp'])
     btc_research = btc_raw[btc_raw['timestamp'] <= RESEARCH_END].sort_values('timestamp').reset_index(drop=True)
-    btc_ret_5 = btc_research['close'].pct_change(5).values
 
     summary = []
 
@@ -213,11 +160,8 @@ def process_all_coins():
         # Features
         df = compute_stationary_features(df)
         
-        # Cross-Asset relative momentum vs BTC
-        if len(df) == len(btc_ret_5):
-            df['Rel_Mom_vs_BTC'] = df['Ret_5'] - btc_ret_5
-        else:
-            df['Rel_Mom_vs_BTC'] = df['Ret_5']
+        # Cross-asset momentum is aligned to BTC by timestamp (missing matches remain NaN).
+        df = add_relative_momentum_vs_btc(df, btc_research)
 
         # Labels (Exact matched horizon)
         df = generate_triple_barrier_labels(df)
