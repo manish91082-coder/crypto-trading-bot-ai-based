@@ -20,6 +20,7 @@ from config import (
     PURGE_WINDOW_DAYS,
     LABEL_OBSERVATION_HORIZON_DAYS
 )
+from features_1d import validate_binary_target
 
 def build_pooled_dataset():
     """Pools all 10 coins into a single unified dataset."""
@@ -72,8 +73,11 @@ def run_purged_walk_forward_evaluation(pooled_df: pd.DataFrame, direction: str =
         X_train, y_train = train_data[FEATURE_COLS], train_data[label_col]
         X_test, y_test = test_data[FEATURE_COLS], test_data[label_col]
 
-        if len(y_train) == 0 or y_train.nunique() < 2 or len(y_test) == 0 or y_test.nunique() < 2:
-            print(f"  [{name}] SKIPPED: insufficient resolved labels or class diversity after censoring/purge")
+        try:
+            validate_binary_target(y_train, f"{name} training fold")
+            validate_binary_target(y_test, f"{name} test fold")
+        except ValueError as exc:
+            print(f"  [{name}] SKIPPED: {exc}")
             continue
 
         # 1. Baseline Model: Logistic Regression
@@ -130,10 +134,15 @@ def train_and_save_final_pooled_models(pooled_df: pd.DataFrame):
     for direction in ['Long', 'Short']:
         label_col = f'Label_{direction}'
         clean_df = pooled_df.dropna(subset=FEATURE_COLS + [label_col])
+        y = clean_df[label_col]
+        try:
+            validate_binary_target(y, f"final pooled {direction} model")
+        except ValueError as exc:
+            raise RuntimeError(
+                f"Refusing to train final pooled {direction} model: {exc}"
+            ) from exc
 
         X = clean_df[FEATURE_COLS]
-        y = clean_df[label_col]
-
         model = xgb.XGBClassifier(
             n_estimators=120,
             max_depth=2,

@@ -25,6 +25,7 @@ from config import (
     SL_ATR_MULT,
     PARTIAL_TP_PCT
 )
+from features_1d import compute_1d_base_features, add_relative_momentum_vs_btc
 from risk_governor import RiskGovernor
 from execution.binance_client import BinanceExecutionClient
 from execution.order_manager import OrderManager
@@ -104,72 +105,26 @@ class PaperExecutionEngine:
         return max(10.0, self.initial_capital + realized_total)
 
     def compute_live_features(self, ohlcv_dict: Dict[str, list], symbol: str) -> pd.DataFrame:
-        """
-        Transform raw Binance OHLCV candles into exact certified stationary features.
-        Calculates relative momentum against BTC and 20 EMA distance.
-        """
-        df = pd.DataFrame(ohlcv_dict[symbol], columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
-        df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
-        df.sort_values('timestamp', inplace=True)
+        """Compute live 1D features with the exact shared research formulas."""
+        required = ["timestamp", "open", "high", "low", "close", "volume"]
+        if symbol not in ohlcv_dict or not ohlcv_dict[symbol]:
+            raise ValueError(f"No OHLCV candles supplied for {symbol}")
+
+        df = pd.DataFrame(ohlcv_dict[symbol], columns=required)
+        df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms", errors="raise")
+        df.sort_values("timestamp", inplace=True)
         df.reset_index(drop=True, inplace=True)
+        df = compute_1d_base_features(df)
 
-        # 1. Short-term returns
-        df['Ret_1'] = df['close'].pct_change(1)
-        df['Ret_3'] = df['close'].pct_change(3)
-        df['Ret_5'] = df['close'].pct_change(5)
-
-        # 2. Synthetic Order Flow & Wick Ratios
-        bar_range = df['high'] - df['low'] + 1e-8
-        df['Synthetic_Order_Flow'] = (df['close'] - df['open']) / bar_range
-        df['Upper_Wick_Ratio'] = (df['high'] - df[['open', 'close']].max(axis=1)) / bar_range
-        df['Lower_Wick_Ratio'] = (df[['open', 'close']].min(axis=1) - df['low']) / bar_range
-
-        # 3. Volume Z-Score
-        vol_mean = df['volume'].rolling(20).mean()
-        vol_std = df['volume'].rolling(20).std()
-        df['Vol_Z_Score'] = (df['volume'] - vol_mean) / (vol_std + 1e-8)
-
-        # 4. Normalized Volatility (ATR 14)
-        tr1 = df['high'] - df['low']
-        tr2 = (df['high'] - df['close'].shift(1)).abs()
-        tr3 = (df['low'] - df['close'].shift(1)).abs()
-        tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
-        df['ATR_14'] = tr.rolling(14).mean()
-        df['ATR_Pct'] = df['ATR_14'] / (df['close'] + 1e-8)
-
-        # 5. Stationary Momentum (Normalized Distance to 20 EMA in ATR units)
-        ema_20 = df['close'].ewm(span=MACRO_BTC_EMA_PERIOD, adjust=False).mean()
-        df['Dist_EMA_20_ATR'] = (df['close'] - ema_20) / (df['ATR_14'] + 1e-8)
-
-        # 6. Relative Momentum vs BTC
-        if 'BTCUSDT' in ohlcv_dict:
-            df_btc = pd.DataFrame(ohlcv_dict['BTCUSDT'], columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
-            df_btc['timestamp'] = pd.to_datetime(df_btc['timestamp'], unit='ms')
-            btc_ret_series = pd.Series(df_btc['close'].pct_change(5).values, index=df_btc['timestamp'])
-            df['Rel_Mom_vs_BTC'] = df['Ret_5'] - df['timestamp'].map(btc_ret_series).fillna(0.0)
+        # Relative momentum is timestamp-joined, never silently filled with zero.
+        if "BTCUSDT" not in ohlcv_dict or not ohlcv_dict["BTCUSDT"]:
+            df["Rel_Mom_vs_BTC"] = np.nan
         else:
-            df['Rel_Mom_vs_BTC'] = df['Ret_5']
-
-        # 7. Physical Structural Risk Distance (SL_Dist_Ratio)
-        low_14 = df['low'].rolling(14, min_periods=5).min()
-        df['SL_Dist_Ratio'] = (df['close'] - (low_14 - 0.5 * df['ATR_14'])) / (df['close'] + 1e-8)
-
-        # 8. Selling Exhaustion Pullback Depth (Pullback_Depth)
-        high_30 = df['high'].rolling(30, min_periods=10).max()
-        df['Pullback_Depth'] = (high_30 - df['close']) / (high_30 + 1e-8)
-
-        # 9. Smart Money Volume Accumulation (Vol_Accum_Ratio)
-        vol_sma20 = df['volume'].rolling(20, min_periods=5).mean()
-        df['Vol_Accum_Ratio'] = df['volume'] / (vol_sma20 + 1e-8)
-
-        # 10. Macro Regime Z-Score (Regime_Z_Score)
-        sma200 = df['close'].rolling(200, min_periods=15).mean()
-        std200 = df['close'].rolling(200, min_periods=15).std()
-        df['Regime_Z_Score'] = (df['close'] - sma200) / (std200 + 1e-8)
-
-        # 11. Volatility Compression Ratio (Volatility_Compression)
-        atr_sma50 = df['ATR_14'].rolling(50, min_periods=10).mean()
-        df['Volatility_Compression'] = df['ATR_14'] / (atr_sma50 + 1e-8)
+            btc_df = pd.DataFrame(ohlcv_dict["BTCUSDT"], columns=required)
+            btc_df["timestamp"] = pd.to_datetime(btc_df["timestamp"], unit="ms", errors="raise")
+            btc_df.sort_values("timestamp", inplace=True)
+            btc_df.reset_index(drop=True, inplace=True)
+            df = add_relative_momentum_vs_btc(df, btc_df)
 
         return df
 
@@ -285,7 +240,25 @@ class PaperExecutionEngine:
             try:
                 df_feat = self.compute_live_features(ohlcv_all, symbol)
                 completed_candle = df_feat.iloc[-2]
-                feat_vals = completed_candle[FEATURE_COLS].values.reshape(1, -1)
+                feat_vals = completed_candle[FEATURE_COLS].to_numpy(dtype=float).reshape(1, -1)
+                if not np.isfinite(feat_vals).all():
+                    reason = "BLOCKED: non-finite/missing model features; verify candle warmup and BTC timestamp alignment"
+                    print(f"{symbol:<10} | ${live_price:>11.4f} | {ret_1*100:>+9.2f}% | {'---':>8} | {'---':>8} | {'---':>10} | {'BLOCKED':<9} | {reason}")
+                    ledger_records.append({
+                        'timestamp': cycle_time,
+                        'symbol': symbol,
+                        'live_price': live_price,
+                        'return_1d_pct': round(ret_1 * 100, 2),
+                        'p_long': None,
+                        'p_short': None,
+                        'vol_accum_ratio': None,
+                        'setup_grade': 'BLOCKED',
+                        'decision': 'BLOCKED_INVALID_FEATURES',
+                        'reason': reason,
+                        'wallet_balance': self.current_capital,
+                        'open_positions': len(self.order_mgr.positions)
+                    })
+                    continue
 
                 p_long = float(self.model_long.predict_proba(feat_vals)[0][1])
                 p_short = float(self.model_short.predict_proba(feat_vals)[0][1])
