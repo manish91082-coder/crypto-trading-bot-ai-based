@@ -438,6 +438,8 @@ def run_simulation(
         daily_records.append({
             'timestamp': t,
             'cash': current_cash,
+            'open_allocated_capital': open_allocated,
+            'floating_pnl': floating_pnl,
             'mtm_equity': mtm_equity,
             'drawdown': mtm_dd,
             'open_positions': len(open_trades)
@@ -539,21 +541,32 @@ def main():
             best_futures_trades = df_trades
             best_futures_daily = df_daily
             
-    # Save Trade and Daily Logs for best production threshold (0.52)
-    if best_spot_trades is not None and len(best_spot_trades) > 0:
-        p_spot = LOGS_DIR / "phase5_pooled_spot_trades_052.csv"
+    # Persist actual metrics and selected 0.44 ledgers with truthful names.
+    results_frame = pd.DataFrame(results)
+    if not results_frame.empty:
+        results_path = LOGS_DIR / "phase5_pooled_research_metrics.csv"
+        results_frame.to_csv(results_path, index=False)
+        print(f"\n[+] Saved all research configuration metrics to {results_path.name}")
+
+    if best_spot_trades is not None:
+        p_spot = LOGS_DIR / "phase5_pooled_spot_trades_044.csv"
         best_spot_trades.to_csv(p_spot, index=False)
-        print(f"\n[+] Saved Spot Trade Log to {p_spot.name}")
-        
-    if best_futures_trades is not None and len(best_futures_trades) > 0:
-        p_fut = LOGS_DIR / "phase5_pooled_futures_trades_052.csv"
+        print(f"[+] Saved threshold-0.44 spot trade ledger to {p_spot.name}")
+
+    if best_futures_trades is not None:
+        p_fut = LOGS_DIR / "phase5_pooled_futures_trades_044.csv"
         best_futures_trades.to_csv(p_fut, index=False)
-        print(f"[+] Saved Futures Trade Log to {p_fut.name}")
-        
+        print(f"[+] Saved threshold-0.44 futures trade ledger to {p_fut.name}")
+
+    if best_spot_daily is not None:
+        p_spot_daily = LOGS_DIR / "phase5_pooled_spot_daily_equity_044.csv"
+        best_spot_daily.to_csv(p_spot_daily, index=False)
+        print(f"[+] Saved spot MTM equity ledger to {p_spot_daily.name}")
+
     if best_futures_daily is not None:
-        p_daily = LOGS_DIR / "phase5_pooled_futures_daily_equity_052.csv"
+        p_daily = LOGS_DIR / "phase5_pooled_futures_daily_equity_044.csv"
         best_futures_daily.to_csv(p_daily, index=False)
-        print(f"[+] Saved Daily MTM Equity Log to {p_daily.name}")
+        print(f"[+] Saved futures MTM equity ledger to {p_daily.name}")
 
 if __name__ == '__main__':
     main()
