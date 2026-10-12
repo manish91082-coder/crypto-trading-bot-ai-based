@@ -66,16 +66,14 @@
 ## 5. Current checkpoint
 
 - **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
-- **Work branch:** `fix/1d-label-censoring`; based on the verified status-tracking main line.
-- **User authorization:** The user explicitly authorized correction of the project code in this conversation; the historical code-freeze note is lifted only for the requested work sequence, 1D first then 4H.
-- **1D status:** first bounded correction implemented on the work branch; regression verification is pending. **NOT ACCEPTED**.
-- **Changes in this slice:** configurable label-observation horizon linked to the existing 14-day setting by default; unresolved outcomes are censored instead of assigned an artificial time-exit result; entry candle is evaluated; break-even stop is modeled conservatively; walk-forward fitting drops censored labels; purge boundary is strict rather than inclusive; focused tests and a CI workflow were added.
-- **Important scope note:** the finite observation horizon only defines the supervised-label window. It does not time-close any active paper/live position. No separate embargo duration was specified by the current rules; `PURGE_WINDOW_DAYS` defaults to the observation horizon and can be configured longer. A separate embargo policy remains to be documented before 1D acceptance.
-- **Tests:** authored but not yet confirmed executed by GitHub Actions. Do not treat as passed.
-- **4H:** NOT STARTED for fixes; queued until 1D acceptance.
-- **Live USD 10,000 readiness:** NOT VERIFIED; **NO-GO**.
+- **Last verified trading-code commit on `main`:** `6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a`.
+- **Correction PR:** [#1](https://github.com/manish91082-coder/crypto-trading-bot-ai-based/pull/1), merged after the focused regression suite passed.
+- **1D status:** first label/purge correction merged; five focused regression tests passed on PR head `997e0eb3f2dc2def39734c7604e38e996874db35`, and GitHub Actions passed again on merge commit `6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a` (run `38259889946`). **1D NOT ACCEPTED** until full reproducible research/backtest, feature parity, fold-level sample sufficiency, and data/provenance gates are verified.
+- **Current label semantics:** default observation horizon is 14 daily candles, configurable through `LABEL_OBSERVATION_HORIZON_DAYS`; unresolved cases are NaN/censored rather than synthetic timed exits. The observation window never closes a live position. Purge defaults to the horizon; a separate positive embargo duration is not specified in the master rules and remains a gate.
+- **4H:** NOT STARTED for fixes; 1D must pass first.
+- **USD 10,000 live readiness:** NOT VERIFIED; **NO-GO**.
 - **Live signing/public broadcast:** BLOCKED.
-- **Next exact action:** open the change PR, confirm the focused GitHub Actions regression suite result on the exact head SHA, fix any failures, and verify the branch diff before merge.
+- **Next exact action:** continue 1D validation: verify training/live feature parity and fail-closed handling when censoring leaves too few labeled samples, then run the reproducible 1D pipeline and reconcile results. Do not begin 4H fixes until 1D acceptance passes.
 
 ## 6. Append-only work log
 
@@ -99,3 +97,9 @@
 - Added `tests/test_1d_labeling.py` and `.github/workflows/1d-label-regression.yml`. GitHub Actions had returned zero runs immediately after workflow creation; successful execution is still pending.
 - Work-branch commits: config `87446fec89008f275aa4f3f8ca7e06dfb8489136`; labels `96fbcbad3ac9ed718612189b020491d9d61232fe` and cleanup `60fd5d4727044f0a3b8084fb9d24ebb99e5a8be6`; walk-forward `7482fe17527bc63f9ee36350b8d5d6a1a8dc622f`; tests `7e7d2f51874d19bb25eaff3c865a111963575858`; workflow `6a1ecc02cf63a185c17b438d249ea55e5299a5ca`.
 - No performance claims are changed or certified by this code correction. Full 1D pipeline acceptance remains blocked pending tests and end-to-end reproducibility.
+
+### 2026-10-12 — first 1D correction merged and validated
+- Opened PR #1 for the scoped 1D label/purge correction; it was merged by squash as `6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a`.
+- Five regression tests passed on PR head `997e0eb3f2dc2def39734c7604e38e996874db35` in Actions run `38259767487`; the same workflow passed on the merge commit in Actions run `38259889946`.
+- Test cases: entry-candle TP evaluation; pessimistic same-candle stop/target collision; conservative break-even stop; unresolved-window censoring rather than timeout exit; incomplete-tail rows remain unlabeled.
+- This verifies the focused label slice only. No full pipeline/backtest was run and no profitability/live-readiness claim is made.
