@@ -26,6 +26,7 @@ from config import (
     PARTIAL_TP_PCT
 )
 from features_1d import compute_1d_base_features, add_relative_momentum_vs_btc
+from model_provenance import load_verified_production_model_paths
 from risk_governor import RiskGovernor
 from execution.binance_client import BinanceExecutionClient
 from execution.order_manager import OrderManager
@@ -74,14 +75,14 @@ class PaperExecutionEngine:
         )
         self.risk_gov.update_capital(self.current_capital)
 
-        # Load Certified Pooled Models
-        long_path = MODELS_1D_POOLED_DIR / "Pooled_1d_XGB_Long.pkl"
-        short_path = MODELS_1D_POOLED_DIR / "Pooled_1d_XGB_Short.pkl"
-        if not long_path.exists() or not short_path.exists():
-            raise FileNotFoundError(f"Pooled models not found in {MODELS_1D_POOLED_DIR}. Train models first.")
-
-        self.model_long = joblib.load(long_path)
-        self.model_short = joblib.load(short_path)
+        # Load only an explicitly promoted, hash-verified production model bundle.
+        # Step 4 research candidates live in a separate directory and are never executable here.
+        production_paths = load_verified_production_model_paths(
+            MODELS_1D_POOLED_DIR,
+            expected_feature_columns=FEATURE_COLS,
+        )
+        self.model_long = joblib.load(production_paths["Long"])
+        self.model_short = joblib.load(production_paths["Short"])
 
     def _calculate_current_capital(self) -> float:
         """Calculate current equity dynamically from Binance Testnet or local paper wallet."""

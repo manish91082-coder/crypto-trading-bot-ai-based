@@ -14,6 +14,9 @@ DATA_PROCESSED_DIR = DATA_DIR / "processed"
 MODELS_DIR = ROOT_DIR / "models"
 MODELS_15M_DIR = MODELS_DIR / "15m"
 MODELS_1D_DIR = MODELS_DIR / "1d_standard"
+# Candidate models are research-only and never loaded by the paper execution engine.
+MODELS_1D_CANDIDATE_DIR = MODELS_DIR / "1d_pooled_candidate"
+# Production models require an explicit promotion manifest with verified hashes and gates.
 MODELS_1D_POOLED_DIR = MODELS_DIR / "1d_pooled"
 MODELS_1D_AGGRESSIVE_DIR = MODELS_DIR / "1d_aggressive"
 MODELS_4H_POOLED_DIR = MODELS_DIR / "4h_pooled"
@@ -24,7 +27,7 @@ ARCHIVE_DIR = ROOT_DIR / "archive"
 SRC_DIR = ROOT_DIR / "src"
 
 # Auto-ensure all operational directories exist
-for p in [DATA_RAW_DIR, DATA_PROCESSED_DIR, MODELS_15M_DIR, MODELS_1D_DIR, MODELS_1D_AGGRESSIVE_DIR, MODELS_1D_POOLED_DIR, MODELS_4H_POOLED_DIR, LOGS_DIR, DOCS_DIR, ARCHIVE_DIR]:
+for p in [DATA_RAW_DIR, DATA_PROCESSED_DIR, MODELS_15M_DIR, MODELS_1D_DIR, MODELS_1D_AGGRESSIVE_DIR, MODELS_1D_POOLED_DIR, MODELS_1D_CANDIDATE_DIR, MODELS_4H_POOLED_DIR, LOGS_DIR, DOCS_DIR, ARCHIVE_DIR]:
     p.mkdir(parents=True, exist_ok=True)
 
 # Standard Universal 10-Coin Universe

@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "src"
 sys.path.insert(0, str(SRC))
 from config import (
-    DATA_PROCESSED_DIR, DATA_RAW_DIR, LOGS_DIR, MODELS_1D_POOLED_DIR, SYMBOLS,
+    DATA_PROCESSED_DIR, DATA_RAW_DIR, LOGS_DIR, MODELS_1D_CANDIDATE_DIR, SYMBOLS,
     MIN_WALK_FORWARD_OOS_AUC,
 )
 from audits.audit_data_integrity import certify_1d_data_integrity
@@ -245,11 +245,26 @@ def main() -> None:
 
     model_hashes = {}
     for name in ("Pooled_1d_XGB_Long.pkl", "Pooled_1d_XGB_Short.pkl"):
-        p = MODELS_1D_POOLED_DIR / name
+        p = MODELS_1D_CANDIDATE_DIR / name
         if not p.exists() or p.stat().st_size == 0:
             raise FileNotFoundError(f"Missing fitted model {p}")
         shutil.copy2(p, REPORT / name)
         model_hashes[name] = {"sha256": sha(p), "bytes": p.stat().st_size}
+    candidate_manifest_path = MODELS_1D_CANDIDATE_DIR / "candidate_model_manifest.json"
+    if not candidate_manifest_path.is_file():
+        raise FileNotFoundError("Step 4 candidate model manifest is missing")
+    candidate_manifest = json.loads(candidate_manifest_path.read_text(encoding="utf-8"))
+    if candidate_manifest.get("artifact_type") != "research_candidate":
+        raise ValueError("Step 4 emitted an unexpected model artifact type")
+    if candidate_manifest.get("promotion_status") == "PROMOTED":
+        raise ValueError("Research candidate must never be automatically promoted")
+    shutil.copy2(candidate_manifest_path, REPORT / "candidate_model_manifest.json")
+    model_hashes["candidate_manifest"] = {
+        "sha256": sha(candidate_manifest_path),
+        "bytes": candidate_manifest_path.stat().st_size,
+        "promotion_status": candidate_manifest.get("promotion_status"),
+        "strategy_acceptance_status": candidate_manifest.get("strategy_acceptance_status"),
+    }
 
     results = {}
     output_names = (
