@@ -66,18 +66,17 @@
 ## 5. Current checkpoint
 
 - **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
-- **Base main SHA for this slice:** 0d93fbcc38970a020372cbd97618ae33020e03e4.
-- **Current branch:** fix/1d-reproducible-research; PR #3 remains open until its newest code and diagnosis-gate checks are verified.
-- **Merged 1D corrections:** label/purge correction 6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a; training/paper feature parity 83eba8840898146cff2ed43bd6f86560e3130d38. Both passed their targeted post-merge Actions tests.
-- **Research reproducibility run:** Actions run 38262463632 completed successfully on PR head a8ed19aa4c70f6866cc5731d46d8c3e6f5a18114. Its 24-file artifact is 1d-research-reproducibility-29d030caf78e088176fcbb265e43fe18cb08c878. Raw-data structural preflight, four folds per direction, accounting arithmetic, and before/after sealed-vault CSV hashes passed.
-- **Critical finding from that completed run:** all six Step 5 spot/futures thresholds (0.42/0.44/0.46) produced **0 trades** in both USD 120 and USD 10,000 scenarios. Final equity stayed at starting capital and drawdown stayed at 0%. This is not proof of a profitable or working strategy; strategy gate is **FAIL**.
-- **Critical finding from walk-forward evidence:** the repository's documented gate requires every purged walk-forward XGBoost OOS AUC fold to be above 0.52. Long fold AUCs were 0.6331, 0.4169, 0.5421, 0.5023; Short fold AUCs were 0.5288, 0.6177, 0.5067, 0.5786. Both directions fail the all-fold rule.
-- **New diagnosis work on the branch:** Step 4 now records XGBoost probability distributions and counts above 0.42/0.44/0.46, along with the target positive rate. Step 5 records per-coin Long/Short probability ranges and candidate counts at 0.42/0.44/0.46/0.52/0.55.
-- **Gate separation:** the run can report reproducibility/accounting PASS while explicitly reporting strategy acceptance FAIL; a completed workflow is not a profitable strategy certificate. The manifest must say live_readiness: NO-GO, live_signing: BLOCKED, and public_broadcast: BLOCKED.
-- **Holdout handling:** 2025-01-01 through 2026-09-30 is not used by this research run; committed vault CSV hashes were identical before and after that run. The historic holdout was already examined by the project previously, so no fresh holdout retest or parameter tuning is permitted in this slice.
-- **Current verification:** newest diagnostic/score-distribution changes and gate tests are committed on the PR branch; Actions are running on the exact latest branch head. Do not merge until the exact-head tests and research replay have finished and their artifacts are read.
-- **1D status:** NOT ACCEPTED. **4H:** NOT STARTED. **USD 10,000 live readiness:** NOT VERIFIED / NO-GO.
-- **Next exact action:** inspect the fresh probability-distribution diagnostics. If probabilities never reach the configured thresholds, trace label semantics/model calibration versus the strategy's execution target. Do not silently lower thresholds or fabricate trades. Preserve the holdout lock.
+- **Current verified main HEAD before this status refresh:** 3ec4226a60da62a4751bcd409dccd2e49b2ba8d5.
+- **Merged PR #3:** 1D research reproducibility and diagnostic tooling, merge commit 3ec4226a60da62a4751bcd409dccd2e49b2ba8d5. The post-merge focused workflow on that merge SHA passed (Actions run 38263832075).
+- **PR-head regression evidence:** all 15 focused tests passed on e1ec7a9067a40c471fdec16de32aa2d1708acab6 (run 38263440968). An earlier run on 75210c2740d0323bda0dff1afce1ce749d7c8459 failed because a test fixture described all AUC values as passing while expecting failure; the fixture was corrected to include 0.51, then tests passed on the final PR head. This failure is recorded, not concealed.
+- **Research workflow:** full research-only run passed execution, preflight, fold completeness, accounting reconciliation, artifact upload and vault hash checks on PR head e1ec7a9067a40c471fdec16de32aa2d1708acab6 (Actions run 38263441166). Exact artifact ZIP digest: sha256:5b72116543e9d0dbb6fe83fe4006e1549f05d5a0c4082d4222bde22925440e79.
+- **Strategy outcome remains FAIL:** both USD 120 and USD 10,000 research scenarios produced 0 trades in all Step 5 configurations (spot and futures thresholds 0.42, 0.44, 0.46). Final equity stayed equal to starting capital; zero PnL here is not a profitability result.
+- **Evidence for zero trades:** final research-period model score diagnostics over 10 symbols show global max Long probability 0.3660297 and max Short probability 0.3386222; both are below the lowest configured entry threshold 0.42. All counts at or above 0.42, 0.44 and 0.46 are zero.
+- **Walk-forward gate from repository's documented criterion:** each of four folds for each direction must exceed 0.52 XGBoost OOS AUC. Actual Long folds: 0.6331, 0.4169, 0.5421, 0.5023. Actual Short folds: 0.5288, 0.6177, 0.5067, 0.5786. Long fails two folds and Short fails one fold. This model is not accepted.
+- **Holdout safety:** 2025-01-01 through 2026-09-30 holdout was not used by the research-only workflow; the 11 committed vault CSVs had identical SHA256 hashes before and after.
+- **Scope interpretation:** the merged workflow's reproducibility/accounting result is PASS, while its strategy acceptance result is FAIL. Full strategy acceptance remains NOT CERTIFIED because the existing holdout was already previously examined and live gates are not satisfied.
+- **Next exact action:** investigate target semantics/model quality using research data only. Do not simply reduce entry thresholds: model scores are below all configured thresholds and walk-forward AUC is unstable. Compare the current TP-before-SL/BE censored label against actual execution cashflows/fees and build a research-only OOS trade-return diagnostic; maintain the sealed holdout.
+- **4H:** NOT STARTED. **USD 10,000 live readiness:** NO-GO. **Live signing and public broadcast:** BLOCKED.
 
 ## 6. Append-only work log
 
@@ -150,3 +149,12 @@
 - Added configurable MIN_WALK_FORWARD_OOS_AUC (default 0.52), src/audits/strategy_acceptance.py, tests for failed AUC/zero-trade gates, Step 4 probability/threshold diagnostics, Step 5 per-coin model-score distribution diagnostics, and a runner manifest separating reproducibility_status from strategy_acceptance_status.
 - The research reproducibility workflow is designed to exit successfully when execution/accounting and artifacts are reproducible while marking strategy acceptance FAIL. This helps diagnose without concealing failure; no threshold is changed automatically.
 - Exact latest-head workflow verdict has not yet been read at checkpoint time.
+
+### 2026-10-12 — PR #3 merged; actual 1D strategy gate is FAIL
+- Merged PR #3 as commit 3ec4226a60da62a4751bcd409dccd2e49b2ba8d5. The PR-head research reproducibility workflow passed on e1ec7a9067a40c471fdec16de32aa2d1708acab6; the post-merge focused regression workflow passed on merge SHA 3ec4226a60da62a4751bcd409dccd2e49b2ba8d5 in run 38263832075.
+- The research-run manifest separates reproducibility_status=PASS from strategy_acceptance_status=FAIL and full_strategy_acceptance=NOT_CERTIFIED.
+- Exact evidence: all six tested Step 5 threshold/config combinations generated zero trades in both capital scenarios; final models' global maximum scores were 0.3660297 Long and 0.3386222 Short, below the lowest entry threshold of 0.42.
+- XGBoost OOS AUC did not meet the source-documented >0.52 criterion on all folds. Long: [0.6330786, 0.4169374, 0.5421262, 0.5023380]; Short: [0.5288187, 0.6177276, 0.5067404, 0.5785655].
+- A test fixture error in revision 75210c2740d0323bda0dff1afce1ce749d7c8459 caused one strategy-gate regression test to fail; it was corrected at e1ec7a9067a40c471fdec16de32aa2d1708acab6 and all 15 tests passed.
+- The earlier finished research run used research rows through 2024-12-31 and verified the separate vault CSV hashes were unchanged. It did not claim OOS profitability or live readiness.
+- Next: inspect label/execution economic equivalence and create a research-only OOS net-return diagnostic. Do not lower thresholds or retune on the sealed holdout without evidence.
