@@ -66,12 +66,16 @@
 ## 5. Current checkpoint
 
 - **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
-- **Last inspected pre-update `main` SHA:** `b42ef00532cc185009396b50d5a208d1f8715e81`.
-- **1D:** NOT ACCEPTED; specification mismatch and live/training parity/reproducibility checks remain.
-- **4H:** NOT STARTED for fixes; recorded defects are queued until 1D passes.
+- **Work branch:** `fix/1d-label-censoring`; based on the verified status-tracking main line.
+- **User authorization:** The user explicitly authorized correction of the project code in this conversation; the historical code-freeze note is lifted only for the requested work sequence, 1D first then 4H.
+- **1D status:** first bounded correction implemented on the work branch; regression verification is pending. **NOT ACCEPTED**.
+- **Changes in this slice:** configurable label-observation horizon linked to the existing 14-day setting by default; unresolved outcomes are censored instead of assigned an artificial time-exit result; entry candle is evaluated; break-even stop is modeled conservatively; walk-forward fitting drops censored labels; purge boundary is strict rather than inclusive; focused tests and a CI workflow were added.
+- **Important scope note:** the finite observation horizon only defines the supervised-label window. It does not time-close any active paper/live position. No separate embargo duration was specified by the current rules; `PURGE_WINDOW_DAYS` defaults to the observation horizon and can be configured longer. A separate embargo policy remains to be documented before 1D acceptance.
+- **Tests:** authored but not yet confirmed executed by GitHub Actions. Do not treat as passed.
+- **4H:** NOT STARTED for fixes; queued until 1D acceptance.
 - **Live USD 10,000 readiness:** NOT VERIFIED; **NO-GO**.
-- **CI:** no workflow runs and no status entries were reported for the queried commit; **not green**.
-- **Next exact action:** perform a bounded 1D source trace for label/execution horizon + purge semantics; patch only after the rule is evidenced, then add/run regression test(s) and update this checkpoint.
+- **Live signing/public broadcast:** BLOCKED.
+- **Next exact action:** open the change PR, confirm the focused GitHub Actions regression suite result on the exact head SHA, fix any failures, and verify the branch diff before merge.
 
 ## 6. Append-only work log
 
@@ -86,3 +90,12 @@
 - Read the committed file back from GitHub; the live branch HEAD was checked after each write.
 - The status query for commit `b42ef00532cc185009396b50d5a208d1f8715e81` returned zero statuses and the Actions API returned zero workflow runs. This is **not** a passing CI result.
 - No trading code changed. Next: bounded 1D label/execution/purge trace.
+
+### 2026-10-12 — 1D label/purge correction submitted for verification
+- Source-of-rule evidence: `docs/AI_Quant_Master_Rules.md` states the label target/horizon must mirror execution and forbids calendar timeout of a winning runner. `src/pipeline_1d/step7_full_5year_governed_backtest.py` and `src/execution/order_manager.py` also specify event-driven exits with no calendar timeout. User authorization in this conversation permits the requested, scoped correction despite the historical code-freeze note.
+- In `src/config.py`, added validated `LABEL_OBSERVATION_HORIZON_DAYS` and made `PURGE_WINDOW_DAYS` configurable; a purge shorter than the observation horizon fails closed.
+- In `src/pipeline_1d/step3_features_and_labels_7d.py`, removed synthetic timeout-price labels, mark unresolved samples as NaN, evaluate the entry candle, enforce pessimistic same-candle stop/target collisions, and account conservatively for the configured break-even stop.
+- In `src/pipeline_1d/step4_pooled_walkforward_training.py`, exclude censored labels from both train/test folds and use a strict train cutoff to prevent samples whose label window touches the test boundary.
+- Added `tests/test_1d_labeling.py` and `.github/workflows/1d-label-regression.yml`. GitHub Actions had returned zero runs immediately after workflow creation; successful execution is still pending.
+- Work-branch commits: config `87446fec89008f275aa4f3f8ca7e06dfb8489136`; labels `96fbcbad3ac9ed718612189b020491d9d61232fe` and cleanup `60fd5d4727044f0a3b8084fb9d24ebb99e5a8be6`; walk-forward `7482fe17527bc63f9ee36350b8d5d6a1a8dc622f`; tests `7e7d2f51874d19bb25eaff3c865a111963575858`; workflow `6a1ecc02cf63a185c17b438d249ea55e5299a5ca`.
+- No performance claims are changed or certified by this code correction. Full 1D pipeline acceptance remains blocked pending tests and end-to-end reproducibility.
