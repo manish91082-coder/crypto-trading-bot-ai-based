@@ -1,19 +1,20 @@
 # PROJECT LIVE STATUS CHATGPT
 
-> Canonical continuity file for the AI Crypto Trading Bot project. Read this file AND inspect the live GitHub `main` HEAD before every work slice. GitHub is the source of truth; this file is a compact checkpoint, not proof that a test passed.
+> Canonical continuity file for the AI Crypto Trading Bot project. Read this file AND inspect the live GitHub `main` HEAD before every work slice. GitHub is the source of truth; a stored SHA is a checkpoint, not a substitute for reading the current branch tip.
 
 ## 1. Project lock
 
 - **Canonical repository:** `manish91082-coder/crypto-trading-bot-ai-based`
 - **Canonical branch:** `main`
-- **Baseline HEAD observed before this status-file commit:** `6cfa466d27a44a30252cf969e760e0d271523a0f`
-- **Current verified HEAD (status-file commit):** `39f12b3c38ac7f48e1d376994cc3d98676e61115`
+- **Baseline HEAD before continuity tracking:** `6cfa466d27a44a30252cf969e760e0d271523a0f`
+- **Initial status-file commit:** `39f12b3c38ac7f48e1d376994cc3d98676e61115`
+- **Main SHA inspected immediately before this checkpoint refresh:** `b42ef00532cc185009396b50d5a208d1f8715e81`. This status-file edit itself creates a new commit; always re-read live HEAD after any write.
 - **Work order:** fix and verify **1D first**, then fix and verify **4H**. Do not work on 4H strategy code until the 1D acceptance gate passes, except shared infrastructure defects that block 1D.
 - **Capital target for research validation:** USD 10,000, configurable and traceable through configuration. A $10,000 backtest is not evidence of live readiness or future profitability.
 - **Trading safety lock:** live signing and public transaction broadcast remain **BLOCKED**. Research/backtest and isolated paper simulations only until explicit safety gates are independently evidenced.
 - **Business objective:** maximize *risk-adjusted net* profitability and minimize losses after applicable fees, slippage, market impact, gas/relay costs where applicable, limits, and failures. Never optimize gross return alone or represent historical results as guarantees.
 
-## 2. Verified starting facts (evidence from the baseline source)
+## 2. Verified starting facts (evidence from inspected source)
 
 1. `src/config.py` sets `INITIAL_CAPITAL = 120.0`, `MAX_INACTIVITY_DAYS = 14`, `PURGE_WINDOW_DAYS = 14`, and taker fee to `0.00075`.
 2. `src/pipeline_1d/step3_features_and_labels_7d.py` sets `EVENT_BARRIER_DAYS = 28` while its docstring describes a 14-day maximum holding window. This is a **specification mismatch to resolve**, not a silently pre-decided patch: reconcile the actual execution/runner rules first, then derive the label horizon and purge/embargo consistently.
@@ -21,7 +22,7 @@
 4. The reviewed 1D paper execution path fetches daily candles. Training/live feature equivalence, warm-up windows, candle selection, fees, risk sizing, and order-failure behavior require tested parity.
 5. The committed 1D five-year ledger previously inspected contains 175 closed trades and realized PnL of about **+$252.73 from $120**, with maximum drawdown about **31.52%**. Treat this as a repository artifact, not independently reproduced performance.
 6. 4H issues reserved for the later phase: labels are generated before the research/holdout cutoff is applied; the holdout simulation has a start but no explicit declared end in the inspected script; the holdout was used to compare/select profiles; and the trade-PnL-implied final balance differs from the equity ledger by about $7.41.
-7. GitHub verification performed after the status-file commit found `total_count: 0` workflow runs on `main`, no `.github/workflows` directory, and no commit status entries for `39f12b3c38ac7f48e1d376994cc3d98676e61115`. CI is **not verified green**.
+7. GitHub status and Actions were queried for the inspected status-file commits. The latest query for `b42ef00532cc185009396b50d5a208d1f8715e81` returned zero commit statuses and zero workflow runs. The `.github/workflows` directory was not found. CI is **not verified green**.
 8. Structural checks of committed OHLCV files do **not** establish authenticity against an independent official exchange source. Do not claim that independent data validation passed unless it is performed and evidence is saved.
 
 ## 3. Short execution plan
@@ -60,17 +61,16 @@
 - **Risk-first objective:** optimize net, risk-adjusted performance with drawdown, downside tails, liquidity, trade frequency, concentration, fees/slippage and failure modes reported. Profit is not guaranteed.
 - **Safe modes:** no real-money signing, no public broadcast, and no bypass of safety gates. Paper fallback must be labeled as paper and must never be mistaken for an exchange fill.
 - **Efficient quality:** one small, testable slice per user command `next`; no sprawling audit detours. Test the relevant slice immediately. Expand checks only when evidence or regression risk requires it.
-- **Continuity updates:** at the end of each meaningful work response, update this file with date/time, live HEAD, change/commit SHA, evidence/tests, gate status, blockers and exact next action. Re-read the current file SHA before updating it. Do not claim automatic background saving; updates happen when a Git-connected work action is actually executed.
+- **Continuity updates:** at the end of each meaningful work response, update this file with the last inspected HEAD, change/commit SHA, evidence/tests, gate status, blockers and exact next action. Re-read the current file SHA before updating it. Do not claim automatic background saving; updates happen when a Git-connected work action is actually executed.
 
 ## 5. Current checkpoint
 
-- **Checkpoint timestamp:** 2026-10-12 (Asia/Kolkata)
-- **Status file:** created, read back from GitHub, and verified on `main`.
-- **Current verified `main` HEAD:** `39f12b3c38ac7f48e1d376994cc3d98676e61115`.
+- **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
+- **Last inspected pre-update `main` SHA:** `b42ef00532cc185009396b50d5a208d1f8715e81`.
 - **1D:** NOT ACCEPTED; specification mismatch and live/training parity/reproducibility checks remain.
 - **4H:** NOT STARTED for fixes; recorded defects are queued until 1D passes.
 - **Live USD 10,000 readiness:** NOT VERIFIED; **NO-GO**.
-- **CI:** no workflow runs and no status entries were reported for the verified status-file commit; **not green**.
+- **CI:** no workflow runs and no status entries were reported for the queried commit; **not green**.
 - **Next exact action:** perform a bounded 1D source trace for label/execution horizon + purge semantics; patch only after the rule is evidenced, then add/run regression test(s) and update this checkpoint.
 
 ## 6. Append-only work log
@@ -81,8 +81,8 @@
 - Verified the 14-day vs 28-day specification mismatch in source.
 - No strategy code changed by this checkpoint. This status file records the plan and known gates only.
 
-### 2026-10-12 — status file committed and verified
-- Created `PROJECT_LIVE_STATUS_CHATGPT.md` on `main`; commit: `39f12b3c38ac7f48e1d376994cc3d98676e61115`.
-- Re-read the file from GitHub and confirmed `main` HEAD equals that commit.
-- Queried commit status and Actions runs: no statuses and zero workflow runs were returned. This is **not** a passing CI result.
+### 2026-10-12 — continuity file and CI state rechecked
+- Created the status file on `main` in commit `39f12b3c38ac7f48e1d376994cc3d98676e61115`; subsequently updated it in commit `b42ef00532cc185009396b50d5a208d1f8715e81`.
+- Read the committed file back from GitHub; the live branch HEAD was checked after each write.
+- The status query for commit `b42ef00532cc185009396b50d5a208d1f8715e81` returned zero statuses and the Actions API returned zero workflow runs. This is **not** a passing CI result.
 - No trading code changed. Next: bounded 1D label/execution/purge trace.
