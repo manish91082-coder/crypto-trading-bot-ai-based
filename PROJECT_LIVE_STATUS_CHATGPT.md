@@ -66,16 +66,17 @@
 ## 5. Current checkpoint
 
 - **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
-- **Base main SHA for current slice:** 10b22b80303a059f833768097db9a7e4eee3fd03.
-- **Current PR:** [#4](https://github.com/manish91082-coder/crypto-trading-bot-ai-based/pull/4), branch fix/1d-model-promotion-gate.
-- **Last fully tested code revision:** ecf8cc660269f125ef6e19c00b0e5754c000ece2. The focused regression suite passed 24 tests; the full research-only reproducibility workflow passed on this exact SHA in Actions run 38264701208.
-- **Evidence artifact:** workflow artifact ID 11754181816, ZIP SHA256 7d8dc5e3b7c2110875620a299a291a17b6db4ca5dbf747bbfa5b6b962824fc33.
-- **Candidate/production isolation verified by the research log:** Step 4 saved both candidate model files to the candidate path and printed "production directory untouched". It created candidate_model_manifest.json with promotion_status REJECTED because Long folds 2 and 4, plus Short fold 3, fail the documented XGBoost OOS AUC > 0.52 criterion.
-- **Failing fold evidence:** Long fold 2 = 0.4169373526; Long fold 4 = 0.5023380387; Short fold 3 = 0.5067403856. Candidate is REJECTED and is never auto-promoted.
-- **Research replay:** Step 5 loaded candidate artifacts only; all six spot/futures configurations at 0.42/0.44/0.46 produced 0 trades in both the $120 and $10,000 scenarios. Research/accounting checks completed and candidate research artifacts/hash manifest were uploaded. This is NOT strategy acceptance.
-- **Production execution gate:** PaperExecutionEngine now refuses to load models without a production_model_manifest.json with promotion_status PROMOTED, strategy_acceptance_status PASS, exact feature order, all five required validation gates marked PASS, and matching SHA256 for both model files. No approved production manifest is currently present/verified, therefore paper-engine startup is expected to be blocked. Do not invent or create a PROMOTED manifest from the rejected candidate.
-- **1D status:** NOT ACCEPTED; strategy research gate FAIL. **4H:** NOT STARTED. **$10,000 live readiness:** NO-GO. **Live signing/public broadcast:** BLOCKED.
-- **Next exact action:** wait for the latest PR workflow run created by the status-only checkpoint commit, confirm the exact current PR head still has all 24 tests/research replay successful, then merge this safety/diagnostics PR. After merge, proceed to the next 1D research-only task: inspect label targets against execution cashflows/fees and build an untouched-in-research OOS trade-return diagnostic. Do not lower thresholds or reuse the examined 2025-2026 holdout for tuning.
+- **Current verified main HEAD before this status refresh:** 6f8765f6c18ecfdfee5fec7c3b37d3f7f4f4826f.
+- **Merged PR #3:** reproducibility diagnostics, merge SHA 3ec4226a60da62a4751bcd409dccd2e49b2ba8d5.
+- **Merged PR #4:** candidate/production model separation, merge SHA 6f8765f6c18ecfdfee5fec7c3b37d3f7f4f4826f.
+- **Latest code validation before merge:** PR-head Actions run 38264997404 completed successfully on SHA 7ccc6dcf032033c8eb6d05c0d3e713b56994f592, including all focused regression tests and the full research-only reproducibility/accounting runner. Exact artifact ZIP SHA256: 7d8dc5e3b7c2110875620a299a291a17b6db4ca5dbf747bbfa5b6b962824fc33. All 24 tests passed.
+- **Post-merge test:** Actions run 38265233191 targets merge SHA 6f8765f6c18ecfdfee5fec7c3b37d3f7f4f4826f. At the moment of this checkpoint refresh it was still marked in progress; do not claim post-merge smoke green until final conclusion is checked.
+- **Model isolation result:** Step 4 generates candidate files only under `models/1d_pooled_candidate` and writes a hash-backed candidate manifest. Step 5 and the reproducibility runner use candidate files only. Research workflow logs confirmed production directory untouched.
+- **Model acceptance result:** candidate status is **REJECTED** because Long fold 2 AUC = 0.416937, Long fold 4 = 0.502338, Short fold 3 = 0.506740, each below the documented >0.52 criterion. Candidate model probabilities also remain below the minimum 0.42 entry threshold; all six Step 5 configurations produced zero trades in both $120 and $10,000 research replays.
+- **Production execution gate:** PaperExecutionEngine requires a verified `production_model_manifest.json` with PROMOTED status, strategy acceptance PASS, all mandatory validation gates PASS, exact feature order and matching SHA256 hashes. No approved production manifest is currently verified. The paper engine therefore blocks startup until a genuinely accepted production bundle exists. This is intentional safety behavior, not live readiness.
+- **1D status:** NOT ACCEPTED; strategy gate FAIL. This work improves reproducibility and prevents rejected candidates from flowing into execution; it does not create a profitable model.
+- **4H:** NOT STARTED. **$10,000 live readiness:** NO-GO. **Live signing/public broadcast:** BLOCKED.
+- **Next exact action:** confirm the post-merge smoke run result and its exact SHA. Then continue 1D-only research: inspect training target vs strategy economics (partial TP, break-even stop, fees and net return) using the research period; do not reduce thresholds by guesswork or retune against the already examined holdout.
 
 ## 6. Append-only work log
 
@@ -174,3 +175,11 @@
 - Added nine tests for failed/missing/incomplete candidate evidence, manifest gates, feature order and hash checks, and valid manifest verification. Full suite passed 24 tests.
 - Research workflow 38264701208 succeeded on code SHA ecf8cc660269f125ef6e19c00b0e5754c000ece2. Its exact log recorded candidate rejection: Long AUC 0.416937/0.502338 and Short AUC 0.506740 fail the >0.52 fold gate. Step 5 candidate replay still produced zero trades at every threshold in both capital scenarios; strategy status remains FAIL.
 - No production models were overwritten and no 4H strategy code was changed.
+
+### 2026-10-12 — PR #4 merged: rejected candidates isolated from execution
+- PR #4 merged to main as `6f8765f6c18ecfdfee5fec7c3b37d3f7f4f4826f`.
+- Exact PR-head SHA `7ccc6dcf032033c8eb6d05c0d3e713b56994f592` passed the full research-only workflow (Actions run `38264997404`) and the full focused test suite (24 tests). Artifact digest: `sha256:7d8dc5e3b7c2110875620a299a291a17b6db4ca5dbf747bbfa5b6b962824fc33`.
+- Candidate model manifest reported REJECTED with these specific reasons: Long fold 2 AUC 0.4169373526 <= 0.52; Long fold 4 AUC 0.5023380387 <= 0.52; Short fold 3 AUC 0.5067403856 <= 0.52.
+- Step 5 replay from candidate models produced zero trades in all six variants at both $120 and $10,000. Strategy gate remains FAIL, and no threshold was changed.
+- Paper engine now refuses models unless an explicit production manifest proves promotion status, strategy acceptance PASS, all required gates PASS, exact feature order, and model SHA256 integrity. No such accepted manifest is currently verified.
+- At this status update, post-merge action `38265233191` was still in progress; final run status remains to be checked separately.
