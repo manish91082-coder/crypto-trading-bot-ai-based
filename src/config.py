@@ -63,6 +63,11 @@ if LABEL_OBSERVATION_HORIZON_DAYS < 1:
 if PURGE_WINDOW_DAYS < LABEL_OBSERVATION_HORIZON_DAYS:
     raise ValueError("PURGE_WINDOW_DAYS must be >= LABEL_OBSERVATION_HORIZON_DAYS")
 
+# Research acceptance floor documented in PROJECT_AUDIT_AND_MISTAKES_MASTER.md.
+MIN_WALK_FORWARD_OOS_AUC = float(os.getenv("MIN_WALK_FORWARD_OOS_AUC", "0.52"))
+if not (0.0 < MIN_WALK_FORWARD_OOS_AUC < 1.0) or not math.isfinite(MIN_WALK_FORWARD_OOS_AUC):
+    raise ValueError("MIN_WALK_FORWARD_OOS_AUC must be finite and between zero and one")
+
 # Macro Trend Filter (Law #9)
 MACRO_BTC_EMA_PERIOD = 20
 
