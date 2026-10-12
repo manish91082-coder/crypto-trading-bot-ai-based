@@ -66,17 +66,16 @@
 ## 5. Current checkpoint
 
 - **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
-- **Base main SHA for this work:** 10b22b80303a059f833768097db9a7e4eee3fd03.
-- **Current branch:** fix/1d-model-promotion-gate.
-- **Last accepted code/tools:** PR #3 merged at 3ec4226a60da62a4751bcd409dccd2e49b2ba8d5. Its post-merge regression test run passed; its research workflow and artifact proved reproducibility, but the strategy result is FAIL.
-- **Strategy status remains FAIL:** all six Step 5 variants produced zero trades in both $120 and $10,000 scenarios. Global candidate score maxima were Long 0.3660 and Short 0.3386, below the lowest 0.42 threshold. XGBoost OOS AUC folds fail the documented all-fold >0.52 acceptance rule.
-- **Current slice: candidate/production separation.** Step 4 now writes into a distinct research-only directory `models/1d_pooled_candidate`, records candidate SHA256/data hashes/fold AUC/features/dependency versions in `candidate_model_manifest.json`, and never writes candidate models into production directory `models/1d_pooled`. Candidate status is REJECTED if any fold does not exceed the configured OOS AUC floor; even if all folds pass, status remains PENDING_HOLDOUT_AND_REVIEW, never auto-promoted.
-- **Research replay:** Step 5 and the reproducibility runner now load candidate files only; they require a candidate manifest and verify that its type is research_candidate. This retains diagnostic replay without allowing research outputs to overwrite production models.
-- **Paper execution safety:** `PaperExecutionEngine` now calls `load_verified_production_model_paths` before loading models. It requires `production_model_manifest.json`, promotion_status PROMOTED, strategy_acceptance_status PASS, exact feature-column order, PASS on all required validation gates, and SHA256 matches for both model files. A missing or rejected manifest stops startup. There is currently no known promoted manifest; paper engine should therefore stay blocked until all real gates pass and an approved bundle is actually created.
-- **Regression coverage:** added nine tests for missing/rejected/pending production manifests, all-gates requirement, feature schema drift, hash tampering, verified bundle loading, and candidate AUC fold acceptance/rejection.
-- **1D status:** NOT ACCEPTED. Model promotion safeguard is pending exact-head CI. Do not tune thresholds to generate trades without evidence.
-- **4H:** NOT STARTED. **USD 10,000 live readiness:** NO-GO. **Live signing/public broadcast:** BLOCKED.
-- **Next exact action:** run the focused tests and research workflow on the current PR head; inspect outputs to confirm that candidate models are kept separate and manifest correctly rejects the present AUC scores. Merge only if these tests pass. Strategy acceptance remains FAIL independent of green CI.
+- **Base main SHA for current slice:** 10b22b80303a059f833768097db9a7e4eee3fd03.
+- **Current PR:** [#4](https://github.com/manish91082-coder/crypto-trading-bot-ai-based/pull/4), branch fix/1d-model-promotion-gate.
+- **Last fully tested code revision:** ecf8cc660269f125ef6e19c00b0e5754c000ece2. The focused regression suite passed 24 tests; the full research-only reproducibility workflow passed on this exact SHA in Actions run 38264701208.
+- **Evidence artifact:** workflow artifact ID 11754181816, ZIP SHA256 7d8dc5e3b7c2110875620a299a291a17b6db4ca5dbf747bbfa5b6b962824fc33.
+- **Candidate/production isolation verified by the research log:** Step 4 saved both candidate model files to the candidate path and printed "production directory untouched". It created candidate_model_manifest.json with promotion_status REJECTED because Long folds 2 and 4, plus Short fold 3, fail the documented XGBoost OOS AUC > 0.52 criterion.
+- **Failing fold evidence:** Long fold 2 = 0.4169373526; Long fold 4 = 0.5023380387; Short fold 3 = 0.5067403856. Candidate is REJECTED and is never auto-promoted.
+- **Research replay:** Step 5 loaded candidate artifacts only; all six spot/futures configurations at 0.42/0.44/0.46 produced 0 trades in both the $120 and $10,000 scenarios. Research/accounting checks completed and candidate research artifacts/hash manifest were uploaded. This is NOT strategy acceptance.
+- **Production execution gate:** PaperExecutionEngine now refuses to load models without a production_model_manifest.json with promotion_status PROMOTED, strategy_acceptance_status PASS, exact feature order, all five required validation gates marked PASS, and matching SHA256 for both model files. No approved production manifest is currently present/verified, therefore paper-engine startup is expected to be blocked. Do not invent or create a PROMOTED manifest from the rejected candidate.
+- **1D status:** NOT ACCEPTED; strategy research gate FAIL. **4H:** NOT STARTED. **$10,000 live readiness:** NO-GO. **Live signing/public broadcast:** BLOCKED.
+- **Next exact action:** wait for the latest PR workflow run created by the status-only checkpoint commit, confirm the exact current PR head still has all 24 tests/research replay successful, then merge this safety/diagnostics PR. After merge, proceed to the next 1D research-only task: inspect label targets against execution cashflows/fees and build an untouched-in-research OOS trade-return diagnostic. Do not lower thresholds or reuse the examined 2025-2026 holdout for tuning.
 
 ## 6. Append-only work log
 
@@ -166,3 +165,12 @@
 - Added `src/model_provenance.py`; paper engine now loads production models only when `production_model_manifest.json` explicitly marks the bundle PROMOTED, strategy acceptance PASS, exact feature order, all required gates PASS and both model SHA256 digests valid.
 - Added nine focused model-provenance/promotion tests. The current known candidate set fails the research gate, and no promoted production manifest is known. Blocking paper-engine startup in this state is intentional, not a claim that paper/trading is ready.
 - This slice is on branch `fix/1d-model-promotion-gate`; exact-head CI has not yet been verified. No 4H changes made.
+
+### 2026-10-12 — candidate/production model separation verified
+- Added `src/model_provenance.py`; introduced separate `MODELS_1D_CANDIDATE_DIR` and retained `MODELS_1D_POOLED_DIR` solely for production artifacts.
+- Step 4 now writes candidate models and a hash-backed candidate manifest only to the candidate directory. It assesses all four XGBoost OOS AUC folds in both directions; any score <= 0.52 rejects the candidate, and even a complete passing set would only become PENDING_HOLDOUT_AND_REVIEW (never automatic promotion).
+- Step 5 and the reproducibility runner now load candidate model files and record the candidate manifest; they do not overwrite production artifacts.
+- Paper engine now checks an explicit production_model_manifest.json, PROMOTED status, strategy acceptance PASS, exact feature-column order, all required validation gates PASS, and model SHA256 matches before loading models. Missing/invalid approval blocks engine startup, as no model is currently accepted.
+- Added nine tests for failed/missing/incomplete candidate evidence, manifest gates, feature order and hash checks, and valid manifest verification. Full suite passed 24 tests.
+- Research workflow 38264701208 succeeded on code SHA ecf8cc660269f125ef6e19c00b0e5754c000ece2. Its exact log recorded candidate rejection: Long AUC 0.416937/0.502338 and Short AUC 0.506740 fail the >0.52 fold gate. Step 5 candidate replay still produced zero trades at every threshold in both capital scenarios; strategy status remains FAIL.
+- No production models were overwritten and no 4H strategy code was changed.
