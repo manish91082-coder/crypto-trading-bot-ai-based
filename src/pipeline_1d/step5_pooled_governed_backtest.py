@@ -12,7 +12,7 @@ if str(SRC_DIR) not in sys.path:
 
 from config import (
     DATA_PROCESSED_DIR,
-    MODELS_1D_POOLED_DIR,
+    MODELS_1D_CANDIDATE_DIR,
     LOGS_DIR,
     SYMBOLS,
     INITIAL_CAPITAL,
@@ -34,11 +34,11 @@ def load_data_and_predict(threshold_long: float, threshold_short: float):
     """
     Loads processed features, applies the pooled XGBoost models, and generates clean signals.
     """
-    long_model_path = MODELS_1D_POOLED_DIR / "Pooled_1d_XGB_Long.pkl"
-    short_model_path = MODELS_1D_POOLED_DIR / "Pooled_1d_XGB_Short.pkl"
+    long_model_path = MODELS_1D_CANDIDATE_DIR / "Pooled_1d_XGB_Long.pkl"
+    short_model_path = MODELS_1D_CANDIDATE_DIR / "Pooled_1d_XGB_Short.pkl"
     
     if not long_model_path.exists() or not short_model_path.exists():
-        raise FileNotFoundError("Pooled models not found in models/1d_pooled/. Run step4 first.")
+        raise FileNotFoundError("Research candidate models not found in models/1d_pooled_candidate/. Run Step 4 research candidate training first.")
         
     long_model = joblib.load(long_model_path)
     short_model = joblib.load(short_model_path)
