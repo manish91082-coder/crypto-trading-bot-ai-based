@@ -7,6 +7,7 @@
 - **Canonical repository:** `manish91082-coder/crypto-trading-bot-ai-based`
 - **Canonical branch:** `main`
 - **Baseline HEAD observed before this status-file commit:** `6cfa466d27a44a30252cf969e760e0d271523a0f`
+- **Current verified HEAD (status-file commit):** `39f12b3c38ac7f48e1d376994cc3d98676e61115`
 - **Work order:** fix and verify **1D first**, then fix and verify **4H**. Do not work on 4H strategy code until the 1D acceptance gate passes, except shared infrastructure defects that block 1D.
 - **Capital target for research validation:** USD 10,000, configurable and traceable through configuration. A $10,000 backtest is not evidence of live readiness or future profitability.
 - **Trading safety lock:** live signing and public transaction broadcast remain **BLOCKED**. Research/backtest and isolated paper simulations only until explicit safety gates are independently evidenced.
@@ -20,7 +21,7 @@
 4. The reviewed 1D paper execution path fetches daily candles. Training/live feature equivalence, warm-up windows, candle selection, fees, risk sizing, and order-failure behavior require tested parity.
 5. The committed 1D five-year ledger previously inspected contains 175 closed trades and realized PnL of about **+$252.73 from $120**, with maximum drawdown about **31.52%**. Treat this as a repository artifact, not independently reproduced performance.
 6. 4H issues reserved for the later phase: labels are generated before the research/holdout cutoff is applied; the holdout simulation has a start but no explicit declared end in the inspected script; the holdout was used to compare/select profiles; and the trade-PnL-implied final balance differs from the equity ledger by about $7.41.
-7. At baseline, no GitHub Actions workflow runs or committed `.github/workflows` files were found, and the inspected commit had no reported status checks. Do not report CI green unless a real check runs and is read on the exact SHA.
+7. GitHub verification performed after the status-file commit found `total_count: 0` workflow runs on `main`, no `.github/workflows` directory, and no commit status entries for `39f12b3c38ac7f48e1d376994cc3d98676e61115`. CI is **not verified green**.
 8. Structural checks of committed OHLCV files do **not** establish authenticity against an independent official exchange source. Do not claim that independent data validation passed unless it is performed and evidence is saved.
 
 ## 3. Short execution plan
@@ -64,12 +65,13 @@
 ## 5. Current checkpoint
 
 - **Checkpoint timestamp:** 2026-10-12 (Asia/Kolkata)
-- **Status-file creation:** in progress at baseline `6cfa466d27a44a30252cf969e760e0d271523a0f`
+- **Status file:** created, read back from GitHub, and verified on `main`.
+- **Current verified `main` HEAD:** `39f12b3c38ac7f48e1d376994cc3d98676e61115`.
 - **1D:** NOT ACCEPTED; specification mismatch and live/training parity/reproducibility checks remain.
 - **4H:** NOT STARTED for fixes; recorded defects are queued until 1D passes.
 - **Live USD 10,000 readiness:** NOT VERIFIED; **NO-GO**.
-- **CI:** NO VERIFIED GREEN RUN on the baseline SHA.
-- **Next exact action:** after this status file is committed and its new `main` SHA verified, perform a bounded 1D source trace for label/execution horizon + purge semantics; patch only after the rule is evidenced, then add/run regression test(s) and update this checkpoint.
+- **CI:** no workflow runs and no status entries were reported for the verified status-file commit; **not green**.
+- **Next exact action:** perform a bounded 1D source trace for label/execution horizon + purge semantics; patch only after the rule is evidenced, then add/run regression test(s) and update this checkpoint.
 
 ## 6. Append-only work log
 
@@ -78,3 +80,9 @@
 - Read `src/config.py`, `src/pipeline_1d/step3_features_and_labels_7d.py`, and `src/pipeline_1d/step4_pooled_walkforward_training.py` from that SHA.
 - Verified the 14-day vs 28-day specification mismatch in source.
 - No strategy code changed by this checkpoint. This status file records the plan and known gates only.
+
+### 2026-10-12 — status file committed and verified
+- Created `PROJECT_LIVE_STATUS_CHATGPT.md` on `main`; commit: `39f12b3c38ac7f48e1d376994cc3d98676e61115`.
+- Re-read the file from GitHub and confirmed `main` HEAD equals that commit.
+- Queried commit status and Actions runs: no statuses and zero workflow runs were returned. This is **not** a passing CI result.
+- No trading code changed. Next: bounded 1D label/execution/purge trace.
