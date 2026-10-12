@@ -107,3 +107,16 @@ def add_relative_momentum_vs_btc(
     aligned_btc_returns = out["timestamp"].map(btc_ret5)
     out["Rel_Mom_vs_BTC"] = out["Ret_5"] - aligned_btc_returns
     return out
+
+
+
+def validate_binary_target(target, context: str) -> None:
+    """Fail closed when a supervised fit has no resolved labels or only one class."""
+    labels = pd.Series(target).dropna()
+    if labels.empty:
+        raise ValueError(f"{context}: no resolved training labels remain after censoring/purge")
+    classes = set(labels.unique().tolist())
+    if not classes.issubset({0, 1}):
+        raise ValueError(f"{context}: labels must be binary 0/1, got {sorted(classes)}")
+    if len(classes) < 2:
+        raise ValueError(f"{context}: only one label class remains after censoring/purge")
