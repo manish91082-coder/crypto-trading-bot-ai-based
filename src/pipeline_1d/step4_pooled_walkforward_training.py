@@ -102,6 +102,8 @@ def run_purged_walk_forward_evaluation(pooled_df: pd.DataFrame, direction: str =
         xgb_model.fit(X_train, y_train)
         xgb_probs = xgb_model.predict_proba(X_test)[:, 1]
         xgb_auc = roc_auc_score(y_test, xgb_probs)
+        if not np.isfinite(xgb_probs).all():
+            raise RuntimeError(f"{name}: XGBoost produced non-finite OOS probabilities")
 
         high_conf_mask = (xgb_probs > 0.55)
         high_conf_prec = precision_score(y_test[high_conf_mask], np.ones(high_conf_mask.sum()), zero_division=0) if high_conf_mask.sum() > 0 else 0.0
@@ -110,13 +112,21 @@ def run_purged_walk_forward_evaluation(pooled_df: pd.DataFrame, direction: str =
             'Period': name,
             'Train_Samples': len(X_train),
             'Test_Samples': len(X_test),
+            'Target_Positive_Rate': float(y_test.mean()),
             'LR_OOS_AUC': lr_auc,
             'XGB_OOS_AUC': xgb_auc,
-            'High_Conf_Trades': high_conf_mask.sum(),
-            'High_Conf_Precision': high_conf_prec
+            'XGB_Prob_Min': float(np.min(xgb_probs)),
+            'XGB_Prob_Median': float(np.median(xgb_probs)),
+            'XGB_Prob_P90': float(np.quantile(xgb_probs, 0.90)),
+            'XGB_Prob_Max': float(np.max(xgb_probs)),
+            'XGB_Prob_Count_GE_042': int((xgb_probs >= 0.42).sum()),
+            'XGB_Prob_Count_GE_044': int((xgb_probs >= 0.44).sum()),
+            'XGB_Prob_Count_GE_046': int((xgb_probs >= 0.46).sum()),
+            'High_Conf_Trades': int(high_conf_mask.sum()),
+            'High_Conf_Precision': float(high_conf_prec)
         })
 
-        print(f"  [{name}] Train: {len(X_train):>5} | Test: {len(X_test):>4} | LR AUC: {lr_auc:.3f} | XGB OOS AUC: {xgb_auc:.3f} | Conf>0.55 Prec: {high_conf_prec*100:.1f}% ({high_conf_mask.sum()} trades)")
+        print(f"  [{name}] Train: {len(X_train):>5} | Test: {len(X_test):>4} | Target+: {y_test.mean()*100:.1f}% | LR AUC: {lr_auc:.3f} | XGB AUC: {xgb_auc:.3f} | P50/P90/Max: {np.median(xgb_probs):.3f}/{np.quantile(xgb_probs,0.90):.3f}/{np.max(xgb_probs):.3f} | N>=.42/.44/.46: {(xgb_probs>=.42).sum()}/{(xgb_probs>=.44).sum()}/{(xgb_probs>=.46).sum()}")
 
     df_folds = pd.DataFrame(fold_results)
     if len(df_folds) != len(test_periods):
