@@ -66,18 +66,18 @@
 ## 5. Current checkpoint
 
 - **Checkpoint date:** 2026-10-12 (Asia/Kolkata).
-- **Stable main baseline for this slice:** `0d6e9f533f7069c47b7ee061a8fda882a8addf47`.
-- **Current work branch:** `fix/1d-feature-parity`.
-- **Previous 1D slice:** label/purge correction merged as `6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a`; five focused label tests passed on the PR head and merge commit.
-- **Current 1D slice:** shared-feature-engine changes are committed on the work branch; CI for the latest test/dependency revision is running, not yet accepted.
-- **Feature rule:** training and paper execution now call `src/features_1d.py` for matching per-symbol formulas and rolling windows. Relative momentum is timestamp-aligned to BTC; a missing BTC match remains NaN rather than being replaced by zero. Paper execution logs a blocked decision and skips prediction if any required model feature is non-finite.
-- **Training safety:** the final pooled fit now refuses empty, non-binary or single-class resolved labels; walk-forward folds skip invalid train/test targets instead of proceeding.
-- **Tests added:** research-vs-paper feature parity for all model feature columns, missing-BTC fail-closed behavior, rolling-window warm-up parity, invalid OHLC rejection, and empty/single-class target rejection.
-- **1D status:** NOT ACCEPTED until the new tests pass on latest head and full reproducible research/backtest, feature/data provenance, and result reconciliation pass.
-- **4H:** NOT STARTED for fixes; 1D remains priority.
+- **Verified current `main` HEAD before this status update:** `83eba8840898146cff2ed43bd6f86560e3130d38`.
+- **1D label/purge correction:** merged in `6bacc94ddd5c2a1f72f8cf0a9c6a042bcc29931a`; five focused label tests passed on the PR head and merge commit.
+- **1D feature parity correction:** PR [#2](https://github.com/manish91082-coder/crypto-trading-bot-ai-based/pull/2) merged as `83eba8840898146cff2ed43bd6f86560e3130d38`.
+- **Focused tests:** 10/10 passed on code revision `e0cf247cb3fa7d42fd83840895a38ae4464488b1` in Actions run `38260712274`. The tested revision included both label tests and feature parity tests. A subsequent change before merge only updated this continuity file. A post-merge run on `83eba8840898146cff2ed43bd6f86560e3130d38` was queued/in progress at the latest check; do not call that exact post-merge run green until its conclusion is read.
+- **Initial feature-test run:** run `38260700101` failed because the workflow did not install `joblib`; the workflow dependency list was corrected, then all 10 tests passed in run `38260712274`. The initial failure is recorded, not hidden.
+- **Shared feature rules:** `src/features_1d.py` is the canonical per-symbol 1D feature implementation and timestamp-aligned BTC relative momentum calculation. The research pipeline and paper engine now call the same feature helper, matching rolling windows and warm-up behavior. Missing BTC alignment stays NaN, and paper predictions block on non-finite required inputs.
+- **Training safety:** final pooled training refuses empty, non-binary or single-class resolved targets after censoring/purge. Fold evaluation skips invalid train/test targets.
+- **1D status:** NOT ACCEPTED until post-merge CI is verified, the full reproducible research/backtest runs, and data/provenance and trade/equity reconciliation gates pass.
+- **4H:** NOT STARTED for fixes; 1D remains first.
 - **USD 10,000 live readiness:** NOT VERIFIED; **NO-GO**.
 - **Live signing/public broadcast:** BLOCKED.
-- **Next exact action:** verify latest GitHub Actions result on the feature-parity branch; fix any regression, then open/merge the small PR only after the exact latest revision passes. Next 1D gate is a reproducible end-to-end backtest and capital/PnL reconciliation.
+- **Next exact action:** verify the post-merge Actions result on `83eba8840898146cff2ed43bd6f86560e3130d38`; then run the deterministic 1D research/backtest chain from a clean environment and reconcile sample counts, trade ledger, equity, fees, final capital and drawdown before any acceptance claim.
 
 ## 6. Append-only work log
 
@@ -117,3 +117,11 @@
 - Added `tests/test_1d_features.py` and extended the focused workflow dependencies for paper-engine parity tests.
 - Relevant commits on work branch: shared feature engine `4f4570ae7d3f8bf59cddc5831860be85eb3daa92`; training wrapper `25831f2ad06b96a58c1bef4d2be7dabcf3874d43`; live shared use `190efc8b5bc8d2a2ea11746cf45163057de9a9ee`; target validation `6d923e12fb85d5a291143962ac76c053025529e0`; fail-closed final training `f01218f4956fd050402a755511d8200dcb4a172e`; live invalid-feature guard `1a6e7be0703a4cf5ec4604e5f4707eeaa838357e`; parity tests `bbebd0791b3e8f6d90607243a9b7c8964c265fea`; dependency update `e0cf247cb3fa7d42fd83840895a38ae4464488b1`.
 - CI on the latest branch SHA is in progress at time of writing; no test pass is claimed for this slice yet.
+
+### 2026-10-12 — feature parity correction merged
+- PR #2 merged into `main` as `83eba8840898146cff2ed43bd6f86560e3130d38`; branch `main` was re-read and verified at this SHA before this status-file update.
+- Exact tested code revision `e0cf247cb3fa7d42fd83840895a38ae4464488b1` passed all 10 focused tests in GitHub Actions run `38260712274`. Tests included label behavior, research/paper parity for every configured feature, missing BTC alignment, training warm-up windows, invalid OHLC, and invalid supervised targets.
+- A prior run `38260700101` on a revision that added the new test but predated the dependency fix failed with `ModuleNotFoundError: No module named 'joblib'`. Workflow dependencies were then corrected and the next 10-test run passed. No failure was suppressed.
+- The PR-head delta after the 10-test successful code SHA was only a `PROJECT_LIVE_STATUS_CHATGPT.md` checkpoint edit; this is verified by GitHub compare.
+- Post-merge workflow `38260964537` for merge SHA `83eba8840898146cff2ed43bd6f86560e3130d38` was queued/in progress at the time of this checkpoint update; its final status must be fetched before calling post-merge CI green.
+- No full 1D backtest or $10,000 live-readiness test was run in this slice.
