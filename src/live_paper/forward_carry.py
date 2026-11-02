@@ -147,7 +147,7 @@ def main():
     body = "\n".join([",".join(keys + tuple(f"{c}_{k}" for c in COINS for k in ("pnl", "funding", "basis", "n_funding")))] +
                      [",".join([repr(m[k]) for k in keys] + [repr(per[c][j][k]) for c in COINS for k in ("pnl", "funding", "basis", "n_funding")]) for j, m in enumerate(mix)]) + "\n"
     tmp = SERIES.with_suffix(".tmp")
-    tmp.write_text(body, encoding="utf-8")
+    tmp.write_bytes(body.encode("utf-8"))  # bytes, so Windows does not turn \n into \r\n and break the chained SHA
     tmp.replace(SERIES)
     lpt.append_chain(CHAIN, dict(utc=lpt.iso(), summary=s, verdict=v, series_sha256=hashlib.sha256(body.encode()).hexdigest()))
     print(f"T2-CARRY {lpt.iso()}  hours {s['hours']}  funding events {s['n_funding']}  equity {s['equity']:.2f}  net {s['net_pct']:+.3f}%  maxDD {s['max_dd_pct']:.3f}%  "

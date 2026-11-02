@@ -29,7 +29,7 @@ desktop.ini
 # ---- Backup split, 2026-11-02 ----
 # GitHub (public) holds code, reports, protocols and small evidence files.
 # The full folder, including everything below, is mirrored on Google Drive:
-#   gdrive:CRYPTO_TRADING_BOT_LAPTOP_FULL_BACKUP/crypto trading bot ai based 9 oct 2026
+#   gdrive:CRYPTO_TRADING_BOT_LAPTOP_FULL_BACKUP/ (mirror/ + packed/), script src/tools/backup_drive.sh
 # See BACKUP_MANIFEST_02_NOV_2026.md for what lives where and how to restore.
 archive/
 .claude/worktrees/
@@ -40,7 +40,8 @@ data/raw/*
 !data/raw/*_1d_Raw_5Years.csv
 logs/btc_alltf_2026_10_28/
 logs/btc_alltf_r2_2026_10_29/
-logs/backup_2026_11_02/*.log
+logs/backup_2026_11_02/
+logs/backup_drive/tmp/
 *.parquet.tmp
 
 # Files over 25 MB (Drive only, listed in BACKUP_MANIFEST_02_NOV_2026.md)

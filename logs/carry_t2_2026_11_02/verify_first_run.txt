@@ -1,0 +1,17 @@
+[V1 PASS] protocol SHA 89fe2f46595f unchanged
+[V2 PASS] prelock JSON equals the locked SHA
+[V3 PASS] hurdle 0.188 is half the 2025 median and is the protocol's number
+[V4 PASS] funding per year recomputed by plain loop equals the Spot-DCA study B1
+[V5 PASS] frozen fees 0.00085 / 0.00046 equal deploy/fees.json
+[V6 PASS] protocol locked 2026-11-02T05:57:43Z before FORWARD_START; frozen 2026-11-02T09:05:06.879Z
+[V7 PASS] hash chain of 1 records
+[V8 FAIL] series CSV equals the SHA in the last chain record
+[V9 PASS] 1 consecutive hours from FORWARD_START
+[V10 BTC PASS] 0 funding events, none missing
+[V10 ETH PASS] 0 funding events, none missing
+[V11 PASS] 1 hours recomputed independently: 0 mismatches
+[V12 PASS] chain summary equity 9987.3091, verdict INTERIM
+[V13 PASS] no verdict before FORWARD_END
+[M2 PASS] mutation: spot fee changed, caught
+[M3 PASS] mutation: entry price changed, caught
+TOTAL 16 checks, FAIL 1

@@ -1,3 +1,4 @@
 T2-CARRY 2026-11-02T06:05:06.169Z  waiting for the first closed bar after 2026-11-02T08:00:00Z
 T2-CARRY 2026-11-02T07:05:07.272Z  waiting for the first closed bar after 2026-11-02T08:00:00Z
 T2-CARRY 2026-11-02T08:05:13.444Z  waiting for the first closed bar after 2026-11-02T08:00:00Z
+T2-CARRY 2026-11-02T09:05:12.724Z  hours 1  funding events {'BTCUSDT': 0, 'ETHUSDT': 0}  equity 9987.31  net -0.127%  maxDD 0.127%  margin 0.983  INTERIM
