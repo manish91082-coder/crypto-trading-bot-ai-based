@@ -1,0 +1,8 @@
+[T1 PASS] liquidation prices 90.5 / 109.5 / 0.5
+[T2 PASS] boundary at 0.4 x liquidation distance
+[T3 PASS] max leverage 7 for a 5% stop; 0 for a 60% stop
+[T4 PASS] heat scale 1 / 0.5 / 0
+[T5 PASS] heat_scale reproduces N1 K2 weights on 400 synthetic trades (max diff 1.4e-16)
+[T7 PASS] check_order: 10x reject, 5x accept, heat full reject
+[T6 INFO] F6 short 1x: liquidation ~199.5 (+99.5%), stop +50% -> anti_liq_ok(k=0.4) = False; the stop still triggers 49.5% of price before liquidation
+TOTAL 6 checks, FAIL 0

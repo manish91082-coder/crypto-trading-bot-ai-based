@@ -1,0 +1,4 @@
+[V1 PASS] protocol and prediction hashes
+[V2 PASS] 60 rows: S/R distances, VAP and the three swing states re-derived with plain code
+[V3 PASS] AUC new 0.5661, base 0.5653, diff +0.0008
+[V4 PASS] gates re-derived: SKILL_ADD_ONLY

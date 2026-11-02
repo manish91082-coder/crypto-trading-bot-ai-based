@@ -1,0 +1,29 @@
+[PASS] C1 sandbox 16B paper -> F4 two days (chain, C1 True, orders file): [PREFLIGHT F4 PASS] two sandbox days ran; chain OK; C1 True; orders file written (sandbox C:\Users\Admin\AppData\Local\Temp\f4_preflight_vux9dyye)
+[PASS] C2 F4 verifier V1..V5 on the sandbox ledger: [V1 PASS] 2 ledger lines: chain, line hashes, protocol, equity / positions files; LS_RS / LS_F2 / LO == equity file | [V2 PASS] every F4 line is tied to the 16B ledger line and prediction files of its day | [V3 PASS] C1 re-checked from files: 2 of 2 days LO == 16B paper | [V4 PASS] 21 stored perp hours re-fetched from the public API and equal | [V5 PASS] open positions of 2026-10-14: limits, no lo
+[PASS] D1 F4 verifier rejects a ledger number changed by $1: rejected as expected: AssertionError: ('2026-10-14', 'line hash')
+[PASS] D1b F4 verifier rejects a $1 change even after the whole chain is re-hashed (V1b): rejected as expected: AssertionError: ('2026-10-14', 'LS_RS')
+[PASS] D1c control: re-hashing the UNCHANGED ledger reproduces it and the verifier passes: [V1 PASS] 2 ledger lines: chain, line hashes, protocol, equity / positions files; LS_RS / LS_F2 / LO == equity file | [V2 PASS] every F4 line is tied to the 16B ledger line and prediction files of its day | [V3 PASS] C1 re-checked from files: 2 of 2 days LO == 16B paper | [V4 PASS] 21 stored perp hours re-fetched from the public API and equal | [V5 PASS] open positions of 2026-10-14: limits, no lo
+[PASS] D1c ledger bytes identical after a no-change re-hash: 
+[PASS] C3 F6 plan from the sandbox F4 orders (every target planned or skipped with reason; stop = price x 1.5; no state, no keys): as-of 2026-10-14: 15 PLAN shorts, 0 skips, targets 15; stops True; skips []
+[PASS] D2 F6 refuses an F4 orders file whose hash differs from the F4 ledger: rejected as expected: AssertionError: F4 orders file != F4 ledger
+[PASS] C4 N3 on the sandbox F4 ledger: 
+[PASS] C4b N3 ledger: 2 lines, target = next as-of, VaR99.9 > VaR99, ES99 > VaR99; second call adds nothing: [{'line': 'LS_RS', 'target_day': '2026-10-15', 'n_forward': 1, 'VaR99': 0.03244762, 'ES99': 0.039853, 'VaR999': 0.04937065}, {'line': 'LO', 'target_day': '2026-10-15', 'n_forward': 1, 'VaR99': 0.05378032, 'ES99': 0.07448238, 'VaR999': 0.10212349}]
+[PASS] C5 N3 verifier on the sandbox ledger: [V1 PASS] protocol; 2 ledger lines, hash chain intact | [V2 PASS] every line: sample size, threshold exact; GPD re-fitted with an independent optimiser; VaR / ES within 1 % | [V3 PASS] exceedance flags re-derived
+[PASS] D3 N3 verifier rejects a VaR99 lowered by 10 %: rejected as expected: AssertionError: ('line hash', 'LS_RS', '2026-10-15')
+[PASS] D3b N3 verifier rejects the lowered VaR99 even after the chain is re-hashed (V2 refit): rejected as expected: AssertionError: ('LS_RS', '99', np.float64(0.03244775192651364), np.float64(0.039853778286688485))
+[PASS] D3c control: N3 verifier passes on the re-hashed UNCHANGED ledger: [V1 PASS] protocol; 2 ledger lines, hash chain intact | [V2 PASS] every line: sample size, threshold exact; GPD re-fitted with an independent optimiser; VaR / ES within 1 % | [V3 PASS] exceedance flags re-derived
+[PASS] C6 M4 collector (live public endpoints) into the sandbox: 
+[PASS] C6b M4: all endpoints answered: 14/14
+[FAIL] C7 M4 verifier V1..V3 on the sandbox data (V3 = live re-fetch): IndexError: list index out of range | Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\audits\e2e_integration_test.py", line 58, in run_check
+    fn()
+  File "E:\crypto trading bot ai based 9 oct 2026\src\audits\verify_m4_collector.py", line 71, in main
+    kl = json.loads(urllib.request.urlopen(url, timeout=30).read())[0]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+[PASS] D4 M4 verifier rejects a stored file with one changed bit: rejected as expected: AssertionError: ('2026-10-16', 'binance_options_mark')
+[PASS] C8 M10 on the sandbox ledgers: ledger problems == independently derived; backup manifest: as-of 2026-10-15: M10 ['16B: as-of 2026-10-15 NOT logged', 'F4: as-of 2026-10-15 NOT logged']; derived ['16B: as-of 2026-10-15 NOT logged', 'F4: as-of 2026-10-15 NOT logged']; all problems ['task CryptoBot16B_ForwardMulti last result 1', 'task CryptoBot_F4_LSPaper last result 1', '16B: as-of 2026-10-15 NOT logged', 'F4: as-of 2026-10-15 NOT logged']; backup 2 files
+[PASS] C8 M10 on the real ledgers: ledger problems == independently derived; backup manifest: as-of 2026-10-15: M10 ['16B: as-of 2026-10-15 logged LATE', 'F4: as-of 2026-10-15 logged LATE']; derived ['16B: as-of 2026-10-15 logged LATE', 'F4: as-of 2026-10-15 logged LATE']; all problems ['task CryptoBot16B_ForwardMulti last result 1', 'task CryptoBot_F4_LSPaper last result 1', '16B: as-of 2026-10-15 logged LATE', 'F4: as-of 2026-10-15 logged LATE']; backup 2 files
+[PASS] C9 R1 verifier E3 on a copy of the real results: [V1 PASS] E3: protocol, engine and runner hashes | [V2 PASS] E3: F7 short P&L 26227.13, E3b short P&L 26388.10 and E3c median re-derived; reading rule re-applied | [V2 PASS] E3: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied | [V3 PASS] E3: listing-age bucket P&L shares re-derived from the F7 trades with a plain age computation
+[PASS] D5 R1 verifier E3 rejects a max DD changed by 0.5 points: rejected as expected: AssertionError: ('E3b_AGE', {'dd': 20.210143660573575, 'r22': np.float64(0.7796727555234861), 'worst_week': np.float64(-12.451491043494489)}, {'final': 71922.41, 'cagr_pct': 40.99, 'max_dd_pct': 20.71, 'calmar': 2.02
+[PASS] D6 R1 verifier E3 rejects a flipped reading: rejected as expected: AssertionError: ('AI short skill not shown beyond listing age', 'AI short adds beyond listing age')
+E2E: 22/23 PASS  -> E:\crypto trading bot ai based 9 oct 2026\logs\e2e_integration\e2e_20261016T102634.json

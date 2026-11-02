@@ -1,0 +1,76 @@
+USDT spot symbols (leveraged tokens excluded): 705
+[1d] 1/705 0GUSDT (7s)
+[1d] 26/705 AGLDUSDT (54s)
+[1d] 51/705 ANTUSDT (98s)
+[1d] 76/705 AUSDT (149s)
+[1d] 101/705 BCHSVUSDT (191s)
+[1d] 126/705 BONDUSDT (236s)
+[1d] 151/705 CHIPUSDT (284s)
+[1d] 176/705 CUSDT (334s)
+[1d] 201/705 DOTUSDT (389s)
+[1d] 226/705 ETHFIUSDT (438s)
+[1d] 251/705 FRONTUSDT (492s)
+[1d] 276/705 GPSUSDT (538s)
+[1d] 301/705 HOOKUSDT (581s)
+[1d] 326/705 JOEUSDT (674s)
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\downloaders\download_universe_all_usdt.py", line 176, in <module>
+    main()
+  File "E:\crypto trading bot ai based 9 oct 2026\src\downloaders\download_universe_all_usdt.py", line 163, in main
+    info, flog = do_symbol(s, tf, pool)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\crypto trading bot ai based 9 oct 2026\src\downloaders\download_universe_all_usdt.py", line 125, in do_symbol
+    res = list(pool.map(lambda m: fetch(sym, tf, m), keep))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\crypto trading bot ai based 9 oct 2026\src\downloaders\download_universe_all_usdt.py", line 125, in <lambda>
+    res = list(pool.map(lambda m: fetch(sym, tf, m), keep))
+                                  ^^^^^^^^^^^^^^^^^
+  File "E:\crypto trading bot ai based 9 oct 2026\src\downloaders\download_universe_all_usdt.py", line 98, in fetch
+    assert ((df.timestamp >= m0) & (df.timestamp < m0 + pd.offsets.MonthBegin(1))).all(), f"{sym} {tf} {month}: rows outside month"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: KLAYUSDT 1d 2024-10: rows outside month
+USDT spot symbols (leveraged tokens excluded): 705
+[1d] 1/705 0GUSDT (0s)
+[1d] 26/705 AGLDUSDT (0s)
+[1d] 51/705 ANTUSDT (0s)
+[1d] 76/705 AUSDT (0s)
+[1d] 101/705 BCHSVUSDT (1s)
+[1d] 126/705 BONDUSDT (1s)
+[1d] 151/705 CHIPUSDT (1s)
+[1d] 176/705 CUSDT (1s)
+[1d] 201/705 DOTUSDT (1s)
+[1d] 226/705 ETHFIUSDT (1s)
+[1d] 251/705 FRONTUSDT (1s)
+[1d] 276/705 GPSUSDT (1s)
+[1d] 301/705 HOOKUSDT (1s)
+[1d] 326/705 JOEUSDT (1s)
+[1d] 351/705 LENDUSDT (69s)
+[1d] 376/705 MATICUSDT (148s)
+[1d] 401/705 MOVEUSDT (195s)
+[1d] 426/705 NILUSDT (239s)
+[1d] 451/705 OPGUSDT (321s)
+[1d] 476/705 PLTRBUSDT (374s)
+[1d] 501/705 QNTUSDT (502s)
+[1d] 526/705 RNDRUSDT (556s)
+[1d] 551/705 SKYUSDT (607s)
+[1d] 576/705 STORJUSDT (657s)
+[1d] 601/705 TKOUSDT (718s)
+[1d] 626/705 UFTUSDT (780s)
+[1d] 651/705 VIDTUSDT (834s)
+[1d] 676/705 XAUTUSDT (888s)
+[1d] 701/705 ZMBUSDT (948s)
+[1d] done: 705 symbols (956s)

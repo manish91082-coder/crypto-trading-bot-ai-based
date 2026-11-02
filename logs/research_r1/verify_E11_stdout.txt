@@ -1,0 +1,3 @@
+[V1 PASS] E11: protocol, engine and runner hashes (runner as run)
+[V2 PASS] E11: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied
+[V3 PASS] E11: 4351 perp longs, 64 spot longs; 30 perp-long entry prices = raw perp opens

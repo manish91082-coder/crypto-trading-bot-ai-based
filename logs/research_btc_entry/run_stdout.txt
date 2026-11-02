@@ -1,0 +1,115 @@
+﻿[2026-10-25 14:56:11] start stage all; bars 709920; periods {'D': (0, 420768), 'V': (420768, 526176), 'H': (526176, 709919)}; costs fut 0.00092 spot 0.0017 maker 0.0005600000000000001
+outcomes A0.5_0.5 93 s
+outcomes A1_1 80 s
+outcomes A2_2 80 s
+outcomes A4_4 84 s
+outcomes A1_0.5 89 s
+outcomes A2_1 76 s
+outcomes A4_2 84 s
+outcomes A0.5_1 83 s
+outcomes A1_2 76 s
+outcomes V1 77 s
+outcomes V2 78 s
+outcomes V3 78 s
+[2026-10-25 15:21:59] ai A1_1 done
+[2026-10-25 15:30:33] ai V2 done
+[2026-10-25 15:30:39] evaluated F0_random
+[2026-10-25 15:30:43] evaluated F1_long
+[2026-10-25 15:30:45] evaluated F1_short
+[2026-10-25 15:30:49] evaluated F2_mom_1h_k0
+[2026-10-25 15:30:52] evaluated F3_rev_1h_k0
+[2026-10-25 15:30:54] evaluated F2_mom_1h_k1
+[2026-10-25 15:30:55] evaluated F3_rev_1h_k1
+[2026-10-25 15:30:56] evaluated F2_mom_1h_k2
+[2026-10-25 15:30:57] evaluated F3_rev_1h_k2
+[2026-10-25 15:31:00] evaluated F2_mom_4h_k0
+[2026-10-25 15:31:03] evaluated F3_rev_4h_k0
+[2026-10-25 15:31:04] evaluated F2_mom_4h_k1
+[2026-10-25 15:31:06] evaluated F3_rev_4h_k1
+[2026-10-25 15:31:06] evaluated F2_mom_4h_k2
+[2026-10-25 15:31:07] evaluated F3_rev_4h_k2
+[2026-10-25 15:31:10] evaluated F2_mom_24h_k0
+[2026-10-25 15:31:13] evaluated F3_rev_24h_k0
+[2026-10-25 15:31:14] evaluated F2_mom_24h_k1
+[2026-10-25 15:31:16] evaluated F3_rev_24h_k1
+[2026-10-25 15:31:16] evaluated F2_mom_24h_k2
+[2026-10-25 15:31:17] evaluated F3_rev_24h_k2
+[2026-10-25 15:31:20] evaluated F2_mom_72h_k0
+[2026-10-25 15:31:23] evaluated F3_rev_72h_k0
+[2026-10-25 15:31:24] evaluated F2_mom_72h_k1
+[2026-10-25 15:31:25] evaluated F3_rev_72h_k1
+[2026-10-25 15:31:26] evaluated F2_mom_72h_k2
+[2026-10-25 15:31:26] evaluated F3_rev_72h_k2
+[2026-10-25 15:31:30] evaluated F2_mom_7d_k0
+[2026-10-25 15:31:33] evaluated F3_rev_7d_k0
+[2026-10-25 15:31:34] evaluated F2_mom_7d_k1
+[2026-10-25 15:31:35] evaluated F3_rev_7d_k1
+[2026-10-25 15:31:36] evaluated F2_mom_7d_k2
+[2026-10-25 15:31:36] evaluated F3_rev_7d_k2
+[2026-10-25 15:31:38] evaluated F4_brk_follow_12
+[2026-10-25 15:31:39] evaluated F4_brk_fade_12
+[2026-10-25 15:31:40] evaluated F4_brk_follow_48
+[2026-10-25 15:31:41] evaluated F4_brk_fade_48
+[2026-10-25 15:31:41] evaluated F4_brk_follow_288
+[2026-10-25 15:31:42] evaluated F4_brk_fade_288
+[2026-10-25 15:31:42] evaluated F4_brk_follow_2016
+[2026-10-25 15:31:42] evaluated F4_brk_fade_2016
+[2026-10-25 15:31:43] evaluated F5_z_fade_48_k2
+[2026-10-25 15:31:44] evaluated F5_z_follow_48_k2
+[2026-10-25 15:31:45] evaluated F5_z_fade_48_k3
+[2026-10-25 15:31:45] evaluated F5_z_follow_48_k3
+[2026-10-25 15:31:46] evaluated F5_z_fade_288_k2
+[2026-10-25 15:31:47] evaluated F5_z_follow_288_k2
+[2026-10-25 15:31:47] evaluated F5_z_fade_288_k3
+[2026-10-25 15:31:48] evaluated F5_z_follow_288_k3
+[2026-10-25 15:31:48] evaluated F5_z_fade_2016_k2
+[2026-10-25 15:31:49] evaluated F5_z_follow_2016_k2
+[2026-10-25 15:31:49] evaluated F5_z_fade_2016_k3
+[2026-10-25 15:31:50] evaluated F5_z_follow_2016_k3
+[2026-10-25 15:31:50] evaluated F6_rsi_fade_5m_30
+[2026-10-25 15:31:51] evaluated F6_rsi_follow_5m_30
+[2026-10-25 15:31:51] evaluated F6_rsi_fade_5m_20
+[2026-10-25 15:31:52] evaluated F6_rsi_follow_5m_20
+[2026-10-25 15:31:52] evaluated F6_rsi_fade_1h_30
+[2026-10-25 15:31:53] evaluated F6_rsi_follow_1h_30
+[2026-10-25 15:31:53] evaluated F6_rsi_fade_1h_20
+[2026-10-25 15:31:53] evaluated F6_rsi_follow_1h_20
+[2026-10-25 15:31:54] evaluated F6_rsi_fade_4h_30
+[2026-10-25 15:31:54] evaluated F6_rsi_follow_4h_30
+[2026-10-25 15:31:54] evaluated F6_rsi_fade_4h_20
+[2026-10-25 15:31:55] evaluated F6_rsi_follow_4h_20
+[2026-10-25 15:31:55] evaluated F7_squeeze
+[2026-10-25 15:31:56] evaluated F8_flow_follow_1h_k1.5
+[2026-10-25 15:31:57] evaluated F8_flow_fade_1h_k1.5
+[2026-10-25 15:31:57] evaluated F8_flow_follow_1h_k2.5
+[2026-10-25 15:31:57] evaluated F8_flow_fade_1h_k2.5
+[2026-10-25 15:31:58] evaluated F8_flow_follow_4h_k1.5
+[2026-10-25 15:31:58] evaluated F8_flow_fade_4h_k1.5
+[2026-10-25 15:31:59] evaluated F8_flow_follow_4h_k2.5
+[2026-10-25 15:31:59] evaluated F8_flow_fade_4h_k2.5
+[2026-10-25 15:31:59] evaluated F8_flow_follow_24h_k1.5
+[2026-10-25 15:32:00] evaluated F8_flow_fade_24h_k1.5
+[2026-10-25 15:32:00] evaluated F8_flow_follow_24h_k2.5
+[2026-10-25 15:32:00] evaluated F8_flow_fade_24h_k2.5
+[2026-10-25 15:32:01] evaluated F9_vshock_follow
+[2026-10-25 15:32:01] evaluated F9_vshock_fade
+[2026-10-25 15:32:02] evaluated F11_fund_fade
+[2026-10-25 15:32:03] evaluated F11_fund_follow
+[2026-10-25 15:32:03] evaluated F12_ai_A1_1_m0.0
+[2026-10-25 15:32:03] evaluated F12_ai_A1_1_m0.02
+[2026-10-25 15:32:03] evaluated F12_ai_A1_1_m0.05
+[2026-10-25 15:32:03] evaluated F12_ai_V2_m0.0
+[2026-10-25 15:32:03] evaluated F12_ai_V2_m0.02
+[2026-10-25 15:32:03] evaluated F12_ai_V2_m0.05
+[2026-10-25 15:32:05] selection: 990 fut configs on D, 122 positive with n>=200, top3/family 28, V-pass 16, finals 10; calendar top 3 V-pass 0
+[2026-10-25 15:33:56] holdout F5_z_follow_48_k2 V3: 127 trades mean -0.005086562494740566 edge False
+[2026-10-25 15:33:58] holdout F9_vshock_follow V2: 153 trades mean 0.0028250875338534432 edge False
+[2026-10-25 15:34:01] holdout F5_z_follow_48_k2 V2: 171 trades mean -7.68659458707923e-05 edge False
+[2026-10-25 15:34:03] holdout F8_flow_follow_24h_k1.5 A4_4: 138 trades mean -0.0032217305262438978 edge False
+[2026-10-25 15:34:04] holdout F6_rsi_follow_4h_30 V1: 148 trades mean -0.0003322165809433899 edge False
+[2026-10-25 15:34:08] holdout F6_rsi_follow_5m_30 V2: 179 trades mean -0.0026343534615758755 edge False
+[2026-10-25 15:34:51] holdout F5_z_follow_48_k3 V3: 120 trades mean 0.0012398047521486864 edge False
+[2026-10-25 15:34:54] holdout F9_vshock_follow V3: 107 trades mean -0.001900963178043651 edge False
+[2026-10-25 15:36:46] holdout F1_long V3: 127 trades mean -0.0013893959790759333 edge False
+[2026-10-25 15:36:50] holdout F2_mom_1h_k0 V2: 178 trades mean -0.0007575095169106104 edge False
+[2026-10-25 15:36:51] done; edges: []

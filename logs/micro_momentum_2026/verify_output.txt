@@ -1,0 +1,21 @@
+PASS  M1 protocol SHA  dc0b48c42e7b
+PASS  M1 downloads equal Binance CHECKSUM  18 files
+PASS  M1 output SHAs  
+PASS  M2 DISC features at sample seconds  3000 seconds x 10 values, 0 mismatches
+PASS  M3 DISC 5m OHLC vs file  8928 bars, mismatches mine 205 / main 205
+PASS  M5 DISC A3 UPMIN counts and mean F_60  counts [1415776, 654604, 312825, 150675, 72927, 67092]
+PASS  M4 DISC trades N1_k2_s0_XT600  1906 mine / 1906 main
+PASS  M4 DISC trades N2_k3_s0.6_XT600  731 mine / 731 main
+PASS  M4 DISC trades N1_k1_s0_XT60  10017 mine / 10017 main
+PASS  M4 DISC trades N1_k1_s0_XU  9749 mine / 9749 main
+PASS  M4 DISC trades N3_k2_s0.6_XT60  1494 mine / 1494 main
+PASS  M4 DISC trades N3_k2_s0.6_XU  1400 mine / 1400 main
+PASS  M6 VAL count+sum N1_k2_s0_XT600  7186 trades, sum net -6.564894
+PASS  M6 VAL count+sum N2_k3_s0.6_XT600  2782 trades, sum net -2.612014
+PASS  M6 VAL count+sum N1_k1_s0_XT60  37573 trades, sum net -34.235725
+PASS  M6 VAL count+sum N1_k1_s0_XU  35254 trades, sum net -31.549952
+PASS  M6 VAL count+sum N3_k2_s0.6_XT60  5306 trades, sum net -5.036382
+PASS  M6 VAL count+sum N3_k2_s0.6_XU  5161 trades, sum net -4.816931
+PASS  M7 shortlist and decision follow §7  shortlist [] pick None
+
+TOTAL 19 checks, 19 PASS, 0 FAIL -> ALL PASS

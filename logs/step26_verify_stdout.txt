@@ -1,0 +1,10 @@
+[V1 PASS] protocol hash as locked; predictions SHA as claimed
+[V2 PASS] MAIN: 300 tail labels re-derived from raw 1h opens
+[V3 PASS] MAIN: AI AUC 0.6724
+[V4 PASS] MAIN BASE: final 201548.26, MaxDD 74.68%
+[V4 PASS] MAIN AI_VETO: final 91928.24, MaxDD 75.64%
+[V2 PASS] PRE: 300 tail labels re-derived from raw 1h opens
+[V3 PASS] PRE: AI AUC 0.6348
+[V4 PASS] PRE BASE: final 2836.59, MaxDD 81.22%
+[V4 PASS] PRE AI_VETO: final 2619.49, MaxDD 80.22%
+[V5 PASS] gates recomputed -> FAIL

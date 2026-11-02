@@ -1,0 +1,31 @@
+PASS  H1 protocol SHA  
+PASS  H1 input SHAs  7 files
+PASS  H2 10s n / E|r| / share>fee  n 1304635, E|r| 0.0140%
+PASS  H3 10s p* and perfect net  p*fut 379.0%
+PASS  H2 30s n / E|r| / share>fee  n 434875, E|r| 0.0275%
+PASS  H3 30s p* and perfect net  p*fut 217.2%
+PASS  H2 1m n / E|r| / share>fee  n 217435, E|r| 0.0406%
+PASS  H3 1m p* and perfect net  p*fut 163.4%
+PASS  H2 5m n / E|r| / share>fee  n 709442, E|r| 0.1157%
+PASS  H3 5m p* and perfect net  p*fut 89.7%
+PASS  H2 15m n / E|r| / share>fee  n 236472, E|r| 0.1982%
+PASS  H3 15m p* and perfect net  p*fut 73.2%
+PASS  H2 30m n / E|r| / share>fee  n 118230, E|r| 0.2760%
+PASS  H3 30m p* and perfect net  p*fut 66.7%
+PASS  H2 1h n / E|r| / share>fee  n 59105, E|r| 0.3912%
+PASS  H3 1h p* and perfect net  p*fut 61.8%
+PASS  H2 4h n / E|r| / share>fee  n 14770, E|r| 0.8050%
+PASS  H3 4h p* and perfect net  p*fut 55.7%
+PASS  H2 1d n / E|r| / share>fee  n 2464, E|r| 2.1168%
+PASS  H3 1d p* and perfect net  p*fut 52.2%
+PASS  H2 3d n / E|r| / share>fee  n 821, E|r| 3.8552%
+PASS  H3 3d p* and perfect net  p*fut 51.2%
+PASS  H2 7d n / E|r| / share>fee  n 352, E|r| 6.1765%
+PASS  H3 7d p* and perfect net  p*fut 50.7%
+PASS  H2 14d n / E|r| / share>fee  n 176, E|r| 8.6303%
+PASS  H3 14d p* and perfect net  p*fut 50.5%
+PASS  H2 28d n / E|r| / share>fee  n 88, E|r| 13.4629%
+PASS  H3 28d p* and perfect net  p*fut 50.3%
+PASS  H4 output SHAs  
+
+TOTAL 29 checks, 29 PASS, 0 FAIL -> ALL PASS

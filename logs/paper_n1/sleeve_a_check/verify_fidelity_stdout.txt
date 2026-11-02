@@ -1,0 +1,4 @@
+# run on the VM 2026-10-24 (tf_edge_map a91516daa2c9..., ledger snapshot f3fcd4baef09...), stdout copied verbatim:
+[T3a PASS] 72 closes: entry and exit prices == spot 4h opens: mismatches 0 []
+[T3b PASS] 72 closes: state 1 at the open (fresh or init), 0 at the close: mismatches 0 []
+TOTAL 2 checks, FAIL 0

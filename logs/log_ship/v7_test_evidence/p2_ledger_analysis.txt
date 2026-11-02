@@ -1,0 +1,10 @@
+row1 2026-10-25T05:29:47.370531+00:00 tag=052947 n=408 verified=True rotated=10 same_tag_rows=1 local_manifest_sha_ok=True remote_bundle_md5_ok=False
+row2 2026-10-25T05:29:49.264491+00:00 tag=052949 n=3 verified=True rotated=0 same_tag_rows=3 local_manifest_sha_ok=False remote_bundle_md5_ok=False
+row3 2026-10-25T05:29:49.584119+00:00 tag=052949 n=4 verified=False rotated=0 same_tag_rows=3 local_manifest_sha_ok=False remote_bundle_md5_ok=None
+row4 2026-10-25T05:29:49.894847+00:00 tag=052949 n=4 verified=True rotated=1 same_tag_rows=3 local_manifest_sha_ok=True remote_bundle_md5_ok=True
+row5 2026-10-25T05:29:50.231035+00:00 tag=052950 n=4 verified=True rotated=0 same_tag_rows=1 local_manifest_sha_ok=True remote_bundle_md5_ok=True
+row6 2026-10-25T05:29:51.491005+00:00 tag=052951 n=4 verified=True rotated=0 same_tag_rows=2 local_manifest_sha_ok=False remote_bundle_md5_ok=False
+row7 2026-10-25T05:29:51.796594+00:00 tag=052951 n=4 verified=True rotated=1 same_tag_rows=2 local_manifest_sha_ok=True remote_bundle_md5_ok=True
+row8 2026-10-25T05:29:52.102381+00:00 tag=052952 n=6 verified=True rotated=0 same_tag_rows=2 local_manifest_sha_ok=False remote_bundle_md5_ok=False
+row9 2026-10-25T05:29:52.461936+00:00 tag=052952 n=2 verified=True rotated=0 same_tag_rows=2 local_manifest_sha_ok=True remote_bundle_md5_ok=True
+COLLISIONS {('2026-10-25_05', '052949'): 3, ('2026-10-25_05', '052951'): 2, ('2026-10-25_05', '052952'): 2}

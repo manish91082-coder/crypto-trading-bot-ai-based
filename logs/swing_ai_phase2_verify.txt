@@ -1,0 +1,16 @@
+[V1 PASS] protocol, events and predictions hashes
+   ADAUSDT 4h: 385 events re-derived
+   BNBUSDT 8h: 211 events re-derived
+   DOGEUSDT 8h: 190 events re-derived
+   BTCUSDT 1D: 70 events re-derived
+[V2 PASS] entry / exit / net re-derived with a plain loop
+[V3 PASS] G0: 7203/7425 events matched to Phase 1 legs (0.9701), max factor diff 0.0
+   AI_all: AUC 0.5355 (n 6893)
+   CONTROL_all: AUC 0.4978 (n 6893)
+   AI_P1: AUC 0.5335 (n 1443)
+   AI_P2: AUC 0.5370 (n 5450)
+   money_all: all 2.506 %, selected 3.113 %, diff 0.607 %
+   money_P1: all 5.378 %, selected 6.440 %, diff 1.062 %
+   money_P2: all 1.746 %, selected 2.213 %, diff 0.467 %
+[V4 PASS] AUCs, selection and money means recomputed
+[V5 PASS] gates re-derived: {'G0': True, 'G1': True, 'G2': True, 'G3': False, 'G4': False, 'decision': 'FAIL'}

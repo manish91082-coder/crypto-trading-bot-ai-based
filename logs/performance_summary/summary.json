@@ -1,0 +1,393 @@
+{
+  "LO": {
+    "all": {
+      "trades": 4421,
+      "win_rate_pct": 47.3,
+      "avg_win_pct": 10.78,
+      "avg_loss_pct": -6.89,
+      "payoff_ratio": 1.57,
+      "profit_factor": 1.19,
+      "avg_trade_pct": 1.47
+    },
+    "long": {
+      "trades": 4421,
+      "win_rate_pct": 47.3,
+      "avg_win_pct": 10.78,
+      "avg_loss_pct": -6.89,
+      "payoff_ratio": 1.57,
+      "profit_factor": 1.19,
+      "avg_trade_pct": 1.47
+    },
+    "sleeve_D1": {
+      "trades": 490,
+      "win_rate_pct": 44.5,
+      "avg_win_pct": 24.5,
+      "avg_loss_pct": -12.01,
+      "payoff_ratio": 2.04,
+      "profit_factor": 1.29,
+      "avg_trade_pct": 4.23
+    },
+    "sleeve_H4": {
+      "trades": 1933,
+      "win_rate_pct": 47.0,
+      "avg_win_pct": 9.36,
+      "avg_loss_pct": -6.3,
+      "payoff_ratio": 1.48,
+      "profit_factor": 1.16,
+      "avg_trade_pct": 1.06
+    },
+    "sleeve_H1": {
+      "trades": 1998,
+      "win_rate_pct": 48.3,
+      "avg_win_pct": 9.03,
+      "avg_loss_pct": -6.12,
+      "payoff_ratio": 1.48,
+      "profit_factor": 1.18,
+      "avg_trade_pct": 1.2
+    },
+    "monthly": {
+      "months": 69,
+      "positive_pct": 58.0,
+      "mean_pct": 3.2,
+      "median_pct": 1.36,
+      "worst_pct": -17.52,
+      "worst_month": "2022-05",
+      "best_pct": 74.68,
+      "best_month": "2021-01",
+      "p10_pct": -9.22,
+      "p90_pct": 17.07
+    },
+    "monthly_excl_2021": {
+      "months": 57,
+      "positive_pct": 56.1,
+      "mean_pct": 0.52,
+      "median_pct": 0.64,
+      "worst_pct": -17.52,
+      "best_pct": 20.08
+    },
+    "year_paths": {
+      "n_windows": 58,
+      "first_start": "2021-01",
+      "last_start": "2025-10",
+      "end12_worst": 5836,
+      "end12_worst_start": "2022-01",
+      "end12_median": 10601,
+      "end12_best": 47913,
+      "end12_best_start": "2021-01",
+      "share_end12_below_10k_pct": 43.1,
+      "worst_drawdown_inside_any_window_pct": 42.0
+    },
+    "year_2022_path": [
+      8535,
+      8857,
+      9255,
+      8249,
+      6803,
+      6156,
+      6758,
+      6623,
+      6645,
+      6861,
+      6226,
+      5836
+    ],
+    "table": [
+      {
+        "month": 1,
+        "worst": 8248.0,
+        "p10": 9118,
+        "median": 10158,
+        "p90": 11831,
+        "best": 17468.0
+      },
+      {
+        "month": 2,
+        "worst": 7351.0,
+        "p10": 8804,
+        "median": 10362,
+        "p90": 12281,
+        "best": 24770.0
+      },
+      {
+        "month": 3,
+        "worst": 6651.0,
+        "p10": 8610,
+        "median": 10171,
+        "p90": 12768,
+        "best": 29329.0
+      },
+      {
+        "month": 4,
+        "worst": 6950.0,
+        "p10": 8578,
+        "median": 10391,
+        "p90": 13468,
+        "best": 37114.0
+      },
+      {
+        "month": 5,
+        "worst": 6803.0,
+        "p10": 7971,
+        "median": 10411,
+        "p90": 14355,
+        "best": 35682.0
+      },
+      {
+        "month": 6,
+        "worst": 6156.0,
+        "p10": 7875,
+        "median": 10500,
+        "p90": 14388,
+        "best": 33385.0
+      },
+      {
+        "month": 7,
+        "worst": 5800.0,
+        "p10": 7696,
+        "median": 10897,
+        "p90": 14667,
+        "best": 36003.0
+      },
+      {
+        "month": 8,
+        "worst": 6143.0,
+        "p10": 7716,
+        "median": 10913,
+        "p90": 15155,
+        "best": 43845.0
+      },
+      {
+        "month": 9,
+        "worst": 6240.0,
+        "p10": 7006,
+        "median": 10996,
+        "p90": 14878,
+        "best": 42627.0
+      },
+      {
+        "month": 10,
+        "worst": 6261.0,
+        "p10": 7129,
+        "median": 11088,
+        "p90": 14715,
+        "best": 48019.0
+      },
+      {
+        "month": 11,
+        "worst": 6226.0,
+        "p10": 7312,
+        "median": 10812,
+        "p90": 14844,
+        "best": 50857.0
+      },
+      {
+        "month": 12,
+        "worst": 5836.0,
+        "p10": 7535,
+        "median": 10601,
+        "p90": 15268,
+        "best": 47913.0
+      }
+    ]
+  },
+  "RS": {
+    "all": {
+      "trades": 8846,
+      "win_rate_pct": 52.0,
+      "avg_win_pct": 10.45,
+      "avg_loss_pct": -9.47,
+      "payoff_ratio": 1.1,
+      "profit_factor": 1.13,
+      "avg_trade_pct": 0.88
+    },
+    "long": {
+      "trades": 4421,
+      "win_rate_pct": 47.3,
+      "avg_win_pct": 10.78,
+      "avg_loss_pct": -6.89,
+      "payoff_ratio": 1.57,
+      "profit_factor": 1.22,
+      "avg_trade_pct": 1.47
+    },
+    "short": {
+      "trades": 4425,
+      "win_rate_pct": 56.6,
+      "avg_win_pct": 10.17,
+      "avg_loss_pct": -12.6,
+      "payoff_ratio": 0.81,
+      "profit_factor": 1.07,
+      "avg_trade_pct": 0.29
+    },
+    "sleeve_D1": {
+      "trades": 1132,
+      "win_rate_pct": 52.8,
+      "avg_win_pct": 19.02,
+      "avg_loss_pct": -15.99,
+      "payoff_ratio": 1.19,
+      "profit_factor": 1.23,
+      "avg_trade_pct": 2.5
+    },
+    "sleeve_H4": {
+      "trades": 3746,
+      "win_rate_pct": 51.4,
+      "avg_win_pct": 9.3,
+      "avg_loss_pct": -8.46,
+      "payoff_ratio": 1.1,
+      "profit_factor": 1.12,
+      "avg_trade_pct": 0.67
+    },
+    "sleeve_H1": {
+      "trades": 3968,
+      "win_rate_pct": 52.3,
+      "avg_win_pct": 9.04,
+      "avg_loss_pct": -8.6,
+      "payoff_ratio": 1.05,
+      "profit_factor": 1.09,
+      "avg_trade_pct": 0.62
+    },
+    "monthly": {
+      "months": 69,
+      "positive_pct": 76.8,
+      "mean_pct": 3.59,
+      "median_pct": 3.35,
+      "worst_pct": -16.85,
+      "worst_month": "2024-09",
+      "best_pct": 60.19,
+      "best_month": "2021-01",
+      "p10_pct": -6.51,
+      "p90_pct": 9.65
+    },
+    "monthly_excl_2021": {
+      "months": 57,
+      "positive_pct": 73.7,
+      "mean_pct": 2.04,
+      "median_pct": 3.23,
+      "worst_pct": -16.85,
+      "best_pct": 15.55
+    },
+    "year_paths": {
+      "n_windows": 58,
+      "first_start": "2021-01",
+      "last_start": "2025-10",
+      "end12_worst": 10375,
+      "end12_worst_start": "2023-10",
+      "end12_median": 13035,
+      "end12_best": 31228,
+      "end12_best_start": "2021-01",
+      "share_end12_below_10k_pct": 0.0,
+      "worst_drawdown_inside_any_window_pct": 16.9
+    },
+    "year_2022_path": [
+      9917,
+      10920,
+      10636,
+      11650,
+      11701,
+      12810,
+      11196,
+      11820,
+      12202,
+      12352,
+      12782,
+      13654
+    ],
+    "table": [
+      {
+        "month": 1,
+        "worst": 8315.0,
+        "p10": 9377,
+        "median": 10341,
+        "p90": 11063,
+        "best": 16019.0
+      },
+      {
+        "month": 2,
+        "worst": 8661.0,
+        "p10": 9591,
+        "median": 10739,
+        "p90": 11424,
+        "best": 18226.0
+      },
+      {
+        "month": 3,
+        "worst": 8728.0,
+        "p10": 9585,
+        "median": 10942,
+        "p90": 12089,
+        "best": 19010.0
+      },
+      {
+        "month": 4,
+        "worst": 9066.0,
+        "p10": 9846,
+        "median": 11178,
+        "p90": 12505,
+        "best": 23556.0
+      },
+      {
+        "month": 5,
+        "worst": 9315.0,
+        "p10": 9924,
+        "median": 11533,
+        "p90": 12697,
+        "best": 23715.0
+      },
+      {
+        "month": 6,
+        "worst": 9637.0,
+        "p10": 10419,
+        "median": 11204,
+        "p90": 13134,
+        "best": 24450.0
+      },
+      {
+        "month": 7,
+        "worst": 9765.0,
+        "p10": 10479,
+        "median": 11507,
+        "p90": 13412,
+        "best": 26120.0
+      },
+      {
+        "month": 8,
+        "worst": 10177.0,
+        "p10": 10763,
+        "median": 11830,
+        "p90": 13928,
+        "best": 28271.0
+      },
+      {
+        "month": 9,
+        "worst": 9958.0,
+        "p10": 11075,
+        "median": 12057,
+        "p90": 14312,
+        "best": 28006.0
+      },
+      {
+        "month": 10,
+        "worst": 10615.0,
+        "p10": 11250,
+        "median": 12370,
+        "p90": 14248,
+        "best": 28945.0
+      },
+      {
+        "month": 11,
+        "worst": 10099.0,
+        "p10": 11379,
+        "median": 12684,
+        "p90": 15056,
+        "best": 30669.0
+      },
+      {
+        "month": 12,
+        "worst": 10375.0,
+        "p10": 11449,
+        "median": 13035,
+        "p90": 15419,
+        "best": 31228.0
+      }
+    ]
+  }
+}

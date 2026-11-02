@@ -1,0 +1,139 @@
+FWD-R2 2026-10-29T14:07:00.011Z  since 2026-10-29T13:30:00Z  trades 0  errors 17
+FWD-R2 2026-10-29T14:30:08.082Z  since 2026-10-29T13:30:00Z  trades 0  errors 7
+FWD-R2 2026-10-29T14:52:15.859Z  since 2026-10-29T13:30:00Z  trades 0  errors 14
+FWD-R2 2026-10-29T15:09:06.481Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-29T15:27:42.228Z  since 2026-10-29T13:30:00Z  trades 0  errors 11
+FWD-R2 2026-10-29T15:39:41.669Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-29T15:55:16.380Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-29T16:08:54.499Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-29T16:23:13.295Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-29T16:39:03.431Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-29T16:52:30.226Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-29T17:08:36.921Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-29T17:22:46.154Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-29T17:38:06.377Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-29T17:51:13.555Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T02:20:34.253Z  since 2026-10-29T13:30:00Z  trades 0  errors 48
+FWD-R2 2026-10-30T02:36:40.384Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T02:51:02.535Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T03:07:37.439Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T03:20:44.451Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T03:44:58.746Z  since 2026-10-29T13:30:00Z  trades 0  errors 42
+FWD-R2 2026-10-30T03:51:46.341Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T04:08:19.146Z  since 2026-10-29T13:30:00Z  trades 0  errors 10
+FWD-R2 2026-10-30T04:20:55.216Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T04:36:52.130Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T04:54:00.448Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T05:10:35.422Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T05:23:35.397Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T05:41:15.885Z  since 2026-10-29T13:30:00Z  trades 0  errors 7
+FWD-R2 2026-10-30T05:55:32.334Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T06:06:04.381Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T06:20:51.982Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T06:36:03.451Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T06:50:45.356Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T07:06:42.448Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T07:21:28.874Z  since 2026-10-29T13:30:00Z  trades 0  errors 6
+FWD-R2 2026-10-30T07:53:16.271Z  since 2026-10-29T13:30:00Z  trades 0  errors 16
+FWD-R2 2026-10-30T08:51:09.919Z  since 2026-10-29T13:30:00Z  trades 1  errors 6
+ SB2: closed 0 (sum net +0.00%, wins 0), open 1 (mark -5.84%): TRXUSDT -5.84%
+FWD-R2 2026-11-02T02:37:44.336Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T02:51:47.102Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T03:06:14.190Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T03:20:56.803Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T03:35:36.759Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T03:50:10.533Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T04:05:35.928Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T04:21:54.293Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T04:35:42.214Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T04:50:44.432Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T05:05:45.399Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T05:21:13.208Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T05:36:30.368Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T05:51:35.201Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T06:06:24.810Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T06:21:53.059Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T06:38:53.166Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T06:51:10.678Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T07:05:53.026Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T07:21:23.494Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T07:36:00.340Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T07:50:56.460Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T08:05:28.280Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T08:21:46.287Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+FWD-R2 2026-11-02T08:37:00.762Z  since 2026-10-29T13:30:00Z  trades 8  errors 6
+ SA: closed 6 (sum net -0.70%, wins 4), open 0 (mark +0.00%): 
+ SB2: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 
+ SC: closed 1 (sum net -6.98%, wins 0), open 0 (mark +0.00%): 

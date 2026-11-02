@@ -1,0 +1,2 @@
+[V1+V2 PASS] R6: AUC new 0.5673 base 0.5676 (diff -0.0003); 2022 diff -0.0032; Calmar 0.516 vs 0.625; 2022 -67.18 vs -74.12; decision FAIL
+[V3 PASS] R6 2022-06 model re-trained from scratch (174422 rows, of which 40369 pre-2020): 3600 predictions equal (max diff 8.3e-17)

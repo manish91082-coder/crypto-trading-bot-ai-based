@@ -1,0 +1,6 @@
+[W1 PASS] R1 state / m_vol / g from own BTC daily closes (3332 days): max diff 1.1e-16
+[W2 PASS] R2: 5 fit objectives re-derived from stored centroids (mismatch []); 100 online states (mismatch 0)
+[W3 PASS] R1: 122954 entries matched to N1 FINAL; max |w - w_N1 x g| 1.7e-18
+[W4 PASS] gate booleans re-derived from result files; N2 base dev Calmar == N1 FINAL dev Calmar: True
+[W5 PASS] protocol lock, registry T16, file SHAs, code SHA, N1 claims SHA
+TOTAL 5 checks, FAIL 0

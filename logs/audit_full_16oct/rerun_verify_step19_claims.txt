@@ -1,0 +1,9 @@
+[V1 PASS] protocol hash as locked; G0 reproduction of Step 15 B predictions: max diff 8.3e-17
+[V2 PASS] universe re-derived from raw files: 41980 coin-days identical
+[V3 PASS] AI: labels re-derived from raw opens (41824 rows), AUC in U 0.5593
+[V3 PASS] CONTROL: labels re-derived from raw opens (41824 rows), AUC in U 0.4936
+[V4 PASS] AI: final 65274.51, MaxDD 73.18%, trades 490, positive years 3
+[V4 PASS] CONTROL: final 5149.62, MaxDD 94.48%, trades 918, positive years 2
+[V4 PASS] EW_U: final 24222.68, MaxDD 86.65%, trades 205, positive years 3
+[V4 PASS] BTC_HOLD: final 25051.67, MaxDD 69.28%
+[V5 PASS] gates recomputed -> PARTIAL_SKILL_RULE_FAILS

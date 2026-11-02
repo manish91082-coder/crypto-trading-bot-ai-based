@@ -1,0 +1,21 @@
+2026-10-26T11:37:12Z protocol locked 2c68bbc44444
+2026-10-26T11:41:31Z start stage=all; costs FUT 0.00046 SPOT 0.00085 MAKER 0.00028000000000000003
+2026-10-26T11:41:37Z loaded 5m 2026 bars 78624 (expected 78624); days 273
+2026-10-26T11:45:18Z A wrote oracle_day.parquet rows 273
+2026-10-26T11:45:18Z A wrote oracle_tf.parquet rows 1365
+2026-10-26T11:45:18Z A wrote oracle_trades.parquet rows 43863
+2026-10-26T11:45:18Z A wrote sweep_events.parquet rows 8150
+2026-10-26T11:45:18Z A done in 222s
+2026-10-26T11:47:28Z B V1-A: trades 465 wins 157 sum -82.484% months+ 0/9 rc_share 0.000 survives False (128s)
+2026-10-26T11:48:41Z B V1-B: trades 194 wins 77 sum -27.056% months+ 2/9 rc_share 0.000 survives False (73s)
+2026-10-26T11:50:31Z B V1-C: trades 191 wins 76 sum -26.858% months+ 2/9 rc_share 0.000 survives False (110s)
+2026-10-26T11:53:43Z B V1-AC: trades 441 wins 143 sum -74.303% months+ 0/9 rc_share 0.000 survives False (192s)
+2026-10-26T11:54:08Z B V1-S: trades 110 wins 44 sum -21.436% months+ 1/9 rc_share 0.000 survives False (25s)
+2026-10-26T11:54:08Z B wrote v1_trades.csv v1_daily.csv v1_monthly.csv V1_RESULTS.json
+2026-10-26T11:54:08Z output SHA written
+2026-10-26T12:01:51Z verifier ALL PASS (verify_output.txt); report RESEARCH_ORACLE_9M_2026_PART_A_B_26_OCT_2026.md; diagnostic DIAGNOSTIC_RANDOM_BARRIER.md (not locked)
+2026-10-26T12:50:29Z diagnostic 2 (mirror fade, in-sample, not locked) appended
+2026-10-26T12:58:59Z amendment 1 locked e68da96c8651
+2026-10-26T13:02:36Z Part C ran; diagnostic 3: diagnostics 1-2 withdrawn (lookahead in random-control side), Part B rc figures invalid
+2026-10-26T13:07:58Z amendment 2 locked 4c46612cd52a
+2026-10-26T13:18:12Z Part C verifier ALL PASS; Part D lead fails (0/6 years), verifier ALL PASS; report RESEARCH_ORACLE_9M_2026_PART_C_D_26_OCT_2026.md

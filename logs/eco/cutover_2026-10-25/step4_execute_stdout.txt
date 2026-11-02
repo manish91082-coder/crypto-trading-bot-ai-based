@@ -1,0 +1,76 @@
+{
+ "f6_positions": {
+  "FETUSDT": -1584.0,
+  "ONDOUSDT": -459.0,
+  "WLDUSDT": -557.0,
+  "UNIUSDT": -39.0,
+  "SUIUSDT": -101.10000000000001,
+  "NEARUSDT": -42.0,
+  "QNTUSDT": -0.5
+ },
+ "account_positions": {
+  "WLDUSDT": -557.0,
+  "UNIUSDT": -39.0,
+  "NEARUSDT": -42.0,
+  "SUIUSDT": -101.1,
+  "FETUSDT": -1584.0,
+  "ONDOUSDT": -459.0,
+  "QNTUSDT": -0.5
+ },
+ "mismatch": {},
+ "open_algo_symbols": [
+  "FETUSDT",
+  "NEARUSDT",
+  "ONDOUSDT",
+  "QNTUSDT",
+  "SUIUSDT",
+  "UNIUSDT",
+  "WLDUSDT"
+ ],
+ "f6_cron_lines": 0,
+ "plan_cycles_ok": 84,
+ "one_way": true,
+ "wallet": 5152.72746893,
+ "verify_last3": [
+  {
+   "start_utc": "2026-10-23T01:55:01Z",
+   "end_utc": "2026-10-23T01:55:02Z",
+   "exit_code": 0
+  },
+  {
+   "start_utc": "2026-10-24T01:55:01Z",
+   "end_utc": "2026-10-24T01:55:02Z",
+   "exit_code": 0
+  },
+  {
+   "start_utc": "2026-10-25T01:55:01Z",
+   "end_utc": "2026-10-25T01:55:01Z",
+   "exit_code": 0
+  }
+ ],
+ "margin_type": {
+  "WLDUSDT": "?",
+  "UNIUSDT": "?",
+  "NEARUSDT": "?",
+  "SUIUSDT": "?",
+  "FETUSDT": "?",
+  "ONDOUSDT": "?",
+  "QNTUSDT": "?"
+ },
+ "margin_note": "isolated symbols keep ISOLATED until their position is closed (code does not change them)",
+ "gate": {
+  "positions_match": true,
+  "plan_cycles_ge_72": true,
+  "f6_cron_removed": true,
+  "one_way": true,
+  "verify_3_days_ok": true
+ }
+}
+cancel F6 algo orders FETUSDT {'code': 200, 'msg': 'The operation of cancel all open order is done.'}
+cancel F6 algo orders NEARUSDT {'code': 200, 'msg': 'The operation of cancel all open order is done.'}
+cancel F6 algo orders ONDOUSDT {'code': 200, 'msg': 'The operation of cancel all open order is done.'}
+cancel F6 algo orders QNTUSDT {'code': 200, 'msg': 'The operation of cancel all open order is done.'}
+cancel F6 algo orders SUIUSDT {'code': 200, 'msg': 'The operation of cancel all open order is done.'}
+cancel F6 algo orders UNIUSDT {'code': 200, 'msg': 'The operation of cancel all open order is done.'}
+cancel F6 algo orders WLDUSDT {'code': 200, 'msg': 'The operation of cancel all open order is done.'}
+adopted {'time': '2026-10-25 04:21:04.144555+00:00', 'wallet': 5152.72746893, 'n': 15} F6 state -> state_demo_retired_2026-10-25.json

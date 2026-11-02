@@ -1,0 +1,2 @@
+rows: path 64581, swing 5164; features 62 / 72 (45s)
+sanity planted AUC 0.5512

@@ -1,0 +1,6 @@
+[19:14:03 +      0s] HOLD start; candidates 0
+[19:18:02 +    238s]   1s month 6 events 2968
+[19:18:08 +    244s]   1s month 7 events 1610
+[19:18:14 +    250s]   1s month 8 events 1579
+[19:18:19 +    256s]   1s month 9 events 1646
+[19:18:20 +    256s] HOLD done {"T1": 0, "T2": 0, "T3": 0, "T4": 0}

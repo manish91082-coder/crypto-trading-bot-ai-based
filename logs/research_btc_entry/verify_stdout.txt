@@ -1,0 +1,7 @@
+﻿[V1 PASS] 3 inputs; mismatches []
+[V2 PASS] 500 random (bar, set) long+short outcomes by a bar loop: mismatches 0 []
+[V2b PASS] sigma24 (V1 barrier) at 100 random bars recomputed: mismatches []
+[V3 PASS] 300 random signal values (24h momentum k1, 288-bar breakout, 288-bar z fade, 4h taker-buy ratio) by loops: mismatches []
+[V4 PASS] 10 finals: every holdout trade replayed (outcome, exit, non-overlap, funding, net) and n / mean / halves: mismatches []
+[V5 PASS] random control of F5_z_follow_48_k2 V3 (200 seeds) recomputed: p95 0.006838 vs report 0.006838
+TOTAL 6 checks, FAIL 0

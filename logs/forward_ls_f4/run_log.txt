@@ -1,0 +1,20 @@
+[2026-10-16 04:50:55 UTC] RUN FAILED:
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\execution\forward_ls_f4.py", line 398, in <module>
+    main()
+  File "E:\crypto trading bot ai based 9 oct 2026\src\execution\forward_ls_f4.py", line 251, in main
+    assert led16.exists(), "16B ledger missing"
+           ^^^^^^^^^^^^^^
+AssertionError: 16B ledger missing
+
+[2026-10-16 06:36:35 UTC] RUN FAILED:
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\execution\forward_ls_f4.py", line 398, in <module>
+    main()
+  File "E:\crypto trading bot ai based 9 oct 2026\src\execution\forward_ls_f4.py", line 251, in main
+    assert led16.exists(), "16B ledger missing"
+           ^^^^^^^^^^^^^^
+AssertionError: 16B ledger missing
+
+[2026-10-16 06:38:45 UTC] RUN start as-of 2026-10-15
+[2026-10-16 06:39:50 UTC] RUN done as-of 2026-10-15: LS_RS 10000.0 LS_F2 10000.0 LO 10000.0 C1=True shortable 20 notes 0

@@ -1,0 +1,14 @@
+[V1 PASS] protocol and split hashes as locked
+[V2 PASS] R5 AI: labels re-derived from raw opens (177246 rows), AUC 0.5450
+[V2 PASS] R5 CONTROL: labels re-derived from raw opens (177246 rows), AUC 0.5098
+[V2 PASS] R10 AI: labels re-derived from raw opens (176757 rows), AUC 0.5406
+[V2 PASS] R10 CONTROL: labels re-derived from raw opens (176757 rows), AUC 0.5167
+[V3 PASS] R5 AI: final 22617.34, MaxDD 86.21%, trades 2152, mean trade 1.447%, positive years 2
+[V3 PASS] R5 CONTROL: final 1015.39, MaxDD 98.49%, trades 2734, mean trade -0.315%, positive years 2
+[V3 PASS] R5 SIMPLE: final 116.63, MaxDD 99.86%, trades 1192, mean trade -2.275%, positive years 2
+[V3 PASS] R5 AI_cost040: final 13479.52, MaxDD 90.75%, trades 2152, mean trade 1.143%, positive years 2
+[V3 PASS] R10 AI: final 16003.96, MaxDD 90.10%, trades 1196, mean trade 2.160%, positive years 2
+[V3 PASS] R10 CONTROL: final 705.02, MaxDD 99.08%, trades 1533, mean trade -0.858%, positive years 1
+[V3 PASS] R10 SIMPLE: final 238.99, MaxDD 99.78%, trades 1004, mean trade -1.533%, positive years 2
+[V3 PASS] R10 AI_cost040: final 11986.24, MaxDD 91.19%, trades 1196, mean trade 1.854%, positive years 2
+[V4 PASS] gates recomputed -> PARTIAL_SKILL_RULE_FAILS

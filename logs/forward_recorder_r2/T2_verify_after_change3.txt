@@ -1,0 +1,10 @@
+[V1 PASS] 3 ledger line(s): chain + line hashes intact=True, protocol == lock=True
+[V2a PASS] run folders == ledger run_ids (3); orphan folders (crashed run, quarantined at the next run) []
+[V2 PASS] 3 run folder(s): every file exists, file / raw SHA256 match, n_kept re-derived, manifest SHA == ledger
+[V5 PASS] no look-ahead: all kept klines closed before the run's server time; 282 live snapshots time <= write time []
+[V4 PASS] 207 kline series continuous from 2026-10-17 00:00 UTC; S series: 138, missing 5m stamps total 0 (max 0; Binance omits periods without trades)
+[V6 PASS] no duplicate timestamp in 368 series across runs
+[V7 PASS] state.json (368 keys) == state recomputed from raw files (368 keys)
+[V3 PASS] replay: 60 random stored rows re-fetched from the public API, equal 60/60 []
+[V8 PASS] missing 5m S stamps: 0 inside the 30-day window, 0 re-queried, present at Binance (= lost by the recorder) 0 []
+TOTAL 9 checks, FAIL 0

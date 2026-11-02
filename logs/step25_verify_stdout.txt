@@ -1,0 +1,5 @@
+[V1 PASS] protocol hash as locked; predictions SHA as claimed
+[V2 PASS] 30 random rows: 9 HF features recomputed by direct window filtering on raw 5m/15m files (float32 tolerance)
+[V3 PASS] AUC R24_HF 0.5661, baseline 0.5653, diff +0.0008
+[V4 PASS] R24_HF re-simulated: final 120946.67, trades 1989
+[V5 PASS] gates recomputed -> SKILL_ADD_ONLY

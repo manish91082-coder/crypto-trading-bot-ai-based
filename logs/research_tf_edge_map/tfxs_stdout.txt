@@ -1,0 +1,104 @@
+U1 1m
+U1 5m
+U1 15m
+U1 30m
+U1 1h
+U1 4h
+U1 8h
+U1 12h
+U1 1D
+U1 1W
+U1 1M
+U2 5m
+U2 15m
+U2 30m
+U2 1h
+U2 4h
+U2 8h
+U2 12h
+U2 1D
+U2 1W
+U2X 5m
+U2X 15m
+U2X 30m
+U2X 1h
+U2X 4h
+U2X 8h
+U2X 12h
+U2X 1D
+U2X 1W
+{
+ "protocol_sha": "120c92b4bec42646fffed4b0e46d865da7e74dc5ffb18087760f40299b1c8be4",
+ "code_sha": "43946fa4199a98f97ba64ba00489ace368c01aa2f03206890a52d9e358149614",
+ "tfx_cells_sha": "3d4968f5bad1f68c5f43e456b8f4a54ab77b67c723be4ed5c4dec9adf5014e49",
+ "cells_sha": "7d433236be01cff6d278598fc35e4b1d297ff642bbcd69ad80e8b81fe306f722",
+ "s5_sha": "32bf2bcf595262f3f5e79e6fcbe0c3120e46a641d0e8ba3e97ad78e2ae80973e",
+ "s6_sha": "f8e458c69ecae565332c2f3152afd7267b10840d8070300a70ec0efb72db4694",
+ "corr_sha": "35a4bed39aceca9026e4d979cc26d7f495b0a131ac89d2f610ebaef4d11f27a6",
+ "btc_year_ret": {
+  "2020": 3.0198283865444377,
+  "2021": 0.5978952157803152,
+  "2022": -0.6420705572611595,
+  "2023": 1.5560728793887222,
+  "2024": 1.2130576455446769,
+  "2025": -0.06334722578438912,
+  "2026": -0.045917874886677645
+ },
+ "n_eff": {
+  "all_U1": [
+   4.312401798808816,
+   112
+  ],
+  "trend_1h_1D_U1": [
+   3.941390491301372,
+   40
+  ],
+  "all_U2": [
+   5.221748705762722,
+   103
+  ],
+  "trend_1h_1D_U2": [
+   4.100422337343167,
+   40
+  ],
+  "all_U2X": [
+   4.360143935871391,
+   103
+  ],
+  "trend_1h_1D_U2X": [
+   3.93975128304634,
+   40
+  ]
+ },
+ "corr_summary": {
+  "a_same_family_side_across_TF": {
+   "count": 1252.0,
+   "mean": 0.371,
+   "50%": 0.413,
+   "min": -0.596,
+   "max": 1.0
+  },
+  "b_long_vs_short": {
+   "count": 158.0,
+   "mean": -0.257,
+   "50%": -0.319,
+   "min": -0.657,
+   "max": 0.992
+  },
+  "c_trend_vs_MR": {
+   "count": 406.0,
+   "mean": 0.341,
+   "50%": 0.354,
+   "min": -0.279,
+   "max": 1.0
+  },
+  "d_U1_trend_long_vs_U2X_trend_short": {
+   "count": 34.0,
+   "mean": -0.379,
+   "50%": -0.437,
+   "min": -0.597,
+   "max": 0.018
+  }
+ }
+}
+exit=0

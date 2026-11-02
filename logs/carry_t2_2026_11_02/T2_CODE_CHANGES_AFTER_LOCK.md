@@ -1,0 +1,6 @@
+# T2-CARRY: code changes after the lock
+
+The protocol was locked at 2026-11-02T05:57:43Z. FORWARD_START is 08:00Z, and the first bar closes at 09:00Z.
+
+1. **2026-11-02, about 06:05Z, before any forward data.** The code files were written just after the lock, from the locked accounting section.
+2. **2026-11-02, about 06:05Z, before any forward data. Bug found by re-reading the code.** A funding event exactly at the last closed bar's close is priced at the open of the next hour, and that bar was not being fetched, so `coin_rows` would have raised a KeyError at every funding time. Both `forward_carry.py` and the verifier now fetch one more perp bar. No row is added for it, because rows stop at the last spot bar. Test T12 covers this. The accounting rule did not change.

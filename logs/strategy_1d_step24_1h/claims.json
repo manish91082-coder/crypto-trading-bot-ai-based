@@ -1,0 +1,199 @@
+{
+  "protocol_sha256": "e0aa29fb1ec96e3840982b35eed051410a5aabb7b1feb7e9d062658b9034e436",
+  "crosscheck_1h_vs_1d": {
+    "coin_days": 442651,
+    "mismatched": 711,
+    "share": 0.0016062315458453724
+  },
+  "train_rows": 558719,
+  "test_rows": 1006970,
+  "sanity_planted": {
+    "n": 178466,
+    "auc": 0.6175489824668059,
+    "ci_low": 0.6093104791515994,
+    "ci_high": 0.6250049129747465,
+    "base_rate": 0.4997254378985353
+  },
+  "sanity_leak": {
+    "n": 178466,
+    "auc": 0.9999995770186436,
+    "ci_low": 0.9999987865541488,
+    "ci_high": 0.9999999505287868,
+    "base_rate": 0.4997254378985353
+  },
+  "R4_AI_skill": {
+    "n": 1006420,
+    "auc": 0.5450874552156758,
+    "ci_low": 0.5411549625554211,
+    "ci_high": 0.5487712811916001,
+    "base_rate": 0.49971483078635165
+  },
+  "R4_CONTROL_skill": {
+    "n": 1006420,
+    "auc": 0.500119691501306,
+    "ci_low": 0.49792009904396534,
+    "ci_high": 0.5024980555783898,
+    "base_rate": 0.49971483078635165
+  },
+  "R24_AI_skill": {
+    "n": 1005900,
+    "auc": 0.5653437356625074,
+    "ci_low": 0.5578820186469459,
+    "ci_high": 0.5718158153596068,
+    "base_rate": 0.4997723431752659
+  },
+  "R24_CONTROL_skill": {
+    "n": 1005900,
+    "auc": 0.5006538051336115,
+    "ci_low": 0.4967643192029178,
+    "ci_high": 0.5044427112183605,
+    "base_rate": 0.4997723431752659
+  },
+  "portfolio": {
+    "R4_AI": {
+      "final": 48.81,
+      "cagr_pct": -60.41,
+      "max_dd_pct": 99.83,
+      "calmar": -0.605,
+      "trades": 9540,
+      "avg_trade_pct": -0.21,
+      "trade_ci_low_pct": -0.382,
+      "trade_ci_high_pct": -0.039,
+      "avg_hold_hours": 15.9,
+      "ret_2021": 11.23,
+      "ret_2022": -97.28,
+      "ret_2023": -70.71,
+      "ret_2024": -44.97,
+      "ret_2025": 0.0,
+      "ret_2026": 0.0
+    },
+    "R4_AI_cost040": {
+      "final": 46.92,
+      "cagr_pct": -60.68,
+      "max_dd_pct": 99.74,
+      "calmar": -0.608,
+      "trades": 5039,
+      "avg_trade_pct": -0.437,
+      "trade_ci_low_pct": -0.735,
+      "trade_ci_high_pct": -0.165,
+      "avg_hold_hours": 12.5,
+      "ret_2021": -88.4,
+      "ret_2022": -95.96,
+      "ret_2023": 0.0,
+      "ret_2024": 0.0,
+      "ret_2025": 0.0,
+      "ret_2026": 0.0
+    },
+    "R4_CONTROL": {
+      "final": 46.68,
+      "cagr_pct": -60.72,
+      "max_dd_pct": 99.76,
+      "calmar": -0.609,
+      "trades": 5799,
+      "avg_trade_pct": -0.376,
+      "trade_ci_low_pct": -0.603,
+      "trade_ci_high_pct": -0.124,
+      "avg_hold_hours": 10.9,
+      "ret_2021": -93.7,
+      "ret_2022": -92.59,
+      "ret_2023": 0.0,
+      "ret_2024": 0.0,
+      "ret_2025": 0.0,
+      "ret_2026": 0.0
+    },
+    "R24_AI": {
+      "final": 201548.26,
+      "cagr_pct": 68.69,
+      "max_dd_pct": 74.68,
+      "calmar": 0.92,
+      "trades": 1998,
+      "avg_trade_pct": 1.196,
+      "trade_ci_low_pct": 0.323,
+      "trade_ci_high_pct": 2.249,
+      "avg_hold_hours": 126.0,
+      "ret_2021": 2338.36,
+      "ret_2022": -67.03,
+      "ret_2023": 79.65,
+      "ret_2024": 67.99,
+      "ret_2025": -13.72,
+      "ret_2026": -3.49
+    },
+    "R24_AI_cost040": {
+      "final": 61721.26,
+      "cagr_pct": 37.28,
+      "max_dd_pct": 82.0,
+      "calmar": 0.455,
+      "trades": 1998,
+      "avg_trade_pct": 0.893,
+      "trade_ci_low_pct": 0.022,
+      "trade_ci_high_pct": 1.942,
+      "avg_hold_hours": 126.0,
+      "ret_2021": 1547.33,
+      "ret_2022": -75.74,
+      "ret_2023": 61.31,
+      "ret_2024": 45.54,
+      "ret_2025": -27.19,
+      "ret_2026": -9.3
+    },
+    "R24_CONTROL": {
+      "final": 48.39,
+      "cagr_pct": -60.47,
+      "max_dd_pct": 99.9,
+      "calmar": -0.605,
+      "trades": 4198,
+      "avg_trade_pct": -0.38,
+      "trade_ci_low_pct": -0.899,
+      "trade_ci_high_pct": 0.127,
+      "avg_hold_hours": 55.1,
+      "ret_2021": 84.97,
+      "ret_2022": -95.63,
+      "ret_2023": 6.56,
+      "ret_2024": -53.93,
+      "ret_2025": -79.38,
+      "ret_2026": -40.81
+    }
+  },
+  "pre2020_rows": 205873,
+  "R4_pre2020_skill": {
+    "n": 205209,
+    "auc": 0.555273646204798,
+    "ci_low": 0.5494794052790168,
+    "ci_high": 0.559998109511626,
+    "base_rate": 0.4840236052025009
+  },
+  "R24_pre2020_skill": {
+    "n": 204439,
+    "auc": 0.5463223676039923,
+    "ci_low": 0.5325763077497024,
+    "ci_high": 0.5588329589954086,
+    "base_rate": 0.4839634316348642
+  },
+  "gates": {
+    "G0a_universe_equals_step19": true,
+    "G0b_crosscheck_lt_1pct": true,
+    "G0": true,
+    "G1": true,
+    "R4": {
+      "G2_skill": true,
+      "G3a_cagr": false,
+      "G3b_calmar": false,
+      "G3c_trade_ci": false,
+      "G3d_cost040": false,
+      "G4_pre2020": true,
+      "pass": false,
+      "skill_only": true
+    },
+    "R24": {
+      "G2_skill": true,
+      "G3a_cagr": true,
+      "G3b_calmar": true,
+      "G3c_trade_ci": true,
+      "G3d_cost040": true,
+      "G4_pre2020": true,
+      "pass": true,
+      "skill_only": false
+    },
+    "decision": "PASS_R24"
+  },
+  "test_predictions_sha256": "3b7370c36e5f68a7e7d0b669f3ba3b43b6e4fac90aae86735472c33bdfa284b8"
+}

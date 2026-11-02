@@ -1,0 +1,11 @@
+[1 PASS] D1 U1 carry (variant b) daily portfolio rebuilt with own loop for 10 coins: max |diff| 1.8e-16
+E:\crypto trading bot ai based 9 oct 2026\src\audits\verify_disc.py:119: RuntimeWarning: invalid value encountered in divide
+  pdi, mdi = 100 * wl(pdm, 14) / atr, 100 * wl(mdm, 14) / atr
+[2 PASS] D2: 300 random new-family trades rebuilt with own indicator code: mismatches 0 []
+[3 PASS] D3: 100 random derivative-rule trades recomputed (own percentile, prices, funding): mismatches 0 []
+[4 PASS] D4: 3 random 1D rebalances rebuilt (own liquidity, ranks, legs): mismatches []
+[5 FAIL] D5 own joint bootstrap (4,000 draws): U1 excess: n 117/117, RC 0.004 vs 0.004, SPA 0.004 vs 0.004; U1 net_taker: n 117/117, RC 0.036 vs 0.058, SPA 0.030 vs 0.045
+[6 PASS] D6 windows recomputed: ['2020-03-12', '2022-06-18', '2022-05-11', '2021-05-19', '2026-02-05', '2021-06-21', '2022-11-13', '2021-02-28']
+[7 PASS] claims / SHAs / protocol lock consistent
+TOTAL 7 checks, FAIL 1
+exit=1

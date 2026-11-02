@@ -1,0 +1,91 @@
+{
+  "protocol_sha256": "af95f224d03564cdd9b79dfb103bb70da77ebce2317ec37d926ab719442ba0d1",
+  "experiment": "E4",
+  "results": {
+    "E4": {
+      "result": {
+        "mix": {
+          "final": 60450.59,
+          "cagr_pct": 36.78,
+          "max_dd_pct": 20.03,
+          "calmar": 1.837,
+          "ret_2021": 136.95,
+          "ret_2022": 20.81,
+          "ret_2023": 10.1,
+          "ret_2024": 47.09,
+          "ret_2025": 30.98,
+          "ret_2026": -0.25
+        },
+        "sleeves": {
+          "D1": 96553.97,
+          "H4": 45575.38,
+          "H1": 39222.43
+        },
+        "long": {
+          "n": 4421,
+          "pf": 1.247,
+          "payoff": 1.566,
+          "pnl_mix": 35711.71
+        },
+        "short": {
+          "n": 4386,
+          "pf": 1.062,
+          "payoff": 0.815,
+          "pnl_mix": 14738.89
+        },
+        "hedge": {
+          "n": 0
+        },
+        "worst_short_day": -4383.2,
+        "worst_week_pct": -9.866,
+        "liquidations": 0,
+        "stops": 223,
+        "hedge_stops": 0,
+        "long_blocked": 0,
+        "perp_longs": 0,
+        "spot_longs": 4421,
+        "long_funding_mix": 0.0
+      },
+      "gates": {
+        "G1": true,
+        "G2": false,
+        "G3": false,
+        "G4": true,
+        "G5": true,
+        "decision": "FAIL"
+      },
+      "dsr": {
+        "sr_annual_365": 1.4013578168350744,
+        "N": 91,
+        "dsr": 0.81481409906492
+      },
+      "baseline_worst_week_pct": -9.625,
+      "control_dd": [
+        19.62,
+        22.29,
+        20.72,
+        21.49,
+        25.68,
+        20.01,
+        22.53,
+        18.26,
+        19.45,
+        22.5
+      ]
+    }
+  },
+  "baseline": {
+    "final": 88400.87,
+    "max_dd_pct": 21.37,
+    "ret_2022": 36.54,
+    "short_pf": 1.07,
+    "short_payoff": 0.81,
+    "long_pf": 1.22,
+    "long_payoff": 1.57,
+    "worst_short_day": -6454.09,
+    "worst_week_pct": -9.625
+  },
+  "engine_sha256": "ba0e8e6c3a9b0e33f3961b4ff5ccb27f9deb562245ff098e5d34afc18e272a8c",
+  "runner_sha256": "0d898580a206c4fb14f760524c8beddf032f489b5ca1be103e8b9b47a6682a2f",
+  "seconds": 1930
+}

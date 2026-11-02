@@ -25,3 +25,48 @@ desktop.ini
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+# ---- Backup split, 2026-11-02 ----
+# GitHub (public) holds code, reports, protocols and small evidence files.
+# The full folder, including everything below, is mirrored on Google Drive:
+#   gdrive:CRYPTO_TRADING_BOT_LAPTOP_FULL_BACKUP/crypto trading bot ai based 9 oct 2026
+# See BACKUP_MANIFEST_02_NOV_2026.md for what lives where and how to restore.
+archive/
+.claude/worktrees/
+.claude/settings.local.json
+data/*
+!data/raw/
+data/raw/*
+!data/raw/*_1d_Raw_5Years.csv
+logs/btc_alltf_2026_10_28/
+logs/btc_alltf_r2_2026_10_29/
+logs/backup_2026_11_02/*.log
+*.parquet.tmp
+
+# Files over 25 MB (Drive only, listed in BACKUP_MANIFEST_02_NOV_2026.md)
+/logs/green_candle_2026/trades_all.parquet
+/logs/live_paper_lpt1_2026_10_29/pred1/outcomes.csv
+/logs/micro_momentum_2026/trades_VAL.parquet
+/logs/research_gemini_review/gemv_rows.parquet
+/logs/research_methods_bench/batch1_daily.parquet
+/logs/research_methods_bench/batch2_daily.parquet
+/logs/research_methods_bench/batch2_monthly.csv
+/logs/research_probe_scalein/trades.parquet
+/logs/research_s2_bear_training/R24_test_predictions.csv
+/logs/research_s3_futures_features/R24_test_predictions.csv
+/logs/research_s3_futures_features/R6_test_predictions.csv
+/logs/research_sr_levels/events.csv.gz
+/logs/strategy_1d_step10_ai/P1_AI_exit_predictions.csv
+/logs/strategy_1d_step10_ai/P1_CONTROL_exit_predictions.csv
+/logs/strategy_1d_step13_unseen/AI_signals_unseen.csv
+/logs/strategy_1d_step13_unseen/CONTROL_signals_unseen.csv
+/logs/strategy_1d_step23_4h/test_predictions_4h.csv
+/logs/strategy_1d_step24_1h/test_predictions_1h.csv
+/logs/strategy_1d_step25_hf/test_predictions_hf.csv
+/logs/strategy_1d_step26_exit/test_predictions_exit.csv
+/logs/strategy_1d_step29_srv/test_predictions_srv.csv
+/logs/strategy_1d_step8_ai/AI_exit_predictions.csv
+/logs/strategy_1d_step8_ai/CONTROL_shuffled_exit_predictions.csv
+/logs/strategy_1d_step9_ai/AI_exit_predictions.csv
+/logs/strategy_1d_step9_ai/CONTROL_shuffled_exit_predictions.csv
+/logs/turn_detect_2026/T3_trades_disc.parquet

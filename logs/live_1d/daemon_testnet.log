@@ -1,0 +1,37 @@
+daemon started: mode=testnet, check every 15 min
+[testnet] processed close 2026-10-11 at 2026-10-12 16:09:26.929804 UTC
+decision_close  2026-10-11
+exec_day        2026-10-12
+paused               False
+exits                     
+candidates                
+opened                    
+cash               10000.0
+mtm_close          10000.0
+open_positions           0
+open positions: [] | cash 10000.00 USDT | paused_until None
+[heartbeat 2026-10-12 16:09:17.670097] last_processed=None
+daemon pid 8436
+daemon started: mode=testnet, check every 15 min
+[heartbeat 2026-10-12 16:11:48.964491] last_processed=2026-10-11
+daemon pid 1004
+daemon started: mode=testnet, check every 15 min
+[heartbeat 2026-10-12 16:13:16.494359] last_processed=2026-10-11
+[2026-10-12 16:13:56.816331+00:00] another testnet daemon is already running -- exiting
+daemon pid 6052
+daemon started: mode=testnet, check every 15 min
+daemon pid 7804
+daemon started: mode=testnet, check every 15 min
+[testnet] processed close 2026-10-12 at 2026-10-13 03:13:02.995128 UTC
+decision_close  2026-10-12
+exec_day        2026-10-13
+paused               False
+exits                     
+candidates                
+opened                    
+cash               10000.0
+mtm_close          10000.0
+open_positions           0
+open positions: [] | cash 10000.00 USDT | paused_until None
+[heartbeat 2026-10-13 03:12:53.090083] last_processed=2026-10-11
+[heartbeat 2026-10-13 03:28:03.023850] last_processed=2026-10-12

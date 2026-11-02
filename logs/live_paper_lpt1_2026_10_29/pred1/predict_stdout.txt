@@ -1,0 +1,171 @@
+PRED start 2026-10-29T10:50:16.929Z syms ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'BNBUSDT', 'XRPUSDT'] tfs ['1m', '5m', '15m', '1h', '4h', '1d']
+WARN 2026-10-29T13:01:03.285Z BNBUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:01:39.404Z XRPUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:02:43.829Z ETHUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:06:57.700Z BNBUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:07:50.081Z XRPUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:46:02.576Z BTCUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:51:36.699Z BNBUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:54:50.829Z ETHUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:55:25.958Z SOLUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:56:13.824Z BNBUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:57:05.419Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:57:41.986Z ETHUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:58:23.945Z SOLUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T13:58:59.666Z BNBUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T14:00:41.598Z BNBUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out.
+WARN 2026-10-29T14:02:45.395Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T14:27:23.109Z BTCUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T14:28:44.512Z BTCUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T14:31:01.698Z SOLUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T14:34:11.331Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T14:36:19.614Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T14:37:46.759Z SOLUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T14:41:11.203Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T14:46:41.725Z XRPUSDT 15m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T14:47:17.231Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T15:14:13.296Z ETHUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T15:20:40.195Z BNBUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-29T15:20:43.355Z XRPUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-29T17:34:39.000Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-29T17:41:23.407Z ETHUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out.
+WARN 2026-10-29T17:57:31.058Z BTCUSDT 1m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-29T17:59:58.241Z ETHUSDT 1m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-29T18:02:25.414Z SOLUSDT 1m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-29T18:04:52.549Z BNBUSDT 1m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-29T18:07:19.690Z XRPUSDT 1m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-29T18:09:46.845Z BTCUSDT 5m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-29T18:12:14.030Z ETHUSDT 5m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-29T18:14:41.162Z SOLUSDT 5m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-29T18:17:08.317Z BNBUSDT 5m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-29T18:19:35.425Z XRPUSDT 5m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-29T18:22:04.561Z BTCUSDT 1m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-29T18:22:31.617Z ETHUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-29T18:22:34.627Z SOLUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-29T18:22:37.645Z BNBUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-29T18:22:40.654Z XRPUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-29T18:22:43.666Z BTCUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-29T18:22:46.675Z ETHUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-29T18:22:49.686Z SOLUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-29T18:22:52.696Z BNBUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-29T18:22:55.715Z XRPUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-29T18:22:58.726Z BTCUSDT 15m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-29T18:23:01.738Z ETHUSDT 15m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-29T18:23:04.745Z SOLUSDT 15m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-29T18:23:07.756Z BNBUSDT 15m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-29T18:23:10.770Z XRPUSDT 15m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-29T18:23:13.781Z BTCUSDT 1h ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-29T18:23:16.788Z ETHUSDT 1h ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-29T18:23:19.796Z SOLUSDT 1h ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-29T18:23:22.810Z BNBUSDT 1h ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-29T18:23:25.819Z XRPUSDT 1h ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-29T18:23:30.832Z BTCUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-29T18:23:33.848Z ETHUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-29T18:23:36.863Z SOLUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-29T18:23:39.874Z BNBUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-29T18:23:42.882Z XRPUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-29T18:23:45.898Z BTCUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-29T18:23:48.906Z ETHUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-29T18:23:51.915Z SOLUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-29T18:23:54.923Z BNBUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-29T18:23:58.014Z XRPUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-29T18:24:01.041Z BTCUSDT 15m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-29T18:24:16.166Z ETHUSDT 15m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-29T18:25:55.322Z SOLUSDT 15m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-29T18:28:22.486Z BNBUSDT 15m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-29T21:30:03.323Z XRPUSDT 15m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-30T02:16:45.754Z BTCUSDT 1h ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-30T03:35:06.441Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T03:35:20.528Z ETHUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-30T03:35:23.535Z SOLUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-30T03:35:26.548Z BNBUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-30T03:35:29.556Z XRPUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-30T03:35:34.565Z BTCUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-30T03:35:37.576Z ETHUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-30T03:35:40.586Z SOLUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-30T03:35:43.601Z BNBUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-30T03:35:46.614Z XRPUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-30T03:35:49.626Z BTCUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-30T03:35:52.638Z ETHUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-30T03:35:55.650Z SOLUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-30T03:35:58.661Z BNBUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-30T03:36:01.671Z XRPUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-30T03:36:06.691Z BTCUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-30T03:36:09.701Z ETHUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-30T03:36:12.713Z SOLUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-30T03:36:15.725Z BNBUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-30T03:36:18.735Z XRPUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-30T03:36:21.743Z BTCUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-30T03:36:24.758Z ETHUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-30T03:36:27.768Z SOLUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-30T03:36:30.780Z BNBUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-30T03:36:33.789Z XRPUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-30T03:36:38.803Z BTCUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-30T03:36:41.826Z ETHUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-30T03:36:44.837Z SOLUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-30T03:36:47.859Z BNBUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BNBU
+WARN 2026-10-30T03:36:50.872Z XRPUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-30T03:36:53.886Z BTCUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=BTCU
+WARN 2026-10-30T03:36:56.897Z ETHUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=ETHU
+WARN 2026-10-30T03:36:59.906Z SOLUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=SOLU
+WARN 2026-10-30T03:37:16.201Z BNBUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T03:39:44.421Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T03:40:16.654Z ETHUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T03:40:57.838Z SOLUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T03:42:05.985Z XRPUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T03:42:47.117Z BTCUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out.
+WARN 2026-10-30T03:44:00.762Z BNBUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T03:44:47.091Z XRPUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T03:57:53.330Z ETHUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out.
+WARN 2026-10-30T03:59:20.475Z ETHUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out.
+WARN 2026-10-30T04:03:54.080Z SOLUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T04:09:49.810Z BTCUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out.
+WARN 2026-10-30T05:30:56.127Z ETHUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T05:33:48.599Z BNBUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T05:37:07.095Z ETHUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T06:16:00.469Z BNBUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:26:04.933Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:26:37.359Z ETHUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:28:48.077Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:30:43.429Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:31:55.703Z ETHUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:32:46.312Z SOLUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:33:26.735Z BNBUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:34:05.943Z XRPUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:34:42.727Z BTCUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:36:04.394Z SOLUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:36:38.630Z BNBUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:38:04.425Z XRPUSDT 5m ConnectTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?symbol=XRPU
+WARN 2026-10-30T07:38:57.194Z BNBUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:39:39.536Z BTCUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:40:21.490Z ETHUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:41:01.454Z BNBUSDT 5m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out.
+WARN 2026-10-30T07:41:37.240Z XRPUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:42:31.831Z ETHUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:44:24.972Z SOLUSDT 5m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:45:20.964Z BTCUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:46:52.405Z BNBUSDT 15m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:48:17.393Z ETHUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:49:03.156Z SOLUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:50:25.895Z XRPUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:51:06.420Z BNBUSDT 15m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T07:55:48.302Z ETHUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out.
+WARN 2026-10-30T07:56:20.139Z SOLUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T08:00:30.980Z SOLUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+WARN 2026-10-30T08:01:05.914Z BNBUSDT 1m ConnectionError: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out.
+PRED start 2026-10-30T08:39:38.505Z syms ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'BNBUSDT', 'XRPUSDT'] tfs ['1m', '5m', '15m', '1h', '4h', '1d']
+SKIP 2026-10-30T08:40:04.515Z BTCUSDT 1m late forecast not written
+SKIP 2026-10-30T08:40:05.694Z ETHUSDT 1m late forecast not written
+SKIP 2026-10-30T08:40:07.068Z SOLUSDT 1m late forecast not written
+SKIP 2026-10-30T08:40:08.292Z BNBUSDT 1m late forecast not written
+SKIP 2026-10-30T08:40:09.444Z XRPUSDT 1m late forecast not written
+SKIP 2026-10-30T08:40:10.757Z BTCUSDT 5m late forecast not written
+SKIP 2026-10-30T08:40:12.069Z ETHUSDT 5m late forecast not written
+SKIP 2026-10-30T08:40:13.291Z SOLUSDT 5m late forecast not written
+SKIP 2026-10-30T08:40:14.458Z BNBUSDT 5m late forecast not written
+SKIP 2026-10-30T08:40:15.685Z XRPUSDT 5m late forecast not written
+WARN 2026-10-30T08:44:45.416Z XRPUSDT 1m ReadTimeout: HTTPSConnectionPool(host='data-api.binance.vision', port=443): Read timed out. (read timeout=8)
+SKIP 2026-10-30T08:45:59.637Z SOLUSDT 1m late forecast not written
+SKIP 2026-10-30T08:46:02.817Z BNBUSDT 1m late forecast not written
+SKIP 2026-10-30T08:46:04.063Z XRPUSDT 1m late forecast not written
+PRED start 2026-11-02T02:32:49.822Z syms ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'BNBUSDT', 'XRPUSDT'] tfs ['1m', '5m', '15m', '1h', '4h', '1d']

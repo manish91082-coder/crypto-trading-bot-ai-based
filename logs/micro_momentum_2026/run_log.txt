@@ -1,0 +1,18 @@
+[2026-10-27 06:50:11 UTC] stage disc_val start; protocol dc0b48c42e7b; code 0ae3da4e23a4
+[2026-10-27 06:50:11 UTC] costs per side from deploy/fees.json: {'fut': 0.00046, 'spot': 0.00085, 'fut_maker': 0.00028000000000000003}
+[2026-10-27 06:50:43 UTC] QC 2026-01: {'month': '2026-01', 'rows': 2678400, 'unit': 'us', 'duplicates': 0, 'missing_seconds': 0, 'max_missing_day': 0, 'days_over_1pct_missing': 0, 'five_min_bars_compared': 8928, 'five_min_only_one_side': 0, 'five_min_ohlc_mismatch': 205, 'five_min_volume_mismatch': 0, 'spot_fut_1m_corr': 0.9931751508418192, 'spot_fut_1m_mean_abs_diff': 5.224000703412708e-05, 'spot_fut_1m_sign_differs': 0.13170097896458255, 'spot_fut_minutes': 44639}
+[2026-10-27 06:52:14 UTC] Part A written
+[2026-10-27 06:52:25 UTC] rules 2026-01: 447031 trades over 180 configs
+[2026-10-27 06:52:30 UTC] metrics DISC done
+[2026-10-27 06:52:50 UTC] QC 2026-02: {'month': '2026-02', 'rows': 2419200, 'unit': 'us', 'duplicates': 0, 'missing_seconds': 0, 'max_missing_day': 0, 'days_over_1pct_missing': 0, 'five_min_bars_compared': 8064, 'five_min_only_one_side': 0, 'five_min_ohlc_mismatch': 69, 'five_min_volume_mismatch': 0, 'spot_fut_1m_corr': 0.9971616197513267, 'spot_fut_1m_mean_abs_diff': 5.697674949484405e-05, 'spot_fut_1m_sign_differs': 0.046876162603239166, 'spot_fut_minutes': 40319}
+[2026-10-27 06:52:59 UTC] rules 2026-02: 382528 trades over 180 configs
+[2026-10-27 06:53:23 UTC] QC 2026-03: {'month': '2026-03', 'rows': 2678400, 'unit': 'us', 'duplicates': 0, 'missing_seconds': 0, 'max_missing_day': 0, 'days_over_1pct_missing': 0, 'five_min_bars_compared': 8928, 'five_min_only_one_side': 0, 'five_min_ohlc_mismatch': 199, 'five_min_volume_mismatch': 0, 'spot_fut_1m_corr': 0.9947817052844393, 'spot_fut_1m_mean_abs_diff': 5.853071605144407e-05, 'spot_fut_1m_sign_differs': 0.05660969107730908, 'spot_fut_minutes': 44639}
+[2026-10-27 06:53:33 UTC] rules 2026-03: 409966 trades over 180 configs
+[2026-10-27 06:53:57 UTC] QC 2026-04: {'month': '2026-04', 'rows': 2592000, 'unit': 'us', 'duplicates': 0, 'missing_seconds': 0, 'max_missing_day': 0, 'days_over_1pct_missing': 0, 'five_min_bars_compared': 8640, 'five_min_only_one_side': 0, 'five_min_ohlc_mismatch': 313, 'five_min_volume_mismatch': 0, 'spot_fut_1m_corr': 0.9914435663420708, 'spot_fut_1m_mean_abs_diff': 5.499643088663916e-05, 'spot_fut_1m_sign_differs': 0.09146045047339059, 'spot_fut_minutes': 43199}
+[2026-10-27 06:54:14 UTC] rules 2026-04: 421699 trades over 180 configs
+[2026-10-27 06:54:53 UTC] QC 2026-05: {'month': '2026-05', 'rows': 2678400, 'unit': 'us', 'duplicates': 0, 'missing_seconds': 0, 'max_missing_day': 0, 'days_over_1pct_missing': 0, 'five_min_bars_compared': 8928, 'five_min_only_one_side': 0, 'five_min_ohlc_mismatch': 280, 'five_min_volume_mismatch': 0, 'spot_fut_1m_corr': 0.9860350179641544, 'spot_fut_1m_mean_abs_diff': 5.7763765544722194e-05, 'spot_fut_1m_sign_differs': 0.11875266022984386, 'spot_fut_minutes': 44639}
+[2026-10-27 06:55:10 UTC] rules 2026-05: 436896 trades over 180 configs
+[2026-10-27 06:55:36 UTC] metrics VAL done
+[2026-10-27 06:55:37 UTC] shortlist on DISC: []
+[2026-10-27 06:55:37 UTC] decision: pick None
+[2026-10-27 06:55:38 UTC] stage disc_val done in 327 s

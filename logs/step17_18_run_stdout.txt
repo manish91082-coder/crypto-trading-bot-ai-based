@@ -1,0 +1,12 @@
+train rows 241372, B eligible rows 181204 (295s)
+G1 {'market_sanity_planted': 0.5823, 'market_sanity_leak': 0.9998, 'veto_sanity_planted': 0.5655, 'veto_sanity_leak': 1.0} True (2131s)
+AI market {'n': 2093, 'auc': 0.5234, 'ci_low': 0.4941, 'ci_high': 0.5538, 'base_rate': 0.4419} veto {'n': 177246, 'auc': 0.5291, 'ci_low': 0.5059, 'ci_high': 0.552, 'base_rate': 0.5246} (3158s)
+CONTROL market {'n': 2093, 'auc': 0.5031, 'ci_low': 0.464, 'ci_high': 0.5439, 'base_rate': 0.4419} veto {'n': 177246, 'auc': 0.5008, 'ci_low': 0.4695, 'ci_high': 0.533, 'base_rate': 0.5246} (3467s)
+R5_ONLY {'final': np.float64(22617.34), 'cagr_pct': np.float64(15.27), 'max_dd_pct': np.float64(86.21), 'calmar': np.float64(0.177), 'trades': 2152, 'avg_trade_pct': 1.4473502815224788, 'trade_ci_low_pct': -0.6240839250045643, 'days_invested_pct': 99.95235826584089}
+FULL {'final': np.float64(4757.63), 'cagr_pct': np.float64(-12.13), 'max_dd_pct': np.float64(74.28), 'calmar': np.float64(-0.163), 'trades': 1230, 'avg_trade_pct': -0.10198949980460247, 'trade_ci_low_pct': -1.9588277953652489, 'days_invested_pct': 40.49547403525489}
+CONTROL_FULL {'final': np.float64(12908.24), 'cagr_pct': np.float64(4.54), 'max_dd_pct': np.float64(72.35), 'calmar': np.float64(0.063), 'trades': 1590, 'avg_trade_pct': 0.7446480632941451, 'trade_ci_low_pct': -1.2211889927436712, 'days_invested_pct': 49.78561219628395}
+FULL_cost040 {'final': np.float64(3533.16), 'cagr_pct': np.float64(-16.57), 'max_dd_pct': np.float64(76.59), 'calmar': np.float64(-0.216), 'trades': 1230, 'avg_trade_pct': -0.4012376515590858, 'trade_ci_low_pct': -2.252513719951531, 'days_invested_pct': 40.49547403525489}
+ABL_R5_MARKET {'final': np.float64(4831.4), 'cagr_pct': np.float64(-11.9), 'max_dd_pct': np.float64(79.53), 'calmar': np.float64(-0.15), 'trades': 1367, 'avg_trade_pct': 0.06581351509443405, 'trade_ci_low_pct': -2.1388601055394365, 'days_invested_pct': 44.78323010957599}
+ABL_R5_VETO {'final': np.float64(11418.05), 'cagr_pct': np.float64(2.34), 'max_dd_pct': np.float64(74.29), 'calmar': np.float64(0.031), 'trades': 1702, 'avg_trade_pct': 0.8067073667348159, 'trade_ci_low_pct': -1.026678536985007, 'days_invested_pct': 64.79275845640782}
+
+GATES: {"G1": true, "G2a_market": false, "G2b_veto": true, "G3a_cagr": false, "G3b_calmar": false, "G3c_trade_ci": false, "G3d_years": false, "G3e_cost040": false, "G3f_maxdd": false, "decision": "FAIL"} (3494s)

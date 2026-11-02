@@ -1,0 +1,6 @@
+34a35,39
+> # ECO DEMO after the cut-over (2026-10-25; amendment 1 §4, logs/eco/CODE_CHANGES_AFTER_LOCK.md entry 9): demo cycle on the Binance DEMO account, then the shadow plan instance (I2: same line, sequential); daily ledger checks + alerts
+> 50 * * * * /opt/cryptobot/deploy/run_job.sh ECO_Demo src/eco/eco_orchestrator.py --mode demo --root data/eco_demo; /opt/cryptobot/deploy/run_job.sh ECO_Shadow src/eco/eco_orchestrator.py --mode plan --root data/eco_shadow --host demo --k-from data/eco_demo
+> 58 * * * * /opt/cryptobot/deploy/run_job.sh ECO_Alerts src/eco/eco_alerts.py --root data/eco_demo; /opt/cryptobot/deploy/run_job.sh ECO_Alerts src/eco/eco_alerts.py --root data/eco_shadow
+> 28 7 * * * /opt/cryptobot/deploy/run_job.sh ECO_Demo_Verify src/audits/verify_eco_live.py data/eco_demo
+> 29 7 * * * /opt/cryptobot/deploy/run_job.sh ECO_Shadow_Verify src/audits/verify_eco_live.py data/eco_shadow

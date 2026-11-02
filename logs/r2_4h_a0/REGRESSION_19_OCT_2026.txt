@@ -1,0 +1,139 @@
+# Final laptop regression 2026-10-19T13:45:59Z
+## compile
+compile OK (13 files)
+## src/audits/verify_master_audit.py
+PASS  A0 SHA PLAN_NEXT_TARGET_R2_17_OCT_2026.md  14714836
+PASS  A0 SHA RESEARCH_4H_TRADING_LONG_SHORT_17_OCT_2026.md  0476ce8f
+PASS  A0 SHA FEE_SPREAD_BREAKEVEN_4H_17_OCT_2026.md  0531b065
+PASS  A0 SHA RESEARCH_AI_ARCHITECTURE_MULTI_TF_17_OCT_2026.md  b7b18af2
+PASS  A0 SHA REPORT_LADDER_PATTERNS_SESSIONS_17_OCT_2026.md  a6244819
+PASS  A0 SHA REPORT_PROBE_SCALEIN_LADDER_17_OCT_2026.md  68cda951
+PASS  A0 SHA src/research/ladder_sessions.py  6962deb9
+PASS  A0 SHA src/research/ladder_sessions_postlock.py  ac7dd5bc
+PASS  A0 SHA src/audits/verify_ladder_sessions.py  b17789ce
+PASS  A0 SHA src/research/probe_scalein.py  52f49641
+PASS  A0 SHA src/audits/verify_probe_scalein.py  263bea25
+PASS  A0 SHA deploy/crontab.txt  1525e074
+PASS  A0 SHA logs/forward_ls_f4/CODE_CHANGES_AFTER_LOCK.md  0831087b
+PASS  A0 SHA logs/research_ladder_sessions/LADDER_SESSIONS_PROTOCOL_PREREGISTERED.md  e7ae067d
+PASS  A0 SHA logs/research_probe_scalein/PROBE_SCALEIN_PROTOCOL_PREREGISTERED.md  90814d65
+PASS  A3.4 V0 5m long = -0.12  -0.1235
+PASS  A3.4 V0 15m long = -0.05  -0.0516
+PASS  A3.4 V0 1h long = 0.03  0.0269
+PASS  A3.4 V0 4h long = 0.106  0.1061
+PASS  A3.4 V0 4h short = 0.054  0.0541
+PASS  A3.4 V0 1D long = 0.23  0.2275
+PASS  A3.4 V0 1D short = 0.105  0.1045
+PASS  A3.4 V1-V3 5m long in [-0.08,-0.07]  [-0.082, -0.072, -0.068]
+PASS  A3.4 V1-V3 15m long in [-0.04,-0.02]  [-0.031, -0.024, -0.024]
+PASS  A3.4 V1-V3 4h long in [0.076,0.083]  [0.083, 0.082, 0.076]
+PASS  A3.4 V1-V3 4h short in [0.037,0.045]  [0.041, 0.045, 0.037]
+PASS  A3.4 V1-V3 1D long in [0.24,0.28]  [0.265, 0.238, 0.278]
+PASS  A3.4 V1-V3 1D short in [0.04,0.05]  [0.054, 0.042, 0.037]
+PASS  A3.4 p05 5m long -1.05->-0.68  -1.054->-0.676
+PASS  A3.4 p05 15m long -0.98->-0.62  -0.981->-0.622
+PASS  A3.4 p05 1h long -0.93->-0.58  -0.934->-0.583
+FAIL  A3.4 p05 4h long -0.91->-0.57  -0.905->-0.565
+PASS  A3.4 p05 4h short -0.96->-0.59  -0.958->-0.592
+PASS  A3.4 p05 1D long -0.92->-0.43  -0.920->-0.433
+PASS  A3.4 p05 1D short -0.89->-0.58  -0.893->-0.584
+PASS  A3.4 1D long n = 153  153
+PASS  A3.4 5m total ~ -12,000 R  -12066
+PASS  A3.4 1D long P3 V0 ~ -0.36, V3 ~ 0  -0.358, V3 -0.004
+PASS  A3.2 TF 5m body/cost/VR  0.1248/68.17/0.9472
+PASS  A3.2 TF 15m body/cost/VR  0.224/37.99/0.9502
+PASS  A3.2 TF 1h body/cost/VR  0.4302/19.80/0.94
+PASS  A3.2 TF 4h body/cost/VR  0.8595/9.91/0.9952
+FAIL  A3.2 TF 1D body/cost/VR  2.3295/3.65/0.9424
+PASS  A3.2 TF 1W body/cost/VR  6.6901/1.27/1.1838
+PASS  A3.2 TF 1M body/cost/VR  16.684/0.51/1.2429
+PASS  A3.2 1W 353 bars, 1M 81 bars  
+PASS  A3.3 UP 31-36% (5m..1D)  0.311-0.362
+PASS  A3.3 DOWN 29-31% (5m..1D)  0.291-0.313
+PASS  A3.3 rest ~35%  0.348-0.376
+PASS  A3.3 ~50% ladders 1 step (5m..1D)  0.412-0.532
+PASS  A3.3 5+ steps 1-3% (5m..1D)  0.003-0.032
+PASS  A3.3 down ladders shorter  DOWN 1.14 < UP 1.33
+PASS  A3.3 pullback median ~0.61, IQR ~45-77% (5m..4h)  med 0.608, q25 0.438-0.490, q75 0.749-0.786
+PASS  A3.3 double top/bottom +3..9 pp (5m..4h)  2.7..8.9
+PASS  A3.3 4h UP continuation ~52% vs 48.7%  0.520-0.526
+PASS  A3.3 [gap check] 4h DOWN continuation has NO edge vs LL base  DOWN [0.433, 0.315] vs base 0.436 (master does not say this)
+PASS  A3.3 US 39-43% of 1h swing turns  0.386/0.433
+PASS  A3.1 demo taker 0.04%, maker 0.02%  
+PASS  A3.1 40 USDT risk, 3% stop -> notional ~979  979.2
+PASS  B funding 300 trades match < 1e-9  max diff 0.00e+00
+PASS  B portfolio G1 f0.5% K6 own loop  14629.1389 vs 14629.1389; dd 0.114375
+PASS  B portfolio G3 L1 own loop  12405.0684 vs 12405.0684; dd 0.130941
+PASS  claims protocol SHA = locked  
+PASS  claims trades SHA  
+PASS  claims funding SHAs  
+PASS  claims G1 = CSV  
+TOTAL 66 checks, FAIL 2
+exit=0
+## src/audits/verify_r2_a1.py
+[1 PASS] S-BRK / S-TRD signal sets (with the one-open rule) re-derived for BTC, SOL, LINK: equal
+[2 PASS] 200 random trades re-simulated with own loop: max |diff| gross/fee/funding/exit 0.00e+00
+[3 PASS] gate table (8 signal-sides) recomputed from trades: PASS flags and means equal
+[4 PASS] claims JSON == CSV; A1 / A0 protocol SHAs == locks; trades and legs SHAs
+[5 PASS] S-LAD = S6 4h: 1976 trades matched, unmatched 0, max gross diff 0.0e+00
+TOTAL 5 checks, FAIL 0
+exit=0
+## src/audits/verify_trial_registry.py
+[R1 PASS] 8 registry lines: hash chain and line hashes intact
+[R2 PASS] every config_sha256 equals the sha256 of its stored config
+[R3 PASS] A0 / A1 protocol SHAs == locks; data SHA == legs_all.parquet
+[R4 PASS] every A1-RESULT line points to the current A1_gate.csv and a1_trades.parquet
+[R5 PASS] trials registered 4 of 20, with result 4, pending 0
+TOTAL 5 checks, FAIL 0
+exit=0
+## src/audits/verify_forward_recorder_r2.py logs/forward_recorder_r2_localtest --replay 40
+[V1 PASS] 3 ledger line(s): chain + line hashes intact=True, protocol == lock=True
+[V2a PASS] run folders == ledger run_ids (3); orphan folders (crashed run, quarantined at the next run) []
+[V2 PASS] 3 run folder(s): every file exists, file / raw SHA256 match, n_kept re-derived, manifest SHA == ledger
+[V5 PASS] no look-ahead: all kept klines closed before the run's server time; 282 live snapshots time <= write time []
+[V4 PASS] 207 kline series continuous from 2026-10-17 00:00 UTC; S series: 138, missing 5m stamps total 0 (max 0; Binance omits periods without trades)
+[V6 PASS] no duplicate timestamp in 368 series across runs
+[V7 PASS] state.json (368 keys) == state recomputed from raw files (368 keys)
+[V3 PASS] replay: 40 random stored rows re-fetched from the public API, equal 40/40 []
+[V8 PASS] missing 5m S stamps: 0 inside the 30-day window, 0 re-queried, present at Binance (= lost by the recorder) 0 []
+TOTAL 9 checks, FAIL 0
+exit=0
+## src/audits/test_log_ship.py C:/Users/Admin/AppData/Local/Temp/claude/E--crypto-trading-bot-ai-based-9-oct-2026/f4404c19-4cde-439a-8371-f5fc2d744628/scratchpad/vmlogs_20261019 C:/Users/Admin/AppData/Local/Temp/claude/E--crypto-trading-bot-ai-based-9-oct-2026/f4404c19-4cde-439a-8371-f5fc2d744628/scratchpad/logship_test_final
+[W1 PASS] 1 ledger line(s): chain, line hashes, manifest SHA intact=True; protocol == lock=True
+[W2 PASS] 40 sampled mirror files: remote MD5 == local MD5 for 40; changed locally since last ship (reported) 0; data mismatches []
+[W3 PASS] every rotated .out chunk and freed backup file is on the remote with its recorded MD5; missing []
+[W4 PASS] essential live files present on the VM (9/9) []
+TOTAL 4 checks, FAIL 0
+[T1 PASS] first run: 8 idle .out rotated to hourly/ and freed, 2 old backup days freed (kept: ['2026-10-19']), mirror holds them; verifier exit 0
+[T2 PASS] second run, nothing new: copied 2 file(s) (only the shipper's own ledger / manifest / md5 cache may change), rotated 0, freed 0
+[T3 PASS] injected MD5 mismatch on the remote copy -> the local chunk is kept (.shipping), nothing freed, exit != 0
+[T4 PASS] next run retries the kept chunk and frees it after a good MD5; a .out modified < 15 min ago is NOT rotated
+[W1 PASS] 5 ledger line(s): chain, line hashes, manifest SHA intact=True; protocol == lock=True
+[W2 PASS] 40 sampled mirror files: remote MD5 == local MD5 for 40; changed locally since last ship (reported) 0; data mismatches []
+[W3 PASS] every rotated .out chunk and freed backup file is on the remote with its recorded MD5; missing []
+[W4 PASS] essential live files present on the VM (9/9) []
+TOTAL 4 checks, FAIL 0
+[T-verify PASS] verifier after all runs: W1-W4
+TOTAL 5 tests, FAIL 0
+exit=0
+## SHA256
+e19d45796cf6d700b148cc264805c55326ca52c6d5a71d6b16bdb03544bba572 *src/execution/forward_recorder_r2.py
+c6a6e7cdb4d481afaab4cad5188741f087375c4f3b57e3f91ce65004d3205bcd *src/audits/verify_forward_recorder_r2.py
+70da9391a2f59f4c29b5c11ac222ada48343fd99b31a81fe282c0ae7b9ed050e *src/audits/test_forward_recorder_r2.py
+257c489fdc8b4cf45b8fdcf6a7358d1fe3490e1a596d0778e3473ed69fda9c8d *src/audits/test_forward_recorder_r2_robust.py
+3bfc2c6028a2d950d1f3512305ad6bdb2a4fcadb87a1f5510bae2967be75e406 *src/research/r2_a1_edge_map.py
+a04bc9c2a372d3b6b4101a155bc80ad8f446d54a136870c2f825bf6a1ec6ccee *src/audits/verify_r2_a1.py
+93a73ba257c4154b748c1435078dd9ee41fa297716d9b67de0c11e4e18b76026 *src/audits/verify_trial_registry.py
+778ead9b0f11be70aca576759ebd216fcc7422c910d17a717099f48958d80c56 *deploy/ship_logs_drive.py
+436da8300478c9c6bf1f9facef68b3c17f5bcc0f64a44e87d30ba3ee2be5615c *src/audits/verify_log_ship.py
+0c314817edd2e35e0b77db5bca4f7c17bac3f8e24d39a4fc567cfde17ab317a2 *src/audits/test_log_ship.py
+aeeb22758741302845d8c454e521324ebca11e062c95ab9f3a36f9862ac8d7a3 *src/audits/rclone_stub.py
+3d9c9693e155f93b3520ef1ae8a8678f6772bd57771cb05c5fee9679f751a491 *logs/forward_recorder_r2/FR_PROTOCOL_PREREGISTERED.md
+4d49d411745f89865ce5f167ed30b04927dd34522e6ab86831122af7a41dee3e *logs/r2_4h_a0/A0_4H_PROTOCOL_PREREGISTERED.md
+8aad1f394a18fdb026f7d047b19788e941966262245e0a075d5c75085948b698 *logs/r2_4h_a1/A1_PROTOCOL_PREREGISTERED.md
+965b924cf75fe7887d9467d4b0a465f0d8e65d53821f324db797348ef0b7cfd7 *logs/log_ship/LOG_SHIP_PROTOCOL_PREREGISTERED.md
+4e06ef81f9b004ef4f644d4f35015ba356b799835ad38009cb5ad45e14312fc1 *logs/r2_4h_a0/trial_registry.csv
+
+## Note added after the regression (2026-10-19)
+- **Exit code.** `verify_master_audit.py` exited 0 above despite "FAIL 2". It now exits 1 on any FAIL (documented in `logs/research_master_audit/CODE_CHANGES_AFTER_LOCK.md`). After the fix, re-run: exit=1, from the same 2 known rounding FAILs.
+- **New SHA** of `src/audits/verify_master_audit.py`: `19ab1059116f7f571bab43b65a038f6542d20275bf4527f980a199cdda7c471a`.

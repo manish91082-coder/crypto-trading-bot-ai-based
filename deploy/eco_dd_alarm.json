@@ -1,0 +1,29 @@
+{
+ "version": 1,
+ "start_utc": "2026-10-26T00:00:00",
+ "protocol": "logs/eco/ECO_AMENDMENT_3_PREREGISTERED.md; rule from logs/drawdown_ddx/DDX_PROTOCOL_PREREGISTERED.md (12d2c5a2...) Part B",
+ "source": "logs/drawdown_ddx/alarm_thresholds.csv",
+ "source_sha256": "b53e2c1095a4e3a792fada8c5e002ee15244177f48b81c31bcc9ea8d11114647",
+ "bands": [
+  {
+   "H": 30,
+   "yellow_dd": 0.07361788062729441,
+   "red_dd": 0.09353218040212186
+  },
+  {
+   "H": 90,
+   "yellow_dd": 0.11137176987453455,
+   "red_dd": 0.14690989194431106
+  },
+  {
+   "H": 180,
+   "yellow_dd": 0.1410429316445756,
+   "red_dd": 0.18003043893447013
+  },
+  {
+   "H": 365,
+   "yellow_dd": 0.175419579555684,
+   "red_dd": 0.2209808468058561
+  }
+ ]
+}

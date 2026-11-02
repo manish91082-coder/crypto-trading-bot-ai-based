@@ -1,0 +1,3 @@
+run,final,total_return_pct,cagr_pct,max_dd_pct,calmar,sharpe,trades,win_rate,profit_factor,ret_2021,ret_2022,ret_2023,ret_2024,ret_2025,ret_2026
+AI_monthly_retrain,42116.62,321.17,28.44,50.09,0.568,0.825,365,29.04,1.417,206.38,-30.58,77.31,46.78,-27.69,5.23
+AI_point_in_time_universe,18719.17,87.19,11.53,57.18,0.202,0.475,400,30.0,1.184,74.54,-32.56,80.36,35.76,-36.11,1.65

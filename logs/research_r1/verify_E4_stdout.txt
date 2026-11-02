@@ -1,0 +1,3 @@
+[V1 PASS] E4: protocol, engine and runner hashes (runner as run)
+[V2 PASS] E4: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied
+[V3 PASS] E4: weights sum to min(1, 0.3 n) and are <= 30 %; sigma60 re-derived for 60 rows (0 rows had < 60 days); 20 weight sets re-derived from the sigmas

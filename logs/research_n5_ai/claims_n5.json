@@ -1,0 +1,70 @@
+{
+ "protocol_sha": "da95e8a17eb46f89b5ba41302a105b2cc940412059e3d3b4eeddf50678aa7b4c",
+ "code_sha": "40a7a73c1e16771bc84cf29ddcedb3ca1a0899d0dd3b3338b4a0e900ee598e24",
+ "base": {
+  "cfg": {
+   "stop": false
+  },
+  "regime": null,
+  "execution": [
+   "X2",
+   "X3"
+  ]
+ },
+ "report_only": false,
+ "gates": {
+  "L": {
+   "gates": {
+    "G-A": true,
+    "G-B": true,
+    "G-C": false,
+    "G-D": true,
+    "G-E": false,
+    "G-F": true
+   },
+   "passed": false,
+   "dsr": 0.9999995729870436
+  },
+  "H": {
+   "gates": {
+    "G-A": true,
+    "G-B": true,
+    "G-C": false,
+    "G-D": true,
+    "G-E": false,
+    "G-F": true
+   },
+   "passed": false,
+   "dsr": 0.9999999989455041
+  },
+  "E": {
+   "gates": {
+    "G-A": true,
+    "G-B": true,
+    "G-C": false,
+    "G-D": true,
+    "G-E": false,
+    "G-F": true
+   },
+   "passed": false,
+   "dsr": 0.9999999691222599
+  }
+ },
+ "chosen": null,
+ "verdict": "N5 FAIL",
+ "n_trials_dsr": 35,
+ "sr_var": 0.0017820562191963062,
+ "n_trades": 134912,
+ "n_dev_test": 111105,
+ "label_rate": 0.365825120381621,
+ "files": {
+  "N5_gates.csv": "776c33dadbe2e460e0190ba37e60940ebe70e6d3ab3560c229ee66f92d7e1065",
+  "N5_importance.csv": "411a4e97c39cca0aa666af93f93f2ab0190434a7dbc2f2491f3d2061f672038e",
+  "N5_logistic_coef.csv": "1767307a3b3e9701262b9d6a7ea4d9b8831d3ac7f5a0afe7b3ca434f5e475bdf",
+  "N5_predictions.parquet": "1d0ae908d302797e2bd7f78ce8b4e8ba75208c683d6e3284a311a073fd846385",
+  "N5_PROTOCOL_PREREGISTERED.md": "da95e8a17eb46f89b5ba41302a105b2cc940412059e3d3b4eeddf50678aa7b4c",
+  "N5_PROTOCOL_SHA256.txt": "b43d7c9028d2e5265080df052d9ee04cabafd77b6cf3e54f878c695c8257c287",
+  "N5_random_skip.csv": "70fffd736ab0edf6d16fc3b6dbe9a3d07e621b536ad396c88a877218e8472062",
+  "N5_shuffled.csv": "fe996bd1233bdc91f3b193a50c1e5b0f128f665319b2d684f41408099cc6bff5"
+ }
+}

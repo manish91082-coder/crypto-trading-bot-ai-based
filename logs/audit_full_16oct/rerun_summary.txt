@@ -1,0 +1,13 @@
+verify_step13_claims.py exit=0 secs=135 last: [V6 PASS] gates recomputed -> PARTIAL_SKILL_BUT_TRADING_RULE_FAILS
+verify_step15_claims.py exit=0 secs=154 last: [V4 PASS] gates recomputed -> PARTIAL_SKILL_RULE_FAILS
+verify_step19_claims.py exit=0 secs=59 last: [V5 PASS] gates recomputed -> PARTIAL_SKILL_RULE_FAILS
+verify_step22_claims.py exit=0 secs=13 last: [V5 PASS] gates recomputed -> SKILL_HOLDS_PACKAGE_FAILS
+verify_step23_claims.py exit=0 secs=90 last: [V5 PASS] gates recomputed -> PASS_R6
+verify_step24_claims.py exit=0 secs=404 last: [V5 PASS] gates recomputed -> PASS_R24
+verify_step27_claims.py exit=0 secs=3 last: [V4 PASS] recommendation rule re-applied -> {'mix': 'M_AI3', 'f': 0.5, 'y1_p5': 0.636, 'y1_p50': 1.15}
+verify_overfit_s1.py exit=0 secs=171 last: [V4 PASS] 403 of 12,870 CSCV combinations re-derived with plain loops; PBO 0.6499
+verify_f2_claims.py exit=0 secs=68 last: [V3 PASS] G0 (both periods) and gates re-derived: {'G0': True, 'G1': True, 'G2': True, 'G3': True, 'G4': True, 'G5': True, 'G6': True, 'decision': 'PASS'}
+verify_f7_claims.py exit=0 secs=103 last: [V5 PASS] liquidations 0, stops 227; RS final 88400.87 MaxDD 21.37% Calmar 2.159 2022 +36.54% K1 0; LO final 53883.75; gates {'G0': True, 'G1': True, 'G2': True
+verify_s2_claims.py R6 R24 D1 exit=0 secs=155 last: [V1+V2 PASS] D1: AUC new 0.5591 base 0.5593 (diff -0.0002); 2022 diff +0.0076; Calmar 0.381 vs 0.515; 2022 -73.28 vs -73.62; decision FAIL
+verify_s3_claims.py R6 exit=0 secs=54 last: [V3 PASS] R6: AUC new 0.5677 base 0.5676 (diff +0.0001); years [np.float64(-0.0003), np.float64(0.0005), np.float64(0.0006), np.float64(0.0004), np.float64(0.00
+verify_forward_multi_16b.py exit=0 secs=605 last: [V5 PASS] test run as-of 2026-10-14: 20 members, 120 R6 rows, 480 R24 rows, 20 D1 rows; file and model hashes match; chain of 1 line(s) intact; notes ["test bef

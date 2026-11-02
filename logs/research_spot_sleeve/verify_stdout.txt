@@ -1,0 +1,5 @@
+﻿[V1 PASS] 682 inputs, SHA mismatches 0
+[V2 PASS] S1/S3/S4/S6 x 4 periods recomputed by calendar loops (final equity within 1e-6, trade counts): mismatches []
+[V3 PASS] S5 holdings on 20 random Mondays recomputed by loops (regime, liquidity top 20, 28-day top 5): mismatches []
+[V4 PASS] ECO 80% + S1 20% monthly-rebalanced mix by a loop: 90746.6655 vs report 90746.6655
+TOTAL 4 checks, FAIL 0

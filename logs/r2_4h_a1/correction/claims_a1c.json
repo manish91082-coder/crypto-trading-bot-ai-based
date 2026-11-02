@@ -1,0 +1,54 @@
+{
+ "amend2_sha": "1b49a9dea5a200ecbec949dfaf4d58e1a8a669fd3552703cf542d08ac3b1b59c",
+ "trades_sha": "5f9fa6a3372c96635b2bf7b74c02eeab348e5aed7f5416597224152866439821",
+ "check": {
+  "n_same": 2374,
+  "n_new": 26,
+  "n_old_only": 7,
+  "new_all_failed_pivots": false,
+  "same_all_nonfailed": true,
+  "max_gross_diff_same": 0.18391655419258746
+ },
+ "gate": {
+  "S-BRK|long": {
+   "PASS": true,
+   "mean_net": 0.08413451633463717,
+   "ci_lo": 0.02368299447704637
+  },
+  "S-BRK|short": {
+   "PASS": true,
+   "mean_net": 0.04389676013859307,
+   "ci_lo": -0.00708571760931971
+  },
+  "S-DTB|long": {
+   "PASS": true,
+   "mean_net": 0.06821115242021224,
+   "ci_lo": -0.05672501149429255
+  },
+  "S-DTB|short": {
+   "PASS": true,
+   "mean_net": 0.045937504261584015,
+   "ci_lo": -0.12059868504375029
+  },
+  "S-LAD|long": {
+   "PASS": true,
+   "mean_net": 0.12805987588218695,
+   "ci_lo": 0.06376176553207928
+  },
+  "S-LAD|short": {
+   "PASS": true,
+   "mean_net": 0.05262941279951533,
+   "ci_lo": -0.007554586143058277
+  },
+  "S-TRD|long": {
+   "PASS": true,
+   "mean_net": 0.09316539522961481,
+   "ci_lo": 0.009682530139548612
+  },
+  "S-TRD|short": {
+   "PASS": true,
+   "mean_net": 0.050603265417405126,
+   "ci_lo": -0.03691892156107397
+  }
+ }
+}

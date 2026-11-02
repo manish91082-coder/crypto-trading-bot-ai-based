@@ -1,0 +1,3 @@
+[V1 PASS] R24: hashes
+[V2 PASS] 60 rows: basis / funding features re-derived from raw files with plain loops; xr ranks for 5 bars
+[V3 PASS] R24: AUC new 0.5659 base 0.5653 (diff +0.0006); years [np.float64(-0.0008), np.float64(-0.0017), np.float64(0.0023), np.float64(0.0015), np.float64(0.0025), np.float64(-0.0001)]; final 86200.52 vs 201548.26; Calmar 0.571 vs 0.92; decision FAIL

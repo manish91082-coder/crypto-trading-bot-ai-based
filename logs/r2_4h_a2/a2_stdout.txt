@@ -1,0 +1,42 @@
+ADAUSDT 974
+BNBUSDT 1954
+BTCUSDT 2934
+DOGEUSDT 3919
+DOTUSDT 4813
+ETHUSDT 5823
+LINKUSDT 6830
+LTCUSDT 7830
+SOLUSDT 8763
+XRPUSDT 9740
+replay 0/200
+replay 20/200
+replay 40/200
+replay 60/200
+replay 80/200
+replay 100/200
+replay 120/200
+replay 140/200
+replay 160/200
+replay 180/200
+{
+ "a2_protocol_sha": "fc11d8794468ada8e9f78c21742d25b84a58001e1ea215e4a8771fd2b6017239",
+ "a0_sha": "4d49d411745f89865ce5f167ed30b04927dd34522e6ab86831122af7a41dee3e",
+ "amend1_sha": "b89f0a82216b1c6b90a665a4b9cf32e0acca7fdc2692d5eb39c52f6b8b08dfea",
+ "amend2_sha": "1b49a9dea5a200ecbec949dfaf4d58e1a8a669fd3552703cf542d08ac3b1b59c",
+ "a1c_trades_sha": "5f9fa6a3372c96635b2bf7b74c02eeab348e5aed7f5416597224152866439821",
+ "store_sha": "434607992392b2d789239de4fe7f17378162d2eb2388e804cfc7a3848700ebf6",
+ "feature_list_sha": "305ec1c7d4401433d7f141758ed11c2b6dfb4aa5c235d95cd31346fbd7cb2531",
+ "rows": 9740,
+ "n_features": 36,
+ "dropped_replay": [],
+ "dropped_all_nan": [
+  "c_htf_state_4h",
+  "c_htf_state_1h"
+ ],
+ "canary_mismatch_share": 1.0,
+ "canary_pass": true,
+ "canary_auc_dev": 0.829818513952379,
+ "replay_rows": 200
+}
+mismatch counts (non-zero): {'canary_next_ret': 200}
+exit=0

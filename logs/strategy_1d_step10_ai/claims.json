@@ -1,0 +1,526 @@
+{
+  "protocol_sha256": "98d48a7e44fd929494b9b17fed634f5c34393851bf33f83105ce7c865e3c1701",
+  "futures_coverage": {
+    "BTCUSDT": {
+      "fund_1d": 1.0,
+      "prem_close": 0.997,
+      "oi_chg1": 0.898
+    },
+    "ETHUSDT": {
+      "fund_1d": 1.0,
+      "prem_close": 0.997,
+      "oi_chg1": 0.714
+    },
+    "BNBUSDT": {
+      "fund_1d": 0.984,
+      "prem_close": 0.981,
+      "oi_chg1": 0.714
+    },
+    "SOLUSDT": {
+      "fund_1d": 0.985,
+      "prem_close": 0.982,
+      "oi_chg1": 0.785
+    },
+    "XRPUSDT": {
+      "fund_1d": 0.998,
+      "prem_close": 0.995,
+      "oi_chg1": 0.714
+    },
+    "ADAUSDT": {
+      "fund_1d": 0.993,
+      "prem_close": 0.985,
+      "oi_chg1": 0.714
+    },
+    "DOGEUSDT": {
+      "fund_1d": 0.923,
+      "prem_close": 0.919,
+      "oi_chg1": 0.714
+    },
+    "DOTUSDT": {
+      "fund_1d": 0.999,
+      "prem_close": 0.995,
+      "oi_chg1": 0.788
+    },
+    "LTCUSDT": {
+      "fund_1d": 0.997,
+      "prem_close": 0.994,
+      "oi_chg1": 0.714
+    },
+    "LINKUSDT": {
+      "fund_1d": 0.994,
+      "prem_close": 0.99,
+      "oi_chg1": 0.714
+    },
+    "ALGOUSDT": {
+      "fund_1d": 0.939,
+      "prem_close": 0.929,
+      "oi_chg1": 0.714
+    },
+    "ATOMUSDT": {
+      "fund_1d": 0.985,
+      "prem_close": 0.982,
+      "oi_chg1": 0.714
+    },
+    "AVAXUSDT": {
+      "fund_1d": 1.0,
+      "prem_close": 0.996,
+      "oi_chg1": 0.8
+    },
+    "AXSUSDT": {
+      "fund_1d": 0.993,
+      "prem_close": 0.989,
+      "oi_chg1": 0.816
+    },
+    "BCHUSDT": {
+      "fund_1d": 1.0,
+      "prem_close": 0.997,
+      "oi_chg1": 0.714
+    },
+    "EOSUSDT": {
+      "fund_1d": 0.798,
+      "prem_close": 0.795,
+      "oi_chg1": 0.512
+    },
+    "ETCUSDT": {
+      "fund_1d": 0.994,
+      "prem_close": 0.991,
+      "oi_chg1": 0.714
+    },
+    "FILUSDT": {
+      "fund_1d": 1.0,
+      "prem_close": 0.996,
+      "oi_chg1": 0.809
+    },
+    "FTTUSDT": {
+      "fund_1d": 0.088,
+      "prem_close": 0.087,
+      "oi_chg1": 0.086
+    },
+    "ICPUSDT": {
+      "fund_1d": 0.758,
+      "prem_close": 0.958,
+      "oi_chg1": 0.741
+    },
+    "LUNAUSDT": {
+      "fund_1d": 0.211,
+      "prem_close": 0.209,
+      "oi_chg1": 0.072
+    },
+    "MATICUSDT": {
+      "fund_1d": 0.576,
+      "prem_close": 0.573,
+      "oi_chg1": 0.407
+    },
+    "NEARUSDT": {
+      "fund_1d": 1.0,
+      "prem_close": 0.996,
+      "oi_chg1": 0.808
+    },
+    "SANDUSDT": {
+      "fund_1d": 0.927,
+      "prem_close": 0.924,
+      "oi_chg1": 0.785
+    },
+    "SHIBUSDT": {
+      "fund_1d": 1.0,
+      "prem_close": 0.996,
+      "oi_chg1": 0.894
+    },
+    "THETAUSDT": {
+      "fund_1d": 0.941,
+      "prem_close": 0.938,
+      "oi_chg1": 0.714
+    },
+    "TRXUSDT": {
+      "fund_1d": 0.994,
+      "prem_close": 0.991,
+      "oi_chg1": 0.714
+    },
+    "UNIUSDT": {
+      "fund_1d": 1.0,
+      "prem_close": 0.996,
+      "oi_chg1": 0.799
+    },
+    "VETUSDT": {
+      "fund_1d": 0.982,
+      "prem_close": 0.979,
+      "oi_chg1": 0.714
+    },
+    "XLMUSDT": {
+      "fund_1d": 0.993,
+      "prem_close": 0.989,
+      "oi_chg1": 0.714
+    }
+  },
+  "sanity_S_A_path2_planted": {
+    "n": 20856,
+    "auc": 0.577983878405777,
+    "ci_low": 0.5645449269298174,
+    "ci_high": 0.5919992702635347,
+    "base_rate": 0.4621212121212121,
+    "quintile_rates": [
+      0.3710450623202301,
+      0.4217214097338768,
+      0.4636777751138816,
+      0.48573483577079835,
+      0.5684488132342363
+    ]
+  },
+  "sanity_S_B_path2_leak": {
+    "n": 20856,
+    "auc": 0.999996226383124,
+    "ci_low": 0.9999931508609105,
+    "ci_high": 0.999998734265718,
+    "base_rate": 0.4621212121212121,
+    "quintile_rates": [
+      0.0,
+      0.0,
+      0.3107168544713498,
+      1.0,
+      1.0
+    ]
+  },
+  "sanity_S_A_path1_planted": {
+    "n": 1616,
+    "auc": 0.5799529979281981,
+    "ci_low": 0.5322022156849525,
+    "ci_high": 0.6277002387987896,
+    "base_rate": 0.45173267326732675,
+    "quintile_rates": [
+      0.43209876543209874,
+      0.34365325077399383,
+      0.4086687306501548,
+      0.47678018575851394,
+      0.5975232198142415
+    ]
+  },
+  "sanity_pass": {
+    "S_A": true,
+    "S_B": true
+  },
+  "P1_AI_entry_skill": {
+    "n": 1616,
+    "auc": 0.5304137419215189,
+    "ci_low": 0.4799659060629573,
+    "ci_high": 0.5811326828319734,
+    "base_rate": 0.45173267326732675,
+    "quintile_rates": [
+      0.44135802469135804,
+      0.4551083591331269,
+      0.4055727554179567,
+      0.4179566563467492,
+      0.5386996904024768
+    ]
+  },
+  "P1_AI_exit_skill": {
+    "n": 38684,
+    "auc": 0.5044665756014506,
+    "ci_low": 0.46555664179008904,
+    "ci_high": 0.5478668697204722,
+    "base_rate": 0.400734153655258,
+    "quintile_rates": [
+      0.40183533669380894,
+      0.3938218947912628,
+      0.40873836608066183,
+      0.3871009435181595,
+      0.4121752617293525
+    ]
+  },
+  "P1_CONTROL_entry_skill": {
+    "n": 1616,
+    "auc": 0.49860849129533996,
+    "ci_low": 0.45729997790208576,
+    "ci_high": 0.5373579782295925,
+    "base_rate": 0.45173267326732675,
+    "quintile_rates": [
+      0.49074074074074076,
+      0.43034055727554177,
+      0.4148606811145511,
+      0.43962848297213625,
+      0.48297213622291024
+    ]
+  },
+  "P1_CONTROL_exit_skill": {
+    "n": 38684,
+    "auc": 0.4632041308570246,
+    "ci_low": 0.4153094293644324,
+    "ci_high": 0.5146327938159411,
+    "base_rate": 0.400734153655258,
+    "quintile_rates": [
+      0.45534444875274654,
+      0.4420317952694843,
+      0.3602637021716649,
+      0.362672870621688,
+      0.383352720692775
+    ]
+  },
+  "path1_portfolio": {
+    "P1_BASELINE_all_swings": {
+      "run": "P1_BASELINE_all_swings",
+      "final": 16698.92,
+      "total_return_pct": 66.99,
+      "cagr_pct": 9.34,
+      "max_dd_pct": 56.95,
+      "calmar": 0.164,
+      "sharpe": 0.424,
+      "trades": 400,
+      "win_rate": 25.5,
+      "profit_factor": 1.18,
+      "ret_2021": 4.15,
+      "ret_2022": -30.14,
+      "ret_2023": 119.69,
+      "ret_2024": 51.23,
+      "ret_2025": -31.96,
+      "ret_2026": 1.53
+    },
+    "P1_AI_entry_only": {
+      "run": "P1_AI_entry_only",
+      "final": 33312.3,
+      "total_return_pct": 233.12,
+      "cagr_pct": 23.31,
+      "max_dd_pct": 46.65,
+      "calmar": 0.5,
+      "sharpe": 0.817,
+      "trades": 272,
+      "win_rate": 30.15,
+      "profit_factor": 1.639,
+      "ret_2021": 117.81,
+      "ret_2022": -32.63,
+      "ret_2023": 78.43,
+      "ret_2024": 28.25,
+      "ret_2025": -7.8,
+      "ret_2026": 7.6
+    },
+    "P1_AI_full": {
+      "run": "P1_AI_full",
+      "final": 12755.79,
+      "total_return_pct": 27.56,
+      "cagr_pct": 4.33,
+      "max_dd_pct": 31.43,
+      "calmar": 0.138,
+      "sharpe": 0.332,
+      "trades": 449,
+      "win_rate": 41.2,
+      "profit_factor": 1.154,
+      "ret_2021": -2.98,
+      "ret_2022": -5.24,
+      "ret_2023": 58.86,
+      "ret_2024": -3.63,
+      "ret_2025": -4.8,
+      "ret_2026": -4.8
+    },
+    "P1_CONTROL_full": {
+      "run": "P1_CONTROL_full",
+      "final": 24304.8,
+      "total_return_pct": 143.05,
+      "cagr_pct": 16.72,
+      "max_dd_pct": 50.38,
+      "calmar": 0.332,
+      "sharpe": 0.621,
+      "trades": 337,
+      "win_rate": 26.11,
+      "profit_factor": 1.331,
+      "ret_2021": 84.5,
+      "ret_2022": -22.42,
+      "ret_2023": 47.03,
+      "ret_2024": 53.47,
+      "ret_2025": -31.12,
+      "ret_2026": 9.25
+    }
+  },
+  "path1_gates": {
+    "G1": {
+      "auc_ge_min": false,
+      "ci_low_gt_050": false,
+      "beats_control": true,
+      "top_q_gt_bottom_q": true
+    },
+    "G2": {
+      "auc_ge_min": false,
+      "ci_low_gt_050": false,
+      "beats_control": true,
+      "top_q_gt_bottom_q": true
+    },
+    "G3_full": 0.0,
+    "G3_entry_only": 1.0,
+    "pass_full": false,
+    "pass_entry_only": false
+  },
+  "P2_h1_AI_skill": {
+    "n": 20856,
+    "auc": 0.5264815737802588,
+    "ci_low": 0.5102479875231338,
+    "ci_high": 0.5439046372255761,
+    "base_rate": 0.4621212121212121,
+    "quintile_rates": [
+      0.4434324065196548,
+      0.454087748741309,
+      0.4421002157755934,
+      0.4526492447854232,
+      0.518340925437545
+    ]
+  },
+  "P2_h1_CONTROL_skill": {
+    "n": 20856,
+    "auc": 0.5093803467665339,
+    "ci_low": 0.495111436490714,
+    "ci_high": 0.5226142142619504,
+    "base_rate": 0.4621212121212121,
+    "quintile_rates": [
+      0.45421860019175453,
+      0.45073123951090865,
+      0.4646367777511388,
+      0.458643011268281,
+      0.482378326540398
+    ]
+  },
+  "P2_h3_AI_skill": {
+    "n": 20834,
+    "auc": 0.523040289941279,
+    "ci_low": 0.4985191403549452,
+    "ci_high": 0.546802282111498,
+    "base_rate": 0.47748872036094847,
+    "quintile_rates": [
+      0.4569234461243101,
+      0.4514038876889849,
+      0.48055688910225636,
+      0.4953203743700504,
+      0.5032397408207343
+    ]
+  },
+  "P2_h3_CONTROL_skill": {
+    "n": 20834,
+    "auc": 0.48769888095664976,
+    "ci_low": 0.46115426617891236,
+    "ci_high": 0.5116028049891805,
+    "base_rate": 0.47748872036094847,
+    "quintile_rates": [
+      0.49676025917926564,
+      0.4958003359731222,
+      0.4522323571771483,
+      0.464842812574994,
+      0.4778017758579314
+    ]
+  },
+  "path2_portfolio": {
+    "P2_h1_BASELINE": {
+      "run": "P2_h1_BASELINE",
+      "final": 27915.59,
+      "cagr_pct": 19.57,
+      "max_dd_pct": 74.96,
+      "calmar": 0.261,
+      "sharpe": 0.6,
+      "turnover_x": 81.4,
+      "median_held": 10.0,
+      "ret_2021": 199.27,
+      "ret_2022": -61.11,
+      "ret_2023": 102.75,
+      "ret_2024": 73.36,
+      "ret_2025": -30.6,
+      "ret_2026": -1.67
+    },
+    "P2_h1_AI": {
+      "run": "P2_h1_AI",
+      "final": 9117.32,
+      "cagr_pct": -1.6,
+      "max_dd_pct": 76.29,
+      "calmar": -0.021,
+      "sharpe": 0.197,
+      "turnover_x": 1569.9,
+      "median_held": 1.0,
+      "ret_2021": 108.81,
+      "ret_2022": -41.48,
+      "ret_2023": 23.22,
+      "ret_2024": -5.38,
+      "ret_2025": -16.59,
+      "ret_2026": -23.29
+    },
+    "P2_h1_CONTROL": {
+      "run": "P2_h1_CONTROL",
+      "final": 6119.71,
+      "cagr_pct": -8.19,
+      "max_dd_pct": 80.33,
+      "calmar": -0.102,
+      "sharpe": -0.022,
+      "turnover_x": 662.8,
+      "median_held": 0.0,
+      "ret_2021": 65.1,
+      "ret_2022": -61.4,
+      "ret_2023": 10.03,
+      "ret_2024": -9.83,
+      "ret_2025": -2.09,
+      "ret_2026": -1.15
+    },
+    "P2_h3_BASELINE": {
+      "run": "P2_h3_BASELINE",
+      "final": 27915.59,
+      "cagr_pct": 19.57,
+      "max_dd_pct": 74.96,
+      "calmar": 0.261,
+      "sharpe": 0.6,
+      "turnover_x": 81.4,
+      "median_held": 10.0,
+      "ret_2021": 199.27,
+      "ret_2022": -61.11,
+      "ret_2023": 102.75,
+      "ret_2024": 73.36,
+      "ret_2025": -30.6,
+      "ret_2026": -1.67
+    },
+    "P2_h3_AI": {
+      "run": "P2_h3_AI",
+      "final": 59644.96,
+      "cagr_pct": 36.47,
+      "max_dd_pct": 45.36,
+      "calmar": 0.804,
+      "sharpe": 0.907,
+      "turnover_x": 3071.1,
+      "median_held": 1.0,
+      "ret_2021": 157.04,
+      "ret_2022": -16.93,
+      "ret_2023": 39.83,
+      "ret_2024": 33.2,
+      "ret_2025": 75.23,
+      "ret_2026": -14.41
+    },
+    "P2_h3_CONTROL": {
+      "run": "P2_h3_CONTROL",
+      "final": 3488.87,
+      "cagr_pct": -16.75,
+      "max_dd_pct": 89.6,
+      "calmar": -0.187,
+      "sharpe": -0.242,
+      "turnover_x": 687.1,
+      "median_held": 0.0,
+      "ret_2021": 104.32,
+      "ret_2022": -79.54,
+      "ret_2023": -18.92,
+      "ret_2024": -2.48,
+      "ret_2025": 5.08,
+      "ret_2026": 0.43
+    }
+  },
+  "path2_gates": {
+    "h1": {
+      "skill": {
+        "auc_ge_min": false,
+        "ci_low_gt_050": true,
+        "beats_control": true,
+        "top_q_gt_bottom_q": true
+      },
+      "G3": 0.0,
+      "pass_all": false
+    },
+    "h3": {
+      "skill": {
+        "auc_ge_min": false,
+        "ci_low_gt_050": false,
+        "beats_control": true,
+        "top_q_gt_bottom_q": true
+      },
+      "G3": 1.0,
+      "pass_all": false
+    }
+  },
+  "decision": "FAIL_NOTHING_DEPLOYED"
+}

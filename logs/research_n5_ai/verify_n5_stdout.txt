@@ -1,0 +1,5 @@
+[A1 PASS] PIT replay of 14 features x 200 trades from data truncated at the entry time: max rel diff 2.8e-11 
+[A2 PASS] leak canary (own net return as a feature): out-of-time AUC 1.000 > 0.9 -> the pipeline would expose a leak
+[A3 PASS] AUC / take rate / taken-minus-all / tail share / shuffled p95 recomputed (max diff 9.5e-17); gate booleans consistent
+[A4 PASS] protocol lock, registry T18, file SHAs, code SHA
+TOTAL 4 checks, FAIL 0

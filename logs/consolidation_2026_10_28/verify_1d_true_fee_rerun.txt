@@ -1,0 +1,4 @@
+[V1 PASS] R0 == locked F7 RS equity: 2099 days, max |diff| 0.00e+00
+[V2 PASS] stats of 4 runs x 4 series recomputed by loops (final, CAGR, max DD, years, P3): mismatches []
+[V3 PASS] equity files and results SHAs
+TOTAL 3 checks, FAIL 0

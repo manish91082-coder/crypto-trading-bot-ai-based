@@ -1,0 +1,6 @@
+[V1 PASS] 300 sub-trades recomputed from raw 5m (own TF bars/ATR/1h stop scan/funding): mismatches 0 []; no-stop gross vs TFX file mismatches 0
+[V2 PASS] own event accounting: final 417682.32 vs 417682.32 (rel 8.4e-15); MTM-DD 0.286318 vs 0.286318; max |curve diff|/E0 3.5e-13; own weights max rel diff 0.0e+00
+[V3 PASS] 50 random D rebalances: leg sets / prices from own 1D bars + own liquidity, mismatches 0
+[V4 PASS] selection True; PBO 0.1258/0.1258; DSR 1.0000/1.0000 (N 26); CI (0.033106654496798914, 0.1032860673951482)
+[V5 PASS] protocol lock, TFX manifest (every file), registry T15 line, claims file SHAs, code SHA
+TOTAL 5 checks, FAIL 0

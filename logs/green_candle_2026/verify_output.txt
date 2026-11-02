@@ -1,0 +1,111 @@
+PASS  V1 protocol SHA  fe70c33091be
+PASS  V1 input SHAs  5 files
+PASS  V2 JAN bars equal main output  14353 bars, 0 mismatches, mine 14353
+PASS  V2 JAN 15m aggregate equals file  2976 bars, 0 mismatches
+PASS  V2 JAN 1h aggregate equals file  744 bars, 0 mismatches
+PASS  V2 JAN 1d aggregate equals file  31 bars, 0 mismatches
+PASS  V3 JAN 5m colours/transitions/runs/oracle  G 4407 runs 2253 sum_gross 3.353327
+PASS  V3 JAN 15m colours/transitions/runs/oracle  G 1465 runs 791 sum_gross 1.962843
+PASS  V3 JAN 30m colours/transitions/runs/oracle  G 748 runs 394 sum_gross 1.354045
+PASS  V3 JAN 1h colours/transitions/runs/oracle  G 360 runs 191 sum_gross 0.918663
+PASS  V3 JAN 4h colours/transitions/runs/oracle  G 94 runs 52 sum_gross 0.449900
+PASS  V3 JAN 1d colours/transitions/runs/oracle  G 15 runs 4 sum_gross 0.185704
+PASS  V4 JAN 5m R1 every trade  2241 trades
+PASS  V4 JAN 5m R2 every trade  1133 trades
+PASS  V4 JAN 15m R1 every trade  790 trades
+PASS  V4 JAN 15m R2 every trade  384 trades
+PASS  V4 JAN 30m R1 every trade  393 trades
+PASS  V4 JAN 30m R2 every trade  196 trades
+PASS  V4 JAN 1h R1 every trade  189 trades
+PASS  V4 JAN 1h R2 every trade  105 trades
+PASS  V4 JAN 4h R1 every trade  50 trades
+PASS  V4 JAN 4h R2 every trade  23 trades
+PASS  V4 JAN 1d R1 every trade  3 trades
+PASS  V4 JAN 1d R2 every trade  3 trades
+PASS  V5 FS26 5m R1 count+sum  17777 trades, sum net fut -16.538329
+PASS  V5 FS26 5m R2 count+sum  8748 trades, sum net fut -8.375141
+PASS  V5 FS26 15m R1 count+sum  6031 trades, sum net fut -5.765661
+PASS  V5 FS26 15m R2 count+sum  2964 trades, sum net fut -3.058603
+PASS  V5 FS26 30m R1 count+sum  3002 trades, sum net fut -3.001744
+PASS  V5 FS26 30m R2 count+sum  1510 trades, sum net fut -1.579664
+PASS  V5 FS26 1h R1 count+sum  1524 trades, sum net fut -1.355747
+PASS  V5 FS26 1h R2 count+sum  753 trades, sum net fut -0.764006
+PASS  V5 FS26 4h R1 count+sum  390 trades, sum net fut -0.313583
+PASS  V5 FS26 4h R2 count+sum  183 trades, sum net fut -0.111679
+PASS  V5 FS26 1d R1 count+sum  62 trades, sum net fut 0.034405
+PASS  V5 FS26 1d R2 count+sum  31 trades, sum net fut 0.109209
+PASS  V5 Y2020 5m R1 count+sum  27937 trades, sum net fut -28.798636
+PASS  V5 Y2020 5m R2 count+sum  13672 trades, sum net fut -14.616145
+PASS  V5 Y2020 15m R1 count+sum  9369 trades, sum net fut -8.526232
+PASS  V5 Y2020 15m R2 count+sum  4841 trades, sum net fut -5.727894
+PASS  V5 Y2020 30m R1 count+sum  4880 trades, sum net fut -5.215794
+PASS  V5 Y2020 30m R2 count+sum  2297 trades, sum net fut -2.541733
+PASS  V5 Y2020 1h R1 count+sum  2392 trades, sum net fut -1.943538
+PASS  V5 Y2020 1h R2 count+sum  1193 trades, sum net fut -1.436415
+PASS  V5 Y2020 4h R1 count+sum  604 trades, sum net fut 0.466014
+PASS  V5 Y2020 4h R2 count+sum  306 trades, sum net fut 0.291331
+PASS  V5 Y2020 1d R1 count+sum  107 trades, sum net fut 0.135473
+PASS  V5 Y2020 1d R2 count+sum  50 trades, sum net fut 0.815524
+PASS  V5 Y2021 5m R1 count+sum  27165 trades, sum net fut -26.697628
+PASS  V5 Y2021 5m R2 count+sum  13370 trades, sum net fut -13.604640
+PASS  V5 Y2021 15m R1 count+sum  9138 trades, sum net fut -8.207758
+PASS  V5 Y2021 15m R2 count+sum  4648 trades, sum net fut -5.593998
+PASS  V5 Y2021 30m R1 count+sum  4595 trades, sum net fut -5.680544
+PASS  V5 Y2021 30m R2 count+sum  2252 trades, sum net fut -2.549184
+PASS  V5 Y2021 1h R1 count+sum  2246 trades, sum net fut -1.570940
+PASS  V5 Y2021 1h R2 count+sum  1170 trades, sum net fut -0.984170
+PASS  V5 Y2021 4h R1 count+sum  603 trades, sum net fut -1.262325
+PASS  V5 Y2021 4h R2 count+sum  280 trades, sum net fut -0.347605
+PASS  V5 Y2021 1d R1 count+sum  102 trades, sum net fut -0.484255
+PASS  V5 Y2021 1d R2 count+sum  47 trades, sum net fut 0.007008
+PASS  V5 Y2022 5m R1 count+sum  27317 trades, sum net fut -25.928574
+PASS  V5 Y2022 5m R2 count+sum  13751 trades, sum net fut -14.220250
+PASS  V5 Y2022 15m R1 count+sum  9137 trades, sum net fut -8.490563
+PASS  V5 Y2022 15m R2 count+sum  4606 trades, sum net fut -4.997753
+PASS  V5 Y2022 30m R1 count+sum  4680 trades, sum net fut -5.156970
+PASS  V5 Y2022 30m R2 count+sum  2263 trades, sum net fut -2.710890
+PASS  V5 Y2022 1h R1 count+sum  2360 trades, sum net fut -2.530927
+PASS  V5 Y2022 1h R2 count+sum  1154 trades, sum net fut -1.431222
+PASS  V5 Y2022 4h R1 count+sum  587 trades, sum net fut -0.775365
+PASS  V5 Y2022 4h R2 count+sum  272 trades, sum net fut -0.608341
+PASS  V5 Y2022 1d R1 count+sum  92 trades, sum net fut -0.452088
+PASS  V5 Y2022 1d R2 count+sum  49 trades, sum net fut -0.500353
+PASS  V5 Y2023 5m R1 count+sum  27278 trades, sum net fut -25.892759
+PASS  V5 Y2023 5m R2 count+sum  13105 trades, sum net fut -12.322219
+PASS  V5 Y2023 15m R1 count+sum  9250 trades, sum net fut -8.008408
+PASS  V5 Y2023 15m R2 count+sum  4661 trades, sum net fut -4.376689
+PASS  V5 Y2023 30m R1 count+sum  4735 trades, sum net fut -4.165264
+PASS  V5 Y2023 30m R2 count+sum  2251 trades, sum net fut -1.735161
+PASS  V5 Y2023 1h R1 count+sum  2368 trades, sum net fut -1.709347
+PASS  V5 Y2023 1h R2 count+sum  1168 trades, sum net fut -0.646540
+PASS  V5 Y2023 4h R1 count+sum  613 trades, sum net fut -0.181439
+PASS  V5 Y2023 4h R2 count+sum  303 trades, sum net fut -0.142421
+PASS  V5 Y2023 1d R1 count+sum  100 trades, sum net fut 0.548017
+PASS  V5 Y2023 1d R2 count+sum  44 trades, sum net fut 0.515074
+PASS  V5 Y2024 5m R1 count+sum  26574 trades, sum net fut -23.763488
+PASS  V5 Y2024 5m R2 count+sum  13634 trades, sum net fut -12.929007
+PASS  V5 Y2024 15m R1 count+sum  9184 trades, sum net fut -8.256457
+PASS  V5 Y2024 15m R2 count+sum  4546 trades, sum net fut -4.151090
+PASS  V5 Y2024 30m R1 count+sum  4630 trades, sum net fut -4.169806
+PASS  V5 Y2024 30m R2 count+sum  2340 trades, sum net fut -2.358781
+PASS  V5 Y2024 1h R1 count+sum  2338 trades, sum net fut -2.409795
+PASS  V5 Y2024 1h R2 count+sum  1179 trades, sum net fut -1.381797
+PASS  V5 Y2024 4h R1 count+sum  592 trades, sum net fut -0.720888
+PASS  V5 Y2024 4h R2 count+sum  282 trades, sum net fut -0.190102
+PASS  V5 Y2024 1d R1 count+sum  98 trades, sum net fut 0.317802
+PASS  V5 Y2024 1d R2 count+sum  41 trades, sum net fut 0.545176
+PASS  V5 Y2025 5m R1 count+sum  26281 trades, sum net fut -23.989532
+PASS  V5 Y2025 5m R2 count+sum  13352 trades, sum net fut -12.501326
+PASS  V5 Y2025 15m R1 count+sum  9062 trades, sum net fut -8.812581
+PASS  V5 Y2025 15m R2 count+sum  4519 trades, sum net fut -4.689668
+PASS  V5 Y2025 30m R1 count+sum  4560 trades, sum net fut -4.556581
+PASS  V5 Y2025 30m R2 count+sum  2267 trades, sum net fut -2.292950
+PASS  V5 Y2025 1h R1 count+sum  2246 trades, sum net fut -2.139814
+PASS  V5 Y2025 1h R2 count+sum  1136 trades, sum net fut -1.251525
+PASS  V5 Y2025 4h R1 count+sum  571 trades, sum net fut -0.437193
+PASS  V5 Y2025 4h R2 count+sum  287 trades, sum net fut -0.335969
+PASS  V5 Y2025 1d R1 count+sum  92 trades, sum net fut -0.165972
+PASS  V5 Y2025 1d R2 count+sum  55 trades, sum net fut -0.394612
+PASS  V6 output SHAs  
+
+TOTAL 109 checks, 109 PASS, 0 FAIL -> ALL PASS

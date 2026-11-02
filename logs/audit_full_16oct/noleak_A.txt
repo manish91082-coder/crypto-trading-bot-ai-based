@@ -1,0 +1,2 @@
+[A PASS] R6: 40 stored test rows; all 24 per-coin features identical when the raw files are cut at the bar end (max |diff| 0.0e+00) -> no feature looks into the future
+[A PASS] R24: 40 stored test rows; all 24 per-coin features identical when the raw files are cut at the bar end (max |diff| 0.0e+00) -> no feature looks into the future

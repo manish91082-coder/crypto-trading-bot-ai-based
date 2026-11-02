@@ -1,0 +1,4 @@
+bd9d630e8f3118583153bccb96498620959a5b4f1812f823fa127a7451013e4a *logs/live_paper_lpt1_2026_10_29/LPT1_PROTOCOL_PREREGISTERED.md
+919ac54dc83505cb4993f796eaf7024992b3e563eaf8ef6cdeb26f5c32ef0ed0 *src/live_paper/lpt.py
+b76c04950e0922f4cbec27bc9bd4ded5a500fae600dd1aa444930a8a92d491a5 *deploy/fees.json
+locked_utc 2026-10-29T04:23:07Z

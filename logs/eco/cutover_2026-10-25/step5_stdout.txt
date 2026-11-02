@@ -1,0 +1,55 @@
+=== Sun Oct 25 04:21:47 UTC 2026 step 5: first demo cycle, then shadow (cron wrapper)
+demo rc 0
+shadow rc 0
+eco demo 2026-10-25 04:21:00: ok True equity 9996.97789999018 orders 23 frozen {} mismatch 0
+eco plan 2026-10-25 04:23:00: ok True equity 9997.881614351843 orders 23 frozen {} mismatch 0
+
+## data/eco_demo T 2026-10-25 04:21:00 ok True mode demo k_m 0.5152760659610001 k_now 0.515276307479 eco_equity 9996.97789999018
+ orders 23 skipped 2 mismatch {} frozen {}
+ order sample [{'perp': 'TRXUSDT', 'px': 0.3291, 'qty': 801.0, 'reduce_only': False}, {'perp': 'BTCUSDT', 'px': 80833.3, 'qty': 0.0029, 'reduce_only': False}, {'perp': 'BNBUSDT', 'px': 747.09, 'qty': 0.31, 'reduce_only': False}]
+ order keys ['perp', 'px', 'qty', 'reduce_only']
+ record keys ['E_m', 'T', 'a', 'acct_pnl', 'attribution', 'caps', 'code_sha256', 'config_sha256', 'core_sha256', 'delisting', 'eco_equity', 'exch_before', 'exchange_sha256', 'f4', 'foreign_positions', 'foreign_stops', 'frozen_strategies', 'funding', 'gross_eco', 'halted', 'held_net', 'held_not_trading', 'k_m', 'k_now', 'line_sha256', 'mode', 'n1', 'n_components', 'n_px_missing', 'n_skipped', 'n_symbols', 'notes', 'ok', 'orders', 'peak', 'pending_journal', 'prev_sha256', 'price', 'protocol_sha256', 'px_missing', 'reconcile_mismatch', 'skipped', 'stop_hits', 'stops', 'suppressed', 'targets_net']
+ stops {'cancelled': 0, 'n_component': 10, 'n_guard': 24, 'n_open': 34, 'notes': ['WLDUSDT: 1D-short stops virtual only (net -359.99999999999966 vs 1D shorts -523.7395708841602)', 'NEARUSDT: 1D-short stops virtual only (net -16.000000000000014 vs 1D shorts -33.588590698767604)'], 'placed': 34}
+ notes ["new month 2026-10: E_m 9999.97, k_m 0.5153 (wallet 5152.76065961), weights {'1D': 0.5393573012420907, 'N1': 0.4606426987579093}"]
+ held_net {'ADAUSDT': -104.0, 'AVAXUSDT': -3.0000000000000004, 'BCHUSDT': -0.08199999999999999, 'BNBUSDT': 0.31, 'BTCUSDT': 0.0029, 'DOGEUSDT': -288.0, 'DOTUSDT': -18.9, 'ETHUSDT': 0.07, 'FETUSDT': -2125.0000000000005, 'FILUSDT': -33.9, 'INJUSDT': 12.399999999999999, 'LINKUSDT': -1.94, 'LTCUSDT': 1.0299999999999998, 'NEARUSDT': -16.000000000000014, 'ONDOUSDT': -458.99999999999983, 'QNTUSDT': -1.2, 'SOLUSDT': 1.9, 'SUIUSDT': -119.09999999999998, 'TIAUSDT': 174.0, 'TRXUSDT': 801.0, 'UNIUSDT': -58.00000000000004, 'WLDUSDT': -359.99999999999966, 'XLMUSDT': -847.0, 'XRPUSDT': 130.9000000000001}
+
+## data/eco_shadow T 2026-10-25 04:23:00 ok True mode plan k_m 0.5152760659610001 k_now None eco_equity 9997.881614351843
+ orders 23 skipped 2 mismatch {} frozen {}
+ order sample [{'perp': 'TRXUSDT', 'px': 0.32911, 'qty': 801.0, 'reduce_only': False}, {'perp': 'BTCUSDT', 'px': 80842.6, 'qty': 0.0029000000000000002, 'reduce_only': False}, {'perp': 'BNBUSDT', 'px': 747.09, 'qty': 0.31, 'reduce_only': False}]
+ order keys ['perp', 'px', 'qty', 'reduce_only']
+ record keys ['E_m', 'T', 'a', 'acct_pnl', 'attribution', 'caps', 'code_sha256', 'config_sha256', 'core_sha256', 'delisting', 'eco_equity', 'exch_before', 'exchange_sha256', 'f4', 'foreign_positions', 'foreign_stops', 'frozen_strategies', 'funding', 'gross_eco', 'halted', 'held_net', 'held_not_trading', 'k_m', 'k_now', 'line_sha256', 'mode', 'n1', 'n_components', 'n_px_missing', 'n_skipped', 'n_symbols', 'notes', 'ok', 'orders', 'peak', 'pending_journal', 'prev_sha256', 'price', 'protocol_sha256', 'px_missing', 'reconcile_mismatch', 'skipped', 'stop_hits', 'stops', 'suppressed', 'targets_net']
+ stops {'cancelled': 0, 'n_component': 10, 'n_guard': 24, 'n_open': 34, 'notes': ['WLDUSDT: 1D-short stops virtual only (net -359.9999999999998 vs 1D shorts -523.7595426378193)', 'NEARUSDT: 1D-short stops virtual only (net -16.0 vs 1D shorts -33.5898027719895)'], 'placed': 34}
+ notes ["new month 2026-10: E_m 10000.40, k_m 0.5153 (wallet 5152.76065961), weights {'1D': 0.5393573012420907, 'N1': 0.4606426987579093}"]
+ held_net {'ADAUSDT': -104.0, 'AVAXUSDT': -3.0000000000000004, 'BCHUSDT': -0.08199999999999999, 'BNBUSDT': 0.31, 'BTCUSDT': 0.0029, 'DOGEUSDT': -288.0, 'DOTUSDT': -18.900000000000006, 'ETHUSDT': 0.07, 'FETUSDT': -2124.9999999999995, 'FILUSDT': -33.9, 'INJUSDT': 12.4, 'LINKUSDT': -1.94, 'LTCUSDT': 1.0299999999999998, 'NEARUSDT': -16.0, 'ONDOUSDT': -459.00000000000006, 'QNTUSDT': -1.2000000000000002, 'SOLUSDT': 1.8999999999999995, 'SUIUSDT': -119.10000000000004, 'TIAUSDT': 174.00000000000003, 'TRXUSDT': 801.0, 'UNIUSDT': -58.000000000000014, 'WLDUSDT': -359.9999999999998, 'XLMUSDT': -846.9999999999999, 'XRPUSDT': 130.90000000000006}
+
+EXCHANGE positions {'DOGEUSDT': -288.0, 'BNBUSDT': 0.31, 'BTCUSDT': 0.0029, 'NEARUSDT': -16.0, 'SUIUSDT': -119.1, 'ETHUSDT': 0.07, 'FETUSDT': -2125.0, 'BCHUSDT': -0.082, 'FILUSDT': -33.9, 'QNTUSDT': -1.2, 'XRPUSDT': 130.9, 'SOLUSDT': 1.9, 'INJUSDT': 12.4, 'TIAUSDT': 174.0, 'LTCUSDT': 1.03, 'TRXUSDT': 801.0, 'WLDUSDT': -360.0, 'UNIUSDT': -58.0, 'DOTUSDT': -18.9, 'LINKUSDT': -1.94, 'AVAXUSDT': -3.0, 'XLMUSDT': -847.0, 'ADAUSDT': -104.0, 'ONDOUSDT': -459.0}
+open algo orders 34 ['ADAUSDT', 'AVAXUSDT', 'BCHUSDT', 'BNBUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ETHUSDT', 'FETUSDT', 'FILUSDT', 'INJUSDT', 'LINKUSDT', 'LTCUSDT', 'NEARUSDT', 'ONDOUSDT', 'QNTUSDT', 'SOLUSDT', 'SUIUSDT', 'TIAUSDT', 'TRXUSDT', 'UNIUSDT', 'WLDUSDT', 'XLMUSDT', 'XRPUSDT']
+=== verifiers
+[L1 PASS] 1 records (1 cycles, 0 resets), hash chain intact
+[L2 PASS] config now 3d5b3ac9b8ee == last cycle; configs used ['3d5b3ac9b8ee'] all listed in CODE_CHANGES: True; protocol 15a3c837046c constant
+[L3 PASS] failed cycles: 0 total, 0 in the last 24 h; last []
+[L4 PASS] hourly cadence; gaps > 90 min: []
+[L5 PASS] reconcile mismatches in the last 24 h: []
+[L6 PASS] targets within caps (coin 0.2, gross 1.5): violations []
+[L7 PASS] cycles with a frozen producer in the last 24 h: 0 []
+[L8 PASS] last record 2026-10-25 04:21:00 (demo): halted = None
+[L9 PASS] attribution identity (sum of strategies == account P&L) on 1 cycles: violations []
+[L10 PASS] held positions within caps + band on 1 cycles (records with held_net): violations []
+[L11 PASS] code SHAs used: ['4813d88112ea', '95bccb3b02e7', 'a29e8ecd200d']; not listed in CODE_CHANGES: []
+[INFO] last ok cycle 2026-10-25 04:21:00 mode demo: eco equity 9996.98 (start 10000), weights {'1D': 0.5393573012420907, 'N1': 0.4606426987579093}, symbols 24, gross 6514 USDT eco, orders this cycle 23, halted None, price fallbacks [], delisting []
+[INFO] exchange stops (plan: would-be orders): open 34 (guards 24, 1D-short 10)
+TOTAL 11 checks, FAIL 0
+[L1 PASS] 1 records (1 cycles, 0 resets), hash chain intact
+[L2 PASS] config now 3d5b3ac9b8ee == last cycle; configs used ['3d5b3ac9b8ee'] all listed in CODE_CHANGES: True; protocol 15a3c837046c constant
+[L3 PASS] failed cycles: 0 total, 0 in the last 24 h; last []
+[L4 PASS] hourly cadence; gaps > 90 min: []
+[L5 PASS] reconcile mismatches in the last 24 h: []
+[L6 PASS] targets within caps (coin 0.2, gross 1.5): violations []
+[L7 PASS] cycles with a frozen producer in the last 24 h: 0 []
+[L8 PASS] last record 2026-10-25 04:23:00 (plan): halted = None
+[L9 PASS] attribution identity (sum of strategies == account P&L) on 1 cycles: violations []
+[L10 PASS] held positions within caps + band on 1 cycles (records with held_net): violations []
+[L11 PASS] code SHAs used: ['4813d88112ea', '95bccb3b02e7', 'a29e8ecd200d']; not listed in CODE_CHANGES: []
+[INFO] last ok cycle 2026-10-25 04:23:00 mode plan: eco equity 9997.88 (start 10000), weights {'1D': 0.5393573012420907, 'N1': 0.4606426987579093}, symbols 24, gross 6514 USDT eco, orders this cycle 23, halted None, price fallbacks [], delisting []
+[INFO] exchange stops (plan: would-be orders): open 34 (guards 24, 1D-short 10)
+TOTAL 11 checks, FAIL 0

@@ -1,0 +1,8 @@
+[1-2 PASS] 6 exit configs re-simulated with own loop: dev mean net R equal to A4_exit_grid.csv for all 6: {'3_60': np.float64(0.1281), '3_120': np.float64(0.1348), '3_1000': np.float64(0.1366), '4_60': np.float64(0.1661), '4_120': np.float64(0.1601), '4_1000': np.float64(0.1562)}
+[2b PASS] plateau rule re-derived: best (4, 60), neighbours [0.832, 0.76] -> selected (3, 60)
+   per-config (final diff, MTM-DD diff) own vs A4_exit_grid.csv: {'3_60': (np.float64(0.0), np.float64(0.0)), '3_120': (np.float64(0.0), np.float64(0.0)), '3_1000': (np.float64(0.0), np.float64(0.0)), '4_60': (np.float64(0.0), np.float64(0.0)), '4_120': (np.float64(0.0), np.float64(0.0)), '4_1000': (np.float64(0.0), np.float64(0.0))}
+[3a PASS] all 6 exit-config portfolios (final, MTM DD) == A4_exit_grid.csv
+[3 PASS] PBO recomputed with own portfolio + CSCV: 0.8443 vs claims 0.8443
+[4 PASS] own maker fills (rate 0.9659) + own MTM portfolio: 12117.14 / DD 0.0955 == claims
+[5 PASS] claims / verdict ('A4 FAIL') / SHAs consistent
+TOTAL 6 checks, FAIL 0

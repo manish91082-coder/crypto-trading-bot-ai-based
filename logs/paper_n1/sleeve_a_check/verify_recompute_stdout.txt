@@ -1,0 +1,4 @@
+[V3 PASS] report SHA == SHA file
+[V1 PASS] live: n 72 win rate 0.027778 mean r -0.027505 M_live -0.036398
+[V2 PASS] T2 by loops: eligible 499 comparable 100 p_wr 0.0000 p_ret 0.2000 min comparable win rate 0.0370; verdict not consistent vs report not consistent
+TOTAL 3 checks, FAIL 0

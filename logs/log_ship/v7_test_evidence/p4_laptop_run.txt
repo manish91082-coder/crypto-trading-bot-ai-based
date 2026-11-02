@@ -1,0 +1,39 @@
+ship 2026-10-25_05 053623: bundle 408 files 1471075 B, verified True, rotated 10, backup files freed 2, bytes freed 37277, rclone errors 0 []
+[W1 PASS] 1 ledger line(s): chain, line hashes, manifest SHA intact=True; duplicate (hour, tag) 0; protocol + v2..v7 amendments == locks=True
+[W2 PASS] 1 verified hour(s) downloaded: bundle/manifest MD5 == ledger, 408 tar members md5 == manifest; changed locally since (reported) 0; problems []
+[W3 PASS] every freed file is inside a verified bundle on the remote with its md5; problems []
+[W4 PASS] essential live files present (17/17) []
+TOTAL 4 checks, FAIL 0
+[T1 PASS] first run: 1 bundle with 408 files verified, 10 idle .out rotated + freed, old backups freed (kept ['2026-10-25']); verifier exit 0
+[T6 PASS] v3 paths: 68 files (data/eco, data/paper_n1, logs/eco, logs/paper_n1, deploy configs) all in the first verified bundle with equal md5; missing []
+ship 2026-10-25_05 053708: bundle 3 files 57076 B, verified True, rotated 0, backup files freed 0, bytes freed 0, rclone errors 0 []
+[T2 PASS] second run: only 3 changed file(s) (the shipper's own ledger / manifests), rotated 0
+ship 2026-10-25_05 053716: bundle 4 files 1251 B, verified False, rotated 0, backup files freed 0, bytes freed 0, rclone errors 0 []
+[T3 PASS] remote copy corrupted -> not verified, shipped index unchanged, .out chunk kept (.shipping), nothing freed
+ship 2026-10-25_05 053723: bundle 6 files 1753 B, verified True, rotated 1, backup files freed 0, bytes freed 15, rclone errors 0 []
+ship 2026-10-25_05 053730: bundle 4 files 1731 B, verified True, rotated 0, backup files freed 0, bytes freed 0, rclone errors 0 []
+[T4 PASS] next run re-bundles the kept chunk, verifies and frees it; a .out modified < 15 min ago is NOT rotated
+[W1 PASS] 5 ledger line(s): chain, line hashes, manifest SHA intact=True; duplicate (hour, tag) 0; protocol + v2..v7 amendments == locks=True
+[W2 PASS] 4 verified hour(s) downloaded: bundle/manifest MD5 == ledger, 421 tar members md5 == manifest; changed locally since (reported) 3; problems []
+[W3 PASS] every freed file is inside a verified bundle on the remote with its md5; problems []
+[W4 PASS] essential live files present (17/17) []
+TOTAL 4 checks, FAIL 0
+[T4-verify PASS] verifier W1-W4 after all runs (all verified hours downloaded and checked)
+ship 2026-10-25_05 053755: bundle 4 files 1763 B, verified True, rotated 0, backup files freed 0, bytes freed 0, rclone errors 0 []
+ship 2026-10-25_05 053802: bundle 4 files 1911 B, verified True, rotated 1, backup files freed 0, bytes freed 17, rclone errors 0 []
+[T7 PASS] v4: .out held open by a process -> not rotated (out_busy ['RUNNING_JOB.out']); after it is closed -> rotated and freed
+ship 2026-10-25_05 053810: bundle 6 files 2102 B, verified True, rotated 0, backup files freed 0, bytes freed 0, rclone errors 0 []
+[T8 PASS] v7: names held ['2026-10-25_05_053807', '2026-10-25_05_053808', '2026-10-25_05_053809'] -> new run 2026-10-25_05_053810, held manifests unchanged True
+[W1 PASS] 8 ledger line(s): chain, line hashes, manifest SHA intact=True; duplicate (hour, tag) 0; protocol + v2..v7 amendments == locks=True
+[W2 PASS] 7 verified hour(s) downloaded: bundle/manifest MD5 == ledger, 435 tar members md5 == manifest; changed locally since (reported) 6; problems []
+[W3 PASS] every freed file is inside a verified bundle on the remote with its md5; problems []
+[W4 PASS] essential live files present (17/17) []
+TOTAL 4 checks, FAIL 0
+[T8/T9-verify PASS] verifier W1-W4 after T7-T9, before the T5 tamper
+[W1 PASS] 8 ledger line(s): chain, line hashes, manifest SHA intact=True; duplicate (hour, tag) 0; protocol + v2..v7 amendments == locks=True
+[W2 FAIL] 7 verified hour(s) downloaded: bundle/manifest MD5 == ledger, 27 tar members md5 == manifest; changed locally since (reported) 6; problems ['md5 2026-10-25_05 053623']
+[W3 FAIL] every freed file is inside a verified bundle on the remote with its md5; problems ['bundle 053623 not on remote']
+[W4 PASS] essential live files present (17/17) []
+TOTAL 4 checks, FAIL 2
+[T5 PASS] a tampered bundle on the remote -> verifier W2 FAIL
+TOTAL 10 tests, FAIL 0

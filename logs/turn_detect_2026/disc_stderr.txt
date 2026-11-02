@@ -1,0 +1,6 @@
+C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:2019: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+E:\crypto trading bot ai based 9 oct 2026\src\research\turn_2026.py:873: RuntimeWarning: invalid value encountered in scalar divide
+  zvr = (vr - nv.mean()) / nv.std()
+E:\crypto trading bot ai based 9 oct 2026\src\research\turn_2026.py:880: RuntimeWarning: invalid value encountered in scalar divide
+  null_AC1_mean=na.mean(), null_AC1_sd=na.std(), z_AC1=zac, z_VR=(vr - nv.mean()) / nv.std(),

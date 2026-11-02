@@ -1,0 +1,24 @@
+[PASS] C1: '2/14 दिन' in calendar (TC full days 2)
+[PASS] C2: '-0.48 और +0.05' in calendar (d_day [-0.477, 0.046])
+[PASS] C3: 'कुल -1.25 USDT' in calendar (d_cum -1.247)
+[PASS] C4: TC rule text in amendment 1 and tolerances 30 / 100 in the live TC json
+[PASS] C5: '26 अक्टूबर से 8 नवंबर' in calendar (14th full day = 2026-11-08)
+[PASS] C6: window ends ['2026-10-27 04:00:00', '2026-10-30 04:00:00', '2026-11-02 04:00:00', '2026-11-05 04:00:00', '2026-11-08 04:00:00', '2026-11-11 04:00:00']
+[PASS] C7: F1 23 closes consistent
+[PASS] C8: sleeve A rule text
+[PASS] C9: '40 orders' in calendar (MK1 n_orders 40)
+[PASS] C10: MK1 decision at 300
+[PASS] C11: 'FW1: 5 closed, FW2: 10 closed' in calendar (closed trades [5, 10])
+[PASS] C12: FW1 80 / FW2 200
+[PASS] C13: '44 records' in calendar (PaperN1 records 44)
+[PASS] C14: PaperN1 first cycle 2026-10-21 -> day 90 2027-01-19
+[PASS] C15: 'Equity 1,008.57' in calendar (PaperSpotS1 last equity 1008.5698271354588)
+[PASS] C16: S1 day 90
+[PASS] C17: 'पीला 7.36% → 11.14%' in calendar (30 -> 90 yellow)
+[PASS] C18: 'लाल 9.35% → 14.69%' in calendar (30 -> 90 red)
+[PASS] C19: 'पीला 14.10%, लाल 18.00%' in calendar (180-day band)
+[PASS] C20: a = 31 on 2026-11-26, a = 91 on 2027-01-25
+[PASS] C21: no Telegram key names in .env
+[PASS] C22: last exit 0 for all 31 cron_status csv files
+[PASS] C23: 'R-2026.10.28-3' in calendar (release id)
+TOTAL 23 checks, FAIL 0

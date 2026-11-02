@@ -1,0 +1,9 @@
+[V1 PASS] protocol hash as locked; predictions file SHA as claimed
+[V2 PASS] 300 sampled rows: forward returns re-derived from raw 1h; all labels re-derived from per-bar medians
+[V3 PASS] R4 AI: AUC 0.5451 (1006420 rows)
+[V3 PASS] R4 CONTROL: AUC 0.5001 (1006420 rows)
+[V3 PASS] R24 AI: AUC 0.5653 (1005900 rows)
+[V3 PASS] R24 CONTROL: AUC 0.5007 (1005900 rows)
+[V4 PASS] R4_AI re-simulated: final 48.81, trades 9540
+[V4 PASS] R24_AI re-simulated: final 201548.26, trades 1998
+[V5 PASS] gates recomputed -> PASS_R24

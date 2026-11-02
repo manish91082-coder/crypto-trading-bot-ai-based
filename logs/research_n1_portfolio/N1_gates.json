@@ -1,0 +1,12 @@
+{
+ "gates": {
+  "G1_random_entry_p95": true,
+  "G2_cost_1.5x_2x_slip": true,
+  "G3_P1_P2_calmar>0": true,
+  "G4_bootstrap_ci_lo>0": true,
+  "G5_DSR>=0.95": true,
+  "G6_PBO<0.30": true,
+  "G7_2018_19_calmar>0": true
+ },
+ "verdict": "N1 PASS"
+}

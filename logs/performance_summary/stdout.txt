@@ -1,0 +1,225 @@
+{
+ "LO": {
+  "all": {
+   "trades": 4421,
+   "win_rate_pct": 47.3,
+   "avg_win_pct": 10.78,
+   "avg_loss_pct": -6.89,
+   "payoff_ratio": 1.57,
+   "profit_factor": 1.19,
+   "avg_trade_pct": 1.47
+  },
+  "long": {
+   "trades": 4421,
+   "win_rate_pct": 47.3,
+   "avg_win_pct": 10.78,
+   "avg_loss_pct": -6.89,
+   "payoff_ratio": 1.57,
+   "profit_factor": 1.19,
+   "avg_trade_pct": 1.47
+  },
+  "sleeve_D1": {
+   "trades": 490,
+   "win_rate_pct": 44.5,
+   "avg_win_pct": 24.5,
+   "avg_loss_pct": -12.01,
+   "payoff_ratio": 2.04,
+   "profit_factor": 1.29,
+   "avg_trade_pct": 4.23
+  },
+  "sleeve_H4": {
+   "trades": 1933,
+   "win_rate_pct": 47.0,
+   "avg_win_pct": 9.36,
+   "avg_loss_pct": -6.3,
+   "payoff_ratio": 1.48,
+   "profit_factor": 1.16,
+   "avg_trade_pct": 1.06
+  },
+  "sleeve_H1": {
+   "trades": 1998,
+   "win_rate_pct": 48.3,
+   "avg_win_pct": 9.03,
+   "avg_loss_pct": -6.12,
+   "payoff_ratio": 1.48,
+   "profit_factor": 1.18,
+   "avg_trade_pct": 1.2
+  },
+  "monthly": {
+   "months": 69,
+   "positive_pct": 58.0,
+   "mean_pct": 3.2,
+   "median_pct": 1.36,
+   "worst_pct": -17.52,
+   "worst_month": "2022-05",
+   "best_pct": 74.68,
+   "best_month": "2021-01",
+   "p10_pct": -9.22,
+   "p90_pct": 17.07
+  },
+  "monthly_excl_2021": {
+   "months": 57,
+   "positive_pct": 56.1,
+   "mean_pct": 0.52,
+   "median_pct": 0.64,
+   "worst_pct": -17.52,
+   "best_pct": 20.08
+  },
+  "year_paths": {
+   "n_windows": 58,
+   "first_start": "2021-01",
+   "last_start": "2025-10",
+   "end12_worst": 5836,
+   "end12_worst_start": "2022-01",
+   "end12_median": 10601,
+   "end12_best": 47913,
+   "end12_best_start": "2021-01",
+   "share_end12_below_10k_pct": 43.1,
+   "worst_drawdown_inside_any_window_pct": 42.0
+  },
+  "year_2022_path": [
+   8535,
+   8857,
+   9255,
+   8249,
+   6803,
+   6156,
+   6758,
+   6623,
+   6645,
+   6861,
+   6226,
+   5836
+  ]
+ },
+ "RS": {
+  "all": {
+   "trades": 8846,
+   "win_rate_pct": 52.0,
+   "avg_win_pct": 10.45,
+   "avg_loss_pct": -9.47,
+   "payoff_ratio": 1.1,
+   "profit_factor": 1.13,
+   "avg_trade_pct": 0.88
+  },
+  "long": {
+   "trades": 4421,
+   "win_rate_pct": 47.3,
+   "avg_win_pct": 10.78,
+   "avg_loss_pct": -6.89,
+   "payoff_ratio": 1.57,
+   "profit_factor": 1.22,
+   "avg_trade_pct": 1.47
+  },
+  "short": {
+   "trades": 4425,
+   "win_rate_pct": 56.6,
+   "avg_win_pct": 10.17,
+   "avg_loss_pct": -12.6,
+   "payoff_ratio": 0.81,
+   "profit_factor": 1.07,
+   "avg_trade_pct": 0.29
+  },
+  "sleeve_D1": {
+   "trades": 1132,
+   "win_rate_pct": 52.8,
+   "avg_win_pct": 19.02,
+   "avg_loss_pct": -15.99,
+   "payoff_ratio": 1.19,
+   "profit_factor": 1.23,
+   "avg_trade_pct": 2.5
+  },
+  "sleeve_H4": {
+   "trades": 3746,
+   "win_rate_pct": 51.4,
+   "avg_win_pct": 9.3,
+   "avg_loss_pct": -8.46,
+   "payoff_ratio": 1.1,
+   "profit_factor": 1.12,
+   "avg_trade_pct": 0.67
+  },
+  "sleeve_H1": {
+   "trades": 3968,
+   "win_rate_pct": 52.3,
+   "avg_win_pct": 9.04,
+   "avg_loss_pct": -8.6,
+   "payoff_ratio": 1.05,
+   "profit_factor": 1.09,
+   "avg_trade_pct": 0.62
+  },
+  "monthly": {
+   "months": 69,
+   "positive_pct": 76.8,
+   "mean_pct": 3.59,
+   "median_pct": 3.35,
+   "worst_pct": -16.85,
+   "worst_month": "2024-09",
+   "best_pct": 60.19,
+   "best_month": "2021-01",
+   "p10_pct": -6.51,
+   "p90_pct": 9.65
+  },
+  "monthly_excl_2021": {
+   "months": 57,
+   "positive_pct": 73.7,
+   "mean_pct": 2.04,
+   "median_pct": 3.23,
+   "worst_pct": -16.85,
+   "best_pct": 15.55
+  },
+  "year_paths": {
+   "n_windows": 58,
+   "first_start": "2021-01",
+   "last_start": "2025-10",
+   "end12_worst": 10375,
+   "end12_worst_start": "2023-10",
+   "end12_median": 13035,
+   "end12_best": 31228,
+   "end12_best_start": "2021-01",
+   "share_end12_below_10k_pct": 0.0,
+   "worst_drawdown_inside_any_window_pct": 16.9
+  },
+  "year_2022_path": [
+   9917,
+   10920,
+   10636,
+   11650,
+   11701,
+   12810,
+   11196,
+   11820,
+   12202,
+   12352,
+   12782,
+   13654
+  ]
+ }
+}
+LO
+ month  worst  p10  median   p90    best
+     1 8248.0 9118   10158 11831 17468.0
+     2 7351.0 8804   10362 12281 24770.0
+     3 6651.0 8610   10171 12768 29329.0
+     4 6950.0 8578   10391 13468 37114.0
+     5 6803.0 7971   10411 14355 35682.0
+     6 6156.0 7875   10500 14388 33385.0
+     7 5800.0 7696   10897 14667 36003.0
+     8 6143.0 7716   10913 15155 43845.0
+     9 6240.0 7006   10996 14878 42627.0
+    10 6261.0 7129   11088 14715 48019.0
+    11 6226.0 7312   10812 14844 50857.0
+    12 5836.0 7535   10601 15268 47913.0
+RS
+ month   worst   p10  median   p90    best
+     1  8315.0  9377   10341 11063 16019.0
+     2  8661.0  9591   10739 11424 18226.0
+     3  8728.0  9585   10942 12089 19010.0
+     4  9066.0  9846   11178 12505 23556.0
+     5  9315.0  9924   11533 12697 23715.0
+     6  9637.0 10419   11204 13134 24450.0
+     7  9765.0 10479   11507 13412 26120.0
+     8 10177.0 10763   11830 13928 28271.0
+     9  9958.0 11075   12057 14312 28006.0
+    10 10615.0 11250   12370 14248 28945.0
+    11 10099.0 11379   12684 15056 30669.0
+    12 10375.0 11449   13035 15419 31228.0

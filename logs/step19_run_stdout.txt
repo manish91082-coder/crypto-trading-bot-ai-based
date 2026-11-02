@@ -1,0 +1,12 @@
+train 241372 (reference rows 64581), B test 177871 (300s)
+G0 max diff vs Step 15 B predictions: 8.326672684688674e-17
+U rows 41980; share of reference coins 0.767 (1068s)
+skill U {'AI': 0.5593, 'CONTROL': 0.4936} {'n': 41824, 'auc': 0.5592983001107646, 'ci_low': 0.5487289890721295, 'ci_high': 0.5708277261889877, 'base_rate': 0.48166124713083397}
+AI {'final': np.float64(65274.51), 'cagr_pct': np.float64(38.63), 'max_dd_pct': np.float64(73.18), 'calmar': np.float64(0.528), 'trades': 490, 'avg_trade_pct': 4.233359757752302, 'trade_ci_low_pct': 0.30065932835198783}
+CONTROL {'final': np.float64(5149.62), 'cagr_pct': np.float64(-10.91), 'max_dd_pct': np.float64(94.48), 'calmar': np.float64(-0.115), 'trades': 918, 'avg_trade_pct': 0.4281755923500349, 'trade_ci_low_pct': -1.6592268852610585}
+SIMPLE {'final': np.float64(4415.81), 'cagr_pct': np.float64(-13.26), 'max_dd_pct': np.float64(94.43), 'calmar': np.float64(-0.14), 'trades': 496, 'avg_trade_pct': 0.8098862997417392, 'trade_ci_low_pct': -3.1220818206309375}
+EW_U {'final': np.float64(24222.68), 'cagr_pct': np.float64(16.65), 'max_dd_pct': np.float64(86.65), 'calmar': np.float64(0.192), 'trades': 205, 'avg_trade_pct': 20.652302693477296, 'trade_ci_low_pct': -15.139891710050069}
+AI_cost040 {'final': np.float64(51642.74), 'cagr_pct': np.float64(33.09), 'max_dd_pct': np.float64(74.28), 'calmar': np.float64(0.445), 'trades': 490, 'avg_trade_pct': 3.9211249084045607, 'trade_ci_low_pct': 0.0002050272755229435}
+BTC_HOLD {'final': np.float64(25051.67), 'cagr_pct': np.float64(17.34), 'max_dd_pct': np.float64(69.28), 'calmar': np.float64(0.25), 'trades': 1, 'avg_trade_pct': 187.67663218025987, 'trade_ci_low_pct': 187.67663218025987}
+
+GATES: {"G0": true, "G1_skill": true, "G2a_cagr": true, "G2b_calmar": true, "G2c_trade_ci": true, "G2d_years": false, "G2e_cost040": true, "G2f_maxdd": false, "decision": "PARTIAL_SKILL_RULE_FAILS"} (1162s)

@@ -1,0 +1,3 @@
+[V1 PASS] protocol; 21870 files OK/404; scale gate re-derived for 10 coins
+[V2 PASS] 150 H1 short trades: prices, funding (plain loop), liquidation rule and P&L re-derived
+[V3 PASS] G0 (both periods) and gates re-derived: {'G0': True, 'G1': True, 'G2': True, 'G3': True, 'G4': True, 'G5': True, 'G6': True, 'decision': 'PASS'}

@@ -1,0 +1,2 @@
+[check PASS] MAX7 and spot sigma60 re-derived with plain loops for 60 coin-days
+[check PASS] funding mean-9, perp age and 30-day perp quote volume re-derived for 210 coin-dates

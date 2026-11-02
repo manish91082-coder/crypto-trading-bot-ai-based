@@ -1,0 +1,13 @@
+[PASS] D1: dd 5.0000% at a=10 (H* 30) -> [] (expected [])
+[PASS] D2: dd 8.0000% at a=10 (H* 30) -> [('dd_yellow', 'H30')] (expected [('dd_yellow', 'H30')])
+[PASS] D3: dd 10.0000% at a=10 (H* 30) -> [('dd_red', 'H30')] (expected [('dd_red', 'H30')])
+[PASS] D4: dd 10.0000% at a=45 (H* 90) -> [] (expected [])
+[PASS] D5: 20% fall before start, flat after: dd 0.0, base 2026-10-25 23:00:00 -> no dd condition
+[PASS] D6: run1 ['dd_yellow'], run2 0 new, after a 10% fall ['dd_red']; messages sent 2; msg: ECO tmpnfmax2jr [dd_yellow] drawdown 8.00% since 2026-10-25 23:00:00 (peak 10000.00, now 10000.00, age 10 d) > YELLOW 7.36% (DDX B_ALL p95, H* 30 d); 
+[PASS] D7: with 5 junk records: dd 0.080000 = 0.080000, n 243 = 243
+[PASS] D8: missing config -> [('dd_alarm_off', '-')]
+[PASS] D9: a = 30 / 31 / 400 -> H* [30, 90, 365]; a=0 -> H* 30; only pre-start records -> None
+[PASS] D10: bands equal the CSV (4 rows); CSV sha b53e2c1095a4 = file b53e2c1095a4; start 2026-10-26T00:00:00
+[PASS] D11: job_fail -> [('job_fail_MK1', '2026-10-28T06:20:01Z')]; JOBS 29 = crontab run_job.sh names 29: True
+[PASS] D12: test_eco_core.py exit 0: TOTAL 43 checks, FAIL 0; [A2-18 PASS] alerts: first run ['halted', 'job_fail_ECO_Veri
+TOTAL 12 checks, FAIL 0

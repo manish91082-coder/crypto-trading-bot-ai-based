@@ -1,0 +1,393 @@
+[2026-10-27 02:17:01] stage lookahead; code f4d5fec6c1dc; protocol bfd73f290513
+[2026-10-27 02:17:58] garch fitted on D in 53 s: {"GARCH_15m": {"params": [0.05, 0.05, 0.9], "nll": 39372.46936001447, "success": true, "n_D": 140103, "mu": 1.2647635098435301e-05, "sd": 0.00380448634646311}, "GJR_15m": {"params": [0.05, 0.03, 0.9, 0.04], "nll": 39360.60691030927, "success": true, "n_D": 140103, "mu": 1.2647635098435301e-05, "sd": 0.00380448634646311}, "EGARCH_15m": {"params": [0.016816313103649807, 0.29545408513739513, 0.9744639650205132, -0.010893522378372865], "nll": 24835.628469685624, "success": true, "n_D": 140103, "mu": 1.2647635098435301e-05, "sd": 0.00380448634646311}, "GARCH_1h": {"params": [0.012338830566067601, 0.10487396880926164, 0.8950260319869614], "nll": 10022.229213264414, "success": true, "n_D": 35032, "mu": 5.060964831619369e-05, "sd": 0.0073560991617756194}, "GJR_1h": {"params": [0.01245647746799322, 0.1013030337677085, 0.894467494377319, 0.008258943709944387], "nll": 10020.370077911079, "success": true, "n_D": 35032, "mu": 5.060964831619369e-05, "sd": 0.0073560991617756194}, "EGARCH_1h": {"params": [0.020990548358520718, 0.23592096184886316, 0.9711455089449695, -0.011665775468924828], "nll": 9614.524005548932, "success": true, "n_D": 35032, "mu": 5.060964831619369e-05, "sd": 0.0073560991617756194}, "GARCH_4h": {"params": [0.006122530562573157, 0.05885146895436472, 0.938919212142572], "nll": 3009.2079357422044, "success": true, "n_D": 8764, "mu": 0.00020252795660160732, "sd": 0.01423655563132115}, "GJR_4h": {"params": [0.006172876554522621, 0.05611481187605245, 0.9390979720287264, 0.004792769268109097], "nll": 3008.7259984640145, "success": true, "n_D": 8764, "mu": 0.00020252795660160732, "sd": 0.01423655563132115}, "EGARCH_4h": {"params": [0.016860712786509417, 0.18203613730747534, 0.9787515121064319, -0.006883895424353431], "nll": 2919.141767433415, "success": true, "n_D": 8764, "mu": 0.00020252795660160732, "sd": 0.01423655563132115}}
+[2026-10-27 02:20:53] stage lookahead; code cf6fd17860c7; protocol bfd73f290513
+[2026-10-27 02:21:32] garch fitted on D in 35 s: {"GARCH_15m": {"params": [0.010234389952957312, 0.13140894890636795, 0.868491051093632], "nll": 26974.474672471457, "success": true, "nit": 12, "n_D": 140103, "mu": 1.2647635098435301e-05, "sd": 0.00380448634646311}, "GJR_15m": {"params": [0.010420988879985061, 0.12391862674981825, 0.8671684141270827, 0.017625918246198122], "nll": 26949.256534616095, "success": true, "nit": 12, "n_D": 140103, "mu": 1.2647635098435301e-05, "sd": 0.00380448634646311}, "EGARCH_15m": {"params": [0.016816313053503146, 0.29545411456859627, 0.9744639604823341, -0.01089353980962808], "nll": 24835.6284696859, "success": true, "nit": 15, "n_D": 140103, "mu": 1.2647635098435301e-05, "sd": 0.00380448634646311}, "GARCH_1h": {"params": [0.012338802302297008, 0.104873831818252, 0.895026168181748], "nll": 10022.229214267632, "success": true, "nit": 15, "n_D": 35032, "mu": 5.060964831619369e-05, "sd": 0.0073560991617756194}, "GJR_1h": {"params": [0.012456449579915185, 0.10130272655379251, 0.8944676298052383, 0.008259287281938402], "nll": 10020.370077910175, "success": true, "nit": 15, "n_D": 35032, "mu": 5.060964831619369e-05, "sd": 0.0073560991617756194}, "EGARCH_1h": {"params": [0.020990549448176146, 0.23592090611845873, 0.9711455294023995, -0.011665672640773202], "nll": 9614.52400554927, "success": true, "nit": 12, "n_D": 35032, "mu": 5.060964831619369e-05, "sd": 0.0073560991617756194}, "GARCH_4h": {"params": [0.006122518390450647, 0.05885142511045792, 0.93891926329036], "nll": 3009.207935742366, "success": true, "nit": 19, "n_D": 8764, "mu": 0.00020252795660160732, "sd": 0.01423655563132115}, "GJR_4h": {"params": [0.006172873432715912, 0.05611488317538789, 0.9390978877693424, 0.004792729062282361], "nll": 3008.7259984667035, "success": true, "nit": 24, "n_D": 8764, "mu": 0.00020252795660160732, "sd": 0.01423655563132115}, "EGARCH_4h": {"params": [0.01686071247723021, 0.18203618359476584, 0.9787515011797965, -0.006883903067602998], "nll": 2919.1417674334207, "success": true, "nit": 15, "n_D": 8764, "mu": 0.00020252795660160732, "sd": 0.01423655563132115}}
+[2026-10-27 02:22:22] batch2 signals: 324 configs in 50 s
+[2026-10-27 02:22:33] lookahead cut 2021-01-19 16:00:00: 0 configs differ []
+[2026-10-27 02:22:43] lookahead cut 2021-03-13 02:05:00: 0 configs differ []
+[2026-10-27 02:22:59] lookahead cut 2021-10-25 19:35:00: 0 configs differ []
+[2026-10-27 02:23:21] lookahead cut 2022-03-03 22:50:00: 0 configs differ []
+[2026-10-27 02:23:38] lookahead cut 2022-04-03 08:50:00: 0 configs differ []
+[2026-10-27 02:23:54] lookahead cut 2022-04-23 18:25:00: 0 configs differ []
+[2026-10-27 02:24:10] lookahead cut 2022-08-12 01:40:00: 0 configs differ []
+[2026-10-27 02:24:28] lookahead cut 2023-01-15 05:45:00: 0 configs differ []
+[2026-10-27 02:24:49] lookahead cut 2023-03-16 12:20:00: 0 configs differ []
+[2026-10-27 02:25:13] lookahead cut 2023-05-31 07:45:00: 0 configs differ []
+[2026-10-27 02:25:35] lookahead cut 2023-07-20 03:15:00: 0 configs differ []
+[2026-10-27 02:26:05] lookahead cut 2024-06-17 12:45:00: 0 configs differ []
+[2026-10-27 02:26:35] lookahead cut 2024-08-11 15:45:00: 0 configs differ []
+[2026-10-27 02:27:06] lookahead cut 2024-08-23 09:15:00: 0 configs differ []
+[2026-10-27 02:27:42] lookahead cut 2025-01-30 22:05:00: 0 configs differ []
+[2026-10-27 02:28:20] lookahead cut 2025-03-11 23:35:00: 0 configs differ []
+[2026-10-27 02:29:01] lookahead cut 2025-03-23 02:25:00: 0 configs differ []
+[2026-10-27 02:29:49] lookahead cut 2026-04-24 06:40:00: 0 configs differ []
+[2026-10-27 02:30:40] lookahead cut 2026-07-13 18:35:00: 0 configs differ []
+[2026-10-27 02:31:26] lookahead cut 2026-09-03 21:40:00: 0 configs differ []
+[2026-10-27 02:31:27] lookahead: 0 configs with any difference over 20 cutoffs; zero-signal configs []
+[2026-10-27 02:31:50] stage batch2; code cf6fd17860c7; protocol bfd73f290513
+[2026-10-27 02:33:00] batch2 signals: 324 configs in 67 s
+[2026-10-27 02:33:03] batch2: A3.01_NATR14_LOW_follow_15m done
+[2026-10-27 02:33:05] batch2: A3.01_NATR14_LOW_fade_15m done
+[2026-10-27 02:33:07] batch2: A3.01_NATR14_HIGH_follow_15m done
+[2026-10-27 02:33:10] batch2: A3.01_NATR14_HIGH_fade_15m done
+[2026-10-27 02:33:12] batch2: A3.02a_RV20_LOW_follow_15m done
+[2026-10-27 02:33:15] batch2: A3.02a_RV20_LOW_fade_15m done
+[2026-10-27 02:33:17] batch2: A3.02a_RV20_HIGH_follow_15m done
+[2026-10-27 02:33:19] batch2: A3.02a_RV20_HIGH_fade_15m done
+[2026-10-27 02:33:22] batch2: A3.02b_EWMA_LOW_follow_15m done
+[2026-10-27 02:33:25] batch2: A3.02b_EWMA_LOW_fade_15m done
+[2026-10-27 02:33:28] batch2: A3.02b_EWMA_HIGH_follow_15m done
+[2026-10-27 02:33:31] batch2: A3.02b_EWMA_HIGH_fade_15m done
+[2026-10-27 02:33:34] batch2: A3.03a_Parkinson20_LOW_follow_15m done
+[2026-10-27 02:33:36] batch2: A3.03a_Parkinson20_LOW_fade_15m done
+[2026-10-27 02:33:39] batch2: A3.03a_Parkinson20_HIGH_follow_15m done
+[2026-10-27 02:33:41] batch2: A3.03a_Parkinson20_HIGH_fade_15m done
+[2026-10-27 02:33:43] batch2: A3.03b_GarmanKlass20_LOW_follow_15m done
+[2026-10-27 02:33:45] batch2: A3.03b_GarmanKlass20_LOW_fade_15m done
+[2026-10-27 02:33:48] batch2: A3.03b_GarmanKlass20_HIGH_follow_15m done
+[2026-10-27 02:33:50] batch2: A3.03b_GarmanKlass20_HIGH_fade_15m done
+[2026-10-27 02:33:52] batch2: A3.03c_RogersSatchell20_LOW_follow_15m done
+[2026-10-27 02:33:54] batch2: A3.03c_RogersSatchell20_LOW_fade_15m done
+[2026-10-27 02:33:56] batch2: A3.03c_RogersSatchell20_HIGH_follow_15m done
+[2026-10-27 02:33:58] batch2: A3.03c_RogersSatchell20_HIGH_fade_15m done
+[2026-10-27 02:34:00] batch2: A3.03d_YangZhang20_LOW_follow_15m done
+[2026-10-27 02:34:03] batch2: A3.03d_YangZhang20_LOW_fade_15m done
+[2026-10-27 02:34:05] batch2: A3.03d_YangZhang20_HIGH_follow_15m done
+[2026-10-27 02:34:07] batch2: A3.03d_YangZhang20_HIGH_fade_15m done
+[2026-10-27 02:34:09] batch2: A3.04a_GARCH_LOW_follow_15m done
+[2026-10-27 02:34:12] batch2: A3.04a_GARCH_LOW_fade_15m done
+[2026-10-27 02:34:14] batch2: A3.04a_GARCH_HIGH_follow_15m done
+[2026-10-27 02:34:17] batch2: A3.04a_GARCH_HIGH_fade_15m done
+[2026-10-27 02:34:20] batch2: A3.04b_GJR_LOW_follow_15m done
+[2026-10-27 02:34:22] batch2: A3.04b_GJR_LOW_fade_15m done
+[2026-10-27 02:34:25] batch2: A3.04b_GJR_HIGH_follow_15m done
+[2026-10-27 02:34:28] batch2: A3.04b_GJR_HIGH_fade_15m done
+[2026-10-27 02:34:30] batch2: A3.04c_EGARCH_LOW_follow_15m done
+[2026-10-27 02:34:32] batch2: A3.04c_EGARCH_LOW_fade_15m done
+[2026-10-27 02:34:36] batch2: A3.04c_EGARCH_HIGH_follow_15m done
+[2026-10-27 02:34:38] batch2: A3.04c_EGARCH_HIGH_fade_15m done
+[2026-10-27 02:34:40] batch2: A3.08a_VoV20_LOW_follow_15m done
+[2026-10-27 02:34:43] batch2: A3.08a_VoV20_LOW_fade_15m done
+[2026-10-27 02:34:45] batch2: A3.08a_VoV20_HIGH_follow_15m done
+[2026-10-27 02:34:47] batch2: A3.08a_VoV20_HIGH_fade_15m done
+[2026-10-27 02:34:50] batch2: A3.08c_Kurt50_LOW_follow_15m done
+[2026-10-27 02:34:52] batch2: A3.08c_Kurt50_LOW_fade_15m done
+[2026-10-27 02:34:54] batch2: A3.08c_Kurt50_HIGH_follow_15m done
+[2026-10-27 02:34:56] batch2: A3.08c_Kurt50_HIGH_fade_15m done
+[2026-10-27 02:34:59] batch2: A4.08_VPIN50_LOW_follow_15m done
+[2026-10-27 02:35:01] batch2: A4.08_VPIN50_LOW_fade_15m done
+[2026-10-27 02:35:03] batch2: A4.08_VPIN50_HIGH_follow_15m done
+[2026-10-27 02:35:05] batch2: A4.08_VPIN50_HIGH_fade_15m done
+[2026-10-27 02:35:07] batch2: A4.09a_Kyle50_LOW_follow_15m done
+[2026-10-27 02:35:09] batch2: A4.09a_Kyle50_LOW_fade_15m done
+[2026-10-27 02:35:12] batch2: A4.09a_Kyle50_HIGH_follow_15m done
+[2026-10-27 02:35:14] batch2: A4.09a_Kyle50_HIGH_fade_15m done
+[2026-10-27 02:35:16] batch2: A4.09b_Amihud20_LOW_follow_15m done
+[2026-10-27 02:35:18] batch2: A4.09b_Amihud20_LOW_fade_15m done
+[2026-10-27 02:35:21] batch2: A4.09b_Amihud20_HIGH_follow_15m done
+[2026-10-27 02:35:23] batch2: A4.09b_Amihud20_HIGH_fade_15m done
+[2026-10-27 02:35:25] batch2: A4.09c_Roll50_LOW_follow_15m done
+[2026-10-27 02:35:27] batch2: A4.09c_Roll50_LOW_fade_15m done
+[2026-10-27 02:35:30] batch2: A4.09c_Roll50_HIGH_follow_15m done
+[2026-10-27 02:35:32] batch2: A4.09c_Roll50_HIGH_fade_15m done
+[2026-10-27 02:35:34] batch2: A3.01x_ATRexp_follow_15m done
+[2026-10-27 02:35:36] batch2: A3.01x_ATRexp_fade_15m done
+[2026-10-27 02:35:38] batch2: A3.05_Squeeze_follow_15m done
+[2026-10-27 02:35:40] batch2: A3.05_Squeeze_fade_15m done
+[2026-10-27 02:35:43] batch2: A3.06a_NR7_follow_15m done
+[2026-10-27 02:35:45] batch2: A3.06a_NR7_fade_15m done
+[2026-10-27 02:35:48] batch2: A3.06b_NR4_follow_15m done
+[2026-10-27 02:35:51] batch2: A3.06b_NR4_fade_15m done
+[2026-10-27 02:35:54] batch2: A3.06c_InsideBar_follow_15m done
+[2026-10-27 02:35:56] batch2: A3.06c_InsideBar_fade_15m done
+[2026-10-27 02:36:01] batch2: A3.07_WilliamsVB_follow_15m done
+[2026-10-27 02:36:07] batch2: A3.07_WilliamsVB_fade_15m done
+[2026-10-27 02:36:10] batch2: A3.08b_Skew50_follow_15m done
+[2026-10-27 02:36:12] batch2: A3.08b_Skew50_fade_15m done
+[2026-10-27 02:36:14] batch2: A3.09_Jump_follow_15m done
+[2026-10-27 02:36:15] batch2: A3.09_Jump_fade_15m done
+[2026-10-27 02:36:21] batch2: A4.01a_OBV_follow_15m done
+[2026-10-27 02:36:27] batch2: A4.01a_OBV_fade_15m done
+[2026-10-27 02:36:32] batch2: A4.01b_ChaikinOsc_follow_15m done
+[2026-10-27 02:36:37] batch2: A4.01b_ChaikinOsc_fade_15m done
+[2026-10-27 02:36:42] batch2: A4.01c_CMF20_follow_15m done
+[2026-10-27 02:36:46] batch2: A4.01c_CMF20_fade_15m done
+[2026-10-27 02:36:52] batch2: A4.02a_VPT_follow_15m done
+[2026-10-27 02:36:58] batch2: A4.02a_VPT_fade_15m done
+[2026-10-27 02:37:03] batch2: A4.02b_EMV14_follow_15m done
+[2026-10-27 02:37:09] batch2: A4.02b_EMV14_fade_15m done
+[2026-10-27 02:37:15] batch2: A4.02c_Klinger_follow_15m done
+[2026-10-27 02:37:21] batch2: A4.02c_Klinger_fade_15m done
+[2026-10-27 02:37:26] batch2: A4.03a_NVI_follow_15m done
+[2026-10-27 02:37:31] batch2: A4.03a_NVI_fade_15m done
+[2026-10-27 02:37:35] batch2: A4.03b_PVI_follow_15m done
+[2026-10-27 02:37:39] batch2: A4.03b_PVI_fade_15m done
+[2026-10-27 02:37:44] batch2: A4.04a_CVD_follow_15m done
+[2026-10-27 02:37:49] batch2: A4.04a_CVD_fade_15m done
+[2026-10-27 02:37:50] batch2: A4.04b_CVDz_follow_15m done
+[2026-10-27 02:37:52] batch2: A4.04b_CVDz_fade_15m done
+[2026-10-27 02:37:54] batch2: A4.05_TradesZ_follow_15m done
+[2026-10-27 02:37:56] batch2: A4.05_TradesZ_fade_15m done
+[2026-10-27 02:38:00] batch2: A4.06_RelVol_follow_15m done
+[2026-10-27 02:38:04] batch2: A4.06_RelVol_fade_15m done
+[2026-10-27 02:38:07] batch2: A4.07_VolProfile_follow_15m done
+[2026-10-27 02:38:11] batch2: A4.07_VolProfile_fade_15m done
+[2026-10-27 02:38:13] batch2: A3.01_NATR14_LOW_follow_1h done
+[2026-10-27 02:38:15] batch2: A3.01_NATR14_LOW_fade_1h done
+[2026-10-27 02:38:17] batch2: A3.01_NATR14_HIGH_follow_1h done
+[2026-10-27 02:38:19] batch2: A3.01_NATR14_HIGH_fade_1h done
+[2026-10-27 02:38:21] batch2: A3.02a_RV20_LOW_follow_1h done
+[2026-10-27 02:38:23] batch2: A3.02a_RV20_LOW_fade_1h done
+[2026-10-27 02:38:24] batch2: A3.02a_RV20_HIGH_follow_1h done
+[2026-10-27 02:38:27] batch2: A3.02a_RV20_HIGH_fade_1h done
+[2026-10-27 02:38:28] batch2: A3.02b_EWMA_LOW_follow_1h done
+[2026-10-27 02:38:30] batch2: A3.02b_EWMA_LOW_fade_1h done
+[2026-10-27 02:38:32] batch2: A3.02b_EWMA_HIGH_follow_1h done
+[2026-10-27 02:38:34] batch2: A3.02b_EWMA_HIGH_fade_1h done
+[2026-10-27 02:38:37] batch2: A3.03a_Parkinson20_LOW_follow_1h done
+[2026-10-27 02:38:39] batch2: A3.03a_Parkinson20_LOW_fade_1h done
+[2026-10-27 02:38:41] batch2: A3.03a_Parkinson20_HIGH_follow_1h done
+[2026-10-27 02:38:43] batch2: A3.03a_Parkinson20_HIGH_fade_1h done
+[2026-10-27 02:38:46] batch2: A3.03b_GarmanKlass20_LOW_follow_1h done
+[2026-10-27 02:38:49] batch2: A3.03b_GarmanKlass20_LOW_fade_1h done
+[2026-10-27 02:38:51] batch2: A3.03b_GarmanKlass20_HIGH_follow_1h done
+[2026-10-27 02:38:54] batch2: A3.03b_GarmanKlass20_HIGH_fade_1h done
+[2026-10-27 02:38:55] batch2: A3.03c_RogersSatchell20_LOW_follow_1h done
+[2026-10-27 02:38:58] batch2: A3.03c_RogersSatchell20_LOW_fade_1h done
+[2026-10-27 02:39:00] batch2: A3.03c_RogersSatchell20_HIGH_follow_1h done
+[2026-10-27 02:39:01] batch2: A3.03c_RogersSatchell20_HIGH_fade_1h done
+[2026-10-27 02:39:04] batch2: A3.03d_YangZhang20_LOW_follow_1h done
+[2026-10-27 02:39:06] batch2: A3.03d_YangZhang20_LOW_fade_1h done
+[2026-10-27 02:39:07] batch2: A3.03d_YangZhang20_HIGH_follow_1h done
+[2026-10-27 02:39:09] batch2: A3.03d_YangZhang20_HIGH_fade_1h done
+[2026-10-27 02:39:11] batch2: A3.04a_GARCH_LOW_follow_1h done
+[2026-10-27 02:39:13] batch2: A3.04a_GARCH_LOW_fade_1h done
+[2026-10-27 02:39:15] batch2: A3.04a_GARCH_HIGH_follow_1h done
+[2026-10-27 02:39:17] batch2: A3.04a_GARCH_HIGH_fade_1h done
+[2026-10-27 02:39:19] batch2: A3.04b_GJR_LOW_follow_1h done
+[2026-10-27 02:39:21] batch2: A3.04b_GJR_LOW_fade_1h done
+[2026-10-27 02:39:23] batch2: A3.04b_GJR_HIGH_follow_1h done
+[2026-10-27 02:39:26] batch2: A3.04b_GJR_HIGH_fade_1h done
+[2026-10-27 02:39:28] batch2: A3.04c_EGARCH_LOW_follow_1h done
+[2026-10-27 02:39:30] batch2: A3.04c_EGARCH_LOW_fade_1h done
+[2026-10-27 02:39:32] batch2: A3.04c_EGARCH_HIGH_follow_1h done
+[2026-10-27 02:39:34] batch2: A3.04c_EGARCH_HIGH_fade_1h done
+[2026-10-27 02:39:37] batch2: A3.08a_VoV20_LOW_follow_1h done
+[2026-10-27 02:39:39] batch2: A3.08a_VoV20_LOW_fade_1h done
+[2026-10-27 02:39:41] batch2: A3.08a_VoV20_HIGH_follow_1h done
+[2026-10-27 02:39:43] batch2: A3.08a_VoV20_HIGH_fade_1h done
+[2026-10-27 02:39:45] batch2: A3.08c_Kurt50_LOW_follow_1h done
+[2026-10-27 02:39:46] batch2: A3.08c_Kurt50_LOW_fade_1h done
+[2026-10-27 02:39:48] batch2: A3.08c_Kurt50_HIGH_follow_1h done
+[2026-10-27 02:39:50] batch2: A3.08c_Kurt50_HIGH_fade_1h done
+[2026-10-27 02:39:51] batch2: A4.08_VPIN50_LOW_follow_1h done
+[2026-10-27 02:39:53] batch2: A4.08_VPIN50_LOW_fade_1h done
+[2026-10-27 02:39:55] batch2: A4.08_VPIN50_HIGH_follow_1h done
+[2026-10-27 02:39:57] batch2: A4.08_VPIN50_HIGH_fade_1h done
+[2026-10-27 02:39:58] batch2: A4.09a_Kyle50_LOW_follow_1h done
+[2026-10-27 02:40:00] batch2: A4.09a_Kyle50_LOW_fade_1h done
+[2026-10-27 02:40:03] batch2: A4.09a_Kyle50_HIGH_follow_1h done
+[2026-10-27 02:40:05] batch2: A4.09a_Kyle50_HIGH_fade_1h done
+[2026-10-27 02:40:07] batch2: A4.09b_Amihud20_LOW_follow_1h done
+[2026-10-27 02:40:09] batch2: A4.09b_Amihud20_LOW_fade_1h done
+[2026-10-27 02:40:11] batch2: A4.09b_Amihud20_HIGH_follow_1h done
+[2026-10-27 02:40:13] batch2: A4.09b_Amihud20_HIGH_fade_1h done
+[2026-10-27 02:40:15] batch2: A4.09c_Roll50_LOW_follow_1h done
+[2026-10-27 02:40:16] batch2: A4.09c_Roll50_LOW_fade_1h done
+[2026-10-27 02:40:18] batch2: A4.09c_Roll50_HIGH_follow_1h done
+[2026-10-27 02:40:20] batch2: A4.09c_Roll50_HIGH_fade_1h done
+[2026-10-27 02:40:22] batch2: A3.01x_ATRexp_follow_1h done
+[2026-10-27 02:40:24] batch2: A3.01x_ATRexp_fade_1h done
+[2026-10-27 02:40:26] batch2: A3.05_Squeeze_follow_1h done
+[2026-10-27 02:40:28] batch2: A3.05_Squeeze_fade_1h done
+[2026-10-27 02:40:30] batch2: A3.06a_NR7_follow_1h done
+[2026-10-27 02:40:32] batch2: A3.06a_NR7_fade_1h done
+[2026-10-27 02:40:34] batch2: A3.06b_NR4_follow_1h done
+[2026-10-27 02:40:37] batch2: A3.06b_NR4_fade_1h done
+[2026-10-27 02:40:38] batch2: A3.06c_InsideBar_follow_1h done
+[2026-10-27 02:40:40] batch2: A3.06c_InsideBar_fade_1h done
+[2026-10-27 02:40:44] batch2: A3.07_WilliamsVB_follow_1h done
+[2026-10-27 02:40:47] batch2: A3.07_WilliamsVB_fade_1h done
+[2026-10-27 02:40:50] batch2: A3.08b_Skew50_follow_1h done
+[2026-10-27 02:40:53] batch2: A3.08b_Skew50_fade_1h done
+[2026-10-27 02:40:54] batch2: A3.09_Jump_follow_1h done
+[2026-10-27 02:40:55] batch2: A3.09_Jump_fade_1h done
+[2026-10-27 02:40:59] batch2: A4.01a_OBV_follow_1h done
+[2026-10-27 02:41:04] batch2: A4.01a_OBV_fade_1h done
+[2026-10-27 02:41:08] batch2: A4.01b_ChaikinOsc_follow_1h done
+[2026-10-27 02:41:13] batch2: A4.01b_ChaikinOsc_fade_1h done
+[2026-10-27 02:41:16] batch2: A4.01c_CMF20_follow_1h done
+[2026-10-27 02:41:19] batch2: A4.01c_CMF20_fade_1h done
+[2026-10-27 02:41:24] batch2: A4.02a_VPT_follow_1h done
+[2026-10-27 02:41:28] batch2: A4.02a_VPT_fade_1h done
+[2026-10-27 02:41:34] batch2: A4.02b_EMV14_follow_1h done
+[2026-10-27 02:41:39] batch2: A4.02b_EMV14_fade_1h done
+[2026-10-27 02:41:44] batch2: A4.02c_Klinger_follow_1h done
+[2026-10-27 02:41:49] batch2: A4.02c_Klinger_fade_1h done
+[2026-10-27 02:41:53] batch2: A4.03a_NVI_follow_1h done
+[2026-10-27 02:41:56] batch2: A4.03a_NVI_fade_1h done
+[2026-10-27 02:42:01] batch2: A4.03b_PVI_follow_1h done
+[2026-10-27 02:42:05] batch2: A4.03b_PVI_fade_1h done
+[2026-10-27 02:42:10] batch2: A4.04a_CVD_follow_1h done
+[2026-10-27 02:42:17] batch2: A4.04a_CVD_fade_1h done
+[2026-10-27 02:42:18] batch2: A4.04b_CVDz_follow_1h done
+[2026-10-27 02:42:20] batch2: A4.04b_CVDz_fade_1h done
+[2026-10-27 02:42:22] batch2: A4.05_TradesZ_follow_1h done
+[2026-10-27 02:42:24] batch2: A4.05_TradesZ_fade_1h done
+[2026-10-27 02:42:27] batch2: A4.06_RelVol_follow_1h done
+[2026-10-27 02:42:30] batch2: A4.06_RelVol_fade_1h done
+[2026-10-27 02:42:32] batch2: A4.07_VolProfile_follow_1h done
+[2026-10-27 02:42:35] batch2: A4.07_VolProfile_fade_1h done
+[2026-10-27 02:42:36] batch2: A3.01_NATR14_LOW_follow_4h done
+[2026-10-27 02:42:38] batch2: A3.01_NATR14_LOW_fade_4h done
+[2026-10-27 02:42:40] batch2: A3.01_NATR14_HIGH_follow_4h done
+[2026-10-27 02:42:42] batch2: A3.01_NATR14_HIGH_fade_4h done
+[2026-10-27 02:42:43] batch2: A3.02a_RV20_LOW_follow_4h done
+[2026-10-27 02:42:45] batch2: A3.02a_RV20_LOW_fade_4h done
+[2026-10-27 02:42:46] batch2: A3.02a_RV20_HIGH_follow_4h done
+[2026-10-27 02:42:48] batch2: A3.02a_RV20_HIGH_fade_4h done
+[2026-10-27 02:42:49] batch2: A3.02b_EWMA_LOW_follow_4h done
+[2026-10-27 02:42:51] batch2: A3.02b_EWMA_LOW_fade_4h done
+[2026-10-27 02:42:53] batch2: A3.02b_EWMA_HIGH_follow_4h done
+[2026-10-27 02:42:54] batch2: A3.02b_EWMA_HIGH_fade_4h done
+[2026-10-27 02:42:55] batch2: A3.03a_Parkinson20_LOW_follow_4h done
+[2026-10-27 02:42:57] batch2: A3.03a_Parkinson20_LOW_fade_4h done
+[2026-10-27 02:42:58] batch2: A3.03a_Parkinson20_HIGH_follow_4h done
+[2026-10-27 02:43:00] batch2: A3.03a_Parkinson20_HIGH_fade_4h done
+[2026-10-27 02:43:02] batch2: A3.03b_GarmanKlass20_LOW_follow_4h done
+[2026-10-27 02:43:03] batch2: A3.03b_GarmanKlass20_LOW_fade_4h done
+[2026-10-27 02:43:05] batch2: A3.03b_GarmanKlass20_HIGH_follow_4h done
+[2026-10-27 02:43:06] batch2: A3.03b_GarmanKlass20_HIGH_fade_4h done
+[2026-10-27 02:43:08] batch2: A3.03c_RogersSatchell20_LOW_follow_4h done
+[2026-10-27 02:43:09] batch2: A3.03c_RogersSatchell20_LOW_fade_4h done
+[2026-10-27 02:43:11] batch2: A3.03c_RogersSatchell20_HIGH_follow_4h done
+[2026-10-27 02:43:13] batch2: A3.03c_RogersSatchell20_HIGH_fade_4h done
+[2026-10-27 02:43:15] batch2: A3.03d_YangZhang20_LOW_follow_4h done
+[2026-10-27 02:43:16] batch2: A3.03d_YangZhang20_LOW_fade_4h done
+[2026-10-27 02:43:18] batch2: A3.03d_YangZhang20_HIGH_follow_4h done
+[2026-10-27 02:43:19] batch2: A3.03d_YangZhang20_HIGH_fade_4h done
+[2026-10-27 02:43:21] batch2: A3.04a_GARCH_LOW_follow_4h done
+[2026-10-27 02:43:23] batch2: A3.04a_GARCH_LOW_fade_4h done
+[2026-10-27 02:43:25] batch2: A3.04a_GARCH_HIGH_follow_4h done
+[2026-10-27 02:43:26] batch2: A3.04a_GARCH_HIGH_fade_4h done
+[2026-10-27 02:43:28] batch2: A3.04b_GJR_LOW_follow_4h done
+[2026-10-27 02:43:30] batch2: A3.04b_GJR_LOW_fade_4h done
+[2026-10-27 02:43:32] batch2: A3.04b_GJR_HIGH_follow_4h done
+[2026-10-27 02:43:34] batch2: A3.04b_GJR_HIGH_fade_4h done
+[2026-10-27 02:43:35] batch2: A3.04c_EGARCH_LOW_follow_4h done
+[2026-10-27 02:43:38] batch2: A3.04c_EGARCH_LOW_fade_4h done
+[2026-10-27 02:43:41] batch2: A3.04c_EGARCH_HIGH_follow_4h done
+[2026-10-27 02:43:43] batch2: A3.04c_EGARCH_HIGH_fade_4h done
+[2026-10-27 02:43:44] batch2: A3.08a_VoV20_LOW_follow_4h done
+[2026-10-27 02:43:46] batch2: A3.08a_VoV20_LOW_fade_4h done
+[2026-10-27 02:43:48] batch2: A3.08a_VoV20_HIGH_follow_4h done
+[2026-10-27 02:43:53] batch2: A3.08a_VoV20_HIGH_fade_4h done
+[2026-10-27 02:43:58] batch2: A3.08c_Kurt50_LOW_follow_4h done
+[2026-10-27 02:44:02] batch2: A3.08c_Kurt50_LOW_fade_4h done
+[2026-10-27 02:44:06] batch2: A3.08c_Kurt50_HIGH_follow_4h done
+[2026-10-27 02:44:10] batch2: A3.08c_Kurt50_HIGH_fade_4h done
+[2026-10-27 02:44:13] batch2: A4.08_VPIN50_LOW_follow_4h done
+[2026-10-27 02:44:17] batch2: A4.08_VPIN50_LOW_fade_4h done
+[2026-10-27 02:44:20] batch2: A4.08_VPIN50_HIGH_follow_4h done
+[2026-10-27 02:44:22] batch2: A4.08_VPIN50_HIGH_fade_4h done
+[2026-10-27 02:44:23] batch2: A4.09a_Kyle50_LOW_follow_4h done
+[2026-10-27 02:44:25] batch2: A4.09a_Kyle50_LOW_fade_4h done
+[2026-10-27 02:44:27] batch2: A4.09a_Kyle50_HIGH_follow_4h done
+[2026-10-27 02:44:28] batch2: A4.09a_Kyle50_HIGH_fade_4h done
+[2026-10-27 02:44:30] batch2: A4.09b_Amihud20_LOW_follow_4h done
+[2026-10-27 02:44:32] batch2: A4.09b_Amihud20_LOW_fade_4h done
+[2026-10-27 02:44:33] batch2: A4.09b_Amihud20_HIGH_follow_4h done
+[2026-10-27 02:44:35] batch2: A4.09b_Amihud20_HIGH_fade_4h done
+[2026-10-27 02:44:36] batch2: A4.09c_Roll50_LOW_follow_4h done
+[2026-10-27 02:44:37] batch2: A4.09c_Roll50_LOW_fade_4h done
+[2026-10-27 02:44:39] batch2: A4.09c_Roll50_HIGH_follow_4h done
+[2026-10-27 02:44:40] batch2: A4.09c_Roll50_HIGH_fade_4h done
+[2026-10-27 02:44:41] batch2: A3.01x_ATRexp_follow_4h done
+[2026-10-27 02:44:42] batch2: A3.01x_ATRexp_fade_4h done
+[2026-10-27 02:44:43] batch2: A3.05_Squeeze_follow_4h done
+[2026-10-27 02:44:44] batch2: A3.05_Squeeze_fade_4h done
+[2026-10-27 02:44:46] batch2: A3.06a_NR7_follow_4h done
+[2026-10-27 02:44:47] batch2: A3.06a_NR7_fade_4h done
+[2026-10-27 02:44:49] batch2: A3.06b_NR4_follow_4h done
+[2026-10-27 02:44:51] batch2: A3.06b_NR4_fade_4h done
+[2026-10-27 02:44:53] batch2: A3.06c_InsideBar_follow_4h done
+[2026-10-27 02:44:54] batch2: A3.06c_InsideBar_fade_4h done
+[2026-10-27 02:44:57] batch2: A3.07_WilliamsVB_follow_4h done
+[2026-10-27 02:45:00] batch2: A3.07_WilliamsVB_fade_4h done
+[2026-10-27 02:45:03] batch2: A3.08b_Skew50_follow_4h done
+[2026-10-27 02:45:05] batch2: A3.08b_Skew50_fade_4h done
+[2026-10-27 02:45:06] batch2: A3.09_Jump_follow_4h done
+[2026-10-27 02:45:07] batch2: A3.09_Jump_fade_4h done
+[2026-10-27 02:45:11] batch2: A4.01a_OBV_follow_4h done
+[2026-10-27 02:45:22] batch2: A4.01a_OBV_fade_4h done
+[2026-10-27 02:45:32] batch2: A4.01b_ChaikinOsc_follow_4h done
+[2026-10-27 02:45:36] batch2: A4.01b_ChaikinOsc_fade_4h done
+[2026-10-27 02:45:39] batch2: A4.01c_CMF20_follow_4h done
+[2026-10-27 02:45:42] batch2: A4.01c_CMF20_fade_4h done
+[2026-10-27 02:45:46] batch2: A4.02a_VPT_follow_4h done
+[2026-10-27 02:45:51] batch2: A4.02a_VPT_fade_4h done
+[2026-10-27 02:45:54] batch2: A4.02b_EMV14_follow_4h done
+[2026-10-27 02:45:58] batch2: A4.02b_EMV14_fade_4h done
+[2026-10-27 02:46:02] batch2: A4.02c_Klinger_follow_4h done
+[2026-10-27 02:46:07] batch2: A4.02c_Klinger_fade_4h done
+[2026-10-27 02:46:11] batch2: A4.03a_NVI_follow_4h done
+[2026-10-27 02:46:14] batch2: A4.03a_NVI_fade_4h done
+[2026-10-27 02:46:21] batch2: A4.03b_PVI_follow_4h done
+[2026-10-27 02:46:26] batch2: A4.03b_PVI_fade_4h done
+[2026-10-27 02:46:33] batch2: A4.04a_CVD_follow_4h done
+[2026-10-27 02:46:46] batch2: A4.04a_CVD_fade_4h done
+[2026-10-27 02:46:47] batch2: A4.04b_CVDz_follow_4h done
+[2026-10-27 02:46:48] batch2: A4.04b_CVDz_fade_4h done
+[2026-10-27 02:46:49] batch2: A4.05_TradesZ_follow_4h done
+[2026-10-27 02:46:50] batch2: A4.05_TradesZ_fade_4h done
+[2026-10-27 02:46:52] batch2: A4.06_RelVol_follow_4h done
+[2026-10-27 02:46:53] batch2: A4.06_RelVol_fade_4h done
+[2026-10-27 02:46:55] batch2: A4.07_VolProfile_follow_4h done
+[2026-10-27 02:46:57] batch2: A4.07_VolProfile_fade_4h done
+[2026-10-27 02:47:02] batch2: A4.10_VolumeBars_follow done
+[2026-10-27 02:47:06] batch2: A4.10_VolumeBars_fade done
+[2026-10-27 02:47:11] batch2: A4.10_DollarBars_follow done
+[2026-10-27 02:47:16] batch2: A4.10_DollarBars_fade done
+[2026-10-27 02:47:21] batch2: A4.10_ImbalanceBars_follow done
+[2026-10-27 02:47:25] batch2: A4.10_ImbalanceBars_fade done
+[2026-10-27 02:49:07] batch2: reports written (9583920 daily rows)
+[2026-10-27 03:04:23] batch2 gates: 25/972 in 916 s
+[2026-10-27 03:23:38] batch2 gates: 50/972 in 2071 s
+[2026-10-27 03:37:03] batch2 gates: 75/972 in 2876 s
+[2026-10-27 03:49:50] batch2 gates: 100/972 in 3643 s
+[2026-10-27 04:05:29] batch2 gates: 125/972 in 4582 s
+[2026-10-27 04:15:33] batch2 gates: 150/972 in 5186 s
+[2026-10-27 04:23:47] batch2 gates: 175/972 in 5680 s
+[2026-10-27 04:32:51] batch2 gates: 200/972 in 6224 s
+[2026-10-27 04:47:20] batch2 gates: 225/972 in 7094 s
+[2026-10-27 05:11:34] batch2 gates: 250/972 in 8547 s
+[2026-10-27 05:41:04] batch2 gates: 275/972 in 10317 s
+[2026-10-27 06:07:32] batch2 gates: 300/972 in 11905 s
+[2026-10-27 06:26:54] batch2 gates: 325/972 in 13068 s
+[2026-10-27 06:32:58] batch2 gates: 350/972 in 13431 s
+[2026-10-27 06:37:22] batch2 gates: 375/972 in 13695 s
+[2026-10-27 06:42:17] batch2 gates: 400/972 in 13990 s
+[2026-10-27 06:47:10] batch2 gates: 425/972 in 14283 s
+[2026-10-27 06:53:30] batch2 gates: 450/972 in 14663 s
+[2026-10-27 07:01:40] batch2 gates: 475/972 in 15153 s
+[2026-10-27 07:11:35] batch2 gates: 500/972 in 15748 s
+[2026-10-27 07:27:17] batch2 gates: 525/972 in 16690 s
+[2026-10-27 07:42:38] batch2 gates: 550/972 in 17611 s
+[2026-10-27 07:55:50] batch2 gates: 575/972 in 18403 s
+[2026-10-27 08:11:48] batch2 gates: 600/972 in 19361 s
+[2026-10-27 08:18:28] batch2 gates: 625/972 in 19761 s
+[2026-10-27 08:24:43] batch2 gates: 650/972 in 20137 s
+[2026-10-27 08:28:10] batch2 gates: 675/972 in 20343 s
+[2026-10-27 08:32:39] batch2 gates: 700/972 in 20612 s
+[2026-10-27 08:36:09] batch2 gates: 725/972 in 20823 s
+[2026-10-27 08:46:45] batch2 gates: 750/972 in 21458 s
+[2026-10-27 08:50:30] batch2 gates: 775/972 in 21683 s
+[2026-10-27 08:53:34] batch2 gates: 800/972 in 21867 s
+[2026-10-27 08:56:08] batch2 gates: 825/972 in 22022 s
+[2026-10-27 08:58:12] batch2 gates: 850/972 in 22145 s
+[2026-10-27 09:03:17] batch2 gates: 875/972 in 22450 s
+[2026-10-27 09:33:14] batch2 gates: 900/972 in 24247 s
+[2026-10-27 10:05:04] batch2 gates: 925/972 in 26157 s
+[2026-10-27 10:20:20] batch2 gates: 950/972 in 27073 s
+[2026-10-27 10:47:58] batch2 gates: 972/972 in 28732 s
+[2026-10-27 10:48:02] batch2 done: 972 primary configs; edges 0

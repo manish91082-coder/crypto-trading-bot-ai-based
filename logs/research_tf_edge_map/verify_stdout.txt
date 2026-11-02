@@ -1,0 +1,10 @@
+[1 PASS] G1 1m->5m recomputed: DOGEUSDT 2023-03: 0/8912 vs 0/8912; DOGEUSDT 2024-11: 0/8640 vs 0/8640; DOGEUSDT 2023-08: 1/8928 vs 1/8928; LTCUSDT 2022-11: 0/8640 vs 0/8640; LTCUSDT 2022-09: 0/8640 vs 0/8640; LTCUSDT 2022-10: 0/8928 vs 0/8928; ETHUSDT 2023-04: 0/8640 vs 0/8640; ETHUSDT 2024-02: 0/8352 vs 0/8352; ETHUSDT 2023-05: 0/8928 vs 0/8928
+[2-U1 PASS] 300 random U1 trades rebuilt with own bars/indicators/state/funding; mismatches 0 []
+[2-U2 PASS] 300 random U2 trades rebuilt with own bars/indicators/state/funding; mismatches 0 []
+[3a PASS] all cells: n_dev, gross mean, net-taker mean recomputed from trade files: n mismatches 0, max |diff| 2.2e-16
+[3b PASS] excess with own random draws: U1 30m TSMOM long: study 0.000261 own 0.000229 (3SE 0.000396); U1 5m DONCH short: study -0.000502 own -0.000520 (3SE 0.000149)
+[4a PASS] 3 TF-stat rows recomputed with own code: max |diff| 2.2e-16
+[4b PASS] G0 replication file consistent with claims: 184/392 Part 3 values matched
+[5 PASS] claims / SHAs / protocol lock consistent
+TOTAL 8 checks, FAIL 0
+exit=0

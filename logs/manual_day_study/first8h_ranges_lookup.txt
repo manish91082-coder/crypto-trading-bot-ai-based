@@ -1,0 +1,10 @@
+﻿2020-02-25 first8h range 1.950% day range 4.595%
+2020-09-06 first8h range 2.553% day range 3.525%
+2022-05-30 first8h range 5.560% day range 9.974%
+2022-07-02 first8h range 1.699% day range 2.584%
+2022-07-31 first8h range 1.560% day range 4.165%
+2023-03-01 first8h range 3.592% day range 4.257%
+2024-01-29 first8h range 1.502% day range 3.655%
+2024-03-30 first8h range 0.877% day range 1.123%
+2025-04-18 first8h range 0.852% day range 0.982%
+2026-02-13 first8h range 1.429% day range 5.481%

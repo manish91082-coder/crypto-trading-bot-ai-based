@@ -1,0 +1,10 @@
+# pinned to the versions the verified Windows runs used (2026-10-16)
+numpy==2.2.6
+pandas==3.0.5
+scipy==1.18.0
+scikit-learn==1.9.0
+joblib==1.5.3
+requests==2.34.2
+pyarrow==25.0.1
+xgboost==3.4.1
+matplotlib==3.11.2

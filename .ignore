@@ -1,0 +1,2 @@
+# Search tools (ripgrep / Claude Code Grep & Glob) skip these paths. Not a git rule; .gitignore is untouched.
+archive/

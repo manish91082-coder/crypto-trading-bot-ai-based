@@ -1,0 +1,6 @@
+[R1 PASS] 8 registry lines: hash chain and line hashes intact
+[R2 PASS] every config_sha256 equals the sha256 of its stored config
+[R3 PASS] A0 / A1 protocol SHAs == locks; data SHA == legs_all.parquet
+[R4 PASS] every A1-RESULT line points to the current A1_gate.csv and a1_trades.parquet
+[R5 PASS] trials registered 4 of 20, with result 4, pending 0
+TOTAL 5 checks, FAIL 0

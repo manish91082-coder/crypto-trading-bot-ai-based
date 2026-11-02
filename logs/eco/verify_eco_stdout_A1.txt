@@ -1,0 +1,10 @@
+[V6 PASS] 200 T4 trades (70 break-even, 70 armed only, 60 never armed) recomputed from raw 5m: mismatches 0 []; acceptance {'a': False, 'b': True, 'c': False} -> ECO-T4 FAIL: not adopted
+[V7 PASS] outage guard count recomputed: 197 of 4740596 coin-hours (4.16e-05) -> D 0.5
+[V1 PASS] N1 FINAL curves reproduce N6 T19-S2 (Calmar, DD, CAGR) in 4 windows: max |diff| 1.1e-16
+[V2 PASS] E-2 recomputed: max |Calmar diff| 8.9e-16; acceptance {'ECO-W1': {'a': True, 'b': True, 'c': True, 'd': True}, 'ECO-W2': {'a': True, 'b': True, 'c': True, 'd': True}}; choice ECO-W2; K 0.3000
+[V5 PASS] protocol lock 15a3c837046c, ECO registry chain (7 lines), claims file and derived SHAs
+[V3 PASS] targets of 200 random cycles recomputed independently (0 capped cycles skipped): mismatches 0 []
+[V4 PASS] R1 max |attribution - simulated account| 8.35e-10 over 719 cycles; R5 order-minimum violations 0; R3 cap violations 0 []; R6 two replays identical: True
+[R2 FAIL] tracking: max |eco equity - paper combination| at day end = 1.200% of E0 (gate 1.0%); last days [('2026-09-28', 9926.45, 9819.84), ('2026-09-29', 9873.44, 9790.39), ('2026-09-30', 9817.25, 9697.27)]
+[R4 PASS] F4 stops in the window: 9; executor component closed in or before the same F4 bar: 9; missed []
+TOTAL 9 checks, FAIL 1

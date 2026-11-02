@@ -1,0 +1,11 @@
+[V0 PASS] 30 training coins: new download == training data (open/close/volume, max rel diff 0.0e+00); 535 unseen coins, none of them a training coin
+[V1 PASS] protocol and Fear&Greed hashes unchanged
+[V2 PASS] AI: unseen B1 AUC 0.5299, B3 AUC 0.5246 (n 371009, raw-open labels, rank formula)
+[V3 PASS] AI: every cut-off = quantile of earlier months only; BUY = member & votes>=2
+[V4 PASS] AI: 419 shadow trades, mean net 1.395% from raw opens
+[V5 PASS] AI: independent re-simulation final 14624.50, MaxDD 30.78%
+[V2 PASS] CONTROL: unseen B1 AUC 0.5044, B3 AUC 0.4961 (n 371009, raw-open labels, rank formula)
+[V3 PASS] CONTROL: every cut-off = quantile of earlier months only; BUY = member & votes>=2
+[V4 PASS] CONTROL: 12 shadow trades, mean net 10.573% from raw opens
+[V5 PASS] CONTROL: independent re-simulation final 11829.63, MaxDD 12.85%
+[V6 PASS] gates recomputed -> PARTIAL_SKILL_BUT_TRADING_RULE_FAILS

@@ -1,0 +1,8 @@
+rows 558719 1006970 {'a_rows_identical': np.True_} (162s)
+SRV added {'sup_dist_atr_1h': 0.00018471255350209042, 'res_dist_atr_1h': 0.004027925360239134, 'vap_7d': 0.0, 'zz_state_1h': 0.0, 'zz_state_4h': 0.0, 'zz_state_1D': 0.0} (585s)
+skill {'n': 1005900, 'auc': 0.566106737490889, 'ci_low': 0.5602203334167581, 'ci_high': 0.5716788451990975, 'base_rate': 0.4997723431752659} 0.5653437356625074 {'diff': 0.0007630018283816264, 'ci_low': 2.4949888726452654e-05, 'ci_high': 0.0014635609976956843} (5082s)
+R24_SRV {'final': 149528.5, 'cagr_pct': np.float64(60.14), 'max_dd_pct': 79.8, 'calmar': np.float64(0.754), 'trades': 2072, 'avg_trade_pct': 1.121, 'trade_ci_low_pct': 0.218, 'trade_ci_high_pct': 2.257, 'avg_hold_hours': 121.5, 'ret_2021': 2449.94, 'ret_2022': -73.65, 'ret_2023': 104.29, 'ret_2024': 46.71, 'ret_2025': -23.07, 'ret_2026': -3.24}
+R24_SRV_cost040 {'final': 43697.69, 'cagr_pct': np.float64(29.27), 'max_dd_pct': 86.11, 'calmar': np.float64(0.34), 'trades': 2072, 'avg_trade_pct': 0.818, 'trade_ci_low_pct': -0.082, 'trade_ci_high_pct': 1.951, 'avg_hold_hours': 121.5, 'ret_2021': 1601.83, 'ret_2022': -80.51, 'ret_2023': 80.32, 'ret_2024': 26.82, 'ret_2025': -35.67, 'ret_2026': -10.07}
+2018-19 {'n': 204439, 'auc': 0.5480585632583289, 'ci_low': 0.5339396305901398, 'ci_high': 0.5610940960767447, 'base_rate': 0.4839634316348642} 0.5463223676039923
+
+GATES: {"G0a_rows_identical": true, "G0b_missing_lt_10pct": true, "G0c_pre_rows_identical": true, "G0": true, "G2_added_skill": true, "G3a_calmar": false, "G3b_trade_ci": true, "G3c_cost040": true, "G4_pre2020": true, "decision": "SKILL_ADD_ONLY"} (5665s)

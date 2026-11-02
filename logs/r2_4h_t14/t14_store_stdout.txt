@@ -1,0 +1,158 @@
+1/135 1INCHUSDT: trades 847, liquid 176
+2/135 ADAUSDT: trades 974, liquid 896
+3/135 ALGOUSDT: trades 1007, liquid 327
+4/135 ALICEUSDT: trades 858, liquid 187
+5/135 ALPACAUSDT: trades 612, liquid 0
+6/135 ANCUSDT: trades 129, liquid 0
+7/135 ANKRUSDT: trades 1023, liquid 82
+8/135 APEUSDT: trades 677, liquid 388
+9/135 ARKMUSDT: trades 479, liquid 99
+10/135 ASTERUSDT: trades 149, liquid 99
+11/135 ATOMUSDT: trades 1009, liquid 636
+12/135 AUCTIONUSDT: trades 782, liquid 45
+13/135 AVAXUSDT: trades 922, liquid 869
+14/135 AVNTUSDT: trades 147, liquid 17
+15/135 AXSUSDT: trades 890, liquid 424
+16/135 BAKEUSDT: trades 657, liquid 158
+17/135 BANKUSDT: trades 135, liquid 10
+18/135 BCHUSDT: trades 998, liquid 959
+19/135 BELUSDT: trades 954, liquid 63
+20/135 BERAUSDT: trades 224, liquid 35
+21/135 BICOUSDT: trades 739, liquid 0
+22/135 BIOUSDT: trades 248, liquid 58
+23/135 BMTUSDT: trades 218, liquid 0
+24/135 BNBUSDT: trades 980, liquid 893
+25/135 BONKUSDT: trades 409, liquid 300
+26/135 BTCUSDT: trades 980, liquid 980
+27/135 BTTUSDT: trades 309, liquid 77
+28/135 CELRUSDT: trades 1016, liquid 83
+29/135 CFXUSDT: trades 822, liquid 204
+30/135 CHZUSDT: trades 944, liquid 352
+31/135 COMPUSDT: trades 981, liquid 158
+32/135 DARUSDT: trades 483, liquid 8
+33/135 DENTUSDT: trades 922, liquid 94
+34/135 DOGEUSDT: trades 985, liquid 831
+35/135 DOTUSDT: trades 894, liquid 834
+36/135 EIGENUSDT: trades 308, liquid 124
+37/135 ENSOUSDT: trades 149, liquid 19
+38/135 EOSUSDT: trades 776, liquid 657
+39/135 ETCUSDT: trades 993, liquid 736
+40/135 ETHUSDT: trades 1010, liquid 1010
+41/135 EULUSDT: trades 150, liquid 0
+42/135 FETUSDT: trades 956, liquid 332
+43/135 FILUSDT: trades 874, liquid 810
+44/135 FLMUSDT: trades 754, liquid 51
+45/135 FORMUSDT: trades 231, liquid 7
+46/135 FTTUSDT: trades 451, liquid 0
+47/135 FUNUSDT: trades 971, liquid 23
+48/135 GASUSDT: trades 539, liquid 21
+49/135 GRTUSDT: trades 870, liquid 291
+50/135 HBARUSDT: trades 1008, liquid 250
+51/135 HEIUSDT: trades 250, liquid 0
+52/135 HEMIUSDT: trades 138, liquid 8
+53/135 HIFIUSDT: trades 411, liquid 17
+54/135 HIGHUSDT: trades 642, liquid 30
+55/135 HOMEUSDT: trades 190, liquid 6
+56/135 HOTUSDT: trades 995, liquid 70
+57/135 ICPUSDT: trades 762, liquid 257
+58/135 IDEXUSDT: trades 720, liquid 0
+59/135 INJUSDT: trades 904, liquid 418
+60/135 IOTXUSDT: trades 1070, liquid 31
+61/135 JASMYUSDT: trades 683, liquid 130
+62/135 JTOUSDT: trades 435, liquid 137
+63/135 KITEUSDT: trades 125, liquid 20
+64/135 KLAYUSDT: trades 468, liquid 9
+65/135 KSMUSDT: trades 900, liquid 132
+66/135 LEVERUSDT: trades 444, liquid 35
+67/135 LINAUSDT: trades 597, liquid 156
+68/135 LINKUSDT: trades 1007, liquid 969
+69/135 LITUSDT: trades 607, liquid 64
+70/135 LOOMUSDT: trades 228, liquid 14
+71/135 LQTYUSDT: trades 543, liquid 34
+72/135 LRCUSDT: trades 898, liquid 109
+73/135 LSKUSDT: trades 1043, liquid 0
+74/135 LTCUSDT: trades 1000, liquid 905
+75/135 LUNAUSDT: trades 914, liquid 192
+76/135 LUNCUSDT: trades 599, liquid 129
+77/135 MAGICUSDT: trades 613, liquid 51
+78/135 MATICUSDT: trades 675, liquid 516
+79/135 MTLUSDT: trades 1042, liquid 51
+80/135 NEARUSDT: trades 884, liquid 723
+81/135 NEOUSDT: trades 1044, liquid 179
+82/135 NIGHTUSDT: trades 77, liquid 0
+83/135 OGUSDT: trades 872, liquid 0
+84/135 ONDOUSDT: trades 232, liquid 140
+85/135 ONEUSDT: trades 961, liquid 143
+86/135 OPUSDT: trades 613, liquid 506
+87/135 ORCAUSDT: trades 268, liquid 8
+88/135 ORDIUSDT: trades 415, liquid 239
+89/135 POLYXUSDT: trades 593, liquid 36
+90/135 QNTUSDT: trades 764, liquid 0
+91/135 RAYUSDT: trades 844, liquid 15
+92/135 RENDERUSDT: trades 299, liquid 62
+93/135 RNDRUSDT: trades 379, liquid 158
+94/135 ROSEUSDT: trades 857, liquid 57
+95/135 SAGAUSDT: trades 340, liquid 88
+96/135 SAHARAUSDT: trades 179, liquid 23
+97/135 SANDUSDT: trades 869, liquid 430
+98/135 SANTOSUSDT: trades 699, liquid 1
+99/135 SEIUSDT: trades 456, liquid 277
+100/135 SHIBUSDT: trades 762, liquid 677
+101/135 SLPUSDT: trades 793, liquid 0
+102/135 SOLUSDT: trades 933, liquid 871
+103/135 SPKUSDT: trades 208, liquid 30
+104/135 STOUSDT: trades 190, liquid 0
+105/135 STRAXUSDT: trades 916, liquid 16
+106/135 STXUSDT: trades 1062, liquid 262
+107/135 SUIUSDT: trades 489, liquid 481
+108/135 SUSDT: trades 261, liquid 46
+109/135 SUSHIUSDT: trades 900, liquid 387
+110/135 SXPUSDT: trades 859, liquid 229
+111/135 SYNUSDT: trades 535, liquid 9
+112/135 THETAUSDT: trades 1012, liquid 323
+113/135 TIAUSDT: trades 417, liquid 313
+114/135 TNSRUSDT: trades 379, liquid 38
+115/135 TOMOUSDT: trades 572, liquid 70
+116/135 TONUSDT: trades 292, liquid 200
+117/135 TROYUSDT: trades 842, liquid 32
+118/135 TRXUSDT: trades 1045, liquid 785
+119/135 TWTUSDT: trades 844, liquid 0
+120/135 UMAUSDT: trades 995, liquid 20
+121/135 UNFIUSDT: trades 606, liquid 114
+122/135 UNIUSDT: trades 911, liquid 775
+123/135 VETUSDT: trades 969, liquid 251
+124/135 WLDUSDT: trades 440, liquid 436
+125/135 XEMUSDT: trades 552, liquid 17
+126/135 XLMUSDT: trades 1002, liquid 470
+127/135 XPLUSDT: trades 135, liquid 65
+128/135 XRPUSDT: trades 977, liquid 901
+129/135 XTZUSDT: trades 1014, liquid 257
+130/135 XVGUSDT: trades 771, liquid 20
+131/135 YFIIUSDT: trades 454, liquid 51
+132/135 YFIUSDT: trades 962, liquid 229
+133/135 ZENUSDT: trades 942, liquid 105
+134/135 ZILUSDT: trades 1002, liquid 143
+135/135 币安人生USDT: trades 97, liquid 18
+regression vs A2: {'a2_rows': 9740, 'matched': 9740, 'a2_rows_not_in_t14': 0, 'mismatches': {}}
+{
+ "protocol_sha": "856eee90e8327a00569adc39b1a4a7b59cd936cedb04e09d87d3265e9af2249b",
+ "candidates": 135,
+ "coins_with_trades": 135,
+ "rows_all": 90131,
+ "rows_liquid": 30889,
+ "coins_liquid": 120,
+ "regression": {
+  "a2_rows": 9740,
+  "matched": 9740,
+  "a2_rows_not_in_t14": 0,
+  "mismatches": {}
+ },
+ "liquid_by_period": {
+  "P1": 17262,
+  "P2": 10056,
+  "P3": 3571
+ },
+ "store_sha": "0698d718339a38419e15e98c7086ade86ac8eb33c54c79f6ee809c52da8aeb27",
+ "trades_sha": "2f0ea8fd8533c3239f62762b4f9d1b0971bb271ad37d291ce1676b2a04977f9d"
+}
+exit=0

@@ -1,0 +1,746 @@
+[
+ {
+  "id": "dca_final",
+  "value": "2,617",
+  "source": "RESEARCH_SPOT_DCA_SPOT_FUTURES_24_OCT_2026.md",
+  "substr": "10,000 USDT **2,617** रह गए (−73.8%",
+  "num": 2617,
+  "tol": 0.0
+ },
+ {
+  "id": "dca_dd",
+  "value": "−89.9%",
+  "source": "RESEARCH_SPOT_DCA_SPOT_FUTURES_24_OCT_2026.md",
+  "substr": "max drawdown **−89.9%**",
+  "num": -89.9,
+  "tol": 0.0
+ },
+ {
+  "id": "dca_win",
+  "value": "97%",
+  "source": "RESEARCH_SPOT_DCA_SPOT_FUTURES_24_OCT_2026.md",
+  "substr": "**97% trades profit में बंद हुए**",
+  "num": 97,
+  "tol": 0.0
+ },
+ {
+  "id": "dca_hold_pct",
+  "value": "2nd percentile",
+  "source": "RESEARCH_SPOT_DCA_SPOT_FUTURES_24_OCT_2026.md",
+  "substr": "(2nd percentile)",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "short30",
+  "value": "−13.1%",
+  "source": "RESEARCH_SPOT_DCA_SPOT_FUTURES_24_OCT_2026.md",
+  "substr": "औसत **−13.1%** प्रति trade",
+  "num": -13.1,
+  "tol": 0.0
+ },
+ {
+  "id": "carry_cagr",
+  "value": "~4.6%",
+  "source": "RESEARCH_SPOT_DCA_SPOT_FUTURES_24_OCT_2026.md",
+  "substr": "**CAGR ~4.6%, drawdown ~1%**",
+  "num": 4.6,
+  "tol": 0.0
+ },
+ {
+  "id": "carry_2026",
+  "value": "+2.2%",
+  "source": "RESEARCH_SPOT_DCA_SPOT_FUTURES_24_OCT_2026.md",
+  "substr": "2026 (सितंबर तक) +2.2%",
+  "num": 2.2,
+  "tol": 0.0
+ },
+ {
+  "id": "carry_corr",
+  "value": "0.12",
+  "source": "RESEARCH_SPOT_DCA_SPOT_FUTURES_24_OCT_2026.md",
+  "substr": "ECO–carry 0.12",
+  "num": 0.12,
+  "tol": 0.0
+ },
+ {
+  "id": "btc_30d",
+  "value": "+133%",
+  "source": "RESEARCH_SPOT_DCA_SPOT_FUTURES_24_OCT_2026.md",
+  "substr": "30 दिन में **+133%**",
+  "num": 133,
+  "tol": 0.0
+ },
+ {
+  "id": "s1_g2",
+  "value": "78.5%",
+  "source": "RESEARCH_SPOT_SLEEVE_24_OCT_2026.md",
+  "substr": "**78.5%** रहा",
+  "num": 78.5,
+  "tol": 0.0
+ },
+ {
+  "id": "s6_cagr",
+  "value": "+2.4%",
+  "source": "RESEARCH_SPOT_SLEEVE_24_OCT_2026.md",
+  "substr": "CAGR सिर्फ़ +2.4%",
+  "num": 2.4,
+  "tol": 0.0
+ },
+ {
+  "id": "s5_hold",
+  "value": "−17.4%",
+  "source": "RESEARCH_SPOT_SLEEVE_24_OCT_2026.md",
+  "substr": "**2024–26 में −17.4% सालाना",
+  "num": -17.4,
+  "tol": 0.0
+ },
+ {
+  "id": "p3_median",
+  "value": "9,985",
+  "source": "RESEARCH_ECO_MONTHLY_OUTLOOK_25_OCT_2026.md",
+  "substr": "**9,985 USDT** (−0.15%)",
+  "num": 9985,
+  "tol": 0.0
+ },
+ {
+  "id": "p3_worst",
+  "value": "9,132",
+  "source": "RESEARCH_ECO_MONTHLY_OUTLOOK_25_OCT_2026.md",
+  "substr": "**9,132 USDT** (−8.7%, फ़रवरी 2026)",
+  "num": 9132,
+  "tol": 0.0
+ },
+ {
+  "id": "p3_best",
+  "value": "10,714",
+  "source": "RESEARCH_ECO_MONTHLY_OUTLOOK_25_OCT_2026.md",
+  "substr": "**10,714 USDT** (+7.1%, अगस्त 2026)",
+  "num": 10714,
+  "tol": 0.0
+ },
+ {
+  "id": "p3_posm",
+  "value": "12 में 6",
+  "source": "RESEARCH_ECO_MONTHLY_OUTLOOK_25_OCT_2026.md",
+  "substr": "12 में 6 (50%)",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "exec_gap",
+  "value": "1.2%",
+  "source": "RESEARCH_ECO_MONTHLY_OUTLOOK_25_OCT_2026.md",
+  "substr": "**1.2% का फ़र्क**",
+  "num": 1.2,
+  "tol": 0.0
+ },
+ {
+  "id": "months23",
+  "value": "2–3 महीने",
+  "source": "RESEARCH_ECO_MONTHLY_OUTLOOK_25_OCT_2026.md",
+  "substr": "कम से कम 2–3 महीने चलने दें",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "n1_p3",
+  "value": "−12.5%",
+  "source": "RESEARCH_ROOT_CAUSE_25_OCT_2026.md",
+  "substr": "P3 में **−12.5% सालाना**",
+  "num": -12.5,
+  "tol": 0.0
+ },
+ {
+  "id": "d1_p3",
+  "value": "+15.6%",
+  "source": "RESEARCH_ROOT_CAUSE_25_OCT_2026.md",
+  "substr": "+15.6% सालाना, drawdown सिर्फ़ 12.6%",
+  "num": 15.6,
+  "tol": 0.0
+ },
+ {
+  "id": "n1_corr",
+  "value": "0.71",
+  "source": "RESEARCH_ROOT_CAUSE_25_OCT_2026.md",
+  "substr": "(साल-दर-साल BTC से correlation 0.71)",
+  "num": 0.71,
+  "tol": 0.0
+ },
+ {
+  "id": "eco_p3",
+  "value": "−0.3%",
+  "source": "RESEARCH_ROOT_CAUSE_25_OCT_2026.md",
+  "substr": "| ECO-W2 (deployed) | +65.9% | −0.3% |",
+  "num": -0.3,
+  "tol": 0.0
+ },
+ {
+  "id": "kpi",
+  "value": "हर quarter positive, drawdown 15% से कम",
+  "source": "RESEARCH_ROOT_CAUSE_25_OCT_2026.md",
+  "substr": "\"हर quarter positive, drawdown 15% से कम\"",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "posdays",
+  "value": "48%",
+  "source": "RESEARCH_ROOT_CAUSE_25_OCT_2026.md",
+  "substr": "पिछले साल 48% दिन positive थे",
+  "num": 48,
+  "tol": 0.0
+ },
+ {
+  "id": "p5m",
+  "value": "71%",
+  "source": "RESEARCH_ROOT_CAUSE_25_OCT_2026.md",
+  "substr": "| 5m | 0.19% | **60%** | **71%** | 47–49% |",
+  "num": 71,
+  "tol": 0.0
+ },
+ {
+  "id": "rc_check",
+  "value": "§5.4",
+  "source": "RESEARCH_ROOT_CAUSE_25_OCT_2026.md",
+  "substr": "**यह अगला ज़रूरी check है।**",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "n990",
+  "value": "990",
+  "source": "RESEARCH_BTC_DIRECTION_ENTRY_EXIT_25_OCT_2026.md",
+  "substr": "**990** configurations test हुईं",
+  "num": 990,
+  "tol": 0.0
+ },
+ {
+  "id": "ai_t",
+  "value": "−4.3",
+  "source": "RESEARCH_BTC_DIRECTION_ENTRY_EXIT_25_OCT_2026.md",
+  "substr": "t = −4.3",
+  "num": -4.3,
+  "tol": 0.0
+ },
+ {
+  "id": "cal168",
+  "value": "168",
+  "source": "RESEARCH_BTC_DIRECTION_ENTRY_EXIT_25_OCT_2026.md",
+  "substr": "168 में से किसी भी (दिन, घंटा) bucket का dev में t > 2 नहीं था",
+  "num": 168,
+  "tol": 0.0
+ },
+ {
+  "id": "cat139",
+  "value": "139",
+  "source": "RESEARCH_METHODS_CATALOG_26_OCT_2026.md",
+  "substr": "| A दिशा | 139 |",
+  "num": 139,
+  "tol": 0.0
+ },
+ {
+  "id": "manual_in",
+  "value": "+8.2%",
+  "source": "RESEARCH_MANUAL_10_DAYS_BTC_26_OCT_2026.md",
+  "substr": "कुल **+8.2% net**",
+  "num": 8.2,
+  "tol": 0.0
+ },
+ {
+  "id": "v1a",
+  "value": "−82.5%",
+  "source": "RESEARCH_ORACLE_9M_2026_PART_A_B_26_OCT_2026.md",
+  "substr": "**−82.5%**",
+  "num": -82.5,
+  "tol": 0.0
+ },
+ {
+  "id": "v1b",
+  "value": "−27.1%",
+  "source": "RESEARCH_ORACLE_9M_2026_PART_A_B_26_OCT_2026.md",
+  "substr": "**−27.1%**",
+  "num": -27.1,
+  "tol": 0.0
+ },
+ {
+  "id": "n272",
+  "value": "272",
+  "source": "RESEARCH_ORACLE_9M_2026_PART_A_B_26_OCT_2026.md",
+  "substr": "272 नए दिनों पर **फ़ेल**",
+  "num": 272,
+  "tol": 0.0
+ },
+ {
+  "id": "cd_gross",
+  "value": "+0.002%",
+  "source": "RESEARCH_ORACLE_9M_2026_PART_C_D_26_OCT_2026.md",
+  "substr": "सिर्फ़ **+0.002%** है",
+  "num": 0.002,
+  "tol": 0.0
+ },
+ {
+  "id": "cd_lead",
+  "value": "0/6",
+  "source": "RESEARCH_ORACLE_9M_2026_PART_C_D_26_OCT_2026.md",
+  "substr": "**फ़ेल** (0/6 साल)",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "mirror",
+  "value": "mirror edge",
+  "source": "RESEARCH_ORACLE_9M_2026_PART_C_D_26_OCT_2026.md",
+  "substr": "\"Mirror edge\" असल में था ही नहीं",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "np1_14",
+  "value": "18 में से 14",
+  "source": "RESEARCH_NONPRICE_NP1_NP3_26_OCT_2026.md",
+  "substr": "18 में से 14 (feature, समय) जोड़े",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "np_ic",
+  "value": "0.04–0.08",
+  "source": "RESEARCH_NONPRICE_NP1_NP3_26_OCT_2026.md",
+  "substr": "संकेत की ताकत IC लगभग 0.04–0.08 है",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "np4",
+  "value": "−0.123%",
+  "source": "RESEARCH_NONPRICE_NP1_NP3_26_OCT_2026.md",
+  "substr": "**−0.123%**",
+  "num": -0.123,
+  "tol": 0.0
+ },
+ {
+  "id": "noliq",
+  "value": "liquidation",
+  "source": "RESEARCH_NONPRICE_NP1_NP3_26_OCT_2026.md",
+  "substr": "| Liquidations | **उपलब्ध नहीं** (Binance इसे public नहीं देता) | — |",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "b1",
+  "value": "0/567",
+  "source": "RESEARCH_METHODS_BENCH_BATCH1_26_OCT_2026.md",
+  "substr": "(0/567)",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "gc0",
+  "value": "12 में से 0",
+  "source": "RESEARCH_GREEN_CANDLE_JAN_2026_27_OCT_2026.md",
+  "substr": "**12 में से 0 configurations पास**",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "pgg",
+  "value": "45–49%",
+  "source": "RESEARCH_GREEN_CANDLE_JAN_2026_27_OCT_2026.md",
+  "substr": "45–49% है",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "micro0",
+  "value": "0 / 180",
+  "source": "RESEARCH_MICRO_MOMENTUM_1S_2026_27_OCT_2026.md",
+  "substr": "| **0 / 180** | **0 / 180** |",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "rhythm",
+  "value": "+0.0019%",
+  "source": "RESEARCH_MICRO_MOMENTUM_1S_2026_27_OCT_2026.md",
+  "substr": "**+0.0019%**",
+  "num": 0.0019,
+  "tol": 0.0
+ },
+ {
+  "id": "p1h",
+  "value": "61.8%",
+  "source": "RESEARCH_FEE_HURDLE_MAP_27_OCT_2026.md",
+  "substr": "| 1 घंटा | 0.391% | +0.299% | 61.8% |",
+  "num": 61.8,
+  "tol": 0.0
+ },
+ {
+  "id": "p1d",
+  "value": "52.2%",
+  "source": "RESEARCH_FEE_HURDLE_MAP_27_OCT_2026.md",
+  "substr": "| **1 दिन** | 2.117% | +2.025% | **52.2%** |",
+  "num": 52.2,
+  "tol": 0.0
+ },
+ {
+  "id": "p7d",
+  "value": "50.7%",
+  "source": "RESEARCH_FEE_HURDLE_MAP_27_OCT_2026.md",
+  "substr": "| **7 दिन** | 6.177% | +6.085% | **50.7%** |",
+  "num": 50.7,
+  "tol": 0.0
+ },
+ {
+  "id": "maker513",
+  "value": "51.3%",
+  "source": "RESEARCH_FEE_HURDLE_MAP_27_OCT_2026.md",
+  "substr": "52.2% से घटकर 51.3%",
+  "num": 51.3,
+  "tol": 0.0
+ },
+ {
+  "id": "al30",
+  "value": "7.4% / 9.4%",
+  "source": "RESEARCH_DRAWDOWN_DDX_27_OCT_2026.md",
+  "substr": "| ≤ 30 दिन | 7.4% | 9.4% |",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "al90",
+  "value": "11.1% / 14.7%",
+  "source": "RESEARCH_DRAWDOWN_DDX_27_OCT_2026.md",
+  "substr": "| ≤ 90 दिन | 11.1% | 14.7% |",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "al180",
+  "value": "14.1% / 18.0%",
+  "source": "RESEARCH_DRAWDOWN_DDX_27_OCT_2026.md",
+  "substr": "| ≤ 180 दिन | 14.1% | 18.0% |",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "al365",
+  "value": "17.5% / 22.1%",
+  "source": "RESEARCH_DRAWDOWN_DDX_27_OCT_2026.md",
+  "substr": "| ≤ 1 साल | 17.5% | 22.1% |",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "ddx6",
+  "value": "6 बार",
+  "source": "RESEARCH_DRAWDOWN_DDX_27_OCT_2026.md",
+  "substr": "हर तरीक़ा fail हुआ, 6 बार।",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "paths",
+  "value": "10,000",
+  "source": "RESEARCH_DRAWDOWN_DDX_27_OCT_2026.md",
+  "substr": "stationary bootstrap किया गया: 10,000 रास्ते",
+  "num": 10000,
+  "tol": 0.0
+ },
+ {
+  "id": "b2",
+  "value": "0/972",
+  "source": "RESEARCH_METHODS_BENCH_BATCH2_27_OCT_2026.md",
+  "substr": "(0/972)",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "dsr035",
+  "value": "0.35",
+  "source": "RESEARCH_METHODS_BENCH_BATCH2_27_OCT_2026.md",
+  "substr": "सबसे ऊँचा DSR 0.35 था",
+  "num": 0.35,
+  "tol": 0.0
+ },
+ {
+  "id": "n1539",
+  "value": "1,539",
+  "source": "RESEARCH_METHODS_BENCH_BATCH2_27_OCT_2026.md",
+  "substr": "1,539 primary configs",
+  "num": 1539,
+  "tol": 0.0
+ },
+ {
+  "id": "lag62",
+  "value": "62 मिनट",
+  "source": "RESEARCH_TURN_DETECT_2026_27_OCT_2026.md",
+  "substr": "62 मिनट और 57% चाल निकल जाती है",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "leg57",
+  "value": "57%",
+  "source": "RESEARCH_TURN_DETECT_2026_27_OCT_2026.md",
+  "substr": "62 मिनट और 57% चाल निकल जाती है",
+  "num": 57,
+  "tol": 0.0
+ },
+ {
+  "id": "s296",
+  "value": "296",
+  "source": "RESEARCH_TURN_DETECT_2026_27_OCT_2026.md",
+  "substr": "296 setups",
+  "num": 296,
+  "tol": 0.0
+ },
+ {
+  "id": "auc",
+  "value": "0.53–0.55",
+  "source": "RESEARCH_TURN_DETECT_2026_27_OCT_2026.md",
+  "substr": "(AUC 0.53–0.55)",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "t40",
+  "value": "~40 turns",
+  "source": "RESEARCH_TURN_DETECT_2026_27_OCT_2026.md",
+  "substr": "~40 turns",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "fee_fut",
+  "value": "0.018%, taker 0.036%",
+  "source": "logs/fees/FEES_RECORD.md",
+  "substr": "10% → 0.018% / 0.036%",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "fee_demo",
+  "value": "0.040%",
+  "source": "logs/fees/FEES_RECORD.md",
+  "substr": "charged 0.040% taker",
+  "num": 0.04,
+  "tol": 0.0
+ },
+ {
+  "id": "fee2_dep",
+  "value": "14:20 UTC",
+  "source": "logs/fees/FEE_AMENDMENT_2_RESULTS.md",
+  "substr": "## Deployment (VM, 2026-10-25 14:20 UTC)",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "tf_r0",
+  "value": "0.1499",
+  "source": "logs/research_1d_true_fee/TRUE_FEE_1D_RESULTS.json",
+  "substr": "\"p3_2025_10_on\": 0.14985460523281935",
+  "num": 0.1499,
+  "tol": 5e-05
+ },
+ {
+  "id": "tf_r1",
+  "value": "0.2377",
+  "source": "logs/research_1d_true_fee/TRUE_FEE_1D_RESULTS.json",
+  "substr": "\"p3_2025_10_on\": 0.23771253590112118",
+  "num": 0.2377,
+  "tol": 5e-05
+ },
+ {
+  "id": "ls_rec",
+  "value": "Not deployed",
+  "source": "logs/log_ship/CODE_CHANGES_AFTER_LOCK.md",
+  "substr": "**Not deployed.** The live VM still runs v6",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "f7_period",
+  "value": "2021-01-01..2026-09-30",
+  "source": "logs/strategy_f7_risk/F7_PROTOCOL_PREREGISTERED.md",
+  "substr": "## Runs (MAIN 2021-01-01..2026-09-30",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "mk1_300",
+  "value": "300",
+  "source": "logs/eco_maker/MK1_PROTOCOL_PREREGISTERED.md",
+  "substr": "300",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "s1_d90",
+  "value": "2027-01-23",
+  "source": "logs/paper_spot_s1/PAPER_SPOT_S1_PROTOCOL_PREREGISTERED.md",
+  "substr": "**Day 90 (2027-01-23) is a process gate, not a performance gate.**",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_cron",
+  "value": "13443469f4ec",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "crontab_l_sha256 13443469f4ec6508e1e74708fa0e955e315836332fc66f27205b43a30e457de7",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_demo_dd",
+  "value": "1.775%",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "peak 10061.770683621337 maxDD_pct 1.775",
+  "num": 1.775,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_demo_n",
+  "value": "74 cycles",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "data/eco_demo cycles 74",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_demo_eq",
+  "value": "9,933.6",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "last None 9933.615177383028",
+  "num": 9933.6,
+  "tol": 0.05
+ },
+ {
+  "id": "vm_shadow_dd",
+  "value": "1.78%",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "data/eco_shadow first None 9997.881614351843 last None 9937.171525332424 peak 10063.225762254548 maxDD_pct 1.78",
+  "num": 1.78,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_tc",
+  "value": "−1.25",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "2026-10-27,True,9927.132308,9928.379444,-1.247136234",
+  "num": -1.25,
+  "tol": 0.005
+ },
+ {
+  "id": "vm_sleeve",
+  "value": "consistent",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "\"verdict\": \"consistent\"",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_sleeve_p",
+  "value": "pending",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "\"verdict\": \"pending\"",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_mk1",
+  "value": "39",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "\"n_orders\": 39",
+  "num": 39,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_fw1",
+  "value": "5",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "\"closed_trades\": 5,",
+  "num": 5,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_fw2",
+  "value": "10",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "\"closed_trades\": 10,",
+  "num": 10,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_liq",
+  "value": "28,973",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "2026-10-27,2026-10-27.jsonl.gz,28973",
+  "num": 28973,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_logship",
+  "value": "64",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "logship_runs_since_2026-10-25T13:36Z 64 nonzero 0",
+  "num": 64,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_spot",
+  "value": "1,008.57",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "\"equity\": 1008.5698271354588",
+  "num": 1008.57,
+  "tol": 0.005
+ },
+ {
+  "id": "vm_n1",
+  "value": "9,764.7",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "\"equity\": 9764.72781691861",
+  "num": 9764.7,
+  "tol": 0.05
+ },
+ {
+  "id": "vm_disk",
+  "value": "36%",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "48G   17G   31G  36% /",
+  "num": 36,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_mem",
+  "value": "3,288",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "3908         620        2587           0         991        3288",
+  "num": 3288,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_fees",
+  "value": "b76c0495",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "b76c04950e0922f4cbec27bc9bd4ded5a500fae600dd1aa444930a8a92d491a5  deploy/fees.json",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_ls_sha",
+  "value": "aca75629",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "aca7562982946ac1e09644e58defbb59d7d56274d188b6c8a86de17f963f1d57  deploy/ship_logs_drive.py",
+  "num": null,
+  "tol": 0.0
+ },
+ {
+  "id": "vm_ls_time",
+  "value": "13:36:32",
+  "source": "logs/consolidation_2026_10_28/vm_snapshot.txt",
+  "substr": "2026-10-25 19:06:32.872850291 +0530 deploy/ship_logs_drive.py",
+  "num": null,
+  "tol": 0.0
+ }
+]

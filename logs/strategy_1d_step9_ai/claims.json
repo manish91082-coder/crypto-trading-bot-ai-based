@@ -1,0 +1,234 @@
+{
+  "protocol_sha256": "b15c1ee8560ba7181ceaa708aa9729a6ad8ca6a9253444a0400a8a8bd5969109",
+  "coins": 30,
+  "entry_rows": 5164,
+  "exit_rows": 126510,
+  "entry_features": 56,
+  "exit_features": 44,
+  "crosscheck": {
+    "matched": 66248,
+    "mismatched": 133,
+    "no_hourly": 0
+  },
+  "AI_entry_skill_members": {
+    "n": 1616,
+    "auc": 0.5387195027675562,
+    "ci_low": 0.4947152460765394,
+    "ci_high": 0.5861589032838984,
+    "base_rate": 0.45173267326732675,
+    "quintile_rates": [
+      0.42901234567901236,
+      0.39628482972136225,
+      0.47368421052631576,
+      0.42105263157894735,
+      0.5386996904024768
+    ]
+  },
+  "AI_exit_skill_members": {
+    "n": 38684,
+    "auc": 0.5223720663181868,
+    "ci_low": 0.4836006274363224,
+    "ci_high": 0.5620307954657632,
+    "base_rate": 0.400734153655258,
+    "quintile_rates": [
+      0.3849037094481065,
+      0.397440868553703,
+      0.37551706308169597,
+      0.3934341476024299,
+      0.4523717203050278
+    ]
+  },
+  "AI_entry_skill_allcoins": {
+    "n": 4549,
+    "auc": 0.5371225843290883,
+    "ci_low": 0.49611400325179766,
+    "ci_high": 0.5756708351080845,
+    "base_rate": 0.45306660804572435,
+    "quintile_rates": [
+      0.4197802197802198,
+      0.42527472527472526,
+      0.4444444444444444,
+      0.4593406593406593,
+      0.5164835164835165
+    ]
+  },
+  "CONTROL_shuffled_entry_skill_members": {
+    "n": 1616,
+    "auc": 0.46361977797705556,
+    "ci_low": 0.42214104786848067,
+    "ci_high": 0.5034288124225875,
+    "base_rate": 0.45173267326732675,
+    "quintile_rates": [
+      0.5246913580246914,
+      0.43962848297213625,
+      0.43962848297213625,
+      0.4024767801857585,
+      0.4520123839009288
+    ]
+  },
+  "CONTROL_shuffled_exit_skill_members": {
+    "n": 38684,
+    "auc": 0.4635332091536281,
+    "ci_low": 0.4163043947152605,
+    "ci_high": 0.5148064674410177,
+    "base_rate": 0.400734153655258,
+    "quintile_rates": [
+      0.4543104562491922,
+      0.4500452371720305,
+      0.3474663908996898,
+      0.36099263280341215,
+      0.390849166343544
+    ]
+  },
+  "CONTROL_shuffled_entry_skill_allcoins": {
+    "n": 4549,
+    "auc": 0.4728454953500236,
+    "ci_low": 0.44721923757209403,
+    "ci_high": 0.49942821241344293,
+    "base_rate": 0.45306660804572435,
+    "quintile_rates": [
+      0.5131868131868131,
+      0.44175824175824174,
+      0.4367436743674367,
+      0.4307692307692308,
+      0.44285714285714284
+    ]
+  },
+  "portfolio": {
+    "BASELINE_all_swings": {
+      "run": "BASELINE_all_swings",
+      "final": 16698.92,
+      "total_return_pct": 66.99,
+      "cagr_pct": 9.34,
+      "max_dd_pct": 56.95,
+      "calmar": 0.164,
+      "sharpe": 0.424,
+      "trades": 400,
+      "win_rate": 25.5,
+      "profit_factor": 1.18,
+      "ret_2021": 4.15,
+      "ret_2022": -30.14,
+      "ret_2023": 119.69,
+      "ret_2024": 51.23,
+      "ret_2025": -31.96,
+      "ret_2026": 1.53,
+      "exit_reasons": {
+        "stop": 284,
+        "opposite_leg": 108,
+        "end_of_test": 8
+      }
+    },
+    "AI_entry_only": {
+      "run": "AI_entry_only",
+      "final": 14091.27,
+      "total_return_pct": 40.91,
+      "cagr_pct": 6.15,
+      "max_dd_pct": 49.96,
+      "calmar": 0.123,
+      "sharpe": 0.344,
+      "trades": 304,
+      "win_rate": 25.66,
+      "profit_factor": 1.163,
+      "ret_2021": 23.84,
+      "ret_2022": -19.89,
+      "ret_2023": 78.53,
+      "ret_2024": -16.24,
+      "ret_2025": -13.43,
+      "ret_2026": 9.71,
+      "exit_reasons": {
+        "stop": 207,
+        "opposite_leg": 89,
+        "end_of_test": 8
+      }
+    },
+    "AI_exit_only": {
+      "run": "AI_exit_only",
+      "final": 11842.54,
+      "total_return_pct": 18.43,
+      "cagr_pct": 2.99,
+      "max_dd_pct": 54.22,
+      "calmar": 0.055,
+      "sharpe": 0.245,
+      "trades": 956,
+      "win_rate": 40.48,
+      "profit_factor": 1.039,
+      "ret_2021": 19.77,
+      "ret_2022": -18.4,
+      "ret_2023": 36.45,
+      "ret_2024": 40.26,
+      "ret_2025": -30.16,
+      "ret_2026": -9.34,
+      "exit_reasons": {
+        "ai_exit": 625,
+        "stop": 297,
+        "opposite_leg": 27,
+        "end_of_test": 7
+      }
+    },
+    "AI_full": {
+      "run": "AI_full",
+      "final": 17340.14,
+      "total_return_pct": 73.4,
+      "cagr_pct": 10.06,
+      "max_dd_pct": 27.56,
+      "calmar": 0.365,
+      "sharpe": 0.624,
+      "trades": 543,
+      "win_rate": 42.54,
+      "profit_factor": 1.336,
+      "ret_2021": 13.03,
+      "ret_2022": -9.88,
+      "ret_2023": 37.46,
+      "ret_2024": 27.13,
+      "ret_2025": -10.08,
+      "ret_2026": 8.33,
+      "exit_reasons": {
+        "ai_exit": 385,
+        "stop": 135,
+        "opposite_leg": 16,
+        "end_of_test": 7
+      }
+    },
+    "CONTROL_full": {
+      "run": "CONTROL_full",
+      "final": 11011.83,
+      "total_return_pct": 10.12,
+      "cagr_pct": 1.69,
+      "max_dd_pct": 64.13,
+      "calmar": 0.026,
+      "sharpe": 0.218,
+      "trades": 363,
+      "win_rate": 23.42,
+      "profit_factor": 1.032,
+      "ret_2021": 72.05,
+      "ret_2022": -37.34,
+      "ret_2023": -14.05,
+      "ret_2024": 51.77,
+      "ret_2025": -30.5,
+      "ret_2026": 12.66,
+      "exit_reasons": {
+        "stop": 264,
+        "opposite_leg": 92,
+        "end_of_test": 6,
+        "ai_exit": 1
+      }
+    }
+  },
+  "gates": {
+    "G1_entry": {
+      "auc_ge_055": false,
+      "ci_low_gt_050": false,
+      "beats_control": true,
+      "top_q_gt_bottom_q": true
+    },
+    "G2_exit": {
+      "auc_ge_055": false,
+      "ci_low_gt_050": false,
+      "beats_control": true,
+      "top_q_gt_bottom_q": true
+    },
+    "G3_full": 1.0,
+    "G3_entry_only": 0.0,
+    "decision": "FAIL_NOTHING_DEPLOYED"
+  }
+}

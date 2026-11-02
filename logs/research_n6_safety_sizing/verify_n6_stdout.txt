@@ -1,0 +1,6 @@
+[V1 PASS] 200 S1 35% stop outcomes from raw 5m: mismatches 0 []; stopped share in file 0.0071
+[V2 PASS] S2 cap weights recomputed sequentially for coins ['ADAUSDT', 'LTCUSDT', 'BNBUSDT', 'OPUSDT', 'UMAUSDT', 'SANTOSUSDT']: max |diff| 5.6e-17
+[V3 PASS] 300 T20 multipliers recomputed from N5 predictions: mismatches 0
+[V4 PASS] T19 acceptance {'S1': False, 'S2': True, 'S3': False} -> S2; T20 gate booleans consistent; base == N3 FINAL
+[V5 PASS] protocol lock, registry T19/T20, file SHAs, code SHA
+TOTAL 5 checks, FAIL 0

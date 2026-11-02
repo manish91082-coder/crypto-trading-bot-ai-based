@@ -1,0 +1,41 @@
+coins 133 grid 2020-02-01 00:00:00 2026-10-01 00:00:00 58417 6s
+world loaded 34s
+repro A: n 31813 max|gross-TFX| 0.0e+00 max|fund-TFX| 1.4e-15
+repro B: n 973 max|gross-TFX| 0.0e+00 max|fund-TFX| 7.5e-16
+repro C: n 102126 max|gross-TFX| 0.0e+00 max|fund-TFX| 2.2e-15
+entries whose entry hour has no 1h bar (TF open taken from a later hour): 25
+stop A: stopped share 0.080
+stop B: stopped share 0.349
+stop C: stopped share 0.058
+repro D: periods 444 vs D4 444, max|unit-0.2*ret| 4.9e-17, D4-rule zero-funding legs 30
+config K0 {'dev': 2.744, 'P1': 3.471, 'P2': 1.59, 'P3': -0.348}
+config K1 {'dev': 3.257, 'P1': 3.995, 'P2': 2.866, 'P3': -0.393}
+config K2 {'dev': 2.495, 'P1': 3.223, 'P2': 1.378, 'P3': -0.137}
+config K3 {'dev': 2.731, 'P1': 3.457, 'P2': 1.55, 'P3': -0.288}
+config K4 {'dev': 2.178, 'P1': 2.684, 'P2': 2.2, 'P3': -0.745}
+config K5 {'dev': 1.634, 'P1': 2.046, 'P2': 1.141, 'P3': -0.499}
+config K6 {'dev': 2.477, 'P1': 3.16, 'P2': 1.615, 'P3': -0.373}
+adopt {'K1': True, 'K2': False, 'K3': False, 'K4': False, 'K5': False, 'K6': False} final K1 {'stop': False}
+random 0 1.416
+random 10 0.825
+random 20 0.694
+random 30 0.842
+random 40 1.874
+random 50 0.78
+random 60 1.107
+random 70 1.053
+random 80 1.339
+random 90 1.436
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\n1_portfolio.py", line 762, in <module>
+    main()
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\n1_portfolio.py", line 675, in main
+    g7r, g7n, g7bh, g7d, g7dp = g7(final_cfg)
+                                ^^^^^^^^^^^^^
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\n1_portfolio.py", line 566, in g7
+    r = run_pf(L, C, grid, h0, h1, costs=None if final_cfg.get("noD") else Dc, want=True)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\n1_portfolio.py", line 354, in run_pf
+    np.add.at(D2, (mm, lo), u); np.add.at(D2, (mm, hi), -u)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: arrays used as indices must be of integer (or boolean) type

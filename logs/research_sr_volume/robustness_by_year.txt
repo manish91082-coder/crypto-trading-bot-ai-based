@@ -1,0 +1,24 @@
+Descriptive (not pre-registered): 10-day excess return after daily+ level BREAKS, by year (all daily+ families pooled; events overlap)
+                 count    mean  median
+side       year                       
+resistance 2021    582  0.2262  0.0786
+           2022    182 -0.0639 -0.0976
+           2023    515  0.0309 -0.0019
+           2024    605  0.0882  0.0436
+           2025    301 -0.0133 -0.0240
+           2026    250 -0.0326 -0.0441
+support    2021    196  0.0246 -0.0206
+           2022    526 -0.0475 -0.0240
+           2023    290  0.0036 -0.0062
+           2024    254  0.0310  0.0145
+           2025    403  0.0042  0.0021
+           2026    303 -0.0501 -0.0710
+
+share of positive excess after resistance breaks by year:
+year
+2021    0.658
+2022    0.297
+2023    0.493
+2024    0.605
+2025    0.389
+2026    0.320

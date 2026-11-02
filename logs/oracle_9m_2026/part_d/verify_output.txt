@@ -1,0 +1,10 @@
+[D0 OK] Amendment 2 matches its SHA
+[D1 OK] Part D day set recomputed: 2146 days
+[D2 OK] lead trades recomputed: mine 12876, stored 12876
+[D3 OK] mean/day -0.5439, lb95 -0.6318, months+ 5/72, years+ 0/6, passes False
+[D4 OK] daily entries 2146 rows, every day, sums equal
+[D5 OK] yearly sums: {2020: -144.79, 2021: -166.01, 2022: -193.75, 2023: -269.1, 2024: -175.85, 2025: -217.77}
+[D6 OK] DIR_CLOSEPOS on 2020-2025: 986/2146 = 0.4595
+[D7 OK] ENT_SWEEP_ALL on 2020-2025: fav 15339, adv 15654, p 0.4949
+
+RESULT: ALL PASS

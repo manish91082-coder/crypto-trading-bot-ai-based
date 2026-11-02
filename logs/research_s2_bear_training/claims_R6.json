@@ -1,0 +1,60 @@
+{
+  "protocol_sha256": "1dbede561ba89c33657ab384fd6ef119e118eba97e1fb70a7e94775ae8d73f6f",
+  "brain": "R6",
+  "G0_detail": {
+    "rows_identical": true,
+    "pre_rows": 40622,
+    "pre_rows_before_2020": true
+  },
+  "paired": {
+    "diff": -0.0003175404154550643,
+    "ci_low": -0.0015982694965237022,
+    "ci_high": 0.0009089597557521431,
+    "diff_2022": -0.0031541541931912054,
+    "auc_new": 0.5672636642778284,
+    "auc_base": 0.5675812046932834
+  },
+  "portfolio_new": {
+    "final": 62747.97,
+    "cagr_pct": 37.68,
+    "max_dd_pct": 73.01,
+    "calmar": 0.516,
+    "trades": 2080,
+    "avg_trade_pct": 0.828,
+    "trade_ci_low_pct": 0.115,
+    "trade_ci_high_pct": 1.612,
+    "avg_hold_hours": 121.0,
+    "ret_2021": 592.69,
+    "ret_2022": -67.18,
+    "ret_2023": 134.26,
+    "ret_2024": 71.05,
+    "ret_2025": -33.17,
+    "ret_2026": 3.34
+  },
+  "portfolio_base": {
+    "final": 98734.89,
+    "cagr_pct": 48.98,
+    "max_dd_pct": 78.41,
+    "calmar": 0.625,
+    "trades": 1933,
+    "avg_trade_pct": 1.062,
+    "trade_ci_low_pct": 0.1,
+    "trade_ci_high_pct": 2.193,
+    "avg_hold_hours": 130.2,
+    "ret_2021": 1229.95,
+    "ret_2022": -74.12,
+    "ret_2023": 108.6,
+    "ret_2024": 93.28,
+    "ret_2025": -26.88,
+    "ret_2026": -2.46
+  },
+  "gates": {
+    "G0": true,
+    "G1": false,
+    "G2": false,
+    "G3": false,
+    "decision": "FAIL"
+  },
+  "predictions_sha256": "6321abd705f0f2149dcd6933a28cae04145cf1cb9335453f38ed560b586b2347",
+  "seconds": 1352
+}

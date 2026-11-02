@@ -1,0 +1,9 @@
+[PASS] V1: config bands = CSV True; source sha = CSV b53e2c1095a4 True; start 2026-10-26T00:00:00
+[PASS] V2: 300 random ledgers: mismatches 0 []; levels seen {'none': 11, 'red': 186, 'normal': 89, 'yellow': 14}
+[PASS] V3: 160 records, now 2026-10-28 08:45:00: vmled/eco_ledger.jsonl: dd 1.207934% a 2 H* 30 level normal base 2026-10-25 23:20:00 | code: dd 1.207934% a 2 H* 30 level normal
+[PASS] V3: 77 records, now 2026-10-28 08:45:00: vmled/eco_demo_ledger.jsonl: dd 1.236916% a 2 H* 30 level normal base 2026-10-25 23:20:00 | code: dd 1.236916% a 2 H* 30 level normal
+[PASS] V3: 77 records, now 2026-10-28 08:45:00: vmled/eco_shadow_ledger.jsonl: dd 1.238018% a 2 H* 30 level normal base 2026-10-25 23:20:00 | code: dd 1.238018% a 2 H* 30 level normal
+TOTAL 5 checks, FAIL 0
+322b64ce328100a2f1b6130185555179110434193f0f85b701d6b7a2b1fd3441 *vmled/eco_demo_ledger.jsonl
+c75aa33ca4a6dae787dd55071ebbdd5570ee4592e786a6ef3f805238ed2ae591 *vmled/eco_ledger.jsonl
+092aca4f9815ca5be1711df5d9512360d91ac0e859dd3b3ddb8cade9d46598fd *vmled/eco_shadow_ledger.jsonl

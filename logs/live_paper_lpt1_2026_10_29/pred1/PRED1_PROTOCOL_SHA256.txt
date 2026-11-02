@@ -1,0 +1,4 @@
+2c95c9854a1829a1f990155aede9907bd3a73b23db3756ed03e26b04845ee520 *logs/live_paper_lpt1_2026_10_29/pred1/PRED1_PROTOCOL_PREREGISTERED.md
+90c28d8909a5545eb52903b327ddedbff5ba75356e1ff4642dd4ebb90bab4dc3 *src/live_paper/predict.py
+919ac54dc83505cb4993f796eaf7024992b3e563eaf8ef6cdeb26f5c32ef0ed0 *src/live_paper/lpt.py
+locked_utc 2026-10-29T10:49:49Z

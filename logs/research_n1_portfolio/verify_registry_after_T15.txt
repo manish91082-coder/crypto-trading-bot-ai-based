@@ -1,0 +1,6 @@
+[R1 PASS] 36 registry lines: hash chain and line hashes intact
+[R2 PASS] every config_sha256 equals the sha256 of its stored config
+[R3 PASS] A0 / A1 protocol SHAs == locks; data SHA == legs_all.parquet
+[R4 PASS] every A1-RESULT line points to the original A1 files; every A1-CORRECTION-RESULT line to the correction files + locked amendment 2; T14-RESULT to claims_t14.json + T14 protocol; N*-RESULT to their claims + protocols
+[R5 PASS] trials registered 18 of 20, with result 15, pending 3
+TOTAL 5 checks, FAIL 0

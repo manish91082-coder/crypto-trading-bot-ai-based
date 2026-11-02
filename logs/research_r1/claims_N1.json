@@ -1,0 +1,160 @@
+{
+  "protocol_sha256": "af95f224d03564cdd9b79dfb103bb70da77ebce2317ec37d926ab719442ba0d1",
+  "experiment": "N1",
+  "results": {
+    "N1a": {
+      "result": {
+        "mix": {
+          "final": 66364.59,
+          "cagr_pct": 39.03,
+          "max_dd_pct": 19.65,
+          "calmar": 1.986,
+          "ret_2021": 119.34,
+          "ret_2022": 28.65,
+          "ret_2023": 19.0,
+          "ret_2024": 35.83,
+          "ret_2025": 39.75,
+          "ret_2026": 4.31
+        },
+        "sleeves": {
+          "D1": 91416.44,
+          "H4": 66851.86,
+          "H1": 40825.47
+        },
+        "long": {
+          "n": 4332,
+          "pf": 1.23,
+          "payoff": 1.537,
+          "pnl_mix": 38269.72
+        },
+        "short": {
+          "n": 4378,
+          "pf": 1.07,
+          "payoff": 0.813,
+          "pnl_mix": 18094.87
+        },
+        "hedge": {
+          "n": 0
+        },
+        "worst_short_day": -4653.49,
+        "worst_week_pct": -8.961,
+        "liquidations": 0,
+        "stops": 222,
+        "hedge_stops": 0,
+        "long_blocked": 1254,
+        "perp_longs": 0,
+        "spot_longs": 4332,
+        "long_funding_mix": 0.0
+      },
+      "gates": {
+        "G1": false,
+        "G2": true,
+        "G3": false,
+        "G4": true,
+        "G5": false,
+        "decision": "FAIL"
+      },
+      "dsr": {
+        "sr_annual_365": 1.2914740551743722,
+        "N": 91,
+        "dsr": 0.754908344851582
+      },
+      "control_long_pf": [
+        1.217,
+        1.238,
+        1.234,
+        1.209,
+        1.247,
+        1.245,
+        1.228,
+        1.242,
+        1.239,
+        1.25
+      ]
+    },
+    "N1b": {
+      "result": {
+        "mix": {
+          "final": 62601.5,
+          "cagr_pct": 37.62,
+          "max_dd_pct": 22.98,
+          "calmar": 1.637,
+          "ret_2021": 68.74,
+          "ret_2022": 26.49,
+          "ret_2023": 21.76,
+          "ret_2024": 52.83,
+          "ret_2025": 50.39,
+          "ret_2026": 5.01
+        },
+        "sleeves": {
+          "D1": 90408.4,
+          "H4": 54680.43,
+          "H1": 42715.68
+        },
+        "long": {
+          "n": 4332,
+          "pf": 1.24,
+          "payoff": 1.537,
+          "pnl_mix": 33068.12
+        },
+        "short": {
+          "n": 4312,
+          "pf": 1.091,
+          "payoff": 0.769,
+          "pnl_mix": 19533.39
+        },
+        "hedge": {
+          "n": 0
+        },
+        "worst_short_day": -4069.21,
+        "worst_week_pct": -9.595,
+        "liquidations": 0,
+        "stops": 243,
+        "hedge_stops": 0,
+        "long_blocked": 1254,
+        "perp_longs": 0,
+        "spot_longs": 4332,
+        "long_funding_mix": 0.0
+      },
+      "gates": {
+        "G1": false,
+        "G2": false,
+        "G3": false,
+        "G4": true,
+        "G5": true,
+        "decision": "FAIL"
+      },
+      "dsr": {
+        "sr_annual_365": 1.241984391912084,
+        "N": 91,
+        "dsr": 0.7068410056926655
+      },
+      "control_long_pf": [
+        1.217,
+        1.238,
+        1.234,
+        1.209,
+        1.247,
+        1.245,
+        1.228,
+        1.242,
+        1.239,
+        1.25
+      ]
+    }
+  },
+  "baseline": {
+    "final": 88400.87,
+    "max_dd_pct": 21.37,
+    "ret_2022": 36.54,
+    "short_pf": 1.07,
+    "short_payoff": 0.81,
+    "long_pf": 1.22,
+    "long_payoff": 1.57,
+    "worst_short_day": -6454.09,
+    "worst_week_pct": -9.625
+  },
+  "engine_sha256": "ba0e8e6c3a9b0e33f3961b4ff5ccb27f9deb562245ff098e5d34afc18e272a8c",
+  "runner_sha256": "37aac71488443d19912b941e4567df649665ff4ba3c05a95f0a49c3d1d1430b8",
+  "seconds": 3662
+}

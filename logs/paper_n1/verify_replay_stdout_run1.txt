@@ -1,0 +1,6 @@
+[P1 PASS] 1284 cycles, hash chain intact; config SHA constant: True
+[P2 PASS] backtest entries found in replay 0.9502 (11527/12131), replay entries in backtest 0.9990 (11539), entry price match 1.0000; missing by sleeve/tf {('C', '12h'): 106, ('C', '1D'): 74, ('C', '4h'): 274, ('C', '8h'): 150}; extra (top) {'C|EOSUSDT|8h': 4, 'C|EOSUSDT|12h': 3, 'C|EOSUSDT|4h': 3, 'C|EOSUSDT|1D': 1, 'C|FUNUSDT|1D': 1}
+[P3 PASS] exit time agreement 1.0000 on 11150 matched trades closed inside the window
+[P4 FAIL] D rebalances with identical leg sets 9/40
+[INFO] routing agreement with N3 (A/B, 2817 matched): 0.9929
+TOTAL 4 checks, FAIL 1

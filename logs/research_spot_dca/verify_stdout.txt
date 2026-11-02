@@ -1,0 +1,8 @@
+﻿[V1 PASS] 679 input files: SHA mismatches 0; manifest SHA == report
+[V2 PASS] 200 graded (coin, day) found by loops; 10 where cash left after the study's actual buys still covered it: entries missed by the study 0 []
+[V4 PASS] 342 exits obey the fill rule (TP: open if open >= TP else TP price; delisting: last close): violations 0 []
+[V2b PASS] every new entry on a gap-free series meets its grade (dd90, Wilder RSI14, reversal) recomputed by loops: violations 0 []
+[V3 PASS] P full: 342 round trips + 14 open replayed by an independent cash loop: buy prices == raw opens (bad 0); equity on 21 dates incl. the last within 1e-6 (bad []); final 2617.24 vs report 2617.24
+[V5 PASS] BTCUSDT funding per year recomputed from the CSV: mismatching years []
+[V5 PASS] ETHUSDT funding per year recomputed from the CSV: mismatching years []
+TOTAL 7 checks, FAIL 0

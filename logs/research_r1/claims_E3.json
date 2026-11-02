@@ -1,0 +1,105 @@
+{
+  "protocol_sha256": "af95f224d03564cdd9b79dfb103bb70da77ebce2317ec37d926ab719442ba0d1",
+  "experiment": "E3",
+  "results": {
+    "E3a_buckets_lt60_60_180_180_365_ge365": {
+      "0": {
+        "n": 147,
+        "pnl_share": 0.321,
+        "pf": 1.713
+      },
+      "1": {
+        "n": 273,
+        "pnl_share": -0.207,
+        "pf": 0.821
+      },
+      "2": {
+        "n": 662,
+        "pnl_share": -0.226,
+        "pf": 0.895
+      },
+      "3": {
+        "n": 3343,
+        "pnl_share": 1.111,
+        "pf": 1.112
+      }
+    },
+    "F7_short_pnl_mix": 26227.13,
+    "E3b": {
+      "mix": {
+        "final": 71922.41,
+        "cagr_pct": 40.99,
+        "max_dd_pct": 20.21,
+        "calmar": 2.028,
+        "ret_2021": 117.12,
+        "ret_2022": 0.78,
+        "ret_2023": 15.23,
+        "ret_2024": 72.73,
+        "ret_2025": 34.54,
+        "ret_2026": 22.96
+      },
+      "sleeves": {
+        "D1": 61225.88,
+        "H4": 83779.5,
+        "H1": 70761.85
+      },
+      "long": {
+        "n": 4390,
+        "pf": 1.23,
+        "payoff": 1.572,
+        "pnl_mix": 35534.31
+      },
+      "short": {
+        "n": 762,
+        "pf": 1.309,
+        "payoff": 0.768,
+        "pnl_mix": 26388.1
+      },
+      "hedge": {
+        "n": 0
+      },
+      "worst_short_day": -3308.34,
+      "worst_week_pct": -12.451,
+      "liquidations": 0,
+      "stops": 182,
+      "hedge_stops": 0,
+      "long_blocked": 0,
+      "perp_longs": 0,
+      "spot_longs": 4390,
+      "long_funding_mix": 0.0
+    },
+    "E3b_dsr": {
+      "sr_annual_365": 1.4714404269982708,
+      "N": 91,
+      "dsr": 0.8842124280460582
+    },
+    "E3c_short_pnl_mix": [
+      -1866.38,
+      -9042.65,
+      -249.29,
+      10649.68,
+      7090.67,
+      3800.06,
+      -2999.84,
+      -10667.69,
+      -235.45,
+      9502.42
+    ],
+    "E3c_median": -242.37,
+    "reading": "AI short skill not shown beyond listing age"
+  },
+  "baseline": {
+    "final": 88400.87,
+    "max_dd_pct": 21.37,
+    "ret_2022": 36.54,
+    "short_pf": 1.07,
+    "short_payoff": 0.81,
+    "long_pf": 1.22,
+    "long_payoff": 1.57,
+    "worst_short_day": -6454.09,
+    "worst_week_pct": -9.625
+  },
+  "engine_sha256": "ba0e8e6c3a9b0e33f3961b4ff5ccb27f9deb562245ff098e5d34afc18e272a8c",
+  "runner_sha256": "37aac71488443d19912b941e4567df649665ff4ba3c05a95f0a49c3d1d1430b8",
+  "seconds": 2554
+}

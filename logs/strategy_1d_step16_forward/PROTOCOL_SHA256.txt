@@ -1,0 +1,5 @@
+224f895882bd657b39864d7998a92bd100d3a59ef1e0a05f9c36409008f1c4cc *logs/strategy_1d_step16_forward/STEP16_PROTOCOL_PREREGISTERED.md
+7b9ba56acf6c70b4c7b7d8750b83611cbe6d9515826ba591206ec4b66be4446e *src/execution/forward_dryrun_1d.py
+7e8561f2eeedaa0c9377fc3ab3e9483245325591fa818c5e018687a71ffc6333 *src/pipeline_1d/core_rows_1d.py
+20c8b1fc221956a3a60c325b591cbf21c273501b6a47f0d63e0ee399144e8a7e *data/forward/models/b1_2026-10.joblib
+locked_utc 2026-10-13T18:28:05Z

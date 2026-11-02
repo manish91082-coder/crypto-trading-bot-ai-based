@@ -1,0 +1,37 @@
+== start Sat Oct 24 07:20:59 UTC 2026
+P1 backup: 3 data files, 3 report files
+code d5bf2afe29d89aa3
+== build Sat Oct 24 07:21:00 UTC 2026
+build rc 0
+484/484 ZRXUSDT: 882 rows
+panel 632748 rows, 484 symbols, sha bd1e40b83107
+P2 PASS panel SHA unchanged bd1e40b831075f5578aa16ccf6d0cb2ffdc79044c49643a3de04b1d68df16eb1
+== dev Sat Oct 24 08:24:16 UTC 2026
+dev rc 0
+P3 FAIL fields differing: ['shuffle_sharpe_median', 'dsr_monthly', 'P', 'sharpe_ci95', 'shuffle_sharpe_p95', 'mix_80_20', 'code_sha256'] code ac5f954111a8 -> d5bf2afe29d8
+== verify Sat Oct 24 08:34:52 UTC 2026
+[V2 PASS] panel SHA == report
+[V1 PASS] 300 rows x 13 values recomputed row by row from the raw zips: mismatches 0 []
+[V4 PASS] point in time (last metrics snapshot < t, bars closed by t): violations []
+[V3 PASS] 30 random rebalances: weights / hedge / gross 1 / period return recomputed: mismatches []
+TOTAL 4 checks, FAIL 0
+verify rc 0
+P5 PASS no Pandas4Warning at 121/218
+other warnings in the new run:
+     81 emo1_study.py:111: RuntimeWarning
+     52 emo1_study.py:112: RuntimeWarning
+restored report sha e8f84fc42c8b (recorded e8f84fc42c8b)
+1c1
+< 1510fa87af5738967542e47bbcf42188c66c34b2e6ff55fe622be4cfcc7072f6  dev_rebalances_P.csv
+---
+> c1c061365b2647b9ebf4f4570c365f5fc05807b27a4ad33e74107a601d5a849e  dev_rebalances_P.csv
+data/emotion/emo1 files differ (see diff above)
+== end Sat Oct 24 08:35:41 UTC 2026
+== control: old code dev re-run Sat Oct 24 08:39:24 UTC 2026
+code ac5f954111a86134
+old dev rc 0
+old code re-run vs original, fields differing: ['P', 'R1_daily', 'dsr_monthly', 'mix_80_20', 'sharpe_ci95', 'shuffle_sharpe_median']
+new code vs old code re-run, fields differing: ['R1_daily', 'code_sha256', 'shuffle_sharpe_median', 'shuffle_sharpe_p95']
+rebalances sha: original 1510fa87af57 old-rerun 7a4754adbd26
+code back to d5bf2afe29d89aa3; report e8f84fc42c8b
+== control end Sat Oct 24 08:48:33 UTC 2026

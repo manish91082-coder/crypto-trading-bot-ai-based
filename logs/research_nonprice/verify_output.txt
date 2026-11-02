@@ -1,0 +1,10 @@
+[N0 OK] protocol matches its SHA
+[N1 OK] 2,000 random rows, features rebuilt independently (z-score features PREM_Z / TOP / RETAIL use rolling-720 and are checked in N1b); mismatches {}
+[N1b OK] PREM_Z rolling z recomputed on 500 rows: 0 mismatches
+[N2 OK] S1 D: 54 t_IC values recomputed by plain loops, 0 mismatches; survivors 28
+[N3 OK] S1 V: 28 rows recomputed, 0 mismatches; confirmed 14
+[N4 OK] S2: 14 configs, every trade and the V gate recomputed; 0 mismatches; passes 0
+[N5 OK] no H-period row in S1 / S2
+[N6 OK] no fee literal; cost from fees.json
+
+RESULT: ALL PASS

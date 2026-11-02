@@ -1,0 +1,3 @@
+[V1 PASS] D1: hashes
+[V2 PASS] 60 rows: basis / funding features re-derived from raw files with plain loops; xr ranks for 60 rows on 3 days, re-ranked inside the rebuilt daily panels with plain loops
+[V3 PASS] D1: AUC new 0.5621 base 0.5593 (diff +0.0028); years [np.float64(0.0092), np.float64(-0.0015), np.float64(0.0008), np.float64(0.0107), np.float64(-0.0005), np.float64(-0.0029)]; final 39656.64 vs 74452.43; Calmar 0.312 vs 0.515; decision FAIL

@@ -1,0 +1,12 @@
+== scratch_old
+  2026-10-25_05/bundle_051703.tar.gz holds ['logs/cron_status/TEST_JOB.out.shipping']; ledger rows with this tag (verified, md5_match, n_rotated): [('True', False, '0'), ('False', False, '0')]
+  2026-10-25_05/bundle_051705.tar.gz holds ['logs/cron_status/RUNNING_JOB.out']; ledger rows with this tag (verified, md5_match, n_rotated): [('True', True, '0')]
+  2026-10-25_05/bundle_051706.tar.gz holds ['logs/cron_status/RUNNING_JOB.out.shipping']; ledger rows with this tag (verified, md5_match, n_rotated): [('True', True, '1')]
+== scratch_p2
+  2026-10-25_05/bundle_052949.tar.gz holds ['logs/cron_status/TEST_JOB.out.shipping']; ledger rows with this tag (verified, md5_match, n_rotated): [('True', False, '0'), ('False', False, '0'), ('True', True, '1')]
+  2026-10-25_05/bundle_052951.tar.gz holds ['logs/cron_status/RUNNING_JOB.out.shipping']; ledger rows with this tag (verified, md5_match, n_rotated): [('True', False, '0'), ('True', True, '1')]
+== scratch_new
+  2026-10-25_05/bundle_052930.tar.gz holds ['logs/cron_status/TEST_JOB.out.shipping']; ledger rows with this tag (verified, md5_match, n_rotated): [('False', False, '0')]
+  2026-10-25_05/bundle_052931.tar.gz holds ['logs/cron_status/TEST_JOB.out.shipping']; ledger rows with this tag (verified, md5_match, n_rotated): [('True', True, '1')]
+  2026-10-25_05/bundle_052933.tar.gz holds ['logs/cron_status/RUNNING_JOB.out']; ledger rows with this tag (verified, md5_match, n_rotated): [('True', True, '0')]
+  2026-10-25_05/bundle_052934.tar.gz holds ['logs/cron_status/RUNNING_JOB.out.shipping']; ledger rows with this tag (verified, md5_match, n_rotated): [('True', True, '1')]

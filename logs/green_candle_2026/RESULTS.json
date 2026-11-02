@@ -1,0 +1,39 @@
+{
+ "protocol_sha": "fe70c33091bec342c757cf7f88d2fbc7a77dc8810dec0cbac6f7064eac396d7d",
+ "code_sha": "736f4c14a66adffe33c45453c834a447f74a18c2e603b2558b4be46f332aafbb",
+ "costs_per_side": {
+  "spot": 0.00085,
+  "fut": 0.00046,
+  "fut_maker": 0.00028000000000000003
+ },
+ "missing_5m_total": 462,
+ "aggregate_checks": {
+  "15m": {
+   "both": 236488,
+   "only_aggregate": 0,
+   "only_file": 0,
+   "ohlc_mismatch_bars": 0,
+   "jan_ohlc_mismatch_values": 0,
+   "file_duplicates": 0
+  },
+  "1h": {
+   "both": 59129,
+   "only_aggregate": 0,
+   "only_file": 0,
+   "ohlc_mismatch_bars": 0,
+   "jan_ohlc_mismatch_values": 0,
+   "file_duplicates": 0
+  },
+  "1d": {
+   "both": 2465,
+   "only_aggregate": 0,
+   "only_file": 0,
+   "ohlc_mismatch_bars": 0,
+   "jan_ohlc_mismatch_values": 0,
+   "file_duplicates": 0
+  }
+ },
+ "n_trades_total": 443759,
+ "candidates": 0,
+ "runtime_s": 592.4
+}

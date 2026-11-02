@@ -1,0 +1,39 @@
+# Crypto 1D system on the cloud VM. VM timezone = Asia/Kolkata (setup_vm.sh), so the times below are IST,
+# identical to the Windows Task Scheduler triggers of 2026-10-16. Every script is idempotent (a second trigger of the
+# same day does nothing when the day is already logged).
+SHELL=/bin/bash
+28 5 * * * /opt/cryptobot/deploy/run_job.sh Step2_CostSnapshot src/execution/cost_snapshot_step2.py
+32 5 * * * /opt/cryptobot/deploy/run_job.sh Step2_CostSnapshot src/execution/cost_snapshot_step2.py
+40 5 * * * /opt/cryptobot/deploy/run_job.sh M4_OptionsCollector src/execution/m4_options_collector.py
+10 6 * * * /opt/cryptobot/deploy/run_job.sh M4_OptionsCollector src/execution/m4_options_collector.py
+50 5 * * * /opt/cryptobot/deploy/run_job.sh Step16_ForwardDryRun src/execution/forward_dryrun_1d.py
+50 6 * * * /opt/cryptobot/deploy/run_job.sh Step16_ForwardDryRun src/execution/forward_dryrun_1d.py
+30 7 * * * /opt/cryptobot/deploy/run_job.sh 16B_ForwardMulti src/execution/forward_multi_16b.py
+0 8 * * * /opt/cryptobot/deploy/run_job.sh 16B_ForwardMulti src/execution/forward_multi_16b.py
+45 7 * * * /opt/cryptobot/deploy/run_job.sh F4_LSPaper src/execution/forward_ls_f4.py
+15 8 * * * /opt/cryptobot/deploy/run_job.sh F4_LSPaper src/execution/forward_ls_f4.py
+30 9 * * * /opt/cryptobot/deploy/run_job.sh N3_EVTMonitor src/execution/n3_evt_monitor.py
+0 10 * * * /opt/cryptobot/deploy/run_job.sh N3_EVTMonitor src/execution/n3_evt_monitor.py
+15 11 * * * /opt/cryptobot/deploy/run_job.sh M10_DailyStatus src/execution/m10_daily_status.py
+# R2 forward recorder (added 2026-10-19; protocol logs/forward_recorder_r2/FR_PROTOCOL_PREREGISTERED.md): public data only, 7 min after each 4h close (IST)
+37 1,5,9,13,17,21 * * * /opt/cryptobot/deploy/run_job.sh FR2_Recorder src/execution/forward_recorder_r2.py --root data/forward_r2
+# Hourly log shipping to Google Drive (added 2026-10-19; protocol logs/log_ship/ + V2 amendment): one verified bundle per hour, frees only idle .out chunks and backups older than 2 days
+55 * * * * /opt/cryptobot/deploy/run_job.sh LogShip deploy/ship_logs_drive.py --remote gdrive:CryptoBot_1D_Cloud_VM
+# PAPER-N1 forward recorder (added 2026-10-21; protocol logs/paper_n1/PAPER_N1_PROTOCOL_PREREGISTERED.md): public data only, NO orders, 11 min after each 4h close (IST); daily ledger check
+41 1,5,9,13,17,21 * * * /opt/cryptobot/deploy/run_job.sh PaperN1 src/execution/paper_n1_portfolio.py --root data/paper_n1
+56 1,5,9,13,17,21 * * * /opt/cryptobot/deploy/run_job.sh PaperN1 src/execution/paper_n1_portfolio.py --root data/paper_n1   # amendment 1: idempotent retry / catch-up
+20 7 * * * /opt/cryptobot/deploy/run_job.sh PaperN1_Verify src/audits/verify_paper_live.py data/paper_n1
+# ECO single 10k ecosystem, PLAN mode (added 2026-10-22; protocol logs/eco/ECO_PROTOCOL_PREREGISTERED.md): NO orders, paper fills at mark, hourly at :50; daily ledger check
+50 * * * * /opt/cryptobot/deploy/run_job.sh ECO_Plan src/eco/eco_orchestrator.py --mode plan --root data/eco
+25 7 * * * /opt/cryptobot/deploy/run_job.sh ECO_Verify src/audits/verify_eco_live.py data/eco
+# ECO amendment 2 (logs/eco/ECO_AMENDMENT_2_PREREGISTERED.md, deployed 2026-10-22): alerts 2 min after each cycle + after the daily verifier; Telegram only if the user sets ECO_TELEGRAM_TOKEN / ECO_TELEGRAM_CHAT in .env
+52 * * * * /opt/cryptobot/deploy/run_job.sh ECO_Alerts src/eco/eco_alerts.py --root data/eco
+27 7 * * * /opt/cryptobot/deploy/run_job.sh ECO_Alerts src/eco/eco_alerts.py --root data/eco
+# EMO meter (logs/emotion/EMO_METER_PROTOCOL_PREREGISTERED.md, 2026-10-22): information only, public data, NO orders; hourly after the ECO cycle; daily check
+53 * * * * /opt/cryptobot/deploy/run_job.sh EMO_Meter src/eco/emotion_meter.py --root data/emotion
+26 7 * * * /opt/cryptobot/deploy/run_job.sh EMO_Verify src/audits/verify_emotion_live.py data/emotion
+# ECO DEMO after the cut-over (2026-10-25; amendment 1 §4, logs/eco/CODE_CHANGES_AFTER_LOCK.md entry 9): demo cycle on the Binance DEMO account, then the shadow plan instance (I2: same line, sequential); daily ledger checks + alerts
+50 * * * * /opt/cryptobot/deploy/run_job.sh ECO_Demo src/eco/eco_orchestrator.py --mode demo --root data/eco_demo; /opt/cryptobot/deploy/run_job.sh ECO_Shadow src/eco/eco_orchestrator.py --mode plan --root data/eco_shadow --host demo --k-from data/eco_demo
+58 * * * * /opt/cryptobot/deploy/run_job.sh ECO_Alerts src/eco/eco_alerts.py --root data/eco_demo; /opt/cryptobot/deploy/run_job.sh ECO_Alerts src/eco/eco_alerts.py --root data/eco_shadow
+28 7 * * * /opt/cryptobot/deploy/run_job.sh ECO_Demo_Verify src/audits/verify_eco_live.py data/eco_demo
+29 7 * * * /opt/cryptobot/deploy/run_job.sh ECO_Shadow_Verify src/audits/verify_eco_live.py data/eco_shadow

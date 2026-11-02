@@ -1,0 +1,12 @@
+Descriptive (not pre-registered): real-time ZigZag K=3 confirmations that later FAILED (leg resumed), all 10 coins
+     confirmations  failed  failed_share
+tf                                      
+1W             218       3         0.014
+1D            1256      22         0.018
+12h           2404      46         0.019
+8h            3713      59         0.016
+4h            7541     102         0.014
+1h           30551     350         0.011
+30m          61686     729         0.012
+15m         124957    1625         0.013
+5m          401178    5078         0.013

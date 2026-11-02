@@ -1,0 +1,22 @@
+5m done: 102783 trades
+15m done: 31956 trades
+1h done: 7947 trades
+4h done: 1976 trades
+1D done: 305 trades
+{
+ "trades": 144967,
+ "counts": {
+  "base_long_V1_earns_more_tfs": 2,
+  "base_long_V2_earns_more_tfs": 2,
+  "base_short_V1_earns_more_tfs": 1,
+  "base_short_V2_earns_more_tfs": 2,
+  "stress_long_V1_earns_more_tfs": 2,
+  "stress_long_V2_earns_more_tfs": 3,
+  "stress_short_V1_earns_more_tfs": 2,
+  "stress_short_V2_earns_more_tfs": 2
+ },
+ "rec": {
+  "long": false,
+  "short": false
+ }
+}

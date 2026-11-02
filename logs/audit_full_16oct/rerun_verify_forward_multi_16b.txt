@@ -1,0 +1,16 @@
+[V1 PASS] protocol a8a6b7a31fe2, code 23d5e9f76f83 (as locked)
+[2026-10-15 18:34:22 UTC] trained h4_r6 for 2026-09-01 on 413522 rows -> h4_r6_2026-09.joblib
+[2026-10-15 18:36:11 UTC] trained h1_r24 for 2026-09-01 on 550932 rows -> h1_r24_2026-09.joblib
+   2026-09-02: members 20 = Step 19; R6 rows 120 max diff 5.6e-17; R24 rows 480 max diff 5.6e-17
+   2026-09-15: members 20 = Step 19; R6 rows 120 max diff 5.6e-17; R24 rows 480 max diff 5.6e-17
+   2026-09-29: members 20 = Step 19; R6 rows 120 max diff 5.6e-17; R24 rows 480 max diff 5.6e-17
+[V2 PASS] live code path reproduces the research R6 / R24 scores and the Step 19 universe
+   h4_r6_2026-10.joblib (f82686371774): 51552 rows of 2018-19, max diff 5.6e-17
+   h1_r24_2026-10.joblib (dabe08e46d3e): 205873 rows of 2018-19, max diff 5.6e-17
+[V3 PASS] production October models = research frozen brains
+   D1: 43,151.15 = Step 27 43,151.15
+   H4: 49,365.87 = Step 27 49,365.87
+   H1: 69,134.22 = Step 27 69,134.22
+   M_AI3 mean of finals 53,883.75
+[V4 PASS] paper engine = Step 27 research sleeves (50 %)
+[V5 PASS] test run as-of 2026-10-14: 20 members, 120 R6 rows, 480 R24 rows, 20 D1 rows; file and model hashes match; chain of 1 line(s) intact; notes ["test before PAPER_START: no paper"]

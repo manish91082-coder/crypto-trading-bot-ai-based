@@ -1,0 +1,51 @@
+futures coverage (share of days with data):
+            fund_1d  prem_close  oi_chg1
+BTCUSDT      1.000       0.997    0.898
+ETHUSDT      1.000       0.997    0.714
+BNBUSDT      0.984       0.981    0.714
+SOLUSDT      0.985       0.982    0.785
+XRPUSDT      0.998       0.995    0.714
+ADAUSDT      0.993       0.985    0.714
+DOGEUSDT     0.923       0.919    0.714
+DOTUSDT      0.999       0.995    0.788
+LTCUSDT      0.997       0.994    0.714
+LINKUSDT     0.994       0.990    0.714
+ALGOUSDT     0.939       0.929    0.714
+ATOMUSDT     0.985       0.982    0.714
+AVAXUSDT     1.000       0.996    0.800
+AXSUSDT      0.993       0.989    0.816
+BCHUSDT      1.000       0.997    0.714
+EOSUSDT      0.798       0.795    0.512
+ETCUSDT      0.994       0.991    0.714
+FILUSDT      1.000       0.996    0.809
+FTTUSDT      0.088       0.087    0.086
+ICPUSDT      0.758       0.958    0.741
+LUNAUSDT     0.211       0.209    0.072
+MATICUSDT    0.576       0.573    0.407
+NEARUSDT     1.000       0.996    0.808
+SANDUSDT     0.927       0.924    0.785
+SHIBUSDT     1.000       0.996    0.894
+THETAUSDT    0.941       0.938    0.714
+TRXUSDT      0.994       0.991    0.714
+UNIUSDT      1.000       0.996    0.799
+VETUSDT      0.982       0.979    0.714
+XLMUSDT      0.993       0.989    0.714
+path2 rows 64581 (20s)
+S-A planted AUC 0.578 | S-B leak AUC 1.0
+S-A path1 planted AUC 0.58 -> {'S_A': True, 'S_B': True}
+P1_AI 0.5304 0.5045
+P1_CONTROL 0.4986 0.4632
+P1_BASELINE_all_swings {'final': np.float64(16698.92), 'cagr_pct': np.float64(9.34), 'max_dd_pct': np.float64(56.95), 'calmar': np.float64(0.164), 'trades': 400}
+P1_AI_entry_only {'final': np.float64(33312.3), 'cagr_pct': np.float64(23.31), 'max_dd_pct': np.float64(46.65), 'calmar': np.float64(0.5), 'trades': 272}
+P1_AI_full {'final': np.float64(12755.79), 'cagr_pct': np.float64(4.33), 'max_dd_pct': np.float64(31.43), 'calmar': np.float64(0.138), 'trades': 449}
+P1_CONTROL_full {'final': np.float64(24304.8), 'cagr_pct': np.float64(16.72), 'max_dd_pct': np.float64(50.38), 'calmar': np.float64(0.332), 'trades': 337}
+P2_h1_BASELINE {'final': np.float64(27915.59), 'cagr_pct': np.float64(19.57), 'max_dd_pct': np.float64(74.96), 'calmar': np.float64(0.261), 'turnover_x': np.float64(81.4)}
+P2_h1_AI {'final': np.float64(9117.32), 'cagr_pct': np.float64(-1.6), 'max_dd_pct': np.float64(76.29), 'calmar': np.float64(-0.021), 'turnover_x': np.float64(1569.9)}
+P2_h1_CONTROL {'final': np.float64(6119.71), 'cagr_pct': np.float64(-8.19), 'max_dd_pct': np.float64(80.33), 'calmar': np.float64(-0.102), 'turnover_x': np.float64(662.8)}
+P2 h1 AUC 0.5265 CI [0.510,0.544] control 0.5094 -> {'skill': {'auc_ge_min': False, 'ci_low_gt_050': True, 'beats_control': True, 'top_q_gt_bottom_q': True}, 'G3': np.False_, 'pass_all': False}
+P2_h3_BASELINE {'final': np.float64(27915.59), 'cagr_pct': np.float64(19.57), 'max_dd_pct': np.float64(74.96), 'calmar': np.float64(0.261), 'turnover_x': np.float64(81.4)}
+P2_h3_AI {'final': np.float64(59644.96), 'cagr_pct': np.float64(36.47), 'max_dd_pct': np.float64(45.36), 'calmar': np.float64(0.804), 'turnover_x': np.float64(3071.1)}
+P2_h3_CONTROL {'final': np.float64(3488.87), 'cagr_pct': np.float64(-16.75), 'max_dd_pct': np.float64(89.6), 'calmar': np.float64(-0.187), 'turnover_x': np.float64(687.1)}
+P2 h3 AUC 0.5230 CI [0.499,0.547] control 0.4877 -> {'skill': {'auc_ge_min': False, 'ci_low_gt_050': False, 'beats_control': True, 'top_q_gt_bottom_q': True}, 'G3': np.True_, 'pass_all': False}
+
+DECISION: FAIL_NOTHING_DEPLOYED | path1: {"G1": {"auc_ge_min": false, "ci_low_gt_050": false, "beats_control": true, "top_q_gt_bottom_q": true}, "G2": {"auc_ge_min": false, "ci_low_gt_050": false, "beats_control": true, "top_q_gt_bottom_q": true}, "G3_full": "False", "G3_entry_only": "True", "pass_full": false, "pass_entry_only": false} | path2: {"h1": {"skill": {"auc_ge_min": false, "ci_low_gt_050": true, "beats_control": true, "top_q_gt_bottom_q": true}, "G3": "False", "pass_all": false}, "h3": {"skill": {"auc_ge_min": false, "ci_low_gt_050": false, "beats_control": true, "top_q_gt_bottom_q": true}, "G3": "True", "pass_all": false}}

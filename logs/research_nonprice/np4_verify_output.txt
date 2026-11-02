@@ -1,0 +1,6 @@
+[R0 OK] NP4 protocol matches its SHA
+[R1 OK] every H trade recomputed: [('P1', 271), ('P2', 127), ('P2_SPOT_INFO', 127)]
+[R2 OK] summaries, months+, yearly sums and gate verdicts recomputed: 0 differ; P1 passes False, P2 passes False
+[R3 OK] daily entries: every one of the 638 H days per config (1914 rows)
+
+RESULT: ALL PASS

@@ -1,0 +1,123 @@
+{
+ "protocol_sha": "12d2c5a268adc248c67851210b4c073cd323a5c2174d2b468127a3ed2a18087f",
+ "code_sha": "9d2243b8f596a2a0c0fd1cd83a78f7bcd06c22f05e5eba8deaa5e780e256910a",
+ "kill_K": 0.3,
+ "seed": 20261027,
+ "n_paths": 10000,
+ "L": 20,
+ "partA_verified": false,
+ "partA_mismatches": [
+  {
+   "id": "A01",
+   "item": "AI"
+  },
+  {
+   "id": "A01",
+   "item": "BTC_HOLD"
+  },
+  {
+   "id": "A02",
+   "item": "R5_ONLY"
+  },
+  {
+   "id": "A03",
+   "item": "UNGATED"
+  },
+  {
+   "id": "A04",
+   "item": "UNGATED"
+  },
+  {
+   "id": "A05",
+   "item": "AI_VETO"
+  },
+  {
+   "id": "A06",
+   "item": "D1 f=1.0"
+  },
+  {
+   "id": "A06",
+   "item": "D1 f=0.75"
+  },
+  {
+   "id": "A06",
+   "item": "D1 f=0.5"
+  },
+  {
+   "id": "A06",
+   "item": "D1 f=0.3"
+  },
+  {
+   "id": "A08",
+   "item": "MAIN.AI_LS"
+  },
+  {
+   "id": "A08",
+   "item": "MAIN.AI_LO"
+  },
+  {
+   "id": "A09",
+   "item": "MAIN.RS"
+  },
+  {
+   "id": "A09",
+   "item": "MAIN.OFF_LS"
+  },
+  {
+   "id": "A10",
+   "item": "E1a"
+  },
+  {
+   "id": "A10",
+   "item": "E1b"
+  },
+  {
+   "id": "A10",
+   "item": "baseline F7 RS"
+  },
+  {
+   "id": "A11",
+   "item": "E4"
+  },
+  {
+   "id": "A11",
+   "item": "baseline F7 RS"
+  }
+ ],
+ "sha_failures": [
+  {
+   "id": "A02",
+   "sha_file": "logs/strategy_1d_step17_18/PROTOCOL_SHA256.txt",
+   "file": "src/pipeline_1d/step17_18_market_veto_1d.py",
+   "kind": "other",
+   "stored": "c5bcf4e12e835f53a9ca46aa46b8927b0ffcad88fcaa580d03a8fa6a41a511ea",
+   "recomputed": "9644341d539f980cea5ef36a752f1a2bece6a6405d117c34fd7c7bade058ff30",
+   "ok": false,
+   "claims_match": ""
+  },
+  {
+   "id": "A08",
+   "sha_file": "logs/strategy_f2_longshort/F2_PROTOCOL_SHA256.txt",
+   "file": "src/pipeline_1d/f2_longshort.py",
+   "kind": "other",
+   "stored": "04a3a7789bb120fc773af20c7e3734eff2478dadae6c71fb87f9d983904b01dc",
+   "recomputed": "63834631adb6e4ace14430b34b3df157b3e7631be3f58a5c18ce992f840a41b0",
+   "ok": false,
+   "claims_match": ""
+  },
+  {
+   "id": "A08",
+   "sha_file": "logs/strategy_f2_longshort/F2_PROTOCOL_SHA256.txt",
+   "file": "src/audits/verify_f2_claims.py",
+   "kind": "other",
+   "stored": "fc188cfa831fc69209224f94558c59c774ecf0939806fbd6a9d16740b0c079f1",
+   "recomputed": "3400958f42129f59c1159154a6983738c8d74ac0b01635319f399aa983d7586c",
+   "ok": false,
+   "claims_match": ""
+  }
+ ],
+ "P_kill_365_ALL": 0.0006,
+ "statement2": "tail event (<=10%)",
+ "P3_median_365_return": -0.0014899383225460694,
+ "statement3": true
+}

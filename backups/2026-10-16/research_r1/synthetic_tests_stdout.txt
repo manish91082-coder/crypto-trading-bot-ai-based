@@ -1,0 +1,9 @@
+[T0 PASS] hooks off: r1_engine == f7_risk exactly on 3 random synthetic markets (finals, equity, trades)
+[T1 PASS] hedge: notional 2500, stop fill 151.50, funding +2.50, P&L -1291.29, re-opened at the next decision
+[T2 PASS] freed slots: all short candidates filtered -> the full 50 % short notional went to the BTC hedge
+[T3 PASS] long block: top-ranked A blocked, next rank B bought; blocked count 1
+[T4 PASS] weights: A got 0.5 x 10,000 x 0.7, B got 0.5 x 10,000 x 0.3 (+ cost)
+[T5 PASS] perp long: funding paid 5.00, P&L 484.50 (cost_short both legs); a 1x long is NOT liquidated even at a low of 0.4 (entry 100), as the margin rule implies
+[T6 PASS] short_order: the hook order [B, C, D] was used (default order would have shorted D)
+ALL SYNTHETIC TESTS PASS
+[T7 PASS] short-side daily mark-to-market P&L sums exactly to the realized short + hedge trade P&L (3 random markets)

@@ -1,0 +1,10 @@
+PAPER-N1 amendment 2, check C1 (2026-10-24, laptop): replay 2025-06-01 ... 2025-08-01 on the same local research data
+  amendment 1 code 650fb08f81b8... (copied from the VM)  vs  amendment 2 code (this change), separate scratch roots
+  cycles 366 / 366 (2025-06-01 00:00 ... 2025-07-31 20:00); actions 7312
+  cycles with different actions: 0;  max |equity difference|: 0.0
+  record fields differing: only the new 'delisting' (= "off" in replay, as amendment 2 section 6)
+  run time 24m49s each;  C1 PASS
+  amendment 2 code SHA256: 0e10d999fcc8b7444a5af8c0a83bee830bb0de0d76b0f9b16d490d7846e2e159
+Re-run after the C3 fix (nliq skips inactive / perp_out coins), final amendment 2 code 621238aff5fa070e...:
+  amendment 1 code 650fb08f81b8... vs 621238aff5fa...: cycles 366 / 366, actions 7312, cycles with different actions 0,
+  max |equity difference| 0.0, record fields differing: only 'delisting' ("off").  C1 PASS (final code)

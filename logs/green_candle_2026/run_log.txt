@@ -1,0 +1,62 @@
+[2026-10-27 06:05:18 UTC] start; protocol fe70c33091be; code 736f4c14a66a
+[2026-10-27 06:05:18 UTC] costs per side from deploy/fees.json: {'spot': 0.00085, 'fut': 0.00046, 'fut_maker': 0.00028000000000000003}
+[2026-10-27 06:05:35 UTC] 5m rows 709458, duplicates dropped 0, missing 5m bars 462 (JAN missing 0)
+[2026-10-27 06:05:42 UTC] aggregate check 15m: {'both': 236488, 'only_aggregate': 0, 'only_file': 0, 'ohlc_mismatch_bars': 0, 'jan_ohlc_mismatch_values': 0, 'file_duplicates': 0}
+[2026-10-27 06:05:44 UTC] aggregate check 1h: {'both': 59129, 'only_aggregate': 0, 'only_file': 0, 'ohlc_mismatch_bars': 0, 'jan_ohlc_mismatch_values': 0, 'file_duplicates': 0}
+[2026-10-27 06:05:44 UTC] aggregate check 1d: {'both': 2465, 'only_aggregate': 0, 'only_file': 0, 'ohlc_mismatch_bars': 0, 'jan_ohlc_mismatch_values': 0, 'file_duplicates': 0}
+[2026-10-27 06:05:44 UTC] partA 5m: n 8928 G 4407 R 4455 D 66 P(G|G) 0.4888 runs z 0.88 oracle net fut 1.2806
+[2026-10-27 06:05:44 UTC] partA 15m: n 2976 G 1465 R 1508 D 3 P(G|G) 0.4601 runs z 3.42 oracle net fut 1.2351
+[2026-10-27 06:05:44 UTC] partA 30m: n 1488 G 748 R 739 D 1 P(G|G) 0.4733 runs z 2.23 oracle net fut 0.9916
+[2026-10-27 06:05:44 UTC] partA 1h: n 744 G 360 R 384 D 0 P(G|G) 0.4708 runs z 0.62 oracle net fut 0.7429
+[2026-10-27 06:05:44 UTC] partA 4h: n 186 G 94 R 92 D 0 P(G|G) 0.4516 runs z 1.33 oracle net fut 0.4021
+[2026-10-27 06:05:44 UTC] partA 1d: n 31 G 15 R 16 D 0 P(G|G) 0.7333 runs z -3.10 oracle net fut 0.1820
+[2026-10-27 06:05:50 UTC] rules 5m JAN: R1 n 2241 mean fut -0.00090 | R2 n 1133 mean fut -0.00094
+[2026-10-27 06:06:14 UTC] rules 5m FS26: R1 n 17777 mean fut -0.00093 | R2 n 8748 mean fut -0.00096
+[2026-10-27 06:06:52 UTC] rules 5m Y2020: R1 n 27937 mean fut -0.00103 | R2 n 13672 mean fut -0.00107
+[2026-10-27 06:07:28 UTC] rules 5m Y2021: R1 n 27165 mean fut -0.00098 | R2 n 13370 mean fut -0.00102
+[2026-10-27 06:07:53 UTC] rules 5m Y2022: R1 n 27317 mean fut -0.00095 | R2 n 13751 mean fut -0.00103
+[2026-10-27 06:08:17 UTC] rules 5m Y2023: R1 n 27278 mean fut -0.00095 | R2 n 13105 mean fut -0.00094
+[2026-10-27 06:08:42 UTC] rules 5m Y2024: R1 n 26574 mean fut -0.00089 | R2 n 13634 mean fut -0.00095
+[2026-10-27 06:09:02 UTC] rules 5m Y2025: R1 n 26281 mean fut -0.00091 | R2 n 13352 mean fut -0.00094
+[2026-10-27 06:09:03 UTC] rules 15m JAN: R1 n 790 mean fut -0.00108 | R2 n 384 mean fut -0.00117
+[2026-10-27 06:09:08 UTC] rules 15m FS26: R1 n 6031 mean fut -0.00096 | R2 n 2964 mean fut -0.00103
+[2026-10-27 06:09:15 UTC] rules 15m Y2020: R1 n 9369 mean fut -0.00091 | R2 n 4841 mean fut -0.00118
+[2026-10-27 06:09:23 UTC] rules 15m Y2021: R1 n 9138 mean fut -0.00090 | R2 n 4648 mean fut -0.00120
+[2026-10-27 06:09:32 UTC] rules 15m Y2022: R1 n 9137 mean fut -0.00093 | R2 n 4606 mean fut -0.00109
+[2026-10-27 06:09:40 UTC] rules 15m Y2023: R1 n 9250 mean fut -0.00087 | R2 n 4661 mean fut -0.00094
+[2026-10-27 06:09:49 UTC] rules 15m Y2024: R1 n 9184 mean fut -0.00090 | R2 n 4546 mean fut -0.00091
+[2026-10-27 06:10:01 UTC] rules 15m Y2025: R1 n 9062 mean fut -0.00097 | R2 n 4519 mean fut -0.00104
+[2026-10-27 06:10:02 UTC] rules 30m JAN: R1 n 393 mean fut -0.00126 | R2 n 196 mean fut -0.00134
+[2026-10-27 06:10:05 UTC] rules 30m FS26: R1 n 3002 mean fut -0.00100 | R2 n 1510 mean fut -0.00105
+[2026-10-27 06:10:10 UTC] rules 30m Y2020: R1 n 4880 mean fut -0.00107 | R2 n 2297 mean fut -0.00111
+[2026-10-27 06:10:14 UTC] rules 30m Y2021: R1 n 4595 mean fut -0.00124 | R2 n 2252 mean fut -0.00113
+[2026-10-27 06:10:18 UTC] rules 30m Y2022: R1 n 4680 mean fut -0.00110 | R2 n 2263 mean fut -0.00120
+[2026-10-27 06:10:22 UTC] rules 30m Y2023: R1 n 4735 mean fut -0.00088 | R2 n 2251 mean fut -0.00077
+[2026-10-27 06:10:25 UTC] rules 30m Y2024: R1 n 4630 mean fut -0.00090 | R2 n 2340 mean fut -0.00101
+[2026-10-27 06:10:30 UTC] rules 30m Y2025: R1 n 4560 mean fut -0.00100 | R2 n 2267 mean fut -0.00101
+[2026-10-27 06:10:30 UTC] rules 1h JAN: R1 n 189 mean fut -0.00108 | R2 n 105 mean fut -0.00178
+[2026-10-27 06:10:32 UTC] rules 1h FS26: R1 n 1524 mean fut -0.00089 | R2 n 753 mean fut -0.00101
+[2026-10-27 06:10:35 UTC] rules 1h Y2020: R1 n 2392 mean fut -0.00081 | R2 n 1193 mean fut -0.00120
+[2026-10-27 06:10:37 UTC] rules 1h Y2021: R1 n 2246 mean fut -0.00070 | R2 n 1170 mean fut -0.00084
+[2026-10-27 06:10:39 UTC] rules 1h Y2022: R1 n 2360 mean fut -0.00107 | R2 n 1154 mean fut -0.00124
+[2026-10-27 06:10:48 UTC] rules 1h Y2023: R1 n 2368 mean fut -0.00072 | R2 n 1168 mean fut -0.00055
+[2026-10-27 06:10:52 UTC] rules 1h Y2024: R1 n 2338 mean fut -0.00103 | R2 n 1179 mean fut -0.00117
+[2026-10-27 06:10:57 UTC] rules 1h Y2025: R1 n 2246 mean fut -0.00095 | R2 n 1136 mean fut -0.00110
+[2026-10-27 06:10:58 UTC] rules 4h JAN: R1 n 50 mean fut -0.00152 | R2 n 23 mean fut -0.00036
+[2026-10-27 06:11:00 UTC] rules 4h FS26: R1 n 390 mean fut -0.00080 | R2 n 183 mean fut -0.00061
+[2026-10-27 06:11:02 UTC] rules 4h Y2020: R1 n 604 mean fut 0.00077 | R2 n 306 mean fut 0.00095
+[2026-10-27 06:11:03 UTC] rules 4h Y2021: R1 n 603 mean fut -0.00209 | R2 n 280 mean fut -0.00124
+[2026-10-27 06:11:05 UTC] rules 4h Y2022: R1 n 587 mean fut -0.00132 | R2 n 272 mean fut -0.00224
+[2026-10-27 06:11:06 UTC] rules 4h Y2023: R1 n 613 mean fut -0.00030 | R2 n 303 mean fut -0.00047
+[2026-10-27 06:11:07 UTC] rules 4h Y2024: R1 n 592 mean fut -0.00122 | R2 n 282 mean fut -0.00067
+[2026-10-27 06:11:08 UTC] rules 4h Y2025: R1 n 571 mean fut -0.00077 | R2 n 287 mean fut -0.00117
+[2026-10-27 06:11:08 UTC] rules 1d JAN: R1 n 3 mean fut 0.00109 | R2 n 3 mean fut -0.00361
+[2026-10-27 06:11:09 UTC] rules 1d FS26: R1 n 62 mean fut 0.00055 | R2 n 31 mean fut 0.00352
+[2026-10-27 06:11:09 UTC] rules 1d Y2020: R1 n 107 mean fut 0.00127 | R2 n 50 mean fut 0.01631
+[2026-10-27 06:11:10 UTC] rules 1d Y2021: R1 n 102 mean fut -0.00475 | R2 n 47 mean fut 0.00015
+[2026-10-27 06:11:12 UTC] rules 1d Y2022: R1 n 92 mean fut -0.00491 | R2 n 49 mean fut -0.01021
+[2026-10-27 06:11:12 UTC] rules 1d Y2023: R1 n 100 mean fut 0.00548 | R2 n 44 mean fut 0.01171
+[2026-10-27 06:11:13 UTC] rules 1d Y2024: R1 n 98 mean fut 0.00324 | R2 n 41 mean fut 0.01330
+[2026-10-27 06:11:13 UTC] rules 1d Y2025: R1 n 92 mean fut -0.00180 | R2 n 55 mean fut -0.00717
+[2026-10-27 06:15:10 UTC] decision: candidates 0 of 12
+[2026-10-27 06:15:11 UTC] done in 594 s; outputs hashed

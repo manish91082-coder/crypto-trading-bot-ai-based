@@ -1,0 +1,76 @@
+{
+ "amendment_sha": "0a448a791e61effc6f13d3aeb74a3cf030c5369e33a016791093dd665a8eef3b",
+ "protocol_sha": "15a3c837046cd9f0e7ad6d61056a83b1c9b9a51d05e44464375609767feb49a5",
+ "code_sha": "ba68748c8e8bcdba7a60a9f1cd3a0873cd2fe2376100503eb6113c07b84deeaf",
+ "trades": {
+  "n_ac": 133939,
+  "armed_share": 0.24770977833192723,
+  "be_share": 0.055428217322811134,
+  "per_sleeve": {
+   "A": {
+    "armed": 0.2632571590230409,
+    "be": 0.07889856348033823
+   },
+   "C": {
+    "armed": 0.24286665491647572,
+    "be": 0.0481170319017684
+   }
+  }
+ },
+ "results": {
+  "dev|base": 4.160746640873053,
+  "dev|T4": 3.619299157125455,
+  "P1|base": 5.096377012127039,
+  "P1|T4": 4.4726755203583695,
+  "P2|base": 3.220073489634655,
+  "P2|T4": 2.9396559406732483,
+  "P3|base": -0.3899365640314665,
+  "P3|T4": -0.31387490573993265
+ },
+ "dsr": {
+  "p": 0.9999999996128168,
+  "sr": 0.4461747461252077,
+  "sr0": 0.007152796293293593,
+  "n": 28,
+  "sr_var": 1.2236325047098788e-05
+ },
+ "combined_T4": {
+  "dev": {
+   "calmar": 5.96461593160285,
+   "cagr": 0.6227073315409748,
+   "mtm_dd": 0.10440023945911248
+  },
+  "P1": {
+   "calmar": 6.831043513586512,
+   "cagr": 0.7103778725163963,
+   "mtm_dd": 0.10399258489621677
+  },
+  "P2": {
+   "calmar": 4.640795044701139,
+   "cagr": 0.4844919144522968,
+   "mtm_dd": 0.10439847262927282
+  },
+  "P3": {
+   "calmar": 0.047758156799409375,
+   "cagr": 0.008805456569518588,
+   "mtm_dd": 0.18437597176337184
+  }
+ },
+ "combined_ref_dev": 5.982713659707492,
+ "acceptance": {
+  "a": false,
+  "b": true,
+  "c": false
+ },
+ "verdict": "ECO-T4 FAIL: not adopted",
+ "files": {
+  "T4_results.csv": "6bfb6cce85c371f4a629814afb2548eb0ebdd3eb214759a0e87133a5286a58fe"
+ },
+ "derived": {
+  "t4_n1_hourly_dev.parquet": "9ae1bf7f05b9966921810c9f406968e28e0ccea10ddaccdd7e4c8c7989e4b4f3",
+  "t4_n1_hourly_P1.parquet": "a2a73b0080e2b64bbb665e8e853487fe50bcfe645f0cc285759ea8856a4ead24",
+  "t4_n1_hourly_P2.parquet": "86c5d902b17b5e13f63518e4892a9ba3842dc576777eaabf1db7841ef4abf6f6",
+  "t4_n1_hourly_P3.parquet": "2ffdafa7c4a092a12daf665deb9562d644041fb75b1fafadba2fae2ccdaaba4d",
+  "t4_trades_AC.parquet": "f2b730ab7252cca65c9123da722faa828c7541205789c356086022f7109db8d1"
+ }
+}

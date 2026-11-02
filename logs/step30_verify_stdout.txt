@@ -1,0 +1,6 @@
+[V1 PASS] hashes
+[V2 PASS] 120 events: level, break, regime and net re-derived with plain code
+   MAIN: regime-ON n 1444, mean net 4.101 %, excess 3.992 %
+   MAIN_cost040: regime-ON n 1444, mean net 3.789 %, excess 3.980 %
+   PRE: regime-ON n 169, mean net -4.527 %, excess 0.981 %
+[V3 PASS] means and gates re-derived: {'G1': True, 'G2': True, 'G3': False, 'G4': True, 'decision': 'FAIL'}

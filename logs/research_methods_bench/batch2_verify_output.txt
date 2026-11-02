@@ -1,0 +1,17 @@
+[W1 PASS] 6 inputs; mismatches []; protocol lock True
+[W2 PASS] 300 random (bar, rule, scale) signals by own aggregation + loops over 12 rules {'A4.01a_OBV': 27, 'A3.03a_Parkinson20_LOW': 27, 'A3.05_Squeeze': 29, 'A3.02a_RV20_HIGH': 21, 'A4.03a_NVI': 26, 'A3.09_Jump': 24, 'A4.07_VolProfile': 31, 'A3.06a_NR7': 25, 'A4.04a_CVD': 18, 'A3.07_WilliamsVB': 29, 'A4.06_RelVol': 24, 'A4.10_DollarBars': 19}: mismatches 0 []; boundary 0 []
+[W3 PASS] X3 reversal trades of 5 random configs (H) replayed by a loop: ['A3.06b_NR4_follow_1h', 'A3.04c_EGARCH_LOW_fade_4h', 'A3.04a_GARCH_LOW_fade_1h', 'A3.05_Squeeze_fade_1h', 'A4.05_TradesZ_follow_4h']; mismatches []
+[W4 PASS] daily (every calendar day present) -> monthly -> yearly for 5 configs x 3 exits x 2 costs x 4 periods: mismatches []
+[W5 PASS] ranking order of 972 configs recomputed from the 8 measures
+  W6 X1 A4.09b_Amihud20_HIGH_fade_15m: own p95 0.0048311520 stored 0.0048311520
+  W6 X2 A4.09b_Amihud20_HIGH_fade_15m: own p95 -0.0004082356 stored -0.0004082356
+  W6 X3 A4.09b_Amihud20_HIGH_fade_15m: own p95 -0.0006563774 stored -0.0006563774
+[W6 PASS] random control (own sequential loop, 200 seeds) for one X1, X2, X3 config: mismatches []
+[W7 PASS] stress (2x cost) and delay (+1 bar) H means of 3 configs x 2 exits recomputed: mismatches []
+  lookahead cut 2021-07-23 14:25:00: 0 configs differ []
+  lookahead cut 2023-01-10 23:10:00: 0 configs differ []
+  lookahead cut 2023-03-15 12:40:00: 0 configs differ []
+  lookahead cut 2024-07-06 16:25:00: 0 configs differ []
+  lookahead cut 2026-03-18 10:30:00: 0 configs differ []
+[W8 PASS] lookahead: signals on data truncated at 5 new cutoffs equal the full-data signals before each cutoff; differing []
+TOTAL 8 checks, FAIL 0

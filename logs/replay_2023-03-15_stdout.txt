@@ -1,0 +1,8 @@
+as-of 2023-03-15: train rows 29083; Step13 coins 188, replay coins 185, only-Step13 3, only-replay 0; max |p1 diff| 5.551e-17, mean 1.500e-18
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\audits\replay_core_vs_step13.py", line 44, in <module>
+    main(sys.argv[1])
+  File "E:\crypto trading bot ai based 9 oct 2026\src\audits\replay_core_vs_step13.py", line 39, in main
+    assert (j._merge == "both").all() and diff.max() < 1e-9, "replay does NOT reproduce Step 13"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: replay does NOT reproduce Step 13

@@ -1,0 +1,11 @@
+[V1 PASS] protocol a8a6b7a31fe2, code 23d5e9f76f83 (as locked)
+[V5 PASS] test run as-of 2026-10-14: 20 members, 120 R6 rows, 480 R24 rows, 20 D1 rows; file and model hashes match; chain of 1 line(s) intact; notes ["test before PAPER_START: no paper"]
+   h4_r6_2026-10.joblib (f82686371774): 51552 rows of 2018-19, max diff 5.6e-17
+   h1_r24_2026-10.joblib (dabe08e46d3e): 205873 rows of 2018-19, max diff 5.6e-17
+[V3 PASS] production October models = research frozen brains
+[2026-10-15 05:11:12 UTC] trained h4_r6 for 2026-09-01 on 413522 rows -> h4_r6_2026-09.joblib
+[2026-10-15 05:12:43 UTC] trained h1_r24 for 2026-09-01 on 550932 rows -> h1_r24_2026-09.joblib
+   2026-09-02: members 20 = Step 19; R6 rows 120 max diff 5.6e-17; R24 rows 480 max diff 5.6e-17
+   2026-09-15: members 20 = Step 19; R6 rows 120 max diff 5.6e-17; R24 rows 480 max diff 5.6e-17
+   2026-09-29: members 20 = Step 19; R6 rows 120 max diff 5.6e-17; R24 rows 480 max diff 5.6e-17
+[V2 PASS] live code path reproduces the research R6 / R24 scores and the Step 19 universe

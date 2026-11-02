@@ -1,0 +1,5 @@
+[C2a PASS] inactive SXPUSDT: not requested (klines nor perp volume; C opens on 1INCHUSDT: 3), closed 'delist' at last mark 0.30 (pnl 12.5), noted, listed
+[C2b PASS] perp_out ADAUSDT: control opens 3 -> 0 opens; perp position closed 'delist' at the open 3.000000; spot position kept
+[C2c PASS] listing failure: previous lists kept {'day': '2026-10-23', 'inactive': ['SXPUSDT'], 'perp_out': ['FTTUSDT']}, noted
+[C2d PASS] listing calls: 3 cycles on one day -> 1, next day -> 2; Replay has no listing -> rule off
+TOTAL 4 checks, FAIL 0

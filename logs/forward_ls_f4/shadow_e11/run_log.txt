@@ -1,0 +1,1 @@
+[2026-10-16 15:13:45 UTC] E11 shadow as-of 2026-10-15: E11 10000.0 vs LS_RS 10000.0, C0=True, perp longs 0, spot longs 0

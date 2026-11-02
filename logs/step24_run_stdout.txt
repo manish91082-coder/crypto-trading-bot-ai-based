@@ -1,0 +1,17 @@
+universes {'a_universe_equals_step19': True} (21s)
+rows 558719 1006970 {'coin_days': 442651, 'mismatched': 711, 'share': 0.0016062315458453724} (113s)
+G1 0.6175 1.0 True (814s)
+R4 AI {'n': 1006420, 'auc': 0.5451, 'ci_low': 0.5412, 'ci_high': 0.5488, 'base_rate': 0.4997} (2883s)
+  R4_AI {'final': 48.81, 'cagr_pct': np.float64(-60.41), 'max_dd_pct': 99.83, 'calmar': np.float64(-0.605), 'trades': 9540, 'avg_trade_pct': -0.21, 'trade_ci_low_pct': -0.382, 'trade_ci_high_pct': -0.039, 'avg_hold_hours': 15.9, 'ret_2021': 11.23, 'ret_2022': -97.28, 'ret_2023': -70.71, 'ret_2024': -44.97, 'ret_2025': 0.0, 'ret_2026': 0.0}
+  R4_AI_cost040 {'final': 46.92, 'cagr_pct': np.float64(-60.68), 'max_dd_pct': 99.74, 'calmar': np.float64(-0.608), 'trades': 5039, 'avg_trade_pct': -0.437, 'trade_ci_low_pct': -0.735, 'trade_ci_high_pct': -0.165, 'avg_hold_hours': 12.5, 'ret_2021': -88.4, 'ret_2022': -95.96, 'ret_2023': 0.0, 'ret_2024': 0.0, 'ret_2025': 0.0, 'ret_2026': 0.0}
+R4 CONTROL {'n': 1006420, 'auc': 0.5001, 'ci_low': 0.4979, 'ci_high': 0.5025, 'base_rate': 0.4997} (3882s)
+  R4_CONTROL {'final': 46.68, 'cagr_pct': np.float64(-60.72), 'max_dd_pct': 99.76, 'calmar': np.float64(-0.609), 'trades': 5799, 'avg_trade_pct': -0.376, 'trade_ci_low_pct': -0.603, 'trade_ci_high_pct': -0.124, 'avg_hold_hours': 10.9, 'ret_2021': -93.7, 'ret_2022': -92.59, 'ret_2023': 0.0, 'ret_2024': 0.0, 'ret_2025': 0.0, 'ret_2026': 0.0}
+R24 AI {'n': 1005900, 'auc': 0.5653, 'ci_low': 0.5579, 'ci_high': 0.5718, 'base_rate': 0.4998} (6221s)
+  R24_AI {'final': 201548.26, 'cagr_pct': np.float64(68.69), 'max_dd_pct': 74.68, 'calmar': np.float64(0.92), 'trades': 1998, 'avg_trade_pct': 1.196, 'trade_ci_low_pct': 0.323, 'trade_ci_high_pct': 2.249, 'avg_hold_hours': 126.0, 'ret_2021': 2338.36, 'ret_2022': -67.03, 'ret_2023': 79.65, 'ret_2024': 67.99, 'ret_2025': -13.72, 'ret_2026': -3.49}
+  R24_AI_cost040 {'final': 61721.26, 'cagr_pct': np.float64(37.28), 'max_dd_pct': 82.0, 'calmar': np.float64(0.455), 'trades': 1998, 'avg_trade_pct': 0.893, 'trade_ci_low_pct': 0.022, 'trade_ci_high_pct': 1.942, 'avg_hold_hours': 126.0, 'ret_2021': 1547.33, 'ret_2022': -75.74, 'ret_2023': 61.31, 'ret_2024': 45.54, 'ret_2025': -27.19, 'ret_2026': -9.3}
+R24 CONTROL {'n': 1005900, 'auc': 0.5007, 'ci_low': 0.4968, 'ci_high': 0.5044, 'base_rate': 0.4998} (7263s)
+  R24_CONTROL {'final': 48.39, 'cagr_pct': np.float64(-60.47), 'max_dd_pct': 99.9, 'calmar': np.float64(-0.605), 'trades': 4198, 'avg_trade_pct': -0.38, 'trade_ci_low_pct': -0.899, 'trade_ci_high_pct': 0.127, 'avg_hold_hours': 55.1, 'ret_2021': 84.97, 'ret_2022': -95.63, 'ret_2023': 6.56, 'ret_2024': -53.93, 'ret_2025': -79.38, 'ret_2026': -40.81}
+R4 frozen 2018-19 {'n': 205209, 'auc': 0.5553, 'ci_low': 0.5495, 'ci_high': 0.56, 'base_rate': 0.484}
+R24 frozen 2018-19 {'n': 204439, 'auc': 0.5463, 'ci_low': 0.5326, 'ci_high': 0.5588, 'base_rate': 0.484}
+
+GATES: {"G0a_universe_equals_step19": true, "G0b_crosscheck_lt_1pct": true, "G0": true, "G1": true, "R4": {"G2_skill": true, "G3a_cagr": false, "G3b_calmar": false, "G3c_trade_ci": false, "G3d_cost040": false, "G4_pre2020": true, "pass": false, "skill_only": true}, "R24": {"G2_skill": true, "G3a_cagr": true, "G3b_calmar": true, "G3c_trade_ci": true, "G3d_cost040": true, "G4_pre2020": true, "pass": true, "skill_only": false}, "decision": "PASS_R24"} (7802s)

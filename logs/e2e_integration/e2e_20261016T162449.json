@@ -1,0 +1,41 @@
+{
+ "start_utc": "2026-10-16 16:24:49.663913+00:00",
+ "end_utc": "2026-10-16 16:25:00.339610+00:00",
+ "parts": [
+  "A"
+ ],
+ "passed": 6,
+ "total": 6,
+ "results": [
+  {
+   "test": "A1 all src/*.py compile",
+   "ok": true,
+   "detail": "114 files; failures []"
+  },
+  {
+   "test": "A2 every protocol file equals its SHA256 lock",
+   "ok": true,
+   "detail": "38 lock files; mismatches []"
+  },
+  {
+   "test": "A2b code files changed after lock (information; forward systems document them)",
+   "ok": true,
+   "detail": "forward_multi_16b: src/execution/forward_multi_16b.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); forward_multi_16b: src/audits/verify_forward_multi_16b.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); research_s2_bear_training: src/pipeline_1d/s2_bear_training.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); research_s3_futures_features: src/audits/verify_s3_claims.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); research_sr_levels: src/research/sr_levels_study.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); research_sr_levels: src/audits/verify_sr_study.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); research_swing_ai_phase2: src/research/swing_ai_phase2.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_1d_step13_unseen: src/pipeline_1d/step13_unseen_coins_1d.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_1d_step16_forward: src/execution/forward_dryrun_1d.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_1d_step17_18: src/pipeline_1d/step17_18_market_veto_1d.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_1d_step22_pre2020: src/audits/verify_step22_claims.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_1d_step23_4h: src/pipeline_1d/step23_4h_brain.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_f2_longshort: src/pipeline_1d/f2_longshort.py changed after lock (CODE_CHANGES_AFTER_LOCK.m"
+  },
+  {
+   "test": "A3 every enabled scheduled task points to an existing python and script",
+   "ok": true,
+   "detail": "9 tasks; []"
+  },
+  {
+   "test": "A3b scheduled tasks (information)",
+   "ok": true,
+   "detail": "CryptoBot16B_ForwardMulti: Ready, wake=True, triggers 2026-10-16T07:30:00+05:30,2026-10-16T08:00:00+05:30, next 10/17/2026 07:30:00, last result 1 || CryptoBot1D_ForwardDryRun: Ready, wake=True, triggers 2026-10-13T05:50:00+05:30,2026-10-13T06:50:00+05:30, next 10/17/2026 05:50:20, last result 0 || CryptoBot1D_HealthCheck: Disabled, wake=False, triggers 2026-10-13T11:22:09+05:30, next 10/16/2026 22:22:52, last result 0 || CryptoBot1D_Testnet_Swing: Disabled, wake=False, triggers ,2026-10-12T21:42:47+05:30, next 10/16/2026 22:42:12, last result 267014 || CryptoBot_F4_LSPaper: Ready, wake=True, triggers 2026-10-16T08:30:00+05:30,2026-10-16T09:00:00+05:30, next 10/17/2026 08:30:00, last result 1 || CryptoBot_M10_DailyStatus: Ready, wake=True, triggers 2026-10-17T10:15:00+05:30, next 10/17/2026 10:15:45, last result 267011 || CryptoBot_M4_OptionsCollector: Ready, wake=True, triggers 2026-10-17T05:40:00+05:30,2026-10-17T06:10:00+05:30, next 10/17/2026 05:40:10, last result 267011 || CryptoBot_N3_EVTMonitor: Ready, wake=True, triggers 2026-10-17T09:30:00+05:30,2026-10-17T10:00:00+05:30, next 10/17/2026 09:30:00, last result 267011 || CryptoBot_Step2_CostSnapshot: Ready, wake=True, triggers 2026-10-16T05:28:00+05:30,2026-10-16T05:32:00+05:30, next 10/17/2026 05:28:58, last result 0"
+  },
+  {
+   "test": "A4 order safety: daily scripts contain no order call; F6 knows only the two test hosts",
+   "ok": true,
+   "detail": "order-call counts {'cost_snapshot_step2.py': 0, 'forward_dryrun_1d.py': 0, 'forward_ls_f4.py': 0, 'forward_multi_16b.py': 0, 'futures_testnet_f6.py': 10, 'health_check_1d.py': 0, 'live_1d_ai_engine.py': 2, 'live_1d_swing_engine.py': 3, 'm10_daily_status.py': 0, 'm4_options_collector.py': 0, 'n3_evt_monitor.py': 0, 'shadow_e11_f4.py': 0}; F6 hosts ['https://demo-fapi.binance.com', 'https://testnet.binancefuture.com']"
+  }
+ ]
+}

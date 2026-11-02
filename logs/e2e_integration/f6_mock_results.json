@@ -1,0 +1,81 @@
+{
+ "passed": 15,
+ "total": 15,
+ "results": [
+  {
+   "test": "M1 first run: every target short opened with one stop at fill x 1.5; isolated+1x set first; state == exchange",
+   "ok": true,
+   "detail": "15 shorts / 15 targets; stops True; setup True; open algos 15"
+  },
+  {
+   "test": "M1b verifier O1..O3 on the mock exchange",
+   "ok": true,
+   "detail": "[O1 PASS] 20261016T143633_testnet.json: 15 actions acknowledged or skipped with a reason | [O2 PASS] 15 open shorts, each with exactly one correct STOP_MARKET algo order | [O5 PASS] every held symbol is ISOLATED margin at leverage 1 (11 symbols, re-read via /fapi/v1/symbolConfig) | [O3 PASS] exchange positions equal the state for 11 symbols; no extra positions"
+  },
+  {
+   "test": "M2 second run with the same decision sends no order (idempotent)",
+   "ok": true,
+   "detail": "POSTs 60 -> 60"
+  },
+  {
+   "test": "M3 TRIGGERED stop -> short removed from the state (stop_fired)",
+   "ok": true,
+   "detail": "D1 SUIUSDT: stop_fired 1; RE-OPENED in the same run with the same decision: False"
+  },
+  {
+   "test": "M3b after an exchange stop the short is NOT re-opened (30-day cooldown, F7 rule)",
+   "ok": true,
+   "detail": "re-opened=False; skip reason ['cooldown: exchange stop fired 2026-10-16 (F7 30-day rule)']"
+  },
+  {
+   "test": "M3c verifier O1..O3 after the stop",
+   "ok": true,
+   "detail": "[O1 PASS] 20261016T143636_testnet.json: 2 actions acknowledged or skipped with a reason | [O2 PASS] 14 open shorts, each with exactly one correct STOP_MARKET algo order | [O5 PASS] every held symbol is ISOLATED margin at leverage 1 (10 symbols, re-read via /fapi/v1/symbolConfig) | [O3 PASS] exchange positions equal the state for 10 symbols; no extra positions"
+  },
+  {
+   "test": "M4 CANCELED stop -> new stop placed; short stays in the state, protected",
+   "ok": true,
+   "detail": "D1 DOGEUSDT: algo 1003 -> 1016"
+  },
+  {
+   "test": "M4b verifier O1..O3 after the re-placed stop",
+   "ok": true,
+   "detail": "[O1 PASS] 20261016T143637_testnet.json: 2 actions acknowledged or skipped with a reason | [O2 PASS] 14 open shorts, each with exactly one correct STOP_MARKET algo order | [O5 PASS] every held symbol is ISOLATED margin at leverage 1 (10 symbols, re-read via /fapi/v1/symbolConfig) | [O3 PASS] exchange positions equal the state for 10 symbols; no extra positions"
+  },
+  {
+   "test": "M5 drill-kill: zero positions, zero open algo orders, no HALT for a drill",
+   "ok": true,
+   "detail": "positions 0, open algos 0"
+  },
+  {
+   "test": "M5b verifier O4 after the drill",
+   "ok": true,
+   "detail": "[O1 PASS] 20261016T143638_testnet.json: 21 actions acknowledged or skipped with a reason\n[O4 PASS] after the kill drill: no positions, no open algo orders"
+  },
+  {
+   "test": "M6 K1 (equity 64 % of peak): everything covered, algo cancelled, HALT written",
+   "ok": true,
+   "detail": "HALT True"
+  },
+  {
+   "test": "M6b with HALT present the next run refuses to trade (no order, no cancel, no signed call)",
+   "ok": true,
+   "detail": "calls after HALT: ['/fapi/v1/exchangeInfo']; [2026-10-16 14:36:41 UTC] HALT file present -> refusing to trade (user must review and delete HALT)"
+  },
+  {
+   "test": "M7 hedge mode stops the run (no settings changed)",
+   "ok": true,
+   "detail": "account is in HEDGE mode: user must switch to one-way (code does not change settings)"
+  },
+  {
+   "test": "M9 exchange-rejected order -> short_rejected recorded, nothing in the state for it",
+   "ok": true,
+   "detail": "rejected 1 (SUIUSDT); in state []"
+  },
+  {
+   "test": "M8 only the two test hosts can be constructed",
+   "ok": true,
+   "detail": "accepted []"
+  }
+ ]
+}

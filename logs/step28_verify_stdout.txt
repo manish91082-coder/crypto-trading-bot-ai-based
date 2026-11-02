@@ -1,0 +1,4 @@
+[V1 PASS] protocol and input hashes
+[V2 PASS] MAIN: VOL final 66,034.40, maxDD 59.10 %, Calmar 0.6583; FIXED_050 / FIXED_MEAN re-derived
+[V2 PASS] PRE: VOL final 4,492.01, maxDD 61.55 %, Calmar -0.5559; FIXED_050 / FIXED_MEAN re-derived
+[V3 PASS] gates re-derived: FAIL

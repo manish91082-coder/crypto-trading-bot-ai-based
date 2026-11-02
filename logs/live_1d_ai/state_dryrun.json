@@ -1,0 +1,41 @@
+{
+  "cash": 8998.75,
+  "positions": {
+    "ETHUSDT": {
+      "symbol": "ETHUSDT",
+      "signal_date": "2026-10-12",
+      "entry_date": "2026-10-13",
+      "entry_price": 2517.56,
+      "units": 0.397209996981204,
+      "cost": 1001.25,
+      "atr": 82.17857142857143,
+      "stop": 2394.07945,
+      "initial_stop": 2394.07945,
+      "high_since": 2517.56,
+      "days": 0,
+      "plan": {
+        "stop_mode": "swing",
+        "stop_atr": 1.5,
+        "trail_atr": null,
+        "opp_exit": true,
+        "exit_k": 3.0,
+        "time_stop": null,
+        "be_atr": null,
+        "struct_trail": false,
+        "partial_atr": null,
+        "partial_frac": 0.0,
+        "runner_lock_atr": null,
+        "runner_trail_atr": null,
+        "inact_days": null
+      },
+      "partial_done": false,
+      "proceeds": 0.0,
+      "stop_id": null,
+      "plan_name": "swing|x3|beNone"
+    }
+  },
+  "peak_eq": 10000.0,
+  "paused_until": null,
+  "trades": [],
+  "last_processed": "2026-10-12"
+}

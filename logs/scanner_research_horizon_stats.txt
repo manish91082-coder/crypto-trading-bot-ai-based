@@ -1,0 +1,20 @@
+coins (10 most frequent in top-20 universe 2021-26): ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'XRPUSDT', 'DOGEUSDT', 'ADAUSDT', 'SOLUSDT', 'LINKUSDT', 'AVAXUSDT', 'TRXUSDT']
+horizon   samples median|r|%  mean|r|%  P(|r|>0.5%) | need hit-rate at round-trip cost: 0.50%  0.20%  0.15%
+5m        6042910      0.104     0.176         6.5% | 192.0%  106.8%   92.6%
+15m       2014260      0.184     0.307        17.0% | 131.5%   82.6%   74.5%
+30m       1007100      0.255     0.431        26.9% | 107.9%   73.2%   67.4%
+1h         503500      0.358     0.605        38.3% |  91.3%   66.5%   62.4%
+4h         125830      0.729     1.222        62.0% |  70.5%   58.2%   56.1%
+1d          20980      2.032     3.165        84.8% |  57.9%   53.2%   52.4%
+1w           2990      5.637     8.709        94.8% |  52.9%   51.1%   50.9%
+1M            690     12.097    22.393        97.7% |  51.1%   50.4%   50.3%
+
+Persistence (lag-1 correlation of NON-overlapping consecutive returns), pooled over 10 coins, 2021-01..2026-09
+horizon  direction corr(r_t, r_t+1)   size corr(|r_t|,|r_t+1|)  same-sign rate
+5m                           -0.029                     +0.414           44.8%   (per-coin direction corr range -0.041..-0.017)
+15m                          -0.002                     +0.394           45.7%   (per-coin direction corr range -0.021..+0.029)
+30m                          -0.024                     +0.370           45.8%   (per-coin direction corr range -0.045..+0.010)
+1h                           -0.009                     +0.336           46.3%   (per-coin direction corr range -0.031..+0.018)
+4h                           -0.011                     +0.301           46.8%   (per-coin direction corr range -0.037..+0.049)
+1d                           -0.034                     +0.231           47.6%   (per-coin direction corr range -0.132..+0.030)
+1w                           +0.112                     +0.154           49.8%   (per-coin direction corr range -0.004..+0.303)

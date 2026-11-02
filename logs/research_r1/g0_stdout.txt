@@ -1,0 +1,1 @@
+G0 {'OFF_LO_D1': True, 'OFF_LO_H4': True, 'OFF_LO_H1': True, 'OFF_LS_D1': True, 'OFF_LS_H4': True, 'OFF_LS_H1': True, 'RS_D1': True, 'RS_H4': True, 'RS_H1': True} PASS

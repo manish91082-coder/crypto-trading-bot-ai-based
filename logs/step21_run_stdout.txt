@@ -1,0 +1,11 @@
+U rows 46920 from 2020-04-29 (identical to Step 19 from 2021) (183s)
+G1 0.4882 0.9978 False
+AI {'n': 2088, 'auc': 0.4717, 'ci_low': 0.3988, 'ci_high': 0.5518, 'base_rate': 0.1906} alarm days % 18.1 precision 0.169
+CONTROL {'n': 2088, 'auc': 0.5407, 'ci_low': 0.473, 'ci_high': 0.6091, 'base_rate': 0.1906} alarm days % 27.7 precision 0.22
+UNGATED {'final': np.float64(65274.51), 'cagr_pct': np.float64(38.63), 'max_dd_pct': np.float64(73.18), 'calmar': np.float64(0.528), 'trades': 490, 'trade_ci_low_pct': 0.30065932835198783, 'days_invested_pct': 99.95235826584089} {2021: 562.64, 2022: -64.83, 2023: 117.05, 2024: 63.24, 2025: -14.42, 2026: -7.44}
+ALARM {'final': np.float64(121024.18), 'cagr_pct': np.float64(54.36), 'max_dd_pct': np.float64(52.72), 'calmar': np.float64(1.031), 'trades': 601, 'trade_ci_low_pct': 0.6877001984029921, 'days_invested_pct': 80.99094807050977} {2021: 472.88, 2022: -37.17, 2023: 115.19, 2024: 75.05, 2025: -8.76, 2026: -2.18}
+ALARM_CONTROL {'final': np.float64(70327.68), 'cagr_pct': np.float64(40.44), 'max_dd_pct': np.float64(57.54), 'calmar': np.float64(0.703), 'trades': 633, 'trade_ci_low_pct': -0.15310075233823756, 'days_invested_pct': 73.13006193425441} {2021: 524.42, 2022: -39.22, 2023: 26.32, 2024: 56.08, 2025: -6.84, 2026: 0.89}
+ALARM_cost040 {'final': np.float64(90764.3), 'cagr_pct': np.float64(46.81), 'max_dd_pct': np.float64(53.76), 'calmar': np.float64(0.871), 'trades': 601, 'trade_ci_low_pct': 0.38608650221509133, 'days_invested_pct': 80.99094807050977} {2021: 439.25, 2022: -41.17, 2023: 107.41, 2024: 65.25, 2025: -12.77, 2026: -4.3}
+BTC_HOLD {'final': np.float64(25051.67), 'cagr_pct': np.float64(17.34), 'max_dd_pct': np.float64(69.28), 'calmar': np.float64(0.25), 'trades': 1, 'trade_ci_low_pct': 187.67663218025987, 'days_invested_pct': None} {2021: 47.63, 2022: -55.6, 2023: 108.61, 2024: 103.74, 2025: -5.88, 2026: -4.25}
+
+GATES: {"G1": false, "G2_skill": false, "G3a_cagr": true, "G3b_calmar": true, "G3c_trade_ci": true, "G3d_years": false, "G3e_cost040": true, "G3f_maxdd": false, "decision": "INVALID"} (283s)

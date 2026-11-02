@@ -1,0 +1,10 @@
+{
+ "c3_configs": 120,
+ "fut_configs": 100,
+ "fut_lb95_pos": 0,
+ "fut_lbbonf_pos": 0,
+ "partD_selected_by_rule": [],
+ "partD_lead": "FUT|RAND|R08|G12",
+ "top_c1": "DIR_CLOSEPOS",
+ "top_c2": "ENT_SWEEP_ALL"
+}

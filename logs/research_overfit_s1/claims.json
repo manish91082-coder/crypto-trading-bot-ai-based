@@ -1,0 +1,76 @@
+{
+  "protocol_sha256": "1ae33cde6aa65554c9af21b457041f1babe03f69914063861e1f4aeda3c68717",
+  "N_series": 60,
+  "N_extra": 15,
+  "T": 2098,
+  "V_daily_sr": 0.0004853715572268442,
+  "sr_daily_mean": 0.029910418453514085,
+  "sr_daily_max": 0.056029267057095586,
+  "best_trial": "strategy_1d_step22_pre2020/INSAMPLE_2021_26_AI_100_b10_hourly_equity",
+  "returns_sha256": "5c00bdff3b79b537eec589998a354089fdf4648b60f136c57f9a9a7fb1af9c4e",
+  "DSR_M_AI3_f50": {
+    "sr_daily": 0.04858583825076798,
+    "sr_annual_365": 0.9282311364435978,
+    "skew": 3.404604402873469,
+    "kurt_raw": 78.00293198503307,
+    "T": 2098,
+    "N_series": {
+      "N": 60,
+      "sr0_daily": 0.05167048596715668,
+      "sr0_annual_365": 0.9871632483181185,
+      "dsr": 0.44015496981883756,
+      "significant_95": false
+    },
+    "N_total": {
+      "N": 75,
+      "sr0_daily": 0.0534844681259348,
+      "sr0_annual_365": 1.0218193288006736,
+      "dsr": 0.40550416616580554,
+      "significant_95": false
+    },
+    "N_double": {
+      "N": 150,
+      "sr0_daily": 0.058825511823962125,
+      "sr0_annual_365": 1.1238598253755467,
+      "dsr": 0.3085913506364364,
+      "significant_95": false
+    }
+  },
+  "DSR_H1_f100": {
+    "sr_daily": 0.05361743110555764,
+    "sr_annual_365": 1.0243595829595753,
+    "skew": 3.723635075597847,
+    "kurt_raw": 81.52398308412732,
+    "T": 2098,
+    "N_series": {
+      "N": 60,
+      "sr0_daily": 0.05167048596715668,
+      "sr0_annual_365": 0.9871632483181185,
+      "dsr": 0.5383348108778665,
+      "significant_95": false
+    },
+    "N_total": {
+      "N": 75,
+      "sr0_daily": 0.0534844681259348,
+      "sr0_annual_365": 1.0218193288006736,
+      "dsr": 0.5026220273525575,
+      "significant_95": false
+    },
+    "N_double": {
+      "N": 150,
+      "sr0_daily": 0.058825511823962125,
+      "sr0_annual_365": 1.1238598253755467,
+      "dsr": 0.3984192847447766,
+      "significant_95": false
+    }
+  },
+  "PBO": {
+    "S": 16,
+    "T_used": 2096,
+    "combinations": 12870,
+    "N": 60,
+    "pbo": 0.6498834498834499,
+    "prob_oos_loss": 0.2041958041958042,
+    "lambda_median": -0.2972515234679316
+  }
+}

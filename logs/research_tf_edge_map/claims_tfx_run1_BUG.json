@@ -1,0 +1,223 @@
+{
+ "protocol_sha": "04db1feae75378efb1e770faf9ef561a356cb301de06a29aedac0c97ef2ab54b",
+ "code_sha": "7e39496a3b35c90403d39ecfbfd5283b616ef27e56bb2e39b9489efcc0d8e3f9",
+ "cells_sha": "055621f5866f01ae187bb2b29fe2e6e4f06858a4affd5719486e3999323af53f",
+ "stats_sha": "bd62052a7b940976fa8495f89d592e87d98b5a47bf0df9ad2fb3cf682cc78c5f",
+ "g1_sha": "bf457bec47227af1cf534b9d246d53ecadf6dcd57aac7114f4be8829e6ff7992",
+ "g1_usable_months": 312,
+ "g1_months": 389,
+ "g1_unparseable_rows": 9011520,
+ "g0_match_by_tf_col": {
+  "ac1": {
+   "15m": false,
+   "1D": false,
+   "1M": false,
+   "1W": false,
+   "1h": false,
+   "4h": false,
+   "5m": false
+  },
+  "ac1_recent": {
+   "15m": false,
+   "1D": false,
+   "1M": false,
+   "1W": false,
+   "1h": false,
+   "4h": false,
+   "5m": false
+  },
+  "bars": {
+   "15m": true,
+   "1D": true,
+   "1M": true,
+   "1W": true,
+   "1h": true,
+   "4h": true,
+   "5m": true
+  },
+  "body": {
+   "15m": true,
+   "1D": true,
+   "1M": true,
+   "1W": true,
+   "1h": true,
+   "4h": true,
+   "5m": true
+  },
+  "cost_ratio": {
+   "15m": true,
+   "1D": true,
+   "1M": true,
+   "1W": true,
+   "1h": true,
+   "4h": true,
+   "5m": true
+  },
+  "range": {
+   "15m": false,
+   "1D": false,
+   "1M": false,
+   "1W": false,
+   "1h": false,
+   "4h": false,
+   "5m": false
+  },
+  "vr4": {
+   "15m": false,
+   "1D": false,
+   "1M": false,
+   "1W": false,
+   "1h": false,
+   "4h": false,
+   "5m": false
+  }
+ },
+ "g0_values_matched": 184,
+ "g0_values": 392,
+ "n_cells": {
+  "U1": 106.0,
+  "U2": 107.0
+ },
+ "readings": [
+  [
+   "U1",
+   "COST-VIABLE-PERP-STRICT;COST-VIABLE-SPOT-STRICT",
+   6
+  ],
+  [
+   "U1",
+   "COST-VIABLE-PERP-STRICT;COST-VIABLE-SPOT-STRICT;TIMING+",
+   8
+  ],
+  [
+   "U1",
+   "COST-VIABLE-PERP;COST-VIABLE-SPOT",
+   5
+  ],
+  [
+   "U1",
+   "COST-VIABLE-PERP;COST-VIABLE-SPOT-STRICT",
+   1
+  ],
+  [
+   "U1",
+   "COST-VIABLE-PERP;COST-VIABLE-SPOT-STRICT;TIMING+",
+   1
+  ],
+  [
+   "U1",
+   "COST-VIABLE-PERP;COST-VIABLE-SPOT;TIMING+",
+   3
+  ],
+  [
+   "U1",
+   "COST-VIABLE-PERP;TIMING+",
+   1
+  ],
+  [
+   "U1",
+   "TIMING+",
+   15
+  ],
+  [
+   "U1",
+   "TIMING+-STRICT",
+   15
+  ],
+  [
+   "U1",
+   "TIMING-",
+   16
+  ],
+  [
+   "U1",
+   "TIMING--STRICT",
+   7
+  ],
+  [
+   "U1",
+   "none",
+   28
+  ],
+  [
+   "U1",
+   "too few",
+   24
+  ],
+  [
+   "U2",
+   "COST-VIABLE-PERP",
+   1
+  ],
+  [
+   "U2",
+   "COST-VIABLE-PERP-STRICT;COST-VIABLE-SPOT-STRICT",
+   3
+  ],
+  [
+   "U2",
+   "COST-VIABLE-PERP-STRICT;COST-VIABLE-SPOT-STRICT;TIMING+-STRICT",
+   3
+  ],
+  [
+   "U2",
+   "COST-VIABLE-PERP-STRICT;TIMING+",
+   1
+  ],
+  [
+   "U2",
+   "COST-VIABLE-PERP-STRICT;TIMING+-STRICT",
+   3
+  ],
+  [
+   "U2",
+   "COST-VIABLE-PERP;COST-VIABLE-SPOT",
+   6
+  ],
+  [
+   "U2",
+   "COST-VIABLE-PERP;TIMING+",
+   1
+  ],
+  [
+   "U2",
+   "COST-VIABLE-PERP;TIMING+-STRICT",
+   3
+  ],
+  [
+   "U2",
+   "COST-VIABLE-SPOT",
+   2
+  ],
+  [
+   "U2",
+   "COST-VIABLE-SPOT-STRICT;TIMING+",
+   2
+  ],
+  [
+   "U2",
+   "TIMING+",
+   17
+  ],
+  [
+   "U2",
+   "TIMING-",
+   17
+  ],
+  [
+   "U2",
+   "TIMING--STRICT",
+   4
+  ],
+  [
+   "U2",
+   "none",
+   44
+  ],
+  [
+   "U2",
+   "too few",
+   1
+  ]
+ ]
+}

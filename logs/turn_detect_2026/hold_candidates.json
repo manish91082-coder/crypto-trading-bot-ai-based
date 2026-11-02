@@ -1,0 +1,42 @@
+{
+ "created_utc": "2026-10-27T13:39:16Z",
+ "protocol_sha": "0d2fece2fce4b9b99e41e97333040fef34024e8774425c95e8c91bf879ffb2c9",
+ "code_sha": "f405ad51cadb8c079a57d8b59fcb0695f2545567ec8025ab64a6c6f584dfa2ee",
+ "T2": [],
+ "T3": [],
+ "T1": [],
+ "T4": [],
+ "T2_real_features": [
+  {
+   "theta": 0.005,
+   "f": 0.25,
+   "feature": "F01_bounce_min"
+  },
+  {
+   "theta": 0.005,
+   "f": 0.25,
+   "feature": "F02_prior_leg"
+  },
+  {
+   "theta": 0.005,
+   "f": 0.25,
+   "feature": "F14_retests"
+  },
+  {
+   "theta": 0.005,
+   "f": 0.25,
+   "feature": "F15_eth_lead"
+  },
+  {
+   "theta": 0.005,
+   "f": 0.25,
+   "feature": "F17_stair_1s"
+  },
+  {
+   "theta": 0.005,
+   "f": 0.25,
+   "feature": "F18_speed"
+  }
+ ],
+ "n_candidates": 0
+}

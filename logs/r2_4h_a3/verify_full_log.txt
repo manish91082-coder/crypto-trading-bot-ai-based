@@ -1,0 +1,5 @@
+[1 PASS] 6 random test months refitted with own code: max |p diff| 0.0e+00
+[2 PASS] AUC 0.5136, take rate 0.754, G-B diff +0.0183, tail share 0.782 == claims
+[3 PASS] own MTM portfolio: AI 10142.37 / DD 0.1019; baseline 9886.84 / DD 0.2740 == claims
+[4 PASS] claims / gates / verdict ('A3 FAIL') / SHAs consistent
+TOTAL 4 checks, FAIL 0

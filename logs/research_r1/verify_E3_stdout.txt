@@ -1,0 +1,4 @@
+[V1 PASS] E3: protocol, engine and runner hashes
+[V2 PASS] E3: F7 short P&L 26227.13, E3b short P&L 26388.10 and E3c median re-derived; reading rule re-applied
+[V2 PASS] E3: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied
+[V3 PASS] E3: listing-age bucket P&L shares re-derived from the F7 trades with a plain age computation

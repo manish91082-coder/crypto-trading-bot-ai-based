@@ -1,0 +1,9 @@
+[P0 OK] NP2 protocol matches its SHA
+[P1 OK] feature sets equal the NP1 S1-confirmed features for 1h / 4h
+[P2 OK] 24 configs: every DV trade recomputed (own percentiles, scores, ridge beta); 0 configs differ
+[P3 OK] 48 D / V summaries (trades, mean net, weekly-cluster t) recomputed; 0 differ
+[P4 OK] selection by the locked rule: candidates [], selected []
+[P5 OK] no H row in the DV stage
+[P6 OK] no fee literal in NP2 code
+
+RESULT: ALL PASS

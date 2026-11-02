@@ -1,0 +1,6 @@
+[V1 PASS] protocol a8a6b7a31fe2, code 23d5e9f76f83 (as locked)
+   D1: 43,151.15 = Step 27 43,151.15
+   H4: 49,365.87 = Step 27 49,365.87
+   H1: 69,134.22 = Step 27 69,134.22
+   M_AI3 mean of finals 53,883.75
+[V4 PASS] paper engine = Step 27 research sleeves (50 %)

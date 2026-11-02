@@ -1,0 +1,5 @@
+[X1 PASS] 300 maker fills / stress fills / prices from raw 5m: mismatches 0 []
+[X2 PASS] 200 routing decisions (trailing funding, PIT median hold, spot flag): mismatches 0 []
+[X3 PASS] shortfall mean 0.000047, CI (-1.4744359623940512e-06, 9.65086532542645e-05); fill rate 0.9654; gate booleans re-derived
+[X4 PASS] protocol lock, registry T17, file SHAs, code SHA
+TOTAL 4 checks, FAIL 0

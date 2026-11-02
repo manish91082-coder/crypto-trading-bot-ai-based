@@ -1,0 +1,21 @@
+PASS  X1 protocol SHA  
+PASS  X1 output SHAs  
+PASS  X1 input SHAs  
+PASS  X2 past protocol SHAs (16 studies)  17/17 files
+PASS  X3 ledger drawdowns (rounded claims)  DD match 24, final match 5 (others = close-out gap, X4)
+PASS  X3 ECO rows (unrounded, 1e-9)  
+PASS  X4 final gap = end close-out fee  A01 True, A09 True; investigation exact 14/19, bound-only 4, no trades file 1
+PASS  X5 rolling windows (exact)  12 rows
+   own boot ALL H30: p95 0.0749 (main 0.0736) p99 0.0926 (main 0.0935) P(kill) 0.0000
+   own boot ALL H90: p95 0.1101 (main 0.1114) p99 0.1444 (main 0.1469) P(kill) 0.0000
+   own boot ALL H180: p95 0.1409 (main 0.1410) p99 0.1860 (main 0.1800) P(kill) 0.0000
+   own boot ALL H365: p95 0.1727 (main 0.1754) p99 0.2193 (main 0.2210) P(kill) 0.0007
+   own boot P3 H30: p95 0.0815 (main 0.0818) p99 0.0967 (main 0.0981) P(kill) 0.0000
+   own boot P3 H90: p95 0.1444 (main 0.1440) p99 0.1774 (main 0.1759) P(kill) 0.0000
+   own boot P3 H180: p95 0.2038 (main 0.2045) p99 0.2544 (main 0.2521) P(kill) 0.0017
+   own boot P3 H365: p95 0.2824 (main 0.2810) p99 0.3402 (main 0.3392) P(kill) 0.0316
+PASS  X6 own bootstrap within 1.0 pp  worst diff 0.59 pp
+PASS  X7 alarm thresholds  
+PASS  X8 statements §3  P(kill 365|ALL) 0.0006, P3 median 365 -0.0015; partA_verified False due to close-out gaps only
+
+TOTAL 11 checks, 11 PASS, 0 FAIL -> ALL PASS

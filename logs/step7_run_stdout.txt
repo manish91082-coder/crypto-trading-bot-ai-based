@@ -1,0 +1,50 @@
+candidates: 1877 (2020-01-27..2026-09-26)
+matrix: 1877 entries x 13 exits built in 49s
+           plan  trades  mean_ret  median_ret  win_rate  best_plan_share_HINDSIGHT  median_capture_of_mfe
+  atr|x2|beNone    1827    0.0206     -0.0313    0.3957                     0.3487                 0.4626
+   atr|x2|be2.0    1827    0.0190     -0.0280    0.3465                     0.0159                 0.4963
+  atr|x3|beNone    1827    0.0787     -0.0567    0.3547                     0.1182                 0.4617
+   atr|x3|be2.0    1827    0.0667     -0.0420    0.2682                     0.0055                 0.4993
+  atr|x4|beNone    1827    0.1665     -0.0668    0.2961                     0.1007                 0.4295
+   atr|x4|be2.0    1827    0.1313     -0.0463    0.2146                     0.0011                 0.4619
+swing|x2|beNone    1827    0.0227     -0.0240    0.4105                     0.1084                 0.4607
+ swing|x2|be2.0    1827    0.0206     -0.0212    0.3574                     0.0000                 0.4932
+swing|x3|beNone    1827    0.1115     -0.0304    0.4280                     0.0629                 0.4560
+ swing|x3|be2.0    1827    0.0960     -0.0025    0.3186                     0.0104                 0.4993
+swing|x4|beNone    1827    0.2256     -0.0617    0.3914                     0.0531                 0.4144
+ swing|x4|be2.0    1827    0.1839     -0.0025    0.2698                     0.0120                 0.4618
+    law6_runner    1827    0.0061     -0.0025    0.3487                     0.1631                 0.5625
+run                 AI_monthly_retrain
+final                         42116.62
+total_return_pct                321.17
+cagr_pct                         28.44
+max_dd_pct                       50.09
+calmar                           0.568
+sharpe                           0.825
+trades                             365
+win_rate                         29.04
+profit_factor                    1.417
+ret_2021                        206.38
+ret_2022                        -30.58
+ret_2023                         77.31
+ret_2024                         46.78
+ret_2025                        -27.69
+ret_2026                          5.23 
+(549s)
+run                 CONTROL_shuffled_labels
+final                              39343.55
+total_return_pct                     293.44
+cagr_pct                              26.93
+max_dd_pct                            56.81
+calmar                                0.474
+sharpe                                0.793
+trades                                  378
+win_rate                              29.37
+profit_factor                         1.346
+ret_2021                             229.82
+ret_2022                             -41.27
+ret_2023                              77.84
+ret_2024                              71.76
+ret_2025                             -34.44
+ret_2026                               1.44 
+(1043s)

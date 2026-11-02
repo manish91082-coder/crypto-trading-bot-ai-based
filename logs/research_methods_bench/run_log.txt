@@ -1,0 +1,215 @@
+[2026-10-26 06:07:42] controltest F5_z_follow_48_k2 V3: fast p95 0.0068562742 vs stored 0.0068379662 -> False
+[2026-10-26 06:07:50] controltest F9_vshock_follow V2: fast p95 0.0048864586 vs stored 0.0048846720 -> False
+[2026-10-26 06:08:02] controltest F5_z_follow_48_k2 V2: fast p95 0.0046253980 vs stored 0.0046253980 -> False
+[2026-10-26 06:08:08] controltest F8_flow_follow_24h_k1.5 A4_4: fast p95 0.0044553787 vs stored 0.0044553787 -> False
+[2026-10-26 06:08:13] controltest F6_rsi_follow_4h_30 V1: fast p95 0.0029106377 vs stored 0.0029106377 -> False
+[2026-10-26 06:08:26] controltest F6_rsi_follow_5m_30 V2: fast p95 0.0043061737 vs stored 0.0043528823 -> False
+[2026-10-26 06:09:15] controltest F5_z_follow_48_k3 V3: fast p95 0.0066135199 vs stored 0.0063479587 -> False
+[2026-10-26 06:09:22] controltest F9_vshock_follow V3: fast p95 0.0072740531 vs stored 0.0071927973 -> False
+[2026-10-26 06:11:06] controltest F1_long V3: fast p95 0.0009709434 vs stored 0.0008562258 -> False
+[2026-10-26 06:11:19] controltest F2_mom_1h_k0 V2: fast p95 0.0040882241 vs stored 0.0040882241 -> False
+[2026-10-26 06:11:19] controltest: 0/10 identical
+[2026-10-26 06:13:18] controltest F5_z_follow_48_k2 V3: fast p95 0.0068379662 vs stored 0.0068379662 -> True
+[2026-10-26 06:13:25] controltest F9_vshock_follow V2: fast p95 0.0048846720 vs stored 0.0048846720 -> True
+[2026-10-26 06:13:35] controltest F5_z_follow_48_k2 V2: fast p95 0.0046253980 vs stored 0.0046253980 -> True
+[2026-10-26 06:13:40] controltest F8_flow_follow_24h_k1.5 A4_4: fast p95 0.0044553787 vs stored 0.0044553787 -> True
+[2026-10-26 06:13:45] controltest F6_rsi_follow_4h_30 V1: fast p95 0.0029106377 vs stored 0.0029106377 -> True
+[2026-10-26 06:13:59] controltest F6_rsi_follow_5m_30 V2: fast p95 0.0043528823 vs stored 0.0043528823 -> True
+[2026-10-26 06:14:40] controltest F5_z_follow_48_k3 V3: fast p95 0.0063479587 vs stored 0.0063479587 -> True
+[2026-10-26 06:14:48] controltest F9_vshock_follow V3: fast p95 0.0071927973 vs stored 0.0071927973 -> True
+[2026-10-26 06:16:20] controltest F1_long V3: fast p95 0.0008562258 vs stored 0.0008562258 -> True
+[2026-10-26 06:16:32] controltest F2_mom_1h_k0 V2: fast p95 0.0040882241 vs stored 0.0040882241 -> True
+[2026-10-26 06:16:32] controltest: 10/10 identical
+[2026-10-26 06:18:07] batch1 signals: 189 configs in 53 s
+[2026-10-26 06:18:15] batch1: A1.01_SMA50_15m done
+[2026-10-26 06:18:22] batch1: A1.01_EMA50_15m done
+[2026-10-26 06:18:30] batch1: A1.01_HMA50_15m done
+[2026-10-26 06:18:42] batch1: A1.01_KAMA50_15m done
+[2026-10-26 06:18:49] batch1: A1.02_EMA20x50_15m done
+[2026-10-26 06:18:58] batch1: A1.03a_MACDhist_15m done
+[2026-10-26 06:19:05] batch1: A1.03b_MACDline_15m done
+[2026-10-26 06:19:09] batch1: A1.04_ADX_15m done
+[2026-10-26 06:19:13] batch1: A1.05_Aroon_15m done
+[2026-10-26 06:19:19] batch1: A1.06_PSAR_15m done
+[2026-10-26 06:19:24] batch1: A1.07_Supertrend_15m done
+[2026-10-26 06:19:28] batch1: A1.08_Ichimoku_15m done
+[2026-10-26 06:19:31] batch1: A1.09_Donchian20_15m done
+[2026-10-26 06:19:34] batch1: A1.10_Keltner_15m done
+[2026-10-26 06:19:41] batch1: A1.11_LinRegSlope20_15m done
+[2026-10-26 06:19:48] batch1: A1.13_Vortex_15m done
+[2026-10-26 06:19:54] batch1: A1.14a_TRIX_15m done
+[2026-10-26 06:20:00] batch1: A1.14b_KST_15m done
+[2026-10-26 06:20:06] batch1: A1.15_HeikinAshi_15m done
+[2026-10-26 06:20:12] batch1: A1.17_TSMOM20_15m done
+[2026-10-26 06:20:15] batch1: A1.18_KaufmanER_15m done
+[2026-10-26 06:20:18] batch1: A1.19_Choppiness_15m done
+[2026-10-26 06:20:20] batch1: A2.01a_RSI14_fade_15m done
+[2026-10-26 06:20:22] batch1: A2.01a_RSI14_follow_15m done
+[2026-10-26 06:20:24] batch1: A2.01b_ConnorsRSI_fade_15m done
+[2026-10-26 06:20:26] batch1: A2.01b_ConnorsRSI_follow_15m done
+[2026-10-26 06:20:28] batch1: A2.02a_Stoch_fade_15m done
+[2026-10-26 06:20:31] batch1: A2.02a_Stoch_follow_15m done
+[2026-10-26 06:20:35] batch1: A2.02b_StochRSI_fade_15m done
+[2026-10-26 06:20:39] batch1: A2.02b_StochRSI_follow_15m done
+[2026-10-26 06:20:43] batch1: A2.03_WilliamsR_fade_15m done
+[2026-10-26 06:20:47] batch1: A2.03_WilliamsR_follow_15m done
+[2026-10-26 06:20:51] batch1: A2.04_CCI20_fade_15m done
+[2026-10-26 06:20:54] batch1: A2.04_CCI20_follow_15m done
+[2026-10-26 06:20:57] batch1: A2.05a_CMO_fade_15m done
+[2026-10-26 06:20:59] batch1: A2.05a_CMO_follow_15m done
+[2026-10-26 06:21:01] batch1: A2.05b_UltOsc_fade_15m done
+[2026-10-26 06:21:02] batch1: A2.05b_UltOsc_follow_15m done
+[2026-10-26 06:21:04] batch1: A2.06a_MFI_fade_15m done
+[2026-10-26 06:21:06] batch1: A2.06a_MFI_follow_15m done
+[2026-10-26 06:21:13] batch1: A2.06b_BOP_fade_15m done
+[2026-10-26 06:21:19] batch1: A2.06b_BOP_follow_15m done
+[2026-10-26 06:21:21] batch1: A2.07_ROCz_fade_15m done
+[2026-10-26 06:21:23] batch1: A2.07_ROCz_follow_15m done
+[2026-10-26 06:21:25] batch1: A2.08_Bollinger_fade_15m done
+[2026-10-26 06:21:28] batch1: A2.08_Bollinger_follow_15m done
+[2026-10-26 06:21:31] batch1: A2.11_Fisher_fade_15m done
+[2026-10-26 06:21:33] batch1: A2.11_Fisher_follow_15m done
+[2026-10-26 06:21:35] batch1: A2.12_DPO_fade_15m done
+[2026-10-26 06:21:36] batch1: A2.12_DPO_follow_15m done
+[2026-10-26 06:21:41] batch1: A2.13_AwesomeOsc_fade_15m done
+[2026-10-26 06:21:47] batch1: A2.13_AwesomeOsc_follow_15m done
+[2026-10-26 06:21:53] batch1: A2.14a_ElderRay_fade_15m done
+[2026-10-26 06:22:00] batch1: A2.14a_ElderRay_follow_15m done
+[2026-10-26 06:22:06] batch1: A2.14b_ForceIndex_fade_15m done
+[2026-10-26 06:22:12] batch1: A2.14b_ForceIndex_follow_15m done
+[2026-10-26 06:22:18] batch1: A2.15a_Coppock_fade_15m done
+[2026-10-26 06:22:24] batch1: A2.15a_Coppock_follow_15m done
+[2026-10-26 06:22:30] batch1: A2.15b_TSI_fade_15m done
+[2026-10-26 06:22:35] batch1: A2.15b_TSI_follow_15m done
+[2026-10-26 06:22:37] batch1: A2.17_VWAPz_fade_15m done
+[2026-10-26 06:22:39] batch1: A2.17_VWAPz_follow_15m done
+[2026-10-26 06:22:44] batch1: A1.01_SMA50_1h done
+[2026-10-26 06:22:49] batch1: A1.01_EMA50_1h done
+[2026-10-26 06:22:54] batch1: A1.01_HMA50_1h done
+[2026-10-26 06:23:00] batch1: A1.01_KAMA50_1h done
+[2026-10-26 06:23:04] batch1: A1.02_EMA20x50_1h done
+[2026-10-26 06:23:10] batch1: A1.03a_MACDhist_1h done
+[2026-10-26 06:23:14] batch1: A1.03b_MACDline_1h done
+[2026-10-26 06:23:17] batch1: A1.04_ADX_1h done
+[2026-10-26 06:23:20] batch1: A1.05_Aroon_1h done
+[2026-10-26 06:23:26] batch1: A1.06_PSAR_1h done
+[2026-10-26 06:23:31] batch1: A1.07_Supertrend_1h done
+[2026-10-26 06:23:35] batch1: A1.08_Ichimoku_1h done
+[2026-10-26 06:23:37] batch1: A1.09_Donchian20_1h done
+[2026-10-26 06:23:38] batch1: A1.10_Keltner_1h done
+[2026-10-26 06:23:43] batch1: A1.11_LinRegSlope20_1h done
+[2026-10-26 06:23:48] batch1: A1.13_Vortex_1h done
+[2026-10-26 06:23:52] batch1: A1.14a_TRIX_1h done
+[2026-10-26 06:23:57] batch1: A1.14b_KST_1h done
+[2026-10-26 06:24:02] batch1: A1.15_HeikinAshi_1h done
+[2026-10-26 06:24:07] batch1: A1.17_TSMOM20_1h done
+[2026-10-26 06:24:09] batch1: A1.18_KaufmanER_1h done
+[2026-10-26 06:24:11] batch1: A1.19_Choppiness_1h done
+[2026-10-26 06:24:12] batch1: A2.01a_RSI14_fade_1h done
+[2026-10-26 06:24:14] batch1: A2.01a_RSI14_follow_1h done
+[2026-10-26 06:24:15] batch1: A2.01b_ConnorsRSI_fade_1h done
+[2026-10-26 06:24:17] batch1: A2.01b_ConnorsRSI_follow_1h done
+[2026-10-26 06:24:18] batch1: A2.02a_Stoch_fade_1h done
+[2026-10-26 06:24:20] batch1: A2.02a_Stoch_follow_1h done
+[2026-10-26 06:24:23] batch1: A2.02b_StochRSI_fade_1h done
+[2026-10-26 06:24:26] batch1: A2.02b_StochRSI_follow_1h done
+[2026-10-26 06:24:29] batch1: A2.03_WilliamsR_fade_1h done
+[2026-10-26 06:24:32] batch1: A2.03_WilliamsR_follow_1h done
+[2026-10-26 06:24:35] batch1: A2.04_CCI20_fade_1h done
+[2026-10-26 06:24:38] batch1: A2.04_CCI20_follow_1h done
+[2026-10-26 06:24:40] batch1: A2.05a_CMO_fade_1h done
+[2026-10-26 06:24:42] batch1: A2.05a_CMO_follow_1h done
+[2026-10-26 06:24:43] batch1: A2.05b_UltOsc_fade_1h done
+[2026-10-26 06:24:44] batch1: A2.05b_UltOsc_follow_1h done
+[2026-10-26 06:24:45] batch1: A2.06a_MFI_fade_1h done
+[2026-10-26 06:24:47] batch1: A2.06a_MFI_follow_1h done
+[2026-10-26 06:24:52] batch1: A2.06b_BOP_fade_1h done
+[2026-10-26 06:24:57] batch1: A2.06b_BOP_follow_1h done
+[2026-10-26 06:24:58] batch1: A2.07_ROCz_fade_1h done
+[2026-10-26 06:24:59] batch1: A2.07_ROCz_follow_1h done
+[2026-10-26 06:25:01] batch1: A2.08_Bollinger_fade_1h done
+[2026-10-26 06:25:03] batch1: A2.08_Bollinger_follow_1h done
+[2026-10-26 06:25:05] batch1: A2.11_Fisher_fade_1h done
+[2026-10-26 06:25:07] batch1: A2.11_Fisher_follow_1h done
+[2026-10-26 06:25:08] batch1: A2.12_DPO_fade_1h done
+[2026-10-26 06:25:10] batch1: A2.12_DPO_follow_1h done
+[2026-10-26 06:25:14] batch1: A2.13_AwesomeOsc_fade_1h done
+[2026-10-26 06:25:18] batch1: A2.13_AwesomeOsc_follow_1h done
+[2026-10-26 06:25:23] batch1: A2.14a_ElderRay_fade_1h done
+[2026-10-26 06:25:28] batch1: A2.14a_ElderRay_follow_1h done
+[2026-10-26 06:25:33] batch1: A2.14b_ForceIndex_fade_1h done
+[2026-10-26 06:25:37] batch1: A2.14b_ForceIndex_follow_1h done
+[2026-10-26 06:25:41] batch1: A2.15a_Coppock_fade_1h done
+[2026-10-26 06:25:46] batch1: A2.15a_Coppock_follow_1h done
+[2026-10-26 06:25:51] batch1: A2.15b_TSI_fade_1h done
+[2026-10-26 06:25:56] batch1: A2.15b_TSI_follow_1h done
+[2026-10-26 06:25:57] batch1: A2.17_VWAPz_fade_1h done
+[2026-10-26 06:25:58] batch1: A2.17_VWAPz_follow_1h done
+[2026-10-26 06:26:02] batch1: A1.01_SMA50_4h done
+[2026-10-26 06:26:07] batch1: A1.01_EMA50_4h done
+[2026-10-26 06:26:11] batch1: A1.01_HMA50_4h done
+[2026-10-26 06:26:15] batch1: A1.01_KAMA50_4h done
+[2026-10-26 06:26:19] batch1: A1.02_EMA20x50_4h done
+[2026-10-26 06:26:23] batch1: A1.03a_MACDhist_4h done
+[2026-10-26 06:26:27] batch1: A1.03b_MACDline_4h done
+[2026-10-26 06:26:29] batch1: A1.04_ADX_4h done
+[2026-10-26 06:26:32] batch1: A1.05_Aroon_4h done
+[2026-10-26 06:26:36] batch1: A1.06_PSAR_4h done
+[2026-10-26 06:26:40] batch1: A1.07_Supertrend_4h done
+[2026-10-26 06:26:43] batch1: A1.08_Ichimoku_4h done
+[2026-10-26 06:26:44] batch1: A1.09_Donchian20_4h done
+[2026-10-26 06:26:46] batch1: A1.10_Keltner_4h done
+[2026-10-26 06:26:50] batch1: A1.11_LinRegSlope20_4h done
+[2026-10-26 06:26:54] batch1: A1.13_Vortex_4h done
+[2026-10-26 06:26:58] batch1: A1.14a_TRIX_4h done
+[2026-10-26 06:27:02] batch1: A1.14b_KST_4h done
+[2026-10-26 06:27:05] batch1: A1.15_HeikinAshi_4h done
+[2026-10-26 06:27:09] batch1: A1.17_TSMOM20_4h done
+[2026-10-26 06:27:11] batch1: A1.18_KaufmanER_4h done
+[2026-10-26 06:27:12] batch1: A1.19_Choppiness_4h done
+[2026-10-26 06:27:14] batch1: A2.01a_RSI14_fade_4h done
+[2026-10-26 06:27:15] batch1: A2.01a_RSI14_follow_4h done
+[2026-10-26 06:27:16] batch1: A2.01b_ConnorsRSI_fade_4h done
+[2026-10-26 06:27:17] batch1: A2.01b_ConnorsRSI_follow_4h done
+[2026-10-26 06:27:18] batch1: A2.02a_Stoch_fade_4h done
+[2026-10-26 06:27:19] batch1: A2.02a_Stoch_follow_4h done
+[2026-10-26 06:27:22] batch1: A2.02b_StochRSI_fade_4h done
+[2026-10-26 06:27:25] batch1: A2.02b_StochRSI_follow_4h done
+[2026-10-26 06:27:27] batch1: A2.03_WilliamsR_fade_4h done
+[2026-10-26 06:27:30] batch1: A2.03_WilliamsR_follow_4h done
+[2026-10-26 06:27:32] batch1: A2.04_CCI20_fade_4h done
+[2026-10-26 06:27:34] batch1: A2.04_CCI20_follow_4h done
+[2026-10-26 06:27:36] batch1: A2.05a_CMO_fade_4h done
+[2026-10-26 06:27:37] batch1: A2.05a_CMO_follow_4h done
+[2026-10-26 06:27:38] batch1: A2.05b_UltOsc_fade_4h done
+[2026-10-26 06:27:39] batch1: A2.05b_UltOsc_follow_4h done
+[2026-10-26 06:27:40] batch1: A2.06a_MFI_fade_4h done
+[2026-10-26 06:27:41] batch1: A2.06a_MFI_follow_4h done
+[2026-10-26 06:27:45] batch1: A2.06b_BOP_fade_4h done
+[2026-10-26 06:27:49] batch1: A2.06b_BOP_follow_4h done
+[2026-10-26 06:27:50] batch1: A2.07_ROCz_fade_4h done
+[2026-10-26 06:27:51] batch1: A2.07_ROCz_follow_4h done
+[2026-10-26 06:27:53] batch1: A2.08_Bollinger_fade_4h done
+[2026-10-26 06:27:54] batch1: A2.08_Bollinger_follow_4h done
+[2026-10-26 06:27:56] batch1: A2.11_Fisher_fade_4h done
+[2026-10-26 06:27:57] batch1: A2.11_Fisher_follow_4h done
+[2026-10-26 06:27:58] batch1: A2.12_DPO_fade_4h done
+[2026-10-26 06:28:00] batch1: A2.12_DPO_follow_4h done
+[2026-10-26 06:28:03] batch1: A2.13_AwesomeOsc_fade_4h done
+[2026-10-26 06:28:07] batch1: A2.13_AwesomeOsc_follow_4h done
+[2026-10-26 06:28:12] batch1: A2.14a_ElderRay_fade_4h done
+[2026-10-26 06:28:16] batch1: A2.14a_ElderRay_follow_4h done
+[2026-10-26 06:28:21] batch1: A2.14b_ForceIndex_fade_4h done
+[2026-10-26 06:28:25] batch1: A2.14b_ForceIndex_follow_4h done
+[2026-10-26 06:28:30] batch1: A2.15a_Coppock_fade_4h done
+[2026-10-26 06:28:34] batch1: A2.15a_Coppock_follow_4h done
+[2026-10-26 06:28:38] batch1: A2.15b_TSI_fade_4h done
+[2026-10-26 06:28:42] batch1: A2.15b_TSI_follow_4h done
+[2026-10-26 06:28:43] batch1: A2.17_VWAPz_fade_4h done
+[2026-10-26 06:28:45] batch1: A2.17_VWAPz_follow_4h done
+[2026-10-26 06:28:50] batch1: A1.16_Renko0.5pct done
+[2026-10-26 06:28:55] batch1: A1.16_Renko1pct done
+[2026-10-26 06:28:59] batch1: A1.16_Renko2pct done
+[2026-10-26 06:29:49] batch1: reports written (5590620 daily rows)
+[2026-10-26 14:49:50] batch1 done: 567 primary configs; edges 0
+[2026-10-26T14:54:44Z] verify_methods_batch1.py 7/7 PASS (verify_output.txt); Hindi report RESEARCH_METHODS_BENCH_BATCH1_26_OCT_2026.md

@@ -1,0 +1,4 @@
+[FAIL] V1: config bands = CSV False; source sha = CSV b53e2c1095a4 True; start 2026-10-26T00:00:00
+[FAIL] V2: 300 random ledgers: mismatches 10 ['synthetic 7: dd 5.420256% a 20 H* 30 level normal base 2026-10-25 23:00:00 | code: dd 5.420256% a 20 H* 30 level yellow', 'synthetic 87: dd 6.532663% a 4 H* 30 level normal base 2026-10-29 17:00:00 | code: dd 6.532663% a 4 H* 30 level yellow']; levels seen {'none': 11, 'red': 186, 'normal': 89, 'yellow': 14}
+TOTAL 2 checks, FAIL 2
+exit=1

@@ -1,0 +1,11 @@
+time_utc,H1_process,H2_heartbeat,H3_exchange,status
+2026-10-13 05:49:38.912225,OK pid 11180,OK last 2026-10-13 05:49:03.468343 (1 min ago),OK 1 positions reconciled,OK
+2026-10-13 05:52:13.255967,OK pid 11180,OK last 2026-10-13 05:49:03.468343 (3 min ago),OK 1 positions reconciled,OK
+2026-10-13 06:54:43.766708,OK pid 11180,OK last 2026-10-13 06:34:24.644419 (21 min ago),ALERT NetworkError: binance GET https://testnet.binancefuture.com/fapi/v1/exchangeInfo,ALERT
+2026-10-13 07:13:31.117870,OK pid 11180,OK last 2026-10-13 07:05:57.548486 (8 min ago),OK 1 positions reconciled,OK
+2026-10-13 07:52:10.599619,OK pid 11180,OK last 2026-10-13 07:51:29.637560 (1 min ago),OK 1 positions reconciled,OK
+2026-10-13 08:05:56.079481,OK pid 11180,OK last 2026-10-13 07:51:29.637560 (14 min ago),OK 1 positions reconciled,OK
+2026-10-13 08:52:10.036982,OK pid 11180,OK last 2026-10-13 08:37:11.111891 (15 min ago),OK 1 positions reconciled,OK
+2026-10-13 09:52:10.329898,OK pid 11180,OK last 2026-10-13 09:37:46.100117 (14 min ago),OK 1 positions reconciled,OK
+2026-10-13 10:52:11.384181,OK pid 11180,OK last 2026-10-13 10:38:16.616693 (14 min ago),OK 1 positions reconciled,OK
+2026-10-13 11:52:11.538905,OK pid 11180,OK last 2026-10-13 11:39:06.247603 (13 min ago),OK 1 positions reconciled,OK

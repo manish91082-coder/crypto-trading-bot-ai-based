@@ -1,0 +1,49 @@
+[2026-10-13 17:55:02 UTC] RUN start (test=True) as-of 2026-10-12
+[2026-10-13 17:55:04 UTC] live folders initialised: {'time_utc': '2026-10-13 17:55:04.212826+00:00', 'files_1d': 699, 'files_1h': 699, 'source': 'data/universe_all (Binance Vision, SHA256-verified, up to 2026-09-30)'}
+[2026-10-13 17:55:05 UTC] update 1/699 0GUSDT
+[2026-10-13 17:55:52 UTC] RUN FAILED:
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\execution\forward_dryrun_1d.py", line 239, in <module>
+    main(test="--test" in sys.argv)
+  File "E:\crypto trading bot ai based 9 oct 2026\src\execution\forward_dryrun_1d.py", line 199, in main
+    raw, notes = update_live(now)
+                 ^^^^^^^^^^^^^^^^
+  File "E:\crypto trading bot ai based 9 oct 2026\src\execution\forward_dryrun_1d.py", line 146, in update_live
+    tmp.replace(f)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1376, in replace
+    os.replace(self, target)
+PermissionError: [WinError 5] Access is denied: 'E:\\crypto trading bot ai based 9 oct 2026\\data\\forward\\live_1d\\ALGOUSDT_1d.tmp' -> 'E:\\crypto trading bot ai based 9 oct 2026\\data\\forward\\live_1d\\ALGOUSDT_1d.csv'
+
+[2026-10-13 17:57:08 UTC] RUN start (test=True) as-of 2026-10-12
+[2026-10-13 17:57:09 UTC] update 1/699 0GUSDT
+[2026-10-13 17:58:38 UTC] update 101/699 BEAMXUSDT
+[2026-10-13 18:01:53 UTC] update 301/699 HUMAUSDT
+[2026-10-13 18:03:33 UTC] update 401/699 MRVLBUSDT
+[2026-10-13 18:15:06 UTC] trained B1 for 2026-10-01 on 64521 rows -> b1_2026-10.joblib
+[2026-10-13 18:15:06 UTC] RUN done: 146 coins logged for 2026-10-12 (on_time=False), notes 0
+[2026-10-13 19:27:28 UTC] RUN start (test=True) as-of 2026-10-12
+[2026-10-13 19:27:29 UTC] update 1/699 0GUSDT
+[2026-10-13 19:29:09 UTC] update 101/699 BEAMXUSDT
+[2026-10-13 19:32:32 UTC] update 301/699 HUMAUSDT
+[2026-10-13 19:34:13 UTC] update 401/699 MRVLBUSDT
+[2026-10-13 19:46:09 UTC] trained R5 for 2026-10-01 on 240602 rows -> r5_2026-10.joblib
+[2026-10-13 19:46:09 UTC] RUN done: 146 coins logged for 2026-10-12 (on_time=False), notes 0
+[2026-10-14 02:50:14 UTC] RUN start (test=False) as-of 2026-10-13
+[2026-10-14 02:50:16 UTC] update 1/699 0GUSDT
+[2026-10-14 02:53:13 UTC] update 101/699 BEAMXUSDT
+[2026-10-14 02:56:55 UTC] update 301/699 HUMAUSDT
+[2026-10-14 02:58:57 UTC] update 401/699 MRVLBUSDT
+[2026-10-14 03:13:52 UTC] RUN done: 147 coins logged for 2026-10-13 (on_time=True), notes 0
+[2026-10-15 00:48:57 UTC] RUN start (test=False) as-of 2026-10-14
+[2026-10-15 00:48:59 UTC] update 1/699 0GUSDT
+[2026-10-15 00:51:23 UTC] update 101/699 BEAMXUSDT
+[2026-10-15 00:54:53 UTC] update 301/699 HUMAUSDT
+[2026-10-15 00:56:33 UTC] update 401/699 MRVLBUSDT
+[2026-10-15 01:06:46 UTC] RUN done: 150 coins logged for 2026-10-14 (on_time=True), notes 0
+[2026-10-15 01:20:07 UTC] as-of 2026-10-14 already logged -> nothing to do
+[2026-10-16 04:50:55 UTC] RUN start (test=False) as-of 2026-10-15
+[2026-10-16 04:51:00 UTC] update 1/699 0GUSDT
+[2026-10-16 04:53:36 UTC] update 101/699 BEAMXUSDT
+[2026-10-16 04:57:48 UTC] update 301/699 HUMAUSDT
+[2026-10-16 04:59:17 UTC] update 401/699 MRVLBUSDT
+[2026-10-16 05:13:06 UTC] RUN done: 151 coins logged for 2026-10-15 (on_time=False), notes 0

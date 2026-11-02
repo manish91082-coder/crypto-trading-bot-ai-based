@@ -1,0 +1,4 @@
+[V1 PASS] hashes as locked; splice contiguous; cross-check mismatch {'1d_from_1h': 0.00044479419714647415, '1h_from_5m': 0.001631558008637491}
+[V2 PASS] D3: BTC 1D swing study reproduced for K = 2/3/4
+[V3 PASS] 200 K=3 legs: pivots, confirmation, arithmetic and factors re-derived with plain code
+[V4 PASS] D-A medians recomputed

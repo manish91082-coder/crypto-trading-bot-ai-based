@@ -1,0 +1,22 @@
+Descriptive (not pre-registered): enter at the leg's real-time confirmation close, exit at the next leg's confirmation close (K=3, before costs)
+ tf direction      n  rem_to_extreme_median  realized_atr_median  realized_atr_mean  realized_pct_mean  win_share
+ 1M   Decline     26                  1.146               -1.901             -3.546            -79.271      0.154
+ 1W   Decline     93                  1.563               -1.189             -1.142            -20.999      0.301
+ 1D   Decline    605                  1.992               -0.610              0.037             -0.949      0.385
+12h   Decline   1168                  2.145               -0.622              0.166             -0.240      0.394
+ 8h   Decline   1817                  2.122               -0.636              0.180             -0.105      0.393
+ 4h   Decline   3710                  2.042               -0.718              0.156              0.021      0.387
+ 1h   Decline  15092                  2.154               -0.765              0.110             -0.037      0.379
+30m   Decline  30470                  2.105               -0.809              0.082             -0.053      0.366
+15m   Decline  61656                  2.122               -0.811              0.051             -0.042      0.363
+ 5m   Decline 198041                  2.089               -0.857              0.000             -0.014      0.359
+ 1M     Rally     23                  3.152                0.000              5.085            115.449      0.435
+ 1W     Rally    102                  2.639               -0.120              3.149             51.336      0.451
+ 1D     Rally    609                  2.420               -0.422              1.813             10.954      0.450
+12h     Rally   1170                  2.215               -0.561              1.342              5.172      0.415
+ 8h     Rally   1817                  2.288               -0.451              1.049              3.149      0.423
+ 4h     Rally   3709                  2.147               -0.549              0.694              1.612      0.411
+ 1h     Rally  15089                  2.036               -0.673              0.286              0.332      0.385
+30m     Rally  30467                  1.973               -0.732              0.181              0.136      0.379
+15m     Rally  61656                  1.960               -0.775              0.101              0.051      0.370
+ 5m     Rally 198039                  1.968               -0.790              0.027              0.015      0.368

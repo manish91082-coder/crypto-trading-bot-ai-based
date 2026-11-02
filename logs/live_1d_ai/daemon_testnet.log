@@ -1,0 +1,43 @@
+daemon pid 11180
+AI daemon started: mode=testnet, check every 15 min
+[testnet] processed close 2026-10-12 at 2026-10-13 04:48:36.975649 UTC
+decision_close                      2026-10-12
+exec_day                            2026-10-13
+paused                                   False
+exits                                         
+candidates      ETHUSDT:swing|x3|beNone:0.0932
+opened                 ETHUSDT:swing|x3|beNone
+cash                                   8998.84
+mtm_close                              10000.0
+open_positions                               1
+open positions: ['ETHUSDT'] | cash 8998.84 USDT | paused_until None
+[heartbeat 2026-10-13 04:48:17.211726] last_processed=None
+[heartbeat 2026-10-13 05:03:43.563315] last_processed=2026-10-12
+[heartbeat 2026-10-13 05:18:50.638155] last_processed=2026-10-12
+[heartbeat 2026-10-13 05:33:57.373577] last_processed=2026-10-12
+[heartbeat 2026-10-13 05:49:03.468343] last_processed=2026-10-12
+[heartbeat 2026-10-13 06:04:11.590301] last_processed=2026-10-12
+[heartbeat 2026-10-13 06:19:18.721090] last_processed=2026-10-12
+[heartbeat 2026-10-13 06:34:24.644419] last_processed=2026-10-12
+[ERROR 2026-10-13 06:50:57.042496+00:00] NetworkError: binance GET https://testnet.binance.vision/api/v3/exchangeInfo
+[heartbeat 2026-10-13 07:05:57.548486] last_processed=2026-10-12
+[heartbeat 2026-10-13 07:21:14.007244] last_processed=2026-10-12
+[heartbeat 2026-10-13 07:36:22.067859] last_processed=2026-10-12
+[heartbeat 2026-10-13 07:51:29.637560] last_processed=2026-10-12
+[heartbeat 2026-10-13 08:06:43.873312] last_processed=2026-10-12
+[heartbeat 2026-10-13 08:22:04.145791] last_processed=2026-10-12
+[heartbeat 2026-10-13 08:37:11.111891] last_processed=2026-10-12
+[heartbeat 2026-10-13 08:52:18.170071] last_processed=2026-10-12
+[heartbeat 2026-10-13 09:07:25.415530] last_processed=2026-10-12
+[heartbeat 2026-10-13 09:22:33.397932] last_processed=2026-10-12
+[heartbeat 2026-10-13 09:37:46.100117] last_processed=2026-10-12
+[heartbeat 2026-10-13 09:52:54.404840] last_processed=2026-10-12
+[heartbeat 2026-10-13 10:08:01.836921] last_processed=2026-10-12
+[heartbeat 2026-10-13 10:23:10.649370] last_processed=2026-10-12
+[heartbeat 2026-10-13 10:38:16.616693] last_processed=2026-10-12
+[heartbeat 2026-10-13 10:53:24.992302] last_processed=2026-10-12
+[heartbeat 2026-10-13 11:08:37.624632] last_processed=2026-10-12
+[heartbeat 2026-10-13 11:23:48.384129] last_processed=2026-10-12
+[heartbeat 2026-10-13 11:39:06.247603] last_processed=2026-10-12
+[heartbeat 2026-10-13 11:54:16.439546] last_processed=2026-10-12
+[heartbeat 2026-10-13 12:09:34.598261] last_processed=2026-10-12

@@ -1,0 +1,7 @@
+[Q0 OK] NP3 protocol matches its SHA
+[Q1 OK] NP3 trades recomputed from raw bars: mine 173970, stored 173970 (signals 88685 x 2 exit modes)
+[Q2 OK] 96 D / V summaries recomputed; 0 differ
+[Q3 OK] selection: candidates [], selected []
+[Q4 OK] no H row in NP3 DV
+
+RESULT: ALL PASS

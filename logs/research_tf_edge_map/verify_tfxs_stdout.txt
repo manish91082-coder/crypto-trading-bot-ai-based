@@ -1,0 +1,8 @@
+[1 PASS] S1 month-block CIs re-bootstrapped: U2X 1W TSMOM long net_taker: own [-0.09459,0.28272] vs [-0.09202,0.27503]; U2X 1W TSMOM long excess: own [-0.15942,0.16090] vs [-0.15991,0.18998]; U2 5m DONCH short net_taker: own [-0.00776,-0.00152] vs [-0.00755,-0.00152]; U2 5m DONCH short excess: own [-0.00170,0.03585] vs [-0.00157,0.03583]; U2 4h MACD long net_taker: own [-0.00135,0.01499] vs [-0.00138,0.01555]; U2 4h MACD long excess: own [-0.20215,0.01202] vs [-0.19744,0.01138]
+[2 PASS] S2/S3 for 5 random cells recomputed from trade files: max |diff| 8.0e-15
+[3 PASS] S5: BTC yearly returns [np.float64(3.02), np.float64(0.598), np.float64(-0.642), np.float64(1.556), np.float64(1.213), np.float64(-0.063), np.float64(-0.046)] and 3 random trend-pooled year means recomputed
+[4a PASS] S6: 3 U1 sleeves' Sharpe/MDD and 3 U1 correlations rebuilt from trade files: max |diff| 7.1e-17
+[4b PASS] N_eff all U1 sleeves own eigen-decomposition 4.312 vs claims 4.312 (n=112)
+[5 PASS] claims / SHAs / protocol lock consistent
+TOTAL 6 checks, FAIL 0
+exit=0

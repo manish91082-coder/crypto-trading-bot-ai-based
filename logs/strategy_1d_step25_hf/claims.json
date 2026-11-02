@@ -1,0 +1,98 @@
+{
+  "protocol_sha256": "7f0b4fd397af8dc490e08aac85c380d901c7f5af97525155d0129be55ca63b01",
+  "truncation_selftest_rows": 66,
+  "hf_missing_share_test": {
+    "rv5_1h": 7.944625957079158e-05,
+    "rv5_4h": 0.0002780619084977705,
+    "maxdd5_4h": 0.00017875408403428107,
+    "maxup5_4h": 0.00017875408403428107,
+    "volburst5_1h": 7.944625957079158e-05,
+    "upshare5_4h": 0.00017875408403428107,
+    "ret15_last": 0.0,
+    "taker15_last": 7.944625957079158e-05,
+    "std15_24h": 0.0
+  },
+  "R24_HF_skill": {
+    "n": 1005900,
+    "auc": 0.5661057191011247,
+    "ci_low": 0.5600652395203976,
+    "ci_high": 0.5717560939949925,
+    "base_rate": 0.4997723431752659
+  },
+  "R24_base_skill_same_rows": {
+    "n": 1005900,
+    "auc": 0.5653437356625074,
+    "ci_low": 0.5593435322268188,
+    "ci_high": 0.5709000078508069,
+    "base_rate": 0.4997723431752659
+  },
+  "paired_auc_diff": {
+    "diff": 0.0007619834386173308,
+    "ci_low": 0.0002165720797753179,
+    "ci_high": 0.0012859523303272362
+  },
+  "portfolio": {
+    "R24_HF": {
+      "final": 120946.67,
+      "cagr_pct": 54.34,
+      "max_dd_pct": 80.42,
+      "calmar": 0.676,
+      "trades": 1989,
+      "avg_trade_pct": 1.082,
+      "trade_ci_low_pct": 0.203,
+      "trade_ci_high_pct": 2.154,
+      "avg_hold_hours": 126.6,
+      "ret_2021": 1946.52,
+      "ret_2022": -73.86,
+      "ret_2023": 72.07,
+      "ret_2024": 80.1,
+      "ret_2025": -26.97,
+      "ret_2026": 0.14
+    },
+    "R24_HF_cost040": {
+      "final": 37061.55,
+      "cagr_pct": 25.62,
+      "max_dd_pct": 86.07,
+      "calmar": 0.298,
+      "trades": 1989,
+      "avg_trade_pct": 0.779,
+      "trade_ci_low_pct": -0.097,
+      "trade_ci_high_pct": 1.848,
+      "avg_hold_hours": 126.6,
+      "ret_2021": 1276.16,
+      "ret_2022": -80.64,
+      "ret_2023": 55.63,
+      "ret_2024": 54.83,
+      "ret_2025": -38.73,
+      "ret_2026": -5.37
+    }
+  },
+  "pre2020_HF": {
+    "n": 204439,
+    "auc": 0.5490610986276726,
+    "ci_low": 0.5356623793441172,
+    "ci_high": 0.561059311368717,
+    "base_rate": 0.4839634316348642
+  },
+  "pre2020_base": {
+    "n": 204439,
+    "auc": 0.5463223676039923,
+    "ci_low": 0.5325763077497024,
+    "ci_high": 0.5588329589954086,
+    "base_rate": 0.4839634316348642
+  },
+  "gates": {
+    "G0a_rows_identical": true,
+    "G0c_sha_logs_for_all_coins": true,
+    "G0b_truncation_selftest": true,
+    "G0d_pre_rows_identical": true,
+    "G0": true,
+    "G2_added_skill": true,
+    "G3a_calmar": false,
+    "G3b_trade_ci": true,
+    "G3c_cost040": true,
+    "G4_pre2020": true,
+    "decision": "SKILL_ADD_ONLY"
+  },
+  "test_predictions_sha256": "e352e09156dc71d9c29a6ffed9606d1f8ebcc3accf1a08d3d9450034248c4398"
+}

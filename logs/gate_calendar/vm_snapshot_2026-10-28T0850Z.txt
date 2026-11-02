@@ -1,0 +1,454 @@
+
+=== TIME
+utc_now 2026-10-28T08:50:04+00:00
+
+=== HOST
+14:20:04 up 11 days, 16:10,  1 user,  load average: 0.08, 0.02, 0.01
+/dev/root        48G   17G   31G  36% /
+total        used        free      shared  buff/cache   available
+Mem:            3908         624        2519           0        1064        3283
+
+=== CRONTAB
+crontab_l_sha256 13443469f4ec6508e1e74708fa0e955e315836332fc66f27205b43a30e457de7
+deploy_crontab_sha256 13443469f4ec6508e1e74708fa0e955e315836332fc66f27205b43a30e457de7
+
+=== CRON_STATUS last 48h
+16B_ForwardMulti: runs48h=4 nonzero48h=0 last_time=2026-10-28T02:30:01Z last_exit=0
+ECO_Alerts: runs48h=146 nonzero48h=0 last_time=2026-10-28T08:28:02Z last_exit=0
+ECO_Demo: runs48h=48 nonzero48h=0 last_time=2026-10-28T08:20:02Z last_exit=0
+ECO_Demo_Verify: runs48h=2 nonzero48h=0 last_time=2026-10-28T01:58:01Z last_exit=0
+ECO_Plan: runs48h=48 nonzero48h=0 last_time=2026-10-28T08:20:02Z last_exit=0
+ECO_Shadow: runs48h=48 nonzero48h=0 last_time=2026-10-28T08:20:17Z last_exit=0
+ECO_Shadow_Verify: runs48h=2 nonzero48h=0 last_time=2026-10-28T01:59:01Z last_exit=0
+ECO_Tracking: runs48h=4 nonzero48h=0 last_time=2026-10-28T02:05:02Z last_exit=0
+ECO_Verify: runs48h=2 nonzero48h=0 last_time=2026-10-28T01:55:01Z last_exit=0
+EMO_Meter: runs48h=48 nonzero48h=0 last_time=2026-10-28T08:23:01Z last_exit=0
+EMO_Verify: runs48h=2 nonzero48h=0 last_time=2026-10-28T01:56:01Z last_exit=0
+F4_LSPaper: runs48h=4 nonzero48h=0 last_time=2026-10-28T02:45:01Z last_exit=0
+F6_DemoOps: runs48h=0 nonzero48h=0 last_time=2026-10-24T05:30:01Z last_exit=0
+FR2_Recorder: runs48h=12 nonzero48h=0 last_time=2026-10-28T08:07:01Z last_exit=0
+FwdWatch: runs48h=4 nonzero48h=0 last_time=2026-10-28T06:10:01Z last_exit=0
+FwdWatch_Verify: runs48h=4 nonzero48h=0 last_time=2026-10-28T06:10:15Z last_exit=0
+LiqCollector_Verify: runs48h=2 nonzero48h=0 last_time=2026-10-28T01:15:01Z last_exit=0
+LogShip: runs48h=48 nonzero48h=0 last_time=2026-10-28T08:25:01Z last_exit=0
+M10_DailyStatus: runs48h=2 nonzero48h=0 last_time=2026-10-28T05:45:01Z last_exit=0
+M4_OptionsCollector: runs48h=4 nonzero48h=0 last_time=2026-10-28T00:40:01Z last_exit=0
+MK1: runs48h=4 nonzero48h=0 last_time=2026-10-28T06:20:01Z last_exit=0
+MK1_Verify: runs48h=4 nonzero48h=0 last_time=2026-10-28T06:20:12Z last_exit=0
+N3_EVTMonitor: runs48h=4 nonzero48h=0 last_time=2026-10-28T04:30:01Z last_exit=0
+PaperN1: runs48h=24 nonzero48h=0 last_time=2026-10-28T08:26:01Z last_exit=0
+PaperN1_Verify: runs48h=2 nonzero48h=0 last_time=2026-10-28T01:50:01Z last_exit=0
+PaperN1_test_cycle_20261021: runs48h=0 nonzero48h=0 last_time=2026-10-21T04:26:29Z last_exit=0
+PaperSpotS1: runs48h=4 nonzero48h=0 last_time=2026-10-28T02:45:01Z last_exit=0
+PaperSpotS1_Verify: runs48h=2 nonzero48h=0 last_time=2026-10-28T03:10:01Z last_exit=0
+SleeveA_Forward: runs48h=4 nonzero48h=0 last_time=2026-10-28T04:35:02Z last_exit=0
+Step16_ForwardDryRun: runs48h=4 nonzero48h=0 last_time=2026-10-28T01:20:01Z last_exit=0
+Step2_CostSnapshot: runs48h=4 nonzero48h=0 last_time=2026-10-28T00:02:01Z last_exit=0
+
+=== ECO_DEMO ledger
+data/eco_demo cycles 77 keys ['E_m', 'T', 'a', 'acct_pnl', 'attribution', 'caps', 'code_sha256', 'config_sha256', 'core_sha256', 'delisting', 'eco_equity', 'exch_before', 'exchange_sha256', 'f4', 'foreign_positions', 'foreign_stops', 'frozen_strategies', 'funding', 'gross_eco', 'halted', 'held_net', 'held_not_trading', 'k_m', 'k_now', 'line_sha256']
+data/eco_demo first None 9996.97789999018 last None 9932.03795708737 peak 10061.770683621337 maxDD_pct 1.775
+data/eco_demo state halted None state keys ['held', 'suppressed', 'month', 'E_m', 'k_m', 'eco_equity', 'peak', 'halted', 'last_cycle', 'last_acct_pnl', 'journal', 'frozen_syms', 'n_cycles', 'last_px', 'n_px_missing', 'adopted_from_f6', 'stops', 'a', 'guard_ref']
+data/eco_shadow cycles 77 keys ['E_m', 'T', 'a', 'acct_pnl', 'attribution', 'caps', 'code_sha256', 'config_sha256', 'core_sha256', 'delisting', 'eco_equity', 'exch_before', 'exchange_sha256', 'f4', 'foreign_positions', 'foreign_stops', 'frozen_strategies', 'funding', 'gross_eco', 'halted', 'held_net', 'held_not_trading', 'k_m', 'k_now', 'line_sha256']
+data/eco_shadow first None 9997.881614351843 last None 9935.790644658025 peak 10063.225762254548 maxDD_pct 1.78
+data/eco_shadow state halted None state keys ['held', 'suppressed', 'month', 'E_m', 'k_m', 'eco_equity', 'peak', 'halted', 'last_cycle', 'last_acct_pnl', 'journal', 'frozen_syms', 'n_cycles', 'last_px', 'n_px_missing', 'adopted_from_f6', 'stops', 'a', 'guard_ref']
+
+=== ECO_DEMO alerts tail
+
+=== TC tracking
+date,full_day,demo,shadow,diff,d_day,d_cum,note,day_ok,fills,slip_bps,rejected,unconfirmed,band_skips,funding_demo,funding_shadow
+2026-10-25,False,9978.965315,9979.781832,-0.8165170599,-0.8165170599,-0.8165170599,,True,29,2.3673657,0,0,468,0.13431715,0.1343172085
+2026-10-26,True,9946.389178,9947.682811,-1.293633717,-0.477116657,-1.293633717,,True,11,2.643742526,0,0,577,0.16002393,0.1600239829
+2026-10-27,True,9927.132308,9928.379444,-1.247136234,0.04649748334,-1.247136234,,True,14,1.196094559,0,0,586,0.14213847,0.1421385305
+{
+ "cut_over_T": "2026-10-25 04:21:00",
+ "now": "2026-10-28 02:05:02.259972",
+ "n_full_days": 2,
+ "tol_day": 30.0,
+ "tol_cum": 100.0,
+ "gate": null,
+ "demo_ledger_sha256": "4371d8468b3f5a59c73aa1243c4d3d5430545552b530d15866f5bf630c433f7c",
+ "shadow_ledger_sha256": "6a4039fa83a303134863390a6b724bb78c9f4729a3e531d9fcd4d4ea84801334",
+ "code_sha256": "df6c387bba45fb01c05710574c5584a41c88f8fd32c82be78b75da152c952c53"
+}
+
+=== SLEEVE_A forward
+total 24
+drwxrwxr-x 2 Admin Admin 4096 Oct 27 10:05 .
+drwxrwxr-x 4 Admin Admin 4096 Oct 25 10:12 ..
+-rw-rw-r-- 1 Admin Admin 3223 Oct 27 10:05 F1.json
+-rw-rw-r-- 1 Admin Admin  242 Oct 27 10:05 fidelity_F1.txt
+-rw-rw-r-- 1 Admin Admin  949 Oct 27 10:05 spot_F1.json
+-rw-rw-r-- 1 Admin Admin  297 Oct 28 10:05 summary.json
+-- logs/paper_n1/sleeve_a_forward/F1.json
+",
+   "r": -0.04623736428304004
+  },
+  {
+   "k": "A|XRPUSDT|8h|2",
+   "T": "2026-10-24 08:00:00",
+   "r": -0.045454545454545525
+  },
+  {
+   "k": "A|LINKUSDT|12h|2",
+   "T": "2026-10-24 12:00:00",
+   "r": -0.06397741024606696
+  },
+  {
+   "k": "A|LTCUSDT|12h|2",
+   "T": "2026-10-24 12:00:00",
+   "r": -0.08639974063867728
+  },
+  {
+   "k": "A|BNBUSDT|8h|2",
+   "T": "2026-10-24 16:00:00",
+   "r": -0.03455657083227426
+  },
+  {
+   "k": "A|BNBUSDT|8h|3",
+   "T": "2026-10-24 16:00:00",
+   "r": -0.03455657083227426
+  },
+  {
+   "k": "A|BTCUSDT|8h|3",
+   "T": "2026-10-24 16:00:00",
+   "r": -0.05602400567494603
+  },
+  {
+   "k": "A|DOGEUSDT|8h|3",
+   "T": "2026-10-24 16:00:00",
+   "r": -0.09309849029475215
+  },
+  {
+   "k": "A|ETHUSDT|8h|3",
+   "T": "2026-10-24 16:00:00",
+   "r": -0.08204048492760319
+  },
+  {
+   "k": "A|XRPUSDT|8h|3",
+   "T": "2026-10-24 16:00:00",
+   "r": -0.08140798145868045
+  },
+  {
+   "k": "A|ETHUSDT|12h|2",
+   "T": "2026-10-25 00:00:00",
+   "r": -0.044768503707423246
+  },
+  {
+   "k": "A|ETHUSDT|1D|1",
+   "T": "2026-10-25 00:00:00",
+   "r": -0.04646753740242615
+  },
+  {
+   "k": "A|SOLUSDT|12h|2",
+   "T": "2026-10-25 12:00:00",
+   "r": -0.051927395209580784
+  },
+  {
+   "k": "A|XRPUSDT|8h|0",
+   "T": "2026-10-25 16:00:00",
+   "r": 0.0004616805170820637
+  },
+  {
+   "k": "A|ADAUSDT|1D|1",
+   "T": "2026-10-26 00:00:00",
+   "r": -0.09365290723479813
+  },
+  {
+   "k": "A|DOGEUSDT|12h|2",
+   "T": "2026-10-26 00:00:00",
+   "r": -0.06285783895724206
+  },
+  {
+   "k": "A|BNBUSDT|4h|2",
+   "T": "2026-10-26 04:00:00",
+   "r": -0.010678307588985914
+  },
+  {
+   "k": "A|XRPUSDT|4h|2",
+   "T": "2026-10-26 04:00:00",
+   "r": -0.01722944388893155
+  },
+  {
+   "k": "A|BNBUSDT|4h|0",
+   "T": "2026-10-26 16:00:00",
+   "r": 0.0015466551900369385
+  },
+  {
+   "k": "A|BNBUSDT|4h|2",
+   "T": "2026-10-27 04:00:00",
+   "r": -0.005689766490907133
+  }
+ ],
+ "eligible": true,
+ "win_rate": 0.08695652173913043,
+ "mean_r": -0.046540469494447026,
+ "M_live": -0.02581844081479322,
+ "spot_sha256": "af9c4d281cee637cff0190320ead2a131d1810c0052861691778d87042617bdf",
+ "n_eligible": 499,
+ "n_comparable": 100,
+ "comp_win_rate_median": 0.2883116883116883,
+ "comp_mean_r_median": -0.0032094933902701,
+ "p_wr": 0.1,
+ "p_ret": 0.07,
+ "fidelity_rc": 0,
+ "fidelity_tail": [
+  "[T3a PASS] 23 closes: entry and exit prices == spot 4h opens: mismatches 0 []",
+  "[T3b PASS] 23 closes: state 1 at the open (fresh or init), 0 at the close: mismatches 0 []",
+  "TOTAL 2 checks, FAIL 0"
+ ],
+ "verdict": "consistent"
+}
+-- logs/paper_n1/sleeve_a_forward/fidelity_F1.txt
+window (2026-10-24 04:00:00, 2026-10-27 04:00:00]
+[T3a PASS] 23 closes: entry and exit prices == spot 4h opens: mismatches 0 []
+[T3b PASS] 23 closes: state 1 at the open (fresh or init), 0 at the close: mismatches 0 []
+TOTAL 2 checks, FAIL 0
+-- logs/paper_n1/sleeve_a_forward/spot_F1.json
+{
+ "source": "https://api.binance.com/api/v3/klines 4h open",
+ "data": {
+  "ADAUSDT": {
+   "2026-10-24 04:00:00": 0.2117,
+   "2026-10-27 04:00:00": 0.2043
+  },
+  "BNBUSDT": {
+   "2026-10-24 04:00:00": 739.97,
+   "2026-10-27 04:00:00": 739.21
+  },
+  "BTCUSDT": {
+   "2026-10-24 04:00:00": 80977.92,
+   "2026-10-27 04:00:00": 79819.56
+  },
+  "DOGEUSDT": {
+   "2026-10-24 04:00:00": 0.07882,
+   "2026-10-27 04:00:00": 0.07749
+  },
+  "DOTUSDT": {
+   "2026-10-24 04:00:00": 1.088,
+   "2026-10-27 04:00:00": 0.992
+  },
+  "ETHUSDT": {
+   "2026-10-24 04:00:00": 2382.81,
+   "2026-10-27 04:00:00": 2314.88
+  },
+  "LINKUSDT": {
+   "2026-10-24 04:00:00": 11.863,
+   "2026-10-27 04:00:00": 11.339
+  },
+  "LTCUSDT": {
+   "2026-10-24 04:00:00": 57.17,
+   "2026-10-27 04:00:00": 56.45
+  },
+  "SOLUSDT": {
+   "2026-10-24 04:00:00": 102.67,
+   "2026-10-27 04:00:00": 100.18
+  },
+  "XRPUSDT": {
+   "2026-10-24 04:00:00": 1.2913,
+   "2026-10-27 04:00:00": 1.3
+  }
+ }
+}
+-- logs/paper_n1/sleeve_a_forward/summary.json
+{
+ "evaluated": [
+  [
+   "F1",
+   23,
+   "consistent"
+  ]
+ ],
+ "first3_eligible": [
+  "F1"
+ ],
+ "verdict": "pending",
+ "protocol_sha256": "531cd10cab8d21348555d87368a0c8a4437e894f1730f17f4e96f0b7897d1fda",
+ "files": {
+  "F1": "58d13412a725868d9e15f53fef85413abc8bb129ad165e173d9c57108253310c"
+ }
+}
+
+=== PAPER_N1
+records 44
+{"E_m": 10000.0, "T": "2026-10-28 08:00:00", "actions": [{"a": "close", "entry": 0.206, "k": "A|ADAUSDT|4h|0", "pnl": 0.194175, "px": 0.2068, "t_entry": "2026-10-28 00:00:00", "venue": "perp", "why": "signal"}, {"a": "close", "entry": 101.34, "k": "A|SOLUSDT|4h|0", "pnl": 0.493389, "px": 102.34, "t_entry": "2026-10-28 00:00:00", "venue": "perp", "why": "signal"}, {"a": "open", "k": "C|ADAUSDT|4h|0", "notional": 11.363636, "px": 0.2068, "side": -1, "venue": "perp", "why": "signal"}, {"a": "close", "entry": 287.9, "k": "C|BCHUSDT|8h|1", "pnl": -0.343869, "px": 297.8, "t_entry": "2026-10-21 08:00:00", "venue": "perp", "why": "signal"}, {"a": "close", "entry": 11.387, "k": "C|LINKUSDT|8h|3", "pnl": -0.39419, "px": 11.782, "t_entry": "2026-10-24 16:00:00", "venue": "perp", "why": "signal"}, {"a": "close", "entry": 55.74, "k": "C|LTCUSDT|8h|3", "pnl": -0.399582, "px": 57.7, "t_entry": "2026-10-24 16:00:00", "venue": "perp", "why": "signal"}, {"a": "close", "entry": 199.32, "k": "C|QNTUSDT|8h|0", "pnl": -0.008552, "px": 199.47, "t_entry": "2026-10-28 00:00:00", "venue": "perp", "why": "signal"}, {"a": "open", "k": "C|SOLUSDT|4h|0", "notional": 11.363636, "px": 102.34, "side": -1, "venue": "perp", "why": "signal"}, {"a": "open", "k": "C|TIAUSDT|4h|0", "notional": 11.363636, "px": 0.5331, "side": -1, "venue": "perp", "why": "signal"}], "code_sha256": "d5f0f82f115fccc66b16b1ffd5f8f5f5c46214fed9ccaf952c1c3a7243ea89ff", "coins_with_data": 106, "config_sha256": "a8765f8131a6acb4c96dbbabf6
+
+=== PAPER_SPOT_S1
+records 3
+{"D": "2026-10-25", "fill_day": "2026-10-26", "close_D": 80154.09, "sma200": 72987.77575, "signal": true, "action": "buy", "px": 80154.09, "qty": 0.012465365148553243, "cash": 0.0, "equity": 999.15, "bench_units": 0.012465365148553243, "bench_equity": 999.15, "klines_file": "20261026T004501.json", "klines_sha256": "addb7608e44a050f9f8f8e79baecac68f451461e6e0667ac9e28e0f37331310d", "code_sha256": "658adb92c9d59119b369cb0a5e4015952877e78656e73d3993543c35b9d6f8cf", "protocol_sha256": "a74553bfa3180bd25b0c4f9f175a595144bfbf9b251c15df34690e1ea805f9a8", "run_utc": "2026-10-26 00:45:01", "prev_sha256
+{"D": "2026-10-27", "fill_day": "2026-10-28", "close_D": 80909.77, "sma200": 73069.32405, "signal": true, "action": "none", "px": 80909.77, "qty": 0.012465365148553243, "cash": 0.0, "equity": 1008.5698271354588, "bench_units": 0.012465365148553243, "bench_equity": 1008.5698271354588, "klines_file": "20261028T004501.json", "klines_sha256": "dc9e2c7542b0fa1f82a3b5fe88a680dc4cce56d6082a7a732fb5df4f997a98b9", "code_sha256": "658adb92c9d59119b369cb0a5e4015952877e78656e73d3993543c35b9d6f8cf", "protocol_sha256": "a74553bfa3180bd25b0c4f9f175a595144bfbf9b251c15df34690e1ea805f9a8", "run_utc": "2026-10-28 00:45:01", "prev_sha256": "930473d87419270c201832fb9d5004e34899335e65003f35ee5160ff0b0498f3", "line_sha256": "d66c0708be5669d0b906b2ba06e046ecfdb8d2584eb910ebeea560bcf67b9554"}
+
+=== MK1
+{
+ "run_utc": "2026-10-28T06:20:12Z",
+ "n_orders": 40,
+ "pending_klines": 31,
+ "decision_at": 300,
+ "W5": {
+  "n": 40,
+  "fill_rate": 0.625,
+  "demo": {
+   "mkt_bps": 6.398349295355737,
+   "lim_bps": 7.066054617499437,
+   "delta_bps": 0.6677053221436996,
+   "ci95": [
+    -3.4115564711695074,
+    4.746967115456907
+   ],
+   "weeks": 2
+  },
+  "real": {
+   "mkt_bps": 5.998349295355737,
+   "lim_bps": 6.791532802092195,
+   "delta_bps": 0.7931835067364583,
+   "ci95": [
+    -3.276094256977359,
+    4.862461270450275
+   ],
+   "weeks": 2
+  }
+ },
+ "W15": {
+  "n": 40,
+  "fill_rate": 0.85,
+  "demo": {
+   "mkt_bps": 6.398349295355737,
+   "lim_bps": 5.001899311678766,
+   "delta_bps": -1.3964499836769706,
+   "ci95": [
+    -8.184917733136357,
+    5.392017765782416
+   ],
+   "weeks": 2
+  },
+  "real": {
+   "mkt_bps": 5.998349295355737,
+   "lim_bps": 4.787420597358409,
+   "delta_bps": -1.2109286979973282,
+   "ci95": [
+    -7.979088142346792,
+    5.557230746352135
+   ],
+   "weeks": 2
+  }
+ }
+}
+orders_rows 41
+
+=== FWD_WATCH
+total 32
+drwxrwxr-x 2 Admin Admin 4096 Oct 26 21:05 .
+drwxrwxr-x 5 Admin Admin 4096 Oct 26 21:05 ..
+-rw-rw-r-- 1 Admin Admin 1229 Oct 28 11:40 fw_daily.csv
+-rw-rw-r-- 1 Admin Admin   81 Oct 28 11:40 fw_monthly.csv
+-rw-rw-r-- 1 Admin Admin  623 Oct 28 11:40 fw_status.json
+-rw-rw-r-- 1 Admin Admin 1417 Oct 28 11:40 fw_trades.csv
+-rw-rw-r-- 1 Admin Admin 1508 Oct 28 11:40 fw_trades_all.csv
+-rw-rw-r-- 1 Admin Admin 3764 Oct 28 11:40 run_log.txt
+-- data/fwd_watch/out/fw_status.json
+{
+ "run_utc": "2026-10-28T06:10:13Z",
+ "identity_fw1": true,
+ "identity_fw2": true,
+ "data_end": {
+  "spot": "2026-10-27 23:55:00",
+  "fut": "2026-10-26 23:55:00",
+  "metrics": "2026-10-26 23:55:00",
+  "funding": "2026-10-28 00:00:00.001000"
+ },
+ "summary": {
+  "FW1": {
+   "closed_trades": 5,
+   "open_trades": 1,
+   "sum_net_pct": -10.679060068386153,
+   "mean_net_pct": -2.1358120136772305,
+   "wins": 1,
+   "verdict_at": 80
+  },
+  "FW2": {
+   "closed_trades": 10,
+   "open_trades": 0,
+   "sum_net_pct": 0.5832864055740176,
+   "mean_net_pct": 0.05832864055740176,
+   "wins": 5,
+   "verdict_at": 200
+  }
+ },
+ "days": 26
+}
+
+=== LIQ collector
+2026-10-28T08:50:01Z
+day,file,lines,sha256,closed_utc
+2026-10-26,2026-10-26.jsonl.gz,7455,6ee6a55bc1360a032ebbe1fbb85e1ca86790df4be323c21ac3b632f958bc3a03,2026-10-27T00:00:05Z
+2026-10-27,2026-10-27.jsonl.gz,28973,8de04ceeb917ce67a46937c03bcb78bf7825ee87d994a6aba5d224abc2038594,2026-10-28T00:00:15Z
+today_lines 10922
+188444 /bin/bash -c cd /opt/cryptobot && venv/bin/python src/collect/liq_collector.py >> logs/cron_status/LiqCollector.out 2>&1
+188446 venv/bin/python src/collect/liq_collector.py
+2026-10-26T15:53:24.523318Z CONNECT
+2026-10-26T15:55:25.285639Z STOP (test duration reached)
+2026-10-26T17:15:02.247490Z CONNECT
+
+=== LOGSHIP code sha
+aca7562982946ac1e09644e58defbb59d7d56274d188b6c8a86de17f963f1d57  deploy/ship_logs_drive.py
+3ab83c8553873bde7ace285aec363a5ab0e9d50c98df80478bd3b2546576043c  src/audits/verify_log_ship.py
+
+=== FEES live
+b76c04950e0922f4cbec27bc9bd4ded5a500fae600dd1aa444930a8a92d491a5  deploy/fees.json
+
+=== EXTRA paper_n1 first/last T
+{"E_m": 10000.0, "T": "2026-10-21 04:00:00", "actions": [{"a": "open", "k": "A|ADAUSDT|4h|0", "notional": 50.0, "px": 0.2231, "side": 1, "venue": "perp", "why": "init"}, {"a": "open", "k": "A|ADAUSDT|
+ledger.jsonl
+state.json
+
+=== EXTRA alerts delivery
+A1_outage_guard.json
+CODE_CHANGES_AFTER_LOCK.md
+CODE_NOTES.md
+ECO_AMENDMENT_1_PREREGISTERED.md
+ECO_AMENDMENT_1_SHA256.txt
+ECO_AMENDMENT_2_PREREGISTERED.md
+ECO_AMENDMENT_2_SHA256.txt
+ECO_PROTOCOL_PREREGISTERED.md
+ECO_PROTOCOL_SHA256.txt
+alerts
+alerts_eco_demo
+alerts_eco_shadow
+cutover_2026-10-25
+tracking
+
+=== EXTRA env keys present (names only)
+
+
+=== EXTRA last exit per job
+16B_ForwardMulti.csv {'start_utc': '2026-10-28T02:30:01Z', 'end_utc': '2026-10-28T02:30:05Z', 'exit_code': '0'}
+ECO_Alerts.csv {'start_utc': '2026-10-28T08:28:02Z', 'end_utc': '2026-10-28T08:28:03Z', 'exit_code': '0'}
+ECO_Demo.csv {'start_utc': '2026-10-28T08:20:02Z', 'end_utc': '2026-10-28T08:20:17Z', 'exit_code': '0'}
+ECO_Demo_Verify.csv {'start_utc': '2026-10-28T01:58:01Z', 'end_utc': '2026-10-28T01:58:02Z', 'exit_code': '0'}
+ECO_Plan.csv {'start_utc': '2026-10-28T08:20:02Z', 'end_utc': '2026-10-28T08:20:10Z', 'exit_code': '0'}
+ECO_Shadow.csv {'start_utc': '2026-10-28T08:20:17Z', 'end_utc': '2026-10-28T08:20:32Z', 'exit_code': '0'}
+ECO_Shadow_Verify.csv {'start_utc': '2026-10-28T01:59:01Z', 'end_utc': '2026-10-28T01:59:02Z', 'exit_code': '0'}
+ECO_Tracking.csv {'start_utc': '2026-10-28T02:05:02Z', 'end_utc': '2026-10-28T02:05:02Z', 'exit_code': '0'}
+ECO_Verify.csv {'start_utc': '2026-10-28T01:55:01Z', 'end_utc': '2026-10-28T01:55:02Z', 'exit_code': '0'}
+EMO_Meter.csv {'start_utc': '2026-10-28T08:23:01Z', 'end_utc': '2026-10-28T08:23:33Z', 'exit_code': '0'}
+EMO_Verify.csv {'start_utc': '2026-10-28T01:56:01Z', 'end_utc': '2026-10-28T01:56:02Z', 'exit_code': '0'}
+F4_LSPaper.csv {'start_utc': '2026-10-28T02:45:01Z', 'end_utc': '2026-10-28T02:45:04Z', 'exit_code': '0'}
+F6_DemoOps.csv {'start_utc': '2026-10-24T05:30:01Z', 'end_utc': '2026-10-24T05:30:05Z', 'exit_code': '0'}
+FR2_Recorder.csv {'start_utc': '2026-10-28T08:07:01Z', 'end_utc': '2026-10-28T08:10:51Z', 'exit_code': '0'}
+FwdWatch.csv {'start_utc': '2026-10-28T06:10:01Z', 'end_utc': '2026-10-28T06:10:15Z', 'exit_code': '0'}
+FwdWatch_Verify.csv {'start_utc': '2026-10-28T06:10:15Z', 'end_utc': '2026-10-28T06:10:48Z', 'exit_code': '0'}
+LiqCollector_Verify.csv {'start_utc': '2026-10-28T01:15:01Z', 'end_utc': '2026-10-28T01:15:02Z', 'exit_code': '0'}
+LogShip.csv {'start_utc': '2026-10-28T08:25:01Z', 'end_utc': '2026-10-28T08:25:52Z', 'exit_code': '0'}
+M10_DailyStatus.csv {'start_utc': '2026-10-28T05:45:01Z', 'end_utc': '2026-10-28T05:45:03Z', 'exit_code': '0'}
+M4_OptionsCollector.csv {'start_utc': '2026-10-28T00:40:01Z', 'end_utc': '2026-10-28T00:40:05Z', 'exit_code': '0'}
+MK1.csv {'start_utc': '2026-10-28T06:20:01Z', 'end_utc': '2026-10-28T06:20:12Z', 'exit_code': '0'}
+MK1_Verify.csv {'start_utc': '2026-10-28T06:20:12Z', 'end_utc': '2026-10-28T06:20:12Z', 'exit_code': '0'}
+N3_EVTMonitor.csv {'start_utc': '2026-10-28T04:30:01Z', 'end_utc': '2026-10-28T04:30:04Z', 'exit_code': '0'}
+PaperN1.csv {'start_utc': '2026-10-28T08:26:01Z', 'end_utc': '2026-10-28T08:26:02Z', 'exit_code': '0'}
+PaperN1_Verify.csv {'start_utc': '2026-10-28T01:50:01Z', 'end_utc': '2026-10-28T01:50:02Z', 'exit_code': '0'}
+PaperN1_test_cycle_20261021.csv {'start_utc': '2026-10-21T04:26:29Z', 'end_utc': '2026-10-21T04:29:01Z', 'exit_code': '0'}
+PaperSpotS1.csv {'start_utc': '2026-10-28T02:45:01Z', 'end_utc': '2026-10-28T02:45:02Z', 'exit_code': '0'}
+PaperSpotS1_Verify.csv {'start_utc': '2026-10-28T03:10:01Z', 'end_utc': '2026-10-28T03:10:02Z', 'exit_code': '0'}
+SleeveA_Forward.csv {'start_utc': '2026-10-28T04:35:02Z', 'end_utc': '2026-10-28T04:35:02Z', 'exit_code': '0'}
+Step16_ForwardDryRun.csv {'start_utc': '2026-10-28T01:20:01Z', 'end_utc': '2026-10-28T01:20:06Z', 'exit_code': '0'}
+Step2_CostSnapshot.csv {'start_utc': '2026-10-28T00:02:01Z', 'end_utc': '2026-10-28T00:02:11Z', 'exit_code': '0'}

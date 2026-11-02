@@ -1,0 +1,1 @@
+[V1+V2 PASS] D1: AUC new 0.5591 base 0.5593 (diff -0.0002); 2022 diff +0.0076; Calmar 0.381 vs 0.515; 2022 -73.28 vs -73.62; decision FAIL

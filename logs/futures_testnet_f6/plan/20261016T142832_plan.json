@@ -1,0 +1,12 @@
+{
+ "time_utc": "2026-10-16 14:28:32.719632+00:00",
+ "mode": "plan",
+ "drill_kill": false,
+ "asof": "2026-10-15",
+ "f4_line_sha256": "68223b8e454828b16d05b229e91737893968db5b7666df5e27e24e434726d11c",
+ "actions": [],
+ "notes": [],
+ "reconcile": null,
+ "code_sha256": "67c61990ecdd2294ce0b4494f388c21839c4a1bd2079835b5618dbc761f5cd2b",
+ "protocol_sha256": "03ff573c808061084bdec02abda85fc5cb0e2fc7c523369c1c63d122dbcb09a7"
+}

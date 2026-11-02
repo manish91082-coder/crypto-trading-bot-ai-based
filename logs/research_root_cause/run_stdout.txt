@@ -1,0 +1,8 @@
+﻿done 5m
+done 15m
+done 1h
+done 4h
+done 1d
+R5 {'n_months': 69, 'spearman_eco_vs_btc_abs': 0.20515162586773844, 'spearman_eco_vs_btc_er': 0.18180489587139206, 'spearman_eco_vs_btc_signed': 0.3583120204603581, 'spearman_year_vs_btc': {'1D_alone_combo': -0.08571428571428573, 'ECO-W2': 0.7142857142857143, 'N1_alone': 0.7142857142857143}}
+R6 {'ECO-W1': 0.021, 'ECO-W2': -0.005, 'N1_alone': -0.168, '1D_alone_combo': 0.299, '1D_alone': 0.279}
+R7 {'eco_dev': {'days': 1733, 'share_pos': 0.5297172533179457, 'share_neg': 0.4702827466820542, 'median_day': 0.0004662487969901985}, 'eco_P3': {'days': 364, 'share_pos': 0.47802197802197804, 'share_neg': 0.521978021978022, 'median_day': -0.00025965275245909414}, 'funding_carry_A': {'days': 2100, 'share_pos': 0.8933333333333333, 'mean_day_pct': 0.03608736904761905, 'sum_pct': 75.783475}, 'funding_carry_B': {'days': 365, 'share_pos': 0.7917808219178082, 'mean_day_pct': 0.009244358904109589, 'sum_pct': 3.374191}}

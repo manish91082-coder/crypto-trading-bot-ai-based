@@ -1,0 +1,2 @@
+57242386fc1cb2a3e711c76d9ed80a12e3464d4bb5d8532f8d99f777cd672c76 *logs/consolidation_2026_10_28/vm_snapshot.txt
+6fae0cc5dbb7b5dac8587b4d14fe013545be7b21c0601ead1de7e48fd4119c15 *logs/consolidation_2026_10_28/vm_snap.py

@@ -1,0 +1,5 @@
+[V1 PASS] protocol hash as locked; all 7 sleeve reproductions of verified results true
+[V2 PASS] 24 mix rows: finals and max drawdowns recomputed from sleeve curves
+[V4 PASS] bootstrap percentiles recomputed exactly
+[V3 PASS] correlations recomputed
+[V4 PASS] recommendation rule re-applied -> {'mix': 'M_AI3', 'f': 0.5, 'y1_p5': 0.636, 'y1_p50': 1.15}

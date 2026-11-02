@@ -1,0 +1,14 @@
+rows known 64581, other 642970 (eligible A 176791, eligible B OOS 177871) (320s)
+G1 0.6066 1.0 True (2069s)
+R5 skill AI {'n': 177246, 'auc': 0.545, 'ci_low': 0.5319, 'ci_high': 0.5576, 'base_rate': 0.438} CONTROL 0.5098 (3121s)
+  R5 AI {'final': np.float64(22617.34), 'cagr_pct': np.float64(15.27), 'max_dd_pct': np.float64(86.21), 'calmar': np.float64(0.177), 'trades': 2152, 'avg_trade_pct': 1.4473502815224788, 'trade_ci_low_pct': -0.6240839250045643, 'turnover_x': np.float64(1954.3)}
+  R5 CONTROL {'final': np.float64(1015.39), 'cagr_pct': np.float64(-32.85), 'max_dd_pct': np.float64(98.49), 'calmar': np.float64(-0.334), 'trades': 2734, 'avg_trade_pct': -0.31465641278264983, 'trade_ci_low_pct': -1.93541213319579, 'turnover_x': np.float64(442.2)}
+  R5 SIMPLE {'final': np.float64(116.63), 'cagr_pct': np.float64(-53.93), 'max_dd_pct': np.float64(99.86), 'calmar': np.float64(-0.54), 'trades': 1192, 'avg_trade_pct': -2.2746955026053235, 'trade_ci_low_pct': -6.558989939788424, 'turnover_x': np.float64(193.4)}
+  R5 AI_cost040 {'final': np.float64(13479.52), 'cagr_pct': np.float64(5.34), 'max_dd_pct': np.float64(90.75), 'calmar': np.float64(0.059), 'trades': 2152, 'avg_trade_pct': 1.143461025669121, 'trade_ci_low_pct': -0.921768123773397, 'turnover_x': np.float64(1563.2)}
+R10 skill AI {'n': 176757, 'auc': 0.5406, 'ci_low': 0.522, 'ci_high': 0.5585, 'base_rate': 0.4225} CONTROL 0.5167 (4180s)
+  R10 AI {'final': np.float64(16003.96), 'cagr_pct': np.float64(8.53), 'max_dd_pct': np.float64(90.1), 'calmar': np.float64(0.095), 'trades': 1196, 'avg_trade_pct': 2.1600149982064307, 'trade_ci_low_pct': -1.0304693157706144, 'turnover_x': np.float64(812.4)}
+  R10 CONTROL {'final': np.float64(705.02), 'cagr_pct': np.float64(-36.98), 'max_dd_pct': np.float64(99.08), 'calmar': np.float64(-0.373), 'trades': 1533, 'avg_trade_pct': -0.858091388543165, 'trade_ci_low_pct': -3.622429461643089, 'turnover_x': np.float64(348.1)}
+  R10 SIMPLE {'final': np.float64(238.99), 'cagr_pct': np.float64(-47.8), 'max_dd_pct': np.float64(99.78), 'calmar': np.float64(-0.479), 'trades': 1004, 'avg_trade_pct': -1.5328915424541083, 'trade_ci_low_pct': -6.643232850395651, 'turnover_x': np.float64(225.6)}
+  R10 AI_cost040 {'final': np.float64(11986.24), 'cagr_pct': np.float64(3.2), 'max_dd_pct': np.float64(91.19), 'calmar': np.float64(0.035), 'trades': 1196, 'avg_trade_pct': 1.8539909290748064, 'trade_ci_low_pct': -1.3269361722072224, 'turnover_x': np.float64(715.1)}
+
+DECISION: PARTIAL_SKILL_RULE_FAILS {"5": {"G2_skill": true, "G3a_cagr": true, "G3b_beats": true, "G3c_trade_ci": false, "G3d_years": false, "G3e_cost040": true, "pass": false}, "10": {"G2_skill": true, "G3a_cagr": true, "G3b_beats": true, "G3c_trade_ci": false, "G3d_years": false, "G3e_cost040": true, "pass": false}} (4206s)

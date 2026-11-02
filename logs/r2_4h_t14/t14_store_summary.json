@@ -1,0 +1,21 @@
+{
+ "protocol_sha": "856eee90e8327a00569adc39b1a4a7b59cd936cedb04e09d87d3265e9af2249b",
+ "candidates": 135,
+ "coins_with_trades": 135,
+ "rows_all": 90131,
+ "rows_liquid": 30889,
+ "coins_liquid": 120,
+ "regression": {
+  "a2_rows": 9740,
+  "matched": 9740,
+  "a2_rows_not_in_t14": 0,
+  "mismatches": {}
+ },
+ "liquid_by_period": {
+  "P1": 17262,
+  "P2": 10056,
+  "P3": 3571
+ },
+ "store_sha": "0698d718339a38419e15e98c7086ade86ac8eb33c54c79f6ee809c52da8aeb27",
+ "trades_sha": "2f0ea8fd8533c3239f62762b4f9d1b0971bb271ad37d291ce1676b2a04977f9d"
+}

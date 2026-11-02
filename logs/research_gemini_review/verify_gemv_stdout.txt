@@ -1,0 +1,5 @@
+[1 PASS] 200 random rows recomputed with own path code: mismatches 0 []
+[2 PASS] summary recomputed from rows: max |diff| 8.3e-17
+[3 PASS] claims / SHAs / protocol lock consistent
+TOTAL 3 checks, FAIL 0
+exit=0

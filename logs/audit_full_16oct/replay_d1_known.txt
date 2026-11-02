@@ -1,0 +1,4 @@
+as-of 2022-06-15: train rows 63220; Step 19 known-coin rows 17, found 17; max |diff| 5.551e-17
+[REPLAY D1-KNOWN PASS] Step 19 known-coin scores reproduced with data cut at the as-of day and a month model from scratch
+as-of 2026-09-15: train rows 238293; Step 19 known-coin rows 15, found 15; max |diff| 5.551e-17
+[REPLAY D1-KNOWN PASS] Step 19 known-coin scores reproduced with data cut at the as-of day and a month model from scratch

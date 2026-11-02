@@ -1,0 +1,13 @@
+[V0 OK] Amendment 1 file matches its SHA
+[V1 OK] complete 5m grid 87552 bars
+[C1a OK] C1 calls recomputed: mine 2421, stored 2421
+[C1b OK] C1 ranking table (counts, Wilson, order)
+[C2a OK] C2 events recomputed: mine 13647, stored 13647
+[C2b OK] C2 ranking (fav/adv counts, Wilson, order)
+[C3a OK] C3 trades of 120 configs recomputed (195840 trades): 0 configs differ
+[C3b OK] C3 ranking: mean/day, weekly-cluster lb95, months+, totals (0 rows differ)
+[C3c OK] daily entries: 32640 rows = 120 configs x 272 days (no day skipped)
+[C3d OK] Part D selection by the locked rule: []
+[C4 OK] no fee literal in Part C code (found [])
+
+RESULT: ALL PASS

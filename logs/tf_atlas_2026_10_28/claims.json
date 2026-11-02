@@ -1,0 +1,8856 @@
+[
+{
+"id": "count:1s-1m",
+"kind": "count",
+"query": "tf == '1s-1m'",
+"num": 219.0,
+"text": "कुल rows: 219",
+"tol": 0
+},
+{
+"id": "R03078:FCR092:1",
+"kind": "row",
+"row_id": "R03078",
+"field": "FCR092",
+"num": 24.33304431827228,
+"mult": 100,
+"text": "24%",
+"tol": 0.5
+},
+{
+"id": "R03078:net:2",
+"kind": "row",
+"row_id": "R03078",
+"field": "net",
+"num": -0.06961359922718,
+"mult": 100,
+"text": "-0.070%",
+"tol": 0.0005
+},
+{
+"id": "R03078:n:3",
+"kind": "row",
+"row_id": "R03078",
+"field": "n",
+"num": 5003.0,
+"mult": 1,
+"text": "5,003",
+"tol": 0.5
+},
+{
+"id": "R00009:FCR092:4",
+"kind": "row",
+"row_id": "R00009",
+"field": "FCR092",
+"num": 19.329298352973158,
+"mult": 100,
+"text": "19%",
+"tol": 0.5
+},
+{
+"id": "R00009:net:5",
+"kind": "row",
+"row_id": "R00009",
+"field": "net",
+"num": -0.09040362207305,
+"mult": 100,
+"text": "-0.090%",
+"tol": 0.0005
+},
+{
+"id": "R00009:gmed:6",
+"kind": "row",
+"row_id": "R00009",
+"field": "gmed",
+"num": 0.1098692277493,
+"mult": 100,
+"text": "+0.110%",
+"tol": 0.0005
+},
+{
+"id": "R00009:n:7",
+"kind": "row",
+"row_id": "R00009",
+"field": "n",
+"num": 93498.0,
+"mult": 1,
+"text": "93,498",
+"tol": 0.5
+},
+{
+"id": "R03073:FCR092:8",
+"kind": "row",
+"row_id": "R03073",
+"field": "FCR092",
+"num": 268.96993053346796,
+"mult": 100,
+"text": "269%",
+"tol": 0.5
+},
+{
+"id": "R03073:net:9",
+"kind": "row",
+"row_id": "R03073",
+"field": "net",
+"num": 0.15545233609079,
+"mult": 100,
+"text": "+0.155%",
+"tol": 0.0005
+},
+{
+"id": "R03073:n:10",
+"kind": "row",
+"row_id": "R03073",
+"field": "n",
+"num": 185.0,
+"mult": 1,
+"text": "185",
+"tol": 0.5
+},
+{
+"id": "R03072:FCR092:11",
+"kind": "row",
+"row_id": "R03072",
+"field": "FCR092",
+"num": 6.0395513731200205,
+"mult": 100,
+"text": "6%",
+"tol": 0.5
+},
+{
+"id": "R03072:net:12",
+"kind": "row",
+"row_id": "R03072",
+"field": "net",
+"num": -0.08644361273672001,
+"mult": 100,
+"text": "-0.086%",
+"tol": 0.0005
+},
+{
+"id": "R03072:n:13",
+"kind": "row",
+"row_id": "R03072",
+"field": "n",
+"num": 1067.0,
+"mult": 1,
+"text": "1,067",
+"tol": 0.5
+},
+{
+"id": "R02897:FCR092:14",
+"kind": "row",
+"row_id": "R02897",
+"field": "FCR092",
+"num": 3.87832707057257,
+"mult": 100,
+"text": "4%",
+"tol": 0.5
+},
+{
+"id": "R02897:net:15",
+"kind": "row",
+"row_id": "R02897",
+"field": "net",
+"num": -0.08843193909507001,
+"mult": 100,
+"text": "-0.088%",
+"tol": 0.0005
+},
+{
+"id": "R02897:n:16",
+"kind": "row",
+"row_id": "R02897",
+"field": "n",
+"num": 9155.0,
+"mult": 1,
+"text": "9,155",
+"tol": 0.5
+},
+{
+"id": "count:5m",
+"kind": "count",
+"query": "tf == '5m'",
+"num": 124.0,
+"text": "कुल rows: 124",
+"tol": 0
+},
+{
+"id": "R02398:FCR092:18",
+"kind": "row",
+"row_id": "R02398",
+"field": "FCR092",
+"num": 735.3560617494436,
+"mult": 100,
+"text": "735%",
+"tol": 0.5
+},
+{
+"id": "R02398:net:19",
+"kind": "row",
+"row_id": "R02398",
+"field": "net",
+"num": 0.58452757680948,
+"mult": 100,
+"text": "+0.585%",
+"tol": 0.0005
+},
+{
+"id": "R02398:n:20",
+"kind": "row",
+"row_id": "R02398",
+"field": "n",
+"num": 70.0,
+"mult": 1,
+"text": "70",
+"tol": 0.5
+},
+{
+"id": "R02374:FCR092:21",
+"kind": "row",
+"row_id": "R02374",
+"field": "FCR092",
+"num": 335.5360941360675,
+"mult": 100,
+"text": "336%",
+"tol": 0.5
+},
+{
+"id": "R02374:net:22",
+"kind": "row",
+"row_id": "R02374",
+"field": "net",
+"num": 0.21669320660518002,
+"mult": 100,
+"text": "+0.217%",
+"tol": 0.0005
+},
+{
+"id": "R02374:n:23",
+"kind": "row",
+"row_id": "R02374",
+"field": "n",
+"num": 76.0,
+"mult": 1,
+"text": "76",
+"tol": 0.5
+},
+{
+"id": "R02397:FCR092:24",
+"kind": "row",
+"row_id": "R02397",
+"field": "FCR092",
+"num": 256.0975380245342,
+"mult": 100,
+"text": "256%",
+"tol": 0.5
+},
+{
+"id": "R02397:net:25",
+"kind": "row",
+"row_id": "R02397",
+"field": "net",
+"num": 0.14360973498257,
+"mult": 100,
+"text": "+0.144%",
+"tol": 0.0005
+},
+{
+"id": "R02397:n:26",
+"kind": "row",
+"row_id": "R02397",
+"field": "n",
+"num": 96.0,
+"mult": 1,
+"text": "96",
+"tol": 0.5
+},
+{
+"id": "R02390:FCR092:27",
+"kind": "row",
+"row_id": "R02390",
+"field": "FCR092",
+"num": 203.75343619663116,
+"mult": 100,
+"text": "204%",
+"tol": 0.5
+},
+{
+"id": "R02390:net:28",
+"kind": "row",
+"row_id": "R02390",
+"field": "net",
+"num": 0.0954531613009,
+"mult": 100,
+"text": "+0.095%",
+"tol": 0.0005
+},
+{
+"id": "R02390:n:29",
+"kind": "row",
+"row_id": "R02390",
+"field": "n",
+"num": 132.0,
+"mult": 1,
+"text": "132",
+"tol": 0.5
+},
+{
+"id": "R02404:FCR092:30",
+"kind": "row",
+"row_id": "R02404",
+"field": "FCR092",
+"num": 193.5301936141303,
+"mult": 100,
+"text": "194%",
+"tol": 0.5
+},
+{
+"id": "R02404:net:31",
+"kind": "row",
+"row_id": "R02404",
+"field": "net",
+"num": 0.08604777812499,
+"mult": 100,
+"text": "+0.086%",
+"tol": 0.0005
+},
+{
+"id": "R02404:n:32",
+"kind": "row",
+"row_id": "R02404",
+"field": "n",
+"num": 320.0,
+"mult": 1,
+"text": "320",
+"tol": 0.5
+},
+{
+"id": "R03843:hit:33",
+"kind": "row",
+"row_id": "R03843",
+"field": "hit",
+"num": 55.72393938182254,
+"mult": 100,
+"text": "55.7%",
+"tol": 0.05
+},
+{
+"id": "R03843:p_star:34",
+"kind": "row",
+"row_id": "R03843",
+"field": "p_star",
+"num": 46.92052495240788,
+"mult": 100,
+"text": "46.9%",
+"tol": 0.05
+},
+{
+"id": "R03843:n:35",
+"kind": "row",
+"row_id": "R03843",
+"field": "n",
+"num": 25009.0,
+"mult": 1,
+"text": "25,009",
+"tol": 0.5
+},
+{
+"id": "R03842:hit:36",
+"kind": "row",
+"row_id": "R03842",
+"field": "hit",
+"num": 55.53329994992489,
+"mult": 100,
+"text": "55.5%",
+"tol": 0.05
+},
+{
+"id": "R03842:p_star:37",
+"kind": "row",
+"row_id": "R03842",
+"field": "p_star",
+"num": 47.17294592315422,
+"mult": 100,
+"text": "47.2%",
+"tol": 0.05
+},
+{
+"id": "R03842:n:38",
+"kind": "row",
+"row_id": "R03842",
+"field": "n",
+"num": 27958.0,
+"mult": 1,
+"text": "27,958",
+"tol": 0.5
+},
+{
+"id": "R03793:hit:39",
+"kind": "row",
+"row_id": "R03793",
+"field": "hit",
+"num": 48.87753089724239,
+"mult": 100,
+"text": "48.9%",
+"tol": 0.05
+},
+{
+"id": "R03793:p_star:40",
+"kind": "row",
+"row_id": "R03793",
+"field": "p_star",
+"num": 70.83429044312206,
+"mult": 100,
+"text": "70.8%",
+"tol": 0.05
+},
+{
+"id": "R03793:ACC_COVER:41",
+"kind": "row",
+"row_id": "R03793",
+"field": "ACC_COVER",
+"num": -5.38760417985898,
+"mult": 100,
+"text": "-5%",
+"tol": 0.5
+},
+{
+"id": "R03793:n:42",
+"kind": "row",
+"row_id": "R03793",
+"field": "n",
+"num": 5648886.0,
+"mult": 1,
+"text": "5,648,886",
+"tol": 0.5
+},
+{
+"id": "R03792:hit:43",
+"kind": "row",
+"row_id": "R03792",
+"field": "hit",
+"num": 47.162148430681725,
+"mult": 100,
+"text": "47.2%",
+"tol": 0.05
+},
+{
+"id": "R03792:p_star:44",
+"kind": "row",
+"row_id": "R03792",
+"field": "p_star",
+"num": 70.83429044312206,
+"mult": 100,
+"text": "70.8%",
+"tol": 0.05
+},
+{
+"id": "R03792:ACC_COVER:45",
+"kind": "row",
+"row_id": "R03792",
+"field": "ACC_COVER",
+"num": -13.62106176385342,
+"mult": 100,
+"text": "-14%",
+"tol": 0.5
+},
+{
+"id": "R03792:n:46",
+"kind": "row",
+"row_id": "R03792",
+"field": "n",
+"num": 5648886.0,
+"mult": 1,
+"text": "5,648,886",
+"tol": 0.5
+},
+{
+"id": "R03809:FCR:47",
+"kind": "row",
+"row_id": "R03809",
+"field": "FCR",
+"num": 20.05376104171698,
+"mult": 100,
+"text": "20%",
+"tol": 0.5
+},
+{
+"id": "R03809:net:48",
+"kind": "row",
+"row_id": "R03809",
+"field": "net",
+"num": -0.0684013845823828,
+"mult": 1,
+"text": "-0.07",
+"tol": 0.005
+},
+{
+"id": "R03809:n:49",
+"kind": "row",
+"row_id": "R03809",
+"field": "n",
+"num": 35779.0,
+"mult": 1,
+"text": "35,779",
+"tol": 0.5
+},
+{
+"id": "R03807:FCR:50",
+"kind": "row",
+"row_id": "R03807",
+"field": "FCR",
+"num": 14.39634612526265,
+"mult": 100,
+"text": "14%",
+"tol": 0.5
+},
+{
+"id": "R03807:net:51",
+"kind": "row",
+"row_id": "R03807",
+"field": "net",
+"num": -0.0821740698137785,
+"mult": 1,
+"text": "-0.08",
+"tol": 0.005
+},
+{
+"id": "R03807:n:52",
+"kind": "row",
+"row_id": "R03807",
+"field": "n",
+"num": 51219.0,
+"mult": 1,
+"text": "51,219",
+"tol": 0.5
+},
+{
+"id": "R03808:FCR:53",
+"kind": "row",
+"row_id": "R03808",
+"field": "FCR",
+"num": 14.200700764854579,
+"mult": 100,
+"text": "14%",
+"tol": 0.5
+},
+{
+"id": "R03808:net:54",
+"kind": "row",
+"row_id": "R03808",
+"field": "net",
+"num": -0.0722956606910344,
+"mult": 1,
+"text": "-0.07",
+"tol": 0.005
+},
+{
+"id": "R03808:n:55",
+"kind": "row",
+"row_id": "R03808",
+"field": "n",
+"num": 51219.0,
+"mult": 1,
+"text": "51,219",
+"tol": 0.5
+},
+{
+"id": "R03815:FCR:56",
+"kind": "row",
+"row_id": "R03815",
+"field": "FCR",
+"num": 10.81508297102132,
+"mult": 100,
+"text": "11%",
+"tol": 0.5
+},
+{
+"id": "R03815:net:57",
+"kind": "row",
+"row_id": "R03815",
+"field": "net",
+"num": -0.0861245574396483,
+"mult": 1,
+"text": "-0.09",
+"tol": 0.005
+},
+{
+"id": "R03815:n:58",
+"kind": "row",
+"row_id": "R03815",
+"field": "n",
+"num": 51564.0,
+"mult": 1,
+"text": "51,564",
+"tol": 0.5
+},
+{
+"id": "R03817:FCR:59",
+"kind": "row",
+"row_id": "R03817",
+"field": "FCR",
+"num": 10.7864275849553,
+"mult": 100,
+"text": "11%",
+"tol": 0.5
+},
+{
+"id": "R03817:net:60",
+"kind": "row",
+"row_id": "R03817",
+"field": "net",
+"num": -0.0777243602551303,
+"mult": 1,
+"text": "-0.08",
+"tol": 0.005
+},
+{
+"id": "R03817:n:61",
+"kind": "row",
+"row_id": "R03817",
+"field": "n",
+"num": 36892.0,
+"mult": 1,
+"text": "36,892",
+"tol": 0.5
+},
+{
+"id": "R03864:hit:62",
+"kind": "row",
+"row_id": "R03864",
+"field": "hit",
+"num": 47.599999999999994,
+"mult": 100,
+"text": "47.6%",
+"tol": 0.05
+},
+{
+"id": "R03864:p_star:63",
+"kind": "row",
+"row_id": "R03864",
+"field": "p_star",
+"num": 48.46,
+"mult": 100,
+"text": "48.5%",
+"tol": 0.05
+},
+{
+"id": "R03864:n:64",
+"kind": "row",
+"row_id": "R03864",
+"field": "n",
+"num": 711839.0,
+"mult": 1,
+"text": "711,839",
+"tol": 0.5
+},
+{
+"id": "R03865:hit:65",
+"kind": "row",
+"row_id": "R03865",
+"field": "hit",
+"num": 47.160000000000004,
+"mult": 100,
+"text": "47.2%",
+"tol": 0.05
+},
+{
+"id": "R03865:p_star:66",
+"kind": "row",
+"row_id": "R03865",
+"field": "p_star",
+"num": 48.41,
+"mult": 100,
+"text": "48.4%",
+"tol": 0.05
+},
+{
+"id": "R03865:n:67",
+"kind": "row",
+"row_id": "R03865",
+"field": "n",
+"num": 1415790.0,
+"mult": 1,
+"text": "1,415,790",
+"tol": 0.5
+},
+{
+"id": "R03863:hit:68",
+"kind": "row",
+"row_id": "R03863",
+"field": "hit",
+"num": 46.72,
+"mult": 100,
+"text": "46.7%",
+"tol": 0.05
+},
+{
+"id": "R03863:p_star:69",
+"kind": "row",
+"row_id": "R03863",
+"field": "p_star",
+"num": 48.36,
+"mult": 100,
+"text": "48.4%",
+"tol": 0.05
+},
+{
+"id": "R03863:n:70",
+"kind": "row",
+"row_id": "R03863",
+"field": "n",
+"num": 703951.0,
+"mult": 1,
+"text": "703,951",
+"tol": 0.5
+},
+{
+"id": "count:15m",
+"kind": "count",
+"query": "tf == '15m'",
+"num": 586.0,
+"text": "कुल rows: 586",
+"tol": 0
+},
+{
+"id": "R00800:FCR092:72",
+"kind": "row",
+"row_id": "R00800",
+"field": "FCR092",
+"num": 948.4105633179429,
+"mult": 100,
+"text": "948%",
+"tol": 0.5
+},
+{
+"id": "R00800:net:73",
+"kind": "row",
+"row_id": "R00800",
+"field": "net",
+"num": 0.7805377182525,
+"mult": 100,
+"text": "+0.781%",
+"tol": 0.0005
+},
+{
+"id": "R00800:n:74",
+"kind": "row",
+"row_id": "R00800",
+"field": "n",
+"num": 112.0,
+"mult": 1,
+"text": "112",
+"tol": 0.5
+},
+{
+"id": "R00799:FCR092:75",
+"kind": "row",
+"row_id": "R00799",
+"field": "FCR092",
+"num": 898.707362347773,
+"mult": 100,
+"text": "899%",
+"tol": 0.5
+},
+{
+"id": "R00799:net:76",
+"kind": "row",
+"row_id": "R00799",
+"field": "net",
+"num": 0.73481077335995,
+"mult": 100,
+"text": "+0.735%",
+"tol": 0.0005
+},
+{
+"id": "R00799:n:77",
+"kind": "row",
+"row_id": "R00799",
+"field": "n",
+"num": 114.0,
+"mult": 1,
+"text": "114",
+"tol": 0.5
+},
+{
+"id": "R00795:FCR092:78",
+"kind": "row",
+"row_id": "R00795",
+"field": "FCR092",
+"num": 705.925640094419,
+"mult": 100,
+"text": "706%",
+"tol": 0.5
+},
+{
+"id": "R00795:net:79",
+"kind": "row",
+"row_id": "R00795",
+"field": "net",
+"num": 0.55745158888686,
+"mult": 100,
+"text": "+0.557%",
+"tol": 0.0005
+},
+{
+"id": "R00795:n:80",
+"kind": "row",
+"row_id": "R00795",
+"field": "n",
+"num": 168.0,
+"mult": 1,
+"text": "168",
+"tol": 0.5
+},
+{
+"id": "R00829:FCR092:81",
+"kind": "row",
+"row_id": "R00829",
+"field": "FCR092",
+"num": 654.2070866254772,
+"mult": 100,
+"text": "654%",
+"tol": 0.5
+},
+{
+"id": "R00829:net:82",
+"kind": "row",
+"row_id": "R00829",
+"field": "net",
+"num": 0.5098705196954301,
+"mult": 100,
+"text": "+0.510%",
+"tol": 0.0005
+},
+{
+"id": "R00829:n:83",
+"kind": "row",
+"row_id": "R00829",
+"field": "n",
+"num": 137.0,
+"mult": 1,
+"text": "137",
+"tol": 0.5
+},
+{
+"id": "R00844:FCR092:84",
+"kind": "row",
+"row_id": "R00844",
+"field": "FCR092",
+"num": 605.373139336597,
+"mult": 100,
+"text": "605%",
+"tol": 0.5
+},
+{
+"id": "R00844:net:85",
+"kind": "row",
+"row_id": "R00844",
+"field": "net",
+"num": 0.46494328818966,
+"mult": 100,
+"text": "+0.465%",
+"tol": 0.0005
+},
+{
+"id": "R00844:n:86",
+"kind": "row",
+"row_id": "R00844",
+"field": "n",
+"num": 114.0,
+"mult": 1,
+"text": "114",
+"tol": 0.5
+},
+{
+"id": "R03845:hit:87",
+"kind": "row",
+"row_id": "R03845",
+"field": "hit",
+"num": 55.97593582887701,
+"mult": 100,
+"text": "56.0%",
+"tol": 0.05
+},
+{
+"id": "R03845:p_star:88",
+"kind": "row",
+"row_id": "R03845",
+"field": "p_star",
+"num": 47.09174073833777,
+"mult": 100,
+"text": "47.1%",
+"tol": 0.05
+},
+{
+"id": "R03845:n:89",
+"kind": "row",
+"row_id": "R03845",
+"field": "n",
+"num": 7480.0,
+"mult": 1,
+"text": "7,480",
+"tol": 0.5
+},
+{
+"id": "R03844:hit:90",
+"kind": "row",
+"row_id": "R03844",
+"field": "hit",
+"num": 55.05879613459076,
+"mult": 100,
+"text": "55.1%",
+"tol": 0.05
+},
+{
+"id": "R03844:p_star:91",
+"kind": "row",
+"row_id": "R03844",
+"field": "p_star",
+"num": 46.79643146796431,
+"mult": 100,
+"text": "46.8%",
+"tol": 0.05
+},
+{
+"id": "R03844:n:92",
+"kind": "row",
+"row_id": "R03844",
+"field": "n",
+"num": 8589.0,
+"mult": 1,
+"text": "8,589",
+"tol": 0.5
+},
+{
+"id": "R03795:hit:93",
+"kind": "row",
+"row_id": "R03795",
+"field": "hit",
+"num": 50.47829538558734,
+"mult": 100,
+"text": "50.5%",
+"tol": 0.05
+},
+{
+"id": "R03795:p_star:94",
+"kind": "row",
+"row_id": "R03795",
+"field": "p_star",
+"num": 61.97461020268287,
+"mult": 100,
+"text": "62.0%",
+"tol": 0.05
+},
+{
+"id": "R03795:ACC_COVER:95",
+"kind": "row",
+"row_id": "R03795",
+"field": "ACC_COVER",
+"num": 3.99424597119808,
+"mult": 100,
+"text": "4%",
+"tol": 0.5
+},
+{
+"id": "R03795:n:96",
+"kind": "row",
+"row_id": "R03795",
+"field": "n",
+"num": 1924752.0,
+"mult": 1,
+"text": "1,924,752",
+"tol": 0.5
+},
+{
+"id": "R03794:hit:97",
+"kind": "row",
+"row_id": "R03794",
+"field": "hit",
+"num": 47.32609707640257,
+"mult": 100,
+"text": "47.3%",
+"tol": 0.05
+},
+{
+"id": "R03794:p_star:98",
+"kind": "row",
+"row_id": "R03794",
+"field": "p_star",
+"num": 61.97461020268287,
+"mult": 100,
+"text": "62.0%",
+"tol": 0.05
+},
+{
+"id": "R03794:ACC_COVER:99",
+"kind": "row",
+"row_id": "R03794",
+"field": "ACC_COVER",
+"num": -22.3297700579711,
+"mult": 100,
+"text": "-22%",
+"tol": 0.5
+},
+{
+"id": "R03794:n:100",
+"kind": "row",
+"row_id": "R03794",
+"field": "n",
+"num": 1924752.0,
+"mult": 1,
+"text": "1,924,752",
+"tol": 0.5
+},
+{
+"id": "R03821:FCR:101",
+"kind": "row",
+"row_id": "R03821",
+"field": "FCR",
+"num": 47.52147822209616,
+"mult": 100,
+"text": "48%",
+"tol": 0.5
+},
+{
+"id": "R03821:net:102",
+"kind": "row",
+"row_id": "R03821",
+"field": "net",
+"num": -0.0235791792296334,
+"mult": 1,
+"text": "-0.02",
+"tol": 0.005
+},
+{
+"id": "R03821:n:103",
+"kind": "row",
+"row_id": "R03821",
+"field": "n",
+"num": 11143.0,
+"mult": 1,
+"text": "11,143",
+"tol": 0.5
+},
+{
+"id": "R03820:FCR:104",
+"kind": "row",
+"row_id": "R03820",
+"field": "FCR",
+"num": 44.905850739501155,
+"mult": 100,
+"text": "45%",
+"tol": 0.5
+},
+{
+"id": "R03820:net:105",
+"kind": "row",
+"row_id": "R03820",
+"field": "net",
+"num": -0.0240617906154971,
+"mult": 1,
+"text": "-0.02",
+"tol": 0.005
+},
+{
+"id": "R03820:n:106",
+"kind": "row",
+"row_id": "R03820",
+"field": "n",
+"num": 15865.0,
+"mult": 1,
+"text": "15,865",
+"tol": 0.5
+},
+{
+"id": "R03819:FCR:107",
+"kind": "row",
+"row_id": "R03819",
+"field": "FCR",
+"num": 38.996521887442384,
+"mult": 100,
+"text": "39%",
+"tol": 0.5
+},
+{
+"id": "R03819:net:108",
+"kind": "row",
+"row_id": "R03819",
+"field": "net",
+"num": -0.0305735672694921,
+"mult": 1,
+"text": "-0.03",
+"tol": 0.005
+},
+{
+"id": "R03819:n:109",
+"kind": "row",
+"row_id": "R03819",
+"field": "n",
+"num": 15865.0,
+"mult": 1,
+"text": "15,865",
+"tol": 0.5
+},
+{
+"id": "R03803:FCR:110",
+"kind": "row",
+"row_id": "R03803",
+"field": "FCR",
+"num": 25.56086134451217,
+"mult": 100,
+"text": "26%",
+"tol": 0.5
+},
+{
+"id": "R03803:net:111",
+"kind": "row",
+"row_id": "R03803",
+"field": "net",
+"num": -0.0379537762742596,
+"mult": 1,
+"text": "-0.04",
+"tol": 0.005
+},
+{
+"id": "R03803:n:112",
+"kind": "row",
+"row_id": "R03803",
+"field": "n",
+"num": 16091.0,
+"mult": 1,
+"text": "16,091",
+"tol": 0.5
+},
+{
+"id": "R03805:FCR:113",
+"kind": "row",
+"row_id": "R03805",
+"field": "FCR",
+"num": 21.95772242989735,
+"mult": 100,
+"text": "22%",
+"tol": 0.5
+},
+{
+"id": "R03805:net:114",
+"kind": "row",
+"row_id": "R03805",
+"field": "net",
+"num": -0.0358325896451418,
+"mult": 1,
+"text": "-0.04",
+"tol": 0.005
+},
+{
+"id": "R03805:n:115",
+"kind": "row",
+"row_id": "R03805",
+"field": "n",
+"num": 11574.0,
+"mult": 1,
+"text": "11,574",
+"tol": 0.5
+},
+{
+"id": "R03867:hit:116",
+"kind": "row",
+"row_id": "R03867",
+"field": "hit",
+"num": 45.92,
+"mult": 100,
+"text": "45.9%",
+"tol": 0.05
+},
+{
+"id": "R03867:p_star:117",
+"kind": "row",
+"row_id": "R03867",
+"field": "p_star",
+"num": 48.32,
+"mult": 100,
+"text": "48.3%",
+"tol": 0.05
+},
+{
+"id": "R03867:n:118",
+"kind": "row",
+"row_id": "R03867",
+"field": "n",
+"num": 218354.0,
+"mult": 1,
+"text": "218,354",
+"tol": 0.5
+},
+{
+"id": "R03868:hit:119",
+"kind": "row",
+"row_id": "R03868",
+"field": "hit",
+"num": 45.29,
+"mult": 100,
+"text": "45.3%",
+"tol": 0.05
+},
+{
+"id": "R03868:p_star:120",
+"kind": "row",
+"row_id": "R03868",
+"field": "p_star",
+"num": 48.209999999999994,
+"mult": 100,
+"text": "48.2%",
+"tol": 0.05
+},
+{
+"id": "R03868:n:121",
+"kind": "row",
+"row_id": "R03868",
+"field": "n",
+"num": 434802.0,
+"mult": 1,
+"text": "434,802",
+"tol": 0.5
+},
+{
+"id": "R03866:hit:122",
+"kind": "row",
+"row_id": "R03866",
+"field": "hit",
+"num": 44.65,
+"mult": 100,
+"text": "44.6%",
+"tol": 0.05
+},
+{
+"id": "R03866:p_star:123",
+"kind": "row",
+"row_id": "R03866",
+"field": "p_star",
+"num": 48.1,
+"mult": 100,
+"text": "48.1%",
+"tol": 0.05
+},
+{
+"id": "R03866:n:124",
+"kind": "row",
+"row_id": "R03866",
+"field": "n",
+"num": 216448.0,
+"mult": 1,
+"text": "216,448",
+"tol": 0.5
+},
+{
+"id": "count:30m",
+"kind": "count",
+"query": "tf == '30m'",
+"num": 69.0,
+"text": "कुल rows: 69",
+"tol": 0
+},
+{
+"id": "R02716:FCR092:126",
+"kind": "row",
+"row_id": "R02716",
+"field": "FCR092",
+"num": 610.8658464921903,
+"mult": 100,
+"text": "611%",
+"tol": 0.5
+},
+{
+"id": "R02716:net:127",
+"kind": "row",
+"row_id": "R02716",
+"field": "net",
+"num": 0.46999657877281004,
+"mult": 100,
+"text": "+0.470%",
+"tol": 0.0005
+},
+{
+"id": "R02716:n:128",
+"kind": "row",
+"row_id": "R02716",
+"field": "n",
+"num": 76.0,
+"mult": 1,
+"text": "76",
+"tol": 0.5
+},
+{
+"id": "R02715:FCR092:129",
+"kind": "row",
+"row_id": "R02715",
+"field": "FCR092",
+"num": 511.41505836818686,
+"mult": 100,
+"text": "511%",
+"tol": 0.5
+},
+{
+"id": "R02715:net:130",
+"kind": "row",
+"row_id": "R02715",
+"field": "net",
+"num": 0.37850185369873,
+"mult": 100,
+"text": "+0.379%",
+"tol": 0.0005
+},
+{
+"id": "R02715:n:131",
+"kind": "row",
+"row_id": "R02715",
+"field": "n",
+"num": 84.0,
+"mult": 1,
+"text": "84",
+"tol": 0.5
+},
+{
+"id": "R00039:FCR092:132",
+"kind": "row",
+"row_id": "R00039",
+"field": "FCR092",
+"num": 474.4527569506766,
+"mult": 100,
+"text": "474%",
+"tol": 0.5
+},
+{
+"id": "R00039:net:133",
+"kind": "row",
+"row_id": "R00039",
+"field": "net",
+"num": 0.27558519512772,
+"mult": 100,
+"text": "+0.276%",
+"tol": 0.0005
+},
+{
+"id": "R00039:gmed:134",
+"kind": "row",
+"row_id": "R00039",
+"field": "gmed",
+"num": -0.832782249151,
+"mult": 100,
+"text": "-0.833%",
+"tol": 0.0005
+},
+{
+"id": "R00039:n:135",
+"kind": "row",
+"row_id": "R00039",
+"field": "n",
+"num": 9595.0,
+"mult": 1,
+"text": "9,595",
+"tol": 0.5
+},
+{
+"id": "R02714:FCR092:136",
+"kind": "row",
+"row_id": "R02714",
+"field": "FCR092",
+"num": 171.0508020701329,
+"mult": 100,
+"text": "171%",
+"tol": 0.5
+},
+{
+"id": "R02714:net:137",
+"kind": "row",
+"row_id": "R02714",
+"field": "net",
+"num": 0.06536673790452,
+"mult": 100,
+"text": "+0.065%",
+"tol": 0.0005
+},
+{
+"id": "R02714:n:138",
+"kind": "row",
+"row_id": "R02714",
+"field": "n",
+"num": 87.0,
+"mult": 1,
+"text": "87",
+"tol": 0.5
+},
+{
+"id": "R00151:FCR092:139",
+"kind": "row",
+"row_id": "R00151",
+"field": "FCR092",
+"num": 68.65419386656986,
+"mult": 100,
+"text": "69%",
+"tol": 0.5
+},
+{
+"id": "R00151:net:140",
+"kind": "row",
+"row_id": "R00151",
+"field": "net",
+"num": -0.0382966913244,
+"mult": 100,
+"text": "-0.038%",
+"tol": 0.0005
+},
+{
+"id": "R00151:gmed:141",
+"kind": "row",
+"row_id": "R00151",
+"field": "gmed",
+"num": 0.7210046316191601,
+"mult": 100,
+"text": "+0.721%",
+"tol": 0.0005
+},
+{
+"id": "R00151:n:142",
+"kind": "row",
+"row_id": "R00151",
+"field": "n",
+"num": 58455.0,
+"mult": 1,
+"text": "58,455",
+"tol": 0.5
+},
+{
+"id": "R03892:FCR092:143",
+"kind": "row",
+"row_id": "R03892",
+"field": "FCR092",
+"num": -91.30434782608697,
+"mult": 100,
+"text": "-91%",
+"tol": 0.5
+},
+{
+"id": "R03892:net:144",
+"kind": "row",
+"row_id": "R03892",
+"field": "net",
+"num": -0.28399999999999,
+"mult": 100,
+"text": "-0.284%",
+"tol": 0.0005
+},
+{
+"id": "R03870:hit:145",
+"kind": "row",
+"row_id": "R03870",
+"field": "hit",
+"num": 44.87,
+"mult": 100,
+"text": "44.9%",
+"tol": 0.05
+},
+{
+"id": "R03870:p_star:146",
+"kind": "row",
+"row_id": "R03870",
+"field": "p_star",
+"num": 47.94,
+"mult": 100,
+"text": "47.9%",
+"tol": 0.05
+},
+{
+"id": "R03870:n:147",
+"kind": "row",
+"row_id": "R03870",
+"field": "n",
+"num": 104806.0,
+"mult": 1,
+"text": "104,806",
+"tol": 0.5
+},
+{
+"id": "R03871:hit:148",
+"kind": "row",
+"row_id": "R03871",
+"field": "hit",
+"num": 44.3,
+"mult": 100,
+"text": "44.3%",
+"tol": 0.05
+},
+{
+"id": "R03871:p_star:149",
+"kind": "row",
+"row_id": "R03871",
+"field": "p_star",
+"num": 47.88,
+"mult": 100,
+"text": "47.9%",
+"tol": 0.05
+},
+{
+"id": "R03871:n:150",
+"kind": "row",
+"row_id": "R03871",
+"field": "n",
+"num": 210272.0,
+"mult": 1,
+"text": "210,272",
+"tol": 0.5
+},
+{
+"id": "R03869:hit:151",
+"kind": "row",
+"row_id": "R03869",
+"field": "hit",
+"num": 43.74,
+"mult": 100,
+"text": "43.7%",
+"tol": 0.05
+},
+{
+"id": "R03869:p_star:152",
+"kind": "row",
+"row_id": "R03869",
+"field": "p_star",
+"num": 47.82,
+"mult": 100,
+"text": "47.8%",
+"tol": 0.05
+},
+{
+"id": "R03869:n:153",
+"kind": "row",
+"row_id": "R03869",
+"field": "n",
+"num": 105466.0,
+"mult": 1,
+"text": "105,466",
+"tol": 0.5
+},
+{
+"id": "count:1h",
+"kind": "count",
+"query": "tf == '1h'",
+"num": 870.0,
+"text": "कुल rows: 870",
+"tol": 0
+},
+{
+"id": "R00051:FCR092:155",
+"kind": "row",
+"row_id": "R00051",
+"field": "FCR092",
+"num": 1243.6597814982124,
+"mult": 100,
+"text": "1244%",
+"tol": 0.5
+},
+{
+"id": "R00051:net:156",
+"kind": "row",
+"row_id": "R00051",
+"field": "net",
+"num": 0.90967598061457,
+"mult": 100,
+"text": "+0.910%",
+"tol": 0.0005
+},
+{
+"id": "R00051:gmed:157",
+"kind": "row",
+"row_id": "R00051",
+"field": "gmed",
+"num": -1.14088512212171,
+"mult": 100,
+"text": "-1.141%",
+"tol": 0.0005
+},
+{
+"id": "R00051:n:158",
+"kind": "row",
+"row_id": "R00051",
+"field": "n",
+"num": 4596.0,
+"mult": 1,
+"text": "4,596",
+"tol": 0.5
+},
+{
+"id": "R02445:FCR092:159",
+"kind": "row",
+"row_id": "R02445",
+"field": "FCR092",
+"num": 1012.7040717231971,
+"mult": 100,
+"text": "1013%",
+"tol": 0.5
+},
+{
+"id": "R02445:net:160",
+"kind": "row",
+"row_id": "R02445",
+"field": "net",
+"num": 0.83968774598534,
+"mult": 100,
+"text": "+0.840%",
+"tol": 0.0005
+},
+{
+"id": "R02445:n:161",
+"kind": "row",
+"row_id": "R02445",
+"field": "n",
+"num": 37.0,
+"mult": 1,
+"text": "37",
+"tol": 0.5
+},
+{
+"id": "R01798:FCR092:162",
+"kind": "row",
+"row_id": "R01798",
+"field": "FCR092",
+"num": 989.2609901059757,
+"mult": 100,
+"text": "989%",
+"tol": 0.5
+},
+{
+"id": "R01798:net:163",
+"kind": "row",
+"row_id": "R01798",
+"field": "net",
+"num": 0.8181201108974899,
+"mult": 100,
+"text": "+0.818%",
+"tol": 0.0005
+},
+{
+"id": "R01798:n:164",
+"kind": "row",
+"row_id": "R01798",
+"field": "n",
+"num": 79.0,
+"mult": 1,
+"text": "79",
+"tol": 0.5
+},
+{
+"id": "R01834:FCR092:165",
+"kind": "row",
+"row_id": "R01834",
+"field": "FCR092",
+"num": 909.8933024756542,
+"mult": 100,
+"text": "910%",
+"tol": 0.5
+},
+{
+"id": "R01834:net:166",
+"kind": "row",
+"row_id": "R01834",
+"field": "net",
+"num": 0.7451018382776,
+"mult": 100,
+"text": "+0.745%",
+"tol": 0.0005
+},
+{
+"id": "R01834:n:167",
+"kind": "row",
+"row_id": "R01834",
+"field": "n",
+"num": 72.0,
+"mult": 1,
+"text": "72",
+"tol": 0.5
+},
+{
+"id": "R00226:FCR092:168",
+"kind": "row",
+"row_id": "R00226",
+"field": "FCR092",
+"num": 604.4987685582577,
+"mult": 100,
+"text": "604%",
+"tol": 0.5
+},
+{
+"id": "R00226:net:169",
+"kind": "row",
+"row_id": "R00226",
+"field": "net",
+"num": 0.46413886707359,
+"mult": 100,
+"text": "+0.464%",
+"tol": 0.0005
+},
+{
+"id": "R00226:n:170",
+"kind": "row",
+"row_id": "R00226",
+"field": "n",
+"num": 178.0,
+"mult": 1,
+"text": "178",
+"tol": 0.5
+},
+{
+"id": "R03846:hit:171",
+"kind": "row",
+"row_id": "R03846",
+"field": "hit",
+"num": 54.38050803525143,
+"mult": 100,
+"text": "54.4%",
+"tol": 0.05
+},
+{
+"id": "R03846:p_star:172",
+"kind": "row",
+"row_id": "R03846",
+"field": "p_star",
+"num": 45.4816681031625,
+"mult": 100,
+"text": "45.5%",
+"tol": 0.05
+},
+{
+"id": "R03846:n:173",
+"kind": "row",
+"row_id": "R03846",
+"field": "n",
+"num": 1929.0,
+"mult": 1,
+"text": "1,929",
+"tol": 0.5
+},
+{
+"id": "R03847:hit:174",
+"kind": "row",
+"row_id": "R03847",
+"field": "hit",
+"num": 53.65309537088678,
+"mult": 100,
+"text": "53.7%",
+"tol": 0.05
+},
+{
+"id": "R03847:p_star:175",
+"kind": "row",
+"row_id": "R03847",
+"field": "p_star",
+"num": 47.31574761399787,
+"mult": 100,
+"text": "47.3%",
+"tol": 0.05
+},
+{
+"id": "R03847:n:176",
+"kind": "row",
+"row_id": "R03847",
+"field": "n",
+"num": 1793.0,
+"mult": 1,
+"text": "1,793",
+"tol": 0.5
+},
+{
+"id": "R03797:hit:177",
+"kind": "row",
+"row_id": "R03797",
+"field": "hit",
+"num": 52.141430579184856,
+"mult": 100,
+"text": "52.1%",
+"tol": 0.05
+},
+{
+"id": "R03797:p_star:178",
+"kind": "row",
+"row_id": "R03797",
+"field": "p_star",
+"num": 56.10390976705312,
+"mult": 100,
+"text": "56.1%",
+"tol": 0.05
+},
+{
+"id": "R03797:ACC_COVER:179",
+"kind": "row",
+"row_id": "R03797",
+"field": "ACC_COVER",
+"num": 35.08293308566892,
+"mult": 100,
+"text": "35%",
+"tol": 0.5
+},
+{
+"id": "R03797:n:180",
+"kind": "row",
+"row_id": "R03797",
+"field": "n",
+"num": 486684.0,
+"mult": 1,
+"text": "486,684",
+"tol": 0.5
+},
+{
+"id": "R03796:hit:181",
+"kind": "row",
+"row_id": "R03796",
+"field": "hit",
+"num": 46.705459805541174,
+"mult": 100,
+"text": "46.7%",
+"tol": 0.05
+},
+{
+"id": "R03796:p_star:182",
+"kind": "row",
+"row_id": "R03796",
+"field": "p_star",
+"num": 56.10390976705312,
+"mult": 100,
+"text": "56.1%",
+"tol": 0.05
+},
+{
+"id": "R03796:ACC_COVER:183",
+"kind": "row",
+"row_id": "R03796",
+"field": "ACC_COVER",
+"num": -53.97426109150015,
+"mult": 100,
+"text": "-54%",
+"tol": 0.5
+},
+{
+"id": "R03796:n:184",
+"kind": "row",
+"row_id": "R03796",
+"field": "n",
+"num": 486684.0,
+"mult": 1,
+"text": "486,684",
+"tol": 0.5
+},
+{
+"id": "R03812:FCR:185",
+"kind": "row",
+"row_id": "R03812",
+"field": "FCR",
+"num": 221.89532207111063,
+"mult": 100,
+"text": "222%",
+"tol": 0.5
+},
+{
+"id": "R03812:net:186",
+"kind": "row",
+"row_id": "R03812",
+"field": "net",
+"num": 0.027921432518843,
+"mult": 1,
+"text": "+0.03",
+"tol": 0.005
+},
+{
+"id": "R03812:n:187",
+"kind": "row",
+"row_id": "R03812",
+"field": "n",
+"num": 4018.0,
+"mult": 1,
+"text": "4,018",
+"tol": 0.5
+},
+{
+"id": "R03813:FCR:188",
+"kind": "row",
+"row_id": "R03813",
+"field": "FCR",
+"num": 214.95887572869785,
+"mult": 100,
+"text": "215%",
+"tol": 0.5
+},
+{
+"id": "R03813:net:189",
+"kind": "row",
+"row_id": "R03813",
+"field": "net",
+"num": 0.0274283007727128,
+"mult": 1,
+"text": "+0.03",
+"tol": 0.005
+},
+{
+"id": "R03813:n:190",
+"kind": "row",
+"row_id": "R03813",
+"field": "n",
+"num": 2889.0,
+"mult": 1,
+"text": "2,889",
+"tol": 0.5
+},
+{
+"id": "R03811:FCR:191",
+"kind": "row",
+"row_id": "R03811",
+"field": "FCR",
+"num": 203.57926236427102,
+"mult": 100,
+"text": "204%",
+"tol": 0.5
+},
+{
+"id": "R03811:net:192",
+"kind": "row",
+"row_id": "R03811",
+"field": "net",
+"num": 0.0272848705443381,
+"mult": 1,
+"text": "+0.03",
+"tol": 0.005
+},
+{
+"id": "R03811:n:193",
+"kind": "row",
+"row_id": "R03811",
+"field": "n",
+"num": 4018.0,
+"mult": 1,
+"text": "4,018",
+"tol": 0.5
+},
+{
+"id": "R03825:FCR:194",
+"kind": "row",
+"row_id": "R03825",
+"field": "FCR",
+"num": 113.05864705740196,
+"mult": 100,
+"text": "113%",
+"tol": 0.5
+},
+{
+"id": "R03825:net:195",
+"kind": "row",
+"row_id": "R03825",
+"field": "net",
+"num": 0.0031482410675806,
+"mult": 1,
+"text": "+0.00",
+"tol": 0.005
+},
+{
+"id": "R03825:n:196",
+"kind": "row",
+"row_id": "R03825",
+"field": "n",
+"num": 2833.0,
+"mult": 1,
+"text": "2,833",
+"tol": 0.5
+},
+{
+"id": "R03823:FCR:197",
+"kind": "row",
+"row_id": "R03823",
+"field": "FCR",
+"num": 110.48277178638976,
+"mult": 100,
+"text": "110%",
+"tol": 0.5
+},
+{
+"id": "R03823:net:198",
+"kind": "row",
+"row_id": "R03823",
+"field": "net",
+"num": 0.0028206725974773,
+"mult": 1,
+"text": "+0.00",
+"tol": 0.005
+},
+{
+"id": "R03823:n:199",
+"kind": "row",
+"row_id": "R03823",
+"field": "n",
+"num": 3929.0,
+"mult": 1,
+"text": "3,929",
+"tol": 0.5
+},
+{
+"id": "R03948:hit:200",
+"kind": "row",
+"row_id": "R03948",
+"field": "hit",
+"num": 8.16,
+"mult": 100,
+"text": "8.2%",
+"tol": 0.05
+},
+{
+"id": "R03948:p_star:201",
+"kind": "row",
+"row_id": "R03948",
+"field": "p_star",
+"num": 4.67,
+"mult": 100,
+"text": "4.7%",
+"tol": 0.05
+},
+{
+"id": "R03948:n:202",
+"kind": "row",
+"row_id": "R03948",
+"field": "n",
+"num": 52041.0,
+"mult": 1,
+"text": "52,041",
+"tol": 0.5
+},
+{
+"id": "R03949:hit:203",
+"kind": "row",
+"row_id": "R03949",
+"field": "hit",
+"num": 7.960000000000001,
+"mult": 100,
+"text": "8.0%",
+"tol": 0.05
+},
+{
+"id": "R03949:p_star:204",
+"kind": "row",
+"row_id": "R03949",
+"field": "p_star",
+"num": 4.91,
+"mult": 100,
+"text": "4.9%",
+"tol": 0.05
+},
+{
+"id": "R03949:n:205",
+"kind": "row",
+"row_id": "R03949",
+"field": "n",
+"num": 104320.0,
+"mult": 1,
+"text": "104,320",
+"tol": 0.5
+},
+{
+"id": "R03947:hit:206",
+"kind": "row",
+"row_id": "R03947",
+"field": "hit",
+"num": 7.75,
+"mult": 100,
+"text": "7.8%",
+"tol": 0.05
+},
+{
+"id": "R03947:p_star:207",
+"kind": "row",
+"row_id": "R03947",
+"field": "p_star",
+"num": 5.1499999999999995,
+"mult": 100,
+"text": "5.1%",
+"tol": 0.05
+},
+{
+"id": "R03947:n:208",
+"kind": "row",
+"row_id": "R03947",
+"field": "n",
+"num": 52279.0,
+"mult": 1,
+"text": "52,279",
+"tol": 0.5
+},
+{
+"id": "R03873:hit:209",
+"kind": "row",
+"row_id": "R03873",
+"field": "hit",
+"num": 43.97,
+"mult": 100,
+"text": "44.0%",
+"tol": 0.05
+},
+{
+"id": "R03873:p_star:210",
+"kind": "row",
+"row_id": "R03873",
+"field": "p_star",
+"num": 47.29,
+"mult": 100,
+"text": "47.3%",
+"tol": 0.05
+},
+{
+"id": "R03873:n:211",
+"kind": "row",
+"row_id": "R03873",
+"field": "n",
+"num": 51234.0,
+"mult": 1,
+"text": "51,234",
+"tol": 0.5
+},
+{
+"id": "R03987:auc:212",
+"kind": "row",
+"row_id": "R03987",
+"field": "auc",
+"num": 0.6723919259654103,
+"mult": 1,
+"text": "0.672",
+"tol": 0.0005
+},
+{
+"id": "R03987:auc_lo:213",
+"kind": "row",
+"row_id": "R03987",
+"field": "auc_lo",
+"num": 0.6442716510380079,
+"mult": 1,
+"text": "0.644",
+"tol": 0.0005
+},
+{
+"id": "R03988:auc:214",
+"kind": "row",
+"row_id": "R03988",
+"field": "auc",
+"num": 0.566106737490889,
+"mult": 1,
+"text": "0.566",
+"tol": 0.0005
+},
+{
+"id": "R03988:auc_lo:215",
+"kind": "row",
+"row_id": "R03988",
+"field": "auc_lo",
+"num": 0.5602203334167581,
+"mult": 1,
+"text": "0.560",
+"tol": 0.0005
+},
+{
+"id": "R03986:auc:216",
+"kind": "row",
+"row_id": "R03986",
+"field": "auc",
+"num": 0.5661057191011247,
+"mult": 1,
+"text": "0.566",
+"tol": 0.0005
+},
+{
+"id": "R03986:auc_lo:217",
+"kind": "row",
+"row_id": "R03986",
+"field": "auc_lo",
+"num": 0.5600652395203976,
+"mult": 1,
+"text": "0.560",
+"tol": 0.0005
+},
+{
+"id": "R03982:auc:218",
+"kind": "row",
+"row_id": "R03982",
+"field": "auc",
+"num": 0.5653437356625074,
+"mult": 1,
+"text": "0.565",
+"tol": 0.0005
+},
+{
+"id": "R03982:auc_lo:219",
+"kind": "row",
+"row_id": "R03982",
+"field": "auc_lo",
+"num": 0.5578820186469459,
+"mult": 1,
+"text": "0.558",
+"tol": 0.0005
+},
+{
+"id": "R03984:auc:220",
+"kind": "row",
+"row_id": "R03984",
+"field": "auc",
+"num": 0.5450874552156758,
+"mult": 1,
+"text": "0.545",
+"tol": 0.0005
+},
+{
+"id": "R03984:auc_lo:221",
+"kind": "row",
+"row_id": "R03984",
+"field": "auc_lo",
+"num": 0.5411549625554211,
+"mult": 1,
+"text": "0.541",
+"tol": 0.0005
+},
+{
+"id": "R03983:net:222",
+"kind": "row",
+"row_id": "R03983",
+"field": "net",
+"num": 68.69,
+"mult": 100,
+"text": "68.7%",
+"tol": 0.05
+},
+{
+"id": "R03983:calmar:223",
+"kind": "row",
+"row_id": "R03983",
+"field": "calmar",
+"num": 0.92,
+"mult": 1,
+"text": "+0.92",
+"tol": 0.005
+},
+{
+"id": "R03983:maxdd:224",
+"kind": "row",
+"row_id": "R03983",
+"field": "maxdd",
+"num": 74.68,
+"mult": 100,
+"text": "75%",
+"tol": 0.5
+},
+{
+"id": "R03985:net:225",
+"kind": "row",
+"row_id": "R03985",
+"field": "net",
+"num": -60.41,
+"mult": 100,
+"text": "-60.4%",
+"tol": 0.05
+},
+{
+"id": "R03985:calmar:226",
+"kind": "row",
+"row_id": "R03985",
+"field": "calmar",
+"num": -0.605,
+"mult": 1,
+"text": "-0.60",
+"tol": 0.005
+},
+{
+"id": "R03985:maxdd:227",
+"kind": "row",
+"row_id": "R03985",
+"field": "maxdd",
+"num": 99.83,
+"mult": 100,
+"text": "100%",
+"tol": 0.5
+},
+{
+"id": "count:4h",
+"kind": "count",
+"query": "tf == '4h'",
+"num": 1044.0,
+"text": "कुल rows: 1,044",
+"tol": 0
+},
+{
+"id": "R00063:FCR092:229",
+"kind": "row",
+"row_id": "R00063",
+"field": "FCR092",
+"num": 5764.842482706424,
+"mult": 100,
+"text": "5765%",
+"tol": 0.5
+},
+{
+"id": "R00063:net:230",
+"kind": "row",
+"row_id": "R00063",
+"field": "net",
+"num": 4.73999545611172,
+"mult": 100,
+"text": "+4.740%",
+"tol": 0.0005
+},
+{
+"id": "R00063:gmed:231",
+"kind": "row",
+"row_id": "R00063",
+"field": "gmed",
+"num": -2.7207992347752,
+"mult": 100,
+"text": "-2.721%",
+"tol": 0.0005
+},
+{
+"id": "R00063:n:232",
+"kind": "row",
+"row_id": "R00063",
+"field": "n",
+"num": 1131.0,
+"mult": 1,
+"text": "1,131",
+"tol": 0.5
+},
+{
+"id": "R00067:FCR092:233",
+"kind": "row",
+"row_id": "R00067",
+"field": "FCR092",
+"num": 2468.0324130922513,
+"mult": 100,
+"text": "2468%",
+"tol": 0.5
+},
+{
+"id": "R00067:net:234",
+"kind": "row",
+"row_id": "R00067",
+"field": "net",
+"num": 1.84863732138322,
+"mult": 100,
+"text": "+1.849%",
+"tol": 0.0005
+},
+{
+"id": "R00067:gmed:235",
+"kind": "row",
+"row_id": "R00067",
+"field": "gmed",
+"num": -1.84772220452371,
+"mult": 100,
+"text": "-1.848%",
+"tol": 0.0005
+},
+{
+"id": "R00067:n:236",
+"kind": "row",
+"row_id": "R00067",
+"field": "n",
+"num": 1687.0,
+"mult": 1,
+"text": "1,687",
+"tol": 0.5
+},
+{
+"id": "R01858:FCR092:237",
+"kind": "row",
+"row_id": "R01858",
+"field": "FCR092",
+"num": 1516.2243470079795,
+"mult": 100,
+"text": "1516%",
+"tol": 0.5
+},
+{
+"id": "R01858:net:238",
+"kind": "row",
+"row_id": "R01858",
+"field": "net",
+"num": 1.3029263992473399,
+"mult": 100,
+"text": "+1.303%",
+"tol": 0.0005
+},
+{
+"id": "R01858:n:239",
+"kind": "row",
+"row_id": "R01858",
+"field": "n",
+"num": 78.0,
+"mult": 1,
+"text": "78",
+"tol": 0.5
+},
+{
+"id": "R02506:FCR092:240",
+"kind": "row",
+"row_id": "R02506",
+"field": "FCR092",
+"num": 1481.6659400245405,
+"mult": 100,
+"text": "1482%",
+"tol": 0.5
+},
+{
+"id": "R02506:net:241",
+"kind": "row",
+"row_id": "R02506",
+"field": "net",
+"num": 1.27113266482257,
+"mult": 100,
+"text": "+1.271%",
+"tol": 0.0005
+},
+{
+"id": "R02506:n:242",
+"kind": "row",
+"row_id": "R02506",
+"field": "n",
+"num": 13.0,
+"mult": 1,
+"text": "13",
+"tol": 0.5
+},
+{
+"id": "R00227:FCR092:243",
+"kind": "row",
+"row_id": "R00227",
+"field": "FCR092",
+"num": 1212.522950554324,
+"mult": 100,
+"text": "1213%",
+"tol": 0.5
+},
+{
+"id": "R00227:net:244",
+"kind": "row",
+"row_id": "R00227",
+"field": "net",
+"num": 1.02352111450997,
+"mult": 100,
+"text": "+1.024%",
+"tol": 0.0005
+},
+{
+"id": "R00227:n:245",
+"kind": "row",
+"row_id": "R00227",
+"field": "n",
+"num": 39.0,
+"mult": 1,
+"text": "39",
+"tol": 0.5
+},
+{
+"id": "R03848:hit:246",
+"kind": "row",
+"row_id": "R03848",
+"field": "hit",
+"num": 50.23364485981309,
+"mult": 100,
+"text": "50.2%",
+"tol": 0.05
+},
+{
+"id": "R03848:p_star:247",
+"kind": "row",
+"row_id": "R03848",
+"field": "p_star",
+"num": 43.57104267963263,
+"mult": 100,
+"text": "43.6%",
+"tol": 0.05
+},
+{
+"id": "R03848:n:248",
+"kind": "row",
+"row_id": "R03848",
+"field": "n",
+"num": 428.0,
+"mult": 1,
+"text": "428",
+"tol": 0.5
+},
+{
+"id": "R03849:hit:249",
+"kind": "row",
+"row_id": "R03849",
+"field": "hit",
+"num": 51.34529147982063,
+"mult": 100,
+"text": "51.3%",
+"tol": 0.05
+},
+{
+"id": "R03849:p_star:250",
+"kind": "row",
+"row_id": "R03849",
+"field": "p_star",
+"num": 48.69166441866738,
+"mult": 100,
+"text": "48.7%",
+"tol": 0.05
+},
+{
+"id": "R03849:n:251",
+"kind": "row",
+"row_id": "R03849",
+"field": "n",
+"num": 446.0,
+"mult": 1,
+"text": "446",
+"tol": 0.5
+},
+{
+"id": "R03799:hit:252",
+"kind": "row",
+"row_id": "R03799",
+"field": "hit",
+"num": 52.57811284922603,
+"mult": 100,
+"text": "52.6%",
+"tol": 0.05
+},
+{
+"id": "R03799:p_star:253",
+"kind": "row",
+"row_id": "R03799",
+"field": "p_star",
+"num": 53.054235494694545,
+"mult": 100,
+"text": "53.1%",
+"tol": 0.05
+},
+{
+"id": "R03799:ACC_COVER:254",
+"kind": "row",
+"row_id": "R03799",
+"field": "ACC_COVER",
+"num": 84.41106960168669,
+"mult": 100,
+"text": "84%",
+"tol": 0.5
+},
+{
+"id": "R03799:n:255",
+"kind": "row",
+"row_id": "R03799",
+"field": "n",
+"num": 122163.0,
+"mult": 1,
+"text": "122,163",
+"tol": 0.5
+},
+{
+"id": "R03798:hit:256",
+"kind": "row",
+"row_id": "R03798",
+"field": "hit",
+"num": 46.83496639735435,
+"mult": 100,
+"text": "46.8%",
+"tol": 0.05
+},
+{
+"id": "R03798:p_star:257",
+"kind": "row",
+"row_id": "R03798",
+"field": "p_star",
+"num": 53.054235494694545,
+"mult": 100,
+"text": "53.1%",
+"tol": 0.05
+},
+{
+"id": "R03798:ACC_COVER:258",
+"kind": "row",
+"row_id": "R03798",
+"field": "ACC_COVER",
+"num": -103.62768712967825,
+"mult": 100,
+"text": "-104%",
+"tol": 0.5
+},
+{
+"id": "R03798:n:259",
+"kind": "row",
+"row_id": "R03798",
+"field": "n",
+"num": 122163.0,
+"mult": 1,
+"text": "122,163",
+"tol": 0.5
+},
+{
+"id": "R04021:net:260",
+"kind": "row",
+"row_id": "R04021",
+"field": "net",
+"num": 10.47293016377428,
+"mult": 100,
+"text": "10.5%",
+"tol": 0.05
+},
+{
+"id": "R04021:net_sel:261",
+"kind": "row",
+"row_id": "R04021",
+"field": "net_sel",
+"num": 93.25705080681765,
+"mult": 100,
+"text": "93.3%",
+"tol": 0.05
+},
+{
+"id": "R04021:calmar:262",
+"kind": "row",
+"row_id": "R04021",
+"field": "calmar",
+"num": 0.3979985407657991,
+"mult": 1,
+"text": "+0.40",
+"tol": 0.005
+},
+{
+"id": "R04021:maxdd:263",
+"kind": "row",
+"row_id": "R04021",
+"field": "maxdd",
+"num": 26.31399136193578,
+"mult": 100,
+"text": "26%",
+"tol": 0.5
+},
+{
+"id": "R04019:net:264",
+"kind": "row",
+"row_id": "R04019",
+"field": "net",
+"num": 0.8288673946143129,
+"mult": 1,
+"text": "+0.83",
+"tol": 0.005
+},
+{
+"id": "R04019:calmar:265",
+"kind": "row",
+"row_id": "R04019",
+"field": "calmar",
+"num": 0.8288673946143129,
+"mult": 1,
+"text": "+0.83",
+"tol": 0.005
+},
+{
+"id": "R04019:maxdd:266",
+"kind": "row",
+"row_id": "R04019",
+"field": "maxdd",
+"num": 11.437501273170419,
+"mult": 100,
+"text": "11%",
+"tol": 0.5
+},
+{
+"id": "R04030:net:267",
+"kind": "row",
+"row_id": "R04030",
+"field": "net",
+"num": -12.51524731601537,
+"mult": 100,
+"text": "-12.5%",
+"tol": 0.05
+},
+{
+"id": "R04030:net_sel:268",
+"kind": "row",
+"row_id": "R04030",
+"field": "net_sel",
+"num": 74.6039340575299,
+"mult": 100,
+"text": "74.6%",
+"tol": 0.05
+},
+{
+"id": "R04030:calmar:269",
+"kind": "row",
+"row_id": "R04030",
+"field": "calmar",
+"num": -0.4002493513901258,
+"mult": 1,
+"text": "-0.40",
+"tol": 0.005
+},
+{
+"id": "R04030:maxdd:270",
+"kind": "row",
+"row_id": "R04030",
+"field": "maxdd",
+"num": 31.26862610157406,
+"mult": 100,
+"text": "31%",
+"tol": 0.5
+},
+{
+"id": "R03774:FCR092:271",
+"kind": "row",
+"row_id": "R03774",
+"field": "FCR092",
+"num": 210.05219393628383,
+"mult": 100,
+"text": "210%",
+"tol": 0.5
+},
+{
+"id": "R03774:net:272",
+"kind": "row",
+"row_id": "R03774",
+"field": "net",
+"num": 0.12924801842138,
+"mult": 100,
+"text": "+0.129%",
+"tol": 0.0005
+},
+{
+"id": "R03774:n:273",
+"kind": "row",
+"row_id": "R03774",
+"field": "n",
+"num": 85.0,
+"mult": 1,
+"text": "85",
+"tol": 0.5
+},
+{
+"id": "R03773:FCR092:274",
+"kind": "row",
+"row_id": "R03773",
+"field": "FCR092",
+"num": 206.53753675747453,
+"mult": 100,
+"text": "207%",
+"tol": 0.5
+},
+{
+"id": "R03773:net:275",
+"kind": "row",
+"row_id": "R03773",
+"field": "net",
+"num": 0.15368512205217,
+"mult": 100,
+"text": "+0.154%",
+"tol": 0.0005
+},
+{
+"id": "R03773:n:276",
+"kind": "row",
+"row_id": "R03773",
+"field": "n",
+"num": 85.0,
+"mult": 1,
+"text": "85",
+"tol": 0.5
+},
+{
+"id": "R03782:FCR092:277",
+"kind": "row",
+"row_id": "R03782",
+"field": "FCR092",
+"num": 84.40325006040116,
+"mult": 100,
+"text": "84%",
+"tol": 0.5
+},
+{
+"id": "R03782:net:278",
+"kind": "row",
+"row_id": "R03782",
+"field": "net",
+"num": 0.01365099005556,
+"mult": 100,
+"text": "+0.014%",
+"tol": 0.0005
+},
+{
+"id": "R03782:n:279",
+"kind": "row",
+"row_id": "R03782",
+"field": "n",
+"num": 862.0,
+"mult": 1,
+"text": "862",
+"tol": 0.5
+},
+{
+"id": "R03772:FCR092:280",
+"kind": "row",
+"row_id": "R03772",
+"field": "FCR092",
+"num": 83.51297365721476,
+"mult": 100,
+"text": "84%",
+"tol": 0.5
+},
+{
+"id": "R03772:net:281",
+"kind": "row",
+"row_id": "R03772",
+"field": "net",
+"num": 0.01283193576463,
+"mult": 100,
+"text": "+0.013%",
+"tol": 0.0005
+},
+{
+"id": "R03772:n:282",
+"kind": "row",
+"row_id": "R03772",
+"field": "n",
+"num": 355.0,
+"mult": 1,
+"text": "355",
+"tol": 0.5
+},
+{
+"id": "R03771:FCR092:283",
+"kind": "row",
+"row_id": "R03771",
+"field": "FCR092",
+"num": 79.70859729058898,
+"mult": 100,
+"text": "80%",
+"tol": 0.5
+},
+{
+"id": "R03771:net:284",
+"kind": "row",
+"row_id": "R03771",
+"field": "net",
+"num": 0.03685867007072,
+"mult": 100,
+"text": "+0.037%",
+"tol": 0.0005
+},
+{
+"id": "R03771:n:285",
+"kind": "row",
+"row_id": "R03771",
+"field": "n",
+"num": 355.0,
+"mult": 1,
+"text": "355",
+"tol": 0.5
+},
+{
+"id": "R03951:hit:286",
+"kind": "row",
+"row_id": "R03951",
+"field": "hit",
+"num": 8.17,
+"mult": 100,
+"text": "8.2%",
+"tol": 0.05
+},
+{
+"id": "R03951:p_star:287",
+"kind": "row",
+"row_id": "R03951",
+"field": "p_star",
+"num": 5.1,
+"mult": 100,
+"text": "5.1%",
+"tol": 0.05
+},
+{
+"id": "R03951:n:288",
+"kind": "row",
+"row_id": "R03951",
+"field": "n",
+"num": 12309.0,
+"mult": 1,
+"text": "12,309",
+"tol": 0.5
+},
+{
+"id": "R03952:hit:289",
+"kind": "row",
+"row_id": "R03952",
+"field": "hit",
+"num": 8.01,
+"mult": 100,
+"text": "8.0%",
+"tol": 0.05
+},
+{
+"id": "R03952:p_star:290",
+"kind": "row",
+"row_id": "R03952",
+"field": "p_star",
+"num": 5.220000000000001,
+"mult": 100,
+"text": "5.2%",
+"tol": 0.05
+},
+{
+"id": "R03952:n:291",
+"kind": "row",
+"row_id": "R03952",
+"field": "n",
+"num": 24766.0,
+"mult": 1,
+"text": "24,766",
+"tol": 0.5
+},
+{
+"id": "R03950:hit:292",
+"kind": "row",
+"row_id": "R03950",
+"field": "hit",
+"num": 7.85,
+"mult": 100,
+"text": "7.8%",
+"tol": 0.05
+},
+{
+"id": "R03950:p_star:293",
+"kind": "row",
+"row_id": "R03950",
+"field": "p_star",
+"num": 5.34,
+"mult": 100,
+"text": "5.3%",
+"tol": 0.05
+},
+{
+"id": "R03950:n:294",
+"kind": "row",
+"row_id": "R03950",
+"field": "n",
+"num": 12457.0,
+"mult": 1,
+"text": "12,457",
+"tol": 0.5
+},
+{
+"id": "R02730:hit:295",
+"kind": "row",
+"row_id": "R02730",
+"field": "hit",
+"num": 53.75,
+"mult": 100,
+"text": "53.8%",
+"tol": 0.05
+},
+{
+"id": "R02730:p_star:296",
+"kind": "row",
+"row_id": "R02730",
+"field": "p_star",
+"num": 54.6,
+"mult": 100,
+"text": "54.6%",
+"tol": 0.05
+},
+{
+"id": "R02730:ACC_COVER:297",
+"kind": "row",
+"row_id": "R02730",
+"field": "ACC_COVER",
+"num": 81.52173913043467,
+"mult": 100,
+"text": "82%",
+"tol": 0.5
+},
+{
+"id": "R02730:n:298",
+"kind": "row",
+"row_id": "R02730",
+"field": "n",
+"num": 271.0,
+"mult": 1,
+"text": "271",
+"tol": 0.5
+},
+{
+"id": "R03989:auc:299",
+"kind": "row",
+"row_id": "R03989",
+"field": "auc",
+"num": 0.5457013126154462,
+"mult": 1,
+"text": "0.546",
+"tol": 0.0005
+},
+{
+"id": "R03989:auc_lo:300",
+"kind": "row",
+"row_id": "R03989",
+"field": "auc_lo",
+"num": 0.5162646738001173,
+"mult": 1,
+"text": "0.516",
+"tol": 0.0005
+},
+{
+"id": "R04015:auc:301",
+"kind": "row",
+"row_id": "R04015",
+"field": "auc",
+"num": 0.5136012145286146,
+"mult": 1,
+"text": "0.514",
+"tol": 0.0005
+},
+{
+"id": "R04015:auc_lo:302",
+"kind": "row",
+"row_id": "R04015",
+"field": "auc_lo",
+"num": 0.4969632505545644,
+"mult": 1,
+"text": "0.497",
+"tol": 0.0005
+},
+{
+"id": "R04016:auc:303",
+"kind": "row",
+"row_id": "R04016",
+"field": "auc",
+"num": 0.5046988160369265,
+"mult": 1,
+"text": "0.505",
+"tol": 0.0005
+},
+{
+"id": "R04016:auc_lo:304",
+"kind": "row",
+"row_id": "R04016",
+"field": "auc_lo",
+"num": 0.4963554530933579,
+"mult": 1,
+"text": "0.496",
+"tol": 0.0005
+},
+{
+"id": "R04024:net:305",
+"kind": "row",
+"row_id": "R04024",
+"field": "net",
+"num": 0.0023488807993286,
+"mult": 1,
+"text": "+0.00",
+"tol": 0.005
+},
+{
+"id": "R04024:net_sel:306",
+"kind": "row",
+"row_id": "R04024",
+"field": "net_sel",
+"num": 0.3899951368289867,
+"mult": 1,
+"text": "+0.39",
+"tol": 0.005
+},
+{
+"id": "R04024:calmar:307",
+"kind": "row",
+"row_id": "R04024",
+"field": "calmar",
+"num": -0.3908344881347998,
+"mult": 1,
+"text": "-0.39",
+"tol": 0.005
+},
+{
+"id": "R04023:net:308",
+"kind": "row",
+"row_id": "R04023",
+"field": "net",
+"num": 0.0004391669614444,
+"mult": 1,
+"text": "+0.00",
+"tol": 0.005
+},
+{
+"id": "R04023:net_sel:309",
+"kind": "row",
+"row_id": "R04023",
+"field": "net_sel",
+"num": 0.0230227473179414,
+"mult": 1,
+"text": "+0.02",
+"tol": 0.005
+},
+{
+"id": "R04023:calmar:310",
+"kind": "row",
+"row_id": "R04023",
+"field": "calmar",
+"num": -0.392744201972684,
+"mult": 1,
+"text": "-0.39",
+"tol": 0.005
+},
+{
+"id": "R04017:net:311",
+"kind": "row",
+"row_id": "R04017",
+"field": "net",
+"num": 7.604637478172919,
+"mult": 100,
+"text": "7.6%",
+"tol": 0.05
+},
+{
+"id": "R04017:calmar:312",
+"kind": "row",
+"row_id": "R04017",
+"field": "calmar",
+"num": 0.7965784374241509,
+"mult": 1,
+"text": "+0.80",
+"tol": 0.005
+},
+{
+"id": "R04017:maxdd:313",
+"kind": "row",
+"row_id": "R04017",
+"field": "maxdd",
+"num": 9.54662732619727,
+"mult": 100,
+"text": "10%",
+"tol": 0.5
+},
+{
+"id": "R04031:net:314",
+"kind": "row",
+"row_id": "R04031",
+"field": "net",
+"num": 0.0760616582915338,
+"mult": 1,
+"text": "+0.08",
+"tol": 0.005
+},
+{
+"id": "R04031:net_sel:315",
+"kind": "row",
+"row_id": "R04031",
+"field": "net_sel",
+"num": -0.5414474837475978,
+"mult": 1,
+"text": "-0.54",
+"tol": 0.005
+},
+{
+"id": "R04031:calmar:316",
+"kind": "row",
+"row_id": "R04031",
+"field": "calmar",
+"num": -0.3138749057399326,
+"mult": 1,
+"text": "-0.31",
+"tol": 0.005
+},
+{
+"id": "R02856:FCR092:317",
+"kind": "row",
+"row_id": "R02856",
+"field": "FCR092",
+"num": 7.594546361226789,
+"mult": 100,
+"text": "8%",
+"tol": 0.5
+},
+{
+"id": "R02856:net:318",
+"kind": "row",
+"row_id": "R02856",
+"field": "net",
+"num": -0.08501301734767,
+"mult": 100,
+"text": "-0.085%",
+"tol": 0.0005
+},
+{
+"id": "R02857:FCR092:319",
+"kind": "row",
+"row_id": "R02857",
+"field": "FCR092",
+"num": 6.5223789232647,
+"mult": 100,
+"text": "7%",
+"tol": 0.5
+},
+{
+"id": "R02857:net:320",
+"kind": "row",
+"row_id": "R02857",
+"field": "net",
+"num": -0.08599941139059,
+"mult": 100,
+"text": "-0.086%",
+"tol": 0.0005
+},
+{
+"id": "R02858:FCR092:321",
+"kind": "row",
+"row_id": "R02858",
+"field": "FCR092",
+"num": 5.12489807064397,
+"mult": 100,
+"text": "5%",
+"tol": 0.5
+},
+{
+"id": "R02858:net:322",
+"kind": "row",
+"row_id": "R02858",
+"field": "net",
+"num": -0.087285093775,
+"mult": 100,
+"text": "-0.087%",
+"tol": 0.0005
+},
+{
+"id": "R02859:FCR092:323",
+"kind": "row",
+"row_id": "R02859",
+"field": "FCR092",
+"num": -0.75189956074858,
+"mult": 100,
+"text": "-1%",
+"tol": 0.5
+},
+{
+"id": "R02859:net:324",
+"kind": "row",
+"row_id": "R02859",
+"field": "net",
+"num": -0.09269174759588,
+"mult": 100,
+"text": "-0.093%",
+"tol": 0.0005
+},
+{
+"id": "R02860:FCR092:325",
+"kind": "row",
+"row_id": "R02860",
+"field": "FCR092",
+"num": -8.46041763328971,
+"mult": 100,
+"text": "-8%",
+"tol": 0.5
+},
+{
+"id": "R02860:net:326",
+"kind": "row",
+"row_id": "R02860",
+"field": "net",
+"num": -0.09978358422262001,
+"mult": 100,
+"text": "-0.100%",
+"tol": 0.0005
+},
+{
+"id": "R03980:auc:327",
+"kind": "row",
+"row_id": "R03980",
+"field": "auc",
+"num": 0.5675812046932834,
+"mult": 1,
+"text": "0.568",
+"tol": 0.0005
+},
+{
+"id": "R03980:auc_lo:328",
+"kind": "row",
+"row_id": "R03980",
+"field": "auc_lo",
+"num": 0.5596102604603895,
+"mult": 1,
+"text": "0.560",
+"tol": 0.0005
+},
+{
+"id": "R03981:net:329",
+"kind": "row",
+"row_id": "R03981",
+"field": "net",
+"num": 48.97999999999999,
+"mult": 100,
+"text": "49.0%",
+"tol": 0.05
+},
+{
+"id": "R03981:calmar:330",
+"kind": "row",
+"row_id": "R03981",
+"field": "calmar",
+"num": 0.625,
+"mult": 1,
+"text": "+0.62",
+"tol": 0.005
+},
+{
+"id": "R03981:maxdd:331",
+"kind": "row",
+"row_id": "R03981",
+"field": "maxdd",
+"num": 78.41,
+"mult": 100,
+"text": "78%",
+"tol": 0.5
+},
+{
+"id": "R04022:net:332",
+"kind": "row",
+"row_id": "R04022",
+"field": "net",
+"num": 0.4610806775431885,
+"mult": 1,
+"text": "+0.46",
+"tol": 0.005
+},
+{
+"id": "R04022:net_sel:333",
+"kind": "row",
+"row_id": "R04022",
+"field": "net_sel",
+"num": -0.4360194337716461,
+"mult": 1,
+"text": "-0.44",
+"tol": 0.005
+},
+{
+"id": "R04022:calmar:334",
+"kind": "row",
+"row_id": "R04022",
+"field": "calmar",
+"num": 0.06789730860906,
+"mult": 1,
+"text": "+0.07",
+"tol": 0.005
+},
+{
+"id": "R04026:net:335",
+"kind": "row",
+"row_id": "R04026",
+"field": "net",
+"num": 0.1376068755825196,
+"mult": 1,
+"text": "+0.14",
+"tol": 0.005
+},
+{
+"id": "R04026:net_sel:336",
+"kind": "row",
+"row_id": "R04026",
+"field": "net_sel",
+"num": -0.5129162278633443,
+"mult": 1,
+"text": "-0.51",
+"tol": 0.005
+},
+{
+"id": "R04026:calmar:337",
+"kind": "row",
+"row_id": "R04026",
+"field": "calmar",
+"num": -0.2523296884489469,
+"mult": 1,
+"text": "-0.25",
+"tol": 0.005
+},
+{
+"id": "R04020:net:338",
+"kind": "row",
+"row_id": "R04020",
+"field": "net",
+"num": -30.923220600632938,
+"mult": 100,
+"text": "-30.9%",
+"tol": 0.05
+},
+{
+"id": "R04020:calmar:339",
+"kind": "row",
+"row_id": "R04020",
+"field": "calmar",
+"num": 0.5196351886079835,
+"mult": 1,
+"text": "+0.52",
+"tol": 0.005
+},
+{
+"id": "count:8h",
+"kind": "count",
+"query": "tf == '8h'",
+"num": 87.0,
+"text": "कुल rows: 87",
+"tol": 0
+},
+{
+"id": "R00075:FCR092:341",
+"kind": "row",
+"row_id": "R00075",
+"field": "FCR092",
+"num": 15816.106405438035,
+"mult": 100,
+"text": "15816%",
+"tol": 0.5
+},
+{
+"id": "R00075:net:342",
+"kind": "row",
+"row_id": "R00075",
+"field": "net",
+"num": 13.53953344018046,
+"mult": 100,
+"text": "+13.540%",
+"tol": 0.0005
+},
+{
+"id": "R00075:gmed:343",
+"kind": "row",
+"row_id": "R00075",
+"field": "gmed",
+"num": -3.55403279482059,
+"mult": 100,
+"text": "-3.554%",
+"tol": 0.0005
+},
+{
+"id": "R00075:n:344",
+"kind": "row",
+"row_id": "R00075",
+"field": "n",
+"num": 546.0,
+"mult": 1,
+"text": "546",
+"tol": 0.5
+},
+{
+"id": "R00079:FCR092:345",
+"kind": "row",
+"row_id": "R00079",
+"field": "FCR092",
+"num": 5467.637930807702,
+"mult": 100,
+"text": "5468%",
+"tol": 0.5
+},
+{
+"id": "R00079:net:346",
+"kind": "row",
+"row_id": "R00079",
+"field": "net",
+"num": 4.35182641904003,
+"mult": 100,
+"text": "+4.352%",
+"tol": 0.0005
+},
+{
+"id": "R00079:gmed:347",
+"kind": "row",
+"row_id": "R00079",
+"field": "gmed",
+"num": -2.38750099342897,
+"mult": 100,
+"text": "-2.388%",
+"tol": 0.0005
+},
+{
+"id": "R00079:n:348",
+"kind": "row",
+"row_id": "R00079",
+"field": "n",
+"num": 826.0,
+"mult": 1,
+"text": "826",
+"tol": 0.5
+},
+{
+"id": "R00077:FCR092:349",
+"kind": "row",
+"row_id": "R00077",
+"field": "FCR092",
+"num": 2883.431010039315,
+"mult": 100,
+"text": "2883%",
+"tol": 0.5
+},
+{
+"id": "R00077:net:350",
+"kind": "row",
+"row_id": "R00077",
+"field": "net",
+"num": 2.32575258143482,
+"mult": 100,
+"text": "+2.326%",
+"tol": 0.0005
+},
+{
+"id": "R00077:gmed:351",
+"kind": "row",
+"row_id": "R00077",
+"field": "gmed",
+"num": -1.17592122382311,
+"mult": 100,
+"text": "-1.176%",
+"tol": 0.0005
+},
+{
+"id": "R00077:n:352",
+"kind": "row",
+"row_id": "R00077",
+"field": "n",
+"num": 2236.0,
+"mult": 1,
+"text": "2,236",
+"tol": 0.5
+},
+{
+"id": "R00081:FCR092:353",
+"kind": "row",
+"row_id": "R00081",
+"field": "FCR092",
+"num": 2519.548269268167,
+"mult": 100,
+"text": "2520%",
+"tol": 0.5
+},
+{
+"id": "R00081:net:354",
+"kind": "row",
+"row_id": "R00081",
+"field": "net",
+"num": 2.31868821496924,
+"mult": 100,
+"text": "+2.319%",
+"tol": 0.0005
+},
+{
+"id": "R00081:gmed:355",
+"kind": "row",
+"row_id": "R00081",
+"field": "gmed",
+"num": 3.44747801943545,
+"mult": 100,
+"text": "+3.447%",
+"tol": 0.0005
+},
+{
+"id": "R00081:n:356",
+"kind": "row",
+"row_id": "R00081",
+"field": "n",
+"num": 433.0,
+"mult": 1,
+"text": "433",
+"tol": 0.5
+},
+{
+"id": "R00186:FCR092:357",
+"kind": "row",
+"row_id": "R00186",
+"field": "FCR092",
+"num": 2150.561094782384,
+"mult": 100,
+"text": "2151%",
+"tol": 0.5
+},
+{
+"id": "R00186:net:358",
+"kind": "row",
+"row_id": "R00186",
+"field": "net",
+"num": 1.9516877262433299,
+"mult": 100,
+"text": "+1.952%",
+"tol": 0.0005
+},
+{
+"id": "R00186:gmed:359",
+"kind": "row",
+"row_id": "R00186",
+"field": "gmed",
+"num": 3.17199447860334,
+"mult": 100,
+"text": "+3.172%",
+"tol": 0.0005
+},
+{
+"id": "R00186:n:360",
+"kind": "row",
+"row_id": "R00186",
+"field": "n",
+"num": 1534.0,
+"mult": 1,
+"text": "1,534",
+"tol": 0.5
+},
+{
+"id": "R03895:FCR092:361",
+"kind": "row",
+"row_id": "R03895",
+"field": "FCR092",
+"num": -483.695652173913,
+"mult": 100,
+"text": "-484%",
+"tol": 0.5
+},
+{
+"id": "R03895:net:362",
+"kind": "row",
+"row_id": "R03895",
+"field": "net",
+"num": -0.645,
+"mult": 100,
+"text": "-0.645%",
+"tol": 0.0005
+},
+{
+"id": "R03879:hit:363",
+"kind": "row",
+"row_id": "R03879",
+"field": "hit",
+"num": 42.6,
+"mult": 100,
+"text": "42.6%",
+"tol": 0.05
+},
+{
+"id": "R03879:p_star:364",
+"kind": "row",
+"row_id": "R03879",
+"field": "p_star",
+"num": 45.59,
+"mult": 100,
+"text": "45.6%",
+"tol": 0.05
+},
+{
+"id": "R03879:n:365",
+"kind": "row",
+"row_id": "R03879",
+"field": "n",
+"num": 5904.0,
+"mult": 1,
+"text": "5,904",
+"tol": 0.5
+},
+{
+"id": "R03880:hit:366",
+"kind": "row",
+"row_id": "R03880",
+"field": "hit",
+"num": 42.699999999999996,
+"mult": 100,
+"text": "42.7%",
+"tol": 0.05
+},
+{
+"id": "R03880:p_star:367",
+"kind": "row",
+"row_id": "R03880",
+"field": "p_star",
+"num": 46.43,
+"mult": 100,
+"text": "46.4%",
+"tol": 0.05
+},
+{
+"id": "R03880:n:368",
+"kind": "row",
+"row_id": "R03880",
+"field": "n",
+"num": 11866.0,
+"mult": 1,
+"text": "11,866",
+"tol": 0.5
+},
+{
+"id": "R03878:hit:369",
+"kind": "row",
+"row_id": "R03878",
+"field": "hit",
+"num": 42.8,
+"mult": 100,
+"text": "42.8%",
+"tol": 0.05
+},
+{
+"id": "R03878:p_star:370",
+"kind": "row",
+"row_id": "R03878",
+"field": "p_star",
+"num": 47.24,
+"mult": 100,
+"text": "47.2%",
+"tol": 0.05
+},
+{
+"id": "R03878:n:371",
+"kind": "row",
+"row_id": "R03878",
+"field": "n",
+"num": 5962.0,
+"mult": 1,
+"text": "5,962",
+"tol": 0.5
+},
+{
+"id": "R03990:auc:372",
+"kind": "row",
+"row_id": "R03990",
+"field": "auc",
+"num": 0.5504932162168747,
+"mult": 1,
+"text": "0.550",
+"tol": 0.0005
+},
+{
+"id": "R03990:auc_lo:373",
+"kind": "row",
+"row_id": "R03990",
+"field": "auc_lo",
+"num": 0.5134199928351016,
+"mult": 1,
+"text": "0.513",
+"tol": 0.0005
+},
+{
+"id": "count:12h",
+"kind": "count",
+"query": "tf == '12h'",
+"num": 63.0,
+"text": "कुल rows: 63",
+"tol": 0
+},
+{
+"id": "R00087:FCR092:375",
+"kind": "row",
+"row_id": "R00087",
+"field": "FCR092",
+"num": 28894.94769706568,
+"mult": 100,
+"text": "28895%",
+"tol": 0.5
+},
+{
+"id": "R00087:net:376",
+"kind": "row",
+"row_id": "R00087",
+"field": "net",
+"num": 25.18489825892215,
+"mult": 100,
+"text": "+25.185%",
+"tol": 0.0005
+},
+{
+"id": "R00087:gmed:377",
+"kind": "row",
+"row_id": "R00087",
+"field": "gmed",
+"num": -4.56417951192067,
+"mult": 100,
+"text": "-4.564%",
+"tol": 0.0005
+},
+{
+"id": "R00087:n:378",
+"kind": "row",
+"row_id": "R00087",
+"field": "n",
+"num": 348.0,
+"mult": 1,
+"text": "348",
+"tol": 0.5
+},
+{
+"id": "R00091:FCR092:379",
+"kind": "row",
+"row_id": "R00091",
+"field": "FCR092",
+"num": 8409.78462689163,
+"mult": 100,
+"text": "8410%",
+"tol": 0.5
+},
+{
+"id": "R00091:net:380",
+"kind": "row",
+"row_id": "R00091",
+"field": "net",
+"num": 6.7304962745042705,
+"mult": 100,
+"text": "+6.730%",
+"tol": 0.0005
+},
+{
+"id": "R00091:gmed:381",
+"kind": "row",
+"row_id": "R00091",
+"field": "gmed",
+"num": -3.5664445500051505,
+"mult": 100,
+"text": "-3.566%",
+"tol": 0.0005
+},
+{
+"id": "R00091:n:382",
+"kind": "row",
+"row_id": "R00091",
+"field": "n",
+"num": 560.0,
+"mult": 1,
+"text": "560",
+"tol": 0.5
+},
+{
+"id": "R00093:FCR092:383",
+"kind": "row",
+"row_id": "R00093",
+"field": "FCR092",
+"num": 4412.418868984779,
+"mult": 100,
+"text": "4412%",
+"tol": 0.5
+},
+{
+"id": "R00093:net:384",
+"kind": "row",
+"row_id": "R00093",
+"field": "net",
+"num": 3.8923052237663702,
+"mult": 100,
+"text": "+3.892%",
+"tol": 0.0005
+},
+{
+"id": "R00093:gmed:385",
+"kind": "row",
+"row_id": "R00093",
+"field": "gmed",
+"num": 4.80044655316773,
+"mult": 100,
+"text": "+4.800%",
+"tol": 0.0005
+},
+{
+"id": "R00093:n:386",
+"kind": "row",
+"row_id": "R00093",
+"field": "n",
+"num": 283.0,
+"mult": 1,
+"text": "283",
+"tol": 0.5
+},
+{
+"id": "R00198:FCR092:387",
+"kind": "row",
+"row_id": "R00198",
+"field": "FCR092",
+"num": 4127.730728858325,
+"mult": 100,
+"text": "4128%",
+"tol": 0.5
+},
+{
+"id": "R00198:net:388",
+"kind": "row",
+"row_id": "R00198",
+"field": "net",
+"num": 3.79302096055349,
+"mult": 100,
+"text": "+3.793%",
+"tol": 0.0005
+},
+{
+"id": "R00198:gmed:389",
+"kind": "row",
+"row_id": "R00198",
+"field": "gmed",
+"num": 5.32254389509235,
+"mult": 100,
+"text": "+5.323%",
+"tol": 0.0005
+},
+{
+"id": "R00198:n:390",
+"kind": "row",
+"row_id": "R00198",
+"field": "n",
+"num": 1004.0,
+"mult": 1,
+"text": "1,004",
+"tol": 0.5
+},
+{
+"id": "R00089:FCR092:391",
+"kind": "row",
+"row_id": "R00089",
+"field": "FCR092",
+"num": 3716.8623037172956,
+"mult": 100,
+"text": "3717%",
+"tol": 0.5
+},
+{
+"id": "R00089:net:392",
+"kind": "row",
+"row_id": "R00089",
+"field": "net",
+"num": 2.98773770846614,
+"mult": 100,
+"text": "+2.988%",
+"tol": 0.0005
+},
+{
+"id": "R00089:gmed:393",
+"kind": "row",
+"row_id": "R00089",
+"field": "gmed",
+"num": -1.8707015713797799,
+"mult": 100,
+"text": "-1.871%",
+"tol": 0.0005
+},
+{
+"id": "R00089:n:394",
+"kind": "row",
+"row_id": "R00089",
+"field": "n",
+"num": 1491.0,
+"mult": 1,
+"text": "1,491",
+"tol": 0.5
+},
+{
+"id": "R03896:FCR092:395",
+"kind": "row",
+"row_id": "R03896",
+"field": "FCR092",
+"num": -558.6956521739131,
+"mult": 100,
+"text": "-559%",
+"tol": 0.5
+},
+{
+"id": "R03896:net:396",
+"kind": "row",
+"row_id": "R03896",
+"field": "net",
+"num": -0.714,
+"mult": 100,
+"text": "-0.714%",
+"tol": 0.0005
+},
+{
+"id": "R03882:hit:397",
+"kind": "row",
+"row_id": "R03882",
+"field": "hit",
+"num": 41.91,
+"mult": 100,
+"text": "41.9%",
+"tol": 0.05
+},
+{
+"id": "R03882:p_star:398",
+"kind": "row",
+"row_id": "R03882",
+"field": "p_star",
+"num": 44.68,
+"mult": 100,
+"text": "44.7%",
+"tol": 0.05
+},
+{
+"id": "R03882:n:399",
+"kind": "row",
+"row_id": "R03882",
+"field": "n",
+"num": 3844.0,
+"mult": 1,
+"text": "3,844",
+"tol": 0.5
+},
+{
+"id": "R03883:hit:400",
+"kind": "row",
+"row_id": "R03883",
+"field": "hit",
+"num": 42.71,
+"mult": 100,
+"text": "42.7%",
+"tol": 0.05
+},
+{
+"id": "R03883:p_star:401",
+"kind": "row",
+"row_id": "R03883",
+"field": "p_star",
+"num": 46.35,
+"mult": 100,
+"text": "46.4%",
+"tol": 0.05
+},
+{
+"id": "R03883:n:402",
+"kind": "row",
+"row_id": "R03883",
+"field": "n",
+"num": 7828.0,
+"mult": 1,
+"text": "7,828",
+"tol": 0.5
+},
+{
+"id": "R03881:hit:403",
+"kind": "row",
+"row_id": "R03881",
+"field": "hit",
+"num": 43.47,
+"mult": 100,
+"text": "43.5%",
+"tol": 0.05
+},
+{
+"id": "R03881:p_star:404",
+"kind": "row",
+"row_id": "R03881",
+"field": "p_star",
+"num": 47.93,
+"mult": 100,
+"text": "47.9%",
+"tol": 0.05
+},
+{
+"id": "R03881:n:405",
+"kind": "row",
+"row_id": "R03881",
+"field": "n",
+"num": 3984.0,
+"mult": 1,
+"text": "3,984",
+"tol": 0.5
+},
+{
+"id": "R03991:auc:406",
+"kind": "row",
+"row_id": "R03991",
+"field": "auc",
+"num": 0.5216463580112896,
+"mult": 1,
+"text": "0.522",
+"tol": 0.0005
+},
+{
+"id": "R03991:auc_lo:407",
+"kind": "row",
+"row_id": "R03991",
+"field": "auc_lo",
+"num": 0.4754405876003074,
+"mult": 1,
+"text": "0.475",
+"tol": 0.0005
+},
+{
+"id": "count:1d",
+"kind": "count",
+"query": "tf == '1d'",
+"num": 359.0,
+"text": "कुल rows: 359",
+"tol": 0
+},
+{
+"id": "R00099:FCR092:409",
+"kind": "row",
+"row_id": "R00099",
+"field": "FCR092",
+"num": 107666.3247470149,
+"mult": 100,
+"text": "107666%",
+"tol": 0.5
+},
+{
+"id": "R00099:net:410",
+"kind": "row",
+"row_id": "R00099",
+"field": "net",
+"num": 98.86263025503507,
+"mult": 100,
+"text": "+98.863%",
+"tol": 0.0005
+},
+{
+"id": "R00099:gmed:411",
+"kind": "row",
+"row_id": "R00099",
+"field": "gmed",
+"num": -6.48440238345601,
+"mult": 100,
+"text": "-6.484%",
+"tol": 0.0005
+},
+{
+"id": "R00099:n:412",
+"kind": "row",
+"row_id": "R00099",
+"field": "n",
+"num": 181.0,
+"mult": 1,
+"text": "181",
+"tol": 0.5
+},
+{
+"id": "R00103:FCR092:413",
+"kind": "row",
+"row_id": "R00103",
+"field": "FCR092",
+"num": 22410.97668746946,
+"mult": 100,
+"text": "22411%",
+"tol": 0.5
+},
+{
+"id": "R00103:net:414",
+"kind": "row",
+"row_id": "R00103",
+"field": "net",
+"num": 18.98978167999989,
+"mult": 100,
+"text": "+18.990%",
+"tol": 0.0005
+},
+{
+"id": "R00103:gmed:415",
+"kind": "row",
+"row_id": "R00103",
+"field": "gmed",
+"num": -2.59268044918876,
+"mult": 100,
+"text": "-2.593%",
+"tol": 0.0005
+},
+{
+"id": "R00103:n:416",
+"kind": "row",
+"row_id": "R00103",
+"field": "n",
+"num": 274.0,
+"mult": 1,
+"text": "274",
+"tol": 0.5
+},
+{
+"id": "R00105:FCR092:417",
+"kind": "row",
+"row_id": "R00105",
+"field": "FCR092",
+"num": 11091.93048526419,
+"mult": 100,
+"text": "11092%",
+"tol": 0.5
+},
+{
+"id": "R00105:net:418",
+"kind": "row",
+"row_id": "R00105",
+"field": "net",
+"num": 9.899918003006471,
+"mult": 100,
+"text": "+9.900%",
+"tol": 0.0005
+},
+{
+"id": "R00105:gmed:419",
+"kind": "row",
+"row_id": "R00105",
+"field": "gmed",
+"num": 9.40594059405939,
+"mult": 100,
+"text": "+9.406%",
+"tol": 0.0005
+},
+{
+"id": "R00105:n:420",
+"kind": "row",
+"row_id": "R00105",
+"field": "n",
+"num": 113.0,
+"mult": 1,
+"text": "113",
+"tol": 0.5
+},
+{
+"id": "R00101:FCR092:421",
+"kind": "row",
+"row_id": "R00101",
+"field": "FCR092",
+"num": 7524.1240250139,
+"mult": 100,
+"text": "7524%",
+"tol": 0.5
+},
+{
+"id": "R00101:net:422",
+"kind": "row",
+"row_id": "R00101",
+"field": "net",
+"num": 6.21676662035164,
+"mult": 100,
+"text": "+6.217%",
+"tol": 0.0005
+},
+{
+"id": "R00101:gmed:423",
+"kind": "row",
+"row_id": "R00101",
+"field": "gmed",
+"num": -2.94541160945976,
+"mult": 100,
+"text": "-2.945%",
+"tol": 0.0005
+},
+{
+"id": "R00101:n:424",
+"kind": "row",
+"row_id": "R00101",
+"field": "n",
+"num": 708.0,
+"mult": 1,
+"text": "708",
+"tol": 0.5
+},
+{
+"id": "R00097:FCR092:425",
+"kind": "row",
+"row_id": "R00097",
+"field": "FCR092",
+"num": 6907.433359799286,
+"mult": 100,
+"text": "6907%",
+"tol": 0.5
+},
+{
+"id": "R00097:net:426",
+"kind": "row",
+"row_id": "R00097",
+"field": "net",
+"num": 5.77174247660661,
+"mult": 100,
+"text": "+5.772%",
+"tol": 0.0005
+},
+{
+"id": "R00097:gmed:427",
+"kind": "row",
+"row_id": "R00097",
+"field": "gmed",
+"num": -1.65957017272459,
+"mult": 100,
+"text": "-1.660%",
+"tol": 0.0005
+},
+{
+"id": "R00097:n:428",
+"kind": "row",
+"row_id": "R00097",
+"field": "n",
+"num": 1024.0,
+"mult": 1,
+"text": "1,024",
+"tol": 0.5
+},
+{
+"id": "R03850:hit:429",
+"kind": "row",
+"row_id": "R03850",
+"field": "hit",
+"num": 63.793103448275865,
+"mult": 100,
+"text": "63.8%",
+"tol": 0.05
+},
+{
+"id": "R03850:p_star:430",
+"kind": "row",
+"row_id": "R03850",
+"field": "p_star",
+"num": 44.95867768595041,
+"mult": 100,
+"text": "45.0%",
+"tol": 0.05
+},
+{
+"id": "R03850:n:431",
+"kind": "row",
+"row_id": "R03850",
+"field": "n",
+"num": 58.0,
+"mult": 1,
+"text": "58",
+"tol": 0.5
+},
+{
+"id": "R03851:hit:432",
+"kind": "row",
+"row_id": "R03851",
+"field": "hit",
+"num": 56.79012345679012,
+"mult": 100,
+"text": "56.8%",
+"tol": 0.05
+},
+{
+"id": "R03851:p_star:433",
+"kind": "row",
+"row_id": "R03851",
+"field": "p_star",
+"num": 52.08681135225376,
+"mult": 100,
+"text": "52.1%",
+"tol": 0.05
+},
+{
+"id": "R03851:n:434",
+"kind": "row",
+"row_id": "R03851",
+"field": "n",
+"num": 81.0,
+"mult": 1,
+"text": "81",
+"tol": 0.5
+},
+{
+"id": "R03801:hit:435",
+"kind": "row",
+"row_id": "R03801",
+"field": "hit",
+"num": 53.179591230761616,
+"mult": 100,
+"text": "53.2%",
+"tol": 0.05
+},
+{
+"id": "R03801:p_star:436",
+"kind": "row",
+"row_id": "R03801",
+"field": "p_star",
+"num": 51.17752104755634,
+"mult": 100,
+"text": "51.2%",
+"tol": 0.05
+},
+{
+"id": "R03801:ACC_COVER:437",
+"kind": "row",
+"row_id": "R03801",
+"field": "ACC_COVER",
+"num": 270.02415263490064,
+"mult": 100,
+"text": "270%",
+"tol": 0.5
+},
+{
+"id": "R03801:n:438",
+"kind": "row",
+"row_id": "R03801",
+"field": "n",
+"num": 20207.0,
+"mult": 1,
+"text": "20,207",
+"tol": 0.5
+},
+{
+"id": "R02717:hit:439",
+"kind": "row",
+"row_id": "R02717",
+"field": "hit",
+"num": 53.30882352941176,
+"mult": 100,
+"text": "53.3%",
+"tol": 0.05
+},
+{
+"id": "R02717:p_star:440",
+"kind": "row",
+"row_id": "R02717",
+"field": "p_star",
+"num": 50.0,
+"mult": 100,
+"text": "50.0%",
+"tol": 0.05
+},
+{
+"id": "R02717:n:441",
+"kind": "row",
+"row_id": "R02717",
+"field": "n",
+"num": 272.0,
+"mult": 1,
+"text": "272",
+"tol": 0.5
+},
+{
+"id": "R04036:net:442",
+"kind": "row",
+"row_id": "R04036",
+"field": "net",
+"num": 0.0097784746017779,
+"mult": 1,
+"text": "+0.01",
+"tol": 0.005
+},
+{
+"id": "R04036:net_sel:443",
+"kind": "row",
+"row_id": "R04036",
+"field": "net_sel",
+"num": 0.1829655966677388,
+"mult": 1,
+"text": "+0.18",
+"tol": 0.005
+},
+{
+"id": "R04036:maxdd:444",
+"kind": "row",
+"row_id": "R04036",
+"field": "maxdd",
+"num": -31.667598622892378,
+"mult": 100,
+"text": "-32%",
+"tol": 0.5
+},
+{
+"id": "R04037:net:445",
+"kind": "row",
+"row_id": "R04037",
+"field": "net",
+"num": -0.0142107831112159,
+"mult": 1,
+"text": "-0.01",
+"tol": 0.005
+},
+{
+"id": "R04037:net_sel:446",
+"kind": "row",
+"row_id": "R04037",
+"field": "net_sel",
+"num": 0.4589582881877458,
+"mult": 1,
+"text": "+0.46",
+"tol": 0.005
+},
+{
+"id": "R04037:maxdd:447",
+"kind": "row",
+"row_id": "R04037",
+"field": "maxdd",
+"num": -29.97685782989656,
+"mult": 100,
+"text": "-30%",
+"tol": 0.5
+},
+{
+"id": "R04038:net:448",
+"kind": "row",
+"row_id": "R04038",
+"field": "net",
+"num": -0.2167681475415845,
+"mult": 1,
+"text": "-0.22",
+"tol": 0.005
+},
+{
+"id": "R04038:net_sel:449",
+"kind": "row",
+"row_id": "R04038",
+"field": "net_sel",
+"num": 0.1325540575035499,
+"mult": 1,
+"text": "+0.13",
+"tol": 0.005
+},
+{
+"id": "R04038:maxdd:450",
+"kind": "row",
+"row_id": "R04038",
+"field": "maxdd",
+"num": -39.55802777870072,
+"mult": 100,
+"text": "-40%",
+"tol": 0.5
+},
+{
+"id": "R04039:net:451",
+"kind": "row",
+"row_id": "R04039",
+"field": "net",
+"num": -0.1077151253640101,
+"mult": 1,
+"text": "-0.11",
+"tol": 0.005
+},
+{
+"id": "R04039:net_sel:452",
+"kind": "row",
+"row_id": "R04039",
+"field": "net_sel",
+"num": 0.0849904151779206,
+"mult": 1,
+"text": "+0.08",
+"tol": 0.005
+},
+{
+"id": "R04039:maxdd:453",
+"kind": "row",
+"row_id": "R04039",
+"field": "maxdd",
+"num": -33.80122918301186,
+"mult": 100,
+"text": "-34%",
+"tol": 0.5
+},
+{
+"id": "R04040:net:454",
+"kind": "row",
+"row_id": "R04040",
+"field": "net",
+"num": -0.6829026241428187,
+"mult": 1,
+"text": "-0.68",
+"tol": 0.005
+},
+{
+"id": "R04040:net_sel:455",
+"kind": "row",
+"row_id": "R04040",
+"field": "net_sel",
+"num": 0.3990767938023782,
+"mult": 1,
+"text": "+0.40",
+"tol": 0.005
+},
+{
+"id": "R04040:maxdd:456",
+"kind": "row",
+"row_id": "R04040",
+"field": "maxdd",
+"num": -72.14261553002514,
+"mult": 100,
+"text": "-72%",
+"tol": 0.5
+},
+{
+"id": "R04041:net:457",
+"kind": "row",
+"row_id": "R04041",
+"field": "net",
+"num": -0.1735210524266147,
+"mult": 1,
+"text": "-0.17",
+"tol": 0.005
+},
+{
+"id": "R04041:net_sel:458",
+"kind": "row",
+"row_id": "R04041",
+"field": "net_sel",
+"num": -0.9138354242274812,
+"mult": 1,
+"text": "-0.91",
+"tol": 0.005
+},
+{
+"id": "R04041:maxdd:459",
+"kind": "row",
+"row_id": "R04041",
+"field": "maxdd",
+"num": -13.75764170699216,
+"mult": 100,
+"text": "-14%",
+"tol": 0.5
+},
+{
+"id": "R03837:FCR:460",
+"kind": "row",
+"row_id": "R03837",
+"field": "FCR",
+"num": 1846.1381534712966,
+"mult": 100,
+"text": "1846%",
+"tol": 0.5
+},
+{
+"id": "R03837:net:461",
+"kind": "row",
+"row_id": "R03837",
+"field": "net",
+"num": 0.2780652777786816,
+"mult": 1,
+"text": "+0.28",
+"tol": 0.005
+},
+{
+"id": "R03837:n:462",
+"kind": "row",
+"row_id": "R03837",
+"field": "n",
+"num": 105.0,
+"mult": 1,
+"text": "105",
+"tol": 0.5
+},
+{
+"id": "R03836:FCR:463",
+"kind": "row",
+"row_id": "R03836",
+"field": "FCR",
+"num": 1574.211988281564,
+"mult": 100,
+"text": "1574%",
+"tol": 0.5
+},
+{
+"id": "R03836:net:464",
+"kind": "row",
+"row_id": "R03836",
+"field": "net",
+"num": 0.2376365008266261,
+"mult": 1,
+"text": "+0.24",
+"tol": 0.005
+},
+{
+"id": "R03836:n:465",
+"kind": "row",
+"row_id": "R03836",
+"field": "n",
+"num": 153.0,
+"mult": 1,
+"text": "153",
+"tol": 0.5
+},
+{
+"id": "R03835:FCR:466",
+"kind": "row",
+"row_id": "R03835",
+"field": "FCR",
+"num": 1544.2982953932003,
+"mult": 100,
+"text": "1544%",
+"tol": 0.5
+},
+{
+"id": "R03835:net:467",
+"kind": "row",
+"row_id": "R03835",
+"field": "net",
+"num": 0.2654363892860306,
+"mult": 1,
+"text": "+0.27",
+"tol": 0.005
+},
+{
+"id": "R03835:n:468",
+"kind": "row",
+"row_id": "R03835",
+"field": "n",
+"num": 153.0,
+"mult": 1,
+"text": "153",
+"tol": 0.5
+},
+{
+"id": "R03839:FCR:469",
+"kind": "row",
+"row_id": "R03839",
+"field": "FCR",
+"num": 260.09132949793366,
+"mult": 100,
+"text": "260%",
+"tol": 0.5
+},
+{
+"id": "R03839:net:470",
+"kind": "row",
+"row_id": "R03839",
+"field": "net",
+"num": 0.0541555637974581,
+"mult": 1,
+"text": "+0.05",
+"tol": 0.005
+},
+{
+"id": "R03839:n:471",
+"kind": "row",
+"row_id": "R03839",
+"field": "n",
+"num": 152.0,
+"mult": 1,
+"text": "152",
+"tol": 0.5
+},
+{
+"id": "R03840:FCR:472",
+"kind": "row",
+"row_id": "R03840",
+"field": "FCR",
+"num": 248.0730763103496,
+"mult": 100,
+"text": "248%",
+"tol": 0.5
+},
+{
+"id": "R03840:net:473",
+"kind": "row",
+"row_id": "R03840",
+"field": "net",
+"num": 0.0418222429183832,
+"mult": 1,
+"text": "+0.04",
+"tol": 0.005
+},
+{
+"id": "R03840:n:474",
+"kind": "row",
+"row_id": "R03840",
+"field": "n",
+"num": 152.0,
+"mult": 1,
+"text": "152",
+"tol": 0.5
+},
+{
+"id": "R03945:hit:475",
+"kind": "row",
+"row_id": "R03945",
+"field": "hit",
+"num": 6.97,
+"mult": 100,
+"text": "7.0%",
+"tol": 0.05
+},
+{
+"id": "R03945:p_star:476",
+"kind": "row",
+"row_id": "R03945",
+"field": "p_star",
+"num": 3.2800000000000002,
+"mult": 100,
+"text": "3.3%",
+"tol": 0.05
+},
+{
+"id": "R03945:n:477",
+"kind": "row",
+"row_id": "R03945",
+"field": "n",
+"num": 1938.0,
+"mult": 1,
+"text": "1,938",
+"tol": 0.5
+},
+{
+"id": "R03946:hit:478",
+"kind": "row",
+"row_id": "R03946",
+"field": "hit",
+"num": 7.55,
+"mult": 100,
+"text": "7.5%",
+"tol": 0.05
+},
+{
+"id": "R03946:p_star:479",
+"kind": "row",
+"row_id": "R03946",
+"field": "p_star",
+"num": 4.36,
+"mult": 100,
+"text": "4.4%",
+"tol": 0.05
+},
+{
+"id": "R03946:n:480",
+"kind": "row",
+"row_id": "R03946",
+"field": "n",
+"num": 4040.0,
+"mult": 1,
+"text": "4,040",
+"tol": 0.5
+},
+{
+"id": "R03944:hit:481",
+"kind": "row",
+"row_id": "R03944",
+"field": "hit",
+"num": 8.09,
+"mult": 100,
+"text": "8.1%",
+"tol": 0.05
+},
+{
+"id": "R03944:p_star:482",
+"kind": "row",
+"row_id": "R03944",
+"field": "p_star",
+"num": 5.36,
+"mult": 100,
+"text": "5.4%",
+"tol": 0.05
+},
+{
+"id": "R03944:n:483",
+"kind": "row",
+"row_id": "R03944",
+"field": "n",
+"num": 2102.0,
+"mult": 1,
+"text": "2,102",
+"tol": 0.5
+},
+{
+"id": "R03885:hit:484",
+"kind": "row",
+"row_id": "R03885",
+"field": "hit",
+"num": 41.959999999999994,
+"mult": 100,
+"text": "42.0%",
+"tol": 0.05
+},
+{
+"id": "R03885:p_star:485",
+"kind": "row",
+"row_id": "R03885",
+"field": "p_star",
+"num": 45.6,
+"mult": 100,
+"text": "45.6%",
+"tol": 0.05
+},
+{
+"id": "R03885:n:486",
+"kind": "row",
+"row_id": "R03885",
+"field": "n",
+"num": 1866.0,
+"mult": 1,
+"text": "1,866",
+"tol": 0.5
+},
+{
+"id": "R03962:auc:487",
+"kind": "row",
+"row_id": "R03962",
+"field": "auc",
+"num": 0.5387195027675562,
+"mult": 1,
+"text": "0.539",
+"tol": 0.0005
+},
+{
+"id": "R03962:auc_lo:488",
+"kind": "row",
+"row_id": "R03962",
+"field": "auc_lo",
+"num": 0.4947152460765394,
+"mult": 1,
+"text": "0.495",
+"tol": 0.0005
+},
+{
+"id": "R03960:auc:489",
+"kind": "row",
+"row_id": "R03960",
+"field": "auc",
+"num": 0.533994557654844,
+"mult": 1,
+"text": "0.534",
+"tol": 0.0005
+},
+{
+"id": "R03960:auc_lo:490",
+"kind": "row",
+"row_id": "R03960",
+"field": "auc_lo",
+"num": 0.4896657565809569,
+"mult": 1,
+"text": "0.490",
+"tol": 0.0005
+},
+{
+"id": "R03992:auc:491",
+"kind": "row",
+"row_id": "R03992",
+"field": "auc",
+"num": 0.4456393408962579,
+"mult": 1,
+"text": "0.446",
+"tol": 0.0005
+},
+{
+"id": "R03992:auc_lo:492",
+"kind": "row",
+"row_id": "R03992",
+"field": "auc_lo",
+"num": 0.3801958250549949,
+"mult": 1,
+"text": "0.380",
+"tol": 0.0005
+},
+{
+"id": "R04006:net:493",
+"kind": "row",
+"row_id": "R04006",
+"field": "net",
+"num": 0.2040000000000001,
+"mult": 1,
+"text": "+0.20",
+"tol": 0.005
+},
+{
+"id": "R04006:calmar:494",
+"kind": "row",
+"row_id": "R04006",
+"field": "calmar",
+"num": 2.363,
+"mult": 1,
+"text": "+2.36",
+"tol": 0.005
+},
+{
+"id": "R04006:maxdd:495",
+"kind": "row",
+"row_id": "R04006",
+"field": "maxdd",
+"num": 21.98,
+"mult": 100,
+"text": "22%",
+"tol": 0.5
+},
+{
+"id": "R04042:net:496",
+"kind": "row",
+"row_id": "R04042",
+"field": "net",
+"num": -46.477577679352564,
+"mult": 100,
+"text": "-46.5%",
+"tol": 0.05
+},
+{
+"id": "R04042:net_sel:497",
+"kind": "row",
+"row_id": "R04042",
+"field": "net_sel",
+"num": -7.238839151488589,
+"mult": 100,
+"text": "-7.2%",
+"tol": 0.05
+},
+{
+"id": "R04042:maxdd:498",
+"kind": "row",
+"row_id": "R04042",
+"field": "maxdd",
+"num": -91.05866972557975,
+"mult": 100,
+"text": "-91%",
+"tol": 0.5
+},
+{
+"id": "R03961:auc:499",
+"kind": "row",
+"row_id": "R03961",
+"field": "auc",
+"num": 0.5263207568286585,
+"mult": 1,
+"text": "0.526",
+"tol": 0.0005
+},
+{
+"id": "R03961:auc_lo:500",
+"kind": "row",
+"row_id": "R03961",
+"field": "auc_lo",
+"num": 0.4872598445288233,
+"mult": 1,
+"text": "0.487",
+"tol": 0.0005
+},
+{
+"id": "R03963:auc:501",
+"kind": "row",
+"row_id": "R03963",
+"field": "auc",
+"num": 0.5223720663181868,
+"mult": 1,
+"text": "0.522",
+"tol": 0.0005
+},
+{
+"id": "R03963:auc_lo:502",
+"kind": "row",
+"row_id": "R03963",
+"field": "auc_lo",
+"num": 0.4836006274363224,
+"mult": 1,
+"text": "0.484",
+"tol": 0.0005
+},
+{
+"id": "R03972:auc:503",
+"kind": "row",
+"row_id": "R03972",
+"field": "auc",
+"num": 0.5592983001107646,
+"mult": 1,
+"text": "0.559",
+"tol": 0.0005
+},
+{
+"id": "R03972:auc_lo:504",
+"kind": "row",
+"row_id": "R03972",
+"field": "auc_lo",
+"num": 0.5487289890721295,
+"mult": 1,
+"text": "0.549",
+"tol": 0.0005
+},
+{
+"id": "R03967:auc:505",
+"kind": "row",
+"row_id": "R03967",
+"field": "auc",
+"num": 0.544969395581355,
+"mult": 1,
+"text": "0.545",
+"tol": 0.0005
+},
+{
+"id": "R03967:auc_lo:506",
+"kind": "row",
+"row_id": "R03967",
+"field": "auc_lo",
+"num": 0.5319492802905346,
+"mult": 1,
+"text": "0.532",
+"tol": 0.0005
+},
+{
+"id": "R03968:auc:507",
+"kind": "row",
+"row_id": "R03968",
+"field": "auc",
+"num": 0.5405829038527485,
+"mult": 1,
+"text": "0.541",
+"tol": 0.0005
+},
+{
+"id": "R03968:auc_lo:508",
+"kind": "row",
+"row_id": "R03968",
+"field": "auc_lo",
+"num": 0.521991531887926,
+"mult": 1,
+"text": "0.522",
+"tol": 0.0005
+},
+{
+"id": "R03965:auc:509",
+"kind": "row",
+"row_id": "R03965",
+"field": "auc",
+"num": 0.529879461850696,
+"mult": 1,
+"text": "0.530",
+"tol": 0.0005
+},
+{
+"id": "R03965:auc_lo:510",
+"kind": "row",
+"row_id": "R03965",
+"field": "auc_lo",
+"num": 0.5105820327804901,
+"mult": 1,
+"text": "0.511",
+"tol": 0.0005
+},
+{
+"id": "R03997:net:511",
+"kind": "row",
+"row_id": "R03997",
+"field": "net",
+"num": 63.484000477117284,
+"mult": 100,
+"text": "63.5%",
+"tol": 0.05
+},
+{
+"id": "R03997:calmar:512",
+"kind": "row",
+"row_id": "R03997",
+"field": "calmar",
+"num": 3.0944574389057435,
+"mult": 1,
+"text": "+3.09",
+"tol": 0.005
+},
+{
+"id": "R03997:maxdd:513",
+"kind": "row",
+"row_id": "R03997",
+"field": "maxdd",
+"num": -20.51538976718528,
+"mult": 100,
+"text": "-21%",
+"tol": 0.5
+},
+{
+"id": "R03995:net:514",
+"kind": "row",
+"row_id": "R03995",
+"field": "net",
+"num": 51.92,
+"mult": 100,
+"text": "51.9%",
+"tol": 0.05
+},
+{
+"id": "R03995:calmar:515",
+"kind": "row",
+"row_id": "R03995",
+"field": "calmar",
+"num": 1.712,
+"mult": 1,
+"text": "+1.71",
+"tol": 0.005
+},
+{
+"id": "R03995:maxdd:516",
+"kind": "row",
+"row_id": "R03995",
+"field": "maxdd",
+"num": 30.330000000000002,
+"mult": 100,
+"text": "30%",
+"tol": 0.5
+},
+{
+"id": "R04029:net:517",
+"kind": "row",
+"row_id": "R04029",
+"field": "net",
+"num": 14.99645834559773,
+"mult": 100,
+"text": "15.0%",
+"tol": 0.05
+},
+{
+"id": "R04029:net_sel:518",
+"kind": "row",
+"row_id": "R04029",
+"field": "net_sel",
+"num": 53.732997332309026,
+"mult": 100,
+"text": "53.7%",
+"tol": 0.05
+},
+{
+"id": "R04029:calmar:519",
+"kind": "row",
+"row_id": "R04029",
+"field": "calmar",
+"num": 1.2184773229076882,
+"mult": 1,
+"text": "+1.22",
+"tol": 0.005
+},
+{
+"id": "R04029:maxdd:520",
+"kind": "row",
+"row_id": "R04029",
+"field": "maxdd",
+"num": 12.30753996291965,
+"mult": 100,
+"text": "12%",
+"tol": 0.5
+},
+{
+"id": "R03974:net:521",
+"kind": "row",
+"row_id": "R03974",
+"field": "net",
+"num": 55.21,
+"mult": 100,
+"text": "55.2%",
+"tol": 0.05
+},
+{
+"id": "R03974:calmar:522",
+"kind": "row",
+"row_id": "R03974",
+"field": "calmar",
+"num": 0.719,
+"mult": 1,
+"text": "+0.72",
+"tol": 0.005
+},
+{
+"id": "R03974:maxdd:523",
+"kind": "row",
+"row_id": "R03974",
+"field": "maxdd",
+"num": 76.77,
+"mult": 100,
+"text": "77%",
+"tol": 0.5
+},
+{
+"id": "R03975:net:524",
+"kind": "row",
+"row_id": "R03975",
+"field": "net",
+"num": 34.07,
+"mult": 100,
+"text": "34.1%",
+"tol": 0.05
+},
+{
+"id": "R03975:calmar:525",
+"kind": "row",
+"row_id": "R03975",
+"field": "calmar",
+"num": 0.695,
+"mult": 1,
+"text": "+0.69",
+"tol": 0.005
+},
+{
+"id": "R03975:maxdd:526",
+"kind": "row",
+"row_id": "R03975",
+"field": "maxdd",
+"num": 49.02,
+"mult": 100,
+"text": "49%",
+"tol": 0.5
+},
+{
+"id": "R03973:net:527",
+"kind": "row",
+"row_id": "R03973",
+"field": "net",
+"num": 38.629999999999995,
+"mult": 100,
+"text": "38.6%",
+"tol": 0.05
+},
+{
+"id": "R03973:calmar:528",
+"kind": "row",
+"row_id": "R03973",
+"field": "calmar",
+"num": 0.528,
+"mult": 1,
+"text": "+0.53",
+"tol": 0.005
+},
+{
+"id": "R03973:maxdd:529",
+"kind": "row",
+"row_id": "R03973",
+"field": "maxdd",
+"num": 73.18,
+"mult": 100,
+"text": "73%",
+"tol": 0.5
+},
+{
+"id": "R03977:auc:530",
+"kind": "row",
+"row_id": "R03977",
+"field": "auc",
+"num": 0.5402650980420804,
+"mult": 1,
+"text": "0.540",
+"tol": 0.0005
+},
+{
+"id": "R03977:auc_lo:531",
+"kind": "row",
+"row_id": "R03977",
+"field": "auc_lo",
+"num": 0.5050023392085924,
+"mult": 1,
+"text": "0.505",
+"tol": 0.0005
+},
+{
+"id": "R03970:auc:532",
+"kind": "row",
+"row_id": "R03970",
+"field": "auc",
+"num": 0.5234112365790448,
+"mult": 1,
+"text": "0.523",
+"tol": 0.0005
+},
+{
+"id": "R03970:auc_lo:533",
+"kind": "row",
+"row_id": "R03970",
+"field": "auc_lo",
+"num": 0.4940773333400114,
+"mult": 1,
+"text": "0.494",
+"tol": 0.0005
+},
+{
+"id": "R03978:auc:534",
+"kind": "row",
+"row_id": "R03978",
+"field": "auc",
+"num": 0.4716808896553774,
+"mult": 1,
+"text": "0.472",
+"tol": 0.0005
+},
+{
+"id": "R03978:auc_lo:535",
+"kind": "row",
+"row_id": "R03978",
+"field": "auc_lo",
+"num": 0.3987881379790669,
+"mult": 1,
+"text": "0.399",
+"tol": 0.0005
+},
+{
+"id": "R03999:net:536",
+"kind": "row",
+"row_id": "R03999",
+"field": "net",
+"num": 0.5030000000000001,
+"mult": 1,
+"text": "+0.50",
+"tol": 0.005
+},
+{
+"id": "R03999:calmar:537",
+"kind": "row",
+"row_id": "R03999",
+"field": "calmar",
+"num": 2.662,
+"mult": 1,
+"text": "+2.66",
+"tol": 0.005
+},
+{
+"id": "R03999:maxdd:538",
+"kind": "row",
+"row_id": "R03999",
+"field": "maxdd",
+"num": 13.58,
+"mult": 100,
+"text": "14%",
+"tol": 0.5
+},
+{
+"id": "R03996:net:539",
+"kind": "row",
+"row_id": "R03996",
+"field": "net",
+"num": 0.4469999999999998,
+"mult": 1,
+"text": "+0.45",
+"tol": 0.005
+},
+{
+"id": "R03996:calmar:540",
+"kind": "row",
+"row_id": "R03996",
+"field": "calmar",
+"num": 2.159,
+"mult": 1,
+"text": "+2.16",
+"tol": 0.005
+},
+{
+"id": "R03996:maxdd:541",
+"kind": "row",
+"row_id": "R03996",
+"field": "maxdd",
+"num": 21.37,
+"mult": 100,
+"text": "21%",
+"tol": 0.5
+},
+{
+"id": "R04028:net:542",
+"kind": "row",
+"row_id": "R04028",
+"field": "net",
+"num": -0.31713748256277,
+"mult": 100,
+"text": "-0.3%",
+"tol": 0.05
+},
+{
+"id": "R04028:net_sel:543",
+"kind": "row",
+"row_id": "R04028",
+"field": "net_sel",
+"num": 65.8808988861654,
+"mult": 100,
+"text": "65.9%",
+"tol": 0.05
+},
+{
+"id": "R04028:calmar:544",
+"kind": "row",
+"row_id": "R04028",
+"field": "calmar",
+"num": -0.0169165935243949,
+"mult": 1,
+"text": "-0.02",
+"tol": 0.005
+},
+{
+"id": "R04028:maxdd:545",
+"kind": "row",
+"row_id": "R04028",
+"field": "maxdd",
+"num": 18.74712436079073,
+"mult": 100,
+"text": "19%",
+"tol": 0.5
+},
+{
+"id": "R04003:net:546",
+"kind": "row",
+"row_id": "R04003",
+"field": "net",
+"num": -0.3219999999999998,
+"mult": 1,
+"text": "-0.32",
+"tol": 0.005
+},
+{
+"id": "R04003:calmar:547",
+"kind": "row",
+"row_id": "R04003",
+"field": "calmar",
+"num": 1.837,
+"mult": 1,
+"text": "+1.84",
+"tol": 0.005
+},
+{
+"id": "R04003:maxdd:548",
+"kind": "row",
+"row_id": "R04003",
+"field": "maxdd",
+"num": 20.03,
+"mult": 100,
+"text": "20%",
+"tol": 0.5
+},
+{
+"id": "R04000:net:549",
+"kind": "row",
+"row_id": "R04000",
+"field": "net",
+"num": -1.3249999999999995,
+"mult": 1,
+"text": "-1.32",
+"tol": 0.005
+},
+{
+"id": "R04000:calmar:550",
+"kind": "row",
+"row_id": "R04000",
+"field": "calmar",
+"num": 0.834,
+"mult": 1,
+"text": "+0.83",
+"tol": 0.005
+},
+{
+"id": "R04000:maxdd:551",
+"kind": "row",
+"row_id": "R04000",
+"field": "maxdd",
+"num": 27.82,
+"mult": 100,
+"text": "28%",
+"tol": 0.5
+},
+{
+"id": "R03994:net:552",
+"kind": "row",
+"row_id": "R03994",
+"field": "net",
+"num": -0.0457999999999999,
+"mult": 1,
+"text": "-0.05",
+"tol": 0.005
+},
+{
+"id": "R03994:calmar:553",
+"kind": "row",
+"row_id": "R03994",
+"field": "calmar",
+"num": 0.6583,
+"mult": 1,
+"text": "+0.66",
+"tol": 0.005
+},
+{
+"id": "R03994:maxdd:554",
+"kind": "row",
+"row_id": "R03994",
+"field": "maxdd",
+"num": 59.10000000000001,
+"mult": 100,
+"text": "59%",
+"tol": 0.5
+},
+{
+"id": "count:3d",
+"kind": "count",
+"query": "tf == '3d'",
+"num": 72.0,
+"text": "कुल rows: 72",
+"tol": 0
+},
+{
+"id": "R02002:FCR092:556",
+"kind": "row",
+"row_id": "R02002",
+"field": "FCR092",
+"num": 1119.6800326878251,
+"mult": 100,
+"text": "1120%",
+"tol": 0.5
+},
+{
+"id": "R02002:net:557",
+"kind": "row",
+"row_id": "R02002",
+"field": "net",
+"num": 0.9381056300727899,
+"mult": 100,
+"text": "+0.938%",
+"tol": 0.0005
+},
+{
+"id": "R02002:n:558",
+"kind": "row",
+"row_id": "R02002",
+"field": "n",
+"num": 78.0,
+"mult": 1,
+"text": "78",
+"tol": 0.5
+},
+{
+"id": "R02037:FCR092:559",
+"kind": "row",
+"row_id": "R02037",
+"field": "FCR092",
+"num": 889.883055793141,
+"mult": 100,
+"text": "890%",
+"tol": 0.5
+},
+{
+"id": "R02037:net:560",
+"kind": "row",
+"row_id": "R02037",
+"field": "net",
+"num": 0.72669241132968,
+"mult": 100,
+"text": "+0.727%",
+"tol": 0.0005
+},
+{
+"id": "R02037:n:561",
+"kind": "row",
+"row_id": "R02037",
+"field": "n",
+"num": 38.0,
+"mult": 1,
+"text": "38",
+"tol": 0.5
+},
+{
+"id": "R02006:FCR092:562",
+"kind": "row",
+"row_id": "R02006",
+"field": "FCR092",
+"num": 489.88498620690495,
+"mult": 100,
+"text": "490%",
+"tol": 0.5
+},
+{
+"id": "R02006:net:563",
+"kind": "row",
+"row_id": "R02006",
+"field": "net",
+"num": 0.35869418731034997,
+"mult": 100,
+"text": "+0.359%",
+"tol": 0.0005
+},
+{
+"id": "R02006:n:564",
+"kind": "row",
+"row_id": "R02006",
+"field": "n",
+"num": 148.0,
+"mult": 1,
+"text": "148",
+"tol": 0.5
+},
+{
+"id": "R02026:FCR092:565",
+"kind": "row",
+"row_id": "R02026",
+"field": "FCR092",
+"num": 454.39193037431755,
+"mult": 100,
+"text": "454%",
+"tol": 0.5
+},
+{
+"id": "R02026:net:566",
+"kind": "row",
+"row_id": "R02026",
+"field": "net",
+"num": 0.32604057594436997,
+"mult": 100,
+"text": "+0.326%",
+"tol": 0.0005
+},
+{
+"id": "R02026:n:567",
+"kind": "row",
+"row_id": "R02026",
+"field": "n",
+"num": 66.0,
+"mult": 1,
+"text": "66",
+"tol": 0.5
+},
+{
+"id": "R02012:FCR092:568",
+"kind": "row",
+"row_id": "R02012",
+"field": "FCR092",
+"num": 423.1996613111783,
+"mult": 100,
+"text": "423%",
+"tol": 0.5
+},
+{
+"id": "R02012:net:569",
+"kind": "row",
+"row_id": "R02012",
+"field": "net",
+"num": 0.29734368840628,
+"mult": 100,
+"text": "+0.297%",
+"tol": 0.0005
+},
+{
+"id": "R02012:n:570",
+"kind": "row",
+"row_id": "R02012",
+"field": "n",
+"num": 190.0,
+"mult": 1,
+"text": "190",
+"tol": 0.5
+},
+{
+"id": "count:1w",
+"kind": "count",
+"query": "tf == '1w'",
+"num": 175.0,
+"text": "कुल rows: 175",
+"tol": 0
+},
+{
+"id": "R00114:FCR092:572",
+"kind": "row",
+"row_id": "R00114",
+"field": "FCR092",
+"num": 342967.2214832748,
+"mult": 100,
+"text": "342967%",
+"tol": 0.5
+},
+{
+"id": "R00114:net:573",
+"kind": "row",
+"row_id": "R00114",
+"field": "net",
+"num": 302.74870743903165,
+"mult": 100,
+"text": "+302.749%",
+"tol": 0.0005
+},
+{
+"id": "R00114:gmed:574",
+"kind": "row",
+"row_id": "R00114",
+"field": "gmed",
+"num": 2.2481837816611,
+"mult": 100,
+"text": "+2.248%",
+"tol": 0.0005
+},
+{
+"id": "R00114:n:575",
+"kind": "row",
+"row_id": "R00114",
+"field": "n",
+"num": 43.0,
+"mult": 1,
+"text": "43",
+"tol": 0.5
+},
+{
+"id": "R00109:FCR092:576",
+"kind": "row",
+"row_id": "R00109",
+"field": "FCR092",
+"num": 160707.7583045784,
+"mult": 100,
+"text": "160708%",
+"tol": 0.5
+},
+{
+"id": "R00109:net:577",
+"kind": "row",
+"row_id": "R00109",
+"field": "net",
+"num": 144.48345327774396,
+"mult": 100,
+"text": "+144.483%",
+"tol": 0.0005
+},
+{
+"id": "R00109:gmed:578",
+"kind": "row",
+"row_id": "R00109",
+"field": "gmed",
+"num": -3.1584984901869904,
+"mult": 100,
+"text": "-3.158%",
+"tol": 0.0005
+},
+{
+"id": "R00109:n:579",
+"kind": "row",
+"row_id": "R00109",
+"field": "n",
+"num": 130.0,
+"mult": 1,
+"text": "130",
+"tol": 0.5
+},
+{
+"id": "R00113:FCR092:580",
+"kind": "row",
+"row_id": "R00113",
+"field": "FCR092",
+"num": 142611.92818937797,
+"mult": 100,
+"text": "142612%",
+"tol": 0.5
+},
+{
+"id": "R00113:net:581",
+"kind": "row",
+"row_id": "R00113",
+"field": "net",
+"num": 128.85255823933883,
+"mult": 100,
+"text": "+128.853%",
+"tol": 0.0005
+},
+{
+"id": "R00113:gmed:582",
+"kind": "row",
+"row_id": "R00113",
+"field": "gmed",
+"num": 3.5541195476575203,
+"mult": 100,
+"text": "+3.554%",
+"tol": 0.0005
+},
+{
+"id": "R00113:n:583",
+"kind": "row",
+"row_id": "R00113",
+"field": "n",
+"num": 97.0,
+"mult": 1,
+"text": "97",
+"tol": 0.5
+},
+{
+"id": "R02350:FCR092:584",
+"kind": "row",
+"row_id": "R02350",
+"field": "FCR092",
+"num": 1479.443515883012,
+"mult": 100,
+"text": "1479%",
+"tol": 0.5
+},
+{
+"id": "R02350:net:585",
+"kind": "row",
+"row_id": "R02350",
+"field": "net",
+"num": 1.26908803461237,
+"mult": 100,
+"text": "+1.269%",
+"tol": 0.0005
+},
+{
+"id": "R02350:n:586",
+"kind": "row",
+"row_id": "R02350",
+"field": "n",
+"num": 41.0,
+"mult": 1,
+"text": "41",
+"tol": 0.5
+},
+{
+"id": "R02326:FCR092:587",
+"kind": "row",
+"row_id": "R02326",
+"field": "FCR092",
+"num": 554.1041599918143,
+"mult": 100,
+"text": "554%",
+"tol": 0.5
+},
+{
+"id": "R02326:net:588",
+"kind": "row",
+"row_id": "R02326",
+"field": "net",
+"num": 0.41777582719246004,
+"mult": 100,
+"text": "+0.418%",
+"tol": 0.0005
+},
+{
+"id": "R02326:n:589",
+"kind": "row",
+"row_id": "R02326",
+"field": "n",
+"num": 68.0,
+"mult": 1,
+"text": "68",
+"tol": 0.5
+},
+{
+"id": "R03852:hit:590",
+"kind": "row",
+"row_id": "R03852",
+"field": "hit",
+"num": 77.77777777777779,
+"mult": 100,
+"text": "77.8%",
+"tol": 0.05
+},
+{
+"id": "R03852:p_star:591",
+"kind": "row",
+"row_id": "R03852",
+"field": "p_star",
+"num": 44.08602150537634,
+"mult": 100,
+"text": "44.1%",
+"tol": 0.05
+},
+{
+"id": "R03852:n:592",
+"kind": "row",
+"row_id": "R03852",
+"field": "n",
+"num": 9.0,
+"mult": 1,
+"text": "9",
+"tol": 0.5
+},
+{
+"id": "R03853:hit:593",
+"kind": "row",
+"row_id": "R03853",
+"field": "hit",
+"num": 44.44444444444444,
+"mult": 100,
+"text": "44.4%",
+"tol": 0.05
+},
+{
+"id": "R03853:p_star:594",
+"kind": "row",
+"row_id": "R03853",
+"field": "p_star",
+"num": 66.30434782608695,
+"mult": 100,
+"text": "66.3%",
+"tol": 0.05
+},
+{
+"id": "R03853:n:595",
+"kind": "row",
+"row_id": "R03853",
+"field": "n",
+"num": 9.0,
+"mult": 1,
+"text": "9",
+"tol": 0.5
+},
+{
+"id": "R03898:FCR092:596",
+"kind": "row",
+"row_id": "R03898",
+"field": "FCR092",
+"num": 1963.0434782608693,
+"mult": 100,
+"text": "1963%",
+"tol": 0.5
+},
+{
+"id": "R03898:net:597",
+"kind": "row",
+"row_id": "R03898",
+"field": "net",
+"num": 1.606,
+"mult": 100,
+"text": "+1.606%",
+"tol": 0.0005
+},
+{
+"id": "R03887:hit:598",
+"kind": "row",
+"row_id": "R03887",
+"field": "hit",
+"num": 53.97,
+"mult": 100,
+"text": "54.0%",
+"tol": 0.05
+},
+{
+"id": "R03887:p_star:599",
+"kind": "row",
+"row_id": "R03887",
+"field": "p_star",
+"num": 54.7,
+"mult": 100,
+"text": "54.7%",
+"tol": 0.05
+},
+{
+"id": "R03887:n:600",
+"kind": "row",
+"row_id": "R03887",
+"field": "n",
+"num": 252.0,
+"mult": 1,
+"text": "252",
+"tol": 0.5
+},
+{
+"id": "R03889:hit:601",
+"kind": "row",
+"row_id": "R03889",
+"field": "hit",
+"num": 44.97,
+"mult": 100,
+"text": "45.0%",
+"tol": 0.05
+},
+{
+"id": "R03889:p_star:602",
+"kind": "row",
+"row_id": "R03889",
+"field": "p_star",
+"num": 46.81,
+"mult": 100,
+"text": "46.8%",
+"tol": 0.05
+},
+{
+"id": "R03889:n:603",
+"kind": "row",
+"row_id": "R03889",
+"field": "n",
+"num": 467.0,
+"mult": 1,
+"text": "467",
+"tol": 0.5
+},
+{
+"id": "R03888:hit:604",
+"kind": "row",
+"row_id": "R03888",
+"field": "hit",
+"num": 34.42,
+"mult": 100,
+"text": "34.4%",
+"tol": 0.05
+},
+{
+"id": "R03888:p_star:605",
+"kind": "row",
+"row_id": "R03888",
+"field": "p_star",
+"num": 37.16,
+"mult": 100,
+"text": "37.2%",
+"tol": 0.05
+},
+{
+"id": "R03888:n:606",
+"kind": "row",
+"row_id": "R03888",
+"field": "n",
+"num": 215.0,
+"mult": 1,
+"text": "215",
+"tol": 0.5
+},
+{
+"id": "count:1M",
+"kind": "count",
+"query": "tf == '1M'",
+"num": 9.0,
+"text": "कुल rows: 9",
+"tol": 0
+},
+{
+"id": "R00116:FCR092:608",
+"kind": "row",
+"row_id": "R00116",
+"field": "FCR092",
+"num": -17473.085778955745,
+"mult": 100,
+"text": "-17473%",
+"tol": 0.5
+},
+{
+"id": "R00116:net:609",
+"kind": "row",
+"row_id": "R00116",
+"field": "net",
+"num": -19.91630414244544,
+"mult": 100,
+"text": "-19.916%",
+"tol": 0.0005
+},
+{
+"id": "R00116:gmed:610",
+"kind": "row",
+"row_id": "R00116",
+"field": "gmed",
+"num": -19.24087591240875,
+"mult": 100,
+"text": "-19.241%",
+"tol": 0.0005
+},
+{
+"id": "R00116:n:611",
+"kind": "row",
+"row_id": "R00116",
+"field": "n",
+"num": 31.0,
+"mult": 1,
+"text": "31",
+"tol": 0.5
+},
+{
+"id": "R03854:hit:612",
+"kind": "row",
+"row_id": "R03854",
+"field": "hit",
+"num": 50.0,
+"mult": 100,
+"text": "50.0%",
+"tol": 0.05
+},
+{
+"id": "R03854:p_star:613",
+"kind": "row",
+"row_id": "R03854",
+"field": "p_star",
+"num": 37.5,
+"mult": 100,
+"text": "37.5%",
+"tol": 0.05
+},
+{
+"id": "R03854:n:614",
+"kind": "row",
+"row_id": "R03854",
+"field": "n",
+"num": 4.0,
+"mult": 1,
+"text": "4",
+"tol": 0.5
+},
+{
+"id": "R03855:hit:615",
+"kind": "row",
+"row_id": "R03855",
+"field": "hit",
+"num": 75.0,
+"mult": 100,
+"text": "75.0%",
+"tol": 0.05
+},
+{
+"id": "R03855:p_star:616",
+"kind": "row",
+"row_id": "R03855",
+"field": "p_star",
+"num": 82.6086956521739,
+"mult": 100,
+"text": "82.6%",
+"tol": 0.05
+},
+{
+"id": "R03855:n:617",
+"kind": "row",
+"row_id": "R03855",
+"field": "n",
+"num": 4.0,
+"mult": 1,
+"text": "4",
+"tol": 0.5
+},
+{
+"id": "count:event",
+"kind": "count",
+"query": "tf == 'event'",
+"num": 27.0,
+"text": "कुल rows: 27",
+"tol": 0
+},
+{
+"id": "R00912:FCR092:619",
+"kind": "row",
+"row_id": "R00912",
+"field": "FCR092",
+"num": 302.0630948621977,
+"mult": 100,
+"text": "302%",
+"tol": 0.5
+},
+{
+"id": "R00912:net:620",
+"kind": "row",
+"row_id": "R00912",
+"field": "net",
+"num": 0.18589804727322,
+"mult": 100,
+"text": "+0.186%",
+"tol": 0.0005
+},
+{
+"id": "R00912:n:621",
+"kind": "row",
+"row_id": "R00912",
+"field": "n",
+"num": 178.0,
+"mult": 1,
+"text": "178",
+"tol": 0.5
+},
+{
+"id": "R00857:FCR092:622",
+"kind": "row",
+"row_id": "R00857",
+"field": "FCR092",
+"num": 272.09570913728624,
+"mult": 100,
+"text": "272%",
+"tol": 0.5
+},
+{
+"id": "R00857:net:623",
+"kind": "row",
+"row_id": "R00857",
+"field": "net",
+"num": 0.15832805240630002,
+"mult": 100,
+"text": "+0.158%",
+"tol": 0.0005
+},
+{
+"id": "R00857:n:624",
+"kind": "row",
+"row_id": "R00857",
+"field": "n",
+"num": 178.0,
+"mult": 1,
+"text": "178",
+"tol": 0.5
+},
+{
+"id": "R00317:FCR092:625",
+"kind": "row",
+"row_id": "R00317",
+"field": "FCR092",
+"num": 193.33683218140084,
+"mult": 100,
+"text": "193%",
+"tol": 0.5
+},
+{
+"id": "R00317:net:626",
+"kind": "row",
+"row_id": "R00317",
+"field": "net",
+"num": 0.08586988560688,
+"mult": 100,
+"text": "+0.086%",
+"tol": 0.0005
+},
+{
+"id": "R00317:n:627",
+"kind": "row",
+"row_id": "R00317",
+"field": "n",
+"num": 178.0,
+"mult": 1,
+"text": "178",
+"tol": 0.5
+},
+{
+"id": "R01013:FCR092:628",
+"kind": "row",
+"row_id": "R01013",
+"field": "FCR092",
+"num": 110.33866751294681,
+"mult": 100,
+"text": "110%",
+"tol": 0.5
+},
+{
+"id": "R01013:net:629",
+"kind": "row",
+"row_id": "R01013",
+"field": "net",
+"num": 0.00951157411191107,
+"mult": 100,
+"text": "+0.010%",
+"tol": 0.0005
+},
+{
+"id": "R01013:n:630",
+"kind": "row",
+"row_id": "R01013",
+"field": "n",
+"num": 178.0,
+"mult": 1,
+"text": "178",
+"tol": 0.5
+},
+{
+"id": "R01075:FCR092:631",
+"kind": "row",
+"row_id": "R01075",
+"field": "FCR092",
+"num": 70.42293437555448,
+"mult": 100,
+"text": "70%",
+"tol": 0.5
+},
+{
+"id": "R01075:net:632",
+"kind": "row",
+"row_id": "R01075",
+"field": "net",
+"num": -0.027210900374480002,
+"mult": 100,
+"text": "-0.027%",
+"tol": 0.0005
+},
+{
+"id": "R01075:n:633",
+"kind": "row",
+"row_id": "R01075",
+"field": "n",
+"num": 1487.0,
+"mult": 1,
+"text": "1,487",
+"tol": 0.5
+},
+{
+"id": "count:intraday-turn",
+"kind": "count",
+"query": "tf == 'intraday-turn'",
+"num": 320.0,
+"text": "कुल rows: 320",
+"tol": 0
+},
+{
+"id": "R03369:FCR092:635",
+"kind": "row",
+"row_id": "R03369",
+"field": "FCR092",
+"num": 482.83823925284014,
+"mult": 100,
+"text": "483%",
+"tol": 0.5
+},
+{
+"id": "R03369:net:636",
+"kind": "row",
+"row_id": "R03369",
+"field": "net",
+"num": 0.35221118011261,
+"mult": 100,
+"text": "+0.352%",
+"tol": 0.0005
+},
+{
+"id": "R03369:n:637",
+"kind": "row",
+"row_id": "R03369",
+"field": "n",
+"num": 16.0,
+"mult": 1,
+"text": "16",
+"tol": 0.5
+},
+{
+"id": "R03672:FCR092:638",
+"kind": "row",
+"row_id": "R03672",
+"field": "FCR092",
+"num": 98.4653153507545,
+"mult": 100,
+"text": "98%",
+"tol": 0.5
+},
+{
+"id": "R03672:net:639",
+"kind": "row",
+"row_id": "R03672",
+"field": "net",
+"num": -0.0014119098773058571,
+"mult": 100,
+"text": "-0.001%",
+"tol": 0.0005
+},
+{
+"id": "R03672:n:640",
+"kind": "row",
+"row_id": "R03672",
+"field": "n",
+"num": 180.0,
+"mult": 1,
+"text": "180",
+"tol": 0.5
+},
+{
+"id": "R03365:FCR092:641",
+"kind": "row",
+"row_id": "R03365",
+"field": "FCR092",
+"num": 17.34001787369089,
+"mult": 100,
+"text": "17%",
+"tol": 0.5
+},
+{
+"id": "R03365:net:642",
+"kind": "row",
+"row_id": "R03365",
+"field": "net",
+"num": -0.0760471835562,
+"mult": 100,
+"text": "-0.076%",
+"tol": 0.0005
+},
+{
+"id": "R03365:n:643",
+"kind": "row",
+"row_id": "R03365",
+"field": "n",
+"num": 95.0,
+"mult": 1,
+"text": "95",
+"tol": 0.5
+},
+{
+"id": "R03359:FCR092:644",
+"kind": "row",
+"row_id": "R03359",
+"field": "FCR092",
+"num": 7.74746708810941,
+"mult": 100,
+"text": "8%",
+"tol": 0.5
+},
+{
+"id": "R03359:net:645",
+"kind": "row",
+"row_id": "R03359",
+"field": "net",
+"num": -0.08487233027893,
+"mult": 100,
+"text": "-0.085%",
+"tol": 0.0005
+},
+{
+"id": "R03359:n:646",
+"kind": "row",
+"row_id": "R03359",
+"field": "n",
+"num": 1237.0,
+"mult": 1,
+"text": "1,237",
+"tol": 0.5
+},
+{
+"id": "R03360:FCR092:647",
+"kind": "row",
+"row_id": "R03360",
+"field": "FCR092",
+"num": 3.09959534573609,
+"mult": 100,
+"text": "3%",
+"tol": 0.5
+},
+{
+"id": "R03360:net:648",
+"kind": "row",
+"row_id": "R03360",
+"field": "net",
+"num": -0.08914837228192,
+"mult": 100,
+"text": "-0.089%",
+"tol": 0.0005
+},
+{
+"id": "R03360:n:649",
+"kind": "row",
+"row_id": "R03360",
+"field": "n",
+"num": 869.0,
+"mult": 1,
+"text": "869",
+"tol": 0.5
+},
+{
+"id": "R03384:auc:650",
+"kind": "row",
+"row_id": "R03384",
+"field": "auc",
+"num": 0.5528270047214241,
+"mult": 1,
+"text": "0.553",
+"tol": 0.0005
+},
+{
+"id": "R03384:auc_lo:651",
+"kind": "row",
+"row_id": "R03384",
+"field": "auc_lo",
+"num": 0.5198606375438695,
+"mult": 1,
+"text": "0.520",
+"tol": 0.0005
+},
+{
+"id": "R03371:auc:652",
+"kind": "row",
+"row_id": "R03371",
+"field": "auc",
+"num": 0.5444928782047087,
+"mult": 1,
+"text": "0.544",
+"tol": 0.0005
+},
+{
+"id": "R03371:auc_lo:653",
+"kind": "row",
+"row_id": "R03371",
+"field": "auc_lo",
+"num": 0.5178170099029382,
+"mult": 1,
+"text": "0.518",
+"tol": 0.0005
+},
+{
+"id": "R03383:auc:654",
+"kind": "row",
+"row_id": "R03383",
+"field": "auc",
+"num": 0.5311673973868574,
+"mult": 1,
+"text": "0.531",
+"tol": 0.0005
+},
+{
+"id": "R03383:auc_lo:655",
+"kind": "row",
+"row_id": "R03383",
+"field": "auc_lo",
+"num": 0.5066704082798483,
+"mult": 1,
+"text": "0.507",
+"tol": 0.0005
+},
+{
+"id": "R03370:auc:656",
+"kind": "row",
+"row_id": "R03370",
+"field": "auc",
+"num": 0.5338772960180211,
+"mult": 1,
+"text": "0.534",
+"tol": 0.0005
+},
+{
+"id": "R03370:auc_lo:657",
+"kind": "row",
+"row_id": "R03370",
+"field": "auc_lo",
+"num": 0.5053859151533111,
+"mult": 1,
+"text": "0.505",
+"tol": 0.0005
+},
+{
+"id": "phys:1s-1m:E|r| at horizon 1m",
+"kind": "phys",
+"tf": "1s-1m",
+"measure": "E|r| at horizon 1m",
+"num": 0.04056369433134,
+"mult": 100,
+"text": "0.041%",
+"tol": 0.051
+},
+{
+"id": "phys:1s-1m:p* futures taker at horizon 1m",
+"kind": "phys",
+"tf": "1s-1m",
+"measure": "p* futures taker at horizon 1m",
+"num": 163.4018997979914,
+"mult": 100,
+"text": "163.4%",
+"tol": 0.051
+},
+{
+"id": "phys:1s-1m:p* maker at horizon 1m",
+"kind": "phys",
+"tf": "1s-1m",
+"measure": "p* maker at horizon 1m",
+"num": 119.0272433552991,
+"mult": 100,
+"text": "119.0%",
+"tol": 0.051
+},
+{
+"id": "phys:1s-1m:variance ratio sec q=20 (rule follow)",
+"kind": "phys",
+"tf": "1s-1m",
+"measure": "variance ratio sec q=20 (rule follow)",
+"num": 1.3273766811047456,
+"mult": 1,
+"text": "1.33",
+"tol": 0.0051
+},
+{
+"id": "phys:5m:E|r| at horizon 5m",
+"kind": "phys",
+"tf": "5m",
+"measure": "E|r| at horizon 5m",
+"num": 0.11573059505061001,
+"mult": 100,
+"text": "0.116%",
+"tol": 0.051
+},
+{
+"id": "phys:5m:p* futures taker at horizon 5m",
+"kind": "phys",
+"tf": "5m",
+"measure": "p* futures taker at horizon 5m",
+"num": 89.74748421528464,
+"mult": 100,
+"text": "89.7%",
+"tol": 0.051
+},
+{
+"id": "phys:5m:p* maker at horizon 5m",
+"kind": "phys",
+"tf": "5m",
+"measure": "p* maker at horizon 5m",
+"num": 74.194120826695,
+"mult": 100,
+"text": "74.2%",
+"tol": 0.051
+},
+{
+"id": "phys:5m:random entry net per trade (10 coins, taker)",
+"kind": "phys",
+"tf": "5m",
+"measure": "random entry net per trade (10 coins, taker)",
+"num": -0.07962577032249,
+"mult": 100,
+"text": "-0.080%",
+"tol": 0.051
+},
+{
+"id": "phys:5m:P(green|green) Jan 2026",
+"kind": "phys",
+"tf": "5m",
+"measure": "P(green|green) Jan 2026",
+"num": 48.87678692988427,
+"mult": 100,
+"text": "48.9%",
+"tol": 0.051
+},
+{
+"id": "phys:5m:variance ratio min q=5 (rule follow)",
+"kind": "phys",
+"tf": "5m",
+"measure": "variance ratio min q=5 (rule follow)",
+"num": 0.9447411808348822,
+"mult": 1,
+"text": "0.94",
+"tol": 0.0051
+},
+{
+"id": "phys:5m:follow confirmed Rally: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "5m",
+"measure": "follow confirmed Rally: mean realized ATR (before cost)",
+"num": 0.027,
+"mult": 1,
+"text": "+0.03",
+"tol": 0.0051
+},
+{
+"id": "phys:5m:follow confirmed Decline: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "5m",
+"measure": "follow confirmed Decline: mean realized ATR (before cost)",
+"num": 0.0,
+"mult": 1,
+"text": "+0.00",
+"tol": 0.0051
+},
+{
+"id": "phys:15m:E|r| at horizon 15m",
+"kind": "phys",
+"tf": "15m",
+"measure": "E|r| at horizon 15m",
+"num": 0.19815340406454,
+"mult": 100,
+"text": "0.198%",
+"tol": 0.051
+},
+{
+"id": "phys:15m:p* futures taker at horizon 15m",
+"kind": "phys",
+"tf": "15m",
+"measure": "p* futures taker at horizon 15m",
+"num": 73.21433750641786,
+"mult": 100,
+"text": "73.2%",
+"tol": 0.051
+},
+{
+"id": "phys:15m:p* maker at horizon 15m",
+"kind": "phys",
+"tf": "15m",
+"measure": "p* maker at horizon 15m",
+"num": 64.13046630825436,
+"mult": 100,
+"text": "64.1%",
+"tol": 0.051
+},
+{
+"id": "phys:15m:random entry net per trade (10 coins, taker)",
+"kind": "phys",
+"tf": "15m",
+"measure": "random entry net per trade (10 coins, taker)",
+"num": -0.07950686390690999,
+"mult": 100,
+"text": "-0.080%",
+"tol": 0.051
+},
+{
+"id": "phys:15m:P(green|green) Jan 2026",
+"kind": "phys",
+"tf": "15m",
+"measure": "P(green|green) Jan 2026",
+"num": 46.00682593856655,
+"mult": 100,
+"text": "46.0%",
+"tol": 0.051
+},
+{
+"id": "phys:15m:variance ratio min q=15 (rule follow)",
+"kind": "phys",
+"tf": "15m",
+"measure": "variance ratio min q=15 (rule follow)",
+"num": 0.9459368472411857,
+"mult": 1,
+"text": "0.95",
+"tol": 0.0051
+},
+{
+"id": "phys:15m:follow confirmed Rally: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "15m",
+"measure": "follow confirmed Rally: mean realized ATR (before cost)",
+"num": 0.101,
+"mult": 1,
+"text": "+0.10",
+"tol": 0.0051
+},
+{
+"id": "phys:15m:follow confirmed Decline: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "15m",
+"measure": "follow confirmed Decline: mean realized ATR (before cost)",
+"num": 0.051,
+"mult": 1,
+"text": "+0.05",
+"tol": 0.0051
+},
+{
+"id": "phys:30m:E|r| at horizon 30m",
+"kind": "phys",
+"tf": "30m",
+"measure": "E|r| at horizon 30m",
+"num": 0.27597357095302,
+"mult": 100,
+"text": "0.276%",
+"tol": 0.051
+},
+{
+"id": "phys:30m:p* futures taker at horizon 30m",
+"kind": "phys",
+"tf": "30m",
+"measure": "p* futures taker at horizon 30m",
+"num": 66.66826277644866,
+"mult": 100,
+"text": "66.7%",
+"tol": 0.051
+},
+{
+"id": "phys:30m:p* maker at horizon 30m",
+"kind": "phys",
+"tf": "30m",
+"measure": "p* maker at horizon 30m",
+"num": 60.14589908131658,
+"mult": 100,
+"text": "60.1%",
+"tol": 0.051
+},
+{
+"id": "phys:30m:P(green|green) Jan 2026",
+"kind": "phys",
+"tf": "30m",
+"measure": "P(green|green) Jan 2026",
+"num": 47.32620320855615,
+"mult": 100,
+"text": "47.3%",
+"tol": 0.051
+},
+{
+"id": "phys:30m:variance ratio min q=30 (rule follow)",
+"kind": "phys",
+"tf": "30m",
+"measure": "variance ratio min q=30 (rule follow)",
+"num": 0.8945241685743845,
+"mult": 1,
+"text": "0.89",
+"tol": 0.0051
+},
+{
+"id": "phys:30m:follow confirmed Rally: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "30m",
+"measure": "follow confirmed Rally: mean realized ATR (before cost)",
+"num": 0.181,
+"mult": 1,
+"text": "+0.18",
+"tol": 0.0051
+},
+{
+"id": "phys:30m:follow confirmed Decline: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "30m",
+"measure": "follow confirmed Decline: mean realized ATR (before cost)",
+"num": 0.082,
+"mult": 1,
+"text": "+0.08",
+"tol": 0.0051
+},
+{
+"id": "phys:1h:E|r| at horizon 1h",
+"kind": "phys",
+"tf": "1h",
+"measure": "E|r| at horizon 1h",
+"num": 0.39118897014248,
+"mult": 100,
+"text": "0.391%",
+"tol": 0.051
+},
+{
+"id": "phys:1h:p* futures taker at horizon 1h",
+"kind": "phys",
+"tf": "1h",
+"measure": "p* futures taker at horizon 1h",
+"num": 61.759022751394454,
+"mult": 100,
+"text": "61.8%",
+"tol": 0.051
+},
+{
+"id": "phys:1h:p* maker at horizon 1h",
+"kind": "phys",
+"tf": "1h",
+"measure": "p* maker at horizon 1h",
+"num": 57.157666022587925,
+"mult": 100,
+"text": "57.2%",
+"tol": 0.051
+},
+{
+"id": "phys:1h:random entry net per trade (10 coins, taker)",
+"kind": "phys",
+"tf": "1h",
+"measure": "random entry net per trade (10 coins, taker)",
+"num": -0.07832603038304,
+"mult": 100,
+"text": "-0.078%",
+"tol": 0.051
+},
+{
+"id": "phys:1h:P(green|green) Jan 2026",
+"kind": "phys",
+"tf": "1h",
+"measure": "P(green|green) Jan 2026",
+"num": 47.07520891364902,
+"mult": 100,
+"text": "47.1%",
+"tol": 0.051
+},
+{
+"id": "phys:1h:variance ratio min q=60 (rule follow)",
+"kind": "phys",
+"tf": "1h",
+"measure": "variance ratio min q=60 (rule follow)",
+"num": 0.8398331622648207,
+"mult": 1,
+"text": "0.84",
+"tol": 0.0051
+},
+{
+"id": "phys:1h:follow confirmed Rally: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "1h",
+"measure": "follow confirmed Rally: mean realized ATR (before cost)",
+"num": 0.286,
+"mult": 1,
+"text": "+0.29",
+"tol": 0.0051
+},
+{
+"id": "phys:1h:follow confirmed Decline: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "1h",
+"measure": "follow confirmed Decline: mean realized ATR (before cost)",
+"num": 0.11,
+"mult": 1,
+"text": "+0.11",
+"tol": 0.0051
+},
+{
+"id": "phys:4h:E|r| at horizon 4h",
+"kind": "phys",
+"tf": "4h",
+"measure": "E|r| at horizon 4h",
+"num": 0.80501607415351,
+"mult": 100,
+"text": "0.805%",
+"tol": 0.051
+},
+{
+"id": "phys:4h:p* futures taker at horizon 4h",
+"kind": "phys",
+"tf": "4h",
+"measure": "p* futures taker at horizon 4h",
+"num": 55.714171614320826,
+"mult": 100,
+"text": "55.7%",
+"tol": 0.051
+},
+{
+"id": "phys:4h:p* maker at horizon 4h",
+"kind": "phys",
+"tf": "4h",
+"measure": "p* maker at horizon 4h",
+"num": 53.47819141741268,
+"mult": 100,
+"text": "53.5%",
+"tol": 0.051
+},
+{
+"id": "phys:4h:random entry net per trade (10 coins, taker)",
+"kind": "phys",
+"tf": "4h",
+"measure": "random entry net per trade (10 coins, taker)",
+"num": -0.08467016428815001,
+"mult": 100,
+"text": "-0.085%",
+"tol": 0.051
+},
+{
+"id": "phys:4h:P(green|green) Jan 2026",
+"kind": "phys",
+"tf": "4h",
+"measure": "P(green|green) Jan 2026",
+"num": 45.16129032258064,
+"mult": 100,
+"text": "45.2%",
+"tol": 0.051
+},
+{
+"id": "phys:4h:variance ratio min q=240 (rule follow)",
+"kind": "phys",
+"tf": "4h",
+"measure": "variance ratio min q=240 (rule follow)",
+"num": 0.7980345815464829,
+"mult": 1,
+"text": "0.80",
+"tol": 0.0051
+},
+{
+"id": "phys:4h:follow confirmed Rally: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "4h",
+"measure": "follow confirmed Rally: mean realized ATR (before cost)",
+"num": 0.694,
+"mult": 1,
+"text": "+0.69",
+"tol": 0.0051
+},
+{
+"id": "phys:4h:follow confirmed Decline: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "4h",
+"measure": "follow confirmed Decline: mean realized ATR (before cost)",
+"num": 0.156,
+"mult": 1,
+"text": "+0.16",
+"tol": 0.0051
+},
+{
+"id": "phys:8h:variance ratio min q=480 (rule follow)",
+"kind": "phys",
+"tf": "8h",
+"measure": "variance ratio min q=480 (rule follow)",
+"num": 0.802149355369886,
+"mult": 1,
+"text": "0.80",
+"tol": 0.0051
+},
+{
+"id": "phys:8h:follow confirmed Rally: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "8h",
+"measure": "follow confirmed Rally: mean realized ATR (before cost)",
+"num": 1.049,
+"mult": 1,
+"text": "+1.05",
+"tol": 0.0051
+},
+{
+"id": "phys:8h:follow confirmed Decline: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "8h",
+"measure": "follow confirmed Decline: mean realized ATR (before cost)",
+"num": 0.18,
+"mult": 1,
+"text": "+0.18",
+"tol": 0.0051
+},
+{
+"id": "phys:12h:follow confirmed Rally: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "12h",
+"measure": "follow confirmed Rally: mean realized ATR (before cost)",
+"num": 1.342,
+"mult": 1,
+"text": "+1.34",
+"tol": 0.0051
+},
+{
+"id": "phys:12h:follow confirmed Decline: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "12h",
+"measure": "follow confirmed Decline: mean realized ATR (before cost)",
+"num": 0.166,
+"mult": 1,
+"text": "+0.17",
+"tol": 0.0051
+},
+{
+"id": "phys:1d:E|r| at horizon 1d",
+"kind": "phys",
+"tf": "1d",
+"measure": "E|r| at horizon 1d",
+"num": 2.1167693895532502,
+"mult": 100,
+"text": "2.117%",
+"tol": 0.051
+},
+{
+"id": "phys:1d:p* futures taker at horizon 1d",
+"kind": "phys",
+"tf": "1d",
+"measure": "p* futures taker at horizon 1d",
+"num": 52.1731228837218,
+"mult": 100,
+"text": "52.2%",
+"tol": 0.051
+},
+{
+"id": "phys:1d:p* maker at horizon 1d",
+"kind": "phys",
+"tf": "1d",
+"measure": "p* maker at horizon 1d",
+"num": 51.322770450961094,
+"mult": 100,
+"text": "51.3%",
+"tol": 0.051
+},
+{
+"id": "phys:1d:random entry net per trade (10 coins, taker)",
+"kind": "phys",
+"tf": "1d",
+"measure": "random entry net per trade (10 coins, taker)",
+"num": -0.09141842702519,
+"mult": 100,
+"text": "-0.091%",
+"tol": 0.051
+},
+{
+"id": "phys:1d:P(green|green) Jan 2026",
+"kind": "phys",
+"tf": "1d",
+"measure": "P(green|green) Jan 2026",
+"num": 73.33333333333333,
+"mult": 100,
+"text": "73.3%",
+"tol": 0.051
+},
+{
+"id": "phys:1d:variance ratio min q=1440 (rule follow)",
+"kind": "phys",
+"tf": "1d",
+"measure": "variance ratio min q=1440 (rule follow)",
+"num": 1.0360311132408695,
+"mult": 1,
+"text": "1.04",
+"tol": 0.0051
+},
+{
+"id": "phys:1d:follow confirmed Rally: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "1d",
+"measure": "follow confirmed Rally: mean realized ATR (before cost)",
+"num": 1.813,
+"mult": 1,
+"text": "+1.81",
+"tol": 0.0051
+},
+{
+"id": "phys:1d:follow confirmed Decline: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "1d",
+"measure": "follow confirmed Decline: mean realized ATR (before cost)",
+"num": 0.037,
+"mult": 1,
+"text": "+0.04",
+"tol": 0.0051
+},
+{
+"id": "phys:3d:E|r| at horizon 3d",
+"kind": "phys",
+"tf": "3d",
+"measure": "E|r| at horizon 3d",
+"num": 3.8551571361572905,
+"mult": 100,
+"text": "3.855%",
+"tol": 0.051
+},
+{
+"id": "phys:3d:p* futures taker at horizon 3d",
+"kind": "phys",
+"tf": "3d",
+"measure": "p* futures taker at horizon 3d",
+"num": 51.19320687524171,
+"mult": 100,
+"text": "51.2%",
+"tol": 0.051
+},
+{
+"id": "phys:3d:p* maker at horizon 3d",
+"kind": "phys",
+"tf": "3d",
+"measure": "p* maker at horizon 3d",
+"num": 50.72629983710365,
+"mult": 100,
+"text": "50.7%",
+"tol": 0.051
+},
+{
+"id": "phys:1w:E|r| at horizon 7d",
+"kind": "phys",
+"tf": "1w",
+"measure": "E|r| at horizon 7d",
+"num": 6.1765077219110704,
+"mult": 100,
+"text": "6.177%",
+"tol": 0.051
+},
+{
+"id": "phys:1w:p* futures taker at horizon 7d",
+"kind": "phys",
+"tf": "1w",
+"measure": "p* futures taker at horizon 7d",
+"num": 50.74475742719168,
+"mult": 100,
+"text": "50.7%",
+"tol": 0.051
+},
+{
+"id": "phys:1w:p* maker at horizon 7d",
+"kind": "phys",
+"tf": "1w",
+"measure": "p* maker at horizon 7d",
+"num": 50.453330607855804,
+"mult": 100,
+"text": "50.5%",
+"tol": 0.051
+},
+{
+"id": "phys:1w:follow confirmed Rally: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "1w",
+"measure": "follow confirmed Rally: mean realized ATR (before cost)",
+"num": 3.149,
+"mult": 1,
+"text": "+3.15",
+"tol": 0.0051
+},
+{
+"id": "phys:1w:follow confirmed Decline: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "1w",
+"measure": "follow confirmed Decline: mean realized ATR (before cost)",
+"num": -1.142,
+"mult": 1,
+"text": "-1.14",
+"tol": 0.0051
+},
+{
+"id": "phys:1M:E|r| at horizon 28d",
+"kind": "phys",
+"tf": "1M",
+"measure": "E|r| at horizon 28d",
+"num": 13.462881155725759,
+"mult": 100,
+"text": "13.463%",
+"tol": 0.051
+},
+{
+"id": "phys:1M:p* futures taker at horizon 28d",
+"kind": "phys",
+"tf": "1M",
+"measure": "p* futures taker at horizon 28d",
+"num": 50.341680205506655,
+"mult": 100,
+"text": "50.3%",
+"tol": 0.051
+},
+{
+"id": "phys:1M:p* maker at horizon 28d",
+"kind": "phys",
+"tf": "1M",
+"measure": "p* maker at horizon 28d",
+"num": 50.20797925552579,
+"mult": 100,
+"text": "50.2%",
+"tol": 0.051
+},
+{
+"id": "phys:1M:follow confirmed Rally: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "1M",
+"measure": "follow confirmed Rally: mean realized ATR (before cost)",
+"num": 5.085,
+"mult": 1,
+"text": "+5.08",
+"tol": 0.0051
+},
+{
+"id": "phys:1M:follow confirmed Decline: mean realized ATR (before cost)",
+"kind": "phys",
+"tf": "1M",
+"measure": "follow confirmed Decline: mean realized ATR (before cost)",
+"num": -3.546,
+"mult": 1,
+"text": "-3.55",
+"tol": 0.0051
+},
+{
+"id": "chance:micro_momentum_2026:1s-1m:share_oos_net_pos",
+"kind": "chance",
+"study": "micro_momentum_2026",
+"tf": "1s-1m",
+"field": "share_oos_net_pos",
+"num": 0.0,
+"mult": 100,
+"text": "0%",
+"tol": 0.5
+},
+{
+"id": "chance:micro_momentum_2026:1s-1m:share_oos_gross_pos",
+"kind": "chance",
+"study": "micro_momentum_2026",
+"tf": "1s-1m",
+"field": "share_oos_gross_pos",
+"num": 35.0,
+"mult": 100,
+"text": "35%",
+"tol": 0.5
+},
+{
+"id": "chance:micro_momentum_2026:1s-1m:best_FCR092",
+"kind": "chance",
+"study": "micro_momentum_2026",
+"tf": "1s-1m",
+"field": "best_FCR092",
+"num": 3.87832707057257,
+"mult": 100,
+"text": "4%",
+"tol": 0.5
+},
+{
+"id": "chance:micro_momentum_2026:1s-1m:median_FCR092",
+"kind": "chance",
+"study": "micro_momentum_2026",
+"tf": "1s-1m",
+"field": "median_FCR092",
+"num": -0.83547163361404,
+"mult": 100,
+"text": "-1%",
+"tol": 0.5
+},
+{
+"id": "chance:oracle_9m_2026:15m:share_oos_net_pos",
+"kind": "chance",
+"study": "oracle_9m_2026",
+"tf": "15m",
+"field": "share_oos_net_pos",
+"num": 0.0,
+"mult": 100,
+"text": "0%",
+"tol": 0.5
+},
+{
+"id": "chance:oracle_9m_2026:15m:share_oos_gross_pos",
+"kind": "chance",
+"study": "oracle_9m_2026",
+"tf": "15m",
+"field": "share_oos_gross_pos",
+"num": 0.0,
+"mult": 100,
+"text": "0%",
+"tol": 0.5
+},
+{
+"id": "chance:oracle_9m_2026:15m:best_FCR092",
+"kind": "chance",
+"study": "oracle_9m_2026",
+"tf": "15m",
+"field": "best_FCR092",
+"num": -27.03304366309527,
+"mult": 100,
+"text": "-27%",
+"tol": 0.5
+},
+{
+"id": "chance:oracle_9m_2026:15m:median_FCR092",
+"kind": "chance",
+"study": "oracle_9m_2026",
+"tf": "15m",
+"field": "median_FCR092",
+"num": -52.844253109409266,
+"mult": 100,
+"text": "-53%",
+"tol": 0.5
+},
+{
+"id": "chance:r2_4h_a1:4h:share_oos_net_pos",
+"kind": "chance",
+"study": "r2_4h_a1",
+"tf": "4h",
+"field": "share_oos_net_pos",
+"num": 100.0,
+"mult": 100,
+"text": "100%",
+"tol": 0.5
+},
+{
+"id": "chance:r2_4h_a1:4h:share_oos_gross_pos",
+"kind": "chance",
+"study": "r2_4h_a1",
+"tf": "4h",
+"field": "share_oos_gross_pos",
+"num": 100.0,
+"mult": 100,
+"text": "100%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1d:share_oos_net_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1d",
+"field": "share_oos_net_pos",
+"num": 17.15686274509804,
+"mult": 100,
+"text": "17%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1d:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1d",
+"field": "share_oos_gross_pos",
+"num": 47.54901960784313,
+"mult": 100,
+"text": "48%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1d:best_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1d",
+"field": "best_FCR092",
+"num": 1990.373196644969,
+"mult": 100,
+"text": "1990%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1d:median_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1d",
+"field": "median_FCR092",
+"num": -5.36042918208841,
+"mult": 100,
+"text": "-5%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1h:share_oos_net_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1h",
+"field": "share_oos_net_pos",
+"num": 14.814814814814811,
+"mult": 100,
+"text": "15%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1h:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1h",
+"field": "share_oos_gross_pos",
+"num": 47.22222222222222,
+"mult": 100,
+"text": "47%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1h:best_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1h",
+"field": "best_FCR092",
+"num": 1012.7040717231971,
+"mult": 100,
+"text": "1013%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1h:median_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1h",
+"field": "median_FCR092",
+"num": -2.9806851601621402,
+"mult": 100,
+"text": "-3%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1w:share_oos_net_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1w",
+"field": "share_oos_net_pos",
+"num": 13.88888888888889,
+"mult": 100,
+"text": "14%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1w:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1w",
+"field": "share_oos_gross_pos",
+"num": 45.13888888888889,
+"mult": 100,
+"text": "45%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1w:best_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1w",
+"field": "best_FCR092",
+"num": 1479.443515883012,
+"mult": 100,
+"text": "1479%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:1w:median_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1w",
+"field": "median_FCR092",
+"num": -2.95390561881313,
+"mult": 100,
+"text": "-3%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:30m:share_oos_net_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "30m",
+"field": "share_oos_net_pos",
+"num": 50.0,
+"mult": 100,
+"text": "50%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:30m:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "30m",
+"field": "share_oos_gross_pos",
+"num": 50.0,
+"mult": 100,
+"text": "50%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:30m:best_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "30m",
+"field": "best_FCR092",
+"num": 610.8658464921903,
+"mult": 100,
+"text": "611%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:30m:median_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "30m",
+"field": "median_FCR092",
+"num": 82.4316923007825,
+"mult": 100,
+"text": "82%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:3d:share_oos_net_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "3d",
+"field": "share_oos_net_pos",
+"num": 20.83333333333333,
+"mult": 100,
+"text": "21%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:3d:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "3d",
+"field": "share_oos_gross_pos",
+"num": 48.61111111111111,
+"mult": 100,
+"text": "49%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:3d:best_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "3d",
+"field": "best_FCR092",
+"num": 1119.6800326878251,
+"mult": 100,
+"text": "1120%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:3d:median_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "3d",
+"field": "median_FCR092",
+"num": -2.8438110321553403,
+"mult": 100,
+"text": "-3%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:4h:share_oos_net_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "4h",
+"field": "share_oos_net_pos",
+"num": 15.83333333333333,
+"mult": 100,
+"text": "16%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:4h:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "4h",
+"field": "share_oos_gross_pos",
+"num": 46.666666666666664,
+"mult": 100,
+"text": "47%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:4h:best_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "4h",
+"field": "best_FCR092",
+"num": 1516.2243470079795,
+"mult": 100,
+"text": "1516%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:4h:median_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "4h",
+"field": "median_FCR092",
+"num": -2.48964370903779,
+"mult": 100,
+"text": "-2%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:5m:share_oos_net_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "5m",
+"field": "share_oos_net_pos",
+"num": 18.75,
+"mult": 100,
+"text": "19%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:5m:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "5m",
+"field": "share_oos_gross_pos",
+"num": 45.83333333333333,
+"mult": 100,
+"text": "46%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:5m:best_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "5m",
+"field": "best_FCR092",
+"num": 735.3560617494436,
+"mult": 100,
+"text": "735%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:5m:median_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "5m",
+"field": "median_FCR092",
+"num": -2.7912406464462602,
+"mult": 100,
+"text": "-3%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:8h:share_oos_net_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "8h",
+"field": "share_oos_net_pos",
+"num": 20.83333333333333,
+"mult": 100,
+"text": "21%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:8h:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "8h",
+"field": "share_oos_gross_pos",
+"num": 50.0,
+"mult": 100,
+"text": "50%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:8h:best_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "8h",
+"field": "best_FCR092",
+"num": 786.5008101898454,
+"mult": 100,
+"text": "787%",
+"tol": 0.5
+},
+{
+"id": "chance:research_btc_entry:8h:median_FCR092",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "8h",
+"field": "median_FCR092",
+"num": -3.5366674866477155e-14,
+"mult": 100,
+"text": "-0%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:15m:share_oos_net_pos",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "15m",
+"field": "share_oos_net_pos",
+"num": 12.698412698412689,
+"mult": 100,
+"text": "13%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:15m:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "15m",
+"field": "share_oos_gross_pos",
+"num": 49.4047619047619,
+"mult": 100,
+"text": "49%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:15m:best_FCR092",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "15m",
+"field": "best_FCR092",
+"num": 948.4105633179429,
+"mult": 100,
+"text": "948%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:15m:median_FCR092",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "15m",
+"field": "median_FCR092",
+"num": -1.03116836801512,
+"mult": 100,
+"text": "-1%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:1h:share_oos_net_pos",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "1h",
+"field": "share_oos_net_pos",
+"num": 16.86507936507936,
+"mult": 100,
+"text": "17%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:1h:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "1h",
+"field": "share_oos_gross_pos",
+"num": 51.78571428571429,
+"mult": 100,
+"text": "52%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:1h:best_FCR092",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "1h",
+"field": "best_FCR092",
+"num": 604.4987685582577,
+"mult": 100,
+"text": "604%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:1h:median_FCR092",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "1h",
+"field": "median_FCR092",
+"num": 2.01838641587772,
+"mult": 100,
+"text": "2%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:4h:share_oos_net_pos",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "4h",
+"field": "share_oos_net_pos",
+"num": 24.206349206349202,
+"mult": 100,
+"text": "24%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:4h:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "4h",
+"field": "share_oos_gross_pos",
+"num": 49.0079365079365,
+"mult": 100,
+"text": "49%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:4h:best_FCR092",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "4h",
+"field": "best_FCR092",
+"num": 1212.522950554324,
+"mult": 100,
+"text": "1213%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:4h:median_FCR092",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "4h",
+"field": "median_FCR092",
+"num": -1.9076799125195503,
+"mult": 100,
+"text": "-2%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:event:share_oos_net_pos",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "event",
+"field": "share_oos_net_pos",
+"num": 14.814814814814811,
+"mult": 100,
+"text": "15%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:event:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "event",
+"field": "share_oos_gross_pos",
+"num": 40.74074074074074,
+"mult": 100,
+"text": "41%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:event:best_FCR092",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "event",
+"field": "best_FCR092",
+"num": 302.0630948621977,
+"mult": 100,
+"text": "302%",
+"tol": 0.5
+},
+{
+"id": "chance:research_methods_bench:event:median_FCR092",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "event",
+"field": "median_FCR092",
+"num": -7.22750544202856,
+"mult": 100,
+"text": "-7%",
+"tol": 0.5
+},
+{
+"id": "chance:research_nonprice:1h:share_oos_net_pos",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "1h",
+"field": "share_oos_net_pos",
+"num": 0.0,
+"mult": 100,
+"text": "0%",
+"tol": 0.5
+},
+{
+"id": "chance:research_nonprice:1h:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "1h",
+"field": "share_oos_gross_pos",
+"num": 70.45454545454545,
+"mult": 100,
+"text": "70%",
+"tol": 0.5
+},
+{
+"id": "chance:research_nonprice:1h:best_FCR092",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "1h",
+"field": "best_FCR092",
+"num": 36.91072053789003,
+"mult": 100,
+"text": "37%",
+"tol": 0.5
+},
+{
+"id": "chance:research_nonprice:1h:median_FCR092",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "1h",
+"field": "median_FCR092",
+"num": 7.52306918696199,
+"mult": 100,
+"text": "8%",
+"tol": 0.5
+},
+{
+"id": "chance:research_nonprice:4h:share_oos_net_pos",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "4h",
+"field": "share_oos_net_pos",
+"num": 34.14634146341463,
+"mult": 100,
+"text": "34%",
+"tol": 0.5
+},
+{
+"id": "chance:research_nonprice:4h:share_oos_gross_pos",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "4h",
+"field": "share_oos_gross_pos",
+"num": 90.24390243902441,
+"mult": 100,
+"text": "90%",
+"tol": 0.5
+},
+{
+"id": "chance:research_nonprice:4h:best_FCR092",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "4h",
+"field": "best_FCR092",
+"num": 210.05219393628383,
+"mult": 100,
+"text": "210%",
+"tol": 0.5
+},
+{
+"id": "chance:research_nonprice:4h:median_FCR092",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "4h",
+"field": "median_FCR092",
+"num": 55.73962247235686,
+"mult": 100,
+"text": "56%",
+"tol": 0.5
+},
+{
+"id": "n:p1m",
+"kind": "phys",
+"tf": "1s-1m",
+"measure": "p* futures taker at horizon 1m",
+"num": 163.4018997979914,
+"mult": 100,
+"text": "163.4%",
+"tol": 0.05
+},
+{
+"id": "n:p5",
+"kind": "phys",
+"tf": "5m",
+"measure": "p* futures taker at horizon 5m",
+"num": 89.74748421528464,
+"mult": 100,
+"text": "89.7%",
+"tol": 0.05
+},
+{
+"id": "n:p15",
+"kind": "phys",
+"tf": "15m",
+"measure": "p* futures taker at horizon 15m",
+"num": 73.21433750641786,
+"mult": 100,
+"text": "73.2%",
+"tol": 0.05
+},
+{
+"id": "n:p30",
+"kind": "phys",
+"tf": "30m",
+"measure": "p* futures taker at horizon 30m",
+"num": 66.66826277644866,
+"mult": 100,
+"text": "66.7%",
+"tol": 0.05
+},
+{
+"id": "n:p1h",
+"kind": "phys",
+"tf": "1h",
+"measure": "p* futures taker at horizon 1h",
+"num": 61.759022751394454,
+"mult": 100,
+"text": "61.8%",
+"tol": 0.05
+},
+{
+"id": "n:p4h",
+"kind": "phys",
+"tf": "4h",
+"measure": "p* futures taker at horizon 4h",
+"num": 55.714171614320826,
+"mult": 100,
+"text": "55.7%",
+"tol": 0.05
+},
+{
+"id": "n:p1d",
+"kind": "phys",
+"tf": "1d",
+"measure": "p* futures taker at horizon 1d",
+"num": 52.1731228837218,
+"mult": 100,
+"text": "52.2%",
+"tol": 0.05
+},
+{
+"id": "n:p3d",
+"kind": "phys",
+"tf": "3d",
+"measure": "p* futures taker at horizon 3d",
+"num": 51.19320687524171,
+"mult": 100,
+"text": "51.2%",
+"tol": 0.05
+},
+{
+"id": "n:p1w",
+"kind": "phys",
+"tf": "1w",
+"measure": "p* futures taker at horizon 7d",
+"num": 50.74475742719168,
+"mult": 100,
+"text": "50.7%",
+"tol": 0.05
+},
+{
+"id": "n:p1M",
+"kind": "phys",
+"tf": "1M",
+"measure": "p* futures taker at horizon 28d",
+"num": 50.341680205506655,
+"mult": 100,
+"text": "50.3%",
+"tol": 0.05
+},
+{
+"id": "n:er1m",
+"kind": "phys",
+"tf": "1s-1m",
+"measure": "E|r| at horizon 1m",
+"num": 0.04056369433134,
+"mult": 100,
+"text": "0.041%",
+"tol": 0.0005
+},
+{
+"id": "n:vr20",
+"kind": "phys",
+"tf": "1s-1m",
+"measure": "variance ratio sec q=20 (rule follow)",
+"num": 1.3273766811047456,
+"mult": 1,
+"text": "1.33",
+"tol": 0.005
+},
+{
+"id": "n:leg1",
+"kind": "phys",
+"tf": "intraday-turn",
+"measure": "share of leg gone at confirmation (theta 0.01)",
+"num": 57.14819301217784,
+"mult": 100,
+"text": "57%",
+"tol": 0.5
+},
+{
+"id": "n:lag1",
+"kind": "phys",
+"tf": "intraday-turn",
+"measure": "median confirmation lag minutes (theta 0.01)",
+"num": 62.0,
+"mult": 1,
+"text": "62",
+"tol": 0.5
+},
+{
+"id": "n:nrows",
+"kind": "count",
+"query": "",
+"num": 4044.0,
+"text": "4,044",
+"tol": 0
+},
+{
+"id": "n:nE2",
+"kind": "count",
+"query": "tier == 'E2'",
+"num": 505.0,
+"text": "505",
+"tol": 0
+},
+{
+"id": "n:nE3",
+"kind": "count",
+"query": "tier == 'E3'",
+"num": 136.0,
+"text": "136",
+"tol": 0
+},
+{
+"id": "n:nE4",
+"kind": "count",
+"query": "tier == 'E4'",
+"num": 538.0,
+"text": "538",
+"tol": 0
+},
+{
+"id": "n:nE5",
+"kind": "count",
+"query": "tier == 'E5'",
+"num": 2865.0,
+"text": "2,865",
+"tol": 0
+},
+{
+"id": "n:g15",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "15m",
+"field": "share_oos_gross_pos",
+"num": 49.4047619047619,
+"mult": 100,
+"text": "49%",
+"tol": 0.5
+},
+{
+"id": "n:g1w",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "1w",
+"field": "share_oos_gross_pos",
+"num": 45.13888888888889,
+"mult": 100,
+"text": "45%",
+"tol": 0.5
+},
+{
+"id": "n:g3d",
+"kind": "chance",
+"study": "research_btc_entry",
+"tf": "3d",
+"field": "share_oos_gross_pos",
+"num": 48.61111111111111,
+"mult": 100,
+"text": "49%",
+"tol": 0.5
+},
+{
+"id": "n:gev",
+"kind": "chance",
+"study": "research_methods_bench",
+"tf": "event",
+"field": "share_oos_gross_pos",
+"num": 40.74074074074074,
+"mult": 100,
+"text": "41%",
+"tol": 0.5
+},
+{
+"id": "n:np4pos",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "4h",
+"field": "share_oos_gross_pos",
+"num": 90.24390243902441,
+"mult": 100,
+"text": "90%",
+"tol": 0.5
+},
+{
+"id": "n:np1pos",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "1h",
+"field": "share_oos_gross_pos",
+"num": 70.45454545454545,
+"mult": 100,
+"text": "70%",
+"tol": 0.5
+},
+{
+"id": "n:np4med",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "4h",
+"field": "median_FCR092",
+"num": 55.73962247235686,
+"mult": 100,
+"text": "56%",
+"tol": 0.5
+},
+{
+"id": "n:np1med",
+"kind": "chance",
+"study": "research_nonprice",
+"tf": "1h",
+"field": "median_FCR092",
+"num": 7.52306918696199,
+"mult": 100,
+"text": "8%",
+"tol": 0.5
+},
+{
+"id": "n:micropos",
+"kind": "chance",
+"study": "micro_momentum_2026",
+"tf": "1s-1m",
+"field": "share_oos_gross_pos",
+"num": 35.0,
+"mult": 100,
+"text": "35%",
+"tol": 0.5
+},
+{
+"id": "n:r24auc",
+"row_id": "R03982",
+"num": 0.5653437356625074,
+"mult": 1,
+"text": "0.565",
+"tol": 0.0005,
+"kind": "row",
+"field": "auc"
+},
+{
+"id": "n:r24cagr",
+"row_id": "R03983",
+"num": 68.69,
+"mult": 100,
+"text": "+68.7%",
+"tol": 0.05,
+"kind": "row",
+"field": "net"
+},
+{
+"id": "n:r24pre",
+"row_id": "R03983",
+"num": -48.28,
+"mult": 100,
+"text": "-48.3%",
+"tol": 0.05,
+"kind": "rowx",
+"idx": 0
+},
+{
+"id": "n:r6auc",
+"row_id": "R03980",
+"num": 0.5675812046932834,
+"mult": 1,
+"text": "0.568",
+"tol": 0.0005,
+"kind": "row",
+"field": "auc"
+},
+{
+"id": "n:r6cagr",
+"row_id": "R03981",
+"num": 48.97999999999999,
+"mult": 100,
+"text": "+49.0%",
+"tol": 0.05,
+"kind": "row",
+"field": "net"
+},
+{
+"id": "n:r6pre",
+"row_id": "R03981",
+"num": -50.75999999999999,
+"mult": 100,
+"text": "-50.8%",
+"tol": 0.05,
+"kind": "rowx",
+"idx": 0
+},
+{
+"id": "n:r5auc",
+"row_id": "R03972",
+"num": 0.5592983001107646,
+"mult": 1,
+"text": "0.559",
+"tol": 0.0005,
+"kind": "row",
+"field": "auc"
+},
+{
+"id": "n:r5cagr",
+"row_id": "R03973",
+"num": 38.629999999999995,
+"mult": 100,
+"text": "+38.6%",
+"tol": 0.05,
+"kind": "row",
+"field": "net"
+},
+{
+"id": "n:r5pre",
+"row_id": "R03973",
+"num": -31.06,
+"mult": 100,
+"text": "-31.1%",
+"tol": 0.05,
+"kind": "rowx",
+"idx": 0
+},
+{
+"id": "n:n1pre",
+"row_id": "R04021",
+"num": 10.47293016377428,
+"mult": 100,
+"text": "+10.5%",
+"tol": 0.05,
+"kind": "row",
+"field": "net"
+},
+{
+"id": "n:n1p3",
+"row_id": "R04021",
+"num": -0.3931833689341285,
+"mult": 1,
+"text": "-0.39",
+"tol": 0.005,
+"kind": "rowx",
+"idx": 0
+},
+{
+"id": "n:n1dev",
+"row_id": "R04021",
+"num": 93.25705080681765,
+"mult": 100,
+"text": "+93.3%",
+"tol": 0.05,
+"kind": "row",
+"field": "net_sel"
+},
+{
+"id": "n:f7cal",
+"row_id": "R03996",
+"num": 2.159,
+"mult": 1,
+"text": "2.16",
+"tol": 0.005,
+"kind": "row",
+"field": "calmar"
+},
+{
+"id": "n:f7dd",
+"row_id": "R03996",
+"num": 21.37,
+"mult": 100,
+"text": "21%",
+"tol": 0.5,
+"kind": "row",
+"field": "maxdd"
+},
+{
+"id": "n:f7pre",
+"row_id": "R03996",
+"num": 2.61,
+"mult": 100,
+"text": "+2.6%",
+"tol": 0.05,
+"kind": "rowx",
+"idx": 0
+},
+{
+"id": "n:f7p3",
+"row_id": "R03996",
+"num": 14.985460523281935,
+"mult": 100,
+"text": "+15.0%",
+"tol": 0.05,
+"kind": "rowx",
+"idx": 1
+},
+{
+"id": "n:f7d",
+"row_id": "R03996",
+"num": 0.4469999999999998,
+"mult": 1,
+"text": "+0.45",
+"tol": 0.005,
+"kind": "row",
+"field": "net"
+},
+{
+"id": "n:eco1dp3",
+"row_id": "R04029",
+"num": 14.99645834559773,
+"mult": 100,
+"text": "+15.0%",
+"tol": 0.05,
+"kind": "row",
+"field": "net"
+},
+{
+"id": "n:eco1ddev",
+"row_id": "R04029",
+"num": 53.732997332309026,
+"mult": 100,
+"text": "+53.7%",
+"tol": 0.05,
+"kind": "row",
+"field": "net_sel"
+},
+{
+"id": "n:ecop3",
+"row_id": "R04028",
+"num": -0.31713748256277,
+"mult": 100,
+"text": "-0.3%",
+"tol": 0.05,
+"kind": "row",
+"field": "net"
+},
+{
+"id": "n:ecodev",
+"row_id": "R04028",
+"num": 65.8808988861654,
+"mult": 100,
+"text": "+65.9%",
+"tol": 0.05,
+"kind": "row",
+"field": "net_sel"
+},
+{
+"id": "n:n1ecop3",
+"row_id": "R04030",
+"num": -12.51524731601537,
+"mult": 100,
+"text": "-12.5%",
+"tol": 0.05,
+"kind": "row",
+"field": "net"
+},
+{
+"id": "n:b1auc",
+"row_id": "R03965",
+"num": 0.529879461850696,
+"mult": 1,
+"text": "0.530",
+"tol": 0.0005,
+"kind": "row",
+"field": "auc"
+},
+{
+"id": "n:pre5auc",
+"row_id": "R03979",
+"num": 0.5262916453198146,
+"mult": 1,
+"text": "0.526",
+"tol": 0.0005,
+"kind": "row",
+"field": "auc"
+},
+{
+"id": "n:exitauc",
+"row_id": "R03987",
+"num": 0.6723919259654103,
+"mult": 1,
+"text": "0.672",
+"tol": 0.0005,
+"kind": "row",
+"field": "auc"
+},
+{
+"id": "n:mkt",
+"row_id": "R03970",
+"num": 0.4940773333400114,
+"mult": 1,
+"text": "0.494",
+"tol": 0.0005,
+"kind": "row",
+"field": "auc_lo"
+},
+{
+"id": "n:ema1dmean",
+"row_id": "R00099",
+"num": 99.05301876725372,
+"mult": 100,
+"text": "+99.1%",
+"tol": 0.05,
+"kind": "row",
+"field": "gross"
+},
+{
+"id": "n:ema1dmed",
+"row_id": "R00099",
+"num": -6.48440238345601,
+"mult": 100,
+"text": "-6.5%",
+"tol": 0.05,
+"kind": "row",
+"field": "gmed"
+},
+{
+"id": "n:ema1dp3",
+"row_id": "R00099",
+"num": -9.449868592796511,
+"mult": 100,
+"text": "-9.4%",
+"tol": 0.05,
+"kind": "rowx",
+"idx": 0
+},
+{
+"id": "n:ema8med",
+"row_id": "R00075",
+"num": -3.55403279482059,
+"mult": 100,
+"text": "-3.6%",
+"tol": 0.05,
+"kind": "row",
+"field": "gmed"
+},
+{
+"id": "n:rsi8med",
+"row_id": "R00081",
+"num": 3.44747801943545,
+"mult": 100,
+"text": "+3.4%",
+"tol": 0.05,
+"kind": "row",
+"field": "gmed"
+},
+{
+"id": "n:rsi12med",
+"row_id": "R00093",
+"num": 4.80044655316773,
+"mult": 100,
+"text": "+4.8%",
+"tol": 0.05,
+"kind": "row",
+"field": "gmed"
+},
+{
+"id": "n:rsi1dmed",
+"row_id": "R00105",
+"num": 9.40594059405939,
+"mult": 100,
+"text": "+9.4%",
+"tol": 0.05,
+"kind": "row",
+"field": "gmed"
+},
+{
+"id": "n:rsi1dp3",
+"row_id": "R00105",
+"num": -5.728903327031357,
+"mult": 100,
+"text": "-5.7%",
+"tol": 0.05,
+"kind": "rowx",
+"idx": 0
+},
+{
+"id": "n:rsi8altp3",
+"row_id": "R00186",
+"num": 0.7729057339089703,
+"mult": 100,
+"text": "+0.8%",
+"tol": 0.05,
+"kind": "rowx",
+"idx": 0
+},
+{
+"id": "n:rsi12altp3",
+"row_id": "R00198",
+"num": 0.21552329009432736,
+"mult": 100,
+"text": "+0.2%",
+"tol": 0.05,
+"kind": "rowx",
+"idx": 0
+},
+{
+"id": "n:bf1m",
+"row_id": "R03078",
+"num": 24.33304431827228,
+"mult": 100,
+"text": "24%",
+"tol": 0.5,
+"kind": "row",
+"field": "FCR092"
+},
+{
+"id": "n:mom5",
+"row_id": "R03792",
+"num": 47.162148430681725,
+"mult": 100,
+"text": "47.2%",
+"tol": 0.05,
+"kind": "row",
+"field": "hit"
+},
+{
+"id": "n:rev5",
+"row_id": "R03793",
+"num": 48.87753089724239,
+"mult": 100,
+"text": "48.9%",
+"tol": 0.05,
+"kind": "row",
+"field": "hit"
+},
+{
+"id": "n:db5",
+"row_id": "R03843",
+"num": 55.72393938182254,
+"mult": 100,
+"text": "55.7%",
+"tol": 0.05,
+"kind": "row",
+"field": "hit"
+},
+{
+"id": "n:db5b",
+"row_id": "R03843",
+"num": 46.92052495240788,
+"mult": 100,
+"text": "46.9%",
+"tol": 0.05,
+"kind": "row",
+"field": "p_star"
+},
+{
+"id": "n:dt1d",
+"row_id": "R03850",
+"num": 63.793103448275865,
+"mult": 100,
+"text": "63.8%",
+"tol": 0.05,
+"kind": "row",
+"field": "hit"
+},
+{
+"id": "n:dt1db",
+"row_id": "R03850",
+"num": 44.95867768595041,
+"mult": 100,
+"text": "45.0%",
+"tol": 0.05,
+"kind": "row",
+"field": "p_star"
+},
+{
+"id": "n:sr5",
+"row_id": "R03863",
+"num": 46.72,
+"mult": 100,
+"text": "46.7%",
+"tol": 0.05,
+"kind": "row",
+"field": "hit"
+},
+{
+"id": "n:sr5b",
+"row_id": "R03863",
+"num": 48.36,
+"mult": 100,
+"text": "48.4%",
+"tol": 0.05,
+"kind": "row",
+"field": "p_star"
+},
+{
+"id": "n:h2c",
+"row_id": "R02863",
+"num": -51.58949767242357,
+"mult": 100,
+"text": "-52%",
+"tol": 0.5,
+"kind": "row",
+"field": "FCR092"
+},
+{
+"id": "n:sw4",
+"row_id": "R03989",
+"num": 0.5457013126154462,
+"mult": 1,
+"text": "0.546",
+"tol": 0.0005,
+"kind": "row",
+"field": "auc"
+},
+{
+"id": "n:sw8",
+"row_id": "R03990",
+"num": 0.5504932162168747,
+"mult": 1,
+"text": "0.550",
+"tol": 0.0005,
+"kind": "row",
+"field": "auc"
+},
+{
+"id": "n:t2best",
+"row_id": "R03384",
+"num": 0.5528270047214241,
+"mult": 1,
+"text": "0.553",
+"tol": 0.0005,
+"kind": "row",
+"field": "auc"
+},
+{
+"id": "n:s1",
+"row_id": "R04036",
+"num": 0.0097784746017779,
+"mult": 1,
+"text": "+0.01",
+"tol": 0.005,
+"kind": "row",
+"field": "net"
+},
+{
+"id": "n:dca",
+"row_id": "R04042",
+"num": -46.477577679352564,
+"mult": 100,
+"text": "-46.5%",
+"tol": 0.05,
+"kind": "row",
+"field": "net"
+},
+{
+"id": "n:vols",
+"row_id": "R03994",
+"num": -0.0457999999999999,
+"mult": 1,
+"text": "-0.05",
+"tol": 0.005,
+"kind": "row",
+"field": "net"
+},
+{
+"id": "n:ninv",
+"kind": "inventory",
+"which": "all",
+"num": 97.0,
+"text": "97",
+"tol": 0
+},
+{
+"id": "n:ninc",
+"kind": "inventory",
+"which": "yes",
+"num": 59.0,
+"text": "59",
+"tol": 0
+},
+{
+"id": "n:nexc",
+"kind": "inventory",
+"which": "no",
+"num": 38.0,
+"text": "38",
+"tol": 0
+},
+{
+"id": "n:nsrc",
+"kind": "sources",
+"num": 97.0,
+"text": "97",
+"tol": 0
+},
+{
+"id": "n:glo",
+"kind": "chance_agg",
+"field": "share_oos_gross_pos",
+"fn": "min",
+"studies": [
+"research_methods_bench",
+"research_btc_entry"
+],
+"num": 40.74074074074074,
+"mult": 100,
+"text": "41%",
+"tol": 0.5
+},
+{
+"id": "n:ghi",
+"kind": "chance_agg",
+"field": "share_oos_gross_pos",
+"fn": "max",
+"studies": [
+"research_methods_bench",
+"research_btc_entry"
+],
+"num": 51.78571428571429,
+"mult": 100,
+"text": "52%",
+"tol": 0.5
+},
+{
+"id": "n:bestlo",
+"kind": "chance_agg",
+"field": "best_FCR092",
+"fn": "min",
+"studies": [
+"research_methods_bench",
+"research_btc_entry"
+],
+"num": 302.0630948621977,
+"mult": 100,
+"text": "302%",
+"tol": 0.5
+},
+{
+"id": "n:besthi",
+"kind": "chance_agg",
+"field": "best_FCR092",
+"fn": "max",
+"studies": [
+"research_methods_bench",
+"research_btc_entry"
+],
+"num": 1990.373196644969,
+"mult": 100,
+"text": "1,990%",
+"tol": 0.5
+}
+]

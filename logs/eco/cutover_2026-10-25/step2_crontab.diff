@@ -1,0 +1,3 @@
+18,19d17
+< 30 10 * * * /opt/cryptobot/deploy/run_job.sh F6_DemoOps src/execution/futures_testnet_f6.py --mode demo
+< 0 11 * * * /opt/cryptobot/deploy/run_job.sh F6_DemoOps src/execution/futures_testnet_f6.py --mode demo

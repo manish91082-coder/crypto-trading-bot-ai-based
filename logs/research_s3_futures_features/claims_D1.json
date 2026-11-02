@@ -1,0 +1,67 @@
+{
+  "protocol_sha256": "e0c09f96b7b3f873ca1fe47b2ddafdbf004db3d723c012d35d179bbaa1996695",
+  "brain": "D1",
+  "G0_detail": {
+    "rows_identical": true,
+    "basis_coverage_ge_50pct": true
+  },
+  "paired": {
+    "diff": 0.002775193285645683,
+    "ci_low": -0.0010271277825429942,
+    "ci_high": 0.00662377864125956,
+    "diff_2022": -0.0014529595561572073,
+    "auc_new": 0.5620734933964103,
+    "auc_base": 0.5592983001107646,
+    "years_diff": {
+      "2021": 0.00916081691355175,
+      "2022": -0.0014529595561572073,
+      "2023": 0.0007590180441646721,
+      "2024": 0.01073187225214367,
+      "2025": -0.00047944319620774056,
+      "2026": -0.0028676965397361753
+    },
+    "coverage": {
+      "basis_now": 0.9858980466888995
+    }
+  },
+  "portfolio_new": {
+    "final": 39656.64,
+    "cagr_pct": 27.11,
+    "max_dd_pct": 87.01,
+    "calmar": 0.312,
+    "trades": 499,
+    "days_invested_pct": 100.0,
+    "ret_2021": 588.6,
+    "ret_2022": -77.31,
+    "ret_2023": 118.26,
+    "ret_2024": 71.84,
+    "ret_2025": -30.21,
+    "ret_2026": -2.8,
+    "breaker_trips": 0
+  },
+  "portfolio_base": {
+    "final": 74452.43,
+    "cagr_pct": 41.84,
+    "max_dd_pct": 81.27,
+    "calmar": 0.515,
+    "trades": 490,
+    "days_invested_pct": 100.0,
+    "ret_2021": 796.03,
+    "ret_2022": -73.62,
+    "ret_2023": 153.74,
+    "ret_2024": 74.42,
+    "ret_2025": -20.41,
+    "ret_2026": -10.38,
+    "breaker_trips": 0
+  },
+  "gates": {
+    "G0": true,
+    "G1": false,
+    "G2": false,
+    "G3": false,
+    "decision": "FAIL"
+  },
+  "predictions_sha256": "7eb9ea1ad232e4a8ca35ba11880986519fe56177cba6c378f848a45b60af958a",
+  "gate_file_sha256": "2f930cfae76f0007ea917259215d616bfa95bf3d4e9ef12c2522da8609c0bc52",
+  "seconds": 1239
+}

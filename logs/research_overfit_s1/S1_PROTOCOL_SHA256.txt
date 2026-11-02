@@ -1,0 +1,4 @@
+1ae33cde6aa65554c9af21b457041f1babe03f69914063861e1f4aeda3c68717  S1_PROTOCOL_PREREGISTERED.md
+fdc9e0cf2d4d79466b9c87c15f4c537904f35d0e6cfca64782d52c9e5bdaad16  src/research/overfit_audit_s1.py
+db898dfbd8a4f31861f1a598c71ef3d99b22c4b2a8bde7b966389ce5178d628c  src/audits/verify_overfit_s1.py
+locked_utc 2026-10-15 08:21:55.020428+00:00

@@ -1,0 +1,57 @@
+entry rows 5164, exit rows 126510 in 35s; 1h cross-check:
+           days  hourly_days  matched  mismatched  no_hourly  days_with_24h
+BTCUSDT    2465         2465     2461           4          0           2450
+ETHUSDT    2465         2465     2461           4          0           2450
+BNBUSDT    2465         2465     2461           4          0           2450
+SOLUSDT    2242         2242     2238           4          0           2231
+XRPUSDT    2465         2465     2461           4          0           2450
+ADAUSDT    2465         2465     2461           4          0           2450
+DOGEUSDT   2465         2465     2461           4          0           2450
+DOTUSDT    2235         2235     2232           3          0           2224
+LTCUSDT    2465         2465     2462           3          0           2450
+LINKUSDT   2465         2465     2461           4          0           2450
+ALGOUSDT   2465         2465     2458           7          0           2450
+ATOMUSDT   2465         2465     2459           6          0           2450
+AVAXUSDT   2200         2200     2196           4          0           2189
+AXSUSDT    2157         2157     2146          11          0           2146
+BCHUSDT    2465         2465     2462           3          0           2450
+EOSUSDT    1973         1973     1969           4          0           1957
+ETCUSDT    2465         2465     2462           3          0           2450
+FILUSDT    2177         2177     2169           8          0           2166
+FTTUSDT    1050         1050     1045           5          0           1035
+ICPUSDT    1969         1969     1961           8          0           1965
+LUNAUSDT    631          631      627           4          0            620
+MATICUSDT  1715         1715     1712           3          0           1699
+NEARUSDT   2178         2178     2174           4          0           2167
+SANDUSDT   2239         2239     2235           4          0           2228
+SHIBUSDT   1970         1970     1969           1          0           1966
+THETAUSDT  2465         2465     2462           3          0           2450
+TRXUSDT    2465         2465     2461           4          0           2450
+UNIUSDT    2205         2205     2199           6          0           2194
+VETUSDT    2465         2465     2461           4          0           2450
+XLMUSDT    2465         2465     2462           3          0           2450
+AI {'AI_entry_skill_members': 0.5387, 'AI_exit_skill_members': 0.5224, 'AI_entry_skill_allcoins': 0.5371}
+CONTROL_shuffled {'CONTROL_shuffled_entry_skill_members': 0.4636, 'CONTROL_shuffled_exit_skill_members': 0.4635, 'CONTROL_shuffled_entry_skill_allcoins': 0.4728}
+BASELINE_all_swings {'final': np.float64(16698.92), 'cagr_pct': np.float64(9.34), 'max_dd_pct': np.float64(56.95), 'calmar': np.float64(0.164), 'trades': 400}
+AI_entry_only {'final': np.float64(14091.27), 'cagr_pct': np.float64(6.15), 'max_dd_pct': np.float64(49.96), 'calmar': np.float64(0.123), 'trades': 304}
+AI_exit_only {'final': np.float64(11842.54), 'cagr_pct': np.float64(2.99), 'max_dd_pct': np.float64(54.22), 'calmar': np.float64(0.055), 'trades': 956}
+AI_full {'final': np.float64(17340.14), 'cagr_pct': np.float64(10.06), 'max_dd_pct': np.float64(27.56), 'calmar': np.float64(0.365), 'trades': 543}
+CONTROL_full {'final': np.float64(11011.83), 'cagr_pct': np.float64(1.69), 'max_dd_pct': np.float64(64.13), 'calmar': np.float64(0.026), 'trades': 363}
+
+GATES: {
+ "G1_entry": {
+  "auc_ge_055": false,
+  "ci_low_gt_050": false,
+  "beats_control": true,
+  "top_q_gt_bottom_q": true
+ },
+ "G2_exit": {
+  "auc_ge_055": false,
+  "ci_low_gt_050": false,
+  "beats_control": true,
+  "top_q_gt_bottom_q": true
+ },
+ "G3_full": "True",
+ "G3_entry_only": "False",
+ "decision": "FAIL_NOTHING_DEPLOYED"
+}

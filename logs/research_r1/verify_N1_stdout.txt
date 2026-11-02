@@ -1,0 +1,4 @@
+[V1 PASS] N1: protocol, engine and runner hashes (runner as run)
+[V2 PASS] N1: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied
+[V3 PASS] N1a: no blocked coin was newly bought (4332 longs); blocked == pct > 0.8; MAX7 re-derived for 40 rows
+[V3 PASS] N1b: no blocked coin was newly bought (4332 longs); blocked == pct > 0.8; MAX7 re-derived for 40 rows

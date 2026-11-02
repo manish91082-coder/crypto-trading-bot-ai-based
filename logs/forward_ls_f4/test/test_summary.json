@@ -1,0 +1,13 @@
+{
+  "T1_hours": 24864,
+  "T1_funding": 4097,
+  "T1_mismatches": [],
+  "T2_api_equals_archive": true,
+  "T3_LO_equals_research_sims": true,
+  "notes": [],
+  "final": {
+    "LS_RS": 9041.49,
+    "LS_F2": 9132.9,
+    "LO": 10813.03
+  }
+}

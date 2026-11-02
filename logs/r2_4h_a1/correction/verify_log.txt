@@ -1,0 +1,5 @@
+[C1 PASS] 20 new trades at later-failed pivots: each is a live confirmation flagged failed and absent from the final pivots
+[C2 PASS] 14 other differences (timing / spurious / changed gross): all within 12 days of a same-candle pivot tie: 14/14
+[C3 PASS] 26 new trades re-simulated with own loop: max |diff| 0.0e+00
+[C4 PASS] 9713 trades outside the diff set identical to the original A1 (gross max diff 0.0e+00)
+TOTAL 4 checks, FAIL 0

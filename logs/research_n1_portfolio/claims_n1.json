@@ -1,0 +1,125 @@
+{
+ "protocol_sha": "20ffc3643e3b886025b08c4d932ed5c34425c09b670ec3cca949545426724af7",
+ "code_sha": "afa84a3197a01070775df65d511e706a6ef2e0765d132264c6acbe3788d479b8",
+ "notes_sha": "2b829516346f058dec305211bd0daa5f84801ccc1636f87d70236e4820384e44",
+ "manifest_sha": "63be8b3d39fa9ebb5e797481def1a015e83f4874c75654ccb9661cf87db3e10e",
+ "repro": {
+  "D_periods": 444,
+  "D_max_diff": 4.85722573273506e-17,
+  "entry_hour_missing": 25
+ },
+ "stopped_share": {
+  "A": 0.0795901046741898,
+  "B": 0.3494347379239466,
+  "C": 0.05788927403403639
+ },
+ "adopt": {
+  "K1": true,
+  "K2": false,
+  "K3": false,
+  "K4": false,
+  "K5": false,
+  "K6": false
+ },
+ "final_name": "K1",
+ "final_cfg": {
+  "stop": false
+ },
+ "n_configs": 7,
+ "n_trials_dsr": 26,
+ "final_dev": {
+  "final": 417682.3177535515,
+  "cagr": 0.9325705080681765,
+  "mtm_dd": 0.2863181810582064,
+  "calmar": 3.257112435617883,
+  "mean_month": 0.06519420470974197,
+  "sharpe_month": 0.42989022059956233,
+  "n_trades": 122954
+ },
+ "calmar_windows": {
+  "dev": 3.257112435617883,
+  "P1": 3.994599965070329,
+  "P2": 2.865836485790778,
+  "P3": -0.3931833689341285
+ },
+ "random_p95": 1.949563951831114,
+ "random_dropped_trades": 0,
+ "cost": {
+  "x1_5": 0.06308583613416852,
+  "x2": 0.06097724920468501,
+  "slip": 0.06519420470974197
+ },
+ "boot_ci": [
+  0.033106654496798914,
+  0.1032860673951482
+ ],
+ "dsr": 0.9999999553782571,
+ "sr_month": 0.42989022059956233,
+ "sr0": 0.05762605037180451,
+ "sr_var": 0.0008189023056475389,
+ "pbo": 0.1257964257964258,
+ "pbo_combinations": 12870,
+ "g7": {
+  "calmar": 0.39799854076579916,
+  "cagr": 0.10472930163774286,
+  "mtm_dd": 0.26313991361935785,
+  "trades": {
+   "A": 5413,
+   "B": 219,
+   "C": 1831,
+   "D": 0
+  },
+  "btc_bh": -0.10783615956512904
+ },
+ "corr_1d_monthly": 0.6296985920450123,
+ "corr_1d_months": 56,
+ "btc_bh": {
+  "dev": {
+   "cagr": 0.5550768965088515,
+   "mtm_dd": 0.7719848663243956,
+   "calmar": 0.7190256191830615
+  },
+  "P1": {
+   "cagr": 0.47018343957085107,
+   "mtm_dd": 0.7719848663243956,
+   "calmar": 0.609057845666725
+  },
+  "P2": {
+   "cagr": 0.7632421034870516,
+   "mtm_dd": 0.3231069072207683,
+   "calmar": 2.362196803689973
+  },
+  "P3": {
+   "cagr": -0.2669302415068763,
+   "mtm_dd": 0.537420647913939,
+   "calmar": -0.4966877297011144
+  }
+ },
+ "exposure": {
+  "max_gross": NaN,
+  "mean_gross": NaN,
+  "max_coin_net": NaN
+ },
+ "gates": {
+  "G1_random_entry_p95": true,
+  "G2_cost_1.5x_2x_slip": true,
+  "G3_P1_P2_calmar>0": true,
+  "G4_bootstrap_ci_lo>0": true,
+  "G5_DSR>=0.95": true,
+  "G6_PBO<0.30": true,
+  "G7_2018_19_calmar>0": true
+ },
+ "verdict": "N1 PASS",
+ "files": {
+  "N1_configs.csv": "79f1c661a6e6d16dd4ec5e43aeea906206d3b21d4a37bd89e2c8df40d1bf9b68",
+  "N1_g7_pre2020.csv": "3d376130038440551007138ca05b6852060438dc899ab24658b01905f694ef4b",
+  "N1_monthly_dev.csv": "d04646579516cd81af4197d36f90590c96c71212d617596f6eed6e9abefed4f4",
+  "N1_random_entry.csv": "b16646df5b09a6fe3b49cd6855b4d66006540ebbae04a533e736ca2cfa32aa04",
+  "N1_sizing.csv": "3a71a9937a397cf7cfdcbc701969618d3fac6a7ee9f785d7148bfaf45682e535",
+  "N1_sleeve_corr.csv": "793bc0033176679f60949c5da108500c79f0c2a7c4cd67bd6e5a759965e4641c",
+  "N1_sleeves.csv": "34df8fc7128e5f2fba8b0e414a9f7e6725e55d40118195c95b347de1cdac437f",
+  "N1_years.csv": "25eb08972f617234c8bce59a8231d93cdc484d3da0f55830d92eedd60a59359f"
+ },
+ "trades_sha": "df4e3c059ac0166f301e1ae87cb4ffcebe06ae33fc2dddd777a747e3f7d62425",
+ "equity_sha": "bc7ff702e51240fa76418b071da686c35ca154fcefd7d61ada721cbfa728ec78"
+}

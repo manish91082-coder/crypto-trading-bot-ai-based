@@ -1,0 +1,8 @@
+[W1 PASS] 5 inputs; mismatches []
+[W2 PASS] 300 random (bar, rule, scale) signals by own aggregation + loop indicators: mismatches 0 []
+[W3 PASS] X3 reversal trades of 5 random configs (H) replayed by a loop: mismatches []
+[W4 PASS] daily (every calendar day present) -> monthly -> yearly for 5 configs x 3 exits x 2 costs x 4 periods: mismatches []
+[W5 PASS] ranking order of 567 configs recomputed from the 8 measures
+[W6 PASS] random control (own sequential loop, 200 seeds) for one X1, X2, X3 config: mismatches []
+[W7 PASS] stress (2x cost) and delay (+1 bar) H means of 3 configs x 2 exits recomputed: mismatches []
+TOTAL 7 checks, FAIL 0

@@ -1,0 +1,66 @@
+D1 done
+D2 ADAUSDT
+D2 BNBUSDT
+D2 BTCUSDT
+D2 DOGEUSDT
+D2 DOTUSDT
+D2 ETHUSDT
+D2 LINKUSDT
+D2 LTCUSDT
+D2 SOLUSDT
+D2 XRPUSDT
+D2 done
+D3 ADAUSDT
+D3 ALGOUSDT
+D3 ATOMUSDT
+D3 AVAXUSDT
+D3 AXSUSDT
+D3 BCHUSDT
+D3 BNBUSDT
+D3 BTCUSDT
+D3 DOGEUSDT
+D3 DOTUSDT
+D3 EOSUSDT
+D3 ETCUSDT
+D3 ETHUSDT
+D3 FILUSDT
+D3 FTTUSDT
+D3 ICPUSDT
+D3 LINKUSDT
+D3 LTCUSDT
+D3 LUNAUSDT
+D3 MATICUSDT
+D3 NEARUSDT
+D3 SANDUSDT
+D3 SHIBUSDT
+D3 SOLUSDT
+D3 THETAUSDT
+D3 TRXUSDT
+D3 UNIUSDT
+D3 VETUSDT
+D3 XLMUSDT
+D3 XRPUSDT
+D3 done
+D4 4h
+D4 8h
+D4 1D
+D4 done
+D5 U1
+D5 U2X
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\disc_study.py", line 574, in <module>
+    main()
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\disc_study.py", line 565, in main
+    cm[f"{u}_{v}"] = float(np.corrcoef(ms, trend_long)[0, 1])
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\lib\_function_base_impl.py", line 3037, in corrcoef
+    c = cov(x, y, rowvar, dtype=dtype)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\lib\_function_base_impl.py", line 2870, in cov
+    avg, w_sum = average(X, axis=1, weights=w, returned=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\lib\_function_base_impl.py", line 572, in average
+    if scl.shape != avg_as_array.shape:
+       ^^^^^^^^^
+AttributeError: 'float' object has no attribute 'shape'
+exit=1

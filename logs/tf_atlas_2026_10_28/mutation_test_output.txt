@@ -1,0 +1,12 @@
+PASS  V8 protocol + inventory SHA  2026-10-28T06:50:27Z
+PASS  V1 source SHAs  97 files, mismatches []
+FAIL  V2a raw values re-read from locators  4044 rows, mismatches 1 [('R03983', 'net', 0.6869, 0.9999)]
+PASS  V2b derived gross/FCR/FCR092/ACC_COVER  mismatches 0 []
+FAIL  V3 tiers recomputed  mismatches 1 [('R04042', 'E5', 'E2')]; tiers {'E5': 2864, 'E4': 538, 'E2': 506, 'E3': 136}
+PASS  V4 ranks recomputed (ties allowed in any order)  4044 rows, misplaced 0
+PASS  V5 chance table recomputed  17 grids, mismatches []
+PASS  V7 coverage of included studies  included 59, uncovered [], rows from non-included []
+PASS  V7b physics values re-read  165 values, mismatches []
+FAIL  V6 report claims  881 claims, bad [('n:nE2', 506, 505.0, True), ('n:nE5', 2864, 2865.0, True)]
+
+TOTAL 10 checks, 7 PASS, 3 FAIL -> FAIL

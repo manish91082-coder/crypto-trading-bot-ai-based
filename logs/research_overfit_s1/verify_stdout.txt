@@ -1,0 +1,6 @@
+[V1 PASS] protocol, returns matrix and 113 inventory file hashes
+[V2 PASS] rules: 60 included series, no CONTROL / cost040 among them; 8 exact duplicates removed
+   M_AI3_f50: SR(ann.) 0.928; DSR N=60: 0.4402, N=75: 0.4055, N=150: 0.3086
+   H1_f100: SR(ann.) 1.024; DSR N=60: 0.5383, N=75: 0.5026, N=150: 0.3984
+[V3 PASS] Sharpe ratios and DSR re-derived without scipy; the paper's example re-checked
+[V4 PASS] 403 of 12,870 CSCV combinations re-derived with plain loops; PBO 0.6499

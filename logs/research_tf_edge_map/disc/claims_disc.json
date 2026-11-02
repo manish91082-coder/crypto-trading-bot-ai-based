@@ -1,0 +1,36 @@
+{
+ "protocol_sha": "a9f46d40842e52d9bbcc7112b2e694e9112f1b7cc514ef42d076796ecfe492bd",
+ "code_sha": "cf6a2da11fa9bdff1b072b8b02a0147a6646c72a1cb50037435630b9916c6fec",
+ "n_eff_D2": {
+  "old_TF2": [
+   3.9846366732023144,
+   72
+  ],
+  "old_plus_new_TF2": [
+   3.8652178308913556,
+   156
+  ]
+ },
+ "carry_corr_with_U1_trend_long": {
+  "U1_a": 0.6221111299450057,
+  "U1_b": 0.6329081709336789,
+  "U2X_a": 0.6505164590594306,
+  "U2X_b": 0.6266891630308794
+ },
+ "files": {
+  "D1_carry.csv": "595c434f57d4e642a293b5b651cf2d9b1982aaf19b89670c702af98d4d3d03cd",
+  "D1_carry_daily.csv": "939503b7450cd042c76a7cffbd464a5f4403474f9ba85f812332f391f1f5c1a6",
+  "D1_carry_risk.csv": "b3c426bffcb2db2763d8b1d64e01a38cbc5088db637ddb4736574d9a2f3090b9",
+  "D2_cells.csv": "59f06b9efa8242d3cf1cb4e197b03c012369296154ec58a4c83110d16fe3d06f",
+  "D2_correlations.csv": "dcdaa30cce67ebe283eba2171ec055fb0cfd0f72a7e6940bf07088d92d70b490",
+  "D3_cells.csv": "5497cd9376a92f38b8742508a67916d8feb2efb09cc3b7f73873e6f4fb63c79e",
+  "D4_periods_1D.csv": "2b14df613c2add05f5888298a643abf3879f21d76685ff21a5eaf2b34e89ea01",
+  "D4_periods_4h.csv": "c281cd474d4ae5d786831a4a958862faa57d5a2e1a2399950e7c54957890dbd5",
+  "D4_periods_8h.csv": "e522bc91361474e4a9f95dbd32b11261e5bcb39c01bc88e372f8ea0f97fbe0d5",
+  "D4_xsmom.csv": "8f2cb8331c78774d0924598e1399ec02672de3154dfb66cda55de754c6d9127b",
+  "D5_rc_spa.csv": "1995e231698ea92fa98d1582f488dbea99ae8944127f774a38053c44f8d4b092",
+  "D6_crisis.csv": "5d40c44967beb38c67af3711ace43ff02e8c85dbfc6b33d30f53b92fbe9ad068"
+ },
+ "d2_trades_sha": "ca5657991021928fd710e2aeed41e8be00b3b27cd89e7382750406f0a4c3fbbf",
+ "d3_trades_sha": "675a62ddf2572d61a3073677325a0e883171a71f1701f377ca1eda57c7527b76"
+}

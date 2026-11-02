@@ -1,0 +1,16 @@
+﻿[Q1 PASS] 15 inputs, mismatches []
+read ADAUSDT
+read BNBUSDT
+read BTCUSDT
+read DOGEUSDT
+read DOTUSDT
+read ETHUSDT
+read LINKUSDT
+read LTCUSDT
+read SOLUSDT
+read XRPUSDT
+[Q2 PASS] R2 1h/4h x A/B x 3 costs: end-exit and TP/SL (m=2, SL first) mean net and win rate by loops: mismatches []
+[Q3 PASS] R3 1h/4h: E|r| and MOM hit rate by loops: mismatches []
+[Q4 PASS] R5 Spearman ECO month vs |BTC month| 0.2052, vs BTC efficiency ratio 0.1818
+[Q5 PASS] R7 ECO share of positive days dev 0.5297, P3 0.4780: mismatches []
+TOTAL 5 checks, FAIL 0

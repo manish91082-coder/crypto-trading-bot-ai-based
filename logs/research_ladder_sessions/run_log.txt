@@ -1,0 +1,65 @@
+{
+ "protocol_sha256": "e7ae067d827579ec01ace14cf377c0d6312439e797130a0616aff3ff9dd2cf77",
+ "legs_sha256": "bbe7a4fda260be36a3c8015c07436088e3b680bbbb42e5e4a51d6d141fdc8f0f",
+ "code_sha256": "6962deb97ad82a0ec475a90a1c54e549d4e150aa84860fadfcd2ef7742c084fc",
+ "fibonacci_clustering": true,
+ "fib_tfs_positive": 4,
+ "session_verdicts": {
+  "Asia": "not proven",
+  "Europe": "not proven",
+  "US": "not proven",
+  "LateUS": "not proven"
+ },
+ "up_share_K3": {
+  "5m": 0.3107,
+  "15m": 0.3149,
+  "1h": 0.3268,
+  "4h": 0.3441,
+  "1D": 0.3618,
+  "1W": 0.4343,
+  "1M": 0.4839
+ },
+ "down_share_K3": {
+  "5m": 0.3133,
+  "15m": 0.3119,
+  "1h": 0.3089,
+  "4h": 0.2938,
+  "1D": 0.2906,
+  "1W": 0.1943,
+  "1M": 0.0968
+ },
+ "retr_median_UP": {
+  "5m": 0.6086,
+  "15m": 0.6009,
+  "1h": 0.6065,
+  "4h": 0.6219,
+  "1D": 0.6305,
+  "1W": 0.634,
+  "1M": 0.5838
+ },
+ "retr_median_DOWN": {
+  "5m": 0.6289,
+  "15m": 0.6213,
+  "1h": 0.6071,
+  "4h": 0.5777,
+  "1D": 0.5344,
+  "1W": 0.3161,
+  "1M": 0.2901
+ },
+ "median_steps": {
+  "5m_UP": 1.0,
+  "5m_DOWN": 1.0,
+  "15m_UP": 1.0,
+  "15m_DOWN": 1.0,
+  "1h_UP": 1.0,
+  "1h_DOWN": 1.0,
+  "4h_UP": 1.0,
+  "4h_DOWN": 1.0,
+  "1D_UP": 1.0,
+  "1D_DOWN": 1.0,
+  "1W_UP": 1.0,
+  "1W_DOWN": 1.0,
+  "1M_UP": 1.0,
+  "1M_DOWN": 0.0
+ }
+}

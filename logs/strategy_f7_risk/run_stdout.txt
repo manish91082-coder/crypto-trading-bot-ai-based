@@ -1,0 +1,12 @@
+MAIN AI OFF_LO {"final": 53883.75, "cagr_pct": 34.07, "max_dd_pct": 49.02, "calmar": 0.695, "ret_2021": 379.13, "ret_2022": -41.64, "ret_2023": 47.71, "ret_2024": 42.08, "ret_2025": -7.48, "ret_2026": -0.62} liq 0 stops 0
+MAIN AI OFF_LS {"final": 110478.96, "cagr_pct": 51.92, "max_dd_pct": 30.33, "calmar": 1.712, "ret_2021": 232.58, "ret_2022": 45.37, "ret_2023": 4.26, "ret_2024": 36.95, "ret_2025": 46.77, "ret_2026": 9.27} liq 69 stops 0
+G0 {'D1': True, 'H4': True, 'H1': True}
+MAIN AI RS {"final": 88400.87, "cagr_pct": 46.14, "max_dd_pct": 21.37, "calmar": 2.159, "ret_2021": 212.28, "ret_2022": 36.54, "ret_2023": 5.73, "ret_2024": 40.4, "ret_2025": 34.64, "ret_2026": 3.93} liq 0 stops 227
+MAIN AI RS_cost020 {"final": 68729.67, "cagr_pct": 39.88, "max_dd_pct": 21.74, "calmar": 1.834, "ret_2021": 189.51, "ret_2022": 27.62, "ret_2023": 3.31, "ret_2024": 36.16, "ret_2025": 29.88, "ret_2026": 2.06} liq 0 stops 227
+MAIN CONTROL RS {"final": 2005.13, "cagr_pct": -24.4, "max_dd_pct": 86.4, "calmar": -0.282, "ret_2021": 1.5, "ret_2022": -43.02, "ret_2023": 4.61, "ret_2024": -15.12, "ret_2025": -39.54, "ret_2026": -35.31} liq 0 stops 124
+MAIN AI RS_stop30 {"final": 100479.73, "cagr_pct": 49.44, "max_dd_pct": 23.22, "calmar": 2.129, "ret_2021": 268.81, "ret_2022": 33.43, "ret_2023": 9.2, "ret_2024": 24.99, "ret_2025": 39.67, "ret_2026": 7.32} liq 0 stops 516
+MAIN AI RS_stop75 {"final": 70212.23, "cagr_pct": 40.4, "max_dd_pct": 26.3, "calmar": 1.536, "ret_2021": 175.97, "ret_2022": 42.5, "ret_2023": 19.94, "ret_2024": 19.38, "ret_2025": 28.36, "ret_2026": -2.66} liq 0 stops 126
+MAIN AI RS_age30 {"final": 75137.76, "cagr_pct": 42.06, "max_dd_pct": 20.2, "calmar": 2.082, "ret_2021": 163.09, "ret_2022": 32.89, "ret_2023": 14.15, "ret_2024": 34.64, "ret_2025": 35.31, "ret_2026": 3.54} liq 0 stops 225
+PRE AI LO {"final": 6546.09, "cagr_pct": -19.89, "max_dd_pct": 53.9, "calmar": -0.369, "ret_2018": -40.14, "ret_2019": 9.49} liq 0 stops 0
+PRE AI RS {"final": 10504.12, "cagr_pct": 2.61, "max_dd_pct": 19.09, "calmar": 0.137, "ret_2018": -9.94, "ret_2019": 16.83} liq 0 stops 42
+GATES {"G0": true, "G1": true, "G2": true, "G3": true, "G4": true, "G5": true, "G6": true, "decision": "PASS"} DSR {'sr_annual_365': np.float64(1.442514138154793), 'N': 83, 'dsr': 0.8788581047949011}

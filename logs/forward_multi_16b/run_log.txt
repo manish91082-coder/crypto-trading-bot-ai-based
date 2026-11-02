@@ -1,0 +1,30 @@
+[2026-10-15 05:03:19 UTC] RUN start (test=True) as-of 2026-10-14
+[2026-10-15 05:05:29 UTC] trained h4_r6 for 2026-10-01 on 418922 rows -> h4_r6_2026-10.joblib
+[2026-10-15 05:07:43 UTC] trained h1_r24 for 2026-10-01 on 558132 rows -> h1_r24_2026-10.joblib
+[2026-10-15 05:08:01 UTC] RUN done as-of 2026-10-14: 20 members, paper M_AI3 nan (on_time=False), notes 1
+[2026-10-15 05:11:12 UTC] trained h4_r6 for 2026-09-01 on 413522 rows -> h4_r6_2026-09.joblib
+[2026-10-15 05:12:43 UTC] trained h1_r24 for 2026-09-01 on 550932 rows -> h1_r24_2026-09.joblib
+[2026-10-15 18:34:22 UTC] trained h4_r6 for 2026-09-01 on 413522 rows -> h4_r6_2026-09.joblib
+[2026-10-15 18:36:11 UTC] trained h1_r24 for 2026-09-01 on 550932 rows -> h1_r24_2026-09.joblib
+[2026-10-16 04:50:55 UTC] RUN start (test=False) as-of 2026-10-15
+[2026-10-16 04:50:55 UTC] RUN FAILED:
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\execution\forward_multi_16b.py", line 243, in <module>
+    main(test="--test" in sys.argv)
+  File "E:\crypto trading bot ai based 9 oct 2026\src\execution\forward_multi_16b.py", line 186, in main
+    assert s16.exists(), f"Step 16 prediction file for {asof.date()} not written yet"
+           ^^^^^^^^^^^^
+AssertionError: Step 16 prediction file for 2026-10-15 not written yet
+
+[2026-10-16 06:36:30 UTC] RUN start (test=False) as-of 2026-10-15
+[2026-10-16 06:36:30 UTC] RUN FAILED:
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\execution\forward_multi_16b.py", line 243, in <module>
+    main(test="--test" in sys.argv)
+  File "E:\crypto trading bot ai based 9 oct 2026\src\execution\forward_multi_16b.py", line 188, in main
+    assert btc1h == asof + pd.Timedelta(hours=23), f"BTC last 1h bar {btc1h} != {asof} 23:00 (data not ready)"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: BTC last 1h bar 2026-10-16 03:00:00 != 2026-10-15 00:00:00 23:00 (data not ready)
+
+[2026-10-16 06:38:01 UTC] RUN start (test=False) as-of 2026-10-15
+[2026-10-16 06:38:40 UTC] RUN done as-of 2026-10-15: 20 members, paper M_AI3 10000.0 (on_time=False), notes 1

@@ -1,0 +1,11 @@
+U rows all dates 46920 (from 2020-04-29), identical to Step 19 from 2021 (186s)
+G1 0.5801 1.0 True
+AI {'n': 2093, 'auc': 0.5403, 'ci_low': 0.505, 'ci_high': 0.5789, 'base_rate': 0.5022}
+CONTROL {'n': 2093, 'auc': 0.5247, 'ci_low': 0.4925, 'ci_high': 0.5551, 'base_rate': 0.5022}
+UNGATED {'final': np.float64(65274.51), 'cagr_pct': np.float64(38.63), 'max_dd_pct': np.float64(73.18), 'calmar': np.float64(0.528), 'trades': 490, 'trade_ci_low_pct': 0.30065932835198783, 'days_invested_pct': 99.95235826584089} {2021: 562.64, 2022: -64.83, 2023: 117.05, 2024: 63.24, 2025: -14.42, 2026: -7.44}
+GATED {'final': np.float64(10219.41), 'cagr_pct': np.float64(0.38), 'max_dd_pct': np.float64(72.98), 'calmar': np.float64(0.005), 'trades': 544, 'trade_ci_low_pct': -1.4008875601661133, 'days_invested_pct': 45.49785612196284} {2021: 5.42, 2022: -60.84, 2023: 31.51, 2024: 102.98, 2025: 0.62, 2026: -7.84}
+GATED_CONTROL {'final': np.float64(22466.36), 'cagr_pct': np.float64(15.13), 'max_dd_pct': np.float64(52.18), 'calmar': np.float64(0.29), 'trades': 592, 'trade_ci_low_pct': -0.6206765859597592, 'days_invested_pct': 49.07098618389709} {2021: 140.94, 2022: -31.36, 2023: 31.05, 2024: 52.16, 2025: -17.92, 2026: -16.99}
+GATED_cost040 {'final': np.float64(7854.03), 'cagr_pct': np.float64(-4.12), 'max_dd_pct': np.float64(75.7), 'calmar': np.float64(-0.054), 'trades': 544, 'trade_ci_low_pct': -1.696244815175662, 'days_invested_pct': 45.49785612196284} {2021: 0.07, 2022: -62.72, 2023: 25.66, 2024: 93.12, 2025: -3.71, 2026: -9.91}
+BTC_HOLD {'final': np.float64(25051.67), 'cagr_pct': np.float64(17.34), 'max_dd_pct': np.float64(69.28), 'calmar': np.float64(0.25), 'trades': 1, 'trade_ci_low_pct': 187.67663218025987, 'days_invested_pct': None} {2021: 47.63, 2022: -55.6, 2023: 108.61, 2024: 103.74, 2025: -5.88, 2026: -4.25}
+
+GATES: {"G1": true, "G2_skill": true, "G3a_cagr": true, "G3b_calmar": false, "G3c_trade_ci": false, "G3d_years": true, "G3e_cost040": false, "G3f_maxdd": false, "decision": "FAIL"} (272s)

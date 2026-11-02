@@ -1,0 +1,4 @@
+[2026-10-16 14:32:26 UTC] demo run done: 15 actions, notes 4, record 20261016T143226_demo.json
+[2026-10-16 14:32:39 UTC] demo run done: 0 actions, notes 0, record 20261016T143239_demo.json
+[2026-10-16 14:32:51 UTC] KILL (drill): equity 4997.7374658 peak 5000.0
+[2026-10-16 14:33:02 UTC] demo run done: 22 actions, notes 0, record 20261016T143302_demo.json

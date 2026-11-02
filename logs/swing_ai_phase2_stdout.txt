@@ -1,0 +1,55 @@
+BTCUSDT 4h 435
+BTCUSDT 8h 213
+BTCUSDT 12h 137
+BTCUSDT 1D 70
+ETHUSDT 4h 425
+ETHUSDT 8h 200
+ETHUSDT 12h 125
+ETHUSDT 1D 68
+BNBUSDT 4h 405
+BNBUSDT 8h 211
+BNBUSDT 12h 136
+BNBUSDT 1D 78
+SOLUSDT 4h 290
+SOLUSDT 8h 137
+SOLUSDT 12h 86
+SOLUSDT 1D 38
+XRPUSDT 4h 386
+XRPUSDT 8h 201
+XRPUSDT 12h 128
+XRPUSDT 1D 68
+ADAUSDT 4h 385
+ADAUSDT 8h 192
+ADAUSDT 12h 129
+ADAUSDT 1D 66
+DOGEUSDT 4h 367
+DOGEUSDT 8h 190
+DOGEUSDT 12h 124
+DOGEUSDT 1D 59
+DOTUSDT 4h 289
+DOTUSDT 8h 137
+DOTUSDT 12h 90
+DOTUSDT 1D 45
+LTCUSDT 4h 404
+LTCUSDT 8h 185
+LTCUSDT 12h 128
+LTCUSDT 1D 68
+LINKUSDT 4h 375
+LINKUSDT 8h 180
+LINKUSDT 12h 117
+LINKUSDT 1D 58
+G0 {'events': 7425, 'matched': 7203, 'matched_share': 0.9701010101010101, 'max_abs_diff': 0.0, 'pass_': True} (20s)
+G1 0.5869 1.0
+AI_all {'n': 6893, 'auc': 0.535529850408811, 'ci_low': 0.509544208333442, 'ci_high': 0.5608951838991854, 'base_rate': 0.3918468011025678}
+CONTROL_all {'n': 6893, 'auc': 0.49780659764124685, 'ci_low': 0.47447483165249266, 'ci_high': 0.5206888559674435, 'base_rate': 0.3918468011025678}
+AI_P1 {'n': 1443, 'auc': 0.5335136179254395, 'ci_low': 0.4723990652344914, 'ci_high': 0.5952681074433991, 'base_rate': 0.46292446292446293}
+AI_P2 {'n': 5450, 'auc': 0.5369952989601917, 'ci_low': 0.5078496685771843, 'ci_high': 0.5645636561917357, 'base_rate': 0.37302752293577984}
+money_all {'n_all': 6893, 'n_sel': 3173, 'mean_all_pct': 2.5063, 'mean_sel_pct': 3.1132, 'mean_rej_pct': 1.9886, 'diff_pct': 0.6069, 'diff_ci_low_pct': -0.2718, 'diff_ci_high_pct': 1.5528, 'win_all': 0.3918, 'win_sel': 0.4195}
+money_P1 {'n_all': 1443, 'n_sel': 676, 'mean_all_pct': 5.3784, 'mean_sel_pct': 6.44, 'mean_rej_pct': 4.4428, 'diff_pct': 1.0616, 'diff_ci_low_pct': -0.7916, 'diff_ci_high_pct': 2.822, 'win_all': 0.4629, 'win_sel': 0.4911}
+money_P2 {'n_all': 5450, 'n_sel': 2497, 'mean_all_pct': 1.7458, 'mean_sel_pct': 2.2125, 'mean_rej_pct': 1.3512, 'diff_pct': 0.4667, 'diff_ci_low_pct': -0.6051, 'diff_ci_high_pct': 1.6717, 'win_all': 0.373, 'win_sel': 0.4001}
+report_time_reversed {'n': 1975, 'auc': 0.5474608255897959, 'ci_low': 0.515108655733361, 'ci_high': 0.5786439716783781, 'base_rate': 0.4450632911392405}
+12h 0.5216 {'n_all': 1106, 'n_sel': 545, 'mean_all_pct': 4.2947, 'mean_sel_pct': 5.829, 'mean_rej_pct': 2.8041, 'diff_pct': 1.5343, 'diff_ci_low_pct': -0.6247, 'diff_ci_high_pct': 3.8984, 'win_all': 0.4051, 'win_sel': 0.422}
+1D 0.4456 {'n_all': 561, 'n_sel': 276, 'mean_all_pct': 10.6109, 'mean_sel_pct': 10.8638, 'mean_rej_pct': 10.3659, 'diff_pct': 0.2529, 'diff_ci_low_pct': -4.6181, 'diff_ci_high_pct': 4.9827, 'win_all': 0.451, 'win_sel': 0.4058}
+4h 0.5457 {'n_all': 3514, 'n_sel': 1542, 'mean_all_pct': 0.7262, 'mean_sel_pct': 1.1105, 'mean_rej_pct': 0.4257, 'diff_pct': 0.3843, 'diff_ci_low_pct': -0.066, 'diff_ci_high_pct': 0.8484, 'win_all': 0.3788, 'win_sel': 0.4163}
+8h 0.5505 {'n_all': 1712, 'n_sel': 810, 'mean_all_pct': 2.3488, 'mean_sel_pct': 2.4574, 'mean_rej_pct': 2.2514, 'diff_pct': 0.1085, 'diff_ci_low_pct': -1.4075, 'diff_ci_high_pct': 1.4135, 'win_all': 0.3908, 'win_sel': 0.4284}
+GATES {"G0": true, "G1": true, "G2": true, "G3": false, "G4": false, "decision": "FAIL"} (439s)

@@ -1,0 +1,2 @@
+[B PASS] R6: June-2022 model re-trained from scratch on 134053 rows (all labels known before 2022-06-01; 'known' >= bar + 1 days 04:00:00); 3600 predictions equal the stored research ones (max |diff| 5.6e-17)
+[B PASS] R24: June-2022 model re-trained from scratch on 178363 rows (all labels known before 2022-06-01; 'known' >= bar + 1 days 01:00:00); 14400 predictions equal the stored research ones (max |diff| 5.6e-17)

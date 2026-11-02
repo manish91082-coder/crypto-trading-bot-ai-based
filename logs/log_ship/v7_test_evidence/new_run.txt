@@ -1,0 +1,44 @@
+ship 2026-10-25_05 052928: bundle 408 files 1474045 B, verified True, rotated 10, backup files freed 2, bytes freed 37275, rclone errors 0 []
+[W1 PASS] 1 ledger line(s): chain, line hashes, manifest SHA intact=True; duplicate (hour, tag) 0; protocol + v2..v7 amendments == locks=True
+[W2 PASS] 1 verified hour(s) downloaded: bundle/manifest MD5 == ledger, 408 tar members md5 == manifest; changed locally since (reported) 0; problems []
+[W3 PASS] every freed file is inside a verified bundle on the remote with its md5; problems []
+[W4 PASS] essential live files present (17/17) []
+TOTAL 4 checks, FAIL 0
+[T1 PASS] first run: 1 bundle with 408 files verified, 10 idle .out rotated + freed, old backups freed (kept ['2026-10-25']); verifier exit 0
+[T6 PASS] v3 paths: 68 files (data/eco, data/paper_n1, logs/eco, logs/paper_n1, deploy configs) all in the first verified bundle with equal md5; missing []
+ship 2026-10-25_05 052929: bundle 3 files 56941 B, verified True, rotated 0, backup files freed 0, bytes freed 0, rclone errors 0 []
+[T2 PASS] second run: only 3 changed file(s) (the shipper's own ledger / manifests), rotated 0
+ship 2026-10-25_05 052930: bundle 4 files 1214 B, verified False, rotated 0, backup files freed 0, bytes freed 0, rclone errors 0 []
+[T3 PASS] remote copy corrupted -> not verified, shipped index unchanged, .out chunk kept (.shipping), nothing freed
+ship 2026-10-25_05 052931: bundle 6 files 1694 B, verified True, rotated 1, backup files freed 0, bytes freed 14, rclone errors 0 []
+ship 2026-10-25_05 052932: bundle 4 files 1709 B, verified True, rotated 0, backup files freed 0, bytes freed 0, rclone errors 0 []
+[T4 PASS] next run re-bundles the kept chunk, verifies and frees it; a .out modified < 15 min ago is NOT rotated
+[W1 PASS] 5 ledger line(s): chain, line hashes, manifest SHA intact=True; duplicate (hour, tag) 0; protocol + v2..v7 amendments == locks=True
+[W2 PASS] 4 verified hour(s) downloaded: bundle/manifest MD5 == ledger, 421 tar members md5 == manifest; changed locally since (reported) 3; problems []
+[W3 PASS] every freed file is inside a verified bundle on the remote with its md5; problems []
+[W4 PASS] essential live files present (17/17) []
+TOTAL 4 checks, FAIL 0
+[T4-verify PASS] verifier W1-W4 after all runs (all verified hours downloaded and checked)
+ship 2026-10-25_05 052933: bundle 4 files 1747 B, verified True, rotated 0, backup files freed 0, bytes freed 0, rclone errors 0 []
+ship 2026-10-25_05 052934: bundle 4 files 1905 B, verified True, rotated 1, backup files freed 0, bytes freed 16, rclone errors 0 []
+[T7 PASS] v4: .out held open by a process -> not rotated (out_busy ['RUNNING_JOB.out']); after it is closed -> rotated and freed
+ship 2026-10-25_05 052937: bundle 5 files 2043 B, verified True, rotated 0, backup files freed 0, bytes freed 0, rclone errors 0 []
+[T8 PASS] v7: names held ['2026-10-25_05_052934', '2026-10-25_05_052935', '2026-10-25_05_052936'] -> new run 2026-10-25_05_052937, held manifests unchanged True
+ship 2026-10-25_05 052938: bundle 3 files 2071 B, verified True, rotated 0, backup files freed 0, bytes freed 0, rclone errors 0 []
+another ship run is active -> exit
+another ship run is active -> exit
+another ship run is active -> exit
+[T9 PASS] v7: 4 simultaneous runs -> 1 ledger row(s) added, 3 exited on the lock, exit codes [0, 0, 0, 0]
+[W1 PASS] 9 ledger line(s): chain, line hashes, manifest SHA intact=True; duplicate (hour, tag) 0; protocol + v2..v7 amendments == locks=True
+[W2 PASS] 8 verified hour(s) downloaded: bundle/manifest MD5 == ledger, 437 tar members md5 == manifest; changed locally since (reported) 7; problems []
+[W3 PASS] every freed file is inside a verified bundle on the remote with its md5; problems []
+[W4 PASS] essential live files present (17/17) []
+TOTAL 4 checks, FAIL 0
+[T8/T9-verify PASS] verifier W1-W4 after T7-T9, before the T5 tamper
+[W1 PASS] 9 ledger line(s): chain, line hashes, manifest SHA intact=True; duplicate (hour, tag) 0; protocol + v2..v7 amendments == locks=True
+[W2 FAIL] 8 verified hour(s) downloaded: bundle/manifest MD5 == ledger, 29 tar members md5 == manifest; changed locally since (reported) 7; problems ['md5 2026-10-25_05 052928']
+[W3 FAIL] every freed file is inside a verified bundle on the remote with its md5; problems ['bundle 052928 not on remote']
+[W4 PASS] essential live files present (17/17) []
+TOTAL 4 checks, FAIL 2
+[T5 PASS] a tampered bundle on the remote -> verifier W2 FAIL
+TOTAL 11 tests, FAIL 0

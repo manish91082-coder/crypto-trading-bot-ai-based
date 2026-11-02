@@ -1,0 +1,16 @@
+PASS  V1 protocol SHA  
+PASS  V1 DISC input SHAs  16 files
+PASS  V1 HOLD opened after candidates, candidates unchanged  2026-10-27T13:39:16Z -> 2026-10-27T13:44:03Z
+PASS  V1 DISC output SHAs  20 files
+PASS  V1 1m continuity (DISC)  217440 minutes
+PASS  V2 ZigZag pivots theta 0.01  705 pivots
+PASS  V2 ZigZag pivots theta 0.04  52 pivots
+PASS  V3 T1 events/outcomes theta 1% f 0.5  n 1237, P 0.5659
+PASS  V3 own null P within 2 pp  own 0.5552 vs main 0.5556
+PASS  V4 300 feature values from raw  300 checked, mismatches []
+PASS  V5 detector trades replayed by own loops (14 configs)  mismatches []
+PASS  V6 VR and AC1 (4 minute q)  []
+PASS  V7 daily complete, monthly = sum of daily, daily = trades  151 days
+PASS  V8 HOLD pass decisions recomputed from rows  0 disagreements
+
+TOTAL 14 checks, 14 PASS, 0 FAIL -> ALL PASS

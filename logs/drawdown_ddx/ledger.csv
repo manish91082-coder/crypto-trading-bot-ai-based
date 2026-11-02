@@ -1,0 +1,44 @@
+id,item,role,claimed_dd_pct,claimed_final,recomputed_dd_pct,recomputed_final,dd_ok,final_ok,decision,note,equity_file,dd_ratio_vs_comparison,final_ratio_vs_comparison
+A01,AI,variant,73.18,65274.51,73.18440735853933,65413.15272035933,True,False,PARTIAL_SKILL_RULE_FAILS,,logs/strategy_1d_step19_largecap/AI_equity.csv,1.0562933025404158,2.6055951559317205
+A01,BTC_HOLD,comparison,69.28,25051.67,69.28424183089676,25109.48962491914,True,False,PARTIAL_SKILL_RULE_FAILS,,logs/strategy_1d_step19_largecap/BTC_HOLD_equity.csv,,
+A02,FULL,variant,74.28,4757.63,74.28306995627574,4757.628103513058,True,True,FAIL,,logs/strategy_1d_step17_18/FULL_equity.csv,0.8616169817886556,0.21035320687578646
+A02,R5_ONLY,comparison,86.21,22617.34,86.20701816835991,22664.898678428915,True,False,FAIL,,logs/strategy_1d_step17_18/R5_ONLY_equity.csv,,
+A03,GATED,variant,72.98,10219.41,72.97653010700638,10219.40731561456,True,True,FAIL,,logs/strategy_1d_step20_largecap_gate/GATED_equity.csv,0.9972670128450396,0.1565605011818549
+A03,UNGATED,comparison,73.18,65274.51,73.18440735853933,65413.15272035933,True,False,FAIL,,logs/strategy_1d_step20_largecap_gate/UNGATED_equity.csv,,
+A04,ALARM,variant,52.72,121024.18,52.721783949097976,121024.181754174,True,True,INVALID,,logs/strategy_1d_step21_crash/ALARM_equity.csv,0.7204154140475539,1.8540802527663554
+A04,ALARM_CONTROL,control,57.54,70327.68,57.54462675782762,70327.6804835609,True,True,INVALID,,logs/strategy_1d_step21_crash/ALARM_CONTROL_equity.csv,0.7862804044820989,1.0774141391486507
+A04,UNGATED,comparison,73.18,65274.51,73.18440735853933,65413.15272035933,True,False,INVALID,,logs/strategy_1d_step21_crash/UNGATED_equity.csv,,
+A05,AI_VETO,variant,75.64,91928.24,75.63947338417569,92155.44785061743,True,False,FAIL,,logs/strategy_1d_step26_exit/MAIN_2021_26_AI_VETO_daily_equity.csv,1.0128548473486876,0.45611031323217577
+A05,BASE,comparison,74.68,201548.26,,,,,FAIL,,,,
+A06,D1 f=1.0,comparison,81.27,74452.43,81.2710122207102,74617.02674520225,True,False,exposure table (no gate per f),,logs/strategy_1d_step27_combine/sleeves_MAIN_f100.csv,,
+A06,D1 f=0.75,variant,70.6,62192.72,70.60126346973983,62317.73713688399,True,False,exposure table (no gate per f),,logs/strategy_1d_step27_combine/sleeves_MAIN_f75.csv,0.8687092408022641,0.835334991752452
+A06,D1 f=0.5,variant,54.44,43151.15,54.44305984062279,43211.90726496055,True,False,exposure table (no gate per f),,logs/strategy_1d_step27_combine/sleeves_MAIN_f50.csv,0.6698658791682047,0.5795801426494743
+A06,D1 f=0.3,variant,36.8,27416.63,36.799775895206196,27440.78675899688,True,False,exposure table (no gate per f),,logs/strategy_1d_step27_combine/sleeves_MAIN_f30.csv,0.45281161560231326,0.3682435885571499
+A07,MAIN.VOL,variant,59.1,66034.4,59.09872974077873,66034.39629495,True,True,FAIL,,logs/strategy_1d_step28_volsize/vol_path_MAIN.csv,1.2215791649441918,1.2259211107445578
+A07,MAIN.FIXED_050,comparison,48.38,53865.13,,,,,FAIL,,,,
+A08,MAIN.AI_LS,variant,30.33,110478.96,30.33316428865159,110713.8171376788,True,False,PASS,,logs/strategy_f2_longshort/equity_MAIN_AI_LS.csv,0.6187270501835984,2.0503205511865823
+A08,MAIN.AI_LO,comparison,49.02,53883.75,49.018154844619325,53956.30825753708,True,False,PASS,,logs/strategy_f2_longshort/equity_MAIN_AI_LO.csv,,
+A09,MAIN.RS,variant,21.37,88400.87,21.367562094289696,88574.20175958906,True,False,PASS,,logs/strategy_f7_risk/equity_MAIN_AI_RS.csv,0.704582921200132,0.8001602296038991
+A09,MAIN.OFF_LS,comparison,30.33,110478.96,30.33316428865159,110713.8171376788,True,False,PASS,,logs/strategy_f7_risk/equity_MAIN_AI_OFF_LS.csv,,
+A10,E1a,variant,13.58,58887.59,13.583414338220901,59004.1366874694,True,False,FAIL,,logs/research_r1/equity_E1a.csv,0.6354702854468881,0.6661426522159793
+A10,E1b,variant,27.82,33155.14,27.8190428893902,33216.65372477072,True,False,FAIL,,logs/research_r1/equity_E1b.csv,1.301824988301357,0.37505445364960777
+A10,baseline F7 RS,comparison,21.37,88400.87,21.367562094289696,88574.20175958906,True,False,baseline,,logs/research_r1/equity_BASE_F7_RS.csv,,
+A11,E4,variant,20.03,60450.59,20.02648782112373,60572.08424658994,True,False,FAIL,,logs/research_r1/equity_E4.csv,0.9372952737482452,0.6838234736830079
+A11,baseline F7 RS,comparison,21.37,88400.87,21.367562094289696,88574.20175958906,True,False,baseline,,logs/research_r1/equity_BASE_F7_RS.csv,,
+A12,dev|ECO-W2,variant,11.011875652659342,110527.0671971103,11.011875652659342,110527.0671971103,True,True,ECO-W2 adopted (E-2 gates),,data/derived/eco/e2_daily_series.parquet,0.5136861947231052,1.5007275119339458
+A12,dev|1D_alone_combo,comparison,21.436970208232143,73648.9911180992,21.436970208232143,73648.9911180992,True,True,,,data/derived/eco/e2_daily_series.parquet,,
+A12,dev|N1_alone,comparison,22.180825384327076,140972.80098106468,22.180825384327076,140972.80098106468,True,True,,,data/derived/eco/e2_daily_series.parquet,,
+A12,P3|ECO-W2,variant,18.747124360790735,9968.307924188171,18.747124360790735,9968.307924188171,True,True,ECO-W2 adopted (E-2 gates),,data/derived/eco/e2_daily_series.parquet,0.8745230402751382,0.13534887271169238
+A12,P3|1D_alone_combo,comparison,12.569508381793803,11561.614392089134,12.569508381793803,11561.614392089134,True,True,,,data/derived/eco/e2_daily_series.parquet,,
+A12,P3|N1_alone,comparison,31.26862610157406,8749.275935209349,31.26862610157406,8749.275935209349,True,True,,,data/derived/eco/e2_daily_series.parquet,,
+A13,combined_T4 dev,variant,10.440023945911248,,,,,,ECO-T4 FAIL: not adopted,comparison dev|ECO-W2 calmar 5.9827 vs T4 5.9646,,,
+A13,combined_T4 P3,variant,18.437597176337185,,,,,,ECO-T4 FAIL: not adopted,,,,
+A14,G1_f0.005_K6 (base),comparison,11.437501273170426,14629.138878603399,,,,,no decision field in claims,,,,
+A14,L1 (DD de-risk),variant,13.094084799181239,12405.068364378301,,,,,no decision field in claims,,,1.1448378877908194,0.847969827022558
+A15,base dev,comparison,28.63181810582064,,,,,,N2 FAIL,dev calmar 3.2571,,,
+A15,R1 dev,variant,27.347319439314997,,,,,,N2 FAIL,dev calmar 2.8211,,0.9551373698394475,
+A15,R2 dev,variant,36.932717174758224,,,,,,N2 FAIL,dev calmar 1.7824,,1.2899186855077873,
+A16,T19 base,comparison,,,,,,,T19 safety adopted: S2,"dev calmar 3.6485 (claims hold calmar, no DD)",,,
+A16,T19 S1,variant,,,,,,,T19 safety adopted: S2,"dev calmar 2.9007 (claims hold calmar, no DD)",,,
+A16,T19 S2,variant,,,,,,,T19 safety adopted: S2,"dev calmar 4.1607 (claims hold calmar, no DD)",,,
+A16,T19 S3,variant,,,,,,,T19 safety adopted: S2,"dev calmar 3.2463 (claims hold calmar, no DD)",,,

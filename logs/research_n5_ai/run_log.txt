@@ -1,0 +1,101 @@
+base {'stop': False} regime None execution ['X2', 'X3'] report_only False
+shuffle 0 {'L': 0.5206, 'H': 0.5269, 'E': 0.5269}
+shuffle 1 {'L': 0.5149, 'H': 0.5187, 'E': 0.5193}
+shuffle 2 {'L': 0.5196, 'H': 0.5228, 'E': 0.5246}
+shuffle 3 {'L': 0.5241, 'H': 0.5227, 'E': 0.5259}
+shuffle 4 {'L': 0.5157, 'H': 0.5296, 'E': 0.5256}
+shuffle 5 {'L': 0.5213, 'H': 0.5236, 'E': 0.526}
+shuffle 6 {'L': 0.5167, 'H': 0.5251, 'E': 0.5255}
+shuffle 7 {'L': 0.5218, 'H': 0.5221, 'E': 0.524}
+shuffle 8 {'L': 0.519, 'H': 0.5267, 'E': 0.5272}
+shuffle 9 {'L': 0.5174, 'H': 0.5248, 'E': 0.5237}
+shuffle 10 {'L': 0.5149, 'H': 0.5292, 'E': 0.5267}
+shuffle 11 {'L': 0.5185, 'H': 0.5234, 'E': 0.5237}
+shuffle 12 {'L': 0.5187, 'H': 0.5196, 'E': 0.5214}
+shuffle 13 {'L': 0.5196, 'H': 0.5289, 'E': 0.5281}
+shuffle 14 {'L': 0.5164, 'H': 0.5224, 'E': 0.5224}
+shuffle 15 {'L': 0.5186, 'H': 0.529, 'E': 0.5276}
+shuffle 16 {'L': 0.5208, 'H': 0.5281, 'E': 0.5287}
+shuffle 17 {'L': 0.5222, 'H': 0.525, 'E': 0.5265}
+shuffle 18 {'L': 0.5186, 'H': 0.5222, 'E': 0.5226}
+shuffle 19 {'L': 0.5226, 'H': 0.5234, 'E': 0.5256}
+model L {'model': 'L', 'auc': 0.5359, 'auc_ci_lo': 0.53, 'auc_ci_hi': 0.5417, 'shuffled_p95': 0.5227, 'take_rate': 0.4681, 'gb': 0.0042, 'gb_ci_lo': 0.0026, 'gb_ci_hi': 0.0058, 'tail_share': 0.5778, 'calmar_dev': 2.183, 'base_calmar_dev': 3.6485, 'random_skip_p95': 2.4612, 'calmar_P1': 2.0505, 'base_P1': 3.6754, 'calmar_P2': 2.2684, 'base_P2': 3.2104, 'calmar_P3': 0.4119, 'base_P3': -0.3899}
+model H {'model': 'H', 'auc': 0.5448, 'auc_ci_lo': 0.5392, 'auc_ci_hi': 0.5506, 'shuffled_p95': 0.5292, 'take_rate': 0.493, 'gb': 0.0036, 'gb_ci_lo': 0.0018, 'gb_ci_hi': 0.0053, 'tail_share': 0.5636, 'calmar_dev': 2.4588, 'base_calmar_dev': 3.6485, 'random_skip_p95': 2.9148, 'calmar_P1': 2.2532, 'base_P1': 3.6754, 'calmar_P2': 3.0779, 'base_P2': 3.2104, 'calmar_P3': 0.4956, 'base_P3': -0.3899}
+model E {'model': 'E', 'auc': 0.5468, 'auc_ci_lo': 0.5414, 'auc_ci_hi': 0.5522, 'shuffled_p95': 0.5281, 'take_rate': 0.4867, 'gb': 0.0054, 'gb_ci_lo': 0.0036, 'gb_ci_hi': 0.0074, 'tail_share': 0.5893, 'calmar_dev': 2.449, 'base_calmar_dev': 3.6485, 'random_skip_p95': 2.7101, 'calmar_P1': 2.6175, 'base_P1': 3.6754, 'calmar_P2': 2.9189, 'base_P2': 3.2104, 'calmar_P3': 0.6629, 'base_P3': -0.3899}
+  model     auc  auc_ci_lo  auc_ci_hi  shuffled_p95  take_rate      gb  gb_ci_lo  gb_ci_hi  tail_share  calmar_dev  base_calmar_dev  random_skip_p95  calmar_P1  base_P1  calmar_P2  base_P2  calmar_P3  base_P3  dsr
+0     L  0.5359     0.5300     0.5417        0.5227     0.4681  0.0042    0.0026    0.0058      0.5778      2.1830           3.6485           2.4612     2.0505   3.6754     2.2684   3.2104     0.4119  -0.3899  1.0
+1     H  0.5448     0.5392     0.5506        0.5292     0.4930  0.0036    0.0018    0.0053      0.5636      2.4588           3.6485           2.9148     2.2532   3.6754     3.0779   3.2104     0.4956  -0.3899  1.0
+2     E  0.5468     0.5414     0.5522        0.5281     0.4867  0.0054    0.0036    0.0074      0.5893      2.4490           3.6485           2.7101     2.6175   3.6754     2.9189   3.2104     0.6629  -0.3899  1.0
+       feature  perm_importance_auc
+16     btc_r30              0.11501
+18   btc_sig20              0.06746
+15      btc_r7              0.05973
+14      btc_r1              0.04670
+7         atrp              0.01187
+24   global_ls              0.00923
+23  top_ls_pos              0.00872
+19   fund_last              0.00843
+20     fund_7d              0.00811
+10     d_ema50              0.00808
+9      d_ema20              0.00503
+4         ret1              0.00481
+{
+ "protocol_sha": "da95e8a17eb46f89b5ba41302a105b2cc940412059e3d3b4eeddf50678aa7b4c",
+ "code_sha": "40a7a73c1e16771bc84cf29ddcedb3ca1a0899d0dd3b3338b4a0e900ee598e24",
+ "base": {
+  "cfg": {
+   "stop": false
+  },
+  "regime": null,
+  "execution": [
+   "X2",
+   "X3"
+  ]
+ },
+ "report_only": false,
+ "gates": {
+  "L": {
+   "gates": {
+    "G-A": true,
+    "G-B": true,
+    "G-C": false,
+    "G-D": true,
+    "G-E": false,
+    "G-F": true
+   },
+   "passed": false,
+   "dsr": 0.9999995729870436
+  },
+  "H": {
+   "gates": {
+    "G-A": true,
+    "G-B": true,
+    "G-C": false,
+    "G-D": true,
+    "G-E": false,
+    "G-F": true
+   },
+   "passed": false,
+   "dsr": 0.9999999989455041
+  },
+  "E": {
+   "gates": {
+    "G-A": true,
+    "G-B": true,
+    "G-C": false,
+    "G-D": true,
+    "G-E": false,
+    "G-F": true
+   },
+   "passed": false,
+   "dsr": 0.9999999691222599
+  }
+ },
+ "chosen": null,
+ "verdict": "N5 FAIL",
+ "n_trials_dsr": 35,
+ "sr_var": 0.0017820562191963062,
+ "n_trades": 134912,
+ "n_dev_test": 111105,
+ "label_rate": 0.365825120381621
+}

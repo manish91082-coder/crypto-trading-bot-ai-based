@@ -1,0 +1,15 @@
+tf,pattern,n,p_follow,follow_label
+5m,double_top,27958,0.5553329994992489,LL
+5m,double_bottom,25009,0.5572393938182254,HH
+15m,double_top,8589,0.5505879613459076,LL
+15m,double_bottom,7480,0.5597593582887701,HH
+1h,double_top,1929,0.5438050803525143,LL
+1h,double_bottom,1793,0.5365309537088678,HH
+4h,double_top,428,0.5023364485981309,LL
+4h,double_bottom,446,0.5134529147982063,HH
+1D,double_top,58,0.6379310344827587,LL
+1D,double_bottom,81,0.5679012345679012,HH
+1W,double_top,9,0.7777777777777778,LL
+1W,double_bottom,9,0.4444444444444444,HH
+1M,double_top,4,0.5,LL
+1M,double_bottom,4,0.75,HH

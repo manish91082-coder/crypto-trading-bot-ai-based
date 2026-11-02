@@ -1,0 +1,5 @@
+[V1 PASS] hashes; G0: rules-off reproduces the F2 LS and LO sleeve finals within $0.01
+[V2 PASS] 227 stop exits re-derived from raw 1h perp files (entry, no earlier touch, fill, funding, P&L)
+[V3 PASS] 300 rebalance exits: no bar touched the stop while the short was open
+[V4 PASS] cooldown: 227 stop / liquidation exits, none re-shorted within 30 days
+[V5 PASS] liquidations 0, stops 227; RS final 88400.87 MaxDD 21.37% Calmar 2.159 2022 +36.54% K1 0; LO final 53883.75; gates {'G0': True, 'G1': True, 'G2': True, 'G3': True, 'G4': True, 'G5': True, 'G6': True, 'decision': 'PASS'}

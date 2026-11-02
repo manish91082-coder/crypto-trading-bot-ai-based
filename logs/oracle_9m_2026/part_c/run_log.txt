@@ -1,0 +1,18 @@
+2026-10-26T13:00:41Z Part C start (Amendment 1 SHA e68da96c)
+2026-10-26T13:00:45Z days 272; days with missing 5m bars 0
+2026-10-26T13:00:48Z C1 done: 2421 calls (2s)
+2026-10-26T13:01:06Z C2 done: 13647 events (18s)
+2026-10-26T13:01:26Z C3 done: 195840 trades, 120 configs (20s); {'c3_configs': 120, 'fut_configs': 100, 'fut_lb95_pos': 0, 'fut_lbbonf_pos': 0, 'partD_selected_by_rule': [], 'partD_lead': 'FUT|RAND|R08|G12', 'top_c1': 'DIR_CLOSEPOS', 'top_c2': 'ENT_SWEEP_ALL'}
+2026-10-26T13:01:26Z output SHA written
+2026-10-26T13:06:17Z Part C start (Amendment 1 SHA e68da96c)
+2026-10-26T13:06:24Z days 272; days with missing 5m bars 0
+2026-10-26T13:06:27Z C1 done: 2421 calls (3s)
+2026-10-26T13:06:50Z C2 done: 13647 events (23s)
+2026-10-26T13:07:20Z C3 done: 195840 trades, 120 configs (30s); {'c3_configs': 120, 'fut_configs': 100, 'fut_lb95_pos': 0, 'fut_lbbonf_pos': 0, 'partD_selected_by_rule': [], 'partD_lead': 'FUT|RAND|R08|G12', 'top_c1': 'DIR_CLOSEPOS', 'top_c2': 'ENT_SWEEP_ALL'}
+2026-10-26T13:07:20Z output SHA written
+2026-10-26T13:09:18Z Part C start (Amendment 1 SHA e68da96c)
+2026-10-26T13:09:26Z days 272; days with missing 5m bars 0
+2026-10-26T13:09:30Z C1 done: 2421 calls (3s)
+2026-10-26T13:09:53Z C2 done: 13647 events (23s)
+2026-10-26T13:10:25Z C3 done: 195840 trades, 120 configs (32s); {'c3_configs': 120, 'fut_configs': 100, 'fut_lb95_pos': 0, 'fut_lbbonf_pos': 0, 'partD_selected_by_rule': [], 'partD_lead': 'FUT|RAND|R08|G12', 'top_c1': 'DIR_CLOSEPOS', 'top_c2': 'ENT_SWEEP_ALL'}
+2026-10-26T13:10:25Z output SHA written

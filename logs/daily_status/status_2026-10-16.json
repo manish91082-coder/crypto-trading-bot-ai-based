@@ -1,0 +1,79 @@
+{
+  "run_utc": "2026-10-16 08:57:02.752123",
+  "asof": "2026-10-15",
+  "problems": [
+    "task CryptoBot16B_ForwardMulti last result 1",
+    "task CryptoBot_F4_LSPaper last result 1",
+    "16B: as-of 2026-10-15 logged LATE",
+    "F4: as-of 2026-10-15 logged LATE"
+  ],
+  "ledgers": {
+    "16B": {
+      "logged": true,
+      "on_time": false,
+      "notes": "[\"late run: live 1h data reaches 2026-10-16 03:00:00 (> as-of 23:00); scoring, members and paper are cut at the as-of day\"]"
+    },
+    "F4": {
+      "logged": true,
+      "on_time": false,
+      "C1": true,
+      "LS_RS": 10000.0,
+      "LO": 10000.0
+    },
+    "N3": {
+      "last_target": "2026-10-16",
+      "lines": 2
+    },
+    "M4": {
+      "last_day": "2026-10-16",
+      "ok": "14/14"
+    },
+    "cost_rounds_total": 2
+  },
+  "tasks": [
+    {
+      "name": "CryptoBot16B_ForwardMulti",
+      "state": "Ready",
+      "last": "10/16/2026 10:20:50",
+      "result": 1,
+      "next": "10/17/2026 07:30:00"
+    },
+    {
+      "name": "CryptoBot1D_ForwardDryRun",
+      "state": "Ready",
+      "last": "10/16/2026 10:20:50",
+      "result": 0,
+      "next": "10/17/2026 05:50:20"
+    },
+    {
+      "name": "CryptoBot1D_HealthCheck",
+      "state": "Disabled",
+      "last": "10/13/2026 17:22:52",
+      "result": 0,
+      "next": "10/16/2026 15:22:52"
+    },
+    {
+      "name": "CryptoBot1D_Testnet_Swing",
+      "state": "Disabled",
+      "last": "10/13/2026 17:42:12",
+      "result": 267014,
+      "next": "10/16/2026 14:42:12"
+    },
+    {
+      "name": "CryptoBot_F4_LSPaper",
+      "state": "Ready",
+      "last": "10/16/2026 10:20:50",
+      "result": 1,
+      "next": "10/17/2026 08:30:00"
+    },
+    {
+      "name": "CryptoBot_Step2_CostSnapshot",
+      "state": "Ready",
+      "last": "10/16/2026 10:20:50",
+      "result": 0,
+      "next": "10/17/2026 05:28:58"
+    }
+  ],
+  "backup_files": 33,
+  "backup_bytes": 178651
+}

@@ -1,0 +1,12 @@
+{
+ "protocol_sha": "dc0b48c42e7be118c7973dae9f1fd82b0f737ce01c9c0fafb3b4c1df6667b2a8",
+ "code_sha": "0ae3da4e23a48c22a45de5dc575a8f21b9c4a2eff3c8ca8f41375e8b4836e25c",
+ "costs_per_side": {
+  "fut": 0.00046,
+  "spot": 0.00085,
+  "fut_maker": 0.00028000000000000003
+ },
+ "shortlist": [],
+ "pick": null,
+ "runtime_s": 326.1
+}

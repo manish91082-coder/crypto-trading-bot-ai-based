@@ -1,0 +1,6 @@
+[1 PASS] S-BRK / S-TRD signal sets (with the one-open rule) re-derived for BTC, SOL, LINK: equal
+[2 PASS] 200 random trades re-simulated with own loop: max |diff| gross/fee/funding/exit 0.00e+00
+[3 PASS] gate table (8 signal-sides) recomputed from trades: PASS flags and means equal
+[4 PASS] claims JSON == CSV; A1 / A0 protocol SHAs == locks; trades and legs SHAs
+[5 PASS] S-LAD = S6 4h: 1976 trades matched, unmatched 0, max gross diff 0.0e+00
+TOTAL 5 checks, FAIL 0

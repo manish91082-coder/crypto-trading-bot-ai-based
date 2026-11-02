@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\turn_2026.py", line 1049, in <module>
+    {"disc": stage_disc, "hold": stage_hold}[sys.argv[1]]()
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\turn_2026.py", line 678, in stage_disc
+    st1, sc = spot_features(E, d1, range(1, 6))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\turn_2026.py", line 564, in spot_features
+    highs = H[w0:end].reshape(k, 10).max(axis=1)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: cannot reshape array of size 0 into shape (60,10)

@@ -1,0 +1,278 @@
+{
+  "protocol_sha256": "bac613eb19d646048e20636a117582c56741e7112bbfbe8cb0fd76b1dde214ed",
+  "inputs": {
+    "sleeves_MAIN_f100.csv": "2e4203cc1fc532cd701bc4e3f8283e799a9e088db036a3ba71cc19b85652fda1",
+    "sleeves_PRE_f100.csv": "dafcc6fc1e97151f7505d8f709515b8a0b0952aa636ea735eb65c789ea1dbf3a"
+  },
+  "MAIN": {
+    "VOL": {
+      "final": 66034.4,
+      "cagr_pct": 38.9,
+      "max_dd_pct": 59.1,
+      "calmar": 0.6583,
+      "w_mean": 0.6806,
+      "w_min": 0.2518,
+      "w_max": 1.0,
+      "changes": 173,
+      "years": {
+        "2021": 436.82,
+        "2022": -52.99,
+        "2023": 81.91,
+        "2024": 51.27,
+        "2025": -1.72,
+        "2026": -3.24
+      }
+    },
+    "FIXED_050": {
+      "final": 53865.13,
+      "cagr_pct": 34.07,
+      "max_dd_pct": 48.38,
+      "calmar": 0.7041,
+      "w": 0.5,
+      "years": {
+        "2021": 383.19,
+        "2022": -40.12,
+        "2023": 44.78,
+        "2024": 38.78,
+        "2025": -6.72,
+        "2026": -0.67
+      },
+      "approx_error_vs_step27_f50_pct": -0.035
+    },
+    "FIXED_MEAN": {
+      "final": 80346.5,
+      "cagr_pct": 43.73,
+      "max_dd_pct": 60.66,
+      "calmar": 0.7209,
+      "w": 0.6806,
+      "years": {
+        "2021": 670.38,
+        "2022": -52.46,
+        "2023": 63.47,
+        "2024": 52.77,
+        "2025": -10.59,
+        "2026": -1.75
+      }
+    },
+    "SHUFFLED": {
+      "calmar_p50": 0.2032,
+      "calmar_p95": 0.456,
+      "final_p50": 22680.08,
+      "final_p95": 43959.44,
+      "share_vol_calmar_better": 0.996,
+      "share_vol_final_better": 0.995
+    },
+    "report_only": {
+      "win10_band0.0": {
+        "final": 56244.24,
+        "cagr_pct": 35.08,
+        "max_dd_pct": 49.14,
+        "calmar": 0.7139,
+        "w_mean": 0.6815
+      },
+      "win10_band0.05": {
+        "final": 56444.04,
+        "cagr_pct": 35.16,
+        "max_dd_pct": 49.97,
+        "calmar": 0.7036,
+        "w_mean": 0.6808
+      },
+      "win10_band0.1": {
+        "final": 56784.06,
+        "cagr_pct": 35.3,
+        "max_dd_pct": 49.96,
+        "calmar": 0.7066,
+        "w_mean": 0.6843
+      },
+      "win20_band0.0": {
+        "final": 67008.65,
+        "cagr_pct": 39.26,
+        "max_dd_pct": 58.39,
+        "calmar": 0.6723,
+        "w_mean": 0.6762
+      },
+      "win20_band0.05": {
+        "final": 66459.72,
+        "cagr_pct": 39.06,
+        "max_dd_pct": 58.73,
+        "calmar": 0.6651,
+        "w_mean": 0.6761
+      },
+      "win20_band0.1": {
+        "final": 66034.4,
+        "cagr_pct": 38.9,
+        "max_dd_pct": 59.1,
+        "calmar": 0.6583,
+        "w_mean": 0.6806
+      },
+      "win60_band0.0": {
+        "final": 89752.51,
+        "cagr_pct": 46.53,
+        "max_dd_pct": 59.35,
+        "calmar": 0.784,
+        "w_mean": 0.6653
+      },
+      "win60_band0.05": {
+        "final": 87608.51,
+        "cagr_pct": 45.91,
+        "max_dd_pct": 58.92,
+        "calmar": 0.7793,
+        "w_mean": 0.6666
+      },
+      "win60_band0.1": {
+        "final": 94910.48,
+        "cagr_pct": 47.96,
+        "max_dd_pct": 58.44,
+        "calmar": 0.8207,
+        "w_mean": 0.6718
+      },
+      "BTC_VOL": {
+        "final": 20475.26,
+        "cagr_pct": 13.29,
+        "max_dd_pct": 61.38,
+        "calmar": 0.2165,
+        "w_mean": 0.6535
+      },
+      "BTC_FIXED_SAME_MEAN": {
+        "final": 24505.21,
+        "cagr_pct": 16.89,
+        "max_dd_pct": 59.23,
+        "calmar": 0.2851
+      }
+    }
+  },
+  "PRE": {
+    "VOL": {
+      "final": 4492.01,
+      "cagr_pct": -34.21,
+      "max_dd_pct": 61.55,
+      "calmar": -0.5559,
+      "w_mean": 0.5699,
+      "w_min": 0.3227,
+      "w_max": 1.0,
+      "changes": 49,
+      "years": {
+        "2018": -49.84,
+        "2019": -10.45
+      }
+    },
+    "FIXED_050": {
+      "final": 6257.27,
+      "cagr_pct": -21.76,
+      "max_dd_pct": 54.77,
+      "calmar": -0.3972,
+      "w": 0.5,
+      "years": {
+        "2018": -40.39,
+        "2019": 4.97
+      },
+      "approx_error_vs_step27_f50_pct": -4.412
+    },
+    "FIXED_MEAN": {
+      "final": 5729.98,
+      "cagr_pct": -25.28,
+      "max_dd_pct": 59.84,
+      "calmar": -0.4225,
+      "w": 0.5699,
+      "years": {
+        "2018": -45.23,
+        "2019": 4.62
+      }
+    },
+    "SHUFFLED": {
+      "calmar_p50": -0.5619,
+      "calmar_p95": -0.4251,
+      "final_p50": 4202.35,
+      "final_p95": 5765.5,
+      "share_vol_calmar_better": 0.531,
+      "share_vol_final_better": 0.637
+    },
+    "report_only": {
+      "win10_band0.0": {
+        "final": 3785.12,
+        "cagr_pct": -39.85,
+        "max_dd_pct": 65.73,
+        "calmar": -0.6063,
+        "w_mean": 0.5805
+      },
+      "win10_band0.05": {
+        "final": 3848.84,
+        "cagr_pct": -39.32,
+        "max_dd_pct": 65.11,
+        "calmar": -0.604,
+        "w_mean": 0.5805
+      },
+      "win10_band0.1": {
+        "final": 3934.45,
+        "cagr_pct": -38.62,
+        "max_dd_pct": 64.59,
+        "calmar": -0.598,
+        "w_mean": 0.5812
+      },
+      "win20_band0.0": {
+        "final": 4260.63,
+        "cagr_pct": -36.01,
+        "max_dd_pct": 63.34,
+        "calmar": -0.5685,
+        "w_mean": 0.5675
+      },
+      "win20_band0.05": {
+        "final": 4411.01,
+        "cagr_pct": -34.84,
+        "max_dd_pct": 61.88,
+        "calmar": -0.563,
+        "w_mean": 0.5684
+      },
+      "win20_band0.1": {
+        "final": 4492.01,
+        "cagr_pct": -34.21,
+        "max_dd_pct": 61.55,
+        "calmar": -0.5559,
+        "w_mean": 0.5699
+      },
+      "win60_band0.0": {
+        "final": 5383.68,
+        "cagr_pct": -27.68,
+        "max_dd_pct": 60.39,
+        "calmar": -0.4583,
+        "w_mean": 0.5312
+      },
+      "win60_band0.05": {
+        "final": 5570.46,
+        "cagr_pct": -26.37,
+        "max_dd_pct": 59.81,
+        "calmar": -0.441,
+        "w_mean": 0.5286
+      },
+      "win60_band0.1": {
+        "final": 5548.2,
+        "cagr_pct": -26.53,
+        "max_dd_pct": 60.44,
+        "calmar": -0.4389,
+        "w_mean": 0.5397
+      },
+      "BTC_VOL": {
+        "final": 9354.85,
+        "cagr_pct": -3.43,
+        "max_dd_pct": 51.08,
+        "calmar": -0.0671,
+        "w_mean": 0.5917
+      },
+      "BTC_FIXED_SAME_MEAN": {
+        "final": 9754.11,
+        "cagr_pct": -1.29,
+        "max_dd_pct": 50.84,
+        "calmar": -0.0255
+      }
+    }
+  },
+  "gates": {
+    "MAIN_G1": false,
+    "MAIN_G2": true,
+    "MAIN_G3": true,
+    "PRE_G1": false,
+    "PRE_G2": false,
+    "PRE_G3": false,
+    "decision": "FAIL"
+  }
+}

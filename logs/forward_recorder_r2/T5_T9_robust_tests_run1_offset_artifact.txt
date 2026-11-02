@@ -1,0 +1,41 @@
+run 20261019T132514Z: 48 files, 16702 rows kept, 61 requests, 10 http errors, notes ["TEST symbols override ['BTCUSDT', 'ETHUSDT']", 'TEST server offset -259200000 ms']
+run 20261019T132704Z: 216 files, 87678 rows kept, 218 requests, 0 http errors, notes ["TEST symbols override ['BTCUSDT', 'ETHUSDT']"]
+[V1 PASS] 2 ledger line(s): chain + line hashes intact=True, protocol == lock=True
+[V2a PASS] run folders == ledger run_ids (2); orphan folders (crashed run, quarantined at the next run) []
+[V2 PASS] 2 run folder(s): every file exists, file / raw SHA256 match, n_kept re-derived, manifest SHA == ledger
+[V5 PASS] no look-ahead: all kept klines closed before the run's server time; 20 live snapshots time <= write time []
+[V4 PASS] 18 kline series continuous from 2026-10-17 00:00 UTC; S series: 12, missing 5m stamps total 0 (max 0; Binance omits periods without trades)
+[V6 PASS] no duplicate timestamp in 32 series across runs
+[V7 PASS] state.json (32 keys) == state recomputed from raw files (32 keys)
+[V3 PASS] replay: 30 random stored rows re-fetched from the public API, equal 30/30 []
+[V8 PASS] missing 5m S stamps: 0 inside the 30-day window, 0 re-queried, present at Binance (= lost by the recorder) 0 []
+TOTAL 9 checks, FAIL 0
+[T5 PASS] 3-day downtime resumed: run 2 kept 87678 rows, S pages per series up to 18; verifier exit 0
+run 20261019T132949Z: 216 files, 87678 rows kept, 218 requests, 0 http errors, notes ["TEST symbols override ['BTCUSDT', 'ETHUSDT']", 'orphan run folder 20261019T132704Z quarantined to raw_orphans (no ledger line: crashed run)', 'state.json did not match the last ledger line -> restored from 20261019T132514Z/state_after.json']
+[V1 PASS] 2 ledger line(s): chain + line hashes intact=True, protocol == lock=True
+[V2a PASS] run folders == ledger run_ids (2); orphan folders (crashed run, quarantined at the next run) []
+[V2 PASS] 2 run folder(s): every file exists, file / raw SHA256 match, n_kept re-derived, manifest SHA == ledger
+[V5 PASS] no look-ahead: all kept klines closed before the run's server time; 20 live snapshots time <= write time []
+[V4 PASS] 18 kline series continuous from 2026-10-17 00:00 UTC; S series: 12, missing 5m stamps total 0 (max 0; Binance omits periods without trades)
+[V6 PASS] no duplicate timestamp in 32 series across runs
+[V7 PASS] state.json (32 keys) == state recomputed from raw files (32 keys)
+[V3 PASS] replay: 20 random stored rows re-fetched from the public API, equal 20/20 []
+[V8 PASS] missing 5m S stamps: 0 inside the 30-day window, 0 re-queried, present at Binance (= lost by the recorder) 0 []
+TOTAL 9 checks, FAIL 0
+[T6 PASS] crash before ledger: orphan 20261019T132704Z quarantined, state restored from the last chained run, refetched; verifier exit 0
+run 20261019T133222Z: 40 files, 16 rows kept, 42 requests, 0 http errors, notes ["TEST symbols override ['BTCUSDT', 'ETHUSDT']", 'state.json did not match the last ledger line -> restored from 20261019T132704Z/state_after.json']
+[V1 PASS] 3 ledger line(s): chain + line hashes intact=True, protocol == lock=True
+[V2a PASS] run folders == ledger run_ids (3); orphan folders (crashed run, quarantined at the next run) []
+[V2 PASS] 3 run folder(s): every file exists, file / raw SHA256 match, n_kept re-derived, manifest SHA == ledger
+[V5 PASS] no look-ahead: all kept klines closed before the run's server time; 30 live snapshots time <= write time []
+[V4 PASS] 18 kline series continuous from 2026-10-17 00:00 UTC; S series: 12, missing 5m stamps total 0 (max 0; Binance omits periods without trades)
+[V6 PASS] no duplicate timestamp in 32 series across runs
+[V7 PASS] state.json (32 keys) == state recomputed from raw files (32 keys)
+[V3 PASS] replay: 20 random stored rows re-fetched from the public API, equal 20/20 []
+[V8 PASS] missing 5m S stamps: 0 inside the 30-day window, 0 re-queried, present at Binance (= lost by the recorder) 0 []
+TOTAL 9 checks, FAIL 0
+[T7 PASS] crash after ledger / stale state.json: restored from state_after.json, no duplicates; verifier exit 0
+[T8 PASS] series last stamp 31 days old -> LOST note: ['LOST oi_hist|BTCUSDT|5m: 575 stamps older than the 29-day window']
+[T9 PASS] offset without --test-symbols is refused before anything is written
+TOTAL 5 tests, FAIL 0
+exit=0

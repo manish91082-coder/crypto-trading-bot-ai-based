@@ -1,0 +1,2 @@
+run 20261019T122504Z: 2808 files, 1180101 rows kept, 2812 requests, 0 http errors, notes []
+exit=0

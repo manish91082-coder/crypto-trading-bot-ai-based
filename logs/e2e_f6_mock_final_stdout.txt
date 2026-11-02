@@ -1,0 +1,17 @@
+[PASS] M1 first run: every target short opened with one stop at fill x 1.5; isolated+1x set first; state == exchange: 15 shorts / 15 targets; stops True; setup True; open algos 15
+[PASS] M1b verifier O1..O3 on the mock exchange: [O1 PASS] 20261016T135937_testnet.json: 15 actions acknowledged or skipped with a reason | [O2 PASS] 15 open shorts, each with exactly one correct STOP_MARKET algo order | [O3 PASS] exchange positions equal the state for 11 symbols; no extra positions
+[PASS] M2 second run with the same decision sends no order (idempotent): POSTs 60 -> 60
+[PASS] M3 TRIGGERED stop -> short removed from the state (stop_fired): D1 SUIUSDT: stop_fired 1; RE-OPENED in the same run with the same decision: False
+[PASS] M3b after an exchange stop the short is NOT re-opened (30-day cooldown, F7 rule): re-opened=False; skip reason ['cooldown: exchange stop fired 2026-10-16 (F7 30-day rule)']
+[PASS] M3c verifier O1..O3 after the stop: [O1 PASS] 20261016T135939_testnet.json: 2 actions acknowledged or skipped with a reason | [O2 PASS] 14 open shorts, each with exactly one correct STOP_MARKET algo order | [O3 PASS] exchange positions equal the state for 10 symbols; no extra positions
+[PASS] M4 CANCELED stop -> new stop placed; short stays in the state, protected: D1 DOGEUSDT: algo 1003 -> 1016
+[PASS] M4b verifier O1..O3 after the re-placed stop: [O1 PASS] 20261016T135940_testnet.json: 2 actions acknowledged or skipped with a reason | [O2 PASS] 14 open shorts, each with exactly one correct STOP_MARKET algo order | [O3 PASS] exchange positions equal the state for 10 symbols; no extra positions
+[PASS] M5 drill-kill: zero positions, zero open algo orders, no HALT for a drill: positions 0, open algos 0
+[PASS] M5b verifier O4 after the drill: [O1 PASS] 20261016T135941_testnet.json: 21 actions acknowledged or skipped with a reason
+[O4 PASS] after the kill drill: no positions, no open algo orders
+[PASS] M6 K1 (equity 64 % of peak): everything covered, algo cancelled, HALT written: HALT True
+[PASS] M6b with HALT present the next run refuses to trade (no order, no cancel, no signed call): calls after HALT: ['/fapi/v1/exchangeInfo']; [2026-10-16 13:59:44 UTC] HALT file present -> refusing to trade (user must review and delete HALT)
+[PASS] M7 hedge mode stops the run (no settings changed): account is in HEDGE mode: user must switch to one-way (code does not change settings)
+[PASS] M9 exchange-rejected order -> short_rejected recorded, nothing in the state for it: rejected 1 (SUIUSDT); in state []
+[PASS] M8 only the two test hosts can be constructed: accepted []
+F6 MOCK: 15/15 PASS

@@ -1,0 +1,778 @@
+{
+  "protocol_sha256": "a3a945564ba12d37dfe70524d30de6282feeb6edf0c19a55e73def3ae55b4f8f",
+  "G0_detail": {
+    "D1": true,
+    "H4": true,
+    "H1": true
+  },
+  "F2_reference": {
+    "LS": {
+      "final": 110478.96,
+      "cagr_pct": 51.92,
+      "max_dd_pct": 30.33,
+      "calmar": 1.712,
+      "ret_2021": 232.58,
+      "ret_2022": 45.37,
+      "ret_2023": 4.26,
+      "ret_2024": 36.95,
+      "ret_2025": 46.77,
+      "ret_2026": 9.27
+    },
+    "LO": {
+      "final": 53883.75,
+      "cagr_pct": 34.07,
+      "max_dd_pct": 49.02,
+      "calmar": 0.695,
+      "ret_2021": 379.13,
+      "ret_2022": -41.64,
+      "ret_2023": 47.71,
+      "ret_2024": 42.08,
+      "ret_2025": -7.48,
+      "ret_2026": -0.62
+    },
+    "LS_liquidations": 69
+  },
+  "MAIN": {
+    "OFF_LO": {
+      "mix": {
+        "final": 53883.75,
+        "cagr_pct": 34.07,
+        "max_dd_pct": 49.02,
+        "calmar": 0.695,
+        "ret_2021": 379.13,
+        "ret_2022": -41.64,
+        "ret_2023": 47.71,
+        "ret_2024": 42.08,
+        "ret_2025": -7.48,
+        "ret_2026": -0.62
+      },
+      "sleeves": {
+        "D1": {
+          "final": 43151.15,
+          "cagr_pct": 28.99,
+          "max_dd_pct": 54.44,
+          "calmar": 0.532,
+          "ret_2021": 278.25,
+          "ret_2022": -45.84,
+          "ret_2023": 64.92,
+          "ret_2024": 42.73,
+          "ret_2025": -6.9,
+          "ret_2026": -3.75,
+          "liquidations": 0,
+          "stops": 0,
+          "cooldown_blocks": 0,
+          "age_blocks": 0
+        },
+        "H4": {
+          "final": 49365.87,
+          "cagr_pct": 32.04,
+          "max_dd_pct": 49.93,
+          "calmar": 0.642,
+          "ret_2021": 348.93,
+          "ret_2022": -44.05,
+          "ret_2023": 49.2,
+          "ret_2024": 47.98,
+          "ret_2025": -11.95,
+          "ret_2026": 1.23,
+          "liquidations": 0,
+          "stops": 0,
+          "cooldown_blocks": 0,
+          "age_blocks": 0
+        },
+        "H1": {
+          "final": 69134.22,
+          "cagr_pct": 40.02,
+          "max_dd_pct": 45.81,
+          "calmar": 0.874,
+          "ret_2021": 510.22,
+          "ret_2022": -37.27,
+          "ret_2023": 37.51,
+          "ret_2024": 37.47,
+          "ret_2025": -4.44,
+          "ret_2026": 0.11,
+          "liquidations": 0,
+          "stops": 0,
+          "cooldown_blocks": 0,
+          "age_blocks": 0
+        }
+      },
+      "short_trades": 0,
+      "short_pnl_mix": 0.0,
+      "short_funding_mix": 0.0,
+      "liquidations": 0,
+      "stops": 0,
+      "K1_events": {
+        "mix": 1,
+        "D1": 3,
+        "H4": 2,
+        "H1": 1
+      }
+    },
+    "OFF_LS": {
+      "mix": {
+        "final": 110478.96,
+        "cagr_pct": 51.92,
+        "max_dd_pct": 30.33,
+        "calmar": 1.712,
+        "ret_2021": 232.58,
+        "ret_2022": 45.37,
+        "ret_2023": 4.26,
+        "ret_2024": 36.95,
+        "ret_2025": 46.77,
+        "ret_2026": 9.27
+      },
+      "sleeves": {
+        "D1": {
+          "final": 121811.51,
+          "cagr_pct": 54.53,
+          "max_dd_pct": 31.2,
+          "calmar": 1.748,
+          "ret_2021": 208.77,
+          "ret_2022": 26.66,
+          "ret_2023": 23.35,
+          "ret_2024": 36.76,
+          "ret_2025": 64.75,
+          "ret_2026": 12.33,
+          "liquidations": 27,
+          "stops": 0,
+          "cooldown_blocks": 0,
+          "age_blocks": 0
+        },
+        "H4": {
+          "final": 76190.65,
+          "cagr_pct": 42.41,
+          "max_dd_pct": 34.84,
+          "calmar": 1.217,
+          "ret_2021": 159.52,
+          "ret_2022": 49.46,
+          "ret_2023": 7.51,
+          "ret_2024": 25.64,
+          "ret_2025": 42.6,
+          "ret_2026": 2.19,
+          "liquidations": 20,
+          "stops": 0,
+          "cooldown_blocks": 0,
+          "age_blocks": 0
+        },
+        "H1": {
+          "final": 133434.73,
+          "cagr_pct": 57.0,
+          "max_dd_pct": 35.9,
+          "calmar": 1.588,
+          "ret_2021": 329.43,
+          "ret_2022": 56.36,
+          "ret_2023": -8.73,
+          "ret_2024": 44.8,
+          "ret_2025": 35.86,
+          "ret_2026": 10.9,
+          "liquidations": 22,
+          "stops": 0,
+          "cooldown_blocks": 0,
+          "age_blocks": 0
+        }
+      },
+      "short_trades": 4578,
+      "short_pnl_mix": 43321.7,
+      "short_funding_mix": -13420.07,
+      "liquidations": 69,
+      "stops": 0,
+      "K1_events": {
+        "mix": 0,
+        "D1": 0,
+        "H4": 0,
+        "H1": 1
+      }
+    },
+    "RS": {
+      "mix": {
+        "final": 88400.87,
+        "cagr_pct": 46.14,
+        "max_dd_pct": 21.37,
+        "calmar": 2.159,
+        "ret_2021": 212.28,
+        "ret_2022": 36.54,
+        "ret_2023": 5.73,
+        "ret_2024": 40.4,
+        "ret_2025": 34.64,
+        "ret_2026": 3.93
+      },
+      "sleeves": {
+        "D1": {
+          "final": 103663.98,
+          "cagr_pct": 50.25,
+          "max_dd_pct": 21.74,
+          "calmar": 2.311,
+          "ret_2021": 232.12,
+          "ret_2022": 13.42,
+          "ret_2023": 24.68,
+          "ret_2024": 49.6,
+          "ret_2025": 34.5,
+          "ret_2026": 9.9,
+          "liquidations": 0,
+          "stops": 66,
+          "cooldown_blocks": 354,
+          "age_blocks": 0
+        },
+        "H4": {
+          "final": 89170.58,
+          "cagr_pct": 46.36,
+          "max_dd_pct": 24.81,
+          "calmar": 1.869,
+          "ret_2021": 171.73,
+          "ret_2022": 50.1,
+          "ret_2023": 5.6,
+          "ret_2024": 46.85,
+          "ret_2025": 40.82,
+          "ret_2026": 0.31,
+          "liquidations": 0,
+          "stops": 73,
+          "cooldown_blocks": 2021,
+          "age_blocks": 0
+        },
+        "H1": {
+          "final": 72368.05,
+          "cagr_pct": 41.14,
+          "max_dd_pct": 26.17,
+          "calmar": 1.572,
+          "ret_2021": 232.99,
+          "ret_2022": 48.54,
+          "ret_2023": -8.59,
+          "ret_2024": 24.69,
+          "ret_2025": 27.87,
+          "ret_2026": 0.58,
+          "liquidations": 0,
+          "stops": 88,
+          "cooldown_blocks": 2399,
+          "age_blocks": 0
+        }
+      },
+      "short_trades": 4425,
+      "short_pnl_mix": 26227.13,
+      "short_funding_mix": -8946.57,
+      "liquidations": 0,
+      "stops": 227,
+      "K1_events": {
+        "mix": 0,
+        "D1": 0,
+        "H4": 0,
+        "H1": 0
+      }
+    },
+    "RS_cost020": {
+      "mix": {
+        "final": 68729.67,
+        "cagr_pct": 39.88,
+        "max_dd_pct": 21.74,
+        "calmar": 1.834,
+        "ret_2021": 189.51,
+        "ret_2022": 27.62,
+        "ret_2023": 3.31,
+        "ret_2024": 36.16,
+        "ret_2025": 29.88,
+        "ret_2026": 2.06
+      },
+      "sleeves": {
+        "D1": {
+          "final": 93452.08,
+          "cagr_pct": 47.56,
+          "max_dd_pct": 22.04,
+          "calmar": 2.158,
+          "ret_2021": 224.88,
+          "ret_2022": 11.0,
+          "ret_2023": 22.48,
+          "ret_2024": 47.13,
+          "ret_2025": 32.97,
+          "ret_2026": 8.39,
+          "liquidations": 0,
+          "stops": 66,
+          "cooldown_blocks": 354,
+          "age_blocks": 0
+        },
+        "H4": {
+          "final": 63077.62,
+          "cagr_pct": 37.8,
+          "max_dd_pct": 25.34,
+          "calmar": 1.492,
+          "ret_2021": 146.13,
+          "ret_2022": 38.51,
+          "ret_2023": 1.76,
+          "ret_2024": 40.02,
+          "ret_2025": 33.45,
+          "ret_2026": -2.45,
+          "liquidations": 0,
+          "stops": 73,
+          "cooldown_blocks": 2021,
+          "age_blocks": 0
+        },
+        "H1": {
+          "final": 49659.32,
+          "cagr_pct": 32.18,
+          "max_dd_pct": 27.23,
+          "calmar": 1.182,
+          "ret_2021": 197.53,
+          "ret_2022": 36.76,
+          "ret_2023": -12.39,
+          "ret_2024": 18.81,
+          "ret_2025": 21.05,
+          "ret_2026": -2.92,
+          "liquidations": 0,
+          "stops": 88,
+          "cooldown_blocks": 2399,
+          "age_blocks": 0
+        }
+      },
+      "short_trades": 4425,
+      "short_pnl_mix": 11708.32,
+      "short_funding_mix": -6295.37,
+      "liquidations": 0,
+      "stops": 227,
+      "K1_events": {
+        "mix": 0,
+        "D1": 0,
+        "H4": 0,
+        "H1": 0
+      }
+    },
+    "RS_CONTROL": {
+      "mix": {
+        "final": 2005.13,
+        "cagr_pct": -24.4,
+        "max_dd_pct": 86.4,
+        "calmar": -0.282,
+        "ret_2021": 1.5,
+        "ret_2022": -43.02,
+        "ret_2023": 4.61,
+        "ret_2024": -15.12,
+        "ret_2025": -39.54,
+        "ret_2026": -35.31
+      },
+      "sleeves": {
+        "D1": {
+          "final": 5543.9,
+          "cagr_pct": -9.76,
+          "max_dd_pct": 73.54,
+          "calmar": -0.133,
+          "ret_2021": 57.49,
+          "ret_2022": -20.83,
+          "ret_2023": 22.35,
+          "ret_2024": -9.66,
+          "ret_2025": -38.74,
+          "ret_2026": -34.22,
+          "liquidations": 0,
+          "stops": 53,
+          "cooldown_blocks": 289,
+          "age_blocks": 0
+        },
+        "H4": {
+          "final": 328.17,
+          "cagr_pct": -44.84,
+          "max_dd_pct": 97.88,
+          "calmar": -0.458,
+          "ret_2021": -17.65,
+          "ret_2022": -61.64,
+          "ret_2023": -41.1,
+          "ret_2024": -38.66,
+          "ret_2025": -44.92,
+          "ret_2026": -47.71,
+          "liquidations": 0,
+          "stops": 31,
+          "cooldown_blocks": 884,
+          "age_blocks": 0
+        },
+        "H1": {
+          "final": 143.33,
+          "cagr_pct": -52.24,
+          "max_dd_pct": 98.84,
+          "calmar": -0.529,
+          "ret_2021": -35.33,
+          "ret_2022": -73.35,
+          "ret_2023": -39.94,
+          "ret_2024": -53.25,
+          "ret_2025": -49.48,
+          "ret_2026": -41.28,
+          "liquidations": 0,
+          "stops": 40,
+          "cooldown_blocks": 1126,
+          "age_blocks": 0
+        }
+      },
+      "short_trades": 8737,
+      "short_pnl_mix": -12042.83,
+      "short_funding_mix": 2234.21,
+      "liquidations": 0,
+      "stops": 124,
+      "K1_events": {
+        "mix": 1,
+        "D1": 1,
+        "H4": 1,
+        "H1": 1
+      }
+    },
+    "RS_stop30": {
+      "mix": {
+        "final": 100479.73,
+        "cagr_pct": 49.44,
+        "max_dd_pct": 23.22,
+        "calmar": 2.129,
+        "ret_2021": 268.81,
+        "ret_2022": 33.43,
+        "ret_2023": 9.2,
+        "ret_2024": 24.99,
+        "ret_2025": 39.67,
+        "ret_2026": 7.32
+      },
+      "sleeves": {
+        "D1": {
+          "final": 121159.75,
+          "cagr_pct": 54.39,
+          "max_dd_pct": 20.01,
+          "calmar": 2.718,
+          "ret_2021": 291.04,
+          "ret_2022": 7.08,
+          "ret_2023": 33.9,
+          "ret_2024": 38.1,
+          "ret_2025": 43.25,
+          "ret_2026": 9.45,
+          "liquidations": 0,
+          "stops": 140,
+          "cooldown_blocks": 731,
+          "age_blocks": 0
+        },
+        "H4": {
+          "final": 78907.42,
+          "cagr_pct": 43.28,
+          "max_dd_pct": 30.44,
+          "calmar": 1.422,
+          "ret_2021": 175.79,
+          "ret_2022": 24.73,
+          "ret_2023": 5.6,
+          "ret_2024": 44.88,
+          "ret_2025": 42.26,
+          "ret_2026": 5.59,
+          "liquidations": 0,
+          "stops": 184,
+          "cooldown_blocks": 5092,
+          "age_blocks": 0
+        },
+        "H1": {
+          "final": 101372.02,
+          "cagr_pct": 49.67,
+          "max_dd_pct": 29.86,
+          "calmar": 1.663,
+          "ret_2021": 339.61,
+          "ret_2022": 62.32,
+          "ret_2023": -3.56,
+          "ret_2024": 3.82,
+          "ret_2025": 33.88,
+          "ret_2026": 6.19,
+          "liquidations": 0,
+          "stops": 192,
+          "cooldown_blocks": 5316,
+          "age_blocks": 0
+        }
+      },
+      "short_trades": 4129,
+      "short_pnl_mix": 34813.34,
+      "short_funding_mix": -6346.44,
+      "liquidations": 0,
+      "stops": 516,
+      "K1_events": {
+        "mix": 0,
+        "D1": 0,
+        "H4": 0,
+        "H1": 0
+      }
+    },
+    "RS_stop75": {
+      "mix": {
+        "final": 70212.23,
+        "cagr_pct": 40.4,
+        "max_dd_pct": 26.3,
+        "calmar": 1.536,
+        "ret_2021": 175.97,
+        "ret_2022": 42.5,
+        "ret_2023": 19.94,
+        "ret_2024": 19.38,
+        "ret_2025": 28.36,
+        "ret_2026": -2.66
+      },
+      "sleeves": {
+        "D1": {
+          "final": 70893.44,
+          "cagr_pct": 40.63,
+          "max_dd_pct": 21.74,
+          "calmar": 1.869,
+          "ret_2021": 206.52,
+          "ret_2022": 20.86,
+          "ret_2023": 23.88,
+          "ret_2024": 24.64,
+          "ret_2025": 24.35,
+          "ret_2026": -0.13,
+          "liquidations": 0,
+          "stops": 44,
+          "cooldown_blocks": 247,
+          "age_blocks": 0
+        },
+        "H4": {
+          "final": 63920.41,
+          "cagr_pct": 38.12,
+          "max_dd_pct": 31.09,
+          "calmar": 1.226,
+          "ret_2021": 149.16,
+          "ret_2022": 43.36,
+          "ret_2023": 29.16,
+          "ret_2024": 1.69,
+          "ret_2025": 38.8,
+          "ret_2026": -1.64,
+          "liquidations": 0,
+          "stops": 41,
+          "cooldown_blocks": 1173,
+          "age_blocks": 0
+        },
+        "H1": {
+          "final": 75822.83,
+          "cagr_pct": 42.29,
+          "max_dd_pct": 34.33,
+          "calmar": 1.232,
+          "ret_2021": 172.22,
+          "ret_2022": 66.09,
+          "ret_2023": 9.45,
+          "ret_2024": 30.98,
+          "ret_2025": 24.34,
+          "ret_2026": -5.72,
+          "liquidations": 0,
+          "stops": 41,
+          "cooldown_blocks": 1172,
+          "age_blocks": 0
+        }
+      },
+      "short_trades": 4456,
+      "short_pnl_mix": 9517.79,
+      "short_funding_mix": -7426.14,
+      "liquidations": 0,
+      "stops": 126,
+      "K1_events": {
+        "mix": 0,
+        "D1": 0,
+        "H4": 0,
+        "H1": 0
+      }
+    },
+    "RS_age30": {
+      "mix": {
+        "final": 75137.76,
+        "cagr_pct": 42.06,
+        "max_dd_pct": 20.2,
+        "calmar": 2.082,
+        "ret_2021": 163.09,
+        "ret_2022": 32.89,
+        "ret_2023": 14.15,
+        "ret_2024": 34.64,
+        "ret_2025": 35.31,
+        "ret_2026": 3.54
+      },
+      "sleeves": {
+        "D1": {
+          "final": 78845.58,
+          "cagr_pct": 43.26,
+          "max_dd_pct": 23.64,
+          "calmar": 1.83,
+          "ret_2021": 185.87,
+          "ret_2022": 5.91,
+          "ret_2023": 30.08,
+          "ret_2024": 35.36,
+          "ret_2025": 34.84,
+          "ret_2026": 9.9,
+          "liquidations": 0,
+          "stops": 70,
+          "cooldown_blocks": 375,
+          "age_blocks": 93
+        },
+        "H4": {
+          "final": 90219.03,
+          "cagr_pct": 46.66,
+          "max_dd_pct": 20.43,
+          "calmar": 2.284,
+          "ret_2021": 140.8,
+          "ret_2022": 53.99,
+          "ret_2023": 18.97,
+          "ret_2024": 45.06,
+          "ret_2025": 40.82,
+          "ret_2026": 0.31,
+          "liquidations": 0,
+          "stops": 68,
+          "cooldown_blocks": 1849,
+          "age_blocks": 445
+        },
+        "H1": {
+          "final": 56348.68,
+          "cagr_pct": 35.12,
+          "max_dd_pct": 28.06,
+          "calmar": 1.252,
+          "ret_2021": 162.59,
+          "ret_2022": 42.92,
+          "ret_2023": -3.46,
+          "ret_2024": 21.15,
+          "ret_2025": 27.87,
+          "ret_2026": 0.58,
+          "liquidations": 0,
+          "stops": 87,
+          "cooldown_blocks": 2369,
+          "age_blocks": 445
+        }
+      },
+      "short_trades": 4339,
+      "short_pnl_mix": 16676.21,
+      "short_funding_mix": -6672.48,
+      "liquidations": 0,
+      "stops": 225,
+      "K1_events": {
+        "mix": 0,
+        "D1": 0,
+        "H4": 0,
+        "H1": 0
+      }
+    }
+  },
+  "PRE": {
+    "LO": {
+      "mix": {
+        "final": 6546.09,
+        "cagr_pct": -19.89,
+        "max_dd_pct": 53.9,
+        "calmar": -0.369,
+        "ret_2018": -40.14,
+        "ret_2019": 9.49
+      },
+      "sleeves": {
+        "D1": {
+          "final": 7629.79,
+          "cagr_pct": -13.2,
+          "max_dd_pct": 54.17,
+          "calmar": -0.244,
+          "ret_2018": -38.51,
+          "ret_2019": 24.23,
+          "liquidations": 0,
+          "stops": 0,
+          "cooldown_blocks": 0,
+          "age_blocks": 0
+        },
+        "H4": {
+          "final": 5872.96,
+          "cagr_pct": -24.31,
+          "max_dd_pct": 53.27,
+          "calmar": -0.456,
+          "ret_2018": -40.73,
+          "ret_2019": -0.78,
+          "liquidations": 0,
+          "stops": 0,
+          "cooldown_blocks": 0,
+          "age_blocks": 0
+        },
+        "H1": {
+          "final": 6135.52,
+          "cagr_pct": -22.56,
+          "max_dd_pct": 54.28,
+          "calmar": -0.416,
+          "ret_2018": -41.18,
+          "ret_2019": 4.43,
+          "liquidations": 0,
+          "stops": 0,
+          "cooldown_blocks": 0,
+          "age_blocks": 0
+        }
+      },
+      "short_trades": 0,
+      "short_pnl_mix": 0.0,
+      "short_funding_mix": 0.0,
+      "liquidations": 0,
+      "stops": 0,
+      "K1_events": {
+        "mix": 1,
+        "D1": 2,
+        "H4": 1,
+        "H1": 1
+      }
+    },
+    "RS": {
+      "mix": {
+        "final": 10504.12,
+        "cagr_pct": 2.61,
+        "max_dd_pct": 19.09,
+        "calmar": 0.137,
+        "ret_2018": -9.94,
+        "ret_2019": 16.83
+      },
+      "sleeves": {
+        "D1": {
+          "final": 11652.56,
+          "cagr_pct": 8.33,
+          "max_dd_pct": 26.85,
+          "calmar": 0.31,
+          "ret_2018": -16.57,
+          "ret_2019": 39.88,
+          "liquidations": 0,
+          "stops": 14,
+          "cooldown_blocks": 80,
+          "age_blocks": 0
+        },
+        "H4": {
+          "final": 9214.67,
+          "cagr_pct": -4.19,
+          "max_dd_pct": 22.18,
+          "calmar": -0.189,
+          "ret_2018": -6.62,
+          "ret_2019": -1.15,
+          "liquidations": 0,
+          "stops": 15,
+          "cooldown_blocks": 437,
+          "age_blocks": 0
+        },
+        "H1": {
+          "final": 10645.11,
+          "cagr_pct": 3.33,
+          "max_dd_pct": 25.72,
+          "calmar": 0.129,
+          "ret_2018": -6.64,
+          "ret_2019": 14.2,
+          "liquidations": 0,
+          "stops": 13,
+          "cooldown_blocks": 386,
+          "age_blocks": 0
+        }
+      },
+      "short_trades": 646,
+      "short_pnl_mix": 3810.95,
+      "short_funding_mix": 0.0,
+      "liquidations": 0,
+      "stops": 42,
+      "K1_events": {
+        "mix": 0,
+        "D1": 0,
+        "H4": 0,
+        "H1": 0
+      }
+    }
+  },
+  "gates": {
+    "G0": true,
+    "G1": true,
+    "G2": true,
+    "G3": true,
+    "G4": true,
+    "G5": true,
+    "G6": true,
+    "decision": "PASS"
+  },
+  "DSR_RS_mix": {
+    "sr_annual_365": 1.442514138154793,
+    "N": 83,
+    "dsr": 0.8788581047949011
+  },
+  "seconds": 1210,
+  "trades_sha256": {
+    "D1": "a34df67803ddc60828de55184938c7dd67abcac910026ef603e7734bf4166222",
+    "H4": "a249efe3e439509514053cc1f45b64f688ff3dc1f2d03cc70c5e1d0bfb1041c2",
+    "H1": "2cbb9af518db438bb919355eb1eea38e518b6a183aff82085ad791b2bcef544d"
+  }
+}

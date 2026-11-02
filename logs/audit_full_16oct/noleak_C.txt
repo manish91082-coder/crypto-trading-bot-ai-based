@@ -1,0 +1,5 @@
+[C1] Step 19 U rows 41980, common with Step 15 R5 9799, max |diff| on common rows 0.0e+00
+as-of 2022-06-15: train rows 63220; research B coins 98, found in replay 98; max |diff| 5.551e-17
+[REPLAY R5 PASS] forward logger R5 reproduces Step 15 research predictions exactly 
+as-of 2026-09-15: train rows 238293; research B coins 44, found in replay 44; max |diff| 5.551e-17
+[REPLAY R5 PASS] forward logger R5 reproduces Step 15 research predictions exactly 

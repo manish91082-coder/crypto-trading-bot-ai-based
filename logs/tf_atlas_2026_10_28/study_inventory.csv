@@ -1,0 +1,98 @@
+folder,include,adapter,verifier,reason
+research_tf_edge_map,yes,TFX,STORED,11 TFs x 6 families x long/short; month-block CIs (TFX-S); DISC D1-D6
+research_methods_bench,yes,BENCH,STORED,Batch 1 + 2: 1539 BTC configs at 15m/1h/4h; D/V/H; gates
+research_btc_entry,yes,BTCENTRY,STORED,990 BTC configs (fut); D and V for all; H for 10 finals
+oracle_9m_2026,yes,ORACLE,STORED,2026 BTC: C1 direction; C2 entry triggers; C3 configs; exit ranking; D 2020-25; V1 formula
+manual_day_study,yes,ORACLE,STORED,10-day hand formula = in-sample hypothesis; its OOS test is oracle V1
+green_candle_2026,yes,GREEN,STORED,red->green rule 5m..1d; Jan / Feb-Sep 2026 / 2020-25
+micro_momentum_2026,yes,MICRO,STORED,1-second rising-minutes rules; DISC Jan / VAL Feb-May
+turn_detect_2026,yes,TURN,STORED,T0 lag; T1 completion; T2 features; T3 296 detectors x 9 TFs; T4 VR/AC1; HOLD
+research_nonprice,yes,NP,STORED,NP1 IC; S2 single-feature trades; NP2 composites; NP3 maker; NP4 holdout
+research_root_cause,yes,ROOT,STORED,random entries per TF (10 coins); MOM/REV hit vs p*
+fee_hurdle_map,yes,PHYS,STORED,E|r| and p* per horizon 10s..28d
+research_probe_scalein,yes,PROBE,STORED,ladder probe/scale-in variants 15m/1h/4h (R units)
+research_ladder_sessions,yes,LADDER,STORED,double top/bottom; Fibonacci; sessions (descriptive)
+research_swing_anatomy,yes,SWING,REPORT,realizable follow of confirmed swings per TF; factor correlations
+research_sr_levels,yes,SR,REPORT,support/resistance bounce vs control per TF; support EV
+research_sr_volume,yes,SR,REPORT,volume-at-price strength; break/reclaim; forward after break
+research_swing_vs_sr,yes,SR,REPORT,swing pivots vs S/R levels; touches that become turns
+research_swing_ai_phase2,yes,SKILL1D,REPORT,swing-rally AI 4h-1D (AUC + money)
+strategy_1d_step8_ai,yes,SKILL1D,REPORT,entry/exit classifiers 1D
+strategy_1d_step9_ai,yes,SKILL1D,REPORT,entry/exit + 1h flow features 1D
+strategy_1d_step10_ai,yes,SKILL1D,REPORT,futures info; path-2 h1 skill
+strategy_1d_step13_unseen,yes,SKILL1D,AUDIT16,B1 skill on 535 unseen coins
+strategy_1d_step14_rule,yes,SKILL1D,REPORT,trading rule for B1 on coin half B
+strategy_1d_step15_slow,yes,SKILL1D,AUDIT16,R5/R10 relative 5/10-day brains
+strategy_1d_step17_18,yes,SKILL1D,REPORT,market brain / veto brain
+strategy_1d_step19_largecap,yes,SKILL1D,AUDIT16,R5 in top-20 liquid coins (best 1D system)
+strategy_1d_step20_largecap_gate,yes,SKILL1D,REPORT,large-cap market gate
+strategy_1d_step21_crash,yes,SKILL1D,REPORT,crash brain (invalid)
+strategy_1d_step22_pre2020,yes,SKILL1D,AUDIT16,frozen brain on 2018-19
+strategy_1d_step23_4h,yes,SKILL1D,AUDIT16,4H R6 relative brain
+strategy_1d_step24_1h,yes,SKILL1D,AUDIT16,1h R24 / R4 brains
+strategy_1d_step25_hf,yes,SKILL1D,REPORT,15m/5m features into R24
+strategy_1d_step26_exit,yes,SKILL1D,REPORT,exit (tail) brain
+strategy_1d_step27_combine,yes,SKILL1D,AUDIT16,sleeve combination
+strategy_1d_step28_volsize,yes,SKILL1D,REPORT,vol sizing
+strategy_1d_step29_srv,yes,SKILL1D,REPORT,S/R + volume features into R24
+strategy_1d_step30_breakout,yes,SKILL1D,REPORT,breakout + regime
+strategy_f2_longshort,yes,SKILL1D,STORED,long-short 1D (F2)
+strategy_f7_risk,yes,SKILL1D,STORED,stop rules (F7)
+research_s2_bear_training,yes,SKILL1D,STORED,2017-19 bear data in training
+research_s3_futures_features,yes,SKILL1D,STORED,funding+basis features
+research_overfit_s1,yes,SKILL1D,STORED,PBO / DSR of the 1D research
+research_1d_true_fee,yes,SKILL1D,REPORT,F7 RS re-run at true fee (verifier re-run 3/3 in consolidation)
+research_r1,yes,R1,STORED,E1 hedge / E2 short filters / E3 listing age / E4 inv-vol / N1 MAX / E11 perp longs
+r2_4h_a1,yes,R2,STORED,4h rule signals (A1 + correction)
+r2_4h_a3,yes,R2,STORED,4h AI brain T05
+r2_4h_a4,yes,R2,STORED,S-LAD long exits / maker entry / sizing
+r2_4h_t14,yes,R2,STORED,4h AI on 120 coins
+research_master_audit,yes,R2,STORED,rule-signal portfolio 4h+1D; loss rules
+research_n1_portfolio,yes,N,STORED,N1 multi-TF trend sleeves (4h..1D)
+research_n2_regime,yes,N,STORED,N2 regime gate
+research_n3_execution,yes,N,STORED,N3 execution: maker entry / routing
+research_n5_ai,yes,N,STORED,N5 AI meta-label
+research_n6_safety_sizing,yes,N,STORED,T19 cap / T20 AI sizing
+eco,yes,ECO,STORED,ECO-W2 combination (E-2); profit lock T4; monthly outlook
+drawdown_ddx,yes,RISK,STORED,ledger of 16 drawdown trials
+research_spot_dca,yes,SPOT,STORED,spot DCA no stop; carry; +30% short
+research_spot_sleeve,yes,SPOT,STORED,spot timing S1..S6 (1d)
+emotion,yes,EMO,REPORT,EMO-1 candle-emotion 1D cross-section (dev only; closed FAIL)
+audit_1d_gaps_13oct,no,,,audit text; no new result
+audit_full_16oct,no,,,re-run evidence only (used as AUDIT16 flag)
+collector_m4_options,no,,,data collector
+consolidation_2026_10_28,no,,,compilation (no new result)
+cost_study_step2,no,,,cost snapshots; superseded by deploy/fees.json
+daily_status,no,,,operations
+e2e_integration,no,,,integration tests
+eco_maker,no,,,MK1 forward (39/300 orders; too young)
+fees,no,,,reference table (used as yardstick)
+forward_ls_f4,no,,,forward paper (too young)
+forward_multi_16b,no,,,forward paper (too young)
+forward_recorder_r2,no,,,forward recorder (data collection)
+forward_recorder_r2_localtest,no,,,test run
+forward_recorder_r2_localtest_T1_bugged_kept_as_evidence,no,,,test run (bug evidence)
+futures_testnet_f6,no,,,retired demo executor
+futures_um_download,no,,,download
+fwd_watch,no,,,forward watch (5 and 10 trades; too young)
+health,no,,,operations
+hf_download,no,,,download
+live_1d,no,,,old testnet engine
+live_1d_ai,no,,,old testnet engine
+live_collect,no,,,liquidation collector
+log_ship,no,,,operations
+monitor_n3_evt,no,,,monitor
+paper_n1,no,,,forward paper (too young; sleeve A check is a forward test)
+paper_spot_s1,no,,,forward paper (3 records)
+performance_summary,no,,,summary of other backtests (double count)
+r2_4h_a0,no,,,trial registry
+r2_4h_a2,no,,,feature store (no result)
+research_gemini_review,no,,,external untrusted notebook
+research_r2,no,,,fee check only
+strategy_1d_step11_ai,no,,,run stopped (no result)
+strategy_1d_step16_forward,no,,,forward logger
+strategy_1d_step6_4_survivorship,no,,,no protocol file in logs/
+strategy_1d_step7_ai,no,,,no protocol file in logs/
+swing_study_1d,no,,,no protocol (pre-rebuild)
+universe_all_download,no,,,download
+universe_pre2020_download,no,,,download

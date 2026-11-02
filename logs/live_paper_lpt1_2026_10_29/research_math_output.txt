@@ -1,0 +1,36 @@
+10%/day x   5 days: 10k -> 16,105 USDT
+10%/day x  20 days: 10k -> 67,275 USDT
+10%/day x  30 days: 10k -> 174,494 USDT
+10%/day x  60 days: 10k -> 3,044,816 USDT
+10%/day x  90 days: 10k -> 53,130,226 USDT
+10%/day x 180 days: 10k -> 282,282,092,740 USDT
+10%/day x 365 days: 10k -> 12,833,055,803,133,904,896 USDT
+15%/day x   5 days: 10k -> 20,114 USDT
+15%/day x  20 days: 10k -> 163,665 USDT
+15%/day x  30 days: 10k -> 662,118 USDT
+15%/day x  60 days: 10k -> 43,839,987 USDT
+15%/day x  90 days: 10k -> 2,902,723,252 USDT
+15%/day x 180 days: 10k -> 842,580,227,806,736 USDT
+15%/day x 365 days: 10k -> 142,794,581,863,310,439,542,161,408 USDT
+
+PERFECT FORESIGHT, BTC futures, 1x, right side of every bar whose |move| > 2 x fee (0.00046), 2024-01..2026-09
+1m  median day     5.91%  share of days >= 10%:  33.5%
+5m  median day     8.89%  share of days >= 10%:  44.3%
+15m median day     8.25%  share of days >= 10%:  36.9%
+1h  median day     5.40%  share of days >= 10%:  13.4%
+4h  median day     3.05%  share of days >= 10%:   2.0%
+1d  median day     1.12%  share of days >= 10%:   0.4%
+
+MONTE CARLO 30 days, 5 trades/day, +1R / -1R, fee 0.1R per trade, 20,000 paths
+win 50% risk   1%/trade: median 30-day x  0.85  P(avg 10%/day)  0.000%  P(-50% drawdown)   0.0%
+win 50% risk   3%/trade: median 30-day x  0.60  P(avg 10%/day)  0.000%  P(-50% drawdown)  40.8%
+win 50% risk   5%/trade: median 30-day x  0.39  P(avg 10%/day)  0.000%  P(-50% drawdown)  76.5%
+win 50% risk  10%/trade: median 30-day x  0.10  P(avg 10%/day)  0.000%  P(-50% drawdown)  95.8%
+win 55% risk   1%/trade: median 30-day x  1.00  P(avg 10%/day)  0.000%  P(-50% drawdown)   0.0%
+win 55% risk   3%/trade: median 30-day x  0.96  P(avg 10%/day)  0.000%  P(-50% drawdown)   7.8%
+win 55% risk   5%/trade: median 30-day x  0.87  P(avg 10%/day)  0.000%  P(-50% drawdown)  33.5%
+win 55% risk  10%/trade: median 30-day x  0.47  P(avg 10%/day)  0.135%  P(-50% drawdown)  74.2%
+win 60% risk   1%/trade: median 30-day x  1.15  P(avg 10%/day)  0.000%  P(-50% drawdown)   0.0%
+win 60% risk   3%/trade: median 30-day x  1.47  P(avg 10%/day)  0.000%  P(-50% drawdown)   0.5%
+win 60% risk   5%/trade: median 30-day x  1.76  P(avg 10%/day)  0.005%  P(-50% drawdown)   6.0%
+win 60% risk  10%/trade: median 30-day x  2.15  P(avg 10%/day)  3.820%  P(-50% drawdown)  35.4%

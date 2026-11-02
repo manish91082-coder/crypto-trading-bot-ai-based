@@ -1,0 +1,44 @@
+coins: 30 | delisted/ended: {'EOSUSDT': '2025-05-26', 'FTTUSDT': '2022-11-15', 'LUNAUSDT': '2022-05-13', 'MATICUSDT': '2024-09-10'}
+ year                                                                              members  from_original_10
+ 2021     BTCUSDT;ETHUSDT;XRPUSDT;LINKUSDT;BNBUSDT;LTCUSDT;BCHUSDT;EOSUSDT;ADAUSDT;TRXUSDT                 7
+ 2022  BTCUSDT;ETHUSDT;DOGEUSDT;BNBUSDT;XRPUSDT;ADAUSDT;DOTUSDT;SHIBUSDT;SOLUSDT;MATICUSDT                 8
+ 2023 BTCUSDT;ETHUSDT;BNBUSDT;SOLUSDT;XRPUSDT;DOGEUSDT;SHIBUSDT;ADAUSDT;AVAXUSDT;MATICUSDT                 7
+ 2024 BTCUSDT;ETHUSDT;XRPUSDT;SOLUSDT;BNBUSDT;DOGEUSDT;MATICUSDT;LTCUSDT;AVAXUSDT;LINKUSDT                 8
+ 2025  BTCUSDT;ETHUSDT;SOLUSDT;DOGEUSDT;XRPUSDT;BNBUSDT;SHIBUSDT;ADAUSDT;AVAXUSDT;NEARUSDT                 7
+ 2026    BTCUSDT;ETHUSDT;SOLUSDT;XRPUSDT;DOGEUSDT;BNBUSDT;ADAUSDT;TRXUSDT;LINKUSDT;LTCUSDT                 9
+                                   0                          1
+run               AI_monthly_retrain  AI_point_in_time_universe
+final                       42116.62                   18719.17
+total_return_pct              321.17                      87.19
+cagr_pct                       28.44                      11.53
+max_dd_pct                     50.09                      57.18
+calmar                         0.568                      0.202
+sharpe                         0.825                      0.475
+trades                           365                        400
+win_rate                       29.04                       30.0
+profit_factor                  1.417                      1.184
+ret_2021                      206.38                      74.54
+ret_2022                      -30.58                     -32.56
+ret_2023                       77.31                      80.36
+ret_2024                       46.78                      35.76
+ret_2025                      -27.69                     -36.11
+ret_2026                        5.23                       1.65
+           size          sum
+symbol                      
+AVAXUSDT     26 -2842.541655
+DOTUSDT      11 -1693.091957
+NEARUSDT      6 -1053.771727
+BCHUSDT       7  -990.324887
+ADAUSDT      34  -884.582167
+SHIBUSDT     21  -483.022076
+ETHUSDT      36  -442.709078
+XRPUSDT      43  -156.522310
+BTCUSDT      41    55.863849
+EOSUSDT       6   310.693411
+LINKUSDT     14   328.960137
+MATICUSDT    19   394.982712
+DOGEUSDT     38   874.262804
+TRXUSDT      11  1244.100977
+LTCUSDT      19  1514.381149
+SOLUSDT      37  4720.648095
+BNBUSDT      31  7821.842385

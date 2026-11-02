@@ -1,0 +1,33 @@
+coins 133 grid 2020-02-01 00:00:00 2026-10-01 00:00:00 58417 9s
+world loaded 48s
+repro A: n 31813 max|gross-TFX| 0.0e+00 max|fund-TFX| 1.4e-15
+repro B: n 973 max|gross-TFX| 0.0e+00 max|fund-TFX| 7.5e-16
+repro C: n 102126 max|gross-TFX| 0.0e+00 max|fund-TFX| 2.2e-15
+entries whose entry hour has no 1h bar (TF open taken from a later hour): 25
+stop A: stopped share 0.080
+stop B: stopped share 0.349
+stop C: stopped share 0.058
+repro D: periods 444 vs D4 444, max|unit-0.2*ret| 4.9e-17, D4-rule zero-funding legs 30
+config K0 {'dev': 2.744, 'P1': 3.471, 'P2': 1.59, 'P3': -0.348}
+config K1 {'dev': 3.257, 'P1': 3.995, 'P2': 2.866, 'P3': -0.393}
+config K2 {'dev': 2.495, 'P1': 3.223, 'P2': 1.378, 'P3': -0.137}
+config K3 {'dev': 2.731, 'P1': 3.457, 'P2': 1.55, 'P3': -0.288}
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\n1_portfolio.py", line 761, in <module>
+    main()
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\n1_portfolio.py", line 607, in main
+    r = run_cfg(Wd, cfg, t0, t1, want=(wn == "dev"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\n1_portfolio.py", line 448, in run_cfg
+    L = assemble(Wd, cfg, led, D, t0, t1, scale=scale, only=only)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\n1_portfolio.py", line 437, in assemble
+    w = base_w(L, Wd.wc)
+        ^^^^^^^^^^^^^^^^
+  File "E:\crypto trading bot ai based 9 oct 2026\src\research\n1_portfolio.py", line 291, in base_w
+    w[d] = L.w.values[d]
+           ^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\generic.py", line 6194, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'w'

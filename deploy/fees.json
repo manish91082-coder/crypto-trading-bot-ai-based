@@ -1,0 +1,30 @@
+{
+ "version": 1,
+ "date": "2026-10-25",
+ "record": "logs/fees/FEES_RECORD.md",
+ "spot": {
+  "base_maker": 0.001,
+  "base_taker": 0.001,
+  "bnb_maker": 0.00075,
+  "bnb_taker": 0.00075,
+  "source": "Binance official fee page, recorded 2026-10-15 in logs/cost_study_step2/STEP2_COST_PROTOCOL_PREREGISTERED.md (VIP 0: 0.100%, 0.075% with BNB)"
+ },
+ "futures_usdm": {
+  "base_maker": 0.0002,
+  "base_taker": 0.0004,
+  "bnb_discount": 0.10,
+  "bnb_maker": 0.00018,
+  "bnb_taker": 0.00036,
+  "source": "base: GET /fapi/v1/commissionRate on our account 2026-10-25 (BTC/ETH/SOL maker 0.000200, taker 0.000400); BNB 10%: Binance support article 360033544231"
+ },
+ "impact_per_side": 0.0001,
+ "impact_source": "logs/cost_study_step2/cost_table_preliminary.csv: median book impact per fill at 333-1,000 USDT, 21 coins",
+ "demo_account_charged_taker": 0.0004,
+ "demo_account_note": "demo futures wallet holds no BNB and feeBurn is false (checked 2026-10-25), so the demo charges the base taker 0.040% in USDT",
+ "rules": {
+  "paper_spot_per_side": 0.00085,
+  "paper_futures_taker_per_side": 0.00046,
+  "eco_fee_per_side": 0.0004,
+  "explain": "paper fills at an open / mark price -> cost = BNB fee + impact. ECO books real fills whose price already contains the impact -> cost = the fee the exchange actually charges the account (demo: 0.040%; a real account with BNB in the futures wallet and feeBurn on: 0.036%)"
+ }
+}

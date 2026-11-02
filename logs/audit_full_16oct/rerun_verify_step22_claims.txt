@@ -1,0 +1,9 @@
+[V1 PASS] protocol hash as locked; frozen brain SHA = ledger SHA; retrain vs frozen max diff 0.0e+00
+[V2 PASS] 67 coins selected identically; universe re-derived from raw files: 8634 coin-days identical
+[V3 PASS] AI: labels re-derived from raw opens (8496 rows), AUC 0.5263
+[V3 PASS] CONTROL: labels re-derived from raw opens (8496 rows), AUC 0.4932
+[V4 PASS] AI_100_none: final 3423.80, MaxDD 82.83%, breaker trips 0
+[V4 PASS] AI_100_b10: final 5956.50, MaxDD 52.96%, breaker trips 16
+[V4 PASS] CONTROL_100_b10: final 7782.11, MaxDD 52.44%, breaker trips 17
+[V4 PASS] BTC_HOLD: final 6960.89, MaxDD 72.11%
+[V5 PASS] gates recomputed -> SKILL_HOLDS_PACKAGE_FAILS

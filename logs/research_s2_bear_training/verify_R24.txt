@@ -1,0 +1,1 @@
+[V1+V2 PASS] R24: AUC new 0.5649 base 0.5653 (diff -0.0004); 2022 diff -0.0015; Calmar 0.665 vs 0.92; 2022 -69.89 vs -67.03; decision FAIL

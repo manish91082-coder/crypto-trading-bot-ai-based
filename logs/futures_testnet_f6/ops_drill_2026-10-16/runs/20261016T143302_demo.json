@@ -1,0 +1,422 @@
+{
+ "time_utc": "2026-10-16 14:33:02.112868+00:00",
+ "mode": "demo",
+ "drill_kill": true,
+ "asof": null,
+ "f4_line_sha256": null,
+ "actions": [
+  {
+   "action": "kill_close",
+   "symbol": "DOGEUSDT",
+   "qty": 1227.0,
+   "resp": {
+    "orderId": 2366033426,
+    "symbol": "DOGEUSDT",
+    "status": "NEW",
+    "clientOrderId": "dI7kYFT1gbb9HtG7vD7nwi",
+    "price": "0.000000",
+    "origQty": "1227",
+    "executedQty": "0",
+    "cumQty": "0",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "reduceOnly": true,
+    "closePosition": false,
+    "side": "BUY",
+    "positionSide": "BOTH",
+    "stopPrice": "0.000000",
+    "workingType": "CONTRACT_PRICE",
+    "priceProtect": false,
+    "origType": "MARKET",
+    "priceMatch": "NONE",
+    "selfTradePreventionMode": "EXPIRE_MAKER",
+    "goodTillDate": 0,
+    "updateTime": 1792161172401
+   }
+  },
+  {
+   "action": "kill_cancel_algo",
+   "symbol": "DOGEUSDT",
+   "resp": {
+    "code": 200,
+    "msg": "The operation of cancel all open order is done."
+   }
+  },
+  {
+   "action": "kill_close",
+   "symbol": "BNBUSDT",
+   "qty": 0.13,
+   "resp": {
+    "orderId": 2663592832,
+    "symbol": "BNBUSDT",
+    "status": "NEW",
+    "clientOrderId": "1M0FgfY76PnHFi72gR3NsI",
+    "price": "0.000",
+    "origQty": "0.13",
+    "executedQty": "0.00",
+    "cumQty": "0.00",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "reduceOnly": true,
+    "closePosition": false,
+    "side": "BUY",
+    "positionSide": "BOTH",
+    "stopPrice": "0.000",
+    "workingType": "CONTRACT_PRICE",
+    "priceProtect": false,
+    "origType": "MARKET",
+    "priceMatch": "NONE",
+    "selfTradePreventionMode": "EXPIRE_MAKER",
+    "goodTillDate": 0,
+    "updateTime": 1792161173251
+   }
+  },
+  {
+   "action": "kill_cancel_algo",
+   "symbol": "BNBUSDT",
+   "resp": {
+    "code": 200,
+    "msg": "The operation of cancel all open order is done."
+   }
+  },
+  {
+   "action": "kill_close",
+   "symbol": "WLDUSDT",
+   "qty": 189.0,
+   "resp": {
+    "orderId": 542129278,
+    "symbol": "WLDUSDT",
+    "status": "NEW",
+    "clientOrderId": "XNO7zmNKerTGAXHOLgx9wJ",
+    "price": "0.0000000",
+    "origQty": "189",
+    "executedQty": "0",
+    "cumQty": "0",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "reduceOnly": true,
+    "closePosition": false,
+    "side": "BUY",
+    "positionSide": "BOTH",
+    "stopPrice": "0.0000000",
+    "workingType": "CONTRACT_PRICE",
+    "priceProtect": false,
+    "origType": "MARKET",
+    "priceMatch": "NONE",
+    "selfTradePreventionMode": "EXPIRE_MAKER",
+    "goodTillDate": 0,
+    "updateTime": 1792161174117
+   }
+  },
+  {
+   "action": "kill_cancel_algo",
+   "symbol": "WLDUSDT",
+   "resp": {
+    "code": 200,
+    "msg": "The operation of cancel all open order is done."
+   }
+  },
+  {
+   "action": "kill_close",
+   "symbol": "UNIUSDT",
+   "qty": 13.0,
+   "resp": {
+    "orderId": 483270882,
+    "symbol": "UNIUSDT",
+    "status": "NEW",
+    "clientOrderId": "sf55q4S1vMdFQjPLcxAFNJ",
+    "price": "0.0000",
+    "origQty": "13",
+    "executedQty": "0",
+    "cumQty": "0",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "reduceOnly": true,
+    "closePosition": false,
+    "side": "BUY",
+    "positionSide": "BOTH",
+    "stopPrice": "0.0000",
+    "workingType": "CONTRACT_PRICE",
+    "priceProtect": false,
+    "origType": "MARKET",
+    "priceMatch": "NONE",
+    "selfTradePreventionMode": "EXPIRE_MAKER",
+    "goodTillDate": 0,
+    "updateTime": 1792161174971
+   }
+  },
+  {
+   "action": "kill_cancel_algo",
+   "symbol": "UNIUSDT",
+   "resp": {
+    "code": 200,
+    "msg": "The operation of cancel all open order is done."
+   }
+  },
+  {
+   "action": "kill_close",
+   "symbol": "AVAXUSDT",
+   "qty": 18.0,
+   "resp": {
+    "orderId": 544216056,
+    "symbol": "AVAXUSDT",
+    "status": "NEW",
+    "clientOrderId": "kJ7gc9X6BGNW9cEOeNwr7x",
+    "price": "0.0000",
+    "origQty": "18",
+    "executedQty": "0",
+    "cumQty": "0",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "reduceOnly": true,
+    "closePosition": false,
+    "side": "BUY",
+    "positionSide": "BOTH",
+    "stopPrice": "0.0000",
+    "workingType": "CONTRACT_PRICE",
+    "priceProtect": false,
+    "origType": "MARKET",
+    "priceMatch": "NONE",
+    "selfTradePreventionMode": "EXPIRE_MAKER",
+    "goodTillDate": 0,
+    "updateTime": 1792161175837
+   }
+  },
+  {
+   "action": "kill_cancel_algo",
+   "symbol": "AVAXUSDT",
+   "resp": {
+    "code": 200,
+    "msg": "The operation of cancel all open order is done."
+   }
+  },
+  {
+   "action": "kill_close",
+   "symbol": "SUIUSDT",
+   "qty": 95.8,
+   "resp": {
+    "orderId": 1086603531,
+    "symbol": "SUIUSDT",
+    "status": "NEW",
+    "clientOrderId": "4kIQN0tjv6tOJ27gZUH6zf",
+    "price": "0.000000",
+    "origQty": "95.8",
+    "executedQty": "0.0",
+    "cumQty": "0.0",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "reduceOnly": true,
+    "closePosition": false,
+    "side": "BUY",
+    "positionSide": "BOTH",
+    "stopPrice": "0.000000",
+    "workingType": "CONTRACT_PRICE",
+    "priceProtect": false,
+    "origType": "MARKET",
+    "priceMatch": "NONE",
+    "selfTradePreventionMode": "EXPIRE_MAKER",
+    "goodTillDate": 0,
+    "updateTime": 1792161176747
+   }
+  },
+  {
+   "action": "kill_cancel_algo",
+   "symbol": "SUIUSDT",
+   "resp": {
+    "code": 200,
+    "msg": "The operation of cancel all open order is done."
+   }
+  },
+  {
+   "action": "kill_close",
+   "symbol": "FETUSDT",
+   "qty": 489.0,
+   "resp": {
+    "orderId": 345055529,
+    "symbol": "FETUSDT",
+    "status": "NEW",
+    "clientOrderId": "2MxJajYqDsbFySTXVGjoP9",
+    "price": "0.0000000",
+    "origQty": "489",
+    "executedQty": "0",
+    "cumQty": "0",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "reduceOnly": true,
+    "closePosition": false,
+    "side": "BUY",
+    "positionSide": "BOTH",
+    "stopPrice": "0.0000000",
+    "workingType": "CONTRACT_PRICE",
+    "priceProtect": false,
+    "origType": "MARKET",
+    "priceMatch": "NONE",
+    "selfTradePreventionMode": "EXPIRE_MAKER",
+    "goodTillDate": 0,
+    "updateTime": 1792161177672
+   }
+  },
+  {
+   "action": "kill_cancel_algo",
+   "symbol": "FETUSDT",
+   "resp": {
+    "code": 200,
+    "msg": "The operation of cancel all open order is done."
+   }
+  },
+  {
+   "action": "kill_close",
+   "symbol": "ADAUSDT",
+   "qty": 872.0,
+   "resp": {
+    "orderId": 1325404342,
+    "symbol": "ADAUSDT",
+    "status": "NEW",
+    "clientOrderId": "4lrkoMaPT5ZrCLyisqbMR8",
+    "price": "0.00000",
+    "origQty": "872",
+    "executedQty": "0",
+    "cumQty": "0",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "reduceOnly": true,
+    "closePosition": false,
+    "side": "BUY",
+    "positionSide": "BOTH",
+    "stopPrice": "0.00000",
+    "workingType": "CONTRACT_PRICE",
+    "priceProtect": false,
+    "origType": "MARKET",
+    "priceMatch": "NONE",
+    "selfTradePreventionMode": "EXPIRE_MAKER",
+    "goodTillDate": 0,
+    "updateTime": 1792161178522
+   }
+  },
+  {
+   "action": "kill_cancel_algo",
+   "symbol": "ADAUSDT",
+   "resp": {
+    "code": 200,
+    "msg": "The operation of cancel all open order is done."
+   }
+  },
+  {
+   "action": "kill_close",
+   "symbol": "BCHUSDT",
+   "qty": 0.713,
+   "resp": {
+    "orderId": 2594667752,
+    "symbol": "BCHUSDT",
+    "status": "NEW",
+    "clientOrderId": "k3sme2g4xWcdNfn7zgYddO",
+    "price": "0.00",
+    "origQty": "0.713",
+    "executedQty": "0.000",
+    "cumQty": "0.000",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "reduceOnly": true,
+    "closePosition": false,
+    "side": "BUY",
+    "positionSide": "BOTH",
+    "stopPrice": "0.00",
+    "workingType": "CONTRACT_PRICE",
+    "priceProtect": false,
+    "origType": "MARKET",
+    "priceMatch": "NONE",
+    "selfTradePreventionMode": "EXPIRE_MAKER",
+    "goodTillDate": 0,
+    "updateTime": 1792161179394
+   }
+  },
+  {
+   "action": "kill_cancel_algo",
+   "symbol": "BCHUSDT",
+   "resp": {
+    "code": 200,
+    "msg": "The operation of cancel all open order is done."
+   }
+  },
+  {
+   "action": "kill_close",
+   "symbol": "ONDOUSDT",
+   "qty": 215.0,
+   "resp": {
+    "orderId": 375442994,
+    "symbol": "ONDOUSDT",
+    "status": "NEW",
+    "clientOrderId": "2XVCBMyKoi4HZRbrOrsQbT",
+    "price": "0.0000000",
+    "origQty": "215.0",
+    "executedQty": "0.0",
+    "cumQty": "0.0",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "reduceOnly": true,
+    "closePosition": false,
+    "side": "BUY",
+    "positionSide": "BOTH",
+    "stopPrice": "0.0000000",
+    "workingType": "CONTRACT_PRICE",
+    "priceProtect": false,
+    "origType": "MARKET",
+    "priceMatch": "NONE",
+    "selfTradePreventionMode": "EXPIRE_MAKER",
+    "goodTillDate": 0,
+    "updateTime": 1792161180244
+   }
+  },
+  {
+   "action": "kill_cancel_algo",
+   "symbol": "ONDOUSDT",
+   "resp": {
+    "code": 200,
+    "msg": "The operation of cancel all open order is done."
+   }
+  },
+  {
+   "action": "kill_close",
+   "symbol": "QNTUSDT",
+   "qty": 0.8,
+   "resp": {
+    "orderId": 218211087,
+    "symbol": "QNTUSDT",
+    "status": "NEW",
+    "clientOrderId": "QWFnzDp1PuY9R02lL8fCMm",
+    "price": "0.000000",
+    "origQty": "0.8",
+    "executedQty": "0.0",
+    "cumQty": "0.0",
+    "timeInForce": "GTC",
+    "type": "MARKET",
+    "reduceOnly": true,
+    "closePosition": false,
+    "side": "BUY",
+    "positionSide": "BOTH",
+    "stopPrice": "0.000000",
+    "workingType": "CONTRACT_PRICE",
+    "priceProtect": false,
+    "origType": "MARKET",
+    "priceMatch": "NONE",
+    "selfTradePreventionMode": "EXPIRE_MAKER",
+    "goodTillDate": 0,
+    "updateTime": 1792161181116
+   }
+  },
+  {
+   "action": "kill_cancel_algo",
+   "symbol": "QNTUSDT",
+   "resp": {
+    "code": 200,
+    "msg": "The operation of cancel all open order is done."
+   }
+  }
+ ],
+ "notes": [],
+ "reconcile": {
+  "_extra_exchange_positions": {}
+ },
+ "code_sha256": "67c61990ecdd2294ce0b4494f388c21839c4a1bd2079835b5618dbc761f5cd2b",
+ "protocol_sha256": "03ff573c808061084bdec02abda85fc5cb0e2fc7c523369c1c63d122dbcb09a7"
+}

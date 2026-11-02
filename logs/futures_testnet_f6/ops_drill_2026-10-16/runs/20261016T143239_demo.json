@@ -1,0 +1,58 @@
+{
+ "time_utc": "2026-10-16 14:32:39.716427+00:00",
+ "mode": "demo",
+ "drill_kill": false,
+ "asof": "2026-10-14",
+ "f4_line_sha256": "d39237c08a014015eda8cc114ac5c676cfbdecb2034dac63465ec7d97a192445",
+ "actions": [],
+ "notes": [],
+ "reconcile": {
+  "SUIUSDT": {
+   "exchange": -95.8,
+   "state": -95.80000000000001
+  },
+  "FETUSDT": {
+   "exchange": -489.0,
+   "state": -489.0
+  },
+  "DOGEUSDT": {
+   "exchange": -1227.0,
+   "state": -1227.0
+  },
+  "ADAUSDT": {
+   "exchange": -872.0,
+   "state": -872.0
+  },
+  "UNIUSDT": {
+   "exchange": -13.0,
+   "state": -13.0
+  },
+  "BCHUSDT": {
+   "exchange": -0.713,
+   "state": -0.713
+  },
+  "WLDUSDT": {
+   "exchange": -189.0,
+   "state": -189.0
+  },
+  "AVAXUSDT": {
+   "exchange": -18.0,
+   "state": -18.0
+  },
+  "ONDOUSDT": {
+   "exchange": -215.0,
+   "state": -215.0
+  },
+  "QNTUSDT": {
+   "exchange": -0.8,
+   "state": -0.8
+  },
+  "BNBUSDT": {
+   "exchange": -0.13,
+   "state": -0.13
+  },
+  "_extra_exchange_positions": {}
+ },
+ "code_sha256": "67c61990ecdd2294ce0b4494f388c21839c4a1bd2079835b5618dbc761f5cd2b",
+ "protocol_sha256": "03ff573c808061084bdec02abda85fc5cb0e2fc7c523369c1c63d122dbcb09a7"
+}

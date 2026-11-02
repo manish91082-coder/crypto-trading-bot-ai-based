@@ -1,0 +1,126 @@
+{
+ "start_utc": "2026-10-16 10:26:34.513182+00:00",
+ "end_utc": "2026-10-16 10:29:27.582848+00:00",
+ "parts": [
+  "CD"
+ ],
+ "passed": 22,
+ "total": 23,
+ "results": [
+  {
+   "test": "C1 sandbox 16B paper -> F4 two days (chain, C1 True, orders file)",
+   "ok": true,
+   "detail": "[PREFLIGHT F4 PASS] two sandbox days ran; chain OK; C1 True; orders file written (sandbox C:\\Users\\Admin\\AppData\\Local\\Temp\\f4_preflight_vux9dyye)"
+  },
+  {
+   "test": "C2 F4 verifier V1..V5 on the sandbox ledger",
+   "ok": true,
+   "detail": "[V1 PASS] 2 ledger lines: chain, line hashes, protocol, equity / positions files; LS_RS / LS_F2 / LO == equity file | [V2 PASS] every F4 line is tied to the 16B ledger line and prediction files of its day | [V3 PASS] C1 re-checked from files: 2 of 2 days LO == 16B paper | [V4 PASS] 21 stored perp hours re-fetched from the public API and equal | [V5 PASS] open positions of 2026-10-14: limits, no long+short overlap, no missed stop on open LS_RS shorts"
+  },
+  {
+   "test": "D1 F4 verifier rejects a ledger number changed by $1",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('2026-10-14', 'line hash')"
+  },
+  {
+   "test": "D1b F4 verifier rejects a $1 change even after the whole chain is re-hashed (V1b)",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('2026-10-14', 'LS_RS')"
+  },
+  {
+   "test": "D1c control: re-hashing the UNCHANGED ledger reproduces it and the verifier passes",
+   "ok": true,
+   "detail": "[V1 PASS] 2 ledger lines: chain, line hashes, protocol, equity / positions files; LS_RS / LS_F2 / LO == equity file | [V2 PASS] every F4 line is tied to the 16B ledger line and prediction files of its day | [V3 PASS] C1 re-checked from files: 2 of 2 days LO == 16B paper | [V4 PASS] 21 stored perp hours re-fetched from the public API and equal | [V5 PASS] open positions of 2026-10-14: limits, no long+short overlap, no missed stop on open LS_RS shorts"
+  },
+  {
+   "test": "D1c ledger bytes identical after a no-change re-hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "C3 F6 plan from the sandbox F4 orders (every target planned or skipped with reason; stop = price x 1.5; no state, no keys)",
+   "ok": true,
+   "detail": "as-of 2026-10-14: 15 PLAN shorts, 0 skips, targets 15; stops True; skips []"
+  },
+  {
+   "test": "D2 F6 refuses an F4 orders file whose hash differs from the F4 ledger",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: F4 orders file != F4 ledger"
+  },
+  {
+   "test": "C4 N3 on the sandbox F4 ledger",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "C4b N3 ledger: 2 lines, target = next as-of, VaR99.9 > VaR99, ES99 > VaR99; second call adds nothing",
+   "ok": true,
+   "detail": "[{'line': 'LS_RS', 'target_day': '2026-10-15', 'n_forward': 1, 'VaR99': 0.03244762, 'ES99': 0.039853, 'VaR999': 0.04937065}, {'line': 'LO', 'target_day': '2026-10-15', 'n_forward': 1, 'VaR99': 0.05378032, 'ES99': 0.07448238, 'VaR999': 0.10212349}]"
+  },
+  {
+   "test": "C5 N3 verifier on the sandbox ledger",
+   "ok": true,
+   "detail": "[V1 PASS] protocol; 2 ledger lines, hash chain intact | [V2 PASS] every line: sample size, threshold exact; GPD re-fitted with an independent optimiser; VaR / ES within 1 % | [V3 PASS] exceedance flags re-derived"
+  },
+  {
+   "test": "D3 N3 verifier rejects a VaR99 lowered by 10 %",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('line hash', 'LS_RS', '2026-10-15')"
+  },
+  {
+   "test": "D3b N3 verifier rejects the lowered VaR99 even after the chain is re-hashed (V2 refit)",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('LS_RS', '99', np.float64(0.03244775192651364), np.float64(0.039853778286688485))"
+  },
+  {
+   "test": "D3c control: N3 verifier passes on the re-hashed UNCHANGED ledger",
+   "ok": true,
+   "detail": "[V1 PASS] protocol; 2 ledger lines, hash chain intact | [V2 PASS] every line: sample size, threshold exact; GPD re-fitted with an independent optimiser; VaR / ES within 1 % | [V3 PASS] exceedance flags re-derived"
+  },
+  {
+   "test": "C6 M4 collector (live public endpoints) into the sandbox",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "C6b M4: all endpoints answered",
+   "ok": true,
+   "detail": "14/14"
+  },
+  {
+   "test": "C7 M4 verifier V1..V3 on the sandbox data (V3 = live re-fetch)",
+   "ok": false,
+   "detail": "IndexError: list index out of range | Traceback (most recent call last):\n  File \"E:\\crypto trading bot ai based 9 oct 2026\\src\\audits\\e2e_integration_test.py\", line 58, in run_check\n    fn()\n  File \"E:\\crypto trading bot ai based 9 oct 2026\\src\\audits\\verify_m4_collector.py\", line 71, in main\n    kl = json.loads(urllib.request.urlopen(url, timeout=30).read())[0]\n         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n"
+  },
+  {
+   "test": "D4 M4 verifier rejects a stored file with one changed bit",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('2026-10-16', 'binance_options_mark')"
+  },
+  {
+   "test": "C8 M10 on the sandbox ledgers: ledger problems == independently derived; backup manifest",
+   "ok": true,
+   "detail": "as-of 2026-10-15: M10 ['16B: as-of 2026-10-15 NOT logged', 'F4: as-of 2026-10-15 NOT logged']; derived ['16B: as-of 2026-10-15 NOT logged', 'F4: as-of 2026-10-15 NOT logged']; all problems ['task CryptoBot16B_ForwardMulti last result 1', 'task CryptoBot_F4_LSPaper last result 1', '16B: as-of 2026-10-15 NOT logged', 'F4: as-of 2026-10-15 NOT logged']; backup 2 files"
+  },
+  {
+   "test": "C8 M10 on the real ledgers: ledger problems == independently derived; backup manifest",
+   "ok": true,
+   "detail": "as-of 2026-10-15: M10 ['16B: as-of 2026-10-15 logged LATE', 'F4: as-of 2026-10-15 logged LATE']; derived ['16B: as-of 2026-10-15 logged LATE', 'F4: as-of 2026-10-15 logged LATE']; all problems ['task CryptoBot16B_ForwardMulti last result 1', 'task CryptoBot_F4_LSPaper last result 1', '16B: as-of 2026-10-15 logged LATE', 'F4: as-of 2026-10-15 logged LATE']; backup 2 files"
+  },
+  {
+   "test": "C9 R1 verifier E3 on a copy of the real results",
+   "ok": true,
+   "detail": "[V1 PASS] E3: protocol, engine and runner hashes | [V2 PASS] E3: F7 short P&L 26227.13, E3b short P&L 26388.10 and E3c median re-derived; reading rule re-applied | [V2 PASS] E3: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied | [V3 PASS] E3: listing-age bucket P&L shares re-derived from the F7 trades with a plain age computation"
+  },
+  {
+   "test": "D5 R1 verifier E3 rejects a max DD changed by 0.5 points",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('E3b_AGE', {'dd': 20.210143660573575, 'r22': np.float64(0.7796727555234861), 'worst_week': np.float64(-12.451491043494489)}, {'final': 71922.41, 'cagr_pct': 40.99, 'max_dd_pct': 20.71, 'calmar': 2.02"
+  },
+  {
+   "test": "D6 R1 verifier E3 rejects a flipped reading",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('AI short skill not shown beyond listing age', 'AI short adds beyond listing age')"
+  }
+ ]
+}

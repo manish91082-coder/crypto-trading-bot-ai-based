@@ -1,0 +1,38 @@
+[K1a OK] input SHAs match manifest (5 files)
+[K1b OK] 2026 5m bars 78624
+[K1c_15m OK] 5m aggregate vs 15m file: 26208 vs 26208 bars, OHLC mismatches 0
+[K1c_1h OK] 5m aggregate vs 1h file: 6552 vs 6552 bars, OHLC mismatches 0
+[K1c_1d OK] 5m aggregate vs 1d file: 273 vs 273 bars, OHLC mismatches 0
+building per-day bars ...
+[K2a OK] rows oracle_day 273, oracle_tf 1365
+[K2b OK] A1 extreme oracle recomputed by double loop: 0 mismatching days of 273
+[K2c OK] A2 close-to-close oracle, 5 TFs: 0 mismatches of 1365
+[K2d OK] day descriptors (type, first-8h range, levels, ret, range): 0 mismatches
+[K3a OK] A3 max-run recomputed by plain-loop interval DP: 0 mismatches of 4095
+[K3b OK] stored optimal trades sum to the DP total and count matches: 0 mismatches
+[K3c OK] DP == exhaustive enumeration on 300 random 9-point windows x 3 modes: 0 mismatches
+[K4 OK] MAE/MFE/gross of 43863 stored trades: 0 mismatches
+[K5 OK] sweep events: mine 8150, stored 8150 (rows 8150), only-mine 0, only-stored 0
+[K6a_V1-A OK] trade list re-implemented: mine 467, stored 467
+[K6b_V1-A OK] daily (272 rows, every day) / monthly (9) / summary sums equal; trades 465 wins 157
+[K6c_V1-A OK] random-control share re-run: mine 0.000, stored 0.000
+[K6d_V1-A OK] survival verdict recomputed from the stored figures: False
+[K6a_V1-B OK] trade list re-implemented: mine 196, stored 196
+[K6b_V1-B OK] daily (272 rows, every day) / monthly (9) / summary sums equal; trades 194 wins 77
+[K6c_V1-B OK] random-control share re-run: mine 0.000, stored 0.000
+[K6d_V1-B OK] survival verdict recomputed from the stored figures: False
+[K6a_V1-C OK] trade list re-implemented: mine 193, stored 193
+[K6b_V1-C OK] daily (272 rows, every day) / monthly (9) / summary sums equal; trades 191 wins 76
+[K6c_V1-C OK] random-control share re-run: mine 0.000, stored 0.000
+[K6d_V1-C OK] survival verdict recomputed from the stored figures: False
+[K6a_V1-AC OK] trade list re-implemented: mine 443, stored 443
+[K6b_V1-AC OK] daily (272 rows, every day) / monthly (9) / summary sums equal; trades 441 wins 143
+[K6c_V1-AC OK] random-control share re-run: mine 0.000, stored 0.000
+[K6d_V1-AC OK] survival verdict recomputed from the stored figures: False
+[K6a_V1-S OK] trade list re-implemented: mine 110, stored 110
+[K6b_V1-S OK] daily (272 rows, every day) / monthly (9) / summary sums equal; trades 110 wins 44
+[K6c_V1-S OK] random-control share re-run: mine 0.000, stored 0.000
+[K6d_V1-S OK] survival verdict recomputed from the stored figures: False
+[K7 OK] no fee literal in the main code (found [])
+
+RESULT: ALL PASS

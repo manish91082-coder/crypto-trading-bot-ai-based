@@ -1,0 +1,3 @@
+[V1 PASS] E2: protocol, engine and runner hashes
+[V2 PASS] E2: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied
+[V3 PASS] E2: 4166 short entries all passed the filter; 40 decision rows re-derived from raw files

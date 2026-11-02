@@ -1,0 +1,11 @@
+PASS  K0 protocol SHA  c9f7432e95be
+PASS  K1 source SHAs  29 files, mismatches []
+FAIL  K2 study verifiers  19 stored + 2 re-runs, manual claims 258, bad ['logs/green_candle_2026/verify_output.txt', 'logs/micro_momentum_2026/verify_output.txt', 'logs/fee_hurdle_map/verify_output.txt', 'logs/drawdown_ddx/verify_output.txt', 'logs/turn_detect_2026/verify_disc_output.txt', 'logs/turn_detect_2026/verify_hold_output.txt']
+PASS  K2b manual-day total 258  258
+PASS  K3 claim substrings + numbers in sources  93 claims, bad []
+PASS  K4 claim values in report  bad []
+PASS  K5 17 reports covered  17 names, missing []
+PASS  K6 ledger classes  40 items (A 3, W 8, U 5, T 9, S 15); dups []; wrong block []; undefined in coverage []
+PASS  K7 VM snapshot  sha ok True, crontab == deploy/crontab.txt True, 31 jobs, non-zero []
+
+TOTAL 9 checks, 8 PASS, 1 FAIL -> FAIL

@@ -1,0 +1,49 @@
+{
+ "a1_protocol_sha": "8aad1f394a18fdb026f7d047b19788e941966262245e0a075d5c75085948b698",
+ "a0_sha": "4d49d411745f89865ce5f167ed30b04927dd34522e6ab86831122af7a41dee3e",
+ "legs_sha": "bbe7a4fda260be36a3c8015c07436088e3b680bbbb42e5e4a51d6d141fdc8f0f",
+ "trades_sha": "0885bea556598571e93e1bcbfb6d1d09ff7069a0d4fc1091185c9332e85259fd",
+ "gate": {
+  "S-BRK|long": {
+   "PASS": true,
+   "mean_net": 0.08413451633463717,
+   "gross_over_cost": 2.6829660501720265
+  },
+  "S-BRK|short": {
+   "PASS": true,
+   "mean_net": 0.04389676013859307,
+   "gross_over_cost": 2.585770696400398
+  },
+  "S-DTB|long": {
+   "PASS": true,
+   "mean_net": 0.06821115242021224,
+   "gross_over_cost": 3.2428899694356645
+  },
+  "S-DTB|short": {
+   "PASS": true,
+   "mean_net": 0.06971185991807151,
+   "gross_over_cost": 4.571900745020059
+  },
+  "S-LAD|long": {
+   "PASS": true,
+   "mean_net": 0.1343303423882126,
+   "gross_over_cost": 5.09176844641153
+  },
+  "S-LAD|short": {
+   "PASS": true,
+   "mean_net": 0.06201167318223125,
+   "gross_over_cost": 4.715617590790936
+  },
+  "S-TRD|long": {
+   "PASS": true,
+   "mean_net": 0.09316539522961481,
+   "gross_over_cost": 2.771126179879295
+  },
+  "S-TRD|short": {
+   "PASS": true,
+   "mean_net": 0.050603265417405126,
+   "gross_over_cost": 2.372007826645231
+  }
+ },
+ "n_excluded_no_perp": 84
+}

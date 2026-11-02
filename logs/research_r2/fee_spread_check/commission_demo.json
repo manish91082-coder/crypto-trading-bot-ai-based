@@ -1,0 +1,26 @@
+[
+ {
+  "symbol": "BTCUSDT",
+  "makerCommissionRate": "0.000200",
+  "takerCommissionRate": "0.000400",
+  "rpiCommissionRate": "0"
+ },
+ {
+  "symbol": "ETHUSDT",
+  "makerCommissionRate": "0.000200",
+  "takerCommissionRate": "0.000400",
+  "rpiCommissionRate": "0"
+ },
+ {
+  "symbol": "SOLUSDT",
+  "makerCommissionRate": "0.000200",
+  "takerCommissionRate": "0.000400",
+  "rpiCommissionRate": "0"
+ },
+ {
+  "symbol": "DOGEUSDT",
+  "makerCommissionRate": "0.000200",
+  "takerCommissionRate": "0.000400",
+  "rpiCommissionRate": "0"
+ }
+]

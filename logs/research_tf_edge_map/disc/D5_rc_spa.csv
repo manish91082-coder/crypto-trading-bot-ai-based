@@ -1,0 +1,5 @@
+uni,stat,n_cells,T_max,best_cell,p_RC,p_SPA,n_cells_T_gt_2
+U1,excess,117,4.675002955811078,5m RSI long,0.0035,0.0035,17
+U1,net_taker,117,3.3176698930269475,8h MACD long,0.058,0.0455,19
+U2X,excess,107,4.69424964491925,5m RSI long,0.0,0.0,12
+U2X,net_taker,107,3.0903173198652945,12h RSI long,0.0665,0.056,3

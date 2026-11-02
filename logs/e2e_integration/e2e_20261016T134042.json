@@ -1,0 +1,268 @@
+{
+ "start_utc": "2026-10-16 13:40:42.864157+00:00",
+ "end_utc": "2026-10-16 13:57:36.051604+00:00",
+ "parts": [
+  "A",
+  "B",
+  "CD"
+ ],
+ "passed": 50,
+ "total": 51,
+ "results": [
+  {
+   "test": "A1 all src/*.py compile",
+   "ok": true,
+   "detail": "108 files; failures []"
+  },
+  {
+   "test": "A2 every protocol file equals its SHA256 lock",
+   "ok": true,
+   "detail": "38 lock files; mismatches []"
+  },
+  {
+   "test": "A2b code files changed after lock (information; forward systems document them)",
+   "ok": true,
+   "detail": "forward_multi_16b: src/execution/forward_multi_16b.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); forward_multi_16b: src/audits/verify_forward_multi_16b.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); research_s2_bear_training: src/pipeline_1d/s2_bear_training.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); research_s3_futures_features: src/audits/verify_s3_claims.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); research_sr_levels: src/research/sr_levels_study.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); research_sr_levels: src/audits/verify_sr_study.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); research_swing_ai_phase2: src/research/swing_ai_phase2.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_1d_step13_unseen: src/pipeline_1d/step13_unseen_coins_1d.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_1d_step16_forward: src/execution/forward_dryrun_1d.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_1d_step17_18: src/pipeline_1d/step17_18_market_veto_1d.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_1d_step22_pre2020: src/audits/verify_step22_claims.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_1d_step23_4h: src/pipeline_1d/step23_4h_brain.py changed after lock (CODE_CHANGES_AFTER_LOCK.md present); strategy_f2_longshort: src/pipeline_1d/f2_longshort.py changed after lock (CODE_CHANGES_AFTER_LOCK.m"
+  },
+  {
+   "test": "A3 every enabled scheduled task points to an existing python and script",
+   "ok": true,
+   "detail": "9 tasks; []"
+  },
+  {
+   "test": "A3b scheduled tasks (information)",
+   "ok": true,
+   "detail": "CryptoBot16B_ForwardMulti: Ready, wake=True, triggers 2026-10-16T07:30:00+05:30,2026-10-16T08:00:00+05:30, next 10/17/2026 07:30:00, last result 1 || CryptoBot1D_ForwardDryRun: Ready, wake=True, triggers 2026-10-13T05:50:00+05:30,2026-10-13T06:50:00+05:30, next 10/17/2026 05:50:20, last result 0 || CryptoBot1D_HealthCheck: Disabled, wake=False, triggers 2026-10-13T11:22:09+05:30, next 10/16/2026 19:22:52, last result 0 || CryptoBot1D_Testnet_Swing: Disabled, wake=False, triggers ,2026-10-12T21:42:47+05:30, next 10/16/2026 19:42:12, last result 267014 || CryptoBot_F4_LSPaper: Ready, wake=True, triggers 2026-10-16T08:30:00+05:30,2026-10-16T09:00:00+05:30, next 10/17/2026 08:30:00, last result 1 || CryptoBot_M10_DailyStatus: Ready, wake=True, triggers 2026-10-17T10:15:00+05:30, next 10/17/2026 10:15:45, last result 267011 || CryptoBot_M4_OptionsCollector: Ready, wake=True, triggers 2026-10-17T05:40:00+05:30,2026-10-17T06:10:00+05:30, next 10/17/2026 05:40:10, last result 267011 || CryptoBot_N3_EVTMonitor: Ready, wake=True, triggers 2026-10-17T09:30:00+05:30,2026-10-17T10:00:00+05:30, next 10/17/2026 09:30:00, last result 267011 || CryptoBot_Step2_CostSnapshot: Ready, wake=True, triggers 2026-10-16T05:28:00+05:30,2026-10-16T05:32:00+05:30, next 10/17/2026 05:28:58, last result 0"
+  },
+  {
+   "test": "A4 order safety: daily scripts contain no order call; F6 knows only the two test hosts",
+   "ok": true,
+   "detail": "order-call counts {'cost_snapshot_step2.py': 0, 'forward_dryrun_1d.py': 0, 'forward_ls_f4.py': 0, 'forward_multi_16b.py': 0, 'futures_testnet_f6.py': 10, 'health_check_1d.py': 0, 'live_1d_ai_engine.py': 2, 'live_1d_swing_engine.py': 3, 'm10_daily_status.py': 0, 'm4_options_collector.py': 0, 'n3_evt_monitor.py': 0}; F6 hosts ['https://demo-fapi.binance.com', 'https://testnet.binancefuture.com']"
+  },
+  {
+   "test": "B1 16B verifier V1 + V5 + V6 (forward ledger) on the real ledger",
+   "ok": true,
+   "detail": "[V1 PASS] protocol a8a6b7a31fe2, code be7181767b56 (documented change) | [V5 PASS] test run as-of 2026-10-14: 20 members, 120 R6 rows, 480 R24 rows, 20 D1 rows; file and model hashes match; chain of 1 line(s) intact; notes [\"test before PAPER_START: no paper\"] | [V6 PASS] forward ledger: 1 line(s), chain intact; prediction / input / model / paper files match; paper_M_AI3 equals the paper equity file"
+  },
+  {
+   "test": "B2 F4 verifier V1..V5 on the real ledger",
+   "ok": true,
+   "detail": "[V1 PASS] 1 ledger lines: chain, line hashes, protocol, equity / positions files; LS_RS / LS_F2 / LO == equity file | [V2 PASS] every F4 line is tied to the 16B ledger line and prediction files of its day | [V3 PASS] C1 re-checked from files: 1 of 1 days LO == 16B paper | [V4 PASS] 20 stored perp hours re-fetched from the public API and equal | [V5 PASS] open positions of 2026-10-15: limits, no long+short overlap, no missed stop on open LS_RS shorts"
+  },
+  {
+   "test": "B3 N3 verifier V1..V3 on the real ledger",
+   "ok": true,
+   "detail": "[V1 PASS] protocol; 2 ledger lines, hash chain intact | [V2 PASS] every line: sample size, threshold exact; GPD re-fitted with an independent optimiser; VaR / ES within 1 % | [V3 PASS] exceedance flags re-derived"
+  },
+  {
+   "test": "B4 M4 verifier on the real ledger",
+   "ok": true,
+   "detail": "[V1 PASS] 1 ledger lines; chain intact; every stored file matches its SHA256 | [V2 PASS] 2026-10-16: DVOL, option counts and basis sanity re-derived from the raw files: {'dvol_BTC_close': 36.88, 'deribit_n_options_BTC': 936, 'dvol_ETH_close': 50.45, 'deribit_n_options_ETH': 820, 'binance_n_options': 1710, 'basis_ann_BTCUSDT_261225': 0.054001, 'basis_ann_ETHUSDT_261225': 0.043822, 'basis_ann_BTCUSDT_270326': 0.052001, 'basis_ann_ETHUSDT_270326': 0.046491} | [V3 PASS] 96 closed DVOL hours re-fetched and equal; 6 futures mark prices inside their 1m mark-price kline"
+  },
+  {
+   "test": "B6 Step 16 ledger verifier L1..L4 on the real ledger",
+   "ok": true,
+   "detail": "[L1 PASS] 3 Step 16 ledger lines: hash chain intact | [L2+L4 PASS] prediction / model / protocol files match; one row per coin, date == as-of, probabilities in [0, 1] | [L3 PASS] 1 16B forward line(s) point to the exact Step 16 prediction file of their day"
+  },
+  {
+   "test": "D7 Step 16 verifier rejects n_coins + 1 on the last ledger line",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('line hash', '2026-10-15')"
+  },
+  {
+   "test": "B5 16B verifier V2..V4: live code path == research scores, production models, paper engine (heavy)",
+   "ok": true,
+   "detail": "[V1 PASS] protocol a8a6b7a31fe2, code be7181767b56 (documented change) | [V2 PASS] live code path reproduces the research R6 / R24 scores and the Step 19 universe | [V3 PASS] production October models = research frozen brains | [V4 PASS] paper engine = Step 27 research sleeves (50 %)"
+  },
+  {
+   "test": "C1 sandbox 16B paper -> F4 two days (chain, C1 True, orders file)",
+   "ok": true,
+   "detail": "[PREFLIGHT F4 PASS] two sandbox days ran; chain OK; C1 True; orders file written (sandbox C:\\Users\\Admin\\AppData\\Local\\Temp\\f4_preflight_nczk0hil)"
+  },
+  {
+   "test": "C2 F4 verifier V1..V5 on the sandbox ledger",
+   "ok": true,
+   "detail": "[V1 PASS] 2 ledger lines: chain, line hashes, protocol, equity / positions files; LS_RS / LS_F2 / LO == equity file | [V2 PASS] every F4 line is tied to the 16B ledger line and prediction files of its day | [V3 PASS] C1 re-checked from files: 2 of 2 days LO == 16B paper | [V4 PASS] 21 stored perp hours re-fetched from the public API and equal | [V5 PASS] open positions of 2026-10-14: limits, no long+short overlap, no missed stop on open LS_RS shorts"
+  },
+  {
+   "test": "D1 F4 verifier rejects a ledger number changed by $1",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('2026-10-14', 'line hash')"
+  },
+  {
+   "test": "D1b F4 verifier rejects a $1 change even after the whole chain is re-hashed (V1b)",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('2026-10-14', 'LS_RS')"
+  },
+  {
+   "test": "D1c control: re-hashing the UNCHANGED ledger reproduces it and the verifier passes",
+   "ok": true,
+   "detail": "[V1 PASS] 2 ledger lines: chain, line hashes, protocol, equity / positions files; LS_RS / LS_F2 / LO == equity file | [V2 PASS] every F4 line is tied to the 16B ledger line and prediction files of its day | [V3 PASS] C1 re-checked from files: 2 of 2 days LO == 16B paper | [V4 PASS] 21 stored perp hours re-fetched from the public API and equal | [V5 PASS] open positions of 2026-10-14: limits, no long+short overlap, no missed stop on open LS_RS shorts"
+  },
+  {
+   "test": "D1c ledger bytes identical after a no-change re-hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "C3 F6 plan from the sandbox F4 orders (every target planned or skipped with reason; stop = price x 1.5; no state, no keys)",
+   "ok": true,
+   "detail": "as-of 2026-10-14: 15 PLAN shorts, 0 skips, targets 15; stops True; skips []"
+  },
+  {
+   "test": "D2 F6 refuses an F4 orders file whose hash differs from the F4 ledger",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: F4 orders file != F4 ledger"
+  },
+  {
+   "test": "C4 N3 on the sandbox F4 ledger",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "C4b N3 ledger: 2 lines, target = next as-of, VaR99.9 > VaR99, ES99 > VaR99; second call adds nothing",
+   "ok": true,
+   "detail": "[{'line': 'LS_RS', 'target_day': '2026-10-15', 'n_forward': 1, 'VaR99': 0.03244762, 'ES99': 0.039853, 'VaR999': 0.04937065}, {'line': 'LO', 'target_day': '2026-10-15', 'n_forward': 1, 'VaR99': 0.05378032, 'ES99': 0.07448238, 'VaR999': 0.10212349}]"
+  },
+  {
+   "test": "C5 N3 verifier on the sandbox ledger",
+   "ok": true,
+   "detail": "[V1 PASS] protocol; 2 ledger lines, hash chain intact | [V2 PASS] every line: sample size, threshold exact; GPD re-fitted with an independent optimiser; VaR / ES within 1 % | [V3 PASS] exceedance flags re-derived"
+  },
+  {
+   "test": "D3 N3 verifier rejects a VaR99 lowered by 10 %",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('line hash', 'LS_RS', '2026-10-15')"
+  },
+  {
+   "test": "D3b N3 verifier rejects the lowered VaR99 even after the chain is re-hashed (V2 refit)",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('LS_RS', '99', np.float64(0.03244775192651364), np.float64(0.039853778286688485))"
+  },
+  {
+   "test": "D3c control: N3 verifier passes on the re-hashed UNCHANGED ledger",
+   "ok": true,
+   "detail": "[V1 PASS] protocol; 2 ledger lines, hash chain intact | [V2 PASS] every line: sample size, threshold exact; GPD re-fitted with an independent optimiser; VaR / ES within 1 % | [V3 PASS] exceedance flags re-derived"
+  },
+  {
+   "test": "C6 M4 collector (live public endpoints) into the sandbox",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "test": "C6b M4: all endpoints answered",
+   "ok": true,
+   "detail": "14/14"
+  },
+  {
+   "test": "C7 M4 verifier V1..V3 on the sandbox data (V3 = live re-fetch)",
+   "ok": false,
+   "detail": "AssertionError: ('SOL-261030-122-C', '0.69386363', '0.624533') | Traceback (most recent call last):\n  File \"E:\\crypto trading bot ai based 9 oct 2026\\src\\audits\\e2e_integration_test.py\", line 58, in run_check\n    fn()\n  File \"E:\\crypto trading bot ai based 9 oct 2026\\src\\audits\\verify_m4_collector.py\", line 87, in main\n    assert abs(float(live[\"markIV\"]) - float(mk[int(i)][\"markIV\"])) < 0.05, (s, live[\"markIV\"], mk[int(i)][\"markIV\"])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('SOL-261030-122-C', '0.69386363', '0.624533')\n"
+  },
+  {
+   "test": "D4 M4 verifier rejects a stored file with one changed bit",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('2026-10-16', 'binance_options_mark')"
+  },
+  {
+   "test": "C8 M10 on the sandbox ledgers: ledger problems == independently derived; backup manifest",
+   "ok": true,
+   "detail": "as-of 2026-10-15: M10 ['16B: as-of 2026-10-15 NOT logged', 'F4: as-of 2026-10-15 NOT logged']; derived ['16B: as-of 2026-10-15 NOT logged', 'F4: as-of 2026-10-15 NOT logged']; all problems ['task CryptoBot16B_ForwardMulti last result 1', 'task CryptoBot_F4_LSPaper last result 1', '16B: as-of 2026-10-15 NOT logged', 'F4: as-of 2026-10-15 NOT logged']; backup 2 files"
+  },
+  {
+   "test": "C8 M10 on the real ledgers: ledger problems == independently derived; backup manifest",
+   "ok": true,
+   "detail": "as-of 2026-10-15: M10 ['16B: as-of 2026-10-15 logged LATE', 'F4: as-of 2026-10-15 logged LATE']; derived ['16B: as-of 2026-10-15 logged LATE', 'F4: as-of 2026-10-15 logged LATE']; all problems ['task CryptoBot16B_ForwardMulti last result 1', 'task CryptoBot_F4_LSPaper last result 1', '16B: as-of 2026-10-15 logged LATE', 'F4: as-of 2026-10-15 logged LATE']; backup 2 files"
+  },
+  {
+   "test": "C9 R1 verifier E3 on a copy of the real results",
+   "ok": true,
+   "detail": "[V1 PASS] E3: protocol, engine and runner hashes (documented earlier runner hash) | [V2 PASS] E3: F7 short P&L 26227.13, E3b short P&L 26388.10 and E3c median re-derived; reading rule re-applied | [V2 PASS] E3: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied | [V3 PASS] E3: listing-age bucket P&L shares re-derived from the F7 trades with a plain age computation"
+  },
+  {
+   "test": "D5 R1 verifier E3 rejects a max DD changed by 0.5 points",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('E3b_AGE', {'dd': 20.210143660573575, 'r22': np.float64(0.7796727555234861), 'worst_week': np.float64(-12.451491043494489)}, {'final': 71922.41, 'cagr_pct': 40.99, 'max_dd_pct': 20.71, 'calmar': 2.02"
+  },
+  {
+   "test": "D6 R1 verifier E3 rejects a flipped reading",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('AI short skill not shown beyond listing age', 'AI short adds beyond listing age')"
+  },
+  {
+   "test": "C9 R1 verifier E1 on a copy of the real results",
+   "ok": true,
+   "detail": "[V1 PASS] E1: protocol, engine and runner hashes (documented earlier runner hash) | [V2 PASS] E1: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied | [V3 PASS] E1a: 157 hedge trades; 5 hedge stop fills re-derived from raw BTC perp bars | [V3 PASS] E1b: 105 hedge trades; 8 hedge stop fills re-derived from raw BTC perp bars"
+  },
+  {
+   "test": "D5 R1 verifier E1 rejects a max DD changed by 0.5 points",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('E1a', {'dd': 13.583414338220903, 'r22': np.float64(9.280577369805897), 'worst_week': np.float64(-10.373582794053737)}, {'final': 58887.59, 'cagr_pct': 36.16, 'max_dd_pct': 14.08, 'calmar': 2.662, 'r"
+  },
+  {
+   "test": "D6 R1 verifier E1 rejects a flipped decision",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('E1a', {'G1': True, 'G2': False, 'G3': True, 'G4': True, 'G5': True, 'decision': 'PASS'}, {'G1': True, 'G2': False, 'G3': np.True_, 'G4': True, 'G5': True}, 'FAIL')"
+  },
+  {
+   "test": "C9 R1 verifier E2 on a copy of the real results",
+   "ok": true,
+   "detail": "[V1 PASS] E2: protocol, engine and runner hashes (documented earlier runner hash) | [V2 PASS] E2: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied | [V3 PASS] E2: 4166 short entries all passed the filter; 40 decision rows re-derived from raw files"
+  },
+  {
+   "test": "D5 R1 verifier E2 rejects a max DD changed by 0.5 points",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('E2', {'dd': 19.742885799397598, 'r22': np.float64(33.72521995820439), 'worst_week': np.float64(-9.460197259147641)}, {'final': 70737.94, 'cagr_pct': 40.58, 'max_dd_pct': 20.24, 'calmar': 2.055, 'ret"
+  },
+  {
+   "test": "D6 R1 verifier E2 rejects a flipped decision",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('E2', {'G1': False, 'G2': True, 'G3': True, 'G4': True, 'G5': True, 'decision': 'PASS'}, {'G1': False, 'G2': True, 'G3': True, 'G4': np.True_, 'G5': True}, 'FAIL')"
+  },
+  {
+   "test": "C9 R1 verifier E4 on a copy of the real results",
+   "ok": true,
+   "detail": "[V1 PASS] E4: protocol, engine and runner hashes (runner as run) | [V2 PASS] E4: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied | [V3 PASS] E4: weights sum to min(1, 0.3 n) and are <= 30 %; sigma60 re-derived for 60 rows (0 rows had < 60 days); 20 weight sets re-derived from the sigmas"
+  },
+  {
+   "test": "D5 R1 verifier E4 rejects a max DD changed by 0.5 points",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('E4', {'dd': 20.026487821123723, 'r22': np.float64(20.813428040722236), 'worst_week': np.float64(-9.866473487065953)}, {'final': 60450.59, 'cagr_pct': 36.78, 'max_dd_pct': 20.53, 'calmar': 1.837, 're"
+  },
+  {
+   "test": "D6 R1 verifier E4 rejects a flipped decision",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('E4', {'G1': True, 'G2': False, 'G3': False, 'G4': True, 'G5': True, 'decision': 'PASS'}, {'G1': True, 'G2': np.False_, 'G3': False, 'G4': np.True_, 'G5': True}, 'FAIL')"
+  },
+  {
+   "test": "C9 R1 verifier N1 on a copy of the real results",
+   "ok": true,
+   "detail": "[V1 PASS] N1: protocol, engine and runner hashes (documented earlier runner hash) | [V2 PASS] N1: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied | [V3 PASS] N1a: no blocked coin was newly bought (4332 longs); blocked == pct > 0.8; MAX7 re-derived for 40 rows | [V3 PASS] N1b: no blocked coin was newly bought (4332 longs); blocked == pct > 0.8; MAX7 re-derived for 40 rows"
+  },
+  {
+   "test": "D5 R1 verifier N1 rejects a max DD changed by 0.5 points",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('N1a', {'dd': 19.647812649031618, 'r22': np.float64(28.648887142440206), 'worst_week': np.float64(-8.961149684376245)}, {'final': 66364.59, 'cagr_pct': 39.03, 'max_dd_pct': 20.15, 'calmar': 1.986, 'r"
+  },
+  {
+   "test": "D6 R1 verifier N1 rejects a flipped decision",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('N1a', {'G1': False, 'G2': True, 'G3': False, 'G4': True, 'G5': False, 'decision': 'PASS'}, {'G1': False, 'G2': True, 'G4': np.True_, 'G3': False, 'G5': False}, 'FAIL')"
+  },
+  {
+   "test": "C9 R1 verifier E11 on a copy of the real results",
+   "ok": true,
+   "detail": "[V1 PASS] E11: protocol, engine and runner hashes (runner as run) | [V2 PASS] E11: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied | [V3 PASS] E11: 4351 perp longs, 64 spot longs; 30 perp-long entry prices = raw perp opens"
+  },
+  {
+   "test": "D5 R1 verifier E11 rejects a max DD changed by 0.5 points",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('E11', {'dd': 21.98199581504332, 'r22': np.float64(64.18343027103528), 'worst_week': np.float64(-9.849664899103649)}, {'final': 110572.97, 'cagr_pct': 51.95, 'max_dd_pct': 22.48, 'calmar': 2.363, 're"
+  },
+  {
+   "test": "D6 R1 verifier E11 rejects a flipped decision",
+   "ok": true,
+   "detail": "rejected as expected: AssertionError: ('E11', {'G1': True, 'G2': True, 'G3': True, 'decision': 'FAIL'}, {'G1': True, 'G2': True, 'G3': np.True_}, 'PASS')"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+[O1 PASS] parquet, results and live snapshot SHAs
+[O2 PASS] P3: 12 calendar-month returns recomputed by a loop; worst -0.086780 best 0.071436
+[O3 PASS] P3: percentiles / mean / worst / best by own interpolation: p50 -0.001512 (report -0.001512)
+[O4 PASS] P3: rolling 30-day n 334 worst -0.102682 best 0.098765; max DD -0.187471
+[O2 PASS] dev: 57 calendar-month returns recomputed by a loop; worst -0.080531 best 0.343207
+[O3 PASS] dev: percentiles / mean / worst / best by own interpolation: p50 0.025340 (report 0.025340)
+[O4 PASS] dev: rolling 30-day n 1703 worst -0.100034 best 0.751551; max DD -0.110119
+[O5 PASS] dev max DD -0.110119 == E-2 claims MTM-DD 0.110119 (independent source)
+[O6 PASS] live plan: 92 ok cycles, last 10182.28, min 9955.52, max 10207.62
+TOTAL 9 checks, FAIL 0

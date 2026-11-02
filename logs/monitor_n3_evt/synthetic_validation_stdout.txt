@@ -1,0 +1,4 @@
+[1 PASS] Student-t(4): VaR99 3.8253 vs 3.7469; VaR99.9 7.2525 vs 7.1732; ES99 5.2904 vs 5.2206; xi 0.173 (theory 1/nu = 0.25)
+[2 PASS] Exponential: VaR99 4.5869 vs 4.6052; VaR99.9 6.8837 vs 6.9078; xi 0.002 (theory 0)
+[3 PASS] ES99 closed form 5.290369 = numerical integration of the fitted tail 5.290369
+N3 SYNTHETIC VALIDATION PASS

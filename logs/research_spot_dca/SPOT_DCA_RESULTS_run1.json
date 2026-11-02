@@ -1,0 +1,1136 @@
+{
+ "protocol_sha256": "5a44d2c6aefe6f3436fe08ef645ff8cc83fdc8f47800745136a07e15f6d8f2f2",
+ "code_sha256": "bce49f58520e8a0fbcc62fae1fb0f5b09131ab9ce30c96e95ff9fb2892b3b992",
+ "manifest_sha256": "2d77c5482efb1ad8a2a4285a4ce178c6cf6b686aad40335b8225452cd6ebf1aa",
+ "n_symbols": 679,
+ "P_full": {
+  "final": 2617.243099878097,
+  "cagr": -0.19309596695636722,
+  "maxdd": -0.8987495161063227,
+  "sharpe": 0.030934400310332955,
+  "worst_month": -0.32100733438752294,
+  "max_deployed": 0.9996511633070041,
+  "avg_deployed": 0.8082447836847586,
+  "max_positions": 48,
+  "round_trips": 342,
+  "by_exit": {
+   "tp": 332,
+   "delisted": 10
+  },
+  "tp_days_median": 8.0,
+  "tp_days_max": 1108,
+  "delisted_loss": -7713.874565845526,
+  "worst_trade": -1262.8666634993801,
+  "best_trade": 139.31144171905976,
+  "win_share": 0.9707602339181286,
+  "realized": 2806.897951233191,
+  "open_at_end": 14,
+  "open_unreal": -10189.65485135509,
+  "open_worst": -1436.010694040975,
+  "open_longest_days": 1774
+ },
+ "V_tp3_full": {
+  "final": 4151.765989407246,
+  "cagr": -0.13124861422115308,
+  "maxdd": -0.7939543018255968,
+  "sharpe": 0.1190395433841237,
+  "worst_month": -0.34401640574276116,
+  "max_deployed": 0.9999328373509764,
+  "avg_deployed": 0.7272037842962827,
+  "max_positions": 42,
+  "round_trips": 1097,
+  "by_exit": {
+   "tp": 1090,
+   "delisted": 7
+  },
+  "tp_days_median": 1.0,
+  "tp_days_max": 959,
+  "delisted_loss": -2486.9828249825778,
+  "worst_trade": -861.1632487167958,
+  "best_trade": 43.50354936933695,
+  "win_share": 0.9936189608021878,
+  "realized": 5163.989177602417,
+  "open_at_end": 23,
+  "open_unreal": -11012.223188195172,
+  "open_worst": -1719.9732657716045,
+  "open_longest_days": 1764
+ },
+ "V_tp5_full": {
+  "final": 2706.28942556998,
+  "cagr": -0.18876338871772325,
+  "maxdd": -0.8845421257578242,
+  "sharpe": 0.029537608340613516,
+  "worst_month": -0.29910936664340537,
+  "max_deployed": 0.9999734281494428,
+  "avg_deployed": 0.7713252202953573,
+  "max_positions": 43,
+  "round_trips": 650,
+  "by_exit": {
+   "tp": 643,
+   "delisted": 7
+  },
+  "tp_days_median": 1.0,
+  "tp_days_max": 1108,
+  "delisted_loss": -2371.065103545099,
+  "worst_trade": -1070.2235523827555,
+  "best_trade": 76.94805517284044,
+  "win_share": 0.9892307692307692,
+  "realized": 6682.703810557476,
+  "open_at_end": 23,
+  "open_unreal": -13976.41438498751,
+  "open_worst": -1327.852552306104,
+  "open_longest_days": 1774
+ },
+ "V_tp20_full": {
+  "final": 2615.2400482057787,
+  "cagr": -0.19319484143181098,
+  "maxdd": -0.9268402373464433,
+  "sharpe": 0.045156029782066474,
+  "worst_month": -0.3380190940966462,
+  "max_deployed": 0.9999116773292039,
+  "avg_deployed": 0.832691601680803,
+  "max_positions": 48,
+  "round_trips": 223,
+  "by_exit": {
+   "tp": 213,
+   "delisted": 10
+  },
+  "tp_days_median": 25.0,
+  "tp_days_max": 1377,
+  "delisted_loss": -8088.868006062453,
+  "worst_trade": -1796.1990912035753,
+  "best_trade": 304.2647030105368,
+  "win_share": 0.9551569506726457,
+  "realized": 8224.386680880663,
+  "open_at_end": 17,
+  "open_unreal": -15609.146632674905,
+  "open_worst": -1497.6449524518046,
+  "open_longest_days": 1846
+ },
+ "V_regime_tp_full": {
+  "final": 2103.4288310638444,
+  "cagr": -0.22083420240154994,
+  "maxdd": -0.9097089047779675,
+  "sharpe": -0.024857067684872787,
+  "worst_month": -0.3189705789451297,
+  "max_deployed": 0.9999815244089412,
+  "avg_deployed": 0.8012222489342377,
+  "max_positions": 44,
+  "round_trips": 430,
+  "by_exit": {
+   "tp": 420,
+   "delisted": 10
+  },
+  "tp_days_median": 3.0,
+  "tp_days_max": 1099,
+  "delisted_loss": -6658.847627949419,
+  "worst_trade": -1407.9648882334093,
+  "best_trade": 130.00734933180024,
+  "win_share": 0.9767441860465116,
+  "realized": 1483.702103893143,
+  "open_at_end": 15,
+  "open_unreal": -9380.273272829323,
+  "open_worst": -1300.8595596732407,
+  "open_longest_days": 1774
+ },
+ "V_adds0_full": {
+  "final": 2298.3415237683294,
+  "cagr": -0.20970369486422635,
+  "maxdd": -0.9090101852027582,
+  "sharpe": -0.03627494265732003,
+  "worst_month": -0.33315566186923007,
+  "max_deployed": 0.9997992821553283,
+  "avg_deployed": 0.788989146726053,
+  "max_positions": 82,
+  "round_trips": 521,
+  "by_exit": {
+   "tp": 498,
+   "delisted": 23
+  },
+  "tp_days_median": 7.0,
+  "tp_days_max": 1314,
+  "delisted_loss": -4670.874077438225,
+  "worst_trade": -311.42267304802704,
+  "best_trade": 68.0011613276198,
+  "win_share": 0.9558541266794626,
+  "realized": 5385.796071763121,
+  "open_at_end": 78,
+  "open_unreal": -13087.454547994836,
+  "open_worst": -310.409849411899,
+  "open_longest_days": 1964
+ },
+ "V_adds_unlimited_full": {
+  "final": 2610.220403626485,
+  "cagr": -0.193442900444173,
+  "maxdd": -0.8976955797874664,
+  "sharpe": 0.03356147878006192,
+  "worst_month": -0.32100733438752294,
+  "max_deployed": 0.9998244651628172,
+  "avg_deployed": 0.8080827140674379,
+  "max_positions": 48,
+  "round_trips": 342,
+  "by_exit": {
+   "tp": 332,
+   "delisted": 10
+  },
+  "tp_days_median": 8.5,
+  "tp_days_max": 1108,
+  "delisted_loss": -7545.363062237013,
+  "worst_trade": -1262.8666634993801,
+  "best_trade": 185.79033942779233,
+  "win_share": 0.9707602339181286,
+  "realized": 3281.6950457642965,
+  "open_at_end": 15,
+  "open_unreal": -10671.47464213781,
+  "open_worst": -1361.7798467708797,
+  "open_longest_days": 1774
+ },
+ "V_fee_stress_full": {
+  "final": 2496.8758178516464,
+  "cagr": -0.19915368403543632,
+  "maxdd": -0.9024623709899541,
+  "sharpe": 0.025775016173764886,
+  "worst_month": -0.34037269923229774,
+  "max_deployed": 0.9999004991285274,
+  "avg_deployed": 0.8071594955929584,
+  "max_positions": 48,
+  "round_trips": 338,
+  "by_exit": {
+   "tp": 328,
+   "delisted": 10
+  },
+  "tp_days_median": 8.0,
+  "tp_days_max": 1101,
+  "delisted_loss": -7289.568457156589,
+  "worst_trade": -1261.3900572215907,
+  "best_trade": 134.0520474858149,
+  "win_share": 0.9704142011834319,
+  "realized": 2984.6729423754855,
+  "open_at_end": 14,
+  "open_unreal": -10487.797124523857,
+  "open_worst": -1417.3869593953734,
+  "open_longest_days": 1774
+ },
+ "V_stop50_full": {
+  "final": 1474.366668250688,
+  "cagr": -0.26391237225594355,
+  "maxdd": -0.9125452280281713,
+  "sharpe": -0.31435468629789115,
+  "worst_month": -0.34409433296450975,
+  "max_deployed": 0.9999059979171313,
+  "avg_deployed": 0.531770730333603,
+  "max_positions": 48,
+  "round_trips": 1263,
+  "by_exit": {
+   "tp": 1040,
+   "stop": 219,
+   "delisted": 4
+  },
+  "tp_days_median": 7.0,
+  "tp_days_max": 455,
+  "delisted_loss": -17.058784259809855,
+  "worst_trade": -566.8146064363984,
+  "best_trade": 74.86646368312847,
+  "win_share": 0.8234362628661916,
+  "realized": -8491.186362492906,
+  "open_at_end": 3,
+  "open_unreal": -34.44696925641229,
+  "open_worst": -30.301574791510745,
+  "open_longest_days": 352
+ },
+ "control_full": {
+  "cagr_median": -0.19606526919972,
+  "cagr_p5": -0.25494094100061193,
+  "cagr_p95": -0.10943418941592994,
+  "maxdd_median": -0.9025891382782737,
+  "P_cagr_percentile": 0.53,
+  "P_maxdd_percentile": 0.59
+ },
+ "bh_BTCUSDT_full": {
+  "cagr": 0.42291779314423406,
+  "maxdd": -0.7662925431645935
+ },
+ "bh_ETHUSDT_full": {
+  "cagr": 0.4809589176145277,
+  "maxdd": -0.7930253453633335
+ },
+ "P_dev": {
+  "final": 7688.030846919426,
+  "cagr": -0.07238839151488596,
+  "maxdd": -0.7622914630157069,
+  "sharpe": 0.19903085869670942,
+  "worst_month": -0.2948591927880895,
+  "max_deployed": 0.9994883375852177,
+  "avg_deployed": 0.6769051280545888,
+  "max_positions": 48,
+  "round_trips": 276,
+  "by_exit": {
+   "tp": 274,
+   "delisted": 2
+  },
+  "tp_days_median": 8.0,
+  "tp_days_max": 746,
+  "delisted_loss": -1566.718325806631,
+  "worst_trade": -1262.8666634993801,
+  "best_trade": 139.31144171905976,
+  "win_share": 0.9927536231884058,
+  "realized": 7268.981109039374,
+  "open_at_end": 20,
+  "open_unreal": -9580.950262119946,
+  "open_worst": -970.5554508824023,
+  "open_longest_days": 770
+ },
+ "V_tp3_dev": {
+  "final": 6977.620903324324,
+  "cagr": -0.09773967633035274,
+  "maxdd": -0.7692608142654074,
+  "sharpe": 0.1470189982492746,
+  "worst_month": -0.34401640574276116,
+  "max_deployed": 0.9984053024257095,
+  "avg_deployed": 0.6217399145457193,
+  "max_positions": 38,
+  "round_trips": 582,
+  "by_exit": {
+   "tp": 581,
+   "delisted": 1
+  },
+  "tp_days_median": 0.0,
+  "tp_days_max": 607,
+  "delisted_loss": -236.00355323245955,
+  "worst_trade": -236.00355323245955,
+  "best_trade": 43.50354936933695,
+  "win_share": 0.9982817869415808,
+  "realized": 4360.510434430385,
+  "open_at_end": 17,
+  "open_unreal": -7382.889531106062,
+  "open_worst": -1063.776545965647,
+  "open_longest_days": 760
+ },
+ "V_tp5_dev": {
+  "final": 8243.234080094719,
+  "cagr": -0.053717385907936954,
+  "maxdd": -0.7271488869214603,
+  "sharpe": 0.21989950164153435,
+  "worst_month": -0.29395965401259283,
+  "max_deployed": 0.9999734281494428,
+  "avg_deployed": 0.6483989763870951,
+  "max_positions": 43,
+  "round_trips": 434,
+  "by_exit": {
+   "tp": 433,
+   "delisted": 1
+  },
+  "tp_days_median": 1.0,
+  "tp_days_max": 596,
+  "delisted_loss": -349.0696420672218,
+  "worst_trade": -349.0696420672218,
+  "best_trade": 76.94805517284044,
+  "win_share": 0.9976958525345622,
+  "realized": 5909.142342470306,
+  "open_at_end": 20,
+  "open_unreal": -7665.908262375591,
+  "open_worst": -934.5095265893217,
+  "open_longest_days": 770
+ },
+ "V_tp20_dev": {
+  "final": 8095.097496526224,
+  "cagr": -0.058608995916169304,
+  "maxdd": -0.8107789693444669,
+  "sharpe": 0.2374080524261973,
+  "worst_month": -0.30692730367734355,
+  "max_deployed": 0.9999116773292039,
+  "avg_deployed": 0.7095184081165602,
+  "max_positions": 48,
+  "round_trips": 205,
+  "by_exit": {
+   "tp": 202,
+   "delisted": 3
+  },
+  "tp_days_median": 21.0,
+  "tp_days_max": 250,
+  "delisted_loss": -2630.4862360647294,
+  "worst_trade": -1494.5869263222392,
+  "best_trade": 304.2647030105368,
+  "win_share": 0.9853658536585366,
+  "realized": 12624.308795893367,
+  "open_at_end": 29,
+  "open_unreal": -14529.211299367165,
+  "open_worst": -1118.5593820394038,
+  "open_longest_days": 842
+ },
+ "V_regime_tp_dev": {
+  "final": 6895.826147280068,
+  "cagr": -0.10077521485468977,
+  "maxdd": -0.7748508221818611,
+  "sharpe": 0.14135284784804372,
+  "worst_month": -0.2982329551095475,
+  "max_deployed": 0.9999815244089412,
+  "avg_deployed": 0.6659928776823328,
+  "max_positions": 44,
+  "round_trips": 364,
+  "by_exit": {
+   "tp": 362,
+   "delisted": 2
+  },
+  "tp_days_median": 2.0,
+  "tp_days_max": 717,
+  "delisted_loss": -1678.0591201564375,
+  "worst_trade": -1407.9648882334093,
+  "best_trade": 130.00734933180024,
+  "win_share": 0.9945054945054945,
+  "realized": 5008.675559829668,
+  "open_at_end": 19,
+  "open_unreal": -8112.8494125496245,
+  "open_worst": -868.9490467270518,
+  "open_longest_days": 770
+ },
+ "V_adds0_dev": {
+  "final": 5580.837700861862,
+  "cagr": -0.1535385926641466,
+  "maxdd": -0.8005852646224649,
+  "sharpe": 0.0354138174928192,
+  "worst_month": -0.29570607943389604,
+  "max_deployed": 0.9997992821553283,
+  "avg_deployed": 0.6657542088370408,
+  "max_positions": 69,
+  "round_trips": 364,
+  "by_exit": {
+   "tp": 361,
+   "delisted": 3
+  },
+  "tp_days_median": 7.0,
+  "tp_days_max": 710,
+  "delisted_loss": -815.2929246555232,
+  "worst_trade": -305.0092413335868,
+  "best_trade": 68.0011613276198,
+  "win_share": 0.9917582417582418,
+  "realized": 7705.936787978959,
+  "open_at_end": 66,
+  "open_unreal": -12125.099087117142,
+  "open_worst": -290.65629628312666,
+  "open_longest_days": 960
+ },
+ "V_adds_unlimited_dev": {
+  "final": 7688.030846919426,
+  "cagr": -0.07238839151488596,
+  "maxdd": -0.7622914630157069,
+  "sharpe": 0.19903085869670942,
+  "worst_month": -0.2948591927880895,
+  "max_deployed": 0.9994883375852177,
+  "avg_deployed": 0.6769051280545888,
+  "max_positions": 48,
+  "round_trips": 276,
+  "by_exit": {
+   "tp": 274,
+   "delisted": 2
+  },
+  "tp_days_median": 8.0,
+  "tp_days_max": 746,
+  "delisted_loss": -1566.718325806631,
+  "worst_trade": -1262.8666634993801,
+  "best_trade": 139.31144171905976,
+  "win_share": 0.9927536231884058,
+  "realized": 7268.981109039374,
+  "open_at_end": 20,
+  "open_unreal": -9580.950262119946,
+  "open_worst": -970.5554508824023,
+  "open_longest_days": 770
+ },
+ "V_fee_stress_dev": {
+  "final": 7589.183109457987,
+  "cagr": -0.07581276650664626,
+  "maxdd": -0.7660961308567749,
+  "sharpe": 0.19303611012361846,
+  "worst_month": -0.29714345131817943,
+  "max_deployed": 0.9998094183689168,
+  "avg_deployed": 0.6765598471281635,
+  "max_positions": 48,
+  "round_trips": 275,
+  "by_exit": {
+   "tp": 273,
+   "delisted": 2
+  },
+  "tp_days_median": 8.0,
+  "tp_days_max": 746,
+  "delisted_loss": -1562.5642280088614,
+  "worst_trade": -1261.3900572215907,
+  "best_trade": 134.0520474858149,
+  "win_share": 0.9927272727272727,
+  "realized": 6976.706393364842,
+  "open_at_end": 22,
+  "open_unreal": -9387.523283906867,
+  "open_worst": -958.2208267467023,
+  "open_longest_days": 770
+ },
+ "V_stop50_dev": {
+  "final": 5090.913411780763,
+  "cagr": -0.17547701916021285,
+  "maxdd": -0.7587836956270598,
+  "sharpe": -0.11585650567408043,
+  "worst_month": -0.3374275604533129,
+  "max_deployed": 0.9995193735621202,
+  "avg_deployed": 0.48357136141106677,
+  "max_positions": 48,
+  "round_trips": 696,
+  "by_exit": {
+   "tp": 587,
+   "stop": 109
+  },
+  "tp_days_median": 6.0,
+  "tp_days_max": 455,
+  "delisted_loss": 0.0,
+  "worst_trade": -566.8146064363984,
+  "best_trade": 74.86646368312847,
+  "win_share": 0.8433908045977011,
+  "realized": -4892.879047311011,
+  "open_at_end": 3,
+  "open_unreal": -16.207540908230627,
+  "open_worst": -7.917310831070864,
+  "open_longest_days": 241
+ },
+ "control_dev": {
+  "cagr_median": -0.08913709086332883,
+  "cagr_p5": -0.16778165923766467,
+  "cagr_p95": -0.0008817842387898029,
+  "maxdd_median": -0.7817754068992826,
+  "P_cagr_percentile": 0.62,
+  "P_maxdd_percentile": 0.73
+ },
+ "bh_BTCUSDT_dev": {
+  "cagr": 0.5448172373250217,
+  "maxdd": -0.7662925431645935
+ },
+ "bh_ETHUSDT_dev": {
+  "cagr": 0.9243441340831751,
+  "maxdd": -0.7930253453633335
+ },
+ "P_holdout": {
+  "final": 1796.9737479665582,
+  "cagr": -0.46477577679352566,
+  "maxdd": -0.9105866972557974,
+  "sharpe": -0.4105488338103568,
+  "worst_month": -0.32023939462350415,
+  "max_deployed": 0.9996525625337941,
+  "avg_deployed": 0.8691195284005644,
+  "max_positions": 45,
+  "round_trips": 143,
+  "by_exit": {
+   "tp": 137,
+   "delisted": 6
+  },
+  "tp_days_median": 13.0,
+  "tp_days_max": 292,
+  "delisted_loss": -1986.649384151172,
+  "worst_trade": -749.2719577781803,
+  "best_trade": 97.00944777169354,
+  "win_share": 0.958041958041958,
+  "realized": 2186.286675348353,
+  "open_at_end": 26,
+  "open_unreal": -10389.312927381812,
+  "open_worst": -982.3148540002511,
+  "open_longest_days": 919
+ },
+ "V_tp3_holdout": {
+  "final": 5970.474650876845,
+  "cagr": -0.17123397338287882,
+  "maxdd": -0.7159123868006164,
+  "sharpe": 0.03142138568774497,
+  "worst_month": -0.25169609156855277,
+  "max_deployed": 0.9998606559169956,
+  "avg_deployed": 0.711983311978825,
+  "max_positions": 38,
+  "round_trips": 711,
+  "by_exit": {
+   "tp": 708,
+   "delisted": 3
+  },
+  "tp_days_median": 1.0,
+  "tp_days_max": 342,
+  "delisted_loss": -1147.0400309914219,
+  "worst_trade": -1052.6703923807852,
+  "best_trade": 36.84376959788119,
+  "win_share": 0.9957805907172996,
+  "realized": 4522.966647802593,
+  "open_at_end": 19,
+  "open_unreal": -8552.491996925735,
+  "open_worst": -1601.590060000351,
+  "open_longest_days": 656
+ },
+ "V_tp5_holdout": {
+  "final": 3461.1182311372236,
+  "cagr": -0.32048007410952317,
+  "maxdd": -0.8259801563840985,
+  "sharpe": -0.15471240715299617,
+  "worst_month": -0.330066657892249,
+  "max_deployed": 0.9998180821845414,
+  "avg_deployed": 0.7896309309642511,
+  "max_positions": 47,
+  "round_trips": 402,
+  "by_exit": {
+   "tp": 396,
+   "delisted": 6
+  },
+  "tp_days_median": 2.0,
+  "tp_days_max": 375,
+  "delisted_loss": -1571.062745930288,
+  "worst_trade": -1161.235262916457,
+  "best_trade": 62.514500098975304,
+  "win_share": 0.9850746268656716,
+  "realized": 3849.8362386461868,
+  "open_at_end": 15,
+  "open_unreal": -10388.718007508945,
+  "open_worst": -1612.9221817586504,
+  "open_longest_days": 656
+ },
+ "V_tp20_holdout": {
+  "final": 1924.9000907173597,
+  "cagr": -0.4512028378993751,
+  "maxdd": -0.9098996441547916,
+  "sharpe": -0.40695573157815534,
+  "worst_month": -0.3342721702935759,
+  "max_deployed": 0.9997483567118315,
+  "avg_deployed": 0.9018078966967698,
+  "max_positions": 42,
+  "round_trips": 84,
+  "by_exit": {
+   "tp": 77,
+   "delisted": 7
+  },
+  "tp_days_median": 31.0,
+  "tp_days_max": 464,
+  "delisted_loss": -1888.6962965788118,
+  "worst_trade": -776.5815700578698,
+  "best_trade": 198.8449259227034,
+  "win_share": 0.9166666666666666,
+  "realized": 2542.0341221083163,
+  "open_at_end": 22,
+  "open_unreal": -10617.134031390957,
+  "open_worst": -1047.6742952258085,
+  "open_longest_days": 923
+ },
+ "V_regime_tp_holdout": {
+  "final": 1807.942124958721,
+  "cagr": -0.46358840997573436,
+  "maxdd": -0.9064566273757889,
+  "sharpe": -0.4122269017795094,
+  "worst_month": -0.32358818231122954,
+  "max_deployed": 0.9995605312286028,
+  "avg_deployed": 0.8684757749817504,
+  "max_positions": 46,
+  "round_trips": 150,
+  "by_exit": {
+   "tp": 144,
+   "delisted": 6
+  },
+  "tp_days_median": 13.0,
+  "tp_days_max": 289,
+  "delisted_loss": -2170.134850214074,
+  "worst_trade": -778.7193029925187,
+  "best_trade": 97.00944777169354,
+  "win_share": 0.96,
+  "realized": 2003.8376753359662,
+  "open_at_end": 26,
+  "open_unreal": -10195.895550377267,
+  "open_worst": -964.2655617344096,
+  "open_longest_days": 904
+ },
+ "V_adds0_holdout": {
+  "final": 3621.463465699264,
+  "cagr": -0.30918091434130623,
+  "maxdd": -0.8180573721965309,
+  "sharpe": -0.22934064398002366,
+  "worst_month": -0.31015531616700687,
+  "max_deployed": 0.9998262113938957,
+  "avg_deployed": 0.7999346938467551,
+  "max_positions": 80,
+  "round_trips": 340,
+  "by_exit": {
+   "tp": 327,
+   "delisted": 13
+  },
+  "tp_days_median": 8.0,
+  "tp_days_max": 602,
+  "delisted_loss": -1602.2799033255044,
+  "worst_trade": -268.2051947751868,
+  "best_trade": 56.351866329866084,
+  "win_share": 0.961764705882353,
+  "realized": 4132.87944243841,
+  "open_at_end": 73,
+  "open_unreal": -10511.415976739163,
+  "open_worst": -320.60287646325855,
+  "open_longest_days": 923
+ },
+ "V_adds_unlimited_holdout": {
+  "final": 1709.7402541974802,
+  "cagr": -0.47438743910755454,
+  "maxdd": -0.911826594766628,
+  "sharpe": -0.4388617625364401,
+  "worst_month": -0.31814545585161147,
+  "max_deployed": 0.9996525625337941,
+  "avg_deployed": 0.8689138017024637,
+  "max_positions": 45,
+  "round_trips": 143,
+  "by_exit": {
+   "tp": 137,
+   "delisted": 6
+  },
+  "tp_days_median": 13.0,
+  "tp_days_max": 292,
+  "delisted_loss": -1986.7301073838314,
+  "worst_trade": -749.3526810108397,
+  "best_trade": 97.00944777169354,
+  "win_share": 0.958041958041958,
+  "realized": 2186.2243694765025,
+  "open_at_end": 26,
+  "open_unreal": -10476.484115279043,
+  "open_worst": -982.3882451836831,
+  "open_longest_days": 919
+ },
+ "V_fee_stress_holdout": {
+  "final": 1853.5412983357348,
+  "cagr": -0.45870063772156966,
+  "maxdd": -0.9083108468314032,
+  "sharpe": -0.3901857925496626,
+  "worst_month": -0.32166147644977083,
+  "max_deployed": 0.9994507442568867,
+  "avg_deployed": 0.8679123453091686,
+  "max_positions": 46,
+  "round_trips": 147,
+  "by_exit": {
+   "tp": 141,
+   "delisted": 6
+  },
+  "tp_days_median": 13.0,
+  "tp_days_max": 292,
+  "delisted_loss": -2043.1106391816147,
+  "worst_trade": -642.9038853210192,
+  "best_trade": 94.34987045652281,
+  "win_share": 0.9591836734693877,
+  "realized": 2070.938011744111,
+  "open_at_end": 27,
+  "open_unreal": -10217.396713408363,
+  "open_worst": -1009.062894958323,
+  "open_longest_days": 904
+ },
+ "V_stop50_holdout": {
+  "final": 2862.495005755363,
+  "cagr": -0.36588283853657677,
+  "maxdd": -0.809717652734935,
+  "sharpe": -0.5605377827918446,
+  "worst_month": -0.3440943329645093,
+  "max_deployed": 0.9999059979171312,
+  "avg_deployed": 0.5891808582535083,
+  "max_positions": 47,
+  "round_trips": 565,
+  "by_exit": {
+   "tp": 451,
+   "stop": 110,
+   "delisted": 4
+  },
+  "tp_days_median": 10.0,
+  "tp_days_max": 237,
+  "delisted_loss": -33.29947533579361,
+  "worst_trade": -644.3148325382494,
+  "best_trade": 80.89623435007786,
+  "win_share": 0.7982300884955752,
+  "realized": -7070.6259202780075,
+  "open_at_end": 3,
+  "open_unreal": -66.87907396664157,
+  "open_worst": -58.83075653774472,
+  "open_longest_days": 352
+ },
+ "control_holdout": {
+  "cagr_median": -0.3549169638451853,
+  "cagr_p5": -0.4309216236845465,
+  "cagr_p95": -0.22817918168638718,
+  "maxdd_median": -0.863925107293148,
+  "P_cagr_percentile": 0.02,
+  "P_maxdd_percentile": 0.01
+ },
+ "bh_BTCUSDT_holdout": {
+  "cagr": 0.26156841771922057,
+  "maxdd": -0.5297176591351062
+ },
+ "bh_ETHUSDT_holdout": {
+  "cagr": 0.04953853074606451,
+  "maxdd": -0.6755345017766713
+ },
+ "B1_BTCUSDT": {
+  "per_year": {
+   "2020": {
+    "net_pct": 9.647476999999999,
+    "neg_share": 0.08514492753623189,
+    "n": 552
+   },
+   "2021": {
+    "net_pct": 30.608423000000002,
+    "neg_share": 0.0730593607305936,
+    "n": 1095
+   },
+   "2022": {
+    "net_pct": 4.164925,
+    "neg_share": 0.22100456621004566,
+    "n": 1095
+   },
+   "2023": {
+    "net_pct": 7.865712000000001,
+    "neg_share": 0.10136986301369863,
+    "n": 1095
+   },
+   "2024": {
+    "net_pct": 11.956883000000001,
+    "neg_share": 0.08378870673952642,
+    "n": 1098
+   },
+   "2025": {
+    "net_pct": 5.126428,
+    "neg_share": 0.12876712328767123,
+    "n": 1095
+   },
+   "2026": {
+    "net_pct": 2.195576,
+    "neg_share": 0.2600732600732601,
+    "n": 819
+   }
+  },
+  "total_always_pct": 71.365424,
+  "total_filter_pct": 60.33783399999999,
+  "filter_days_in": 0.9088918090232151,
+  "switches": 57,
+  "max_rise_7d": 0.4301937597185843,
+  "max_rise_30d": 1.3258354018206386
+ },
+ "B1_ETHUSDT": {
+  "per_year": {
+   "2020": {
+    "net_pct": 15.157116,
+    "neg_share": 0.025362318840579712,
+    "n": 552
+   },
+   "2021": {
+    "net_pct": 37.537255,
+    "neg_share": 0.0410958904109589,
+    "n": 1095
+   },
+   "2022": {
+    "net_pct": 0.7872559999999997,
+    "neg_share": 0.3415525114155251,
+    "n": 1095
+   },
+   "2023": {
+    "net_pct": 8.259507000000003,
+    "neg_share": 0.091324200913242,
+    "n": 1095
+   },
+   "2024": {
+    "net_pct": 12.996919000000002,
+    "neg_share": 0.04189435336976321,
+    "n": 1098
+   },
+   "2025": {
+    "net_pct": 4.928719,
+    "neg_share": 0.16164383561643836,
+    "n": 1095
+   },
+   "2026": {
+    "net_pct": 1.445589,
+    "neg_share": 0.3028083028083028,
+    "n": 819
+   }
+  },
+  "total_always_pct": 80.91236099999999,
+  "total_filter_pct": 73.463736,
+  "filter_days_in": 0.8953131844064827,
+  "switches": 49,
+  "max_rise_7d": 0.7683939032253639,
+  "max_rise_30d": 1.4765901952500782
+ },
+ "B2": {
+  "P": {
+   "final": 2617.243099878097,
+   "cagr": -0.19309596695636722,
+   "maxdd": -0.8987495161063227,
+   "sharpe": 0.030934400310332955,
+   "worst_month": -0.32100733438752294,
+   "max_deployed": 0.9996511633070041,
+   "avg_deployed": 0.8082447836847586,
+   "max_positions": 48,
+   "round_trips": 342,
+   "by_exit": {
+    "tp": 332,
+    "delisted": 10
+   },
+   "tp_days_median": 8.0,
+   "tp_days_max": 1108,
+   "delisted_loss": -7713.874565845526,
+   "worst_trade": -1262.8666634993801,
+   "best_trade": 139.31144171905976,
+   "win_share": 0.9707602339181286,
+   "realized": 2806.897951233191,
+   "open_at_end": 14,
+   "open_unreal": -10189.65485135509,
+   "open_worst": -1436.010694040975,
+   "open_longest_days": 1774
+  },
+  "hedged": {
+   "final": 4391.126098825618,
+   "maxdd": -0.7618369319878274,
+   "cagr": -0.12341954337005034
+  },
+  "hedge_pnl": 1773.8829989475216,
+  "max_hedge_notional": 14569.932121485912,
+  "max_hedge_over_cash": 2653.9311693432587
+ },
+ "B3": {
+  "trades": [
+   {
+    "coin": "BTCUSDT",
+    "signal": "2020-08-16",
+    "ret": 0.10916400384971361
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2020-11-01",
+    "ret": -0.34413072250692334
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2020-12-02",
+    "ret": -0.5075266826030301
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2021-01-02",
+    "ret": 0.01569537482113479
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2021-02-11",
+    "ret": -0.2234768211409906
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2021-03-30",
+    "ret": 0.13346439837476987
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2021-08-07",
+    "ret": -0.16786921768108334
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2021-10-17",
+    "ret": 0.05183284833572564
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2023-01-20",
+    "ret": -0.06327568580958262
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2023-04-08",
+    "ret": 0.013713702037548379
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2023-10-25",
+    "ret": -0.08398817825816278
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2024-02-21",
+    "ret": -0.200083557423433
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2024-03-24",
+    "ret": 0.023975055673262937
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2024-11-11",
+    "ret": -0.12599735620250882
+   },
+   {
+    "coin": "BTCUSDT",
+    "signal": "2025-05-08",
+    "ret": -0.01850363252295987
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2020-07-25",
+    "ret": -0.2837255590157545
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2020-11-06",
+    "ret": -0.2873094906744753
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2020-12-07",
+    "ret": -0.9981814302474337
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2021-01-07",
+    "ret": -0.29230574163659523
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2021-02-07",
+    "ret": -0.09081569788117601
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2021-04-01",
+    "ret": -0.44634937109016537
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2021-05-02",
+    "ret": 0.12742410937918108
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2021-08-07",
+    "ret": -0.22134008531159816
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2021-10-20",
+    "ret": -0.01195915443176174
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2022-04-03",
+    "ret": 0.2085374065260229
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2022-07-18",
+    "ret": -0.15633907877124417
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2023-01-15",
+    "ret": 0.005283467208151792
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2023-04-09",
+    "ret": 0.01101907677434635
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2023-11-09",
+    "ret": -0.09311113046485003
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2024-02-22",
+    "ret": -0.08991693813152048
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2024-11-09",
+    "ret": -0.16984446452690172
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2025-05-08",
+    "ret": -0.13895710096027428
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2025-07-16",
+    "ret": -0.31072835781571195
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2025-08-22",
+    "ret": 0.08250365491789233
+   },
+   {
+    "coin": "ETHUSDT",
+    "signal": "2026-08-21",
+    "ret": -0.048139682862127525
+   }
+  ],
+  "n": 35,
+  "mean": -0.1311789154306433,
+  "win_share": 0.3142857142857143,
+  "worst": -0.9981814302474337,
+  "sum": -4.5912620400725155
+ },
+ "Q3": {
+  "period": [
+   "2021-01-02",
+   "2026-09-30"
+  ],
+  "days": 2097,
+  "corr": {
+   "eco": {
+    "eco": 1.0,
+    "dca": 0.0644,
+    "carry": 0.1178
+   },
+   "dca": {
+    "eco": 0.0644,
+    "dca": 1.0,
+    "carry": -0.0014
+   },
+   "carry": {
+    "eco": 0.1178,
+    "dca": -0.0014,
+    "carry": 1.0
+   }
+  },
+  "mixes": {
+   "100/0/0": {
+    "final": 110025.85669074698,
+    "cagr": 0.518465207215661,
+    "maxdd": -0.18747124360790723,
+    "sharpe": 2.1037227436716193
+   },
+   "80/20/0": {
+    "final": 63293.68104882381,
+    "cagr": 0.37904633996745973,
+    "maxdd": -0.31854759353524653,
+    "sharpe": 1.5274976607328514
+   },
+   "70/15/15": {
+    "final": 54234.84735843897,
+    "cagr": 0.3424394423493946,
+    "maxdd": -0.2606719370682211,
+    "sharpe": 1.6578901628799683
+   },
+   "60/20/20": {
+    "final": 42153.38861836734,
+    "cagr": 0.2847886656603358,
+    "maxdd": -0.29593290519696414,
+    "sharpe": 1.3705375606653105
+   },
+   "50/25/25": {
+    "final": 32491.786601460095,
+    "cagr": 0.227833255042047,
+    "maxdd": -0.3407257938870132,
+    "sharpe": 1.0709667987372546
+   },
+   "0/100/0": {
+    "final": 2335.9976367226964,
+    "cagr": -0.22374901049246743,
+    "maxdd": -0.9030896693382383,
+    "sharpe": 0.004663954716488238
+   },
+   "0/0/100": {
+    "final": 12954.290655061848,
+    "cagr": 0.046116168795748314,
+    "maxdd": -0.010389898382661689,
+    "sharpe": 7.374121447454034
+   }
+  }
+ }
+}

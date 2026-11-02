@@ -1,0 +1,9 @@
+{
+ "protocol_sha": "02125c278258a6019cb5c4017c975e29f5404763ab04549a690b26874a586f84",
+ "code_sha": "bec112d0b7c92ad6c63dffdd06cbbeddd1119038a281f936d1ddab4a7a651f2f",
+ "rt": {
+  "fut": 0.00092,
+  "spot": 0.0017,
+  "maker": 0.0005600000000000001
+ }
+}

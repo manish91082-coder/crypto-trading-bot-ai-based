@@ -1,0 +1,12 @@
+{
+ "protocol_sha": "0d2fece2fce4b9b99e41e97333040fef34024e8774425c95e8c91bf879ffb2c9",
+ "code_sha": "f405ad51cadb8c079a57d8b59fcb0695f2545567ec8025ab64a6c6f584dfa2ee",
+ "k": 1,
+ "z_bonf": 1.959963984540054,
+ "passed": {
+  "T1": [],
+  "T2": [],
+  "T3": [],
+  "T4": []
+ }
+}

@@ -1,0 +1,9 @@
+[V1 PASS] E4: protocol, engine and runner hashes
+[V2 PASS] E4: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied
+Traceback (most recent call last):
+  File "E:\crypto trading bot ai based 9 oct 2026\src\audits\verify_r1_claims.py", line 282, in <module>
+    main(sys.argv[1])
+  File "E:\crypto trading bot ai based 9 oct 2026\src\audits\verify_r1_claims.py", line 217, in main
+    assert abs(g.w.sum() - 1) < 1e-9 and (g.w <= 0.30 + 1e-9).all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

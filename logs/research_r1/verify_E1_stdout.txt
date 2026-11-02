@@ -1,0 +1,4 @@
+[V1 PASS] E1: protocol, engine and runner hashes
+[V2 PASS] E1: statistics re-derived with plain loops from the equity / trade / short-P&L files; gates re-applied
+[V3 PASS] E1a: 157 hedge trades; 5 hedge stop fills re-derived from raw BTC perp bars
+[V3 PASS] E1b: 105 hedge trades; 8 hedge stop fills re-derived from raw BTC perp bars
